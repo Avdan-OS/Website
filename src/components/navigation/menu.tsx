@@ -70,11 +70,11 @@ function Menu({}) {
                 <a>
                   <Button
                     aria-label="Open Docs"
-                    className="themebutton"
+                    className="themebutton themebutttoncyan"
                     auto
                     shadow
                     type="success"
-                    iconRight={<Icons.Download size={16} />}
+                    iconRight={<Icons.Download className="themebuttonicon" size={16} />}
                   ></Button>
                 </a>
               </NextLink>
@@ -116,7 +116,7 @@ function Menu({}) {
                 <a>
                   <Button
                     aria-label="Open Docs"
-                    className="themebutton"
+                    className="themebutton themebutttoncyan"
                     auto
                     shadow
                     type="success"
@@ -139,6 +139,15 @@ function Menu({}) {
           padding: 0;
           background: green;
           margin: 0 ${theme.layout.gapHalf};
+        }
+        .themebutttoncyan
+        {
+          background-color: ${theme.palette.cyan} !important;
+          border: 1px solid #00eab5 !important;  
+        }
+        .themebuttonicon
+        {
+          color: #000 !important;
         }
       `}</style>
     </>
