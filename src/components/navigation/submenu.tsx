@@ -22,7 +22,7 @@ const Submenu = () => {
             <div className="submenu__inner">
               <h4 className="submenu__highlight">AvdanOS</h4>
               <Tabs value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Overview" value="/" />
+                <Tabs.Item label="Overview" value="/#overview" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
                 <Tabs.Item label="Privacy and Security" value="/test" />
                 <Tabs.Item label="Gaming" value="/test" />
@@ -37,7 +37,7 @@ const Submenu = () => {
             <div className="submenu__inner">
               <h4 className="submenu__highlight">AvdanOS</h4>
               <Tabs value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Overview" value="/" />
+                <Tabs.Item label="Overview" value="/#overview" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
                 <Tabs.Item label="Privacy and Security" value="/test" />
                 <Tabs.Item label="Gaming" value="/test" />
