@@ -34,7 +34,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://Avdan.com/" />
-        <title>AvdanOS - The Desktop you Know and Love</title>
+        <title>AvdanOS - It's not only a desktop environment; It's a new os</title>
         <meta name="twitter:description" content="AvdanOS - The Desktop you Know and Love. Read more.." />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AvdanOS - The Desktop you Know and Love." />
