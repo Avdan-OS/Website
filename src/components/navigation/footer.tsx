@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
 
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 <Link underline href="mailto:hello@azsoftware.org">
-                  hello@azsoftware.org
+                  Inspired by <strong>Avdan</strong>
                 </Link>
               </Tag>
             </div>
