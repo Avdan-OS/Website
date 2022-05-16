@@ -1,0 +1,41 @@
+{
+  "name": "azsoftware",
+  "description": "The official azsoftware website.",
+  "version": "0.3.0",
+  "author": "AZ Software",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UpRelease/UpRelease.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UpRelease/UpRelease/issues"
+  },
+  "dependencies": {
+    "@geist-ui/core": "^2.3.4",
+    "@geist-ui/icons": "^1.0.1",
+    "@mdx-js/loader": "^2.1.1",
+    "@mdx-js/react": "^1.6.18",
+    "@next/mdx": "^9.5.5",
+    "bootstrap": "^5.1.3",
+    "next": "^12.1.0",
+    "prettier": "^2.0.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.8",
+    "react-icons": "^4.3.1",
+    "react-toc": "^2.1.1",
+    "styled-jsx": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.5",
+    "typescript": "^4.2.4"
+  }
+}
