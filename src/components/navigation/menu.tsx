@@ -52,7 +52,7 @@ function Menu({}) {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Download" value="/download" />
+                    <Tabs.Item label="Getting Started" value="/download" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
@@ -98,7 +98,7 @@ function Menu({}) {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Download" value="/download" />
+                    <Tabs.Item label="Getting Started" value="/download" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
