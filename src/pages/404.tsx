@@ -14,16 +14,10 @@ const Page404 = () => {
       </Head>
       <div className="page__wrapper" style={{ height: '100%' }}>
         <Page>
-          {theme.type === 'dark' ? (
-            <>
-              <h1 className="h-one-dm">404.</h1>
-              <h1 className="h-one-sub-dm">This page does not exist.</h1>
-            </>
-          ) : (
-            <>
+
               <h1 className="h-one">404.</h1>
               <h1 className="h-one-sub">This page does not exist.</h1>
-            </>
+
           )}
 
           <Note width="50%" type="warning" label="Tip">
@@ -42,20 +36,6 @@ const Page404 = () => {
             }
             .h-one {
               /*font-size: 53px;*/
-              color: rgb(0, 0, 0); /*background: #ffffff;*/
-              font-family: Poppins, sans-serif;
-              font-weight: bold;
-              font-size: 129px;
-              padding-bottom: 13px;
-              text-align: left;
-              padding-left: 72px;
-              padding-top: 85px;
-              word-wrap: break-word;
-            }
-            .h-one-dm {
-              /*font-size: 53px;*/
-              color: rgb(0, 0, 0); /*background: #ffffff;*/
-              font-family: Poppins, sans-serif;
               font-weight: bold;
               font-size: 129px;
               padding-bottom: 13px;
@@ -66,18 +46,6 @@ const Page404 = () => {
             }
             .h-one-sub {
               /*font-size: 53px;*/
-              color: rgb(0, 0, 0); /*background: #ffffff;*/
-              font-family: Poppins, sans-serif;
-              font-weight: bold;
-              font-size: 37px;
-              padding-bottom: 122px;
-              text-align: left;
-              padding-left: 86px;
-            }
-            .h-one-sub-dm {
-              /*font-size: 53px;*/
-              color: rgb(0, 0, 0); /*background: #ffffff;*/
-              font-family: Poppins, sans-serif;
               font-weight: bold;
               font-size: 37px;
               padding-bottom: 122px;
