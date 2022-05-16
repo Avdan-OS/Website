@@ -1,14 +1,19 @@
 import React from 'react';
-import { Avatar, Button, Card, Text, useTheme } from '@geist-ui/core';
+import { Avatar, Button, Card, Text, useTheme, Image } from '@geist-ui/core';
 import NextLink from 'next/link';
 export default function index() {
   const theme = useTheme();
   return (
     <>
       <div className="text-center" id="overview">
-        <Text h1 style={{ marginTop: '25px' }}>
+        <Text className="header" h1 style={{ marginTop: '25px' }}>
           Your PC but even Better.
         </Text>
+        <div className="mx-auto" style={{ width: '60%' }}>
+          <Card shadow hoverable>
+            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%"></Image>
+          </Card>
+        </div>
       </div>
       <div className="center card-container">
         <Card hoverable>
@@ -47,6 +52,13 @@ export default function index() {
           margin: 0 auto;
           max-width: 500%;
           padding: 0;
+          border-top: none !important;
+        }
+        .header {
+          font-size: 72px;
+          background: -webkit-linear-gradient(#eee, #333);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       `}</style>
     </>
