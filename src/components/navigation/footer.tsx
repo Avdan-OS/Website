@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <p className="copyright">
-            ©{' '}
+             Made by 
             <Link underline color href="https://github.com/Avdan-OS">
               AvdanOS Contributors
             </Link>{' '}
