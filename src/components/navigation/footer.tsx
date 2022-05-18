@@ -79,10 +79,9 @@ const Footer: React.FC = () => {
               <Status></Status>
               <Spacer h={0.5} />
               <Tag type="success">
-                Join our{' '}
+                Join our {' '}
                 <strong>
                   <Link underline icon color href="https://discord.gg/3TEbHG8hcP">
-                    {' '}
                     Discord
                   </Link>
                 </strong>
@@ -90,7 +89,7 @@ const Footer: React.FC = () => {
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 <Link underline href="https://" icon>
-                  Subscribe to the <strong>Youtube Channel</strong>
+                  Subscribe to the {' '}<strong>Youtube Channel</strong>
                 </Link>
               </Tag>
               <Spacer h={0.5} />
@@ -103,7 +102,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <p className="copyright">
-             Made by 
+             Made by the {' '}
             <Link underline color href="https://github.com/Avdan-OS">
               AvdanOS Contributors
             </Link>{' '}
