@@ -32,4 +32,4 @@ jobs:
         cache-dependency-path: '**/package-lock.json' # THIS PATTERN did the trick for me.
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    # - run: npm test
