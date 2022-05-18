@@ -14,15 +14,12 @@ const Page404 = () => {
       </Head>
       <div className="page__wrapper" style={{ height: '100%' }}>
         <Page>
-
-              <h1 className="h-one">404.</h1>
-              <h1 className="h-one-sub">This page does not exist.</h1>
-
-          )}
+          <h1 className="h-one">404.</h1>
+          <h1 className="h-one-sub">This page does not exist.</h1>
 
           <Note width="50%" type="warning" label="Tip">
             Join in and{' '}
-            <Link underline color href="https://www.azsoftware.org/help">
+            <Link underline color href="https://github.com/avdan-os">
               help us
             </Link>{' '}
             out developing <strong>open-source software</strong>.
