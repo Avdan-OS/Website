@@ -14,9 +14,8 @@ const Page404 = () => {
       </Head>
       <div className="page__wrapper" style={{ height: '100%' }}>
         <Page>
-          <h1 className="h-one">404.</h1>
-          <h1 className="h-one-sub">This page does not exist.</h1>
-
+          <Text h1>404.</Text>
+          <Text h4>This page does not exist.</Text>
           <Note width="50%" type="warning" label="Tip">
             Join in and{' '}
             <Link underline color href="https://github.com/avdan-os">
@@ -25,32 +24,6 @@ const Page404 = () => {
             out developing <strong>open-source software</strong>.
           </Note>
         </Page>
-        <style jsx>
-          {`
-            .page__wrapper {
-              // background-color: ${theme.palette.accents_1};
-              // background-color:rgba(0, 0, 0, 0.1);
-            }
-            .h-one {
-              /*font-size: 53px;*/
-              font-weight: bold;
-              font-size: 129px;
-              padding-bottom: 13px;
-              text-align: left;
-              padding-left: 72px;
-              padding-top: 85px;
-              word-wrap: break-word;
-            }
-            .h-one-sub {
-              /*font-size: 53px;*/
-              font-weight: bold;
-              font-size: 37px;
-              padding-bottom: 122px;
-              text-align: left;
-              padding-left: 86px;
-            }
-          `}
-        </style>
       </div>
     </>
   );
