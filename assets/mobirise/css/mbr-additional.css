@@ -1155,6 +1155,21 @@ a {
 .cid-t5HPB94sBB .bg-youtube:hover {
   background: #cc0000;
 }
+.cid-t5HPB94sBB .bg-discord {
+  background: #5865F2;
+  color: #ffffff;
+}
+.cid-t5HPB94sBB .bg-discord:hover {
+  background: #444dac;
+}
+.cid-t5HPB94sBB .bg-github {
+  background: #000000;
+  color: #ffffff;
+}
+.cid-t5HPB94sBB .bg-github:hover {
+  background: #2b2b2b;
+}
+
 .cid-t5HPB94sBB .iconfont-wrapper {
   display: inline-block;
   font-size: 32px;
