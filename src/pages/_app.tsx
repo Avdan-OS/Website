@@ -1,11 +1,10 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { GeistProvider, CssBaseline } from '@geist-ui/core';
 import { PrefersContext, themes, ThemeType } from '@/lib/use-prefers';
 import Menu from '@/components/navigation/menu';
 import Footer from '@/components/navigation/footer';
-import { Html, Main, NextScript } from 'next/document';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/nav.css';
 import '../styles/nav2.css';

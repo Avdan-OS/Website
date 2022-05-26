@@ -1,4 +1,3 @@
-import React from 'react';
 import { Page, Text, useTheme, Code, Note, Link, Collapse } from '@geist-ui/core';
 import Head from 'next/head';
 import { useRouter } from 'next/router';

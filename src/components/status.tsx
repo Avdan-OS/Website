@@ -1,5 +1,4 @@
-import { Dot, Image, Link, Tag } from '@geist-ui/core';
-import { ComponentProps, FC, useState } from 'react';
+import { Dot, Link, Tag } from '@geist-ui/core';
 import { useTheme } from '@geist-ui/core';
 // import axios from 'axios';
 
@@ -15,23 +14,25 @@ import { useTheme } from '@geist-ui/core';
 //   console.log(obj.status);
 // }
 
-function Status({}) {
+const Status = ({}) => {
   // getSystemStatus();
   return (
     <Tag type="secondary" style={{ color: colorSwitch() }}>
       Status:{' '}
-      <Link target="_blank" underline color href="https://dns.azsoftware.org"> {/* style={{ color: '#f5a623'}} */}
+      <Link target="_blank" underline color href="https://dns.azsoftware.org">
+        {' '}
+        {/* style={{ color: '#f5a623'}} */}
         <Dot type="success" id="status" /> {/* type="warning" */}
         All systems online
       </Link>
     </Tag>
   );
-}
+};
 
-function colorSwitch() {
+const colorSwitch = () => {
   const theme = useTheme();
   if (theme.type == 'light') return 'black';
   else return 'white';
-}
+};
 
 export default Status;

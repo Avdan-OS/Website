@@ -1,4 +1,3 @@
-import React from 'react';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { CssBaseline } from '@geist-ui/core';
 
@@ -44,7 +43,7 @@ class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-            (function(){
+            (()=>{
               if (!window.localStorage) return;
               if (window.localStorage.getItem('theme') === 'dark') {
                 document.documentElement.style.background = '#000';

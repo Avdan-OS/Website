@@ -1,9 +1,8 @@
-import React from 'react';
 import { Grid, Card } from '@geist-ui/core';
-import { GitHub, Linkedin, Youtube } from 'react-feather';
+import { Linkedin, Youtube } from 'react-feather';
 import { RiTwitterFill, RiTwitterLine } from 'react-icons/ri';
 import { AiOutlineWindows, AiOutlineReddit, AiOutlineGithub } from 'react-icons/ai';
-function Media() {
+const Media = () => {
   return (
     <Grid.Container style={{ marginBottom: -40 }} gap={2} justify="center">
       <Grid>
@@ -57,6 +56,6 @@ function Media() {
       </Grid>
     </Grid.Container>
   );
-}
+};
 
 export default Media;

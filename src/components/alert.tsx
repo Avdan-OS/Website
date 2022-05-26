@@ -1,5 +1,5 @@
 import { Link, useTheme, Grid, Card } from '@geist-ui/core';
-export function Alert({ ...imgProps }) {
+export const Alert = ({ ...imgProps }) => {
   const theme = useTheme();
   return (
     <div>
@@ -17,4 +17,4 @@ export function Alert({ ...imgProps }) {
       <div dangerouslySetInnerHTML={{ __html: `<!--googleon: index-->` }} />
     </div>
   );
-}
+};
