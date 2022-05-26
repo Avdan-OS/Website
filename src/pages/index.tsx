@@ -11,7 +11,7 @@ const index = () => {
         </Text>
         <div className="mx-auto" style={{ width: '60%' }}>
           <Card shadow hoverable>
-            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%"></Image>
+            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%"/>
           </Card>
         </div>
       </div>
