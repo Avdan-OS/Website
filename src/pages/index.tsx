@@ -1,7 +1,7 @@
-import React from 'react';
 import { Avatar, Button, Card, Text, useTheme, Image } from '@geist-ui/core';
 import NextLink from 'next/link';
-export default function index() {
+
+const index = () => {
   const theme = useTheme();
   return (
     <>
@@ -63,4 +63,5 @@ export default function index() {
       `}</style>
     </>
   );
-}
+};
+export default index;

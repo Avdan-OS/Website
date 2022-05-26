@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Button, useTheme, Popover, Tabs, useToasts, Link } from '@geist-ui/core';
+import { Button, useTheme, Tabs, useToasts } from '@geist-ui/core';
 import * as Icons from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
@@ -7,19 +6,18 @@ import Logo from '../logo';
 import NextLink from 'next/link';
 import Submenu from '@/components/navigation/submenu';
 
-function Menu({}) {
+const Menu = ({}) => {
   const theme = useTheme();
   const prefers = usePrefers();
-  const [value, setValue] = useState('');
   const router = useRouter();
   const { setToast } = useToasts();
-  function setInvertTheme() {
+  const setInvertTheme = () => {
     if (theme.type === 'dark') {
       prefers.switchTheme('light');
     } else {
       prefers.switchTheme('dark');
     }
-  }
+  };
   const action = {
     name: 'Undo',
     handler: () => setInvertTheme()
@@ -29,10 +27,10 @@ function Menu({}) {
       text: 'Theme changed',
       actions: [action]
     });
-  function fireClick() {
+  const fireClick = () => {
     click();
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
-  }
+  };
   return (
     <>
       {theme.type === 'dark' ? (
@@ -152,6 +150,6 @@ function Menu({}) {
       `}</style>
     </>
   );
-}
+};
 
 export default Menu;

@@ -1,14 +1,14 @@
 import React from 'react';
-import { Text, Link, useTheme, Tag, Spacer } from '@geist-ui/core';
+import { Link, useTheme, Tag, Spacer } from '@geist-ui/core';
 import Status from '../status';
 import Logo from '../logo';
 const Footer: React.FC = () => {
   const theme = useTheme();
-  function colorSwitch() {
+  const colorSwitch = () => {
     const theme = useTheme();
     if (theme.type == 'light') return 'black';
     else return 'white';
-  }
+  };
   return (
     <>
       <footer className="footer-dark">
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               <Status></Status>
               <Spacer h={0.5} />
               <Tag type="success">
-                Join our {' '}
+                Join our{' '}
                 <strong>
                   <Link underline icon color href="https://discord.gg/3TEbHG8hcP">
                     Discord
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 <Link underline href="https://" icon>
-                  Subscribe to the {' '}<strong>Youtube Channel</strong>
+                  Subscribe to the <strong>Youtube Channel</strong>
                 </Link>
               </Tag>
               <Spacer h={0.5} />
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <p className="copyright">
-             Made by the {' '}
+            Made by the{' '}
             <Link underline color href="https://github.com/Avdan-OS">
               AvdanOS Contributors
             </Link>{' '}
