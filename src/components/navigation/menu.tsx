@@ -64,7 +64,7 @@ const Menu = ({}) => {
                 type="abort"
                 onClick={() => fireClick()}
               ></Button>
-              <NextLink href="/docs" passHref>
+              <NextLink href="/download" passHref>
                 <a>
                   <Button
                     aria-label="Open Docs"
@@ -110,7 +110,7 @@ const Menu = ({}) => {
                 type="abort"
                 onClick={() => fireClick()}
               ></Button>
-              <NextLink href="/docs" passHref>
+              <NextLink href="/download" passHref>
                 <a>
                   <Button
                     aria-label="Open Docs"
