@@ -6,28 +6,34 @@ const index = () => {
   return (
     <>
       <div className="text-center" id="overview">
-        <Text className="header" h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+        <Text className="header" h1 style={{ marginTop: '50px', marginBottom: '30px' }}>
           Get your PC an Upgrade.
         </Text>
-        <Grid.Container gap={2} justify="center">
+        <Grid.Container gap={3} justify="center">
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" paddingBottom="40px" />
-              <Button className="downloadBtn">Direct Download</Button>
+            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" paddingBottom="30px" />
+              <Button className="downloadBtn" marginBottom="10px">
+                Direct Download
+              </Button>
               <Button>Torrent Download</Button>
             </Card>
           </Grid>
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/arm.png" height="100%" width="170px" paddingBottom="40px" />
-              <Button className="downloadBtn">Direct Download</Button>
+            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+              <Image draggable="false" src="/assets/icons/arm.png" height="100%" width="170px" paddingBottom="30px" />
+              <Button className="downloadBtn" marginBottom="10px">
+                Direct Download
+              </Button>
               <Button>Torrent Download</Button>
             </Card>
           </Grid>
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/arm64.png" height="100%" width="170px" paddingBottom="40px" />
-              <Button className="downloadBtn">Direct Download</Button>
+            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+              <Image draggable="false" src="/assets/icons/arm64.png" height="100%" width="170px" paddingBottom="30px" />
+              <Button className="downloadBtn" marginBottom="10px">
+                Direct Download
+              </Button>
               <Button>Torrent Download</Button>
             </Card>
           </Grid>
