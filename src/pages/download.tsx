@@ -11,30 +11,30 @@ const index = () => {
         </Text>
         <Grid.Container gap={3} justify="center">
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+            <Card shadow hoverable width="100%" paddingTop="40px">
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" paddingBottom="30px" />
-              <Button className="downloadBtn" marginBottom="10px">
+              <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
-              <Button>Torrent Download</Button>
+              <Button margin="10px">Torrent Download</Button>
             </Card>
           </Grid>
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+            <Card shadow hoverable width="100%" paddingTop="40px">
               <Image draggable="false" src="/assets/icons/arm.png" height="100%" width="170px" paddingBottom="30px" />
-              <Button className="downloadBtn" marginBottom="10px">
+              <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
-              <Button>Torrent Download</Button>
+              <Button margin="10px">Torrent Download</Button>
             </Card>
           </Grid>
           <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px" paddingBottom="20px">
+            <Card shadow hoverable width="100%" paddingTop="40px">
               <Image draggable="false" src="/assets/icons/arm64.png" height="100%" width="170px" paddingBottom="30px" />
-              <Button className="downloadBtn" marginBottom="10px">
+              <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
-              <Button>Torrent Download</Button>
+              <Button margin="10px">Torrent Download</Button>
             </Card>
           </Grid>
         </Grid.Container>
