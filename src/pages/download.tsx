@@ -12,7 +12,7 @@ const index = () => {
         <Grid.Container gap={3} justify="center">
           <Grid xs={6}>
             <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" paddingBottom="30px" />
+              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" marginBottom="20px" />
               <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
@@ -21,7 +21,7 @@ const index = () => {
           </Grid>
           <Grid xs={6}>
             <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/arm.png" height="100%" width="170px" paddingBottom="30px" />
+              <Image draggable="false" src="/assets/icons/arm.png" height="100%" width="170px" marginBottom="20px" />
               <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
@@ -30,7 +30,7 @@ const index = () => {
           </Grid>
           <Grid xs={6}>
             <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/arm64.png" height="100%" width="170px" paddingBottom="30px" />
+              <Image draggable="false" src="/assets/icons/arm64.png" height="100%" width="170px" marginBottom="20px" />
               <Button className="downloadBtn" margin="10px">
                 Direct Download
               </Button>
