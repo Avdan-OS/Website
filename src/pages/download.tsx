@@ -7,7 +7,7 @@ const index = () => {
     <>
       <div className="text-center" id="overview">
         <Text className="header" h1 style={{ marginTop: '50px', marginBottom: '30px' }}>
-          Get your PC an Upgrade.
+          Give your PC an Upgrade.
         </Text>
         <Grid.Container gap={3} justify="center">
           <Grid xs={6}>
