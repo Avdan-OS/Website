@@ -8,7 +8,7 @@ const index = () => {
     setToast({ text: 'This download is not available, yet', delay: 2000 });
   };
 
-  const [gridDirection, setGridDirection] = useState('row');
+  const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
 
   useEffect(() => {
