@@ -2,6 +2,9 @@
 
 **The AvdanOS homepage is built using NextJS and GeistUI**, which support both **_Markdown_** and **_JavaScript_** to fit the needs of the contributors to the project.
 
+| :warning: | **avdan-os.github.io's code is in the dev branch. Commits to the main branch will be ignored.** <br> | &nbsp;&nbsp;&nbsp;&nbsp;[CONTRIBUTE](https://github.com/Avdan-OS/avdan-os.github.io/tree/dev)&nbsp;&nbsp;&nbsp;&nbsp; |
+| - |:-| - |
+
 ## Getting Started
 
 Make sure you have NodeJS 14 or later installed.
