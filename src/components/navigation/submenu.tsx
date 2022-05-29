@@ -20,7 +20,7 @@ const Submenu = () => {
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
               <h4 className="submenu__highlight">AvdanOS</h4>
-              <Tabs value={router.asPath} onChange={(route) => router.push(route)}>
+              <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                 <Tabs.Item label="Overview" value="/#overview" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
                 <Tabs.Item label="Privacy and Security" value="/test" />
@@ -35,7 +35,7 @@ const Submenu = () => {
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
               <h4 className="submenu__highlight">AvdanOS</h4>
-              <Tabs value={router.asPath} onChange={(route) => router.push(route)}>
+              <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                 <Tabs.Item label="Overview" value="/#overview" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
                 <Tabs.Item label="Privacy and Security" value="/test" />

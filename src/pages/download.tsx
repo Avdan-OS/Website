@@ -1,7 +1,8 @@
-import { Button, Card, Text, Image, Grid, useToasts, Spacer } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, Link } from '@geist-ui/core';
 import { useEffect, useState } from 'react';
 
 const index = () => {
+  const theme = useTheme();
   let { setToast } = useToasts();
 
   const noDownloadCb = () => {
@@ -38,22 +39,16 @@ const index = () => {
         <Spacer h={1} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           <Grid xs={gridWidth}>
-            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button onClick={noDownloadCb} margin="10px">
-                Direct Download
-              </Button>
-              <Button onClick={noDownloadCb} margin="10px">
-                Torrent Download
-              </Button>
-            </Card>
-          </Grid>
-          <Grid xs={gridWidth}>
-            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
+            <Card
+              style={{ background: theme.palette.accents_1 }}
+              hoverable
+              paddingTop="40px"
+              padding="15px"
+              width="100%"
+            >
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
               <Spacer h={2} />
-              <Button onClick={noDownloadCb} margin="10px">
+              <Button type="success" shadow onClick={noDownloadCb} margin="10px">
                 Direct Download
               </Button>
               <Button onClick={noDownloadCb} margin="10px">
@@ -62,10 +57,35 @@ const index = () => {
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
-            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
+            <Card
+              style={{ background: theme.palette.accents_1 }}
+              shadow
+              hoverable
+              paddingTop="40px"
+              padding="15px"
+              width="100%"
+            >
+              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
+              <Spacer h={2} />
+              <Button type="success" shadow onClick={noDownloadCb} margin="10px">
+                Direct Download
+              </Button>
+              <Button onClick={noDownloadCb} margin="10px">
+                Torrent Download
+              </Button>
+            </Card>
+          </Grid>
+          <Grid xs={gridWidth}>
+            <Card
+              style={{ background: theme.palette.accents_1 }}
+              hoverable
+              paddingTop="40px"
+              padding="15px"
+              width="100%"
+            >
               <Image draggable="false" src="/assets/icons/ARM64.png" height="100%" width="170px" />
               <Spacer h={2} />
-              <Button onClick={noDownloadCb} margin="10px">
+              <Button type="success" shadow onClick={noDownloadCb} margin="10px">
                 Direct Download
               </Button>
               <Button onClick={noDownloadCb} margin="10px">
@@ -75,8 +95,12 @@ const index = () => {
           </Grid>
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
-          <Card shadow hoverable className="text-center">
-            Having trouble? Click <a href="/support">here</a> to get help!
+          <Card style={{ border: theme.palette.background + ' 5px' }} hoverable className="text-center trouble">
+            Having trouble? Click{' '}
+            <Link block href="/support">
+              here
+            </Link>{' '}
+            to get help!
           </Card>
         </div>
       </div>
@@ -90,6 +114,12 @@ const index = () => {
           max-width: 500%;
           padding: 0;
           border-top: none !important;
+        }
+        .trouble {
+          background: ${theme.palette.background} !important;
+        }
+        .trouble:hover {
+          background: ${theme.palette.accents_2} !important;
         }
         .header {
           font-size: 72px;
