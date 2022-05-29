@@ -1,40 +1,76 @@
-import { Avatar, Button, Card, Text, useTheme, Image, Display, Grid } from '@geist-ui/core';
-import NextLink from 'next/link';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer } from '@geist-ui/core';
+import { useEffect, useState } from 'react';
 
 const index = () => {
-  const theme = useTheme();
+  let { setToast } = useToasts();
+
+  const noDownloadCb = () => {
+    setToast({ text: 'This download is not available, yet', delay: 2000 });
+  };
+
+  const [gridDirection, setGridDirection] = useState('row');
+  const [gridWidth, setGridWidth] = useState(6);
+
+  useEffect(() => {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 1050) {
+      setGridDirection('column');
+      setGridWidth(12);
+    }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 1050) {
+        setGridDirection('column');
+        setGridWidth(12);
+      } else {
+        setGridDirection('row');
+        setGridWidth(6);
+      }
+    });
+  }, []);
+
   return (
     <>
       <div className="text-center" id="overview">
-        <Text className="header" h1 style={{ marginTop: '50px', marginBottom: '30px' }}>
+        <Spacer h={3} />
+        <Text className="header" h1>
           Give your PC an Upgrade.
         </Text>
-        <Grid.Container gap={3} justify="center">
-          <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" marginBottom="20px" />
-              <Button className="downloadBtn" margin="10px">
+        <Spacer h={1} />
+        <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
+          <Grid xs={gridWidth}>
+            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
+              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
+              <Spacer h={2} />
+              <Button onClick={noDownloadCb} margin="10px">
                 Direct Download
               </Button>
-              <Button margin="10px">Torrent Download</Button>
+              <Button onClick={noDownloadCb} margin="10px">
+                Torrent Download
+              </Button>
             </Card>
           </Grid>
-          <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" marginBottom="20px" />
-              <Button className="downloadBtn" margin="10px">
+          <Grid xs={gridWidth}>
+            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
+              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
+              <Spacer h={2} />
+              <Button onClick={noDownloadCb} margin="10px">
                 Direct Download
               </Button>
-              <Button margin="10px">Torrent Download</Button>
+              <Button onClick={noDownloadCb} margin="10px">
+                Torrent Download
+              </Button>
             </Card>
           </Grid>
-          <Grid xs={6}>
-            <Card shadow hoverable width="100%" paddingTop="40px">
-              <Image draggable="false" src="/assets/icons/ARM64.png" height="100%" width="170px" marginBottom="20px" />
-              <Button className="downloadBtn" margin="10px">
+          <Grid xs={gridWidth}>
+            <Card shadow hoverable paddingTop="40px" padding="15px" width="100%">
+              <Image draggable="false" src="/assets/icons/ARM64.png" height="100%" width="170px" />
+              <Spacer h={2} />
+              <Button onClick={noDownloadCb} margin="10px">
                 Direct Download
               </Button>
-              <Button margin="10px">Torrent Download</Button>
+              <Button onClick={noDownloadCb} margin="10px">
+                Torrent Download
+              </Button>
             </Card>
           </Grid>
         </Grid.Container>
@@ -60,9 +96,6 @@ const index = () => {
           background: -webkit-linear-gradient(#eee, #333);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-        }
-        .downloadBtn {
-          margin: 60px;
         }
       `}</style>
     </>
