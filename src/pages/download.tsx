@@ -20,7 +20,7 @@ const index = () => {
     window.addEventListener('resize', () => {
       if (window.innerWidth < 1050) {
         setGridDirection('column');
-        setGridWidth(12);
+        setGridWidth(15);
       } else {
         setGridDirection('row');
         setGridWidth(6);
