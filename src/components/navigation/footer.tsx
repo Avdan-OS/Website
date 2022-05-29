@@ -89,14 +89,14 @@ const Footer: React.FC = () => {
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 <Link underline href="https://" icon>
-                  Subscribe to the <strong>Youtube Channel</strong>
+                  Subscribe to the <b>Youtube Channel</b>
                 </Link>
               </Tag>
               <Spacer h={0.5} />
 
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 <Link underline href="https://youtube.com/avdan">
-                  Inspired by <strong>Avdan</strong>
+                  Inspired by <b>Avdan</b>
                 </Link>
               </Tag>
             </div>
