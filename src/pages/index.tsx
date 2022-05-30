@@ -37,7 +37,7 @@ const index = () => {
             )}
             <NextLink href="/download">
               <Button style={{ marginLeft: 12 }} shadow type="success">
-                Get Started
+                Download
               </Button>
             </NextLink>
           </div>
