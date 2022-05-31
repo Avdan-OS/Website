@@ -42,9 +42,6 @@ const Footer: React.FC = () => {
                 <li>
                   <a href="/cloud">Cloud</a>
                 </li>
-                <li>
-                  <a href="/pricing">Pricing</a>
-                </li>
               </ul>
             </div>
             <div className="col col-md item">
@@ -61,9 +58,9 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div className="col-md item text">
-              <h3 style={{ fontFamily: 'Poppins', marginTop: 30, fontWeight: 500 }}>
+              <h2 style={{ fontFamily: 'Poppins', marginTop: 30, fontWeight: 500, textAlign: 'center' }}>
                 <Logo />
-              </h3>
+              </h2>
             </div>
             <div className="col-md">
               <ul>
@@ -88,23 +85,28 @@ const Footer: React.FC = () => {
               </Tag>
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
-                <Link underline href="https://" icon>
-                  Subscribe to the <b>Youtube Channel</b>
-                </Link>
+                Subscribe to the{' '}
+                <strong>
+                  <Link underline href="https://" icon>
+                    Youtube channel
+                  </Link>
+                </strong>
               </Tag>
               <Spacer h={0.5} />
-
               <Tag type="secondary" style={{ color: colorSwitch() }}>
-                <Link underline href="https://youtube.com/avdan">
-                  Inspired by <b>Avdan</b>
-                </Link>
+                Inspired by{' '}
+                <strong>
+                  <Link underline href="https://youtube.com/avdan">
+                    Avdan
+                  </Link>
+                </strong>
               </Tag>
             </div>
           </div>
           <p className="copyright">
             Made by the{' '}
             <Link underline color href="https://github.com/Avdan-OS">
-              AvdanOS Contributors
+              AvdanOS Contributors.
             </Link>{' '}
             2021-{new Date().getFullYear()}
           </p>

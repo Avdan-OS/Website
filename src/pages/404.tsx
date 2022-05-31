@@ -1,10 +1,7 @@
-import { Page, Text, useTheme, Code, Note, Link, Collapse } from '@geist-ui/core';
+import { Page, Text, Note, Link } from '@geist-ui/core';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 const Page404 = () => {
-  const theme = useTheme();
-  const router = useRouter();
   return (
     <>
       <Head>

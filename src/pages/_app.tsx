@@ -33,12 +33,12 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://Avdan.com/" />
-        <title>AvdanOS - It's not only a desktop environment; It's a new os</title>
-        <meta name="twitter:description" content="AvdanOS - The Desktop you Know and Love. Read more.." />
+        <title>AvdanOS - It's not only a desktop environment; It's a new OS.</title>
+        <meta name="twitter:description" content="AvdanOS - The desktop you know and love. Read more..." />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AvdanOS - The Desktop you Know and Love." />
+        <meta name="twitter:title" content="AvdanOS - The desktop you know and love." />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="AvdanOS - The Desktop you Know and Love." />
+        <meta name="description" content="AvdanOS - The desktop you know and love." />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

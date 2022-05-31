@@ -1,4 +1,4 @@
-import { Button, useTheme, Tabs, useToasts } from '@geist-ui/core';
+import { Button, useTheme, Tabs } from '@geist-ui/core';
 import * as Icons from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
@@ -10,25 +10,7 @@ const Menu = ({}) => {
   const theme = useTheme();
   const prefers = usePrefers();
   const router = useRouter();
-  const { setToast } = useToasts();
-  const setInvertTheme = () => {
-    if (theme.type === 'dark') {
-      prefers.switchTheme('light');
-    } else {
-      prefers.switchTheme('dark');
-    }
-  };
-  const action = {
-    name: 'Undo',
-    handler: () => setInvertTheme()
-  };
-  const click = () =>
-    setToast({
-      text: 'Theme changed',
-      actions: [action]
-    });
   const fireClick = () => {
-    click();
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
   };
   return (
@@ -50,14 +32,14 @@ const Menu = ({}) => {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Getting Started" value="/download" />
+                    <Tabs.Item label="Getting started" value="/download" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
                 </ul>
               </div>
               <Button
-                aria-label="Toggle Dark mode"
+                aria-label="Toggle dark mode"
                 className="themebutton"
                 auto
                 iconRight={theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
@@ -67,7 +49,7 @@ const Menu = ({}) => {
               <NextLink href="/download" passHref>
                 <a>
                   <Button
-                    aria-label="Open Docs"
+                    aria-label="Open docs"
                     className="themebutton themebutttoncyan"
                     auto
                     shadow
@@ -96,14 +78,14 @@ const Menu = ({}) => {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Getting Started" value="/download" />
+                    <Tabs.Item label="Getting started" value="/download" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
                 </ul>
               </div>
               <Button
-                aria-label="Toggle Dark mode"
+                aria-label="Toggle dark mode"
                 className="themebutton"
                 auto
                 iconRight={theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
@@ -113,7 +95,7 @@ const Menu = ({}) => {
               <NextLink href="/download" passHref>
                 <a>
                   <Button
-                    aria-label="Open Docs"
+                    aria-label="Open docs"
                     className="themebutton themebutttoncyan"
                     auto
                     shadow

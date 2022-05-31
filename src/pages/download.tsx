@@ -7,7 +7,7 @@ const index = () => {
   const { setToast } = useToasts();
   const { setVisible, bindings } = useModal();
 
-  const download = (type: 'x64' | 'arm' | 'arm64') => {
+  const download = (type: 'x64' | 'arm') => {
     switch (type) {
       case 'x64':
         setShasum('testing-x64-shasum');
@@ -15,12 +15,9 @@ const index = () => {
       case 'arm':
         setShasum('testing-arm-shasum');
         break;
-      case 'arm64':
-        setShasum('testing-arm64-shasum');
-        break;
     }
     setVisible(true);
-    setToast({ text: 'This download is not available, yet', delay: 2000 });
+    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
   };
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
@@ -60,37 +57,6 @@ const index = () => {
               padding="15px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button
-                type="success"
-                shadow
-                onClick={() => {
-                  download('arm');
-                }}
-                margin="10px"
-              >
-                Direct Download
-              </Button>
-              <Button
-                onClick={() => {
-                  download('arm');
-                }}
-                margin="10px"
-              >
-                Torrent Download
-              </Button>
-            </Card>
-          </Grid>
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.accents_1 }}
-              shadow
-              hoverable
-              paddingTop="40px"
-              padding="15px"
-              width="100%"
-            >
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
               <Spacer h={2} />
               <Button
@@ -121,13 +87,13 @@ const index = () => {
               padding="15px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/ARM64.png" height="100%" width="170px" />
+              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
               <Spacer h={2} />
               <Button
                 type="success"
                 shadow
                 onClick={() => {
-                  download('arm64');
+                  download('arm');
                 }}
                 margin="10px"
               >
@@ -135,7 +101,7 @@ const index = () => {
               </Button>
               <Button
                 onClick={() => {
-                  download('arm64');
+                  download('arm');
                 }}
                 margin="10px"
               >
@@ -155,7 +121,7 @@ const index = () => {
         </div>
       </div>
       <Modal {...bindings}>
-        <Modal.Title>Integrity Check</Modal.Title>
+        <Modal.Title>Integrity check</Modal.Title>
         <Modal.Subtitle>Check your download's shasum</Modal.Subtitle>
         <Modal.Content>
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>

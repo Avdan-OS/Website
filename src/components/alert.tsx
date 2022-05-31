@@ -1,5 +1,5 @@
 import { Link, useTheme, Grid, Card } from '@geist-ui/core';
-export const Alert = ({ ...imgProps }) => {
+export const Alert = () => {
   const theme = useTheme();
   return (
     <div>
