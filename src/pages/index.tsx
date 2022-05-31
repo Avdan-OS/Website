@@ -10,7 +10,7 @@ const index = () => {
         </Text>
         <div className="mx-auto" style={{ width: '60%' }}>
           <Card shadow hoverable>
-            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%"/>
+            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%" />
           </Card>
         </div>
       </div>
@@ -18,7 +18,7 @@ const index = () => {
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             <NextLink href="/download">
-              <Button style={{ marginL: 12 }} shadow type="success">
+              <Button style={{ marginLeft: 12 }} shadow type="success">
                 Download Now
               </Button>
             </NextLink>
