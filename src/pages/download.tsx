@@ -7,16 +7,13 @@ const index = () => {
   const { setToast } = useToasts();
   const { setVisible, bindings } = useModal();
 
-  const download = (type: 'x64' | 'arm' | 'arm64') => {
+  const download = (type: 'x64' | 'arm') => {
     switch (type) {
       case 'x64':
         setShasum('testing-x64-shasum');
         break;
       case 'arm':
         setShasum('testing-arm-shasum');
-        break;
-      case 'arm64':
-        setShasum('testing-arm64-shasum');
         break;
     }
     setVisible(true);
@@ -52,36 +49,6 @@ const index = () => {
         </Text>
         <Spacer h={1} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.accents_1 }}
-              hoverable
-              paddingTop="40px"
-              padding="15px"
-              width="100%"
-            >
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button
-                type="success"
-                shadow
-                onClick={() => {
-                  download('arm');
-                }}
-                margin="10px"
-              >
-                Direct Download
-              </Button>
-              <Button
-                onClick={() => {
-                  download('arm');
-                }}
-                margin="10px"
-              >
-                Torrent Download
-              </Button>
-            </Card>
-          </Grid>
           <Grid xs={gridWidth}>
             <Card
               style={{ background: theme.palette.accents_1 }}
@@ -121,13 +88,13 @@ const index = () => {
               padding="15px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/ARM64.png" height="100%" width="170px" />
+              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
               <Spacer h={2} />
               <Button
                 type="success"
                 shadow
                 onClick={() => {
-                  download('arm64');
+                  download('arm');
                 }}
                 margin="10px"
               >
@@ -135,7 +102,7 @@ const index = () => {
               </Button>
               <Button
                 onClick={() => {
-                  download('arm64');
+                  download('arm');
                 }}
                 margin="10px"
               >
