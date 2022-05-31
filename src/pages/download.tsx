@@ -20,7 +20,7 @@ const index = () => {
         break;
     }
     setVisible(true);
-    setToast({ text: 'This download is not available, yet', delay: 2000 });
+    setToast({ text: 'This download is not available, yet', delay: 5000, type: 'error' });
   };
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
