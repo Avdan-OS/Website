@@ -1,13 +1,12 @@
-import { Avatar, Button, Card, Text, useTheme, Image } from '@geist-ui/core';
+import { Button, Card, Text, Image } from '@geist-ui/core';
 import NextLink from 'next/link';
 
 const index = () => {
-  const theme = useTheme();
   return (
     <>
       <div className="text-center" id="overview">
         <Text className="header" h1 style={{ marginTop: '25px' }}>
-          Your PC but even Better.
+          Your PC but even better.
         </Text>
         <div className="mx-auto" style={{ width: '60%' }}>
           <Card shadow hoverable>
@@ -18,26 +17,9 @@ const index = () => {
       <div className="center card-container">
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            {theme.type === 'dark' ? (
-              <Avatar
-                isSquare
-                height="50px"
-                width="50px"
-                style={{ pointerEvents: 'none' }}
-                src="assets/logo/render-dark.svg"
-              />
-            ) : (
-              <Avatar
-                isSquare
-                height="50px"
-                width="50px"
-                style={{ pointerEvents: 'none' }}
-                src="assets/logo/render.svg"
-              />
-            )}
             <NextLink href="/download">
-              <Button style={{ marginLeft: 12 }} shadow type="success">
-                Download
+              <Button style={{ marginL: 12 }} shadow type="success">
+                Download Now
               </Button>
             </NextLink>
           </div>

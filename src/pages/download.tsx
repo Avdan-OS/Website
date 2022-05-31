@@ -17,7 +17,7 @@ const index = () => {
         break;
     }
     setVisible(true);
-    setToast({ text: 'This download is not available, yet', delay: 5000, type: 'error' });
+    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
   };
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
@@ -52,7 +52,6 @@ const index = () => {
           <Grid xs={gridWidth}>
             <Card
               style={{ background: theme.palette.accents_1 }}
-              shadow
               hoverable
               paddingTop="40px"
               padding="15px"
@@ -122,7 +121,7 @@ const index = () => {
         </div>
       </div>
       <Modal {...bindings}>
-        <Modal.Title>Integrity Check</Modal.Title>
+        <Modal.Title>Integrity check</Modal.Title>
         <Modal.Subtitle>Check your download's shasum</Modal.Subtitle>
         <Modal.Content>
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>

@@ -1,6 +1,6 @@
 {
   "name": "AvdanOS",
-  "description": "The Desktop you Know and Love.",
+  "description": "The desktop you know and love.",
   "version": "0.3.0",
   "author": "AZ Software",
   "license": "MIT",
@@ -28,8 +28,8 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
-    "react-feather": "^2.0.8",
-    "react-icons": "^4.3.1",
+    "react-feather": "^2.0.10",
+    "react-icons": "^4.4.0",
     "react-toc": "^2.1.1",
     "styled-jsx": "^5.0.0"
   },

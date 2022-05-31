@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                   </Link>
                 </strong>
               </Tag>
-
+              <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 Inspired by{' '}
                 <strong>
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
           <p className="copyright">
             Made by the{' '}
             <Link underline color href="https://github.com/Avdan-OS">
-              AvdanOS Contributors
+              AvdanOS Contributors.
             </Link>{' '}
             2021-{new Date().getFullYear()}
           </p>
