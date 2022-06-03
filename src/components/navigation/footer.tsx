@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link, useTheme, Tag, Spacer } from '@geist-ui/core';
+import { useTheme, Tag, Spacer, Link } from '@geist-ui/core';
+import NextLink from 'next/link';
 import Status from '../status';
 import Logo from '../logo';
+import Media from '../media';
 const Footer: React.FC = () => {
   const theme = useTheme();
   const colorSwitch = () => {
@@ -18,15 +19,19 @@ const Footer: React.FC = () => {
               <h3>Overview</h3>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <NextLink href="#">
+                    <a>Home</a>
+                  </NextLink>
                 </li>
                 <li>
-                  <a href="/products">Features</a>
+                  <NextLink href="/products">
+                    <a>Features</a>
+                  </NextLink>
                 </li>
                 <li>
-                  <a target="_blank" href="/download">
-                    Downloads
-                  </a>
+                  <NextLink href="/download">
+                    <a>Downloads</a>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -34,13 +39,19 @@ const Footer: React.FC = () => {
               <h3>Documentation</h3>
               <ul>
                 <li>
-                  <a href="/downloads">Download</a>
+                  <NextLink href="/downloads">
+                    <a>Download</a>
+                  </NextLink>
                 </li>
                 <li>
-                  <a href="/cloud#hosting">Hosting</a>
+                  <NextLink href="/cloud#hosting">
+                    <a>Hosting</a>
+                  </NextLink>
                 </li>
                 <li>
-                  <a href="/cloud">Cloud</a>
+                  <NextLink href="/cloud">
+                    <a>Cloud</a>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -48,12 +59,14 @@ const Footer: React.FC = () => {
               <h3>Guides</h3>
               <ul>
                 <li>
-                  <a target="_blank" href="/docs">
-                    Documentation
-                  </a>
+                  <NextLink href="/docs">
+                    <a>Documentation</a>
+                  </NextLink>
                 </li>
                 <li>
-                  <a href="#">Examples</a>
+                  <NextLink href="#">
+                    <a>Examples</a>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -62,47 +75,35 @@ const Footer: React.FC = () => {
                 <Logo />
               </h2>
             </div>
-            <div className="col-md">
+            <div className="col-md item">
               <ul>
                 <ol>
-                  <a href="/privacy">Privacy</a>
+                  <NextLink href="/privacy">
+                    <a>Privacy</a>
+                  </NextLink>
                 </ol>
                 <ol>
-                  <a href="/security">Security</a>
+                  <NextLink href="/security">
+                    <a>Security</a>
+                  </NextLink>
                 </ol>
               </ul>
             </div>
             <div className="col-sm-6 col-md-3 item" style={{ marginTop: 15 }}>
-              <Status></Status>
-              <Spacer h={0.5} />
-              <Tag type="success">
-                Join our{' '}
-                <strong>
-                  <Link underline icon color href="https://discord.gg/3TEbHG8hcP">
-                    Discord
-                  </Link>
-                </strong>
-              </Tag>
-              <Spacer h={0.5} />
-              <Tag type="secondary" style={{ color: colorSwitch() }}>
-                Subscribe to the{' '}
-                <strong>
-                  <Link underline href="https://" icon>
-                    Youtube channel
-                  </Link>
-                </strong>
-              </Tag>
+              <Status />
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 Inspired by{' '}
                 <strong>
-                  <Link underline href="https://youtube.com/avdan">
+                  <Link target="_blank" href="https://youtube.com/avdan">
                     Avdan
                   </Link>
                 </strong>
               </Tag>
             </div>
           </div>
+          <p>Social Media Links</p>
+          <Media />
           <p className="copyright">
             Made by the{' '}
             <Link underline color href="https://github.com/Avdan-OS">
@@ -124,7 +125,7 @@ const Footer: React.FC = () => {
           margin-top: 14px;
           margin-bottom: 0;
           font-size: 13px;
-          opacity: 0.6;
+          opacity: 0.7;
         }
       `}</style>
     </>
