@@ -5,11 +5,11 @@ export const Alert = () => {
     <div>
       <div dangerouslySetInnerHTML={{ __html: `<!--googleoff: index-->` }} />
       <Grid style={{ paddingInline: 50, pointerEvents: 'none', marginTop: '6px' }} height="34px">
-        <Card style={{ background: theme.palette.accents_2, height: '100%' }} hoverable>
+        <Card style={{ background: theme.palette.accents_1, height: '100%' }} hoverable>
           <p style={{ fontSize: 14, marginTop: -13, height: '100%' }}>
-            <strong>Build with us</strong> — A UI-framework, built for speed and ease-of-use.{' '}
-            <Link style={{ pointerEvents: 'stroke' }} block underline href="/vacaro">
-              Vacaro
+            <strong>Join the Community</strong> — AvdanOS is in development. {' '}
+            <Link style={{ pointerEvents: 'stroke' }} block underline href="https://discord.gg/avdanos">
+              Open Discord
             </Link>
           </p>
         </Card>

@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 const index = () => {
   return (
     <>
-      <div className="text-center" id="overview">
+      <div className="text-center">
         <Text className="header" h1 style={{ marginTop: '25px' }}>
           Your PC but even better.
         </Text>
@@ -25,6 +25,7 @@ const index = () => {
           </div>
         </Card>
       </div>
+      testtest testtesttesttest testtesttesttest testtesttesttest testtest testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  
       <style jsx>{`
         .card-container {
           display: flex;

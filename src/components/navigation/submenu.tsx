@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
+import { Alert } from '../alert';
 
 const Submenu = () => {
   const theme = useTheme();
@@ -15,45 +16,30 @@ const Submenu = () => {
 
   return (
     <>
-      {theme.type === 'dark' ? (
+      {sticky ? (
         <nav className="submenu__wrapper">
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
               <h4 className="submenu__highlight">AvdanOS</h4>
               <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Overview" value="/#overview" />
+                <Tabs.Item label="Overview" value="/" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
                 <Tabs.Item label="Privacy and Security" value="/test" />
                 <Tabs.Item label="Gaming" value="/test" />
               </Tabs>
-              {/* <Alert /> */}
             </div>
           </div>
         </nav>
       ) : (
-        <nav className="submenu__wrapper">
-          <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
-            <div className="submenu__inner">
-              <h4 className="submenu__highlight">AvdanOS</h4>
-              <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Overview" value="/#overview" />
-                <Tabs.Item label="Switching to AvdanOS" value="/test" />
-                <Tabs.Item label="Privacy and Security" value="/test" />
-                <Tabs.Item label="Gaming" value="/test" />
-              </Tabs>
-              {/* <Alert /> */}
-            </div>
-          </div>
-        </nav>
+        <Alert />
       )}
       <style jsx>{`
         .submenu__wrapper {
-          border-top: 1px solid ${theme.palette.border};
+          // border-top: 1px solid ${theme.palette.border};
           height: 48px;
           position: relative;
           overflow: hidden;
-          background: ${theme.palette.accents_1};
-          box-shadow: inset 0 -1px ${theme.palette.border};
+          background: ${theme.palette.background} !important;
         }
         .submenu_sticky {
           transition: box-shadow 0s ease;
@@ -66,10 +52,8 @@ const Submenu = () => {
           top: 0;
           right: 0;
           left: 0;
-          background: ${theme.palette.accents_1};
-          box-shadow: ${
-            theme.type === 'dark' ? `inset 0 -1px ${theme.palette.border}` : 'rgba(0, 0, 0, 0.1) 0 0 15px 0'
-          };
+          background: ${theme.palette.background};
+          box-shadow: ${theme.type === 'dark' ? `none` : 'rgba(0, 0, 0, 0.1) 0 0 15px 0'};
         }
         .submenu__inner {
           display: flex;

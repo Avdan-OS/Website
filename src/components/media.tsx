@@ -29,7 +29,7 @@ const Media = () => {
         </a>
       </Grid>
       <Grid>
-        <a href="https://discord.gg/3TEbHG8hcP" target="_blank">
+        <a href="https://discord.gg/avdanos" target="_blank">
           <Card shadow>
             <FaDiscord size={26} />
           </Card>
