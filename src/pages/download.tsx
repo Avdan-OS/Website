@@ -1,7 +1,7 @@
 // prettier-ignore
 import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet } from '@geist-ui/core';
 import { useEffect, useState } from 'react';
-
+import NextLink from 'next/link';
 const index = () => {
   const theme = useTheme();
   const { setToast } = useToasts();
@@ -113,10 +113,11 @@ const index = () => {
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble">
             Having trouble? Click{' '}
-            <Link block href="/support">
-              here
-            </Link>{' '}
-            to get help!
+            <NextLink href="/support">
+              <>
+                <Link block>here</Link> to get help!
+              </>
+            </NextLink>
           </Card>
         </div>
       </div>

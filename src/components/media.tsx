@@ -1,56 +1,44 @@
 import { Grid, Card } from '@geist-ui/core';
-import { Linkedin, Youtube } from 'react-feather';
-import { RiTwitterFill, RiTwitterLine } from 'react-icons/ri';
-import { AiOutlineWindows, AiOutlineReddit, AiOutlineGithub } from 'react-icons/ai';
+
+import { RiTwitterFill } from 'react-icons/ri';
+import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
+import { FaRedditAlien, FaDiscord } from 'react-icons/fa';
+
 const Media = () => {
   return (
-    <Grid.Container style={{ marginBottom: -40 }} gap={2} justify="center">
+    <Grid.Container gap={1} justify="flex-start">
       <Grid>
-        <a href="https://twitter.com/az_software">
+        <a href="https://twitter.com/avdan_os" target="_blank">
           <Card shadow>
-            <RiTwitterLine size={26}></RiTwitterLine>
+            <RiTwitterFill size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://twitter.com/TeamAZSoftware">
+        <a href="https://github.com/Avdan-OS/" target="_blank">
           <Card shadow>
-            <RiTwitterFill size={26}></RiTwitterFill>
+            <AiFillGithub size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.linkedin.com/company/azsoftware-org/">
+        <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank">
           <Card shadow>
-            <Linkedin></Linkedin>
+            <AiFillYoutube size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://github.com/azproductions">
+        <a href="https://discord.gg/3TEbHG8hcP" target="_blank">
           <Card shadow>
-            <AiOutlineGithub size={26}></AiOutlineGithub>
+            <FaDiscord size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.youtube.com/channel/UCGsb29I0qJD_iry1C92r2ww">
+        <a href="https://www.reddit.com/r/AvdanOS/" target="_blank">
           <Card shadow>
-            <Youtube></Youtube>
-          </Card>
-        </a>
-      </Grid>
-      <Grid>
-        <a href="https://www.microsoft.com/en-us/p/kookaburra/9pcq0dhdtzpm#activetab=pivot:overviewtab">
-          <Card shadow>
-            <AiOutlineWindows size={26}></AiOutlineWindows>
-          </Card>
-        </a>
-      </Grid>
-      <Grid>
-        <a href="https://reddit.com/r/azsoftware">
-          <Card shadow>
-            <AiOutlineReddit size={26}></AiOutlineReddit>
+            <FaRedditAlien size={26} />
           </Card>
         </a>
       </Grid>
