@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Tabs, useTheme } from '@geist-ui/core';
+import { Tabs, useTheme, Image } from '@geist-ui/core';
 import { Alert } from '../alert';
 
 const Submenu = () => {
@@ -13,14 +13,23 @@ const Submenu = () => {
     document.addEventListener('scroll', scrollHandler);
     return () => document.removeEventListener('scroll', scrollHandler);
   }, [setSticky]);
-
+  const renderBannerImage = () => {
+    if (theme.type == 'light') return '/assets/logo/banner.png';
+    else return '/assets/logo/banner-dark.png';
+  };
   return (
     <>
       {sticky ? (
         <nav className="submenu__wrapper">
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
-              <h4 className="submenu__highlight">AvdanOS</h4>
+              <h4 className="submenu__highlight">
+                <img
+                  height={'19px'}
+                  style={{ overflow: 'initial', pointerEvents: 'none' }}
+                  src={renderBannerImage()}
+                ></img>
+              </h4>
               <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                 <Tabs.Item label="Overview" value="/" />
                 <Tabs.Item label="Switching to AvdanOS" value="/test" />
