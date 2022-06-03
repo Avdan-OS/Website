@@ -24,8 +24,7 @@ const index = () => {
             </NextLink>
           </div>
         </Card>
-      </div>
-      testtest testtesttesttest testtesttesttest testtesttesttest testtest testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  testtest  
+      </div> 
       <style jsx>{`
         .card-container {
           display: flex;
