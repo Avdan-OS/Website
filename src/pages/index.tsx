@@ -18,7 +18,7 @@ const index = () => {
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             <NextLink href="/downloads">
-              <Button style={{ marginLeft: 12 }} shadow type="success">
+              <Button shadow type="success">
                 Download Now
               </Button>
             </NextLink>

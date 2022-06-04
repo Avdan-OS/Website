@@ -1,6 +1,7 @@
 // prettier-ignore
 import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet } from '@geist-ui/core';
-import { useEffect, useState } from 'react';
+import dynamicWidth from '@/lib/dynamic-width';
+import { useState } from 'react';
 import NextLink from 'next/link';
 const index = () => {
   const theme = useTheme();
@@ -24,7 +25,17 @@ const index = () => {
   const [gridWidth, setGridWidth] = useState(6);
   const [shasum, setShasum] = useState('');
 
-  useEffect(() => {
+  dynamicWidth((width) => {
+    if (width < 1050) {
+      setGridDirection('column');
+      setGridWidth(14);
+    } else {
+      setGridDirection('row');
+      setGridWidth(6);
+    }
+  })
+
+  /*useEffect(() => {
     if (window.innerWidth < 1050) {
       setGridDirection('column');
       setGridWidth(12);
@@ -38,7 +49,7 @@ const index = () => {
         setGridWidth(6);
       }
     });
-  }, []);
+  }, []);*/
 
   return (
     <>
@@ -54,7 +65,7 @@ const index = () => {
               style={{ background: theme.palette.accents_1 }}
               hoverable
               paddingTop="40px"
-              padding="15px"
+              paddingBottom="10px"
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
@@ -84,7 +95,7 @@ const index = () => {
               style={{ background: theme.palette.accents_1 }}
               hoverable
               paddingTop="40px"
-              padding="15px"
+              paddingBottom="10px"
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />

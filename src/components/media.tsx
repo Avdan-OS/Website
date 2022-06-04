@@ -1,5 +1,4 @@
 import { Grid, Card } from '@geist-ui/core';
-
 import { RiTwitterFill } from 'react-icons/ri';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 import { FaRedditAlien, FaDiscord } from 'react-icons/fa';
