@@ -33,23 +33,7 @@ const index = () => {
       setGridDirection('row');
       setGridWidth(6);
     }
-  })
-
-  /*useEffect(() => {
-    if (window.innerWidth < 1050) {
-      setGridDirection('column');
-      setGridWidth(12);
-    }
-    window.addEventListener('resize', () => {
-      if (window.innerWidth < 1050) {
-        setGridDirection('column');
-        setGridWidth(15);
-      } else {
-        setGridDirection('row');
-        setGridWidth(6);
-      }
-    });
-  }, []);*/
+  });
 
   return (
     <>
