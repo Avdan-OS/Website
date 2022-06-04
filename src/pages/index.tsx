@@ -27,7 +27,7 @@ const index = () => {
           </div>
         </Card>
       </div>
-      <br>
+      <br/>
       <style jsx>{`
         .card-container {
           display: flex;
