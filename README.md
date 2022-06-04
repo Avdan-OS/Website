@@ -4,9 +4,9 @@
 
 <div align="center">
 
-    [![pages-build-deployment](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/pages/pages-build-deployment)
-    [![NPM Dev site Deploy](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-deploy.yml/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-deploy.yml)
-    [![NPM Dev site CI/CD](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-test.js.yml/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-test.js.yml)
+[![pages-build-deployment](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/pages/pages-build-deployment)
+[![NPM Dev site Deploy](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-deploy.yml/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-deploy.yml)
+[![NPM Dev site CI/CD](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-test.js.yml/badge.svg)](https://github.com/Avdan-OS/avdan-os.github.io/actions/workflows/npm-test.js.yml)
 
 </div>
 
