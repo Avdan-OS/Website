@@ -17,14 +17,14 @@ const index = () => {
       <div className="center card-container">
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            <NextLink href="/download">
+            <NextLink href="/downloads">
               <Button style={{ marginLeft: 12 }} shadow type="success">
                 Download Now
               </Button>
             </NextLink>
           </div>
         </Card>
-      </div> 
+      </div>
       <style jsx>{`
         .card-container {
           display: flex;

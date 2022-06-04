@@ -31,10 +31,11 @@ const Submenu = () => {
                 ></img>
               </h4>
               <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Overview" value="/" />
-                <Tabs.Item label="Switching to AvdanOS" value="/test" />
-                <Tabs.Item label="Privacy and Security" value="/test" />
-                <Tabs.Item label="Gaming" value="/test" />
+                <Tabs.Item label="Home" value="/" />
+                <Tabs.Item label="Features" value="/features" />
+                <Tabs.Item label="Downloads" value="/downloads" />
+                <Tabs.Item label="Support" value="/support" />
+                <Tabs.Item label="Documentation" value="/docs" />
               </Tabs>
             </div>
           </div>
