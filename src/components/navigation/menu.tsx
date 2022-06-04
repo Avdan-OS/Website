@@ -32,7 +32,7 @@ const Menu = ({}) => {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Getting started" value="/download" />
+                    <Tabs.Item label="Downloads" value="/downloads" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
@@ -46,7 +46,7 @@ const Menu = ({}) => {
                 type="abort"
                 onClick={() => fireClick()}
               ></Button>
-              <NextLink href="/download" passHref>
+              <NextLink href="/downloads" passHref>
                 <a>
                   <Button
                     aria-label="Open docs"
@@ -78,7 +78,7 @@ const Menu = ({}) => {
                   <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
-                    <Tabs.Item label="Getting started" value="/download" />
+                    <Tabs.Item label="Downloads" value="/downloads" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
@@ -92,7 +92,7 @@ const Menu = ({}) => {
                 type="abort"
                 onClick={() => fireClick()}
               ></Button>
-              <NextLink href="/download" passHref>
+              <NextLink href="/downloads" passHref>
                 <a>
                   <Button
                     aria-label="Open docs"

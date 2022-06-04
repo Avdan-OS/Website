@@ -3,7 +3,7 @@
   "description": "The desktop you know and love.",
   "version": "0.3.0",
   "author": "AZ Software",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

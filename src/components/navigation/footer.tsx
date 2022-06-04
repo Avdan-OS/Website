@@ -1,8 +1,7 @@
 import { useTheme, Tag, Spacer, Link } from '@geist-ui/core';
 import NextLink from 'next/link';
-import Status from '../status';
 import Logo from '../logo';
-import Media from '../media';
+
 const Footer: React.FC = () => {
   const theme = useTheme();
   const colorSwitch = () => {
@@ -35,62 +34,74 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="col">
-              <h3>Documentation</h3>
+            <div className="col" style={{ marginTop: '0' }}>
+              <h3>External Links</h3>
               <ul>
                 <li>
-                  <NextLink href="/downloads">
-                    <a>Download</a>
-                  </NextLink>
+                  <a href="https://twitter.com/avdan_os" target="_blank">
+                    Twitter
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="/cloud#hosting">
-                    <a>Hosting</a>
-                  </NextLink>
+                  <a href="https://github.com/Avdan-OS/" target="_blank">
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="/cloud">
-                    <a>Cloud</a>
-                  </NextLink>
-                </li>
-              </ul>
-            </div>
-            <div className="col col-md item">
-              <h3>Guides</h3>
-              <ul>
-                <li>
-                  <NextLink href="/docs">
-                    <a>Documentation</a>
-                  </NextLink>
+                  <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank">
+                    YouTube
+                  </a>
                 </li>
                 <li>
-                  <NextLink href="#">
-                    <a>Examples</a>
-                  </NextLink>
+                  <a href="https://discord.gg/avdanos" target="_blank">
+                    Discord
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.reddit.com/r/AvdanOS/" target="_blank">
+                    Reddit
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="col-md item text">
-              <h2 style={{ fontFamily: 'Poppins', marginTop: 30, fontWeight: 500, textAlign: 'center' }}>
+              <h3 style={{ marginTop: 30, textAlign: 'center' }}>
                 <Logo />
-              </h2>
+              </h3>
             </div>
             <div className="col-md item">
+              <h3>Legal</h3>
               <ul>
-                <ol>
-                  <NextLink href="/privacy">
-                    <a>Privacy</a>
+                <li>
+                  <NextLink href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+                    <a>License</a>
                   </NextLink>
-                </ol>
-                <ol>
-                  <NextLink href="/security">
-                    <a>Security</a>
+                </li>
+                <li>
+                  <NextLink href="/eula">
+                    <a>EULA</a>
                   </NextLink>
-                </ol>
+                </li>
               </ul>
             </div>
             <div className="col-sm-6 col-md-3 item" style={{ marginTop: 15 }}>
-              <Status />
+              <Tag type="secondary" style={{ color: colorSwitch() }}>
+                View the{' '}
+                <strong>
+                  <Link target="_blank" href="https://dns.avdanos.com">
+                    History of Incidents
+                  </Link>
+                </strong>
+              </Tag>
+              <Spacer h={0.5} />
+              <Tag type="secondary" style={{ color: colorSwitch() }}>
+                Check out our{' '}
+                <strong>
+                  <Link target="_blank" href="/privacy-security">
+                    Privacy and Security
+                  </Link>
+                </strong>
+              </Tag>
               <Spacer h={0.5} />
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 Inspired by{' '}
@@ -102,13 +113,19 @@ const Footer: React.FC = () => {
               </Tag>
             </div>
           </div>
-          <p>Social Media Links</p>
-          <Media />
-          <p className="copyright">
-            Made by the{' '}
-            <Link underline color href="https://github.com/Avdan-OS">
-              AvdanOS Contributors.
-            </Link>{' '}
+          <p className="copyright" style={{ marginTop: '-10px' }}>
+            ©{' '}
+            <strong>
+              <Link underline href="https://github.com/Avdan-OS">
+                AvdanOS Contributors
+              </Link>
+            </strong>{' '}
+            under{' '}
+            <strong>
+              <Link underline href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+                GPL-3.0
+              </Link>
+            </strong>,{' '}
             2021-{new Date().getFullYear()}
           </p>
         </div>

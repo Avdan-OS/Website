@@ -1,4 +1,4 @@
-import { Button, Card, Text, Image } from '@geist-ui/core';
+import { Button, Card, Text, Image, Spacer } from '@geist-ui/core';
 import NextLink from 'next/link';
 
 const index = () => {
@@ -14,20 +14,23 @@ const index = () => {
           </Card>
         </div>
       </div>
-      <br>
+      <Spacer h={2} />
       <div className="center card-container">
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            <p> Wanna give it a shot? </p>
-            <NextLink href="/download">
-              <Button style={{ marginLeft: 12 }} shadow type="success">
+            <p>
+              {' '}
+              <strong>Wanna give it a shot?</strong>{' '}
+            </p>{' '}
+            <NextLink href="/downloads">
+              <Button shadow type="success" marginLeft="15px">
                 Download Now
               </Button>
             </NextLink>
           </div>
         </Card>
       </div>
-      <br/>
+      <Spacer h={2} />
       <style jsx>{`
         .card-container {
           display: flex;
