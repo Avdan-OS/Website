@@ -8,16 +8,22 @@ const index = () => {
         <Text className="header" h1 style={{ marginTop: '25px' }}>
           Your PC but even better.
         </Text>
-        <div className="mx-auto" style={{ width: '60%' }}>
-          <Card shadow hoverable>
-            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%" />
+        <div className="mx-auto" style={{ width: '80%', height: '100%' }}>
+          <Card shadow>
+            <iframe
+              scrolling="no"
+              style={{ width: '100%', height: '43rem ', overflow: 'hidden' }}
+              height="100%"
+              width="100%"
+              src="https://dynamicos.netlify.app/"
+            />
           </Card>
         </div>
       </div>
       <Spacer h={2} />
       <div className="center card-container">
         <Card hoverable>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <p>
               {' '}
               <strong>Wanna give it a shot?</strong>{' '}
