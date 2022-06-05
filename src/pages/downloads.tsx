@@ -1,5 +1,5 @@
 // prettier-ignore
-import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
@@ -46,12 +46,14 @@ const index = () => {
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           <Grid xs={gridWidth}>
             <Card
-              style={{ background: theme.palette.accents_1 }}
+              shadow
+              style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="10px"
               width="100%"
             >
+              <Tag type="success">Recommended Version</Tag>
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
               <Spacer h={2} />
               <Button
@@ -76,7 +78,7 @@ const index = () => {
           </Grid>
           <Grid xs={gridWidth}>
             <Card
-              style={{ background: theme.palette.accents_1 }}
+              style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="10px"
@@ -106,7 +108,7 @@ const index = () => {
           </Grid>
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
-          <Card hoverable className="text-center trouble">
+          <Card hoverable className="text-center trouble"   style={{ background: theme.palette.accents_1 }}>
             Having trouble? Click{' '}
             <NextLink href="/support">
               <>

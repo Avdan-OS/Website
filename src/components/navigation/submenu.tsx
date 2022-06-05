@@ -62,7 +62,7 @@ const Submenu = () => {
           top: 0;
           right: 0;
           left: 0;
-          background: ${theme.palette.background};
+          background: ${theme.palette.accents_1};
           box-shadow: ${theme.type === 'dark' ? `none` : 'rgba(0, 0, 0, 0.1) 0 0 15px 0'};
         }
         .submenu__inner {
