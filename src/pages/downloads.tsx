@@ -53,7 +53,7 @@ const index = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">Recommended Version</Tag>
+              <Tag type="success">For most people</Tag>
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
               <Spacer h={2} />
               <Button
@@ -80,8 +80,8 @@ const index = () => {
             <Card
               style={{ background: theme.palette.background }}
               hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
+              paddingTop="50px"
+              paddingBottom="25px"
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
@@ -108,7 +108,7 @@ const index = () => {
           </Grid>
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
-          <Card hoverable className="text-center trouble"   style={{ background: theme.palette.accents_1 }}>
+          <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
             Having trouble? Click{' '}
             <NextLink href="/support">
               <>

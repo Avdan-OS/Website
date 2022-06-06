@@ -1,4 +1,4 @@
-import { Button, Card, Text, Image, Spacer } from '@geist-ui/core';
+import { Button, Card, Text, Spacer, Image } from '@geist-ui/core';
 import NextLink from 'next/link';
 
 const index = () => {
@@ -10,30 +10,26 @@ const index = () => {
         </Text>
         <div className="mx-auto" style={{ width: '80%', height: '100%' }}>
           <Card shadow>
-            <iframe
-              scrolling="no"
-              style={{ width: '100%', height: '43rem ', overflow: 'hidden' }}
-              height="100%"
-              width="100%"
-              src="https://dynamicos.netlify.app/"
-            />
+            <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%" />
           </Card>
         </div>
       </div>
       <Spacer h={2} />
       <div className="center card-container">
         <Card hoverable>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-            <p>
-              {' '}
-              <strong>Wanna give it a shot?</strong>{' '}
-            </p>{' '}
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+            <NextLink href="/preview">
+              <Button shadow type="secondary" margin="15px">
+                Test in your browser
+              </Button>
+            </NextLink>
+            <p>Or</p>
             <NextLink href="/downloads">
-              <Button shadow type="success" marginLeft="15px">
+              <Button shadow type="success" margin="15px">
                 Download Now
               </Button>
             </NextLink>
-          </div>
+          </div>{' '}
         </Card>
       </div>
       <Spacer h={2} />
