@@ -34,6 +34,7 @@ const Menu = ({}) => {
                     <Tabs.Item label="Features" value="/features" />
                     <Tabs.Item label="Downloads" value="/downloads" />
                     <Tabs.Item label="Support" value="/support" />
+                    <Tabs.Item label="Preview" value="/preview" />
                     <Tabs.Item label="Documentation" value="/docs" />
                   </Tabs>
                 </ul>
