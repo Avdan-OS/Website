@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Tabs, useTheme, Image } from '@geist-ui/core';
+import { Tabs, useTheme } from '@geist-ui/core';
 import { Alert } from '../alert';
 
 const Submenu = () => {
