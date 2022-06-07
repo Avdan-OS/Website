@@ -1,4 +1,4 @@
-import { Button, Card } from '@geist-ui/core';
+import { Button, Card, Text } from '@geist-ui/core';
 import { useEffect, useRef } from 'react';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>();
@@ -11,6 +11,9 @@ const preview = () => {
 
   return (
     <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
+      <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
+        Try in your browser.
+      </Text>
       <Card shadow>
         <iframe
           ref={iframeRef}
