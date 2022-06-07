@@ -163,7 +163,7 @@ const index = () => {
             system (no installation required) is strongly recommended to getting the full experience from the operating
             system.
             <br />
-            *Live system is currently not avalible because the system is still under development
+            *Live system is currently not available because the system is still under development
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
