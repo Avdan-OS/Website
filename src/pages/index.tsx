@@ -1,4 +1,4 @@
-import { Button, Card, Text, Spacer, Image } from '@geist-ui/core';
+import { Button, Card, Text, Spacer, Image, ButtonGroup } from '@geist-ui/core';
 import NextLink from 'next/link';
 
 const index = () => {
@@ -18,17 +18,18 @@ const index = () => {
       <div className="center card-container">
         <Card hoverable>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            <NextLink href="/preview">
-              <Button shadow type="secondary" margin="15px">
-                Test in your browser
-              </Button>
-            </NextLink>
-            <p>Or</p>
-            <NextLink href="/downloads">
-              <Button shadow type="success" margin="15px">
-                Download Now
-              </Button>
-            </NextLink>
+            <ButtonGroup>
+              <NextLink href="/demo">
+                <Button shadow type="secondary" margin="10px">
+                  Try in your browser
+                </Button>
+              </NextLink>
+              <NextLink href="/downloads">
+                <Button shadow type="success" margin="10px">
+                  Download Now
+                </Button>
+              </NextLink>
+            </ButtonGroup>
           </div>{' '}
         </Card>
       </div>

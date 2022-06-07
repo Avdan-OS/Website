@@ -6,19 +6,25 @@ import NextLink from 'next/link';
 const index = () => {
   const theme = useTheme();
   const { setToast } = useToasts();
-  const { setVisible, bindings } = useModal();
+  const integrityModal = useModal();
+  const webviewModal = useModal();
 
-  const download = (type: 'x64' | 'arm') => {
+  const download = (type: 'x64' | 'arm' | 'web') => {
     switch (type) {
       case 'x64':
         setShasum('testing-x64-shasum');
+        integrityModal.setVisible(true);
+        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
         break;
       case 'arm':
         setShasum('testing-arm-shasum');
+        integrityModal.setVisible(true);
+        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+        break;
+      case 'web':
+        webviewModal.setVisible(true);
         break;
     }
-    setVisible(true);
-    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
   };
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
@@ -44,6 +50,29 @@ const index = () => {
         </Text>
         <Spacer h={1} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
+          <Grid xs={gridWidth}>
+            <Card
+              style={{ background: theme.palette.background }}
+              hoverable
+              paddingTop="40px"
+              paddingBottom="10px"
+              width="100%"
+            >
+              <Image draggable="false" src="/assets/icons/WEB.png" height="100%" width="170px" />
+              <Spacer h={2} />
+              <Button
+                type="success"
+                shadow
+                onClick={() => {
+                  download('web');
+                }}
+                margin="10px"
+              >
+                Open Demo
+              </Button>
+              <Spacer h={3.7} />
+            </Card>
+          </Grid>
           <Grid xs={gridWidth}>
             <Card
               shadow
@@ -79,8 +108,8 @@ const index = () => {
             <Card
               style={{ background: theme.palette.background }}
               hoverable
-              paddingTop="50px"
-              paddingBottom="25px"
+              paddingTop="40px"
+              paddingBottom="10px"
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
@@ -117,14 +146,32 @@ const index = () => {
           </Card>
         </div>
       </div>
-      <Modal {...bindings}>
+      <Modal {...integrityModal.bindings}>
         <Modal.Title>Integrity check</Modal.Title>
         <Modal.Subtitle>Check your download's shasum</Modal.Subtitle>
         <Modal.Content>
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>
           <Snippet symbol="" text={shasum}></Snippet>
         </Modal.Content>
-        <Modal.Action onClick={() => setVisible(false)}>Close</Modal.Action>
+        <Modal.Action onClick={() => integrityModal.setVisible(false)}>Close</Modal.Action>
+      </Modal>
+      <Modal {...webviewModal.bindings}>
+        <Modal.Title>Web preview</Modal.Title>
+        <Modal.Content>
+          <p>
+            You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
+            system (no installation required) is strongly recommended to getting the full experience from the operating
+            system.
+            <br />
+            *Live system is currently not avalible because the system is still under development
+          </p>
+        </Modal.Content>
+        <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
+          Cancel
+        </Modal.Action>
+        <Modal.Action accessKey="ENTER" onClick={() => window.location.replace('https://dynamicos.netlify.app/')}>
+          Yes, take me there
+        </Modal.Action>
       </Modal>
       <style jsx>{`
         .card-container {
