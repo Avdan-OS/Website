@@ -1,13 +1,11 @@
-import useWindowDimensions from '@/components/hooks/useWindowDimensions';
-import { Button, Card, Modal, Text, useModal, useToasts } from '@geist-ui/core';
-import { useRouter } from 'next/router';
-import { useEffect, useRef } from 'react';
+import { Button, Card, Modal, Text, useModal } from '@geist-ui/core';
+import dynamicWidth from '@/lib/dynamic-width';
+
+import { useRef } from 'react';
 const preview = () => {
-  const router = useRouter();
   const iframeRef = useRef<HTMLIFrameElement>();
 
   const minWidthNeeded = 1255;
-  const { height, width } = useWindowDimensions();
 
   const { visible, setVisible, bindings } = useModal();
 
@@ -17,31 +15,20 @@ const preview = () => {
       iframe.requestFullscreen();
     }
   };
-  useEffect(() => {
-    if (width <= minWidthNeeded) {
-      setVisible(true);
 
-      setTimeout(() => {
-        router.push('/');
-      }, 10000);
+  dynamicWidth((width) => {
+    if (width < minWidthNeeded) {
+      setVisible(true);
     }
-  }, []);
+  });
 
   return (
     <>
       <Modal {...bindings}>
         <Modal.Title>Unsupported device</Modal.Title>
-        <Modal.Subtitle>Going to home page in 10 seconds</Modal.Subtitle>
         <Modal.Content>
-          <p>Your screen is small to view the desktop environment. Please use your PC ..</p>
+          <p>Your screen is small to view the desktop environment. Please use your PC ...</p>
         </Modal.Content>
-        <Modal.Action
-          onClick={() => {
-            router.push('/');
-          }}
-        >
-          Submit
-        </Modal.Action>
       </Modal>
 
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
