@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>();
 
-  const minWidthNeeded = 1255;
+  const minWidthNeeded = 1225;
 
   const { setVisible, bindings } = useModal();
 
