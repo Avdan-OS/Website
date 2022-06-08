@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-md-3 item" style={{ marginTop: 15 }}>
+            <div className="col-sm-6 col-md-3 item " style={{ marginTop: 15, width: 'max-content' }}>
               <Tag type="secondary" style={{ color: colorSwitch() }}>
                 View the{' '}
                 <strong>
@@ -125,8 +125,8 @@ const Footer: React.FC = () => {
               <Link underline href="https://www.gnu.org/licenses/gpl-3.0.en.html">
                 GPL-3.0
               </Link>
-            </strong>,{' '}
-            2021-{new Date().getFullYear()}
+            </strong>
+            , 2021-{new Date().getFullYear()}
           </p>
         </div>
       </footer>
