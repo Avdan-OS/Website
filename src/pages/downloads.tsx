@@ -30,14 +30,17 @@ const index = () => {
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
   const [shasum, setShasum] = useState('');
+  const [demoSpacer, setDemoSpacer] = useState(3.7);
 
   dynamicWidth((width) => {
-    if (width < 1050) {
+    if (width < 970) {
       setGridDirection('column');
       setGridWidth(14);
+      setDemoSpacer(0);
     } else {
       setGridDirection('row');
       setGridWidth(6);
+      setDemoSpacer(3.7);
     }
   });
 
@@ -70,7 +73,7 @@ const index = () => {
               >
                 Open Demo
               </Button>
-              <Spacer h={3.7} />
+              <Spacer h={demoSpacer} />
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
@@ -83,6 +86,7 @@ const index = () => {
               width="100%"
             >
               <Tag type="success">For most people</Tag>
+              <Spacer h={0} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
               <Button
                 type="success"
@@ -94,6 +98,7 @@ const index = () => {
               >
                 Direct Download
               </Button>
+              <Spacer h={0} />
               <Button
                 onClick={() => {
                   download('x64');
@@ -124,6 +129,7 @@ const index = () => {
               >
                 Direct Download
               </Button>
+              <Spacer h={0} />
               <Button
                 onClick={() => {
                   download('arm');
