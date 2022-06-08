@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>();
 
-  const minWidthNeeded = 1255;
+  const minWidthNeeded = 1225;
 
   const { setVisible, bindings } = useModal();
 
@@ -22,6 +22,11 @@ const preview = () => {
     }
   });
 
+  const takeMeBack = () => {
+    setVisible(false);
+    history.back();
+  };
+
   return (
     <>
       <Modal {...bindings}>
@@ -32,7 +37,7 @@ const preview = () => {
         <Modal.Action passive onClick={() => setVisible(false)}>
           Proceed
         </Modal.Action>
-        <Modal.Action onClick={() => history.back()}>Take me back</Modal.Action>
+        <Modal.Action onClick={takeMeBack}>Take me back</Modal.Action>
       </Modal>
 
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
