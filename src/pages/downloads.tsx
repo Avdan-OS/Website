@@ -169,9 +169,7 @@ const index = () => {
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
           Cancel
         </Modal.Action>
-        <Modal.Action accessKey="ENTER" onClick={() => window.location.replace('https://dynamicos.netlify.app/')}>
-          Yes, take me there
-        </Modal.Action>
+        <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
       </Modal>
       <style jsx>{`
         .card-container {

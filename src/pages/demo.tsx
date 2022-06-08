@@ -7,7 +7,7 @@ const preview = () => {
 
   const minWidthNeeded = 1255;
 
-  const { visible, setVisible, bindings } = useModal();
+  const { setVisible, bindings } = useModal();
 
   const fullScreen = () => {
     const iframe = iframeRef.current;
@@ -29,6 +29,10 @@ const preview = () => {
         <Modal.Content>
           <p>Your screen is small to view the desktop environment. Please use your PC ...</p>
         </Modal.Content>
+        <Modal.Action passive onClick={() => setVisible(false)}>
+          Proceed
+        </Modal.Action>
+        <Modal.Action onClick={() => history.back()}>Take me back</Modal.Action>
       </Modal>
 
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
