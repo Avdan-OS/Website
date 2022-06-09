@@ -11,7 +11,7 @@ const Submenu = () => {
 
   const [useMobileBar, setMobileBar] = useState(false)
   dynamicWidth(width => {
-    (width < 750) ? setMobileBar(true) : setMobileBar(false);
+    (width < 1200) ? setMobileBar(true) : setMobileBar(false);
   })
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);

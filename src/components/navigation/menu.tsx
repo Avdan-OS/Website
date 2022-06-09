@@ -17,7 +17,7 @@ const Menu = () => {
   const [useAltMenuPosition, setAltMenuPosition] = useState(false);
   dynamicWidth((width) => {
     width < 1200 ? setMobileBar(true) : setMobileBar(false);
-    width < 770 ? setAltMenuPosition(true) : setAltMenuPosition(false);
+    width < 750 ? setAltMenuPosition(true) : setAltMenuPosition(false);
   });
   const fireClick = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
