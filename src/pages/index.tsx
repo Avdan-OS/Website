@@ -1,7 +1,13 @@
 import { Button, Card, Text, Spacer, Image } from '@geist-ui/core';
 import NextLink from 'next/link';
+import dynamicWidth from '@/lib/dynamic-width';
+import { useState } from 'react';
 
 const index = () => {
+  const [useMobileBar, setMobileBar] = useState(false)
+  dynamicWidth(width => {
+    (width < 1200) ? setMobileBar(true) : setMobileBar(false);
+  })
   return (
     <>
       <div className="text-center">
@@ -17,11 +23,11 @@ const index = () => {
       <Spacer h={2} />
       <div className="center card-container">
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-          <NextLink href="/demo">
+          {useMobileBar ? null : (<NextLink href="/demo">
             <Button shadow type="secondary" margin="10px">
               Try in your browser
             </Button>
-          </NextLink>
+          </NextLink>)}
           <NextLink href="/downloads">
             <Button shadow type="success" margin="10px">
               Download Now
