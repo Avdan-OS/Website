@@ -9,10 +9,10 @@ const Submenu = () => {
   const router = useRouter();
   const [sticky, setSticky] = useState(false);
 
-  const [useMobileBar, setMobileBar] = useState(false)
-  dynamicWidth(width => {
-    (width < 1200) ? setMobileBar(true) : setMobileBar(false);
-  })
+  const [useMobileBar, setMobileBar] = useState(false);
+  dynamicWidth((width) => {
+    width < 1200 ? setMobileBar(true) : setMobileBar(false);
+  });
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
@@ -28,34 +28,34 @@ const Submenu = () => {
         <nav className="submenu__wrapper">
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
-              { useMobileBar ? (
+              {useMobileBar ? (
                 <div className="submenu__inner">
-                <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                <Tabs.Item label="Home" value="/" />
-                <Tabs.Item label="Features" value="/features" />
-                <Tabs.Item label="Downloads" value="/downloads" />
-                <Tabs.Item label="Support" value="/support" />
-                <Tabs.Item label='Docs' value="/docs" />
-              </Tabs>
-              </div>
+                  <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
+                    <Tabs.Item label="Home" value="/" />
+                    <Tabs.Item label="Features" value="/features" />
+                    <Tabs.Item label="Downloads" value="/downloads" />
+                    <Tabs.Item label="Support" value="/support" />
+                    <Tabs.Item label="Docs" value="/docs" />
+                  </Tabs>
+                </div>
               ) : (
                 <div className="submenu__inner">
-                <h4 className="submenu__highlight">
-                <img
-                  height={'19px'}
-                  style={{ overflow: 'initial', pointerEvents: 'none' }}
-                  src={renderBannerImage()}
-                />
-              </h4>
-                <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                  <Tabs.Item label="Home" value="/" />
-                  <Tabs.Item label="Features" value="/features" />
-                  <Tabs.Item label="Downloads" value="/downloads" />
-                  <Tabs.Item label="Support" value="/support" />
-                  <Tabs.Item label='Documentation' value="/docs" />
-                  <Tabs.Item label='Demo' value="/demo" />
-                </Tabs>
-              </div>
+                  <h4 className="submenu__highlight">
+                    <img
+                      height={'19px'}
+                      style={{ overflow: 'initial', pointerEvents: 'none' }}
+                      src={renderBannerImage()}
+                    />
+                  </h4>
+                  <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
+                    <Tabs.Item label="Home" value="/" />
+                    <Tabs.Item label="Features" value="/features" />
+                    <Tabs.Item label="Downloads" value="/downloads" />
+                    <Tabs.Item label="Support" value="/support" />
+                    <Tabs.Item label="Documentation" value="/docs" />
+                    <Tabs.Item label="Demo" value="/demo" />
+                  </Tabs>
+                </div>
               )}
             </div>
           </div>
@@ -82,7 +82,9 @@ const Submenu = () => {
           top: 0;
           right: 0;
           left: 0;
-          background: ${theme.palette.accents_1};
+          background: ${theme.palette.accents_1}B2; // accent_1 + opacity
+          -webkit-backdrop-filter: blur(2em);
+          backdrop-filter: blur(2em);
           box-shadow: ${theme.type === 'dark' ? `none` : 'rgba(0, 0, 0, 0.1) 0 0 15px 0'};
         }
         .submenu__inner {

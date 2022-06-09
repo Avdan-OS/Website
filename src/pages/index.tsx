@@ -17,7 +17,7 @@ const index = () => {
         <div className="mx-auto" style={{ width: '80%', height: '100%' }}>
           <Card shadow>
             {/* <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%" /> */}
-            <video controls autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
+            <video autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
               <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
             </video>
           </Card>
