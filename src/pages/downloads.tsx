@@ -88,7 +88,6 @@ const index = () => {
               <Tag type="success">For most people</Tag>
               <Spacer h={0} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
-              <Spacer h={2} />
               <Button
                 type="success"
                 shadow
