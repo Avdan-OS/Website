@@ -2,7 +2,7 @@
   "name": "AvdanOS",
   "description": "The desktop you know and love.",
   "version": "0.3.0",
-  "author": "AZ Software",
+  "author": "AvdanOS",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UpRelease/UpRelease.git"
+    "url": "git+https://github.com/Avdan-OS/website.git"
   },
   "bugs": {
-    "url": "https://github.com/UpRelease/UpRelease/issues"
+    "url": "https://github.com/Avdan-OS/website/issues"
   },
   "dependencies": {
     "@geist-ui/core": "^2.3.4",
