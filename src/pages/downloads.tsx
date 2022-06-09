@@ -3,6 +3,7 @@ import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal,
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
+
 const index = () => {
   const theme = useTheme();
   const { setToast } = useToasts();
@@ -30,9 +31,11 @@ const index = () => {
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
   const [shasum, setShasum] = useState('');
+  const [useMobileMode, setMobileMode] = useState(false)
 
-  dynamicWidth((width) => {
-    if (width < 1050) {
+  dynamicWidth(width => {
+    (width < 1200) ? setMobileMode(true) : setMobileMode(false);
+    if (width < 950) {
       setGridDirection('column');
       setGridWidth(14);
     } else {
@@ -50,40 +53,42 @@ const index = () => {
         </Text>
         <Spacer h={1} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
-            >
-              <Image draggable="false" src="/assets/icons/WEB.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button
-                type="success"
-                shadow
-                onClick={() => {
-                  download('web');
-                }}
-                margin="10px"
+          {useMobileMode ? null : (
+            <Grid xs={gridWidth}>
+              <Card
+                style={{ background: theme.palette.background }}
+                hoverable
+                paddingTop="40px"
+                paddingBottom="10px"
+                width= "100%"
               >
-                Open Demo
-              </Button>
-              <Spacer h={3.7} />
-            </Card>
-          </Grid>
+                <Image draggable="false" src="/assets/icons/WEB.png" height="100%" width="170px" />
+                <Spacer h={2} />
+                <Button
+                  type="success"
+                  shadow
+                  onClick={() => {
+                    download('web');
+                  }}
+                  margin="10px"
+                >
+                  Open Demo
+                </Button>
+                <Spacer h={3.7} />
+              </Card>
+            </Grid>
+          )}
           <Grid xs={gridWidth}>
             <Card
-              shadow
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="10px"
               width="100%"
             >
+              <Tag type="success">For most people</Tag>
+              <Spacer h={0} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
-              <Spacer h={2} />
               <Button
                 type="success"
                 shadow
@@ -94,6 +99,7 @@ const index = () => {
               >
                 Direct Download
               </Button>
+              <Spacer h={0} />
               <Button
                 onClick={() => {
                   download('x64');
@@ -104,7 +110,7 @@ const index = () => {
               </Button>
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
+          <Grid xs={gridWidth} >
             <Card
               style={{ background: theme.palette.background }}
               hoverable
@@ -124,6 +130,7 @@ const index = () => {
               >
                 Direct Download
               </Button>
+              <Spacer h={0} />
               <Button
                 onClick={() => {
                   download('arm');

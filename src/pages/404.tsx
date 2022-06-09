@@ -1,28 +1,22 @@
-import { Page, Text, Note, Link } from '@geist-ui/core';
+import { Page, Note } from '@geist-ui/core';
 import Head from 'next/head';
 
 const Page404 = () => {
   return (
     <>
       <Head>
-        <title>Page not found - AZ Software</title>
+        <title>Page not found</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="page__wrapper" style={{ height: '100%' }}>
-        <Page>
-          <Text h1>404.</Text>
-          <Text h4>This page does not exist.</Text>
-          <Note width="50%" type="warning" label="Tip">
-            Join in and{' '}
-            <Link underline color href="https://github.com/avdan-os">
-              help us
-            </Link>{' '}
-            out developing <strong>open-source software</strong>.
-          </Note>
-        </Page>
+      <div style={{ marginLeft: "70px", marginTop: "50px", paddingRight: "30px", marginBottom: '366px'}}>
+        <h1>404.</h1>
+        <h4>This page does not exist.</h4>
+        <Note style={{ display: 'inline-block' }} type="warning" label="Tip">
+          Join in and <a href="https://github.com/avdan-os">help us</a> out developing an{' '}
+          <strong>open-source operating system</strong>.
+        </Note>
       </div>
     </>
   );
 };
-
 export default Page404;

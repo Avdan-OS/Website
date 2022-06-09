@@ -2,12 +2,17 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
 import { Alert } from '../alert';
+import dynamicWidth from '@/lib/dynamic-width';
 
 const Submenu = () => {
   const theme = useTheme();
   const router = useRouter();
   const [sticky, setSticky] = useState(false);
 
+  const [useMobileBar, setMobileBar] = useState(false)
+  dynamicWidth(width => {
+    (width < 1200) ? setMobileBar(true) : setMobileBar(false);
+  })
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
@@ -23,21 +28,35 @@ const Submenu = () => {
         <nav className="submenu__wrapper">
           <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
             <div className="submenu__inner">
-              <h4 className="submenu__highlight">
-                <img
-                  height={'19px'}
-                  style={{ overflow: 'initial', pointerEvents: 'none' }}
-                  src={renderBannerImage()}
-                ></img>
-              </h4>
-              <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
+              { useMobileBar ? (
+                <div className="submenu__inner">
+                <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                 <Tabs.Item label="Home" value="/" />
                 <Tabs.Item label="Features" value="/features" />
                 <Tabs.Item label="Downloads" value="/downloads" />
                 <Tabs.Item label="Support" value="/support" />
-                <Tabs.Item label="Demo" value="/demo" />
-                <Tabs.Item label="Documentation" value="/docs" />
+                <Tabs.Item label='Docs' value="/docs" />
               </Tabs>
+              </div>
+              ) : (
+                <div className="submenu__inner">
+                <h4 className="submenu__highlight">
+                <img
+                  height={'19px'}
+                  style={{ overflow: 'initial', pointerEvents: 'none' }}
+                  src={renderBannerImage()}
+                />
+              </h4>
+                <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
+                  <Tabs.Item label="Home" value="/" />
+                  <Tabs.Item label="Features" value="/features" />
+                  <Tabs.Item label="Downloads" value="/downloads" />
+                  <Tabs.Item label="Support" value="/support" />
+                  <Tabs.Item label='Documentation' value="/docs" />
+                  <Tabs.Item label='Demo' value="/demo" />
+                </Tabs>
+              </div>
+              )}
             </div>
           </div>
         </nav>

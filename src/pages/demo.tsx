@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>();
 
-  const minWidthNeeded = 1225;
+  const minWidthNeeded = 1200;
 
   const { setVisible, bindings } = useModal();
 
@@ -22,24 +22,8 @@ const preview = () => {
     }
   });
 
-  const takeMeBack = () => {
-    setVisible(false);
-    history.back();
-  };
-
   return (
     <>
-      <Modal {...bindings}>
-        <Modal.Title>Unsupported device</Modal.Title>
-        <Modal.Content>
-          <p>Your screen is small to view the desktop environment. Please use your PC ...</p>
-        </Modal.Content>
-        <Modal.Action passive onClick={() => setVisible(false)}>
-          Proceed
-        </Modal.Action>
-        <Modal.Action onClick={takeMeBack}>Take me back</Modal.Action>
-      </Modal>
-
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
           Try in your browser.
@@ -59,6 +43,16 @@ const preview = () => {
           </div>
         </Card>
       </div>
+      <Modal {...bindings}>
+        <Modal.Title>Unsupported device</Modal.Title>
+        <Modal.Content>
+          <p>Your screen is small to view the desktop environment. Please use your PC.</p>
+        </Modal.Content>
+        <Modal.Action passive onClick={() => setVisible(false)}>
+          Proceed
+        </Modal.Action>
+        <Modal.Action onClick={() => location.replace('/')}>Back to home page</Modal.Action>
+      </Modal>
     </>
   );
 };
