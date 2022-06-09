@@ -1,4 +1,4 @@
-import { Button, Card, Text, Spacer, Image } from '@geist-ui/core';
+import { Button, Card, Text, Spacer, Image, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
@@ -14,9 +14,12 @@ const index = () => {
         <Text className="header" h1 style={{ marginTop: '25px' }}>
           Your PC but even better.
         </Text>
-        <div className="mx-auto" style={{ width: '80%', height: '100%' }}>
-          <Card shadow>
-            {/* <Image draggable="false" src="/assets/marketing/header.png" height="100%" width="100%" /> */}
+        <div className="mx-auto shadow-lg" style={{ width: '80%', height: '100%', borderRadius: '8px' }}>
+          <Card
+            hoverable
+            className="shadow"
+            style={{ background: useTheme().palette.background, border: '2px ' + useTheme().palette.border + ' solid', borderRadius: '8px' }}
+          >
             <video autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
               <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
             </video>
