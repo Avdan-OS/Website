@@ -3,7 +3,7 @@
   "description": "The desktop you know and love.",
   "version": "0.3.0",
   "author": "AvdanOS",
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
