@@ -7,7 +7,9 @@ export const Alert = () => {
       <Grid style={{ paddingInline: 50, pointerEvents: 'none', display: 'block' }}>
         <Card style={{ background: theme.palette.accents_1 }} hoverable>
           <p style={{ fontSize: 14, margin: -10, marginLeft: 0 }}>
-            <strong>AvdanOS is still in development.</strong>{' '}
+            <strong>
+              <strong style={{ fontWeight: 400 }}>AvdanOS</strong> is still in development.
+            </strong>{' '}
             <Link style={{ pointerEvents: 'stroke' }} block underline href="https://discord.gg/avdanos">
               Join our Discord
             </Link>
