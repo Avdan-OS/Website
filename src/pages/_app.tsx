@@ -61,9 +61,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       ></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     </>
   );
 };
