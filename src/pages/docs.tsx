@@ -50,7 +50,7 @@ const Download = () => {
               >
                 Open manual
               </Button>
-              <Spacer h={1} />
+              <Spacer />
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
