@@ -55,18 +55,6 @@ const Menu = () => {
   }
   return (
     <>
-      <div id="navcol-1" className="collapse navbar-collapse">
-        <ul className="navbar-nav ms-auto">
-          <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
-            <Tabs.Item label="Home" value="/" />
-            <Tabs.Item label="Features" value="/features" />
-            <Tabs.Item label="Downloads" value="/downloads" />
-            <Tabs.Item label="Support" value="/support" />
-            <Tabs.Item label="Documentation" value="/docs" />
-            <Tabs.Item label={'Demo'} value="/demo" />
-          </Tabs>
-        </ul>
-      </div>
       <nav
         className={`navbar ${theme.type === 'dark' ? 'navbar-dark' : 'navbar-light'} navbar-expand-md navigation-clean`}
         style={{ fontFamily: 'Roboto, sans-serif', background: 'rgba(255,255,255,0)' }}
