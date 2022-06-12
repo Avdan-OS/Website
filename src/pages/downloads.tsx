@@ -31,10 +31,10 @@ const index = () => {
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
   const [shasum, setShasum] = useState('');
-  const [useMobileMode, setMobileMode] = useState(false)
+  const [useMobileMode, setMobileMode] = useState(false);
 
-  dynamicWidth(width => {
-    (width < 1200) ? setMobileMode(true) : setMobileMode(false);
+  dynamicWidth((width) => {
+    width < 1200 ? setMobileMode(true) : setMobileMode(false);
     if (width < 950) {
       setGridDirection('column');
       setGridWidth(14);
@@ -60,7 +60,7 @@ const index = () => {
                 hoverable
                 paddingTop="40px"
                 paddingBottom="10px"
-                width= "100%"
+                width="100%"
               >
                 <Image draggable="false" src="/assets/icons/WEB.png" height="100%" width="170px" />
                 <Spacer h={2} />
@@ -110,7 +110,7 @@ const index = () => {
               </Button>
             </Card>
           </Grid>
-          <Grid xs={gridWidth} >
+          <Grid xs={gridWidth}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
@@ -181,7 +181,7 @@ const index = () => {
       <style jsx>{`
         .card-container {
           display: flex;
-          flex-direction: row;
+          flex-di rection: row;
           justify-content: center;
           align-items: center;
           margin: 0 auto;

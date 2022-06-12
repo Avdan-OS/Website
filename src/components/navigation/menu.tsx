@@ -1,5 +1,5 @@
 import { Button, useTheme, Tabs } from '@geist-ui/core';
-import * as Icons from 'react-feather';
+import { Sun, Moon, Download } from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
 import Logo from '../logo';
@@ -22,6 +22,7 @@ const Menu = () => {
   const fireClick = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
   };
+
   class MenuBar extends Component {
     render() {
       return useMobileBar ? (
@@ -69,7 +70,7 @@ const Menu = () => {
             aria-label="Toggle dark mode"
             className="themebutton"
             auto
-            iconRight={theme.type === 'dark' ? <Icons.Sun size={16} /> : <Icons.Moon size={16} />}
+            iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             type="abort"
             onClick={() => fireClick()}
           ></Button>
@@ -81,7 +82,7 @@ const Menu = () => {
                 auto
                 shadow
                 type="success"
-                iconRight={<Icons.Download className="themebuttonicon" size={16} />}
+                iconRight={<Download className="themebuttonicon" size={16} />}
               ></Button>
             </a>
           </NextLink>
@@ -101,13 +102,11 @@ const Menu = () => {
           background: green;
           margin: 0 ${theme.layout.gapHalf};
         }
-        .themebutttoncyan
-        {
+        .themebutttoncyan {
           background-color: ${theme.palette.cyan} !important;
           border: 1px solid #00eab5 !important;  
         }
-        .themebuttonicon
-        {
+        .themebuttonicon {
           color: #000 !important;
         }
       `}</style>

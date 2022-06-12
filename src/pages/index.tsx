@@ -1,4 +1,4 @@
-import { Button, Card, Text, Spacer, Image, useTheme } from '@geist-ui/core';
+import { Button, Card, Text, Spacer, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
@@ -18,7 +18,11 @@ const index = () => {
           <Card
             hoverable
             className="shadow"
-            style={{ background: useTheme().palette.background, border: '2px ' + useTheme().palette.border + ' solid', borderRadius: '8px' }}
+            style={{
+              background: useTheme().palette.background,
+              border: '2px ' + useTheme().palette.border + ' solid',
+              borderRadius: '8px'
+            }}
           >
             <video autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
               <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />

@@ -23,7 +23,7 @@
   opacity: 0.8;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .footer-dark .item:not(.social) {
     text-align: center;
     padding-bottom: 20px;
@@ -46,3 +46,4 @@
   font-size: 13px;
   margin-bottom: 0;
 }
+

@@ -1,19 +1,22 @@
-import { useTheme, Tag, Spacer } from '@geist-ui/core';
+import { useState } from 'react';
 import NextLink from 'next/link';
+
+import { useTheme, Tag, Spacer } from '@geist-ui/core';
+
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
-import { useState } from 'react';
 
 const Footer: React.FC = () => {
   const theme = useTheme();
   const colorSwitch = () => {
-    return (useTheme().type == 'light') ? 'black' : 'white';
+    return useTheme().type == 'light' ? 'black' : 'white';
   };
-  
+
   const [useMobileFooter, setMobileFooter] = useState(false);
   dynamicWidth((width) => {
-    (width < 970) ? setMobileFooter(true) : setMobileFooter(false);
+    width < 970 ? setMobileFooter(true) : setMobileFooter(false);
   });
+
   return (
     <>
       <footer className="footer-dark">
@@ -33,7 +36,7 @@ const Footer: React.FC = () => {
                   </NextLink>
                 </li>
                 <li>
-                  <NextLink href="/download">
+                  <NextLink href="/downloads">
                     <a>Downloads</a>
                   </NextLink>
                 </li>
@@ -75,7 +78,15 @@ const Footer: React.FC = () => {
           {useMobileFooter ? null : (
             <div
               className="footer-item"
-              style={{ flexGrow: 0, textAlign: 'center', justifyContent: 'center', display: 'flex', width: 30, paddingTop: 50, opacity: 0.8 }}
+              style={{
+                flexGrow: 0,
+                textAlign: 'center',
+                justifyContent: 'center',
+                display: 'flex',
+                width: 30,
+                paddingTop: 50,
+                opacity: 0.8
+              }}
             >
               <h3 style={{ position: 'absolute', textAlign: 'center', width: 50, height: 50 }}>
                 <Logo />
@@ -87,19 +98,22 @@ const Footer: React.FC = () => {
               <h3>Legal</h3>
               <ul>
                 <li>
-                  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-                    License
-                  </a>
+                  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">License</a>
                 </li>
                 <li>
-                  <a href="/eula">
-                    EULA
-                  </a>
+                  <a href="/eula">EULA</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="footer-item-4" style={{ width: useMobileFooter ? '80%' : '20%', marginTop: 5, paddingLeft: useMobileFooter ? "calc(35% - 50px)": 0 }}>
+          <div
+            className="footer-item-4"
+            style={{
+              width: useMobileFooter ? '80%' : '20%',
+              marginTop: 5,
+              paddingLeft: useMobileFooter ? 'calc(35% - 50px)' : 0
+            }}
+          >
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <a style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
@@ -143,7 +157,7 @@ const Footer: React.FC = () => {
         </p>
         <style jsx>{`
           footer {
-            border-top: 1px solid ${theme.palette.border}; 
+            border-top: 1px solid ${theme.palette.border};
             padding: 0;
             background-color: ${theme.palette.accents_1};
             z-index: 99;
