@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                   </NextLink>
                 </li>
                 <li>
-                  <NextLink href="/download">
+                  <NextLink href="/downloads">
                     <a>Downloads</a>
                   </NextLink>
                 </li>
