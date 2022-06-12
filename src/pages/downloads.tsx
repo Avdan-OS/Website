@@ -4,7 +4,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
 
-const index = () => {
+const Download = () => {
   const theme = useTheme();
   const { setToast } = useToasts();
   const integrityModal = useModal();
@@ -51,7 +51,7 @@ const index = () => {
         <Text className="header" h1>
           Give your PC an Upgrade.
         </Text>
-        <Spacer h={1} />
+        <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           {useMobileMode ? null : (
             <Grid xs={gridWidth}>
@@ -205,4 +205,4 @@ const index = () => {
     </>
   );
 };
-export default index;
+export default Download;
