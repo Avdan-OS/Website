@@ -108,6 +108,3 @@ const Download = () => {
   );
 };
 export default Download;
-// github copilet is basically copy and paste from stacksoverflow but automatic
-// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa what to type there
-// what should i type there?!?!?! ^
