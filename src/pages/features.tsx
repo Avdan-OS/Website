@@ -1,6 +1,6 @@
 import FeaturesCard from '@/components/FeaturesCard';
 import NextLink from 'next/link';
-import { Button } from '@geist-ui/core';
+import { Button, Spacer } from '@geist-ui/core';
 
 const features = () => {
   return (
@@ -30,13 +30,15 @@ const features = () => {
         isInverted={true}
       />
 
-      <span style={{ display: 'flex', justifyContent: 'center', marginBottom: '5px' }}>
+      <span style={{ display: 'flex', justifyContent: 'center', verticalAlign: 'middle' }}>
+        <p>What Are You waiting for?</p>
         <NextLink href="/downloads">
           <Button shadow type="success" margin="10px">
-            What Are You waiting for? Download now!
+            Download now!
           </Button>
         </NextLink>
       </span>
+      <Spacer h={3} />
     </>
   );
 };

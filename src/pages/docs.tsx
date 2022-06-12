@@ -1,5 +1,5 @@
 // prettier-ignore
-import { Button, Card, Text, Image, Grid, Spacer, useTheme } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 
@@ -8,6 +8,7 @@ const Download = () => {
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
+  const { setToast } = useToasts();
 
   dynamicWidth((width) => {
     if (width < 950) {
@@ -15,18 +16,18 @@ const Download = () => {
       setGridWidth(14);
     } else {
       setGridDirection('row');
-      setGridWidth(6);
+      setGridWidth(8);
     }
   });
 
   return (
     <>
       <div className="text-center" id="overview">
-        <Spacer h={4} />
+        <Spacer h={3} />
         <Text className="header" h1>
-          Explore all features.
+          Read the features in detail.
         </Text>
-        <Spacer h={2} />
+        <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           <Grid xs={gridWidth}>
             <Card
@@ -36,12 +37,20 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/user.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button type="success" shadow margin="10px">
-                Open Manual
+              <Image draggable="false" src="/assets/icons/user.png" height="100%" width="200px" />
+              <Tag type="success">I'm a User</Tag>
+              <Spacer />
+              <Button
+                type="success"
+                shadow
+                margin="10px"
+                onClick={() => {
+                  setToast({ text: 'Manual is not available yet.', delay: 5000, type: 'error' });
+                }}
+              >
+                Open manual
               </Button>
-              <Spacer h={0} />
+              <Spacer h={1} />
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
@@ -52,12 +61,20 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/developer.png" height="100%" width="170px" />
-              <Spacer h={2} />
-              <Button type="success" shadow margin="10px">
-                Open dev doc
+              <Image draggable="false" src="/assets/icons/developer.png" height="100%" width="200px" />
+              <Tag type="success">I'm a Developer</Tag>
+              <Spacer />
+              <Button
+                type="success"
+                shadow
+                margin="10px"
+                onClick={() => {
+                  setToast({ text: 'Doc is not available yet.', delay: 5000, type: 'error' });
+                }}
+              >
+                Open documentation
               </Button>
-              <Spacer h={0} />
+              <Spacer h={1} />
             </Card>
           </Grid>
         </Grid.Container>

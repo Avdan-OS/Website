@@ -51,7 +51,7 @@ const Download = () => {
         <Text className="header" h1>
           Give your PC an Upgrade.
         </Text>
-        <Spacer h={1} />
+        <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           {useMobileMode ? null : (
             <Grid xs={gridWidth}>
