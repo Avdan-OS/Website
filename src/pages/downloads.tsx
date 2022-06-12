@@ -181,7 +181,7 @@ const Download = () => {
       <style jsx>{`
         .card-container {
           display: flex;
-          flex-direction: row;
+          flex-di rection: row;
           justify-content: center;
           align-items: center;
           margin: 0 auto;
