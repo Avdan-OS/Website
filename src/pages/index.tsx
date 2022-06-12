@@ -1,4 +1,4 @@
-import { Button, Card, Text, Spacer, Image, useTheme } from '@geist-ui/core';
+import { Button, Card, Text, Spacer, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';

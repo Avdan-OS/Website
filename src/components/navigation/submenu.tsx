@@ -118,7 +118,8 @@ const Submenu = () => {
           height: calc(100% - 2px);
           padding-top: 0;
           padding-bottom: 0;
-          // color: ${theme.palette.accents_5};
+          color: ${theme.palette.accents_6};
+          // rgb(0, 0, 0);
           font-size: 0.875rem;
         }
         .submenu__inner :global(.tab):hover {
