@@ -4,9 +4,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useRef } from 'react';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>();
-
   const minWidthNeeded = 1200;
-
   const { setVisible, bindings } = useModal();
 
   const fullScreen = () => {
