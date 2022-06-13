@@ -1,9 +1,8 @@
-// prettier-ignore
 import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 
-const Download = () => {
+const docs = () => {
   const theme = useTheme();
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
@@ -107,7 +106,4 @@ const Download = () => {
     </>
   );
 };
-export default Download;
-// github copilet is basically copy and paste from stacksoverflow but automatic
-// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa what to type there
-// what should i type there?!?!?! ^
+export default docs;
