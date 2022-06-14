@@ -1,22 +1,32 @@
-import { Text, Image } from '@geist-ui/core';
+import dynamicWidth from '@/lib/dynamic-width';
+import { Text } from '@geist-ui/core';
+import { useState } from 'react';
 
-const FeaturesCard = ({ cardImg, cardTitle, cardDescription, isInverted }) => {
+const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }) => {
+  const [isSmallDevice, setIsSmallDevice] = useState(false);
+  dynamicWidth((width) => {
+    if (width < 768) {
+      setIsSmallDevice(true);
+    }
+  });
   return (
-    <article className="featuresGroup">
+    <article className={isSmallDevice ? 'margin-2 featuresGroup' : 'margin-7 featuresGroup'} id={cardTitle}>
       <div className={isInverted ? 'inverse' : ''}>
-        <Image style={{ marginBlock: '2rem' }} src={cardImg} alt={cardTitle} />
+        <video autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
+          <source type="video/webm" src={cardVideo} height="100%" width="100%" />
+        </video>
       </div>
-      <div style={{}}>
+      <div>
         <Text h3>{cardTitle}</Text>
         <Text type="secondary">{cardDescription}</Text>
       </div>
       <style jsx>
         {`
-          .featuresImg {
-            margin-bottom: 2rem;
+          .margin-7 {
+            margin: 2.5rem 1rem 7rem 1rem;
           }
-          .featuresGroup {
-            margin: 4rem;
+          .margin-2 {
+            margin: 2.5rem 1rem 2rem 1rem;
           }
           @media (min-width: 650px) {
             .featuresGroup {
