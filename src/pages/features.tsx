@@ -8,25 +8,25 @@ const features = () => {
       <FeaturesCard
         cardTitle="A new way to manage your files"
         cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
-        cardImg="/features/files.jpg"
+        cardVideo="/assets/marketing/header_animated.webm"
         isInverted={false}
       />
       <FeaturesCard
         cardTitle="Next level drag and drop experience "
         cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
-        cardImg="/features/drag-and-drop.jpg"
+        cardVideo="/assets/marketing/header_animated.webm"
         isInverted={true}
       />
       <FeaturesCard
         cardTitle="Personalize the way you want"
         cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
-        cardImg="/features/personalize.jpg"
+        cardVideo="/assets/marketing/header_animated.webm"
         isInverted={false}
       />
       <FeaturesCard
         cardTitle="Limitless possibilities for multitasking"
         cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
-        cardImg="/features/multitasking.jpg"
+        cardVideo="/assets/marketing/header_animated.webm"
         isInverted={true}
       />
 
