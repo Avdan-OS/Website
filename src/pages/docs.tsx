@@ -3,7 +3,7 @@ import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } fro
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 
-const Download = () => {
+const Docs = () => {
   const theme = useTheme();
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
@@ -27,7 +27,7 @@ const Download = () => {
         <Text className="header" h1>
           Read the features in detail.
         </Text>
-        <Spacer />
+        <Spacer h={2} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           <Grid xs={gridWidth}>
             <Card
@@ -38,19 +38,19 @@ const Download = () => {
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/user.png" height="100%" width="200px" />
-              <Tag type="success">I'm a User</Tag>
+              <Tag>I'm a User</Tag>
               <Spacer />
               <Button
                 type="success"
                 shadow
                 margin="10px"
                 onClick={() => {
-                  setToast({ text: 'Manual is not available yet.', delay: 5000, type: 'error' });
+                  window.location.replace('/manual');
                 }}
               >
                 Open manual
               </Button>
-              <Spacer />
+              <Spacer h={3} />
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
@@ -62,7 +62,7 @@ const Download = () => {
               width="100%"
             >
               <Image draggable="false" src="/assets/icons/developer.png" height="100%" width="200px" />
-              <Tag type="success">I'm a Developer</Tag>
+              <Tag>I'm a Developer</Tag>
               <Spacer />
               <Button
                 type="success"
@@ -74,37 +74,13 @@ const Download = () => {
               >
                 Open documentation
               </Button>
-              <Spacer h={1} />
+              <Spacer h={3} />
             </Card>
           </Grid>
         </Grid.Container>
         <Spacer h={5} />
       </div>
-      <style jsx>{`
-        .card-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          margin: 0 auto;
-          max-width: 500%;
-          padding: 0;
-          border-top: none !important;
-        }
-        .trouble {
-          background: ${theme.palette.background} !important;
-        }
-        .trouble:hover {
-          background: ${theme.palette.accents_2} !important;
-        }
-        .header {
-          font-size: 72px;
-          background: -webkit-linear-gradient(#eee, #333);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      `}</style>
     </>
   );
 };
-export default Download;
+export default Docs;
