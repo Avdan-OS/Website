@@ -69,6 +69,7 @@ const Submenu = () => {
           position: relative;
           overflow: hidden;
           background: ${theme.palette.background} !important;
+          z-index: 2;
         }
         .submenu_sticky {
           transition: box-shadow 0s ease;

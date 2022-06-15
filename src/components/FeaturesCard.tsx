@@ -12,8 +12,8 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }) => 
   return (
     <article className={isSmallDevice ? 'margin-2 featuresGroup' : 'margin-7 featuresGroup'} id={cardTitle}>
       <div className={isInverted ? 'inverse' : ''}>
-        <video autoPlay={true} muted loop style={{ width: '100%', height: '100%' }}>
-          <source type="video/webm" src={cardVideo} height="100%" width="100%" />
+        <video autoPlay={true} preload="auto" muted loop style={{ width: '100%', height: '100%' }}>
+          <source type="video/mp4" src={cardVideo} height="100%" width="100%" />
         </video>
       </div>
       <div>
