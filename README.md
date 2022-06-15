@@ -15,6 +15,9 @@
 
 </div>
 
+## Project Structure
+- `./src` contains the nextjs source code for the website.
+- `./cdn` contains the raw cdn files that auto deploy to **cdn.avdanos.com**
 
 ## Getting Started
 
