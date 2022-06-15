@@ -179,27 +179,11 @@ const Download = () => {
         <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
       </Modal>
       <style jsx>{`
-        .card-container {
-          display: flex;
-          flex-di rection: row;
-          justify-content: center;
-          align-items: center;
-          margin: 0 auto;
-          max-width: 500%;
-          padding: 0;
-          border-top: none !important;
-        }
         .trouble {
           background: ${theme.palette.background} !important;
         }
         .trouble:hover {
           background: ${theme.palette.accents_2} !important;
-        }
-        .header {
-          font-size: 72px;
-          background: -webkit-linear-gradient(#eee, #333);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       `}</style>
     </>

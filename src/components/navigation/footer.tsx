@@ -189,6 +189,7 @@ const Footer: React.FC = () => {
             padding: 0;
             max-width: 100%;
             width: 90%;
+            z-index: 2;
           }
           .copyright {
             margin-top: 14px;
