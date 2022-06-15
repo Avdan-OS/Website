@@ -32,7 +32,7 @@ const preview = () => {
             style={{ padding: '0', width: '100%', height: '45rem ' }}
             height="100%"
             width="100%"
-            src="https://dynamicos.netlify.app/"
+            src="https://demo.avdanos.com"
           />
           <div style={{ display: 'flex', margin: '15px' }}>
             <Button shadow type="success" margin="auto" onClick={fullScreen}>
