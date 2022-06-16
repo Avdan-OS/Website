@@ -121,7 +121,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="Day & Night"
-            description="Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Window and MacOS?"
+            description="Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?"
           />
           <Spacer h="600px" />
         </div>
