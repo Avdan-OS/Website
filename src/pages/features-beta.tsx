@@ -49,8 +49,8 @@ const Features = () => {
             <source type="video/webm" src="https://cdn.avdanos.com/features.webm" height="100%" width="100%" />
           </video>
         </div>
-        <div className="slide-page">
-          <Card className="slide-card slide-card-left">
+        <div className="slide-page ">
+          <Card className="slide-card text-white slide-card-left">
             This concept video is made by Avdan <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">Watch on YouTube</Button>
