@@ -89,25 +89,14 @@ const Menu = () => {
         </div>
       </nav>
       <Submenu />
-
       <style>{`
         .themebutton {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 36px;
-          height: 36px;
-          padding: 0;
-          background: green;
           margin: 0 ${theme.layout.gapHalf};
         }
         .themebutttoncyan {
           background-color: ${theme.palette.cyan} !important;
-          border: 1px solid #00eab5 !important;  
         }
-        .themebuttonicon {
-          color: #000 !important;
-        }
+    
       `}</style>
     </>
   );

@@ -2,6 +2,7 @@ import { Spacer, Card, Button, Text, Divider, useToasts } from '@geist-ui/core';
 import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
+import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 
 const Features = () => {
   const { setToast, removeAll } = useToasts();
@@ -55,85 +56,73 @@ const Features = () => {
               <Button type="error">Watch on YouTube</Button>
             </NextLink>
           </Card>
+
           <Spacer h="700px" />
-          <Card className="slide-card slide-card-left">
-            <div className="slide-topic">
-              <h2>Familiar dock, ultimate form</h2>
-            </div>
-            <div className="slide-info">
-              <Text>Everyone know dock/task bar. We got a brand new dock, with more features than ever before. </Text>
-            </div>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="Familiar dock, ultimate form"
+            description="Everyone know dock/task bar. We got a brand new dock, with more features than ever before. "
+          />
           <Spacer h="1000px" />
-          <Card className="slide-card slide-card-left">
-            <h2>Brand new launch menu</h2>
-            <Text>With everything in one place, do anything anywhere at anytime.</Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={true}
+            title="Brand new launch menu"
+            description="With everything in one place, do anything anywhere at anytime."
+          />
           <Spacer h="600px" />
-          <Card className="slide-card slide-card-right">
-            <h2>Easily apply layout</h2>
-            <Text>
-              With a list of presets determined from you apps, easily get to work with the perfect window layout. Not
-              enough? Change it in the settings.
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="Easily apply layout"
+            description="With a list of presets determined from you apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
+          />
           <Spacer h="500px" />
-          <Card className="slide-card slide-card-left">
-            <h2>Overpowerd Dock</h2>
-            <Text>Your dock can do more than ever. It's your ultimate manager to get you organised.</Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={true}
+            title="Overpowered Dock"
+            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
+          />
           <Spacer h="800px" />
-          <Card className="slide-card slide-card-right">
-            <h2>New way to manage files</h2>
-            <Text>This file manager keeps you organised and productive. Find your files the instant you need it.</Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="New way to manage files"
+            description="This file manager keeps you organized and productive. Find your files the instant you need it."
+          />
           <Spacer h="1300px" />
-          <Card className="slide-card slide-card-left">
-            <h2>Drag & drop made easy</h2>
-            <Text>
-              Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to
-              use.
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={true}
+            title="Drag & drop made easy"
+            description="Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use."
+          />
           <Spacer h="1300px" />
-          <Card className="slide-card slide-card-left">
-            <h2>More than multitask</h2>
-            <Text>
-              Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's
-              organised multitasking.
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="More than multitask"
+            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
+          />
           <Spacer h="600px" />
-          <Card className="slide-card slide-card-right">
-            <h2>TabOS!</h2>
-            <Text>
-              Browsers have proven how powerful tabs are, so why not use them to make your OS even more powerful?
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={true}
+            title="TabOS!"
+            description="Browsers have proven how powerful tabs are, so why not use them to make your OS even more powerful?"
+          />
           <Spacer h="900px" />
-          <Card className="slide-card slide-card-left">
-            <h2>New context menu</h2>
-            <Text>
-              Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not
-              make it a circle? Don't like it? You can switch it back in settings!
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="New context menu"
+            description="Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!"
+          />
           <Spacer h="900px" />
-          <Card className="slide-card slide-card-right">
-            <h2>Your OS, your preference</h2>
-            <Text>
-              We give you control over your system. Theme is just an important one of them, and you can get more if you
-              don't like ours.
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={true}
+            title="Your OS, your preference"
+            description="We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours."
+          />
           <Spacer h="600px" />
-          <Card className="slide-card slide-card-left">
-            <h2>Day & Night</h2>
-            <Text>
-              Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Window
-              and MacOS?
-            </Text>
-          </Card>
+          <FeaturesBetaCard
+            isCardOnRight={false}
+            title="Day & Night"
+            description="Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Window and MacOS?"
+          />
           <Spacer h="600px" />
         </div>
       </div>
@@ -146,69 +135,18 @@ const Features = () => {
         <Text>We are working really hard to make it real. Join us and help!</Text>
         <Spacer h="20px" />
         <Media />
+        <style jsx global>
+          {`
+            #__next {
+              overflow-x: visible;
+            }
+            html {
+              scrollbar-width: none;
+            }
+            }
+          `}
+        </style>
       </div>
-      <style jsx global>{`
-        .slide-background {
-          position: sticky;
-          padding-top: 45px;
-          top: 0;
-          z-index: 0;
-        }
-        .slide-page {
-          margin-top: -80vh !important;
-        }
-        .slide-content {
-          z-index: 1;
-        }
-        #__next {
-          overflow-x: visible;
-        }
-        html {
-          scrollbar-width: none;
-        }
-        .under-development {
-          position: sticky;
-          top: 0;
-          height: 100px;
-        }
-        .slide-card {
-          margin: 20px !important;
-          padding: 10px !important;
-          width: 40% !important;
-        }
-        .slide-card-left {
-          float: left;
-        }
-        .slide-card-right {
-          float: right;
-        }
-        .slide-topic {
-          display: inline-flex;
-        }
-        .slide-info {
-          display: flex;
-        }
-        .breath {
-          animation: breath 4s ease-out infinite normal;
-        }
-        @keyframes breath {
-          0% {
-            transform: translateY(0) size(1);
-          }
-
-          25% {
-            transform: translateY(-4px) size(1);
-          }
-
-          60% {
-            transform: translateY(-6px) scale(1.02);
-          }
-
-          100% {
-            transform: translateY(0) size(1);
-          }
-        }
-      `}</style>
     </>
   );
 };

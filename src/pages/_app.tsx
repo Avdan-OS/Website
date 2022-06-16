@@ -6,9 +6,9 @@ import { PrefersContext, themes, ThemeType } from '@/lib/use-prefers';
 import Menu from '@/components/navigation/menu';
 import Footer from '@/components/navigation/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/nav.css';
-import '../styles/nav2.css';
-import '../styles/footer.css';
+import '../styles/components/navbar.css';
+import '../styles/components/footer.css';
+import '../styles/features-beta.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [themeType, setThemeType] = useState<ThemeType>('dark');
