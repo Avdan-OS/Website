@@ -10,7 +10,6 @@ const BetaCard = ({ Link }: { Link: string }) => {
       document.getElementById('beta-container').style.display = 'none';
     }
   });
-  console.log(Theme.palette.accents_3);
   return (
     <div id="beta-container">
       <Card className="beta-popup">
