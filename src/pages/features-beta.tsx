@@ -16,7 +16,6 @@ const Features = () => {
     });
     window.addEventListener('scroll', () => {
       setScrollPosition(window.scrollY);
-      if (videoElement.seeking) return;
       if (window.scrollY + 300 < window.innerHeight) {
         videoElement.currentTime = 0;
         return;
