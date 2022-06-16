@@ -158,49 +158,15 @@ const Footer: React.FC = () => {
         <style jsx>{`
           footer {
             border-top: 1px solid ${theme.palette.border};
-            padding: 0;
             background-color: ${theme.palette.accents_1};
-            z-index: 99;
             color: ${theme.palette.foreground};
-          }
-          .footer-item-1 {
-            grid-area: a;
-          }
-          .footer-item-2 {
-            grid-area: b;
-          }
-          .footer-item-3 {
-            grid-area: c;
-          }
-          .footer-item-4 {
-            grid-area: d;
           }
           .container {
             display: ${useMobileFooter ? 'grid' : 'flex'};
             ${useMobileFooter ? 'margin-bottom: 20px;' : null}
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto;
-            grid-template-areas:
-              'a b'
-              'c d';
-            align-items: stretch;
-            justify-content: space-between;
-            flex-direction: row;
-            padding: 0;
-            max-width: 100%;
-            width: 90%;
-            z-index: 2;
-          }
-          .copyright {
-            margin-top: 14px;
-            margin-bottom: 0;
-            font-size: 13px;
-            opacity: 0.7;
           }
           .footer-item {
             width: ${useMobileFooter ? '70%' : '20%'};
-            justify-content: center;
-            display: flex;
           }
         `}</style>
       </footer>

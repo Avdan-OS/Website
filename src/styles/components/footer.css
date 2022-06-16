@@ -47,3 +47,44 @@
   margin-bottom: 0;
 }
 
+.footer-item-1 {
+  grid-area: a;
+}
+.footer-item-2 {
+  grid-area: b;
+}
+.footer-item-3 {
+  grid-area: c;
+}
+.footer-item-4 {
+  grid-area: d;
+}
+.copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+.footer-item {
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'a b'
+    'c d';
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+  max-width: 100%;
+  width: 90%;
+  z-index: 2;
+}
+footer {
+  padding: 0;
+  z-index: 99;
+}

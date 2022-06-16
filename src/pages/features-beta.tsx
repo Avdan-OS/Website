@@ -136,69 +136,18 @@ const Features = () => {
         <Text>We are working really hard to make it real. Join us and help!</Text>
         <Spacer h="20px" />
         <Media />
+        <style jsx global>
+          {`
+            #__next {
+              overflow-x: visible;
+            }
+            html {
+              scrollbar-width: none;
+            }
+            }
+          `}
+        </style>
       </div>
-      <style jsx global>{`
-        .slide-background {
-          position: sticky;
-          padding-top: 45px;
-          top: 0;
-          z-index: 0;
-        }
-        .slide-page {
-          margin-top: -80vh !important;
-        }
-        .slide-content {
-          z-index: 1;
-        }
-        #__next {
-          overflow-x: visible;
-        }
-        html {
-          scrollbar-width: none;
-        }
-        .under-development {
-          position: sticky;
-          top: 0;
-          height: 100px;
-        }
-        .slide-card {
-          margin: 20px !important;
-          padding: 10px !important;
-          width: 40% !important;
-        }
-        .slide-card-left {
-          float: left;
-        }
-        .slide-card-right {
-          float: right;
-        }
-        .slide-topic {
-          display: inline-flex;
-        }
-        .slide-info {
-          display: flex;
-        }
-        .breath {
-          animation: breath 4s ease-out infinite normal;
-        }
-        @keyframes breath {
-          0% {
-            transform: translateY(0) size(1);
-          }
-
-          25% {
-            transform: translateY(-4px) size(1);
-          }
-
-          60% {
-            transform: translateY(-6px) scale(1.02);
-          }
-
-          100% {
-            transform: translateY(0) size(1);
-          }
-        }
-      `}</style>
     </>
   );
 };
