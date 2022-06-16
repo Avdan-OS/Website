@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
             </Tag>
           </div>
         </div>
-        <p className="copyright" style={{ marginTop: '-10px' }}>
+        <p className="copyright" style={{ marginTop: '-10px', marginBottom: '0', fontSize: '13px', opacity: '0.7' }}>
           ©{' '}
           <strong>
             <a style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">

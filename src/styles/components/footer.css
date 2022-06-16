@@ -59,12 +59,6 @@
 .footer-item-4 {
   grid-area: d;
 }
-.copyright {
-  margin-top: 14px;
-  margin-bottom: 0;
-  font-size: 13px;
-  opacity: 0.7;
-}
 .footer-item {
   justify-content: center;
   display: flex;
