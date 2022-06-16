@@ -12,7 +12,6 @@ const Features = () => {
     setToast({ text: 'Video is loading...', delay: 60000, id: 'loading' });
     videoElement.addEventListener('canplay', () => {
       removeAll();
-      console.log('Video Loaded');
     });
     window.addEventListener('scroll', () => {
       setScrollPosition(window.scrollY);
