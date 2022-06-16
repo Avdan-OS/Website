@@ -2,6 +2,7 @@ import { Button, Card, Text, Spacer, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
+import Discover from '@/components/discover';
 
 const index = () => {
   const [useMobileBar, setMobileBar] = useState(false);
@@ -47,6 +48,7 @@ const index = () => {
           </NextLink>
         </div>
       </div>
+      <Discover/>
       <Spacer h={2} />
       <style jsx>{`
         .card-container {
