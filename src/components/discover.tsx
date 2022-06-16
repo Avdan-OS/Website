@@ -1,7 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Code, Download, FileText, Github } from '@geist-ui/icons';
-import { Button, Card, Grid, Link, Text, useTheme } from '@geist-ui/core';
+import { Button, Card, Grid, Link, Spacer, Text, useTheme } from '@geist-ui/core';
 export default function Discover() {
   const theme = useTheme();
   return (
@@ -21,7 +21,7 @@ export default function Discover() {
                     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                     width={'100%'}
                     height={'425px'}
-                    style={{marginBottom: 20}}
+                    style={{ marginBottom: 20 }}
                     frameBorder={0}
                   />
                 </Card>
@@ -35,11 +35,9 @@ export default function Discover() {
                       <Text h4 my={0}>
                         AvdanOS
                       </Text>
-                      <Text>
-                        Modern and minimalist <strong>command line tool</strong>.
-                      </Text>
+                      <Text>Meet AvdanOS, refining the way we think about operating systems.</Text>
                       <Card.Footer>
-                        <Link color target="_blank" href="https://github.com/azproductions/kookaburra">
+                        <Link color target="_blank" href="https://github.com/Avdan-OS/AvdanOS">
                           Visit source code on GitHub.
                         </Link>
                       </Card.Footer>
@@ -48,24 +46,11 @@ export default function Discover() {
                   <Grid xs={12} justify="center">
                     <Card width="100%" hoverable>
                       <Text h4 my={0}>
-                        UpRelease
+                        Website
                       </Text>
-                      <Text>Release software in seconds.</Text>
+                      <Text>The main website for avdanos.com</Text>
                       <Card.Footer>
-                        <Link color target="_blank" href="https://uprelease.net/?from=azs">
-                          Visit the website, and join the waiting list.
-                        </Link>
-                      </Card.Footer>
-                    </Card>
-                  </Grid>
-                  <Grid xs={12} justify="center">
-                    <Card width="100%" hoverable>
-                      <Text h4 my={0}>
-                        KookaburraSDK
-                      </Text>
-                      <Text>Software development kit for Kookaburra's CLI.</Text>
-                      <Card.Footer>
-                        <Link color target="_blank" href="https://github.com/azproductions/KookaburraSDK">
+                        <Link color target="_blank" href="https://github.com/Avdan-OS/Website">
                           Visit source code on GitHub.
                         </Link>
                       </Card.Footer>
@@ -74,20 +59,34 @@ export default function Discover() {
                   <Grid xs={12} justify="center">
                     <Card width="100%" hoverable>
                       <Text h4 my={0}>
-                        TexturePig
+                        Desktop Environment
                       </Text>
-                      <Text>Texturepack marketplace for Minecraft™.</Text>
+                      <Text>Meet Nadva, the official Desktop Environment for AvdanOS.</Text>
                       <Card.Footer>
-                        <Link color target="_blank" href="https://texturepig.com">
-                          Visit the website, and signup.
+                        <Link color target="_blank" href="https://github.com/Avdan-OS/Desktop-Environment">
+                          Visit source code on GitHub.
+                        </Link>
+                      </Card.Footer>
+                    </Card>
+                  </Grid>
+                  <Grid xs={12} justify="center">
+                    <Card width="100%" hoverable>
+                      <Text h4 my={0}>
+                        Tinan
+                      </Text>
+                      <Text>The Discord Bot for the AvdanOS Community Discord server.</Text>
+                      <Card.Footer>
+                        <Link color target="_blank" href="https://github.com/Avdan-OS/Tinan">
+                          Visit source code on GitHub.
                         </Link>
                       </Card.Footer>
                     </Card>
                   </Grid>
                 </Grid.Container>
                 <div className="text-left" style={{ marginTop: 20, marginBottom: 25 }}>
-                  <Link href="/products" underline style={{ textAlign: 'left' }}>
-                    Browse all products -&gt;
+                  <Link href="https://github.com/orgs/Avdan-OS/repositories" underline style={{ textAlign: 'left' }}>
+                    <Spacer h={2} />
+                    Browse all repos -&gt;
                   </Link>
                 </div>
               </Card>
