@@ -20,12 +20,14 @@ const Features = () => {
   return (
     <>
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
-        <div style={{ height: `calc(40vh - ${100 - scrollPosition / 4}px)` }}></div>
+        <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
           Avdan's concept, we're making it real
         </Text>
-        <div style={{ height: `${40 - scrollPosition / 25}px` }}></div>
-        <Text>Scroll down to see what we got here</Text>
+        <div style={{ height: `${50 - scrollPosition / 25}px` }}></div>
+        <div className="breath">
+          <Text>Scroll down to see what we got here</Text>
+        </div>
       </div>
       <Divider />
       <div>
@@ -74,9 +76,9 @@ const Features = () => {
       <style jsx global>{`
         .slide-background {
           position: sticky;
-          top: 50px;
+          padding-top: 45px;
+          top: 0;
           z-index: 0;
-          height: 100vh;
         }
         .slide-page {
           margin-top: -80vh !important;
@@ -86,6 +88,9 @@ const Features = () => {
         }
         #__next {
           overflow-x: visible;
+        }
+        html {
+          scrollbar-width: none;
         }
         .under-development {
           position: sticky;
@@ -102,6 +107,26 @@ const Features = () => {
         }
         .slide-info {
           display: flex;
+        }
+        .breath {
+          animation: breath 4s ease-out infinite normal;
+        }
+        @keyframes breath {
+          0% {
+            transform: translateY(0);
+          }
+
+          25% {
+            transform: translateY(-4px);
+          }
+
+          60% {
+            transform: translateY(-6px);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
         }
       `}</style>
     </>
