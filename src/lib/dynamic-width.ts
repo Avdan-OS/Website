@@ -1,5 +1,6 @@
 /**
- * @file A react library for dynamically updating web view
+ * @file An easy to use react library for dynamically updating web view
+ * Add yourself to below if you updated the library
  * @author Froxcey <danichen204@gmail.com>
  * @license GPL-3.0
  */
