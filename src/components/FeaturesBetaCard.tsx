@@ -2,7 +2,7 @@ import { Card, Text } from '@geist-ui/core';
 
 const FeaturesBetaCard = ({ isCardOnRight, title, description }) => {
   return (
-    <Card className={`slide-card ${isCardOnRight ? 'slide-card-right' : 'slide-card-left'}`}>
+    <Card className={`slide-card text-white ${isCardOnRight ? 'slide-card-right' : 'slide-card-left'}`}>
       <div className="slide-topic">
         <h2>{title}</h2>
       </div>

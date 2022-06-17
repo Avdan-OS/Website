@@ -1,17 +1,19 @@
-import { Spacer, Card, Button, Text, Divider, useToasts } from '@geist-ui/core';
+import { Spacer, Card, Button, Text, Divider, useToasts, useTheme } from '@geist-ui/core';
 import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
+import WidthRequirement from '@/components/WidthRequirement';
 
 const Features = () => {
+  const theme = useTheme();
   const { setToast, removeAll } = useToasts();
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
     removeAll();
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
     setToast({ text: 'Video is loading...', delay: 60000, id: 'loading' });
-    videoElement.addEventListener('canplay', () => {
+    videoElement.addEventListener('canplay', (e) => {
       removeAll();
     });
     window.addEventListener('scroll', () => {
@@ -25,6 +27,7 @@ const Features = () => {
   }, []);
   return (
     <>
+      <WidthRequirement width={1000} />
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
@@ -37,7 +40,7 @@ const Features = () => {
       </div>
       <Divider />
       <div>
-        <div className="slide-background">
+        <div className="slide-background text-white">
           <video
             preload=""
             id="video"
@@ -46,6 +49,10 @@ const Features = () => {
             disableRemotePlayback
             style={{ width: '100%', height: '100%' }}
           >
+            {/* 
+              The video source should have 100% i-frame and no p/b-frame and consistant frame rate, or the video will lag
+              20fps 720p vp9 webm is recommended when serving the video over cdn
+            */}
             <source type="video/webm" src="https://cdn.avdanos.com/features.webm" height="100%" width="100%" />
           </video>
         </div>
@@ -143,6 +150,12 @@ const Features = () => {
             html {
               scrollbar-width: none;
             }
+            .slide-card {
+              margin: 20px !important;
+              padding: 10px !important;
+              width: 40% !important;
+              background-color: ${theme.palette.background + theme.palette.background.replace('#', '')}60 !important;
+              backdrop-filter: blur(2em);
             }
           `}
         </style>
