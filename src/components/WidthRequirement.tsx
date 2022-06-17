@@ -34,7 +34,7 @@ const WidthRequirement = ({ width }) => {
         )
       )
         check = true;
-    })(navigator.userAgent || navigator.vendor || window.opera);
+    })(navigator.userAgent || navigator.vendor || window.opera); //test github updating check code
     return check;
   };
   dynamicWidth((updatedWidth) => {
