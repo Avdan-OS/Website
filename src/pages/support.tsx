@@ -35,16 +35,17 @@ const Support = () => {
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
+              paddingBottom="9px"
+              width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Twitter.png" height="100%" width="200px" />
+              <Image draggable="false" src="/assets/icons/Twitter.png" height="90%" width="150px" />
               <Tag>Twitter</Tag>
               <Spacer />
               <Button
                 type="success"
+                width={0.7}
                 shadow
-                margin="10px"
+                margin="9px"
                 onClick={() => {
                   window.location.replace('https://twitter.com/avdan_os');
                 }}
@@ -59,16 +60,17 @@ const Support = () => {
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
+              paddingBottom="9px"
+              width="90%"
             >
-              <Image draggable="false" src="/assets/icons/GitHub.png" height="100%" width="200px" />
+              <Image draggable="false" src="/assets/icons/GitHub.png" height="90%" width="150px" />
               <Tag>GitHub</Tag>
               <Spacer />
               <Button
                 type="success"
+                width={0.7}
                 shadow
-                margin="10px"
+                margin="9px"
                 onClick={() => {
                   window.location.replace('https://github.com/Avdan-OS');
                 }}
@@ -83,16 +85,17 @@ const Support = () => {
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
+              paddingBottom="9px"
+              width="90%"
             >
-              <Image draggable="false" src="/assets/icons/YouTube.png" height="100%" width="200px" />
+              <Image draggable="false" src="/assets/icons/YouTube.png" height="90%" width="150px" />
               <Tag>YouTube</Tag>
               <Spacer />
               <Button
                 type="success"
+                width={0.7}
                 shadow
-                margin="10px"
+                margin="9px"
                 onClick={() => {
                   window.location.replace('https://www.youtube.com/c/AvdanOSDeveloper');
                 }}
@@ -107,16 +110,17 @@ const Support = () => {
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
+              paddingBottom="9px"
+              width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Discord.png" height="100%" width="200px" />
+              <Image draggable="false" src="/assets/icons/Discord.png" height="90%" width="150px" />
               <Tag>Discord</Tag>
               <Spacer />
               <Button
                 type="success"
+                width={0.7}
                 shadow
-                margin="10px"
+                margin="9px"
                 onClick={() => {
                   window.location.replace('https://discord.gg/avdanos');
                 }}
@@ -131,16 +135,17 @@ const Support = () => {
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
+              paddingBottom="9px"
+              width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Reddit.png" height="100%" width="200px" />
+              <Image draggable="false" src="/assets/icons/Reddit.png" height="90%" width="150px" />
               <Tag>Reddit</Tag>
               <Spacer />
               <Button
                 type="success"
+                width={0.7}
                 shadow
-                margin="10px"
+                margin="9px"
                 onClick={() => {
                   window.location.replace('https://www.reddit.com/r/AvdanOS/');
                 }}
