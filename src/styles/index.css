@@ -45,3 +45,12 @@
     transform: translateY(-10px) size(1);
   }
 }
+#stacked {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+#smallDeviceGrid {
+  min-width: 100% !important;
+}
