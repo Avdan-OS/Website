@@ -32,6 +32,8 @@ const Menu = () => {
               <Tabs.Item label="Home" value="/" />
               <Tabs.Item label="Features" value="/features" />
               <Tabs.Item label="Downloads" value="/downloads" />
+              <Tabs.Item label="Support" value="/support" />
+
               <Tabs.Item label="Docs" value="/docs" />
             </Tabs>
           </ul>
@@ -92,6 +94,7 @@ const Menu = () => {
       <style>{`
         .themebutton {
           margin: 0 ${theme.layout.gapHalf};
+          
         }
         .themebutttoncyan {
           background-color: ${theme.palette.cyan} !important;
