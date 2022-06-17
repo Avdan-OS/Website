@@ -10,6 +10,12 @@ import NextLink from 'next/link';
 import { useState } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
 
+declare global {
+  interface Window {
+    opera: any;
+  }
+}
+
 const WidthRequirement = ({ width }) => {
   const { setVisible, bindings } = useModal();
   const [subtitle, setSubtitle] = useState('Rotate Your Screen');
