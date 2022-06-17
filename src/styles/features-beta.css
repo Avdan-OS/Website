@@ -32,31 +32,8 @@
 .slide-info {
   display: flex;
 }
-.breath {
-  animation: breath 4s ease-out infinite normal;
-}
 .under-development {
   position: sticky;
   top: 0;
   height: 100px;
-}
-.text-white {
-  color: white !important;
-}
-@keyframes breath {
-  0% {
-    transform: translateY(0) size(1);
-  }
-
-  25% {
-    transform: translateY(-4px) size(1);
-  }
-
-  60% {
-    transform: translateY(-6px) scale(1.02);
-  }
-
-  100% {
-    transform: translateY(-10px) size(1);
-  }
 }

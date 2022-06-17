@@ -1,0 +1,47 @@
+/* ScrollBar */
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #333 #000;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #010101;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+  border: 3px none #ffffff;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.breath {
+  animation: breath 4s ease-out infinite normal;
+}
+
+@keyframes breath {
+  0% {
+    transform: translateY(0) size(1);
+  }
+
+  25% {
+    transform: translateY(-4px) size(1);
+  }
+
+  60% {
+    transform: translateY(-6px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(-10px) size(1);
+  }
+}
