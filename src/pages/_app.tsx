@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/components/navbar.css';
 import '../styles/components/footer.css';
 import '../styles/features-beta.css';
+import '../styles/index.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [themeType, setThemeType] = useState<ThemeType>('dark');

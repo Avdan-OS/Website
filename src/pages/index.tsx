@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Discover from '@/components/discover';
 
 const index = () => {
+  const theme = useTheme();
   const [useMobileBar, setMobileBar] = useState(false);
   dynamicWidth((width) => {
     width < 1200 ? setMobileBar(true) : setMobileBar(false);
@@ -20,8 +21,8 @@ const index = () => {
             hoverable
             className="shadow"
             style={{
-              background: useTheme().palette.background,
-              border: '2px ' + useTheme().palette.border + ' solid',
+              background: theme.palette.background,
+              border: `2px ${theme.palette.border} solid`,
               borderRadius: '8px'
             }}
           >
@@ -48,7 +49,7 @@ const index = () => {
           </NextLink>
         </div>
       </div>
-      <Discover/>
+      <Discover />
       <Spacer h={2} />
       <style jsx>{`
         .card-container {
@@ -63,7 +64,7 @@ const index = () => {
         }
         .header {
           font-size: 72px;
-          background: -webkit-linear-gradient(#eee, #333);
+          background: -webkit-linear-gradient(#eee, ${theme.palette.accents_2});
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
