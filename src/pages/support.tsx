@@ -7,7 +7,6 @@ const Support = () => {
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
-  const { setToast } = useToasts();
 
   dynamicWidth((width) => {
     if (width < 950) {
@@ -26,7 +25,6 @@ const Support = () => {
         <Text className="header" h1>
           AvdanOS Support
           <h4>Contact Us On Social Media</h4>
-
         </Text>
         <Spacer h={2} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -38,7 +36,12 @@ const Support = () => {
               paddingBottom="9px"
               width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Twitter.png" height="90%" width="150px" />
+              <Image
+                draggable="false"
+                src={`/assets/icons/Twitter${theme.type === 'light' ? '_light' : ''}.png`}
+                height="90%"
+                width="150px"
+              />
               <Tag>Twitter</Tag>
               <Spacer />
               <Button
@@ -63,7 +66,12 @@ const Support = () => {
               paddingBottom="9px"
               width="90%"
             >
-              <Image draggable="false" src="/assets/icons/GitHub.png" height="90%" width="150px" />
+              <Image
+                draggable="false"
+                src={`/assets/icons/GitHub${theme.type === 'light' ? '_light' : ''}.png`}
+                height="90%"
+                width="150px"
+              />
               <Tag>GitHub</Tag>
               <Spacer />
               <Button
@@ -88,7 +96,12 @@ const Support = () => {
               paddingBottom="9px"
               width="90%"
             >
-              <Image draggable="false" src="/assets/icons/YouTube.png" height="90%" width="150px" />
+              <Image
+                draggable="false"
+                src={`/assets/icons/YouTube${theme.type === 'light' ? '_light' : ''}.png`}
+                height="90%"
+                width="150px"
+              />
               <Tag>YouTube</Tag>
               <Spacer />
               <Button
@@ -113,7 +126,12 @@ const Support = () => {
               paddingBottom="9px"
               width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Discord.png" height="90%" width="150px" />
+              <Image
+                draggable="false"
+                src={`/assets/icons/Discord${theme.type === 'light' ? '_light' : ''}.png`}
+                height="90%"
+                width="150px"
+              />
               <Tag>Discord</Tag>
               <Spacer />
               <Button
@@ -138,7 +156,12 @@ const Support = () => {
               paddingBottom="9px"
               width="90%"
             >
-              <Image draggable="false" src="/assets/icons/Reddit.png" height="90%" width="150px" />
+              <Image
+                draggable="false"
+                src={`/assets/icons/Reddit${theme.type === 'light' ? '_light' : ''}.png`}
+                height="90%"
+                width="150px"
+              />
               <Tag>Reddit</Tag>
               <Spacer />
               <Button
@@ -157,9 +180,6 @@ const Support = () => {
           </Grid>
         </Grid.Container>
         <Spacer h={5} />
-        
-
-        
       </div>
     </>
   );
