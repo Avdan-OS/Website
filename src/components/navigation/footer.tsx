@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
           <div
             className="footer-item-4"
             style={{
-              width: useMobileFooter ? '80%' : '20%',
+              width: useMobileFooter ? '100%' : '20%',
               marginTop: 5,
               paddingLeft: useMobileFooter ? 'calc(35% - 50px)' : 0
             }}
