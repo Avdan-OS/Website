@@ -5,17 +5,10 @@ import { useState } from 'react';
 const Support = () => {
   const theme = useTheme();
 
-  const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
-  const [gridWidth, setGridWidth] = useState(6);
+  const [mobileLayout, useMobileLayout] = useState(false);
 
   dynamicWidth((width) => {
-    if (width < 950) {
-      setGridDirection('column');
-      setGridWidth(14);
-    } else {
-      setGridDirection('row');
-      setGridWidth(8);
-    }
+    width < 950 ? useMobileLayout(true) : useMobileLayout(false);
   });
 
   return (
@@ -27,14 +20,20 @@ const Support = () => {
           <h4>Contact Us On Social Media</h4>
         </Text>
         <Spacer h={2} />
-        <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
-          <Grid xs={gridWidth}>
+        <Grid.Container
+          gap={3}
+          marginLeft="calc(0.5% - 10px)"
+          direction={mobileLayout ? 'column' : 'row'}
+          alignItems="center"
+          justify="center"
+        >
+          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="9px"
-              width="90%"
+              width="95%"
             >
               <Image
                 draggable="false"
@@ -53,18 +52,18 @@ const Support = () => {
                   window.location.replace('https://twitter.com/avdan_os');
                 }}
               >
-                Visit
+                Visit{mobileLayout}
               </Button>
               <Spacer h={3} />
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
+          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="9px"
-              width="90%"
+              width="95%"
             >
               <Image
                 draggable="false"
@@ -88,13 +87,13 @@ const Support = () => {
               <Spacer h={3} />
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
+          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="9px"
-              width="90%"
+              width="95%"
             >
               <Image
                 draggable="false"
@@ -118,13 +117,13 @@ const Support = () => {
               <Spacer h={3} />
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
+          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="9px"
-              width="90%"
+              width="95%"
             >
               <Image
                 draggable="false"
@@ -148,13 +147,13 @@ const Support = () => {
               <Spacer h={3} />
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
+          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
             <Card
               style={{ background: theme.palette.background }}
               hoverable
               paddingTop="40px"
               paddingBottom="9px"
-              width="90%"
+              width="95%"
             >
               <Image
                 draggable="false"
