@@ -14,7 +14,7 @@ const features = () => {
       />
       <FeaturesCard
         cardTitle="Next Level Drag and Drop Experience "
-        cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
+        cardDescription="With the new improved Drag And Drop feature in AvdanOS it will make using AvdanOS easier with managing open windows and running tasks."
         cardVideo="/assets/clips/drag-drop.mp4"
         isInverted={true}
       />
@@ -26,7 +26,7 @@ const features = () => {
       />
       <FeaturesCard
         cardTitle="Brand new context menu"
-        cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad fugiat nostrum autem, est veritatis adipisci eum provident quia minus minima tenetur pariatur. Quidem laudantium iure magnam quam mollitia quos."
+        cardDescription="With the brand new context menu in AvdanOS you can choose from multiple commands such as searching a selected word,copy a selected word,paste a selected or even cut a selected word"
         cardVideo="/assets/clips/context.mp4"
         isInverted={true}
       />
