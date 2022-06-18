@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
-// import WidthRequirement from '@/components/WidthRequirement';
+import WidthRequirement from '@/components/WidthRequirement';
 
 const Features = () => {
   const theme = useTheme();
@@ -27,7 +27,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      {/* <WidthRequirement width={1000} /> */}
+      <WidthRequirement width={1000} />
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
