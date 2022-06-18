@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
-import WidthRequirement from '@/components/WidthRequirement';
+// import WidthRequirement from '@/components/WidthRequirement';
 
 const Features = () => {
   const theme = useTheme();
@@ -27,7 +27,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      <WidthRequirement width={1000} />
+      {/* <WidthRequirement width={1000} /> */}
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
@@ -41,18 +41,18 @@ const Features = () => {
       <Divider />
       <div>
         <div className="slide-background text-white">
+          {/* 
+              The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag
+              20fps 720p vp9 webm is recommended when serving the video over cdn
+            */}
           <video
-            preload=""
+            preload="auto"
             id="video"
             muted
             disablePictureInPicture
             disableRemotePlayback
             style={{ width: '100%', height: '100%' }}
           >
-            {/* 
-              The video source should have 100% i-frame and no p/b-frame and consistant frame rate, or the video will lag
-              20fps 720p vp9 webm is recommended when serving the video over cdn
-            */}
             <source type="video/webm" src="https://cdn.avdanos.com/features.webm" height="100%" width="100%" />
           </video>
         </div>
@@ -66,67 +66,67 @@ const Features = () => {
 
           <Spacer h="700px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="Familiar dock, ultimate form"
             description="Everyone know dock/task bar. We got a brand new dock, with more features than ever before. "
           />
           <Spacer h="1000px" />
           <FeaturesBetaCard
-            isCardOnRight={true}
+            isCardOnRight={false}
             title="Brand new launch menu"
             description="With everything in one place, do anything anywhere at anytime."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="Easily apply layout"
             description="With a list of presets determined from you apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
           />
           <Spacer h="500px" />
           <FeaturesBetaCard
-            isCardOnRight={true}
+            isCardOnRight={false}
             title="Overpowered Dock"
             description="Your dock can do more than ever. It's your ultimate manager to get you organized."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="New way to manage files"
             description="This file manager keeps you organized and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
-            isCardOnRight={true}
+            isCardOnRight={false}
             title="Drag & drop made easy"
             description="Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="More than multitask"
             description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard
-            isCardOnRight={true}
+            isCardOnRight={false}
             title="TabOS!"
             description="Browsers have proven how powerful tabs are, so why not use them to make your OS even more powerful?"
           />
           <Spacer h="900px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="New context menu"
             description="Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!"
           />
           <Spacer h="900px" />
           <FeaturesBetaCard
-            isCardOnRight={true}
+            isCardOnRight={false}
             title="Your OS, your preference"
             description="We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard
-            isCardOnRight={false}
+            isCardOnRight={true}
             title="Day & Night"
             description="Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?"
           />
