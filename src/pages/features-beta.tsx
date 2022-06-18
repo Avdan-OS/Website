@@ -27,7 +27,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      <WidthRequirement width={1000} />
+      <WidthRequirement width={425} />
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
@@ -42,7 +42,7 @@ const Features = () => {
       <div>
         <div className="slide-background text-white">
           <video
-            preload=""
+            preload="auto"
             id="video"
             muted
             disablePictureInPicture
@@ -50,10 +50,10 @@ const Features = () => {
             style={{ width: '100%', height: '100%' }}
           >
             {/* 
-              The video source should have 100% i-frame and no p/b-frame and consistant frame rate, or the video will lag
+              The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag
               20fps 720p vp9 webm is recommended when serving the video over cdn
             */}
-            <source type="video/webm" src="https://cdn.avdanos.com/features.webm" height="100%" width="100%" />
+            <source type="video/webm" src="/assets/clips/features.webm" height="100%" width="100%" />
           </video>
         </div>
         <div className="slide-page ">
