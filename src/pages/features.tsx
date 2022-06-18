@@ -26,7 +26,7 @@ const features = () => {
       />
       <FeaturesCard
         cardTitle="Brand new context menu"
-        cardDescription="With the brand new context menu in AvdanOS you can choose from multiple commands such as searching a selected word,copy a selected word,paste a selected or even cut a selected word"
+        cardDescription="With the brand new context menu in AvdanOS you can choose from multiple commands such as searching the selected text,copying the selected text,pasting the selected text,cutting the selected text or even selecting every text in a text file or a webpage."
         cardVideo="/assets/clips/context.mp4"
         isInverted={true}
       />
