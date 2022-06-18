@@ -53,7 +53,7 @@ const Features = () => {
               The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag
               20fps 720p vp9 webm is recommended when serving the video over cdn
             */}
-            <source type="video/webm" src="https://cdn.avdanos.com/features.webm" height="100%" width="100%" />
+            <source type="video/webm" src="/assets/clips/features.webm" height="100%" width="100%" />
           </video>
         </div>
         <div className="slide-page ">
