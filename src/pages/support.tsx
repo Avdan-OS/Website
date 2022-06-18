@@ -67,7 +67,7 @@ const Support = () => {
             >
               <Image
                 draggable="false"
-                src={`/assets/icons/Github${theme.type === 'light' ? '_light' : ''}.png`}
+                src={`/assets/icons/GitHub${theme.type === 'light' ? '_light' : ''}.png`}
                 height="90%"
                 width="150px"
               />
