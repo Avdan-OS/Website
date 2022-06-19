@@ -62,7 +62,13 @@ const Download = () => {
                 paddingBottom="10px"
                 width="100%"
               >
-                <Image draggable="false" src="/assets/icons/WEB.png" height="100%" width="170px" />
+                <Image
+                  draggable="false"
+                  src="/assets/icons/WEB.png"
+                  height="100%"
+                  width="170px"
+                  alt="Test The OS in Website"
+                />
                 <Spacer h={2} />
                 <Button
                   type="success"
@@ -88,7 +94,7 @@ const Download = () => {
             >
               <Tag type="success">For most people</Tag>
               <Spacer h={0} />
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" />
+              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
                 type="success"
                 shadow
@@ -118,7 +124,7 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" />
+              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Spacer h={2} />
               <Button
                 type="success"

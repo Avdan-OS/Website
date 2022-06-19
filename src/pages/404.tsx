@@ -1,4 +1,4 @@
-import { Page, Note } from '@geist-ui/core';
+import { Note } from '@geist-ui/core';
 import Head from 'next/head';
 
 const Page404 = () => {
