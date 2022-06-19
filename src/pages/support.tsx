@@ -1,10 +1,9 @@
-import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag } from '@geist-ui/core';
+import { Text, Grid, Spacer } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
+import SupportCard from '@/components/SupportCard';
 
 const Support = () => {
-  const theme = useTheme();
-
   const [mobileLayout, useMobileLayout] = useState(false);
 
   dynamicWidth((width) => {
@@ -27,156 +26,21 @@ const Support = () => {
           alignItems="center"
           justify="center"
         >
-          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="9px"
-              width="95%"
-            >
-              <Image
-                draggable="false"
-                src={`/assets/icons/Twitter${theme.type === 'light' ? '_light' : ''}.png`}
-                height="90%"
-                width="150px"
-              />
-              <Tag>Twitter</Tag>
-              <Spacer />
-              <Button
-                type="success"
-                width={0.7}
-                shadow
-                margin="9px"
-                onClick={() => {
-                  window.location.replace('https://twitter.com/avdan_os');
-                }}
-              >
-                Visit{mobileLayout}
-              </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="9px"
-              width="95%"
-            >
-              <Image
-                draggable="false"
-                src={`/assets/icons/GitHub${theme.type === 'light' ? '_light' : ''}.png`}
-                height="90%"
-                width="150px"
-              />
-              <Tag>GitHub</Tag>
-              <Spacer />
-              <Button
-                type="success"
-                width={0.7}
-                shadow
-                margin="9px"
-                onClick={() => {
-                  window.location.replace('https://github.com/Avdan-OS');
-                }}
-              >
-                Visit
-              </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="9px"
-              width="95%"
-            >
-              <Image
-                draggable="false"
-                src={`/assets/icons/YouTube${theme.type === 'light' ? '_light' : ''}.png`}
-                height="90%"
-                width="150px"
-              />
-              <Tag>YouTube</Tag>
-              <Spacer />
-              <Button
-                type="success"
-                width={0.7}
-                shadow
-                margin="9px"
-                onClick={() => {
-                  window.location.replace('https://www.youtube.com/c/AvdanOSDeveloper');
-                }}
-              >
-                Visit
-              </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="9px"
-              width="95%"
-            >
-              <Image
-                draggable="false"
-                src={`/assets/icons/Discord${theme.type === 'light' ? '_light' : ''}.png`}
-                height="90%"
-                width="150px"
-              />
-              <Tag>Discord</Tag>
-              <Spacer />
-              <Button
-                type="success"
-                width={0.7}
-                shadow
-                margin="9px"
-                onClick={() => {
-                  window.location.replace('https://discord.gg/avdanos');
-                }}
-              >
-                Visit
-              </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-          <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="9px"
-              width="95%"
-            >
-              <Image
-                draggable="false"
-                src={`/assets/icons/Reddit${theme.type === 'light' ? '_light' : ''}.png`}
-                height="90%"
-                width="150px"
-              />
-              <Tag>Reddit</Tag>
-              <Spacer />
-              <Button
-                type="success"
-                width={0.7}
-                shadow
-                margin="9px"
-                onClick={() => {
-                  window.location.replace('https://www.reddit.com/r/AvdanOS/');
-                }}
-              >
-                Visit
-              </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
+          <SupportCard icon="Twitter" title="Twitter" link="https://twitter.com/avdan_os" mobileLayout={mobileLayout} />
+          <SupportCard icon="GitHub" title="GitHub" link="https://github.com/Avdan-OS" mobileLayout={mobileLayout} />
+          <SupportCard
+            icon="YouTube"
+            title="YouTube"
+            link="https://www.youtube.com/c/AvdanOSDeveloper"
+            mobileLayout={mobileLayout}
+          />
+          <SupportCard icon="Discord" title="Discord" link="https://discord.gg/avdanos" mobileLayout={mobileLayout} />
+          <SupportCard
+            icon="Reddit"
+            title="Reddit"
+            link="https://www.reddit.com/r/AvdanOS/"
+            mobileLayout={mobileLayout}
+          />
         </Grid.Container>
         <Spacer h={5} />
       </div>
