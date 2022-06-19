@@ -27,7 +27,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      <WidthRequirement width={425} />
+      <WidthRequirement width={575} />
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
