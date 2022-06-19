@@ -48,7 +48,7 @@ const WidthRequirement = ({ width }) => {
       setContent(
         <p>
           Your window is too small to display the content of this page, and we detected that you got more screen estate.
-          Please increate your window width.
+          Please increase your window width.
         </p>
       );
       setVisible(true);

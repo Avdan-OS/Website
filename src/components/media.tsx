@@ -7,35 +7,35 @@ const Media = () => {
   return (
     <Grid.Container gap={1} justify="center">
       <Grid>
-        <a href="https://twitter.com/avdan_os" target="_blank">
+        <a href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
           <Card shadow>
             <RiTwitterFill size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://github.com/Avdan-OS/" target="_blank">
+        <a href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
           <Card shadow>
             <AiFillGithub size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank">
+        <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
           <Card shadow>
             <AiFillYoutube size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://discord.gg/avdanos" target="_blank">
+        <a href="https://discord.gg/avdanos" target="_blank" rel="noreferrer">
           <Card shadow>
             <FaDiscord size={26} />
           </Card>
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.reddit.com/r/AvdanOS/" target="_blank">
+        <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
           <Card shadow>
             <FaRedditAlien size={26} />
           </Card>
