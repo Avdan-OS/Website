@@ -1,6 +1,5 @@
 import FeaturesCard from '@/components/FeaturesCard';
 import BetaPopup from '@/components/BetaPopup';
-
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
 
