@@ -10,9 +10,9 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }) => 
     }
   });
   return (
-    <article className={isSmallDevice ? 'margin-2 featuresGroup' : 'margin-7 featuresGroup'} id={cardTitle}>
+    <article className={isSmallDevice ? 'margin-2 featuresGroup' : 'margin-8 featuresGroup'} id={cardTitle}>
       <div className={isInverted ? 'inverse' : ''}>
-        <video autoPlay={true} preload="auto" muted loop style={{ width: '100%', height: '100%' }}>
+        <video autoPlay={true} loop preload="none" muted style={{ width: '100%', height: '100%' }}>
           <source type="video/mp4" src={cardVideo} height="100%" width="100%" />
         </video>
       </div>
@@ -22,8 +22,8 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }) => 
       </div>
       <style jsx>
         {`
-          .margin-7 {
-            margin: 2.5rem 1rem 7rem 1rem;
+          .margin-8 {
+            margin: 2.5rem 1rem 8rem 1rem;
           }
           .margin-2 {
             margin: 2.5rem 1rem 2rem 1rem;
