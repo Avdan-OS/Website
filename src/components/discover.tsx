@@ -16,15 +16,13 @@ export default function Discover() {
         <div className="page__content">
           <Grid.Container gap={2} justify="center" id={isSmallScreen ? 'stacked' : ''}>
             <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
-              <Card shadow height={isSmallScreen ? 'auto' : '550px'} width="100%">
-                <Text h3 style={{ marginTop: 10, marginBottom: 10 }}>
-                  Join our community and build with us.
-                </Text>
+              <Card shadow height={isSmallScreen ? 'auto' : '550px'} width="100%"
+              style={{ background: theme.palette.background, border: '1px solid' + theme.palette.border}}>
                 <iframe
                   src={`https://discord.com/widget?id=964457482586034186&theme=${theme.type}`}
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                   width={'100%'}
-                  height={'425px'}
+                  height={'520px%'}
                   frameBorder={0}
                 />
               </Card>
