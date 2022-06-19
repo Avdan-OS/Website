@@ -19,7 +19,7 @@ const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
         width="95%"
       >
         <Image
-          alt="Twitter"
+          alt={title}
           draggable="false"
           src={`/assets/icons/${icon}${theme.type === 'light' ? '_light' : ''}.png`}
           height="90%"
