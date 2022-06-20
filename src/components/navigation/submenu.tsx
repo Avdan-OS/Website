@@ -40,8 +40,8 @@ const Submenu = () => {
                   </Tabs>
                 </div>
               ) : (
-                <div className="submenu__inner">
-                  <h4 className="submenu__highlight">
+                <div className="submenu__inner submenu__dektop">
+                  {useLogo ? (<h4 className="submenu__highlight">
                     <img
                       height={'19px'}
                       alt="avdan-os"
