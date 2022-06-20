@@ -76,8 +76,13 @@ const Submenu = () => {
           border-bottom: 1px solid ${theme.palette.border};
         }
         .submenu__inner {
-          padding: 0 ${theme.layout.pageMargin};
+          padding: 0;
           width: ${theme.layout.pageWidthWithMargin};
+        }
+        
+        .submenu__inner.submenu__dektop {
+          display: flex;
+          justify-content: center;
         }
   
         .submenu__inner :global(.tab) {
