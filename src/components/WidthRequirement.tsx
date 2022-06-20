@@ -5,7 +5,7 @@
  */
 
 import { Modal, useModal } from '@geist-ui/core';
-import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
 
@@ -18,6 +18,7 @@ declare global {
 const WidthRequirement = ({ width }: { width: number }) => {
   const { setVisible, bindings } = useModal();
   const [subtitle, setSubtitle] = useState('Rotate Your Screen');
+  const router = useRouter();
   const [content, setContent] = useState(
     <p>Your screen is too small to display this page. Please rotate to landscape view or use desktop.</p>
   );
@@ -88,9 +89,7 @@ const WidthRequirement = ({ width }: { width: number }) => {
       <Modal.Title>Width Incompatibility</Modal.Title>
       <Modal.Subtitle>{subtitle}</Modal.Subtitle>
       <Modal.Content>{content}</Modal.Content>
-      <NextLink href="/">
-        <Modal.Action>Return to home</Modal.Action>
-      </NextLink>
+      <Modal.Action onClick={() => router.back()}>Go Back</Modal.Action>
     </Modal>
   );
 };
