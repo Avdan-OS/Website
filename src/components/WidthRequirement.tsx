@@ -47,7 +47,7 @@ const WidthRequirement = ({ width }) => {
       setContent(
         <p>
           Your window is too small to display the content of this page, and we detected that you got more screen estate.
-          Please increase your window width.
+          Please increase your window width or maximise your browser window.
         </p>
       );
       setVisible(true);
@@ -66,15 +66,19 @@ const WidthRequirement = ({ width }) => {
       return;
     }
     // Unavailable error
+    if (mobileAndTabletCheck()) {
+      setSubtitle('This page is incompatible');
+      setContent(
+        <p>
+          Your screen width is too small to display the content of this page. You might need to use desktop to view this
+          page.
+        </p>
+      );
+      return;
+    }
     setSubtitle('This page is incompatible');
     setContent(
-      <p>
-        Your screen width is too small to display the content of this page. you can try the following:
-        <ul>
-          <li>Increase your screen resolution</li>
-          <li>Use a bigger screen</li>
-        </ul>
-      </p>
+      <p>Your screen width is too small to display the content of this page. Please increase your system resolution.</p>
     );
     setVisible(true);
     return;
