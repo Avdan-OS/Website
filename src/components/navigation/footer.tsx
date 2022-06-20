@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import NextLink from 'next/link';
-
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
-
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
 
@@ -48,27 +46,27 @@ const Footer: React.FC = () => {
               <h3>External Links</h3>
               <ul>
                 <li>
-                  <a href="https://twitter.com/avdan_os" target="_blank">
+                  <a href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/Avdan-OS/" target="_blank">
+                  <a href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank">
+                  <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
                     YouTube
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/avdanos" target="_blank">
+                  <a href="https://discord.gg/avdanos" target="_blank" rel="noreferrer">
                     Discord
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.reddit.com/r/AvdanOS/" target="_blank">
+                  <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
                     Reddit
                   </a>
                 </li>
@@ -133,7 +131,7 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               Inspired by{' '}
               <strong>
-                <a target="_blank" style={{ color: colorSwitch() }} href="https://youtube.com/avdan">
+                <a target="_blank" style={{ color: colorSwitch() }} href="https://youtube.com/avdan" rel="noreferrer">
                   Avdan
                 </a>
               </strong>

@@ -43,6 +43,7 @@ const Submenu = () => {
                   <h4 className="submenu__highlight">
                     <img
                       height={'19px'}
+                      alt="avdan-os"
                       style={{ overflow: 'initial', pointerEvents: 'none' }}
                       src={renderBannerImage()}
                     />

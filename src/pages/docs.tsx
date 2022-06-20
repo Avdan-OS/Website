@@ -36,7 +36,13 @@ const Docs = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/user.png" height="100%" width="200px" />
+              <Image
+                alt="User Documentation"
+                draggable="false"
+                src="/assets/icons/user.png"
+                height="100%"
+                width="200px"
+              />
               <Tag>I'm a User</Tag>
               <Spacer />
               <Button
@@ -60,7 +66,13 @@ const Docs = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Image draggable="false" src="/assets/icons/developer.png" height="100%" width="200px" />
+              <Image
+                draggable="false"
+                src="/assets/icons/developer.png"
+                height="100%"
+                width="200px"
+                alt="Developer Documentation"
+              />
               <Tag>I'm a Developer</Tag>
               <Spacer />
               <Button
