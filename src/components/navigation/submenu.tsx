@@ -48,7 +48,7 @@ const Submenu = () => {
                       style={{ overflow: 'initial', pointerEvents: 'none' }}
                       src={renderBannerImage()}
                     />
-                  </h4>
+                  </h4>) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
