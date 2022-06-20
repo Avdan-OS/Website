@@ -10,9 +10,10 @@ const Submenu = () => {
   const [sticky, setSticky] = useState(false);
 
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth((width) => {
-    width < 1200 ? setMobileBar(true) : setMobileBar(false);
-  });
+  dynamicWidth(width => width < 600 ? setMobileBar(true) : setMobileBar(false));
+
+  const [useLogo, setLogo] = useState(false);
+  dynamicWidth(width => width > 800 ? setLogo(true) : setLogo(false))
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
@@ -39,15 +40,15 @@ const Submenu = () => {
                   </Tabs>
                 </div>
               ) : (
-                <div className="submenu__inner">
-                  <h4 className="submenu__highlight">
+                <div className="submenu__inner submenu__dektop">
+                  {useLogo ? (<h4 className="submenu__highlight">
                     <img
                       height={'19px'}
                       alt="avdan-os"
                       style={{ overflow: 'initial', pointerEvents: 'none' }}
                       src={renderBannerImage()}
                     />
-                  </h4>
+                  </h4>) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
@@ -75,8 +76,13 @@ const Submenu = () => {
           border-bottom: 1px solid ${theme.palette.border};
         }
         .submenu__inner {
-          padding: 0 ${theme.layout.pageMargin};
+          padding: 0;
           width: ${theme.layout.pageWidthWithMargin};
+        }
+        
+        .submenu__inner.submenu__dektop {
+          display: flex;
+          justify-content: center;
         }
   
         .submenu__inner :global(.tab) {
