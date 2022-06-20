@@ -2,7 +2,14 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { Text } from '@geist-ui/core';
 import { useState } from 'react';
 
-const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }) => {
+interface FeaturesCardProps {
+  cardVideo: string;
+  cardTitle: string;
+  cardDescription: string;
+  isInverted: boolean;
+}
+
+const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: FeaturesCardProps) => {
   const [isSmallDevice, setIsSmallDevice] = useState(false);
   dynamicWidth((width) => {
     if (width < 768) {

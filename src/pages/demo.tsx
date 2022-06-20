@@ -3,7 +3,7 @@ import { Button, Card, Text } from '@geist-ui/core';
 import { useRef } from 'react';
 import WidthRequirement from '@/components/WidthRequirement';
 const preview = () => {
-  const iframeRef = useRef<HTMLIFrameElement>();
+  const iframeRef = useRef<HTMLIFrameElement>(null);
   const minWidthNeeded = 1200;
 
   const fullScreen = () => {
