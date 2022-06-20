@@ -15,7 +15,7 @@ declare global {
   }
 }
 
-const WidthRequirement = ({ width }) => {
+const WidthRequirement = ({ width }: { width: number }) => {
   const { setVisible, bindings } = useModal();
   const [subtitle, setSubtitle] = useState('Rotate Your Screen');
   const [content, setContent] = useState(

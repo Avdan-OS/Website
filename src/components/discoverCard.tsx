@@ -1,6 +1,12 @@
 import { Card, Grid, Link, Text } from '@geist-ui/core';
 
-const discoverCard = ({ title, description, link }) => {
+interface DiscoverCardProps {
+  title: string;
+  description: string;
+  link: string;
+}
+
+const discoverCard = ({ title, description, link }: DiscoverCardProps) => {
   return (
     <Grid xs={12} justify="center">
       <Card width="100%" hoverable>
