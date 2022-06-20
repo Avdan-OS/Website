@@ -10,9 +10,10 @@ const Submenu = () => {
   const [sticky, setSticky] = useState(false);
 
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth((width) => {
-    width < 1200 ? setMobileBar(true) : setMobileBar(false);
-  });
+  dynamicWidth(width => width < 600 ? setMobileBar(true) : setMobileBar(false));
+
+  const [useLogo, setLogo] = useState(false);
+  dynamicWidth(width => width > 800 ? setLogo(true) : setLogo(false))
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
