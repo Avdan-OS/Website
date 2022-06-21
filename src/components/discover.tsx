@@ -2,6 +2,9 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { Card, Grid, Link, Spacer, useTheme } from '@geist-ui/core';
 import { useState } from 'react';
 import DiscoverCard from './discoverCard';
+import style from "../styles/components/cards.module.css";
+
+
 export default function Discover() {
   const theme = useTheme();
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -17,10 +20,9 @@ export default function Discover() {
           <Grid.Container gap={2} justify="center" id={isSmallScreen ? 'stacked' : ''}>
             <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
               <Card
-                shadow
                 height={isSmallScreen ? 'auto' : '550px'}
                 width="100%"
-                style={{ background: theme.palette.background, border: '1px solid' + theme.palette.border }}
+                className={style.info__card}
               >
                 <iframe
                   src={`https://discord.com/widget?id=964457482586034186&theme=${theme.type}`}
@@ -32,7 +34,7 @@ export default function Discover() {
               </Card>
             </Grid>
             <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
-              <Card height={isSmallScreen ? 'auto' : '550px'} style={{ background: theme.palette.accents_1 }}>
+              <Card height={isSmallScreen ? 'auto' : '550px'} className={style.info__card}>
                 <Grid.Container gap={1.5}>
                   <DiscoverCard
                     title="AvdanOS"
