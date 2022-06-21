@@ -43,6 +43,7 @@ const index = () => {
                         </NextLink>
                     </div>
                 </div>
+                <Spacer h={4}/>
                 <Discover/>
                 <Spacer h={2}/>
             </div>
