@@ -1,24 +1,27 @@
 import dynamicWidth from '@/lib/dynamic-width';
 import { Text, Button, Card, ButtonGroup, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
+import { useRef } from 'react';
 
 const BetaCard = ({ Link }: { Link: string }) => {
+  const betaContainerRef = useRef<HTMLDivElement>(null);
   const Theme = useTheme();
   dynamicWidth((width) => {
     if (width < 500) {
-      if (!document.getElementById('beta-container')) return;
-      document.getElementById('beta-container').style.display = 'none';
+      if (!betaContainerRef.current) return;
+      betaContainerRef.current.style.display = 'none';
     }
   });
   return (
-    <div id="beta-container">
+    <div id="beta-container" ref={betaContainerRef}>
       <Card className="beta-popup">
         <Text>Hey look! A new testing version of this page is available!</Text>
         <ButtonGroup style={{ width: '100%' }}>
           <Button
             shadow
             onClick={() => {
-              document.getElementById('beta-container').style.display = 'none';
+              if (!betaContainerRef.current) return;
+              betaContainerRef.current.style.display = 'none';
             }}
           >
             Close
