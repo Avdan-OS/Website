@@ -10,10 +10,10 @@ const Submenu = () => {
   const [sticky, setSticky] = useState(false);
 
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth(width => width < 600 ? setMobileBar(true) : setMobileBar(false));
+  dynamicWidth((width) => (width < 600 ? setMobileBar(true) : setMobileBar(false)));
 
   const [useLogo, setLogo] = useState(false);
-  dynamicWidth(width => width > 800 ? setLogo(true) : setLogo(false))
+  dynamicWidth((width) => (width > 800 ? setLogo(true) : setLogo(false)));
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
@@ -27,7 +27,7 @@ const Submenu = () => {
     <>
       {sticky ? (
         <nav className="submenu__wrapper">
-          <div className={`submenu ${sticky ? 'submenu_sticky' : ''}`}>
+          <div className={`submenu ${sticky ? 'submenu--sticky' : ''}`}>
             <div className="submenu__inner">
               {useMobileBar ? (
                 <div className="submenu__inner">
@@ -40,15 +40,17 @@ const Submenu = () => {
                   </Tabs>
                 </div>
               ) : (
-                <div className="submenu__inner submenu__dektop">
-                  {useLogo ? (<h4 className="submenu__highlight">
-                    <img
-                      height={'19px'}
-                      alt="avdan-os"
-                      style={{ overflow: 'initial', pointerEvents: 'none' }}
-                      src={renderBannerImage()}
-                    />
-                  </h4>) : null}
+                <div className="submenu__inner submenu__desktop">
+                  {useLogo ? (
+                    <h4 className="submenu__highlight">
+                      <img
+                        height={'19px'}
+                        alt="avdan-os"
+                        style={{ overflow: 'initial', pointerEvents: 'none' }}
+                        src={renderBannerImage()}
+                      />
+                    </h4>
+                  ) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
@@ -69,7 +71,7 @@ const Submenu = () => {
         .submenu__wrapper {
           background: ${theme.palette.background} !important;
         }
-        .submenu_sticky {
+        .submenu--sticky {
           background: ${theme.palette.accents_1}B2; // accent_1 + opacity
           box-shadow: ${theme.type === 'dark' ? `none` : 'rgba(0, 0, 0, 0.1) 0 0 15px 0'};
           border-top: 1px solid ${theme.palette.border};
@@ -80,7 +82,7 @@ const Submenu = () => {
           width: ${theme.layout.pageWidthWithMargin};
         }
         
-        .submenu__inner.submenu__dektop {
+        .submenu__inner.submenu__desktop {
           display: flex;
           justify-content: center;
         }
