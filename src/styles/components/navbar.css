@@ -203,14 +203,14 @@
 
 /* MENU */
 
-.themebuttonicon {
+.theme-button-icon {
   color: #000 !important;
 }
 
-.themebutttoncyan {
+.theme-button-cyan {
   border: 1px solid #00eab5 !important;
 }
-.themebutton {
+.theme-button {
   display: flex;
   align-items: center;
   justify-content: center;
