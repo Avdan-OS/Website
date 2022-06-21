@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
+import Alert from "@/components/alert";
 
 const Submenu = () => {
   const theme = useTheme();
@@ -61,7 +62,7 @@ const Submenu = () => {
             </div>
           </div>
         </nav>
-      ) : null}
+      ) : (useRouter().route != "/" ? <Alert/> : null)}
       <style jsx>{`
         .submenu__wrapper {
           background: ${theme.palette.background} !important;
