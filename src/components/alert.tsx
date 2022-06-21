@@ -1,23 +1,24 @@
-import { Link, useTheme, Grid, Card } from '@geist-ui/core';
+import {Link, Grid, Card} from '@geist-ui/core';
+import style from "../styles/components/cards.module.css";
 
-export const Alert = () => {
-  const theme = useTheme();
-  return (
-    <div>
-      <div dangerouslySetInnerHTML={{ __html: `<!--googleoff: index-->` }} />
-      <Grid style={{ paddingInline: 50, pointerEvents: 'none', display: 'block' }}>
-        <Card style={{ background: theme.palette.accents_1 }} hoverable>
-          <p style={{ fontSize: 14, margin: -10, marginLeft: 0 }}>
-            <strong>
-              <strong style={{ fontWeight: 400 }}>AvdanOS</strong> is still in development.
-            </strong>{' '}
-            <Link style={{ pointerEvents: 'stroke' }} block underline href="https://discord.gg/avdanos">
-              Join our Discord
-            </Link>
-          </p>
-        </Card>
-      </Grid>
-      <div dangerouslySetInnerHTML={{ __html: `<!--googleon: index-->` }} />
-    </div>
-  );
+const Alert = () => {
+    return (<>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <Grid style={{paddingInline: 50, pointerEvents: 'none', display: 'block', width: "60vw"}}>
+                    <Card className={style.alert__card}>
+                        <p style={{fontSize: 14, margin: -10, marginLeft: 0}}>
+                            <strong>
+                                <strong style={{fontWeight: 400}}>AvdanOS</strong> is still in development.
+                            </strong>{' '}
+                            <Link style={{pointerEvents: 'stroke'}} block underline href="https://discord.gg/avdanos">
+                                Join our Discord
+                            </Link>
+                        </p>
+                    </Card>
+                </Grid>
+            </div>
+        </>
+    );
 };
+
+export default Alert;
