@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
-import Alert from "@/components/alert";
+import Alert from '@/components/alert';
 
 const Submenu = () => {
   const theme = useTheme();
@@ -10,10 +10,10 @@ const Submenu = () => {
   const [sticky, setSticky] = useState(false);
 
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth(width => width < 600 ? setMobileBar(true) : setMobileBar(false));
+  dynamicWidth((width) => (width < 600 ? setMobileBar(true) : setMobileBar(false)));
 
   const [useLogo, setLogo] = useState(false);
-  dynamicWidth(width => width > 800 ? setLogo(true) : setLogo(false))
+  dynamicWidth((width) => (width > 800 ? setLogo(true) : setLogo(false)));
   useEffect(() => {
     const scrollHandler = () => setSticky(document.documentElement.scrollTop > 54);
     document.addEventListener('scroll', scrollHandler);
@@ -41,14 +41,16 @@ const Submenu = () => {
                 </div>
               ) : (
                 <div className="submenu__inner submenu__dektop">
-                  {useLogo ? (<h4 className="submenu__highlight">
-                    <img
-                      height={'19px'}
-                      alt="avdan-os"
-                      style={{ overflow: 'initial', pointerEvents: 'none' }}
-                      src={renderBannerImage()}
-                    />
-                  </h4>) : null}
+                  {useLogo ? (
+                    <h4 className="submenu__highlight">
+                      <img
+                        height={'19px'}
+                        alt="avdan-os"
+                        style={{ overflow: 'initial', pointerEvents: 'none' }}
+                        src={renderBannerImage()}
+                      />
+                    </h4>
+                  ) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
                     <Tabs.Item label="Features" value="/features" />
@@ -62,7 +64,9 @@ const Submenu = () => {
             </div>
           </div>
         </nav>
-      ) : (useRouter().route != "/" ? <Alert/> : null)}
+      ) : useRouter().route != '/' ? (
+        <Alert />
+      ) : null}
       <style jsx>{`
         .submenu__wrapper {
           background: ${theme.palette.background} !important;
