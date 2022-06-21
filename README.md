@@ -48,6 +48,10 @@ If things don't fully work and you want to release a beta to the public, you can
 
 If you are making a page without the help of any designer or other developers, try to follow the design. This can be easily done by using the geist-ui and not change too much properties.
 
+### Code Quality
+
+For tsx, please follow the [Airbnb style guide](https://airbnb.io/javascript/react/). For CSS, please follow [this guide](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/).
+
 ### Pull Request
 
 It's recommended that you have a concise list of change when making pull request to make the review process faster. Also, makesure the page builds on your fork before making a pull request.
