@@ -1,0 +1,11 @@
+.alert__card {
+    background: transparent !important;
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+}
+
+.info__card {
+    background: transparent !important;
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+}
