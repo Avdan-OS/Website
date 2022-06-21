@@ -4,16 +4,16 @@
   top: 0;
   z-index: 0;
 }
-.slide-page {
+.slide {
   margin-top: -80vh !important;
 }
 .slide-content {
   z-index: 1;
 }
-.slide-card-left {
+.slide__card-left {
   float: left;
 }
-.slide-card-right {
+.slide__card-right {
   float: right;
 }
 .slide-topic {

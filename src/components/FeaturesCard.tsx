@@ -17,7 +17,7 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
     }
   });
   return (
-    <article className={isSmallDevice ? 'margin-2 featuresGroup' : 'margin-8 featuresGroup'} id={cardTitle}>
+    <article className={isSmallDevice ? 'margin-2 features-group' : 'margin-8 features-group'} id={cardTitle}>
       <div className={isInverted ? 'inverse' : ''}>
         <video autoPlay={true} loop preload="none" muted style={{ width: '100%', height: '100%' }}>
           <source type="video/mp4" src={cardVideo} height="100%" width="100%" />
@@ -36,7 +36,7 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
             margin: 2.5rem 1rem 2rem 1rem;
           }
           @media (min-width: 650px) {
-            .featuresGroup {
+            .features-group {
               display: grid;
               grid-template-columns: 1fr 1fr;
               gap: 2rem;

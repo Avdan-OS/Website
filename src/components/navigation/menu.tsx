@@ -69,7 +69,7 @@ const Menu = () => {
           {useAltMenuPosition ? null : <MenuBar />}
           <Button
             aria-label="Toggle dark mode"
-            className="themebutton"
+            className="theme-button"
             auto
             iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             type="abort"
@@ -79,11 +79,11 @@ const Menu = () => {
             <a>
               <Button
                 aria-label="Open docs"
-                className="themebutton themebutttoncyan"
+                className="theme-button theme-button-cyan"
                 auto
                 shadow
                 type="success"
-                iconRight={<Download className="themebuttonicon" size={16} />}
+                iconRight={<Download className="theme-buttonicon" size={16} />}
               ></Button>
             </a>
           </NextLink>
@@ -92,11 +92,11 @@ const Menu = () => {
       </nav>
       <Submenu />
       <style>{`
-        .themebutton {
+        .theme-button {
           margin: 0 ${theme.layout.gapHalf};
           
         }
-        .themebutttoncyan {
+        .theme-button-cyan {
           background-color: ${theme.palette.cyan} !important;
         }
     

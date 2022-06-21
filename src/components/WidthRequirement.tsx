@@ -22,7 +22,7 @@ const WidthRequirement = ({ width }: { width: number }) => {
   const [content, setContent] = useState(
     <p>Your screen is too small to display this page. Please rotate to landscape view or use desktop.</p>
   );
-  var mobileAndTabletCheck = function () {
+  const mobileAndTabletCheck = function () {
     let check = false;
     (function (a) {
       if (

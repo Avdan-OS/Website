@@ -56,8 +56,8 @@ const Features = () => {
             <source type="video/webm" src="/assets/clips/features.webm" height="100%" width="100%" />
           </video>
         </div>
-        <div className="slide-page ">
-          <Card className="slide-card text-white slide-card-left">
+        <div className="slide">
+          <Card className="slide__card text-white slide__card-left">
             This concept video is made by Avdan <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">Watch on YouTube</Button>
@@ -150,7 +150,7 @@ const Features = () => {
             html {
               scrollbar-width: none;
             }
-            .slide-card {
+            .slide__card {
               margin: 20px !important;
               padding: 10px !important;
               width: 40% !important;
