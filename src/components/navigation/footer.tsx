@@ -153,11 +153,16 @@ const Footer: React.FC = () => {
           </strong>
           , {new Date().getFullYear()}
         </p>
-        <style jsx>{`
+        <style global jsx>{`
+          #__next {
+            min-height: 100vh;
+          }
           footer {
             border-top: 1px solid ${theme.palette.border};
             background-color: ${theme.palette.accents_1};
             color: ${theme.palette.foreground};
+            position: sticky;
+            top: 100vh;
           }
           .container {
             display: ${useMobileFooter ? 'grid' : 'flex'};

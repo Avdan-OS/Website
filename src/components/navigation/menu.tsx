@@ -26,7 +26,7 @@ const Menu = () => {
   class MenuBar extends Component {
     render() {
       return useMobileBar ? (
-        <div id="navcol-1" className="collapse navbar-collapse" style={{}}>
+        <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
               <Tabs.Item label="Home" value="/" />

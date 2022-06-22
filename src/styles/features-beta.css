@@ -10,10 +10,10 @@
 .slide-content {
   z-index: 1;
 }
-.slide__card-left {
+.slide__card--left {
   float: left;
 }
-.slide__card-right {
+.slide__card--right {
   float: right;
 }
 .slide-topic {

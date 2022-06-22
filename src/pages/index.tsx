@@ -16,7 +16,7 @@ const index = () => {
           <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
         </video>
       </div>
-      <Spacer h="25vh" />
+      <Spacer h="30vh" />
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
