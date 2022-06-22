@@ -61,12 +61,12 @@ const index = () => {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
-        .video_player {
+        .video-player {
           width: 100vw;
           position: relative;
           margin-bottom: ${useMobileBar ? '-20vh' : '-60vh'};
         }
-        .video_player:before {
+        .video-player:before {
           content: ' ';
           position: absolute;
           width: 100%;
