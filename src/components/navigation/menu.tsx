@@ -14,10 +14,12 @@ const Menu = () => {
   const router = useRouter();
 
   const [useMobileBar, setMobileBar] = useState(false);
+  const [useFeaturesBeta, setFeaturesBeta] = useState(false);
   const [useAltMenuPosition, setAltMenuPosition] = useState(false);
   dynamicWidth((width) => {
     width < 1200 ? setMobileBar(true) : setMobileBar(false);
     width < 750 ? setAltMenuPosition(true) : setAltMenuPosition(false);
+    width < 575 ? setFeaturesBeta(false) : setFeaturesBeta(true);
   });
   const fireClick = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
@@ -30,10 +32,9 @@ const Menu = () => {
           <ul className="navbar-nav ms-auto">
             <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
               <Tabs.Item label="Home" value="/" />
-              <Tabs.Item label="Features" value="/features" />
+              <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
               <Tabs.Item label="Downloads" value="/downloads" />
               <Tabs.Item label="Support" value="/support" />
-
               <Tabs.Item label="Docs" value="/docs" />
             </Tabs>
           </ul>
@@ -43,11 +44,11 @@ const Menu = () => {
           <ul className="navbar-nav ms-auto">
             <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
               <Tabs.Item label="Home" value="/" />
-              <Tabs.Item label="Features" value="/features" />
+              <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
               <Tabs.Item label="Downloads" value="/downloads" />
               <Tabs.Item label="Support" value="/support" />
               <Tabs.Item label="Documentation" value="/docs" />
-              <Tabs.Item label={'Demo'} value="/demo" />
+              <Tabs.Item label="Demo" value="/demo" />
             </Tabs>
           </ul>
         </div>
