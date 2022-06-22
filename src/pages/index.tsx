@@ -24,7 +24,7 @@ const index = () => {
           </Text>
         </div>
         <Alert />
-        <Spacer h={1} />
+        <Spacer h={2} />
         <div className="center card-container">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
