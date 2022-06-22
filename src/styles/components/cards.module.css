@@ -1,0 +1,11 @@
+.card {
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+}
+.card__white {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(180, 180, 180, 0.3) !important;
+}
+.card__dark {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
