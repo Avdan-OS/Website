@@ -2,31 +2,30 @@ name: NPM Dev site Deploy
 
 on:
   push:
-    branches: [ 'dev' ]
+    branches: ["dev"]
     paths:
-      - 'src/**'
+      - "src/**"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'src' # Here the path to the folder where package-lock.json is located.
+        working-directory: "src" # Here the path to the folder where package-lock.json is located.
     strategy:
       matrix:
         node-version: [16.x] # Are you are missing this specification?
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        cache-dependency-path: '**/package-lock.json' # THIS PATTERN did the trick for me.
-    - run: npm install && npx next build && npx next export && touch out/.nojekyll
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
-      with:
-        folder: src/out
-        branch: main # The branch the action should deploy to.
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json" # THIS PATTERN did the trick for me.
+      - run: npm install && npx next build && npx next export && touch out/.nojekyll
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          folder: src/out
+          branch: main # The branch the action should deploy to.
