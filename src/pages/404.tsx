@@ -8,7 +8,7 @@ const Page404 = () => {
         <title>Page not found</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div style={{ marginLeft: '70px', marginTop: '50px', paddingRight: '30px', marginBottom: '366px' }}>
+      <div style={{ marginLeft: '70px', marginTop: '50px', paddingRight: '30px' }}>
         <h1>404.</h1>
         <h4>This page does not exist.</h4>
         <Note style={{ display: 'inline-block' }} type="warning" label="Tip">
