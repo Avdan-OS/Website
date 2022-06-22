@@ -64,9 +64,9 @@ const Submenu = () => {
             </div>
           </div>
         </nav>
-      ) : useRouter().route != '/' ? (
+      ) : (
         <Alert />
-      ) : null}
+      )}
       <style jsx>{`
         .submenu__wrapper {
           background: ${theme.palette.background} !important;

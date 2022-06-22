@@ -3,7 +3,6 @@ import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
-import Alert from '@/components/alert';
 
 const index = () => {
   const theme = useTheme();
@@ -12,19 +11,19 @@ const index = () => {
 
   return (
     <>
-      <div className={'video-player'}>
+      <div className="video-player" style={{ position: 'absolute', top: '90px', zIndex: 0 }}>
         <video autoPlay={true} muted loop style={{ height: '100%', width: '100%' }}>
           <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
         </video>
       </div>
+      <Spacer h="25vh" />
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
             Your PC but even better.
           </Text>
         </div>
-        <Alert />
-        <Spacer h={2} />
+        <Spacer h={4} />
         <div className="center card-container">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
@@ -41,7 +40,7 @@ const index = () => {
             </NextLink>
           </div>
         </div>
-        <Spacer h={4} />
+        <Spacer h="30vh" />
         <Discover />
         <Spacer h={2} />
       </div>
