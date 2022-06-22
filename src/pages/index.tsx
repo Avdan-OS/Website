@@ -23,7 +23,7 @@ const index = () => {
             Your PC but even better.
           </Text>
         </div>
-        <Spacer h={4} />
+        <Spacer h={2} />
         <div className="center card-container">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
