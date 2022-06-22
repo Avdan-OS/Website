@@ -18,7 +18,7 @@ export default function Discover() {
         <div className="page__content">
           <Grid.Container gap={2} justify="center" id={isSmallScreen ? 'stacked' : ''}>
             <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
-              <Card height={isSmallScreen ? 'auto' : '550px'} width="100%" className={style.info__card}>
+              <Card height={isSmallScreen ? 'auto' : '550px'} width="100%" className={style.card + " " + (theme.type == "dark" ? style.card__dark : style.card__white)}>
                 <iframe
                   src={`https://discord.com/widget?id=964457482586034186&theme=${theme.type}`}
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
@@ -29,7 +29,7 @@ export default function Discover() {
               </Card>
             </Grid>
             <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
-              <Card height={isSmallScreen ? 'auto' : '550px'} className={style.info__card}>
+              <Card height={isSmallScreen ? 'auto' : '550px'} className={style.card + " " + (theme.type == "dark" ? style.card__dark : style.card__white)}>
                 <Grid.Container gap={1.5}>
                   <DiscoverCard
                     title="AvdanOS"
