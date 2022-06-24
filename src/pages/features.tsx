@@ -1,5 +1,4 @@
 import FeaturesCard from '@/components/FeaturesCard';
-import BetaPopup from '@/components/BetaPopup';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
 import dynamicWidth from '@/lib/dynamic-width';
@@ -89,7 +88,6 @@ const features = () => {
         <Spacer h="20px" />
         <Media />
       </div>
-      <BetaPopup Link="/features-beta" />
       <Spacer h={3} />
     </>
   );

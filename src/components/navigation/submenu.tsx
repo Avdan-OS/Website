@@ -58,7 +58,7 @@ const Submenu = () => {
                   ) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
-                    <Tabs.Item label="Features" value="/features" />
+                    <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
                     <Tabs.Item label="Downloads" value="/downloads" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Documentation" value="/docs" />
