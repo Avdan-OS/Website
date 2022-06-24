@@ -2,6 +2,7 @@ import { Text, Grid, Spacer } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import SupportCard from '@/components/SupportCard';
+import BetaPopup from '@/components/BetaPopup';
 
 const Support = () => {
   const [mobileLayout, useMobileLayout] = useState(false);
@@ -43,6 +44,7 @@ const Support = () => {
           />
         </Grid.Container>
         <Spacer h={5} />
+        <BetaPopup Link="/support-beta" />
       </div>
     </>
   );
