@@ -11,10 +11,12 @@ const Footer: React.FC = () => {
   };
 
   const [useMobileFooter, setMobileFooter] = useState(false);
+  const [useFeaturesBeta, setFeaturesBeta] = useState(false);
+
   dynamicWidth((width) => {
     width < 970 ? setMobileFooter(true) : setMobileFooter(false);
+    width < 575 ? setFeaturesBeta(false) : setFeaturesBeta(true);
   });
-
   return (
     <>
       <footer className="footer-dark">
@@ -29,7 +31,7 @@ const Footer: React.FC = () => {
                   </NextLink>
                 </li>
                 <li>
-                  <NextLink href="/products">
+                  <NextLink href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
                     <a>Features</a>
                   </NextLink>
                 </li>

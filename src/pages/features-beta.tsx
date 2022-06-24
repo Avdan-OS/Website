@@ -4,6 +4,7 @@ import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
+import dynamicWidth from '@/lib/dynamic-width';
 
 const Features = () => {
   const theme = useTheme();
@@ -25,6 +26,12 @@ const Features = () => {
       videoElement.currentTime = (window.scrollY - window.innerHeight + 300) / 80;
     });
   }, []);
+  dynamicWidth((width) => {
+    if (width < 575) {
+      location.replace('/features');
+    }
+  });
+
   return (
     <>
       <WidthRequirement width={575} />

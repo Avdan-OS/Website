@@ -2,8 +2,14 @@ import FeaturesCard from '@/components/FeaturesCard';
 import BetaPopup from '@/components/BetaPopup';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
+import dynamicWidth from '@/lib/dynamic-width';
 
 const features = () => {
+  dynamicWidth((width) => {
+    if (width > 575) {
+      location.replace('/features-beta');
+    }
+  });
   return (
     <>
       <FeaturesCard

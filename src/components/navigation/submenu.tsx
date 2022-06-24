@@ -10,7 +10,12 @@ const Submenu = () => {
   const [sticky, setSticky] = useState(false);
 
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth((width) => (width < 600 ? setMobileBar(true) : setMobileBar(false)));
+  const [useFeaturesBeta, setFeaturesBeta] = useState(false);
+
+  dynamicWidth((width) => {
+    width < 600 ? setMobileBar(true) : setMobileBar(false);
+    width < 575 ? setFeaturesBeta(false) : setFeaturesBeta(true);
+  });
 
   const [useLogo, setLogo] = useState(false);
   dynamicWidth((width) => (width > 800 ? setLogo(true) : setLogo(false)));
@@ -33,7 +38,7 @@ const Submenu = () => {
                 <div className="submenu__inner">
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
                     <Tabs.Item label="Home" value="/" />
-                    <Tabs.Item label="Features" value="/features" />
+                    <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
                     <Tabs.Item label="Downloads" value="/downloads" />
                     <Tabs.Item label="Support" value="/support" />
                     <Tabs.Item label="Docs" value="/docs" />
