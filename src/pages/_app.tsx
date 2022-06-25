@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="twitter:description" content="AvdanOS - The desktop you know and love. Read more..." />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AvdanOS - The desktop you know and love." />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow">
         <meta name="description" content="AvdanOS - The desktop you know and love." />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
