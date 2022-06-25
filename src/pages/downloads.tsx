@@ -179,10 +179,14 @@ const Download = () => {
             *Live system is currently not available because the system is still under development
           </p>
         </Modal.Content>
-        <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          Cancel
-        </Modal.Action>
-        <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
+        <span>
+          <Button mr={1} onClick={() => webviewModal.setVisible(false)}>
+            Cancel
+          </Button>
+          <Button onClick={() => window.location.replace('/demo')} type="success">
+            Yes, take me there
+          </Button>
+        </span>
       </Modal>
       <style jsx>{`
         .trouble {
