@@ -4,7 +4,7 @@
  * @license GPL-3.0
  */
 
-import { Modal, useModal } from '@geist-ui/core';
+import { Modal, useModal, Button } from '@geist-ui/core';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
@@ -89,7 +89,7 @@ const WidthRequirement = ({ width }: { width: number }) => {
       <Modal.Title>Width Incompatibility</Modal.Title>
       <Modal.Subtitle>{subtitle}</Modal.Subtitle>
       <Modal.Content>{content}</Modal.Content>
-      <Modal.Action onClick={() => router.back()}>Go Back</Modal.Action>
+      <Button onClick={() => router.back()}>Go Back</Button>
     </Modal>
   );
 };
