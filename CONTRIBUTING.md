@@ -83,7 +83,9 @@ Meh : it's acceptable
 
 ✔️ : Now we know why a file changed and what it's suppose to do.
 
-Bad pull request messages won't cause it to get closed, but better messages will speed up the process and make merging faster.
+Bad pull request messages won't cause it to get closed, but better messages will speed up the process and make merging faster. 
+
+If there's a change in design, please also include a screenshot in the pull request.
 
 Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. You can create draft pull requests, which will allow other people to see, give feedbacks, and request changes.
 
