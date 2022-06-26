@@ -5,28 +5,49 @@ import { useState } from 'react';
 import NextLink from 'next/link';
 
 const Download = () => {
+  const [hasX64, useX64] = useState(false);
   const theme = useTheme();
   const { setToast } = useToasts();
+  const downloadModal = useModal();
   const integrityModal = useModal();
   const webviewModal = useModal();
 
-  const download = (type: 'x64' | 'arm' | 'web') => {
+  const arch = (type: 'x64' | 'arm' | 'web') => {
     switch (type) {
       case 'x64':
-        setShasum('testing-x64-shasum');
-        integrityModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+        useX64(true);
+        downloadModal.setVisible(true);
         break;
       case 'arm':
-        setShasum('testing-arm-shasum');
-        integrityModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+        useX64(false);
+        downloadModal.setVisible(true);
         break;
       case 'web':
         webviewModal.setVisible(true);
         break;
     }
   };
+
+  const download = (type: 'direct' | 'torrent') => {
+    integrityModal.setVisible(true);
+    setToast({ text: 'Download is not available yet', delay: 5000, type: 'error' })
+    switch(type) {
+      case 'direct':
+        if (hasX64) {
+          setShasum('testing-x64-shasum');
+          break;
+        }
+        setShasum('testing-arm-shasum');
+        break;
+      case 'torrent':
+        if (hasX64) {
+          setShasum('testing-x64-torrent-shasum');
+          break;
+        }
+        setShasum('testing-arm-torrent-shasum');
+        break;
+    }
+  }
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
@@ -62,6 +83,7 @@ const Download = () => {
                 paddingBottom="10px"
                 width="100%"
               >
+                <Tag type="success">Try in your Browser</Tag>
                 <Image
                   draggable="false"
                   src="/assets/icons/WEB.png"
@@ -69,18 +91,18 @@ const Download = () => {
                   width="170px"
                   alt="Test The OS in Website"
                 />
-                <Spacer h={2} />
+                <Spacer h={0.4} />
                 <Button
                   type="success"
                   shadow
                   onClick={() => {
-                    download('web');
+                    arch('web');
                   }}
                   margin="10px"
                 >
                   Open Demo
                 </Button>
-                <Spacer h={3.7} />
+                <Spacer h={0} />
               </Card>
             </Grid>
           )}
@@ -93,27 +115,19 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">For most people</Tag>
-              <Spacer h={0} />
+              <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
                 type="success"
                 shadow
                 onClick={() => {
-                  download('x64');
+                  arch('x64');
                 }}
                 margin="10px"
               >
-                Direct Download
+                Download
               </Button>
               <Spacer h={0} />
-              <Button
-                onClick={() => {
-                  download('x64');
-                }}
-                margin="10px"
-              >
-                Torrent Download
-              </Button>
             </Card>
           </Grid>
           <Grid xs={gridWidth}>
@@ -124,27 +138,20 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
+              <Tag type="success">For Pi, Pine, and Mac</Tag>
+              <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
-              <Spacer h={2} />
               <Button
                 type="success"
                 shadow
                 onClick={() => {
-                  download('arm');
+                  arch('arm');
                 }}
                 margin="10px"
               >
-                Direct Download
+                Download
               </Button>
               <Spacer h={0} />
-              <Button
-                onClick={() => {
-                  download('arm');
-                }}
-                margin="10px"
-              >
-                Torrent Download
-              </Button>
             </Card>
           </Grid>
         </Grid.Container>
@@ -159,6 +166,19 @@ const Download = () => {
           </Card>
         </div>
       </div>
+      <Modal {...downloadModal.bindings}>
+        <Modal.Title>Download Choice</Modal.Title>
+        <Modal.Subtitle>What download do you want?</Modal.Subtitle>
+        <Modal.Content>
+          <p>Choose how you want to download the required files.</p>
+        </Modal.Content>
+        <span>
+          <Button onClick={() => { download('direct'); downloadModal.setVisible(false); }}>Direct Download</Button>
+          <Button onClick={() => { download('torrent'); downloadModal.setVisible(false); }}>Torrent Download</Button>
+        </span>
+        <Spacer h={.65} />
+        <Button onClick={() => downloadModal.setVisible(false)}>Close</Button>
+      </Modal>
       <Modal {...integrityModal.bindings}>
         <Modal.Title>Integrity check</Modal.Title>
         <Modal.Subtitle>Check your download's shasum</Modal.Subtitle>
@@ -166,7 +186,7 @@ const Download = () => {
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>
           <Snippet symbol="" text={shasum}></Snippet>
         </Modal.Content>
-        <Modal.Action onClick={() => integrityModal.setVisible(false)}>Close</Modal.Action>
+        <Button onClick={() => integrityModal.setVisible(false)}>Close</Button>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>Web preview</Modal.Title>
