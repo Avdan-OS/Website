@@ -65,7 +65,7 @@ git push
 
 ## Pull Requests
 
-​ It would help the review process go faster if you list changes in the pull request, with the exception of a single small change in the title and nothing in comment. List of changes should be concise but meaningful
+ It would help the review process go faster if you list changes in the pull request, with the exception of a single small change in the title and nothing in comment. List of changes should be concise but meaningful
 
 > [nothing]
 
@@ -84,5 +84,7 @@ Meh : it's acceptable
 ✔️ : Now we know why a file changed and what it's suppose to do.
 
 Bad pull request messages won't cause it to get closed, but better messages will speed up the process and make merging faster.
+
+Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. You can create draft pull requests, which will allow other people to see, give feedbacks, and request changes.
 
 Even if you're in the organisation, code should be reviewed and approved by another member before merging, with exceptions of fixing a build fail or security breach. Complete redesign of an existing webpage will need approval from team lead.
