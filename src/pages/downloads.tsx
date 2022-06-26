@@ -1,26 +1,45 @@
 // prettier-ignore
-import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
 
 const Download = () => {
+  // Insert download link here (and read line 53)
+  const downloadInfo = {
+    x64: {
+      link: '',
+      shasum: 'testing-x64-shasum',
+      torrent: ''
+    },
+    arm: {
+      link: '',
+      shasum: 'testing-arm-shasum',
+      torrent: ''
+    }
+  };
+
   const theme = useTheme();
   const { setToast } = useToasts();
-  const integrityModal = useModal();
+  const downloadModal = useModal();
   const webviewModal = useModal();
 
-  const download = (type: 'x64' | 'arm' | 'web') => {
+  let [useTorrent, setTorrent] = useState(false);
+  let [arch, setArch] = useState<'x64' | 'arm'>();
+
+  const showDownload = (type: 'x64' | 'arm' | 'web') => {
     switch (type) {
       case 'x64':
-        setShasum('testing-x64-shasum');
-        integrityModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+        setArch('x64');
+        console.log(arch);
+        setShasum(downloadInfo.x64.shasum);
+        downloadModal.setVisible(true);
         break;
       case 'arm':
-        setShasum('testing-arm-shasum');
-        integrityModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+        setArch('arm');
+        console.log(arch);
+        setShasum(downloadInfo.arm.shasum);
+        downloadModal.setVisible(true);
         break;
       case 'web':
         webviewModal.setVisible(true);
@@ -28,10 +47,32 @@ const Download = () => {
     }
   };
 
+  const downloadHandler = () => {
+    downloadModal.setVisible(false);
+    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+    // Uncomment the following when download becomes available
+    /*if (arch === 'x64') {
+      if (useTorrent) {
+        window.open(downloadInfo.x64.torrent);
+      } else {
+        window.open(downloadInfo.x64.link);
+      }
+    } else if (arch === 'arm') {
+      if (useTorrent) {
+        window.open(downloadInfo.arm.torrent);
+      } else {
+        window.open(downloadInfo.arm.link);
+      }
+    } else {
+      console.log(arch);
+    }*/
+  };
+
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
-  const [shasum, setShasum] = useState('');
   const [useMobileMode, setMobileMode] = useState(false);
+  const [canDownload, setCanDownload] = useState(false);
+  const [shasum, setShasum] = useState(downloadInfo.x64.shasum);
 
   dynamicWidth((width) => {
     width < 1200 ? setMobileMode(true) : setMobileMode(false);
@@ -75,7 +116,7 @@ const Download = () => {
                   type="success"
                   shadow
                   onClick={() => {
-                    download('web');
+                    showDownload('web');
                   }}
                   margin="10px"
                 >
@@ -100,7 +141,7 @@ const Download = () => {
                 type="success"
                 shadow
                 onClick={() => {
-                  download('x64');
+                  showDownload('x64');
                 }}
                 margin="10px"
               >
@@ -124,7 +165,7 @@ const Download = () => {
                 type="success"
                 shadow
                 onClick={() => {
-                  download('arm');
+                  showDownload('arm');
                 }}
                 margin="10px"
               >
@@ -145,34 +186,58 @@ const Download = () => {
           </Card>
         </div>
       </div>
-      <Modal {...integrityModal.bindings}>
-        <Modal.Title>Integrity check</Modal.Title>
-        <Modal.Subtitle>Check your download's shasum</Modal.Subtitle>
+      <Modal {...downloadModal.bindings}>
+        <Modal.Title>Before you Download</Modal.Title>
+        <Modal.Subtitle>Please read this before you continue</Modal.Subtitle>
         <Modal.Content>
-          <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>
+          <p>Below is the shasum of the download. You can use it to check download's integrity:</p>
           <Snippet symbol="" text={shasum}></Snippet>
+          <Spacer />
+          Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
+          ever, etc...
+          <br />
+          <Checkbox
+            onChange={(e) => {
+              setCanDownload(e.target.checked);
+            }}
+          >
+            Yes, I understand
+          </Checkbox>
+          <br />
+          <Checkbox
+            onChange={(e) => {
+              setTorrent(e.target.checked);
+            }}
+          >
+            Use torrent download
+          </Checkbox>
         </Modal.Content>
-        <Button onClick={() => integrityModal.setVisible(false)}>Close</Button>
+        <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
+          cancel
+        </Modal.Action>
+        <Modal.Action
+          disabled={!canDownload}
+          onClick={() => {
+            downloadHandler();
+          }}
+        >
+          Continue
+        </Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>Web preview</Modal.Title>
         <Modal.Content>
           <p>
             You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
-            system (no installation required) is strongly recommended to getting the full experience from the operating
-            system.
+            system is strongly recommended to getting the full experience from the operating system.
             <br />
             *Live system is currently not available because the system is still under development
           </p>
         </Modal.Content>
-        <span>
-          <Button mr={1} onClick={() => webviewModal.setVisible(false)}>
-            Cancel
-          </Button>
-          <Button onClick={() => window.location.replace('/demo')} type="success">
-            Yes, take me there
-          </Button>
-        </span>
+        <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
+          Cancel
+        </Modal.Action>
+        <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
       </Modal>
       <style jsx>{`
         .trouble {
