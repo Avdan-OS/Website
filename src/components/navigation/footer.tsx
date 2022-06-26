@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   });
   return (
     <>
-      <footer className="footer-dark">
+      <footer id="global-footer" className="footer-dark">
         <div className="container" style={{ marginTop: 30 }}>
           <div className="footer-item footer-item-1">
             <div>
@@ -159,7 +159,7 @@ const Footer: React.FC = () => {
           #__next {
             min-height: 100vh;
           }
-          footer {
+          #global-footer {
             border-top: 1px solid ${theme.palette.border};
             background-color: ${theme.palette.accents_1};
             color: ${theme.palette.foreground};

@@ -99,7 +99,7 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
       <Modal.Title>Width Incompatibility</Modal.Title>
       <Modal.Subtitle>{subtitle}</Modal.Subtitle>
       <Modal.Content>{content}</Modal.Content>
-      <Button onClick={() => closeHandler()}>Close</Button>
+      <Modal.Action onClick={() => closeHandler()}>Close</Modal.Action>
     </Modal>
   );
 };

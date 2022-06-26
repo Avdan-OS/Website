@@ -152,7 +152,7 @@ const Download = () => {
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>
           <Snippet symbol="" text={shasum}></Snippet>
         </Modal.Content>
-        <Button onClick={() => integrityModal.setVisible(false)}>Close</Button>
+        <Modal.Action onClick={() => integrityModal.setVisible(false)}>Close</Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>Web preview</Modal.Title>
@@ -165,14 +165,10 @@ const Download = () => {
             *Live system is currently not available because the system is still under development
           </p>
         </Modal.Content>
-        <span>
-          <Button mr={1} onClick={() => webviewModal.setVisible(false)}>
-            Cancel
-          </Button>
-          <Button onClick={() => window.location.replace('/demo')} type="success">
-            Yes, take me there
-          </Button>
-        </span>
+        <Modal.Action onClick={() => webviewModal.setVisible(false)}>Cancel</Modal.Action>
+        <Modal.Action onClick={() => window.location.replace('/demo')} type="success">
+          Yes, take me there
+        </Modal.Action>
       </Modal>
       <style jsx>{`
         .trouble {
