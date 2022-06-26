@@ -5,16 +5,17 @@ import { useState } from 'react';
 import NextLink from 'next/link';
 
 const Download = () => {
+  // Insert download link here (and read line 53)
   const downloadInfo = {
     x64: {
-      link: '/download/x64',
+      link: '',
       shasum: 'testing-x64-shasum',
-      torrent: '/download/x64-torrent'
+      torrent: ''
     },
     arm: {
-      link: '/download/arm',
+      link: '',
       shasum: 'testing-arm-shasum',
-      torrent: '/download/arm-torrent'
+      torrent: ''
     }
   };
 
@@ -49,21 +50,22 @@ const Download = () => {
   const downloadHandler = () => {
     downloadModal.setVisible(false);
     setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
-    if (arch === 'x64') {
+    // Uncomment the following when download becomes available
+    /*if (arch === 'x64') {
       if (useTorrent) {
-        window.open(downloadInfo.x64.torrent, '_blank');
+        window.open(downloadInfo.x64.torrent);
       } else {
-        window.open(downloadInfo.x64.link, '_blank');
+        window.open(downloadInfo.x64.link);
       }
     } else if (arch === 'arm') {
       if (useTorrent) {
-        window.open(downloadInfo.arm.torrent, '_blank');
+        window.open(downloadInfo.arm.torrent);
       } else {
-        window.open(downloadInfo.arm.link, '_blank');
+        window.open(downloadInfo.arm.link);
       }
     } else {
       console.log(arch);
-    }
+    }*/
   };
 
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
