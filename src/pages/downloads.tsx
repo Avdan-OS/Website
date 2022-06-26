@@ -117,7 +117,7 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">For small devices</Tag>
+              <Tag type="success">For Pi, Pine, and Mac</Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Button
