@@ -168,11 +168,10 @@ const Download = () => {
       </div>
       <Modal {...downloadModal.bindings}>
         <Modal.Title>Download Choice</Modal.Title>
-        <Modal.Subtitle>What download do you want?</Modal.Subtitle>
-        <Modal.Content>
-          <p>Choose how you want to download the required files.</p>
+        <Modal.Content style={{ display: 'flex', justifyContent: 'center', marginBottom: '15px' }}>
+          <p>Choose your installation method</p>
         </Modal.Content>
-        <span>
+        <span style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '10px' }}>
           <Button onClick={() => { download('direct'); downloadModal.setVisible(false); }}>Direct Download</Button>
           <Button onClick={() => { download('torrent'); downloadModal.setVisible(false); }}>Torrent Download</Button>
         </span>
