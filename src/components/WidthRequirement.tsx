@@ -5,8 +5,7 @@
  */
 
 import { Modal, useModal, Button } from '@geist-ui/core';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
 
 declare global {
@@ -15,13 +14,19 @@ declare global {
   }
 }
 
-const WidthRequirement = ({ width }: { width: number }) => {
+const WidthRequirement = ({ width, redirect }: { width: number; redirect?: string | null }) => {
   const { setVisible, bindings } = useModal();
   const [subtitle, setSubtitle] = useState('Rotate Your Screen');
-  const router = useRouter();
   const [content, setContent] = useState(
     <p>Your screen is too small to display this page. Please rotate to landscape view or use desktop.</p>
   );
+  let closeHandler = (): void => {};
+  useEffect(() => {
+    closeHandler = () => {
+      if (redirect) return window.location.replace(redirect);
+      window.location.replace('/');
+    };
+  });
   const mobileAndTabletCheck = function () {
     let check = false;
     (function (a) {
@@ -85,11 +90,16 @@ const WidthRequirement = ({ width }: { width: number }) => {
     return;
   });
   return (
-    <Modal {...bindings}>
+    <Modal
+      {...bindings}
+      onClose={() => {
+        closeHandler();
+      }}
+    >
       <Modal.Title>Width Incompatibility</Modal.Title>
       <Modal.Subtitle>{subtitle}</Modal.Subtitle>
       <Modal.Content>{content}</Modal.Content>
-      <Button onClick={() => router.back()}>Go Back</Button>
+      <Button onClick={() => closeHandler()}>Close</Button>
     </Modal>
   );
 };

@@ -4,7 +4,6 @@ import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
-import dynamicWidth from '@/lib/dynamic-width';
 
 const Features = () => {
   const theme = useTheme();
@@ -14,7 +13,7 @@ const Features = () => {
     removeAll();
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
     setToast({ text: 'Video is loading...', delay: 60000, id: 'loading' });
-    videoElement.addEventListener('canplay', (e) => {
+    videoElement.addEventListener('canplay', () => {
       removeAll();
     });
     window.addEventListener('scroll', () => {
@@ -26,15 +25,10 @@ const Features = () => {
       videoElement.currentTime = (window.scrollY - window.innerHeight + 300) / 80;
     });
   }, []);
-  dynamicWidth((width) => {
-    if (width < 575) {
-      location.replace('/features');
-    }
-  });
 
   return (
     <>
-      <WidthRequirement width={575} />
+      <WidthRequirement width={575} redirect="/features" />
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
