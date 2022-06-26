@@ -62,7 +62,7 @@ const Download = () => {
                 paddingBottom="10px"
                 width="100%"
               >
-                <Tag type='success'>Try in your Browser</Tag>
+                <Tag type="success">Try in your Browser</Tag>
                 <Image
                   draggable="false"
                   src="/assets/icons/WEB.png"
@@ -70,7 +70,7 @@ const Download = () => {
                   width="170px"
                   alt="Test The OS in Website"
                 />
-                <Spacer h={.4} />
+                <Spacer h={0.4} />
                 <Button
                   type="success"
                   shadow
@@ -94,7 +94,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">For most people</Tag>
-              <Spacer h={.4} />
+              <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
                 type="success"
@@ -118,7 +118,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">For small devices</Tag>
-              <Spacer h={.4} />
+              <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Button
                 type="success"
@@ -152,7 +152,7 @@ const Download = () => {
           <p>This is optional. You can check your download's integrity by comparing with our shasum:</p>
           <Snippet symbol="" text={shasum}></Snippet>
         </Modal.Content>
-        <Modal.Action onClick={() => integrityModal.setVisible(false)}>Close</Modal.Action>
+        <Button onClick={() => integrityModal.setVisible(false)}>Close</Button>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>Web preview</Modal.Title>
