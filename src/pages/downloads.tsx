@@ -7,14 +7,14 @@ import NextLink from 'next/link';
 const Download = () => {
   const downloadInfo = {
     x64: {
-      link: 'testing-x64-shasum',
-      torrent: '',
-      shasum: ''
+      link: '/download/x64',
+      shasum: 'testing-x64-shasum',
+      torrent: '/download/x64-torrent'
     },
     arm: {
-      link: 'testing-arm-shasum',
-      torrent: '',
-      shasum: ''
+      link: '/download/arm',
+      shasum: 'testing-arm-shasum',
+      torrent: '/download/arm-torrent'
     }
   };
 
@@ -23,23 +23,22 @@ const Download = () => {
   const downloadModal = useModal();
   const webviewModal = useModal();
 
-  const [shasum, setShasum] = useState('');
-  const [useArch, setArch] = useState<'x64' | 'arm'>('x64');
-  const [useTorrent, setTorrent] = useState(false);
+  let [useTorrent, setTorrent] = useState(false);
+  let [arch, setArch] = useState<'x64' | 'arm'>();
 
   const showDownload = (type: 'x64' | 'arm' | 'web') => {
     switch (type) {
       case 'x64':
         setArch('x64');
-        setShasum('testing-x64-shasum');
+        console.log(arch);
+        setShasum(downloadInfo.x64.shasum);
         downloadModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
         break;
       case 'arm':
         setArch('arm');
-        setShasum('testing-arm-shasum');
+        console.log(arch);
+        setShasum(downloadInfo.arm.shasum);
         downloadModal.setVisible(true);
-        setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
         break;
       case 'web':
         webviewModal.setVisible(true);
@@ -47,10 +46,31 @@ const Download = () => {
     }
   };
 
+  const downloadHandler = () => {
+    downloadModal.setVisible(false);
+    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+    if (arch === 'x64') {
+      if (useTorrent) {
+        window.open(downloadInfo.x64.torrent, '_blank');
+      } else {
+        window.open(downloadInfo.x64.link, '_blank');
+      }
+    } else if (arch === 'arm') {
+      if (useTorrent) {
+        window.open(downloadInfo.arm.torrent, '_blank');
+      } else {
+        window.open(downloadInfo.arm.link, '_blank');
+      }
+    } else {
+      console.log(arch);
+    }
+  };
+
   const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
   const [gridWidth, setGridWidth] = useState(6);
   const [useMobileMode, setMobileMode] = useState(false);
   const [canDownload, setCanDownload] = useState(false);
+  const [shasum, setShasum] = useState(downloadInfo.x64.shasum);
 
   dynamicWidth((width) => {
     width < 1200 ? setMobileMode(true) : setMobileMode(false);
@@ -169,7 +189,7 @@ const Download = () => {
         <Modal.Subtitle>Please read this before you continue</Modal.Subtitle>
         <Modal.Content>
           <p>Below is the shasum of the download. You can use it to check download's integrity:</p>
-          <Snippet symbol="" text={useArch == 'x64' ? downloadInfo.x64.shasum : downloadInfo.arm.shasum}></Snippet>
+          <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
           Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
           ever, etc...
@@ -182,12 +202,23 @@ const Download = () => {
             Yes, I understand
           </Checkbox>
           <br />
-          <Checkbox>Use torrent download</Checkbox>
+          <Checkbox
+            onChange={(e) => {
+              setTorrent(e.target.checked);
+            }}
+          >
+            Use torrent download
+          </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
           cancel
         </Modal.Action>
-        <Modal.Action disabled={!canDownload} onClick={() => downloadModal.setVisible(false)}>
+        <Modal.Action
+          disabled={!canDownload}
+          onClick={() => {
+            downloadHandler();
+          }}
+        >
           Continue
         </Modal.Action>
       </Modal>
