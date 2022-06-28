@@ -36,24 +36,6 @@ The page will reload if you make edits.
 
 You will also see any lint errors in the console.
 
-## Contribution
+## Contributing
 
-### Compatibility
-
-Makesure everything works on mobile before merging. To make a page compatible with all width, there is a hook `'@/lib/dynamic-width'` import it and use it to make the page adaptive.
-
-Also, test on at least two browser engines (eg. Firefox with gecko engine and Brave based on Chromium project).
-
-If things don't fully work and you want to release a beta to the public, you can also make the page opt in beta page (see the BetaPopup component) or show a warning message (indecating to the user that it is likely to break).
-
-If you are making a page without the help of any designer or other developers, try to follow the design. This can be easily done by using the geist-ui and not change too much properties.
-
-### Code Quality
-
-For tsx, please follow the [Airbnb style guide](https://airbnb.io/javascript/react/). For CSS, please follow [this guide](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/).
-
-### Pull Request
-
-It's recommended that you have a concise list of change when making pull request to make the review process faster. Also, makesure the page builds on your fork before making a pull request.
-
-Again, **remember to use dev branch!!!** Committing to master branch will be automatically overwritten.
+Please see the [contributing guideline](https://github.com/Avdan-OS/Website/blob/dev/CONTRIBUTING.md) for more information.
