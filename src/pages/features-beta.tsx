@@ -156,10 +156,16 @@ const Features = () => {
         <Text className="header" h1>
           Under development
         </Text>
-        <Spacer h="35px" />
-        <Text>We are working really hard to make it real. Join us and help!</Text>
-        <Spacer h="20px" />
+        <Spacer h="30px" />
+        <Text>This project wouldn't be possible without the community's contributions. Join us and help!</Text>
+        <Spacer h="50px" />
         <Media />
+        <Spacer h="50px" />
+        <NextLink href="/demo">
+          <Button shadow type="success" margin="10px">
+            Open demo
+          </Button>
+        </NextLink>
         <style jsx global>
           {`
             #__next {
