@@ -1,4 +1,4 @@
-import { Spacer, Card, Button, Text, Divider, useToasts, useTheme } from '@geist-ui/core';
+import { Spacer, Card, Button, Text, Divider, useTheme } from '@geist-ui/core';
 import { useEffect, useState } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
@@ -7,16 +7,35 @@ import WidthRequirement from '@/components/WidthRequirement';
 
 const Features = () => {
   const theme = useTheme();
-  const { setToast, removeAll } = useToasts();
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
-    removeAll();
+    window.scroll(0, 0);
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
-    setToast({ text: 'Video is loading...', delay: 60000, id: 'loading' });
+    const loadingText = document.getElementById('loadText');
+    document.body.classList.add('stop-scrolling');
+    let count = 0;
+    const waitingAnimation = setInterval(() => {
+      switch (count % 3) {
+        case 0:
+          loadingText.innerText = 'Asstes are loading, please wait.';
+          break;
+        case 1:
+          loadingText.innerText = 'Asstes are loading, please wait..';
+          break;
+        default:
+          loadingText.innerText = 'Asstes are loading, please wait...';
+          break;
+      }
+      count++;
+    }, 700);
     videoElement.addEventListener('canplay', () => {
-      removeAll();
+      console.log('video loaded');
+      clearInterval(waitingAnimation);
+      loadingText.innerText = "Scroll down to see what we've got here";
+      loadingText.classList.add('breath');
+      document.body.classList.remove('stop-scrolling');
     });
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (e) => {
       setScrollPosition(window.scrollY);
       if (window.scrollY + 300 < window.innerHeight) {
         videoElement.currentTime = 0;
@@ -34,10 +53,8 @@ const Features = () => {
         <Text className="header" h1>
           Avdan's concept, we're making it real
         </Text>
-        <div style={{ height: `${50 - scrollPosition / 25}px` }}></div>
-        <div className="breath">
-          <Text>Scroll down to see what we got here</Text>
-        </div>
+        <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
+        <div id="loadText">Assets are loading, please wait...</div>
       </div>
       <Divider />
       <div>
@@ -51,10 +68,10 @@ const Features = () => {
             style={{ width: '100%', height: '100%' }}
           >
             {/* 
-              The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag
-              20fps 720p vp9 webm is recommended when serving the video over cdn
+              The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag.
+              20fps 720p vp9 webm g=1 is recommended when serving the video over cdn.
             */}
-            <source type="video/webm" src="/assets/clips/features.webm" height="100%" width="100%" />
+            <source type="video/webm" src="assets/clips/features.webm" height="100%" width="100%" />
           </video>
         </div>
         <div className="slide">
@@ -139,10 +156,16 @@ const Features = () => {
         <Text className="header" h1>
           Under development
         </Text>
-        <Spacer h="35px" />
-        <Text>We are working really hard to make it real. Join us and help!</Text>
-        <Spacer h="20px" />
+        <Spacer h="30px" />
+        <Text>This project wouldn't be possible without the community's contributions. Join us and help!</Text>
+        <Spacer h="50px" />
         <Media />
+        <Spacer h="50px" />
+        <NextLink href="/demo">
+          <Button shadow type="success" margin="10px">
+            Open demo
+          </Button>
+        </NextLink>
         <style jsx global>
           {`
             #__next {
@@ -157,6 +180,10 @@ const Features = () => {
               width: 40% !important;
               background-color: ${theme.palette.background + theme.palette.background.replace('#', '')}60 !important;
               backdrop-filter: blur(2em);
+            }
+            .stop-scrolling {
+              height: 100%;
+              overflow: hidden;
             }
           `}
         </style>
