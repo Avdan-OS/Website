@@ -14,7 +14,7 @@ We use Prettier as formatter. All jsx naming should follow Airbnb style, and all
 
 ## Basics
 
-To start your contribution follow the steps below
+To start your contribution, please follow the steps below
 
 1. Create a fork of this repo
 
@@ -84,6 +84,6 @@ Meh: It's acceptable
 
 ✅ : Now we know why a file changed and what it's suppose to do.
 
-Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. Run `npm run build` to make sure there is no error. You can create draft pull requests, which will allow other people to see, give feedbacks, and request changes.
+Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. Run `npm run build` in the src directory to double check there is no error. You can create draft pull requests, which will allow other people to see changes, give feedbacks, and request changes.
 
 Even if you're in the organisation, pull requests should be reviewed and approved by another member before merging, with exceptions of fixing a build fail or security breach. Complete redesign of an existing webpage will need approval from a team lead.
