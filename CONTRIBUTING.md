@@ -17,6 +17,7 @@ We use Prettier as formatter. All jsx naming should follow Airbnb style, and all
 To start your contribution follow the steps below
 
 1. Create a fork of this repo
+
 2. Git clone your fork to your machine
 
 ```sh
@@ -47,7 +48,7 @@ You can now go to https://localhost:3000 in your browser and it will update in r
 
 `Tip: test pages on smaller width and both themes to make sure they have good compatibility. In the lib folder, there's dynamic-width.ts, which is an easy to use hook we made with full jsdoc documentation`
 
-6. Commit your changes
+7. Commit your changes
 
 ```sh
 git commit -m "concise message of the change"
@@ -65,7 +66,7 @@ git push
 
 ## Pull Requests
 
- It would help the review process go faster if you list changes in the pull request, with the exception of a single small change in the title and nothing in comment. List of changes should be concise but meaningful
+To make the review process faster, it's recommended to have list of changes in comment section and include screenshots if there are changes in the design. List of changes should be concise.
 
 > [nothing]
 
@@ -73,20 +74,16 @@ git push
 
 > Make browsing experience better on mobile
 
-❌ : better is subjective, and we still don't know what you did
+❌ : Better is subjective, and we still don't know what you did
 
 > Make pages respond to mobile screen
 
-Meh : it's acceptable
+Meh: It's acceptable
 
 > Footer: implement adaptive layout on small screen
 
-✔️ : Now we know why a file changed and what it's suppose to do.
+✅ : Now we know why a file changed and what it's suppose to do.
 
-Bad pull request messages won't cause it to get closed, but better messages will speed up the process and make merging faster. 
+Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. Run `npm run build` to make sure there is no error. You can create draft pull requests, which will allow other people to see, give feedbacks, and request changes.
 
-If there's a change in design, please also include a screenshot in the pull request.
-
-Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. You can create draft pull requests, which will allow other people to see, give feedbacks, and request changes.
-
-Even if you're in the organisation, code should be reviewed and approved by another member before merging, with exceptions of fixing a build fail or security breach. Complete redesign of an existing webpage will need approval from team lead.
+Even if you're in the organisation, pull requests should be reviewed and approved by another member before merging, with exceptions of fixing a build fail or security breach. Complete redesign of an existing webpage will need approval from a team lead.
