@@ -1,10 +1,11 @@
-import { Button, useTheme, Tabs } from '@geist-ui/core';
+import { Button, useTheme, Tabs, Select } from '@geist-ui/core';
 import { Sun, Moon, Download } from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
 import Logo from '../logo';
 import NextLink from 'next/link';
 import Submenu from '@/components/navigation/submenu';
+import TranslationList from '../TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
 
@@ -76,6 +77,7 @@ const Menu = () => {
             type="abort"
             onClick={() => fireClick()}
           ></Button>
+          <TranslationList />
           <NextLink href="/downloads" passHref>
             <a>
               <Button
