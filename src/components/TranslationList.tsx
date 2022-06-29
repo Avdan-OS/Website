@@ -15,6 +15,10 @@ const TranslationList = () => {
       icon: '🇺🇸'
     },
     {
+      lang: 'hi',
+      icon: '🇮🇳'
+    },
+    {
       lang: 'ru',
       icon: '🇷🇺'
     },
