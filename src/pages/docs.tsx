@@ -1,6 +1,7 @@
 import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Docs = () => {
   const theme = useTheme();
@@ -24,7 +25,7 @@ const Docs = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          Read the features in detail.
+          <TranslatableText>Read the features in detail.</TranslatableText>
         </Text>
         <Spacer h={2} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -43,7 +44,9 @@ const Docs = () => {
                 height="100%"
                 width="200px"
               />
-              <Tag>I'm a User</Tag>
+              <Tag>
+                <TranslatableText>I'm a User</TranslatableText>
+              </Tag>
               <Spacer />
               <Button
                 type="success"
@@ -53,7 +56,7 @@ const Docs = () => {
                   window.location.replace('/manual');
                 }}
               >
-                Open manual
+                <TranslatableText>Open manual</TranslatableText>
               </Button>
               <Spacer h={3} />
             </Card>
@@ -73,7 +76,9 @@ const Docs = () => {
                 width="200px"
                 alt="Developer Documentation"
               />
-              <Tag>I'm a Developer</Tag>
+              <Tag>
+                <TranslatableText>I'm a Developer</TranslatableText>
+              </Tag>
               <Spacer />
               <Button
                 type="success"
@@ -83,7 +88,7 @@ const Docs = () => {
                   setToast({ text: 'Doc is not available yet.', delay: 5000, type: 'error' });
                 }}
               >
-                Open documentation
+                <TranslatableText>Open documentation</TranslatableText>
               </Button>
               <Spacer h={3} />
             </Card>

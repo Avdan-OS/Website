@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const index = () => {
   const theme = useTheme();
@@ -20,7 +21,7 @@ const index = () => {
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
-            Your PC but even better.
+            <TranslatableText>Your PC but even better.</TranslatableText>
           </Text>
         </div>
         <Spacer h={2} />
@@ -29,13 +30,13 @@ const index = () => {
             {useMobileBar ? null : (
               <NextLink href="/demo">
                 <Button shadow type="secondary" margin="10px">
-                  Try in your browser
+                  <TranslatableText>Try in your browser</TranslatableText>
                 </Button>
               </NextLink>
             )}
             <NextLink href="/downloads">
               <Button shadow type="success" margin="10px">
-                Download Now
+                <TranslatableText>Download now</TranslatableText>
               </Button>
             </NextLink>
           </div>

@@ -4,6 +4,7 @@ import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Features = () => {
   const theme = useTheme();
@@ -17,13 +18,14 @@ const Features = () => {
     const waitingAnimation = setInterval(() => {
       switch (count % 3) {
         case 0:
-          loadingText.innerText = 'Asstes are loading, please wait.';
+          loadingText.innerText = loadingText.innerText.replaceAll('.', '');
+          loadingText.innerText += '.';
           break;
         case 1:
-          loadingText.innerText = 'Asstes are loading, please wait..';
+          loadingText.innerText += '.';
           break;
         default:
-          loadingText.innerText = 'Asstes are loading, please wait...';
+          loadingText.innerText += '.';
           break;
       }
       count++;
@@ -51,10 +53,12 @@ const Features = () => {
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
-          Avdan's concept, we're making it real
+          <TranslatableText>Avdan's concept, we're making it real</TranslatableText>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
-        <div id="loadText">Assets are loading, please wait...</div>
+        <div id="loadText">
+          <TranslatableText>Assets are loading, please wait</TranslatableText>
+        </div>
       </div>
       <Divider />
       <div>
@@ -76,9 +80,11 @@ const Features = () => {
         </div>
         <div className="slide">
           <Card className="slide__card text-white slide__card-left">
-            This concept video is made by Avdan <Spacer />
+            <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
-              <Button type="error">Watch on YouTube</Button>
+              <Button type="error">
+                <TranslatableText>Watch on YouTube</TranslatableText>
+              </Button>
             </NextLink>
           </Card>
 

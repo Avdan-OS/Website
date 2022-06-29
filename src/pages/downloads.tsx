@@ -3,6 +3,7 @@ import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal,
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -90,7 +91,7 @@ const Download = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          Give your PC an Upgrade.
+          <TranslatableText>Give your PC an Upgrade.</TranslatableText>
         </Text>
         <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -103,7 +104,9 @@ const Download = () => {
                 paddingBottom="10px"
                 width="100%"
               >
-                <Tag type="success">Try in your Browser</Tag>
+                <Tag type="success">
+                  <TranslatableText>Try in your Browser</TranslatableText>
+                </Tag>
                 <Image
                   draggable="false"
                   src="/assets/icons/WEB.png"
@@ -120,7 +123,7 @@ const Download = () => {
                   }}
                   margin="10px"
                 >
-                  Open Demo
+                  <TranslatableText>Open Demo</TranslatableText>
                 </Button>
                 <Spacer h={0} />
               </Card>
@@ -134,7 +137,9 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">For most people</Tag>
+              <Tag type="success">
+                <TranslatableText>For most people</TranslatableText>
+              </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
@@ -145,7 +150,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                Download
+                <TranslatableText>Download</TranslatableText>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -158,7 +163,9 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">For Pi, Pine, and Mac</Tag>
+              <Tag type="success">
+                <TranslatableText>For Pi, Pine, and Mac</TranslatableText>
+              </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Button
@@ -169,7 +176,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                Download
+                <TranslatableText>Download</TranslatableText>
               </Button>
               <Spacer h={0} />
             </Card>

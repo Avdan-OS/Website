@@ -1,5 +1,7 @@
 import { Select } from '@geist-ui/core';
 import React from 'react';
+import { setLocale } from '../locale/TranslatableText';
+
 const TranslationList = () => {
   const data = [
     {
@@ -23,6 +25,10 @@ const TranslationList = () => {
       icon: '🇷🇺'
     },
     {
+      lang: 'zh-CN',
+      icon: '🇨🇳'
+    },
+    {
       lang: 'zn-TW',
       icon: '🇹🇼'
     }
@@ -34,15 +40,20 @@ const TranslationList = () => {
       </Select.Option>
     );
   });
+  const [defaultLang, setDfltLang] = React.useState('en-GB');
+  React.useEffect(() => {
+    setDfltLang(navigator.language);
+  }, []);
   return (
     <Select
       type="default"
-      initialValue="en-GB"
+      initialValue={defaultLang}
       width="24px"
       style={{ minWidth: '0' }}
       marginRight="20px"
       disableMatchWidth
       font={0}
+      onChange={setLocale}
     >
       {listItems}
     </Select>

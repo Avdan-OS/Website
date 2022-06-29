@@ -1,5 +1,5 @@
 import { Button, Card, Text } from '@geist-ui/core';
-
+import { TranslatableText } from '@/components/locale/TranslatableText';
 import { useRef } from 'react';
 import WidthRequirement from '@/components/WidthRequirement';
 const preview = () => {
@@ -18,7 +18,7 @@ const preview = () => {
       <WidthRequirement width={minWidthNeeded} />
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
-          Try in your browser.
+          <TranslatableText>Try in your browser.</TranslatableText>
         </Text>
         <Card shadow>
           <iframe
@@ -30,7 +30,7 @@ const preview = () => {
           />
           <div style={{ display: 'flex', margin: '15px' }}>
             <Button shadow type="success" margin="auto" onClick={fullScreen}>
-              Full Screen
+              <TranslatableText>Full Screen</TranslatableText>
             </Button>
           </div>
         </Card>

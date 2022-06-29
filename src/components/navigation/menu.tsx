@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Logo from '../logo';
 import NextLink from 'next/link';
 import Submenu from '@/components/navigation/submenu';
-import TranslationList from '../TranslationList';
+import TranslationList from '../locale/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
 

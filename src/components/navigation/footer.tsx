@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
+import { TranslatableText } from '../locale/TranslatableText';
 
 const Footer: React.FC = () => {
   const theme = useTheme();
@@ -23,21 +24,29 @@ const Footer: React.FC = () => {
         <div className="container" style={{ marginTop: 30 }}>
           <div className="footer-item footer-item-1">
             <div>
-              <h3>Overview</h3>
+              <h3>
+                <TranslatableText>Overview</TranslatableText>
+              </h3>
               <ul>
                 <li>
                   <NextLink href="#">
-                    <a>Home</a>
+                    <a>
+                      <TranslatableText>Home</TranslatableText>
+                    </a>
                   </NextLink>
                 </li>
                 <li>
                   <NextLink href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
-                    <a>Features</a>
+                    <a>
+                      <TranslatableText>Features</TranslatableText>
+                    </a>
                   </NextLink>
                 </li>
                 <li>
                   <NextLink href="/downloads">
-                    <a>Downloads</a>
+                    <a>
+                      <TranslatableText>Downloads</TranslatableText>
+                    </a>
                   </NextLink>
                 </li>
               </ul>
@@ -45,31 +54,33 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-item footer-item-2">
             <div>
-              <h3>External Links</h3>
+              <h3>
+                <TranslatableText>External Links</TranslatableText>
+              </h3>
               <ul>
                 <li>
                   <a href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
-                    Twitter
+                    <TranslatableText>Twitter</TranslatableText>
                   </a>
                 </li>
                 <li>
                   <a href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
-                    GitHub
+                    <TranslatableText>GitHub</TranslatableText>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
-                    YouTube
+                    <TranslatableText>YouTube</TranslatableText>
                   </a>
                 </li>
                 <li>
                   <a href="https://discord.gg/avdanos" target="_blank" rel="noreferrer">
-                    Discord
+                    <TranslatableText>Discord</TranslatableText>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
-                    Reddit
+                    <TranslatableText>Reddit</TranslatableText>
                   </a>
                 </li>
               </ul>
@@ -95,13 +106,19 @@ const Footer: React.FC = () => {
           )}
           <div className="footer-item footer-item-3">
             <div>
-              <h3>Legal</h3>
+              <h3>
+                <TranslatableText>Legal</TranslatableText>
+              </h3>
               <ul>
                 <li>
-                  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">License</a>
+                  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+                    <TranslatableText>License</TranslatableText>
+                  </a>
                 </li>
                 <li>
-                  <a href="/eula">EULA</a>
+                  <a href="/eula">
+                    <TranslatableText>EULA</TranslatableText>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -117,7 +134,7 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <a style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
-                  History of Incidents
+                  <TranslatableText>History of Incidents</TranslatableText>
                 </a>
               </strong>
             </Tag>
@@ -125,13 +142,13 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <a href="/privacy-security" style={{ color: colorSwitch() }}>
-                  Privacy and Security
+                  <TranslatableText>Privacy and Security</TranslatableText>
                 </a>
               </strong>
             </Tag>
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
-              Inspired by{' '}
+              <TranslatableText>Inspired by</TranslatableText>{' '}
               <strong>
                 <a target="_blank" style={{ color: colorSwitch() }} href="https://youtube.com/avdan" rel="noreferrer">
                   Avdan
@@ -144,7 +161,7 @@ const Footer: React.FC = () => {
           ©{' '}
           <strong>
             <a style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">
-              AvdanOS Contributors
+              <TranslatableText>AvdanOS Contributors</TranslatableText>
             </a>
           </strong>{' '}
           under{' '}
