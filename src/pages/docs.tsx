@@ -1,7 +1,7 @@
 import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const Docs = () => {
   const theme = useTheme();

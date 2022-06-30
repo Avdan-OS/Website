@@ -1,6 +1,6 @@
 import { Link, Grid, Card, useTheme } from '@geist-ui/core';
 import style from '../styles/components/cards.module.css';
-import { TranslatableText } from './locale/TranslatableText';
+import { TranslatableText } from './translation/TranslatableText';
 
 const Alert = () => {
   const theme = useTheme();

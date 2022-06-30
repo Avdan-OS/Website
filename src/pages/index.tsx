@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const index = () => {
   const theme = useTheme();

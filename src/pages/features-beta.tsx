@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const Features = () => {
   const theme = useTheme();

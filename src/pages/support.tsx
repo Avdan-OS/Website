@@ -3,7 +3,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import SupportCard from '@/components/SupportCard';
 import BetaPopup from '@/components/BetaPopup';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const Support = () => {
   const [mobileLayout, useMobileLayout] = useState(false);

@@ -3,7 +3,7 @@ import { Card, Grid, Link, Spacer, useTheme, Text, Divider } from '@geist-ui/cor
 import { useState } from 'react';
 import DiscoverCard from './discoverCard';
 import style from '../styles/components/cards.module.css';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 export default function Discover() {
   const theme = useTheme();

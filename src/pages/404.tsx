@@ -1,4 +1,4 @@
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 import { Note } from '@geist-ui/core';
 import Head from 'next/head';
 
