@@ -14,6 +14,10 @@ Find and open the locale file that you want to contribute to. You might want to 
 
 In `translation.set`'s parenthesis, there should be two quotes, separated by a comma. The quote at the left is the original text, in all lowercase. The quote at the left side of the command is the translated text. Type your translation in the quotation marks at the right side of the comma. DO NOT EDIT THE LEFT SIDE, IT WILL BREAK THE WEBSITE. If you see a line ended in `// don't translate this yet (technical issue)`, that means this quote is likely to change in the future due to change in how injection works. You can translate it, but it will not appear on the website and might get deleted in the future. If you see something like `[%s]`, `[%/s]`, or anything that's in bracket and contains a percent, maybe a slash, and a letter, it is an indicator for developers to do tricks like adding link or applying bold font. Please do not delete any indicator, and place them where appropriate in the translated string.
 
+## Adding Your Translation
+
+Find the right section, and add a line of `translation.set("original text","translated text")`. Original text should be exact match of the text, not half a sentence. If half of the link is link or has a different styling, translation will most likely not work. Please just submit a new bug report including a screenshot of where the translated text should be, what the original text is, which page it is on, and tag it with translation. Developers will take care of the rest, and you will just need to wait for a response. IMPORTANT: SEARCH CLOSED ISSUES BEFORE ADDING A NEW ONE.
+
 ## Adding Your Contribution
 
 Now all you need to do is create a pull request, name it `Update [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.

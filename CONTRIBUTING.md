@@ -1,6 +1,6 @@
 # AvdanOS Website Contributing Guide
 
-For translators, please see [translating guideline](https://github.com/Avdan-OS/Website/blob/dev/TRANSLATING.md) for more information.
+If you are a translators, please see [translating guideline](https://github.com/Avdan-OS/Website/blob/dev/TRANSLATING.md) for more information.
 
 ## Prerequisite
 
@@ -65,6 +65,24 @@ git push
 ```
 
 9. Create pull request on GitHub
+
+## Using translation
+
+You need to add this code to the beginning of your file
+
+```js
+import { TranslatableText } from "../locale/TranslatableText";
+```
+
+Then wrap your text in TranslatableText tag, like this:
+
+```jsx
+<TranslatableText>I will be translated</TranslatableText>
+```
+
+Then just wait for translators to add the translation
+
+If the text has complicated structure and not just a string, leave it to senior devs and translator.
 
 ## Pull Requests
 

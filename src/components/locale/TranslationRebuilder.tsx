@@ -1,4 +1,4 @@
-import { Link } from '@geist-ui/core';
+import { Link, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 
 const TranslationRebuilder = (key: string, translatedSource: string) => {
@@ -15,12 +15,10 @@ const TranslationRebuilder = (key: string, translatedSource: string) => {
           </NextLink>
         </>
       );
-      break;
 
     default:
-      break;
+      return translatedSource;
   }
 };
 
 export default TranslationRebuilder;
-//
