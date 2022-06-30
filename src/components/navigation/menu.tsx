@@ -38,18 +38,6 @@ const Menu = () => {
       return useMobileBar ? (
         <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
-            <style>
-              {`
-                .header-dark-tabs {
-                border-radius: 6px;
-                color: #fff;
-                border: 1px solid #333;
-                backdrop-filter: blur(2rem);
-                background: rgba(0, 0, 0, 0.2) !important;
-                -webkit-backdrop-filter: blur(2rem);
-                padding-right: 6px !important;
-              }`}
-            </style>
             <Tabs
               className={`${themeDark() ? 'header-dark-tabs' : null}`}
               value={router.asPath}
@@ -70,18 +58,6 @@ const Menu = () => {
       ) : (
         <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
-            <style>
-              {`
-                .header-dark-tabs {
-                border-radius: 6px;
-                color: #fff;
-                border: 1px solid #333;
-                backdrop-filter: blur(2rem);
-                background: rgba(0, 0, 0, 0.2) !important;
-                -webkit-backdrop-filter: blur(2rem);
-                padding-right: 6px !important;
-              }`}
-            </style>
             <Tabs
               className={`${themeDark() ? 'header-dark-tabs' : null}`}
               value={router.asPath}
@@ -150,6 +126,14 @@ const Menu = () => {
           background-color: ${theme.palette.cyan} !important;
         }
     
+        .header-dark-tabs {
+          border-radius: 6px;
+          color: #fff;
+          border: 1px solid #333;
+          backdrop-filter: blur(2rem);
+          background: rgba(0, 0, 0, 0.2) !important;
+          -webkit-backdrop-filter: blur(2rem);
+          padding-right: 6px !important;
       `}</style>
     </>
   );
