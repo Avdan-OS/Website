@@ -3,7 +3,7 @@ import TranslationRebuilder from "../TranslationRebuilder";
 
 // Global
 // footer.tsx
-translation.set("overview","");
+translation.set("overview","Navegación");
 translation.set("home","Inicio");
 translation.set("features","Características");
 translation.set("downloads","Descargas");
@@ -100,7 +100,6 @@ translation.set("give your pc an upgrade.","Dale a tu PC una mejora");
 translation.set("for most people","Para la mayoría");
 translation.set("for pi, pine, and mac","Para Pi, Pine y Mac");
 translation.set("download","Descargar");
-translation.set("having trouble? click here to get help!","¿Tienes problemas? ¡Haz click aquí para recibir ayuda!"); // don't translate this yet (technical issue)
 translation.set("web preview","Simulación web");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",

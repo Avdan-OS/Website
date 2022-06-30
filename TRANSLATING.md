@@ -4,7 +4,7 @@ Hello fellow translators. This file contains information for how to translate th
 
 ## Finding Locale Folder
 
-Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src/components/translation/locale) (src/components/locale). In in that folder, you should see some files that ends in .ts extension.
+Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src/components/translation/locale) (src/components/translation/locale). In in that folder, you should see some files that ends in .ts extension.
 
 ## Opening Locale File
 
@@ -20,7 +20,7 @@ Find the right section, and add a line of `translation.set("original text","tran
 
 ## Adding Your Contribution
 
-Now all you need to do is create a pull request, name it `Update [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
+Now all you need to do is create a pull request, name it `Updated [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
 
 ## FAQ
 

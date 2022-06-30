@@ -1,5 +1,8 @@
-import { Link, useTheme } from '@geist-ui/core';
+import { Link } from '@geist-ui/core';
 import NextLink from 'next/link';
+
+// This file is responsible for converting a translation key and translated string (with identifier) back
+// into component. If you use a translation key, please implement your injection logic below.
 
 const TranslationRebuilder = (key: string, translatedSource: string) => {
   switch (key) {
