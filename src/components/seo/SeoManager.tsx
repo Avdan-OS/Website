@@ -1,13 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
 import { TranslatableText } from '../translation/TranslatableText';
-interface TitleManagerProps {
+interface SeoManagerProps {
   title: string;
   useScale: boolean;
   description: string;
 }
 
-const TitleManager = ({ title, useScale, description }: TitleManagerProps) => {
+const SeoManager = ({ title, useScale, description }: SeoManagerProps) => {
   return (
     <Head>
       <title>
@@ -20,4 +20,4 @@ const TitleManager = ({ title, useScale, description }: TitleManagerProps) => {
   );
 };
 
-export default TitleManager;
+export default SeoManager;
