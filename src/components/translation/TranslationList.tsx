@@ -17,7 +17,7 @@ const TranslationList = () => {
     },
     {
       lang: 'en-US',
-      available: false,
+      available: true,
       icon: '🇺🇸'
     },
     {
