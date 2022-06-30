@@ -4,35 +4,39 @@ import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Features = () => {
   const theme = useTheme();
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [loadingText, setLoadingText] = useState('Assets are loading, please wait');
   useEffect(() => {
     window.scroll(0, 0);
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
-    const loadingText = document.getElementById('loadText');
+    const loadingAnim = document.getElementById('loadAnim');
     document.body.classList.add('stop-scrolling');
     let count = 0;
     const waitingAnimation = setInterval(() => {
       switch (count % 3) {
         case 0:
-          loadingText.innerText = 'Asstes are loading, please wait.';
+          loadingAnim.innerText = '.';
           break;
         case 1:
-          loadingText.innerText = 'Asstes are loading, please wait..';
+          loadingAnim.innerText += '.';
           break;
         default:
-          loadingText.innerText = 'Asstes are loading, please wait...';
+          loadingAnim.innerText += '.';
           break;
       }
       count++;
     }, 700);
     videoElement.addEventListener('canplay', () => {
+      loadingAnim.innerText = '';
+      setLoadingText("Scroll down to see what we've got here");
       console.log('video loaded');
       clearInterval(waitingAnimation);
-      loadingText.innerText = "Scroll down to see what we've got here";
-      loadingText.classList.add('breath');
+      document.getElementById('loadText').style.display = 'block';
+      document.getElementById('loadText').classList.add('breath');
       document.body.classList.remove('stop-scrolling');
     });
     window.addEventListener('scroll', (e) => {
@@ -51,10 +55,13 @@ const Features = () => {
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
-          Avdan's concept, we're making it real
+          <TranslatableText>Avdan's concept, we're making it real</TranslatableText>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
-        <div id="loadText">Assets are loading, please wait...</div>
+        <div id="loadText">
+          <TranslatableText>{loadingText}</TranslatableText>
+        </div>
+        <div id="loadAnim">.</div>
       </div>
       <Divider />
       <div>
@@ -76,9 +83,11 @@ const Features = () => {
         </div>
         <div className="slide">
           <Card className="slide__card text-white slide__card-left">
-            This concept video is made by Avdan <Spacer />
+            <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
-              <Button type="error">Watch on YouTube</Button>
+              <Button type="error">
+                <TranslatableText>Watch on YouTube</TranslatableText>
+              </Button>
             </NextLink>
           </Card>
 
@@ -104,13 +113,13 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={true}
             title="Overpowered Dock"
-            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
+            description="Your dock can do more than ever. It's your ultimate manager to get you organised."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
             isCardOnRight={false}
             title="New way to manage files"
-            description="This file manager keeps you organized and productive. Find your files the instant you need it."
+            description="This file manager keeps you organised and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
@@ -184,6 +193,12 @@ const Features = () => {
             .stop-scrolling {
               height: 100%;
               overflow: hidden;
+            }
+            #loadText {
+              display: inline;
+            }
+            #loadAnim {
+              display: inline;
             }
           `}
         </style>

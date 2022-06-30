@@ -3,6 +3,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import SupportCard from '@/components/SupportCard';
 import BetaPopup from '@/components/BetaPopup';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Support = () => {
   const [mobileLayout, useMobileLayout] = useState(false);
@@ -16,8 +17,10 @@ const Support = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          AvdanOS Support
-          <h4>Contact Us On Social Media</h4>
+          <TranslatableText>AvdanOS Support</TranslatableText>
+          <h4>
+            <TranslatableText>Contact Us On Social Media</TranslatableText>
+          </h4>
         </Text>
         <Spacer h={2} />
         <Grid.Container

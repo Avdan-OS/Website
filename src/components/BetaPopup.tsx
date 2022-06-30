@@ -2,6 +2,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { Text, Button, Card, ButtonGroup, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import { useRef } from 'react';
+import { TranslatableText } from './locale/TranslatableText';
 
 const BetaCard = ({ Link }: { Link: string }) => {
   const betaContainerRef = useRef<HTMLDivElement>(null);
@@ -15,7 +16,9 @@ const BetaCard = ({ Link }: { Link: string }) => {
   return (
     <div id="beta-container" ref={betaContainerRef}>
       <Card className="beta-popup">
-        <Text>Hey look! A new testing version of this page is available!</Text>
+        <Text>
+          <TranslatableText>Hey look! A new testing version of this page is available!</TranslatableText>
+        </Text>
         <ButtonGroup style={{ width: '100%' }}>
           <Button
             shadow
@@ -24,10 +27,12 @@ const BetaCard = ({ Link }: { Link: string }) => {
               betaContainerRef.current.style.display = 'none';
             }}
           >
-            Close
+            <TranslatableText>Close</TranslatableText>
           </Button>
           <NextLink href={Link}>
-            <Button shadow>Check it out</Button>
+            <Button shadow>
+              <TranslatableText>Check it out</TranslatableText>
+            </Button>
           </NextLink>
         </ButtonGroup>
       </Card>

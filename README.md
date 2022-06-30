@@ -39,3 +39,5 @@ You will also see any lint errors in the console.
 ## Contributing
 
 Please see the [contributing guideline](https://github.com/Avdan-OS/Website/blob/dev/CONTRIBUTING.md) for more information.
+
+For translators, please see [translating guideline](https://github.com/Avdan-OS/Website/blob/dev/TRANSLATING.md) for more information.

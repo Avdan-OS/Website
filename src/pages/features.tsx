@@ -2,6 +2,7 @@ import FeaturesCard from '@/components/FeaturesCard';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
 import dynamicWidth from '@/lib/dynamic-width';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const features = () => {
   dynamicWidth((width) => {
@@ -81,10 +82,12 @@ const features = () => {
       <div className="text-center" style={{ height: '80vh' }}>
         <Spacer h="calc(40vh - 150px)" />
         <Text className="header" h1>
-          Under development
+          <TranslatableText>Under development</TranslatableText>
         </Text>
         <Spacer h="35px" />
-        <Text>We are working really hard to make it real. Join us and help!</Text>
+        <Text>
+          <TranslatableText>We are working really hard to make it real. Join us and help!</TranslatableText>
+        </Text>
         <Spacer h="20px" />
         <Media />
       </div>

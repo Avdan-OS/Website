@@ -3,6 +3,7 @@ import { Card, Grid, Link, Spacer, useTheme, Text, Divider } from '@geist-ui/cor
 import { useState } from 'react';
 import DiscoverCard from './discoverCard';
 import style from '../styles/components/cards.module.css';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 export default function Discover() {
   const theme = useTheme();
@@ -39,7 +40,9 @@ export default function Discover() {
               >
                 <Grid.Container gap={1.5}>
                   <Grid xs={24} justify="center" padding="25px">
-                    <Text h2>Open source on GitHub</Text>
+                    <Text h2>
+                      <TranslatableText>Open source on GitHub</TranslatableText>
+                    </Text>
                   </Grid>
                   <DiscoverCard
                     title="AvdanOS"
@@ -66,7 +69,7 @@ export default function Discover() {
                 <div className="text-left">
                   <Link href="https://github.com/orgs/Avdan-OS/repositories" underline style={{ textAlign: 'left' }}>
                     <Spacer h={2} />
-                    Browse all repos -&gt;
+                    <TranslatableText>Browse all repos</TranslatableText>-&gt;
                   </Link>
                 </div>
               </Card>

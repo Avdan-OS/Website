@@ -3,6 +3,7 @@ import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal,
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import NextLink from 'next/link';
+import { TranslatableText } from '@/components/locale/TranslatableText';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -90,7 +91,7 @@ const Download = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          Give your PC an Upgrade.
+          <TranslatableText>Give your PC an Upgrade.</TranslatableText>
         </Text>
         <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -103,7 +104,9 @@ const Download = () => {
                 paddingBottom="10px"
                 width="100%"
               >
-                <Tag type="success">Try in your Browser</Tag>
+                <Tag type="success">
+                  <TranslatableText>Try in your Browser</TranslatableText>
+                </Tag>
                 <Image
                   draggable="false"
                   src="/assets/icons/WEB.png"
@@ -120,7 +123,7 @@ const Download = () => {
                   }}
                   margin="10px"
                 >
-                  Open Demo
+                  <TranslatableText>Open Demo</TranslatableText>
                 </Button>
                 <Spacer h={0} />
               </Card>
@@ -134,7 +137,9 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">For most people</Tag>
+              <Tag type="success">
+                <TranslatableText>For most people</TranslatableText>
+              </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
@@ -145,7 +150,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                Download
+                <TranslatableText>Download</TranslatableText>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -158,7 +163,9 @@ const Download = () => {
               paddingBottom="10px"
               width="100%"
             >
-              <Tag type="success">For Pi, Pine, and Mac</Tag>
+              <Tag type="success">
+                <TranslatableText>For Pi, Pine, and Mac</TranslatableText>
+              </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Button
@@ -169,7 +176,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                Download
+                <TranslatableText>Download</TranslatableText>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -177,31 +184,36 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            Having trouble? Click{' '}
-            <NextLink href="/support">
-              <>
-                <Link block>here</Link> to get help!
-              </>
-            </NextLink>
+            <TranslatableText>download.tsx/having-trouble</TranslatableText>
           </Card>
         </div>
       </div>
       <Modal {...downloadModal.bindings}>
-        <Modal.Title>Before you Download</Modal.Title>
-        <Modal.Subtitle>Please read this before you continue</Modal.Subtitle>
+        <Modal.Title>
+          <TranslatableText>Before you Download</TranslatableText>
+        </Modal.Title>
+        <Modal.Subtitle>
+          <TranslatableText>Please read this before you continue</TranslatableText>
+        </Modal.Subtitle>
         <Modal.Content>
-          <p>Below is the shasum of the download. You can use it to check download's integrity:</p>
+          <p>
+            <TranslatableText>
+              Below is the shasum of the download. You can use it to check download's integrity:
+            </TranslatableText>
+          </p>
           <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
-          Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
-          ever, etc...
+          <TranslatableText>
+            Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
+            ever, etc...
+          </TranslatableText>
           <br />
           <Checkbox
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
           >
-            Yes, I understand
+            <TranslatableText>Yes, I understand</TranslatableText>
           </Checkbox>
           <br />
           <Checkbox
@@ -209,11 +221,11 @@ const Download = () => {
               setTorrent(e.target.checked);
             }}
           >
-            Use torrent download
+            <TranslatableText>Use torrent download</TranslatableText>
           </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
-          cancel
+          <TranslatableText>Cancel</TranslatableText>
         </Modal.Action>
         <Modal.Action
           disabled={!canDownload}
@@ -221,23 +233,31 @@ const Download = () => {
             downloadHandler();
           }}
         >
-          Continue
+          <TranslatableText>Continue</TranslatableText>
         </Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
-        <Modal.Title>Web preview</Modal.Title>
+        <Modal.Title>
+          <TranslatableText>Web preview</TranslatableText>
+        </Modal.Title>
         <Modal.Content>
           <p>
-            You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
-            system is strongly recommended to getting the full experience from the operating system.
+            <TranslatableText>
+              You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
+              system is strongly recommended to getting the full experience from the operating system.
+            </TranslatableText>
             <br />
-            *Live system is currently not available because the system is still under development
+            <TranslatableText>
+              *Live system is currently not available because the system is still under development
+            </TranslatableText>
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          Cancel
+          <TranslatableText>cancel</TranslatableText>
         </Modal.Action>
-        <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
+        <Modal.Action onClick={() => window.location.replace('/demo')}>
+          <TranslatableText>Yes, take me there</TranslatableText>
+        </Modal.Action>
       </Modal>
       <style jsx>{`
         .trouble {

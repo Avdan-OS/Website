@@ -7,6 +7,7 @@
 import { Modal, useModal, Button } from '@geist-ui/core';
 import { useState, useEffect } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
+import { TranslatableText } from './locale/TranslatableText';
 
 declare global {
   interface Window {
@@ -16,9 +17,9 @@ declare global {
 
 const WidthRequirement = ({ width, redirect }: { width: number; redirect?: string | null }) => {
   const { setVisible, bindings } = useModal();
-  const [subtitle, setSubtitle] = useState('Rotate Your Screen');
+  const [subtitle, setSubtitle] = useState('Rotate Your Device');
   const [content, setContent] = useState(
-    <p>Your screen is too small to display this page. Please rotate to landscape view or use desktop.</p>
+    'Your screen is too small to display this page. Please rotate to landscape view or use desktop.'
   );
   let closeHandler = (): void => {};
   useEffect(() => {
@@ -51,10 +52,7 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
       // make window bigger
       setSubtitle('Increase your window width');
       setContent(
-        <p>
-          Your window is too small to display the content of this page, and we detected that you got more screen estate.
-          Please increase your window width or maximise your browser window.
-        </p>
+        'Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.'
       );
       setVisible(true);
       return;
@@ -63,10 +61,7 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
       // Rotate device
       setSubtitle('Rotate your device');
       setContent(
-        <p>
-          Your screen width is too small to display the content of this page, and we detected that you are in portrait
-          view. Rotate and use landscape view.
-        </p>
+        'Your screen width is too small to display the content of this page, and we detected that you are in portrait view. Rotate and use landscape view.'
       );
       setVisible(true);
       return;
@@ -75,16 +70,13 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
     if (mobileAndTabletCheck()) {
       setSubtitle('This page is incompatible');
       setContent(
-        <p>
-          Your screen width is too small to display the content of this page. You might need to use desktop to view this
-          page.
-        </p>
+        "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page."
       );
       return;
     }
     setSubtitle('This page is incompatible');
     setContent(
-      <p>Your screen width is too small to display the content of this page. Please increase your system resolution.</p>
+      "Your screen width is too small to display the content of this page. Please increase your system's resolution."
     );
     setVisible(true);
     return;
@@ -96,10 +88,20 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
         closeHandler();
       }}
     >
-      <Modal.Title>Width Incompatibility</Modal.Title>
-      <Modal.Subtitle>{subtitle}</Modal.Subtitle>
-      <Modal.Content>{content}</Modal.Content>
-      <Modal.Action onClick={() => closeHandler()}>Close</Modal.Action>
+      <Modal.Title>
+        <TranslatableText>Width Incompatibility</TranslatableText>
+      </Modal.Title>
+      <Modal.Subtitle>
+        <TranslatableText>{subtitle}</TranslatableText>
+      </Modal.Subtitle>
+      <Modal.Content>
+        <p>
+          <TranslatableText>{content}</TranslatableText>
+        </p>
+      </Modal.Content>
+      <Modal.Action onClick={() => closeHandler()}>
+        <TranslatableText>Close</TranslatableText>
+      </Modal.Action>
     </Modal>
   );
 };
