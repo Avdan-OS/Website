@@ -2,7 +2,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { Text, Button, Card, ButtonGroup, useTheme } from '@geist-ui/core';
 import NextLink from 'next/link';
 import { useRef } from 'react';
-import { TranslatableText } from './locale/TranslatableText';
+import { TranslatableText } from './translation/TranslatableText';
 
 const BetaCard = ({ Link }: { Link: string }) => {
   const betaContainerRef = useRef<HTMLDivElement>(null);

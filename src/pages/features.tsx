@@ -2,7 +2,7 @@ import FeaturesCard from '@/components/FeaturesCard';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
 import dynamicWidth from '@/lib/dynamic-width';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const features = () => {
   dynamicWidth((width) => {

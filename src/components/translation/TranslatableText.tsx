@@ -37,15 +37,19 @@ const TranslatableText = ({ children }) => {
   // This is responsible for grabbing translation from locale file mapping
   const getTranslation = async (content, setTranslatedText: Dispatch<any>) => {
     if (!currentLocale) return;
-    let importedTranslation = await import(`./${currentLocale}`);
+    let importedTranslation = await import(`./locale/${currentLocale}`);
     const translation: Map<string, string> = importedTranslation.default;
-    if (translation.has(content)) {
-      if (translation.get(content) != '') setTranslatedText(translation.get(content));
+    if (translation.has(content.toLowerCase())) {
+      if (translation.get(content.toLowerCase()) != '') {
+        setTranslatedText(translation.get(content.toLowerCase()));
+      } else {
+        setTranslatedText(content);
+      }
     }
   };
 
   // Simple return logic
-  getTranslation(children.toLowerCase(), setTranslatedText);
+  getTranslation(children, setTranslatedText);
   return translatedText;
 };
 

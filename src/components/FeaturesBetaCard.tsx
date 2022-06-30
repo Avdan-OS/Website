@@ -1,5 +1,5 @@
 import { Card, Text } from '@geist-ui/core';
-import { TranslatableText } from './locale/TranslatableText';
+import { TranslatableText } from './translation/TranslatableText';
 
 interface FeaturesBetaCardProps {
   title: string;

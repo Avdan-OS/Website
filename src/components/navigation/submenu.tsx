@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import Alert from '@/components/alert';
-import { TranslatableText } from '../locale/TranslatableText';
+import { TranslatableText } from '../translation/TranslatableText';
 
 const Submenu = () => {
   const theme = useTheme();

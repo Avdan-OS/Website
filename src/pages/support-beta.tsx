@@ -1,4 +1,4 @@
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 import Media from '@/components/media';
 import SupportCardBeta from '@/components/SupportCardBeta';
 import { Text, Input, Divider, Spacer } from '@geist-ui/core';

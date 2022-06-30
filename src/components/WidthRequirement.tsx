@@ -7,7 +7,7 @@
 import { Modal, useModal, Button } from '@geist-ui/core';
 import { useState, useEffect } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
-import { TranslatableText } from './locale/TranslatableText';
+import { TranslatableText } from './translation/TranslatableText';
 
 declare global {
   interface Window {

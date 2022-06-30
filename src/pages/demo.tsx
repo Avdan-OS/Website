@@ -1,5 +1,5 @@
 import { Button, Card, Text } from '@geist-ui/core';
-import { TranslatableText } from '@/components/locale/TranslatableText';
+import { TranslatableText } from '@/components/translation/TranslatableText';
 import { useRef } from 'react';
 import WidthRequirement from '@/components/WidthRequirement';
 const preview = () => {

@@ -1,5 +1,5 @@
 import { Button, Card, Image, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
-import { TranslatableText } from './locale/TranslatableText';
+import { TranslatableText } from './translation/TranslatableText';
 
 interface SupportCardProps {
   icon: string;

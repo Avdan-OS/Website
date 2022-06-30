@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
-import { TranslatableText } from '../locale/TranslatableText';
+import { TranslatableText } from '../translation/TranslatableText';
 
 const Footer: React.FC = () => {
   const theme = useTheme();

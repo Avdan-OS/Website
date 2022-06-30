@@ -5,10 +5,10 @@ import { useRouter } from 'next/router';
 import Logo from '../logo';
 import NextLink from 'next/link';
 import Submenu from '@/components/navigation/submenu';
-import TranslationList from '../locale/TranslationList';
+import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
-import { TranslatableText } from '../locale/TranslatableText';
+import { TranslatableText } from '../translation/TranslatableText';
 
 const Menu = () => {
   const theme = useTheme();
