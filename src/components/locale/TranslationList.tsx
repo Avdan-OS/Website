@@ -3,6 +3,7 @@ import React from 'react';
 import { setLocale } from '../locale/TranslatableText';
 
 const TranslationList = () => {
+  // This array controls what languages shows up as available in the website.
   const data = [
     {
       lang: 'de-DE',
