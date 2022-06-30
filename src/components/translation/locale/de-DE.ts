@@ -100,7 +100,6 @@ translation.set("give your pc an upgrade.","");
 translation.set("for most people","");
 translation.set("for pi, pine, and mac","");
 translation.set("download","");
-translation.set("having trouble? click here to get help!",""); // don't translate this yet (technical issue)
 translation.set("web preview","");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
