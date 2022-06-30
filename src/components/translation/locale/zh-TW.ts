@@ -178,7 +178,7 @@ translation.set(
   "您的屏幕寬度太小，無法正常顯示此頁面的內容。 您可能需要提高系統的解析度。"
 );
 
-// This below is for developers, please don't touch
+// This below is for identifier (for developers), please don't touch
 translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(

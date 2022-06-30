@@ -171,7 +171,7 @@ translation.set(
   ""
 );
 
-// This below is for developers, please don't touch
+// This below is for identifier (for developers), please don't touch
 translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(
