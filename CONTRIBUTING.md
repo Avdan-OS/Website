@@ -82,7 +82,7 @@ Then wrap your text in TranslatableText tag, like this:
 
 Then just wait for translators to add the translation
 
-If the text has complicated structure and not just a string, leave it to senior devs and translator.
+If the text has complicated structure and not just a string, you can try to read how to use [translation key](https://github.com/Avdan-OS/Website/blob/dev/src/components/translation/translationKey.md) or leave it to ppl who know how to use it (yes, injection is quite advanced)
 
 ## Pull Requests
 
