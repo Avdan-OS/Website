@@ -31,6 +31,7 @@ const Features = () => {
       count++;
     }, 700);
     videoElement.addEventListener('canplay', () => {
+      if (!document.getElementById('loadText')) return;
       loadingAnim.innerText = '';
       setLoadingText("Scroll down to see what we've got here");
       console.log('video loaded');
@@ -162,16 +163,20 @@ const Features = () => {
       <div className="text-center" style={{ height: '80vh' }}>
         <Spacer h="calc(40vh - 150px)" />
         <Text className="header" h1>
-          Under development
+          <TranslatableText>Under development</TranslatableText>
         </Text>
         <Spacer h="30px" />
-        <Text>This project wouldn't be possible without the community's contributions. Join us and help!</Text>
+        <Text>
+          <TranslatableText>
+            This project wouldn't be possible without the community's contributions. Join us and help!
+          </TranslatableText>
+        </Text>
         <Spacer h="50px" />
         <Media />
         <Spacer h="50px" />
         <NextLink href="/demo">
           <Button shadow type="success" margin="10px">
-            Open demo
+            <TranslatableText>Open demo</TranslatableText>
           </Button>
         </NextLink>
         <style jsx global>

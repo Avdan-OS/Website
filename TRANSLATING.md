@@ -20,7 +20,7 @@ Find the right section, and add a line of `translation.set("original text","tran
 
 ## Adding Your Contribution
 
-Now all you need to do is create a pull request, name it `Update [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
+Now all you need to do is create a pull request, name it `Updated [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
 
 ## FAQ
 

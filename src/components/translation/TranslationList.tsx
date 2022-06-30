@@ -17,7 +17,7 @@ const TranslationList = () => {
     },
     {
       lang: 'en-US',
-      available: false,
+      available: true,
       icon: '🇺🇸'
     },
     {
@@ -47,7 +47,7 @@ const TranslationList = () => {
     },
     {
       lang: 'zh-CN',
-      available: false,
+      available: true,
       icon: '🇨🇳'
     },
     {
