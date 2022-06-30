@@ -17,3 +17,9 @@ In `translation.set`'s parenthesis, there should be two quotes, separated by a c
 ## Adding Your Contribution
 
 Now all you need to do is create a pull request, name it `Update [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
+
+## FAQ
+
+**Can I submit incomplete translation?**
+
+Yes, just leave the translated string empty, and do NOT delete the quotation mark or change the original string.
