@@ -56,9 +56,9 @@ translation.set(
   ""
 );
 translation.set("overpowered dock","");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Your dock can do more than ever. It's your ultimate manager to get you organized.");
 translation.set("new way to manage files","");
-translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","");
+translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","This file manager keeps you organized and productive. Find your files the instant you need it.");
 translation.set("drag & drop made easy","");
 translation.set(
   "drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.",
@@ -67,7 +67,7 @@ translation.set(
 translation.set("more than multitask","");
 translation.set(
   "want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.",
-  ""
+  "Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
 );
 translation.set("tabos!","");
 translation.set(
@@ -100,7 +100,6 @@ translation.set("give your pc an upgrade.","");
 translation.set("for most people","");
 translation.set("for pi, pine, and mac","");
 translation.set("download","");
-translation.set("having trouble? click here to get help!",""); // don't translate this yet (technical issue)
 translation.set("web preview","");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
@@ -157,7 +156,7 @@ translation.set("width incompatibility","");
 translation.set("increase your window width","");
 translation.set(
   "your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.",
-  ""
+  "Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximize your browser window."
 );
 translation.set("rotate your device","");
 translation.set("your screen is too small to display this page. please rotate to landscape view or use desktop.","");
