@@ -56,7 +56,6 @@ const Menu = () => {
             <style>
               {`
                 .header-dark-tabs {
-                padding-bottom: -3px;
                 border-radius: 6px;
                 color: #fff;
                 border: 1px solid #333;
