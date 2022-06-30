@@ -1,5 +1,7 @@
 # AvdanOS Website Contributing Guide
 
+For translators, please see [translating guideline](https://github.com/Avdan-OS/Website/blob/dev/TRANSLATING.md) for more information.
+
 ## Prerequisite
 
 If you want to make edit to this repository, make sure you're familiar with Typescript, CSS and React, with the exception of grammar fixes of course.

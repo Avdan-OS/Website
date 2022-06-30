@@ -18,7 +18,7 @@ const preview = () => {
       <WidthRequirement width={minWidthNeeded} />
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
-          <TranslatableText>Try in your browser.</TranslatableText>
+          <TranslatableText>Try in your browser</TranslatableText>
         </Text>
         <Card shadow>
           <iframe

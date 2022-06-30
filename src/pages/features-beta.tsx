@@ -9,32 +9,34 @@ import { TranslatableText } from '@/components/locale/TranslatableText';
 const Features = () => {
   const theme = useTheme();
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [loadingText, setLoadingText] = useState('Assets are loading, please wait');
   useEffect(() => {
     window.scroll(0, 0);
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
-    const loadingText = document.getElementById('loadText');
+    const loadingAnim = document.getElementById('loadAnim');
     document.body.classList.add('stop-scrolling');
     let count = 0;
     const waitingAnimation = setInterval(() => {
       switch (count % 3) {
         case 0:
-          loadingText.innerText = loadingText.innerText.replaceAll('.', '');
-          loadingText.innerText += '.';
+          loadingAnim.innerText = '.';
           break;
         case 1:
-          loadingText.innerText += '.';
+          loadingAnim.innerText += '.';
           break;
         default:
-          loadingText.innerText += '.';
+          loadingAnim.innerText += '.';
           break;
       }
       count++;
     }, 700);
     videoElement.addEventListener('canplay', () => {
+      loadingAnim.innerText = '';
+      setLoadingText("Scroll down to see what we've got here");
       console.log('video loaded');
       clearInterval(waitingAnimation);
-      loadingText.innerText = "Scroll down to see what we've got here";
-      loadingText.classList.add('breath');
+      document.getElementById('loadText').style.display = 'block';
+      document.getElementById('loadText').classList.add('breath');
       document.body.classList.remove('stop-scrolling');
     });
     window.addEventListener('scroll', (e) => {
@@ -57,8 +59,9 @@ const Features = () => {
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
         <div id="loadText">
-          <TranslatableText>Assets are loading, please wait</TranslatableText>
+          <TranslatableText>{loadingText}</TranslatableText>
         </div>
+        <div id="loadAnim">.</div>
       </div>
       <Divider />
       <div>
@@ -110,13 +113,13 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={true}
             title="Overpowered Dock"
-            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
+            description="Your dock can do more than ever. It's your ultimate manager to get you organised."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
             isCardOnRight={false}
             title="New way to manage files"
-            description="This file manager keeps you organized and productive. Find your files the instant you need it."
+            description="This file manager keeps you organised and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
@@ -190,6 +193,12 @@ const Features = () => {
             .stop-scrolling {
               height: 100%;
               overflow: hidden;
+            }
+            #loadText {
+              display: inline;
+            }
+            #loadAnim {
+              display: inline;
             }
           `}
         </style>

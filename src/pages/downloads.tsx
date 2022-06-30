@@ -194,21 +194,31 @@ const Download = () => {
         </div>
       </div>
       <Modal {...downloadModal.bindings}>
-        <Modal.Title>Before you Download</Modal.Title>
-        <Modal.Subtitle>Please read this before you continue</Modal.Subtitle>
+        <Modal.Title>
+          <TranslatableText>Before you Download</TranslatableText>
+        </Modal.Title>
+        <Modal.Subtitle>
+          <TranslatableText>Please read this before you continue</TranslatableText>
+        </Modal.Subtitle>
         <Modal.Content>
-          <p>Below is the shasum of the download. You can use it to check download's integrity:</p>
+          <p>
+            <TranslatableText>
+              Below is the shasum of the download. You can use it to check download's integrity:
+            </TranslatableText>
+          </p>
           <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
-          Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
-          ever, etc...
+          <TranslatableText>
+            Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
+            ever, etc...
+          </TranslatableText>
           <br />
           <Checkbox
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
           >
-            Yes, I understand
+            <TranslatableText>Yes, I understand</TranslatableText>
           </Checkbox>
           <br />
           <Checkbox
@@ -216,11 +226,11 @@ const Download = () => {
               setTorrent(e.target.checked);
             }}
           >
-            Use torrent download
+            <TranslatableText>Use torrent download</TranslatableText>
           </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
-          cancel
+          <TranslatableText>Cancel</TranslatableText>
         </Modal.Action>
         <Modal.Action
           disabled={!canDownload}
@@ -228,23 +238,31 @@ const Download = () => {
             downloadHandler();
           }}
         >
-          Continue
+          <TranslatableText>Continue</TranslatableText>
         </Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
-        <Modal.Title>Web preview</Modal.Title>
+        <Modal.Title>
+          <TranslatableText>Web preview</TranslatableText>
+        </Modal.Title>
         <Modal.Content>
           <p>
-            You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
-            system is strongly recommended to getting the full experience from the operating system.
+            <TranslatableText>
+              You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
+              system is strongly recommended to getting the full experience from the operating system.
+            </TranslatableText>
             <br />
-            *Live system is currently not available because the system is still under development
+            <TranslatableText>
+              *Live system is currently not available because the system is still under development
+            </TranslatableText>
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          Cancel
+          <TranslatableText>cancel</TranslatableText>
         </Modal.Action>
-        <Modal.Action onClick={() => window.location.replace('/demo')}>Yes, take me there</Modal.Action>
+        <Modal.Action onClick={() => window.location.replace('/demo')}>
+          <TranslatableText>Yes, take me there</TranslatableText>
+        </Modal.Action>
       </Modal>
       <style jsx>{`
         .trouble {

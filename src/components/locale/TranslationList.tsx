@@ -6,48 +6,77 @@ const TranslationList = () => {
   const data = [
     {
       lang: 'de-DE',
+      available: false,
       icon: '🇩🇪'
     },
     {
       lang: 'en-GB',
+      available: true,
       icon: '🇬🇧'
     },
     {
       lang: 'en-US',
+      available: false,
       icon: '🇺🇸'
     },
     {
+      lang: 'es-ES',
+      available: false,
+      icon: '🇪🇸'
+    },
+    {
       lang: 'hi',
+      available: false,
       icon: '🇮🇳'
     },
     {
+      lang: 'it-IT',
+      available: false,
+      icon: '🇮🇹'
+    },
+    {
+      lang: 'pl',
+      available: false,
+      icon: '🇵🇱'
+    },
+    {
       lang: 'ru',
+      available: false,
       icon: '🇷🇺'
     },
     {
       lang: 'zh-CN',
+      available: false,
       icon: '🇨🇳'
     },
     {
-      lang: 'zn-TW',
+      lang: 'zh-TW',
+      available: true,
       icon: '🇹🇼'
     }
   ];
   const listItems = data.map((element) => {
     return (
-      <Select.Option font="1.5" value={element.lang}>
+      <Select.Option font="1.5" value={element.lang} disabled={!element.available}>
         {element.icon}
       </Select.Option>
     );
   });
   const [defaultLang, setDfltLang] = React.useState('en-GB');
   React.useEffect(() => {
-    setDfltLang(navigator.language);
+    if (typeof window !== 'undefined' && window.localStorage) {
+      if (window.localStorage.getItem('locale')) {
+        setDfltLang(window.localStorage.getItem('locale'));
+      } else {
+        window.localStorage.setItem('locale', 'en-GB');
+        setDfltLang('en-GB');
+      }
+    }
   }, []);
   return (
     <Select
       type="default"
-      initialValue={defaultLang}
+      value={defaultLang}
       width="24px"
       style={{ minWidth: '0' }}
       marginRight="20px"

@@ -1,4 +1,5 @@
 import { Button, Card, Image, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
+import { TranslatableText } from './locale/TranslatableText';
 
 interface SupportCardProps {
   icon: string;
@@ -25,11 +26,14 @@ const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
           height="90%"
           width="150px"
         />
-        <Tag>{title}</Tag>
+        <Tag>
+          <TranslatableText>{title}</TranslatableText>
+        </Tag>
         <Spacer />
         <a href={link} target="_blank" rel="noreferrer">
           <Button type="success" width={0.7} shadow margin="9px">
-            Visit{mobileLayout}
+            <TranslatableText>Visit</TranslatableText>
+            {mobileLayout}
           </Button>
         </a>
         <Spacer h={3} />

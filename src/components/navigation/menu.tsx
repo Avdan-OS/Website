@@ -8,6 +8,7 @@ import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../locale/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
+import { TranslatableText } from '../locale/TranslatableText';
 
 const Menu = () => {
   const theme = useTheme();
@@ -17,6 +18,7 @@ const Menu = () => {
   const [useMobileBar, setMobileBar] = useState(false);
   const [useFeaturesBeta, setFeaturesBeta] = useState(false);
   const [useAltMenuPosition, setAltMenuPosition] = useState(false);
+
   dynamicWidth((width) => {
     width < 1200 ? setMobileBar(true) : setMobileBar(false);
     width < 750 ? setAltMenuPosition(true) : setAltMenuPosition(false);
@@ -32,11 +34,14 @@ const Menu = () => {
         <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
-              <Tabs.Item label="Home" value="/" />
-              <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label="Downloads" value="/downloads" />
-              <Tabs.Item label="Support" value="/support" />
-              <Tabs.Item label="Docs" value="/docs" />
+              <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+              <Tabs.Item
+                label={<TranslatableText>Features</TranslatableText>}
+                value={`/features${useFeaturesBeta ? '-beta' : ''}`}
+              />
+              <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
+              <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
+              <Tabs.Item label={<TranslatableText>Docs</TranslatableText>} value="/docs" />
             </Tabs>
           </ul>
         </div>
@@ -44,12 +49,15 @@ const Menu = () => {
         <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <Tabs value={router.asPath} hideDivider onChange={(route) => router.push(route)}>
-              <Tabs.Item label="Home" value="/" />
-              <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label="Downloads" value="/downloads" />
-              <Tabs.Item label="Support" value="/support" />
-              <Tabs.Item label="Documentation" value="/docs" />
-              <Tabs.Item label="Demo" value="/demo" />
+              <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+              <Tabs.Item
+                label={<TranslatableText>Features</TranslatableText>}
+                value={`/features${useFeaturesBeta ? '-beta' : ''}`}
+              />
+              <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
+              <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
+              <Tabs.Item label={<TranslatableText>Documentation</TranslatableText>} value="/docs" />
+              <Tabs.Item label={<TranslatableText>Demo</TranslatableText>} value="/demo" />
             </Tabs>
           </ul>
         </div>

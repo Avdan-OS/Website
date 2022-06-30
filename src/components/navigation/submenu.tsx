@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { Tabs, useTheme } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import Alert from '@/components/alert';
+import { TranslatableText } from '../locale/TranslatableText';
 
 const Submenu = () => {
   const theme = useTheme();
@@ -37,11 +38,14 @@ const Submenu = () => {
               {useMobileBar ? (
                 <div className="submenu__inner">
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                    <Tabs.Item label="Home" value="/" />
-                    <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-                    <Tabs.Item label="Downloads" value="/downloads" />
-                    <Tabs.Item label="Support" value="/support" />
-                    <Tabs.Item label="Docs" value="/docs" />
+                    <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+                    <Tabs.Item
+                      label={<TranslatableText>Features</TranslatableText>}
+                      value={`/features${useFeaturesBeta ? '-beta' : ''}`}
+                    />
+                    <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
+                    <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
+                    <Tabs.Item label={<TranslatableText>Docs</TranslatableText>} value="/docs" />
                   </Tabs>
                 </div>
               ) : (
@@ -57,12 +61,15 @@ const Submenu = () => {
                     </h4>
                   ) : null}
                   <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
-                    <Tabs.Item label="Home" value="/" />
-                    <Tabs.Item label="Features" value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-                    <Tabs.Item label="Downloads" value="/downloads" />
-                    <Tabs.Item label="Support" value="/support" />
-                    <Tabs.Item label="Documentation" value="/docs" />
-                    <Tabs.Item label="Demo" value="/demo" />
+                    <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+                    <Tabs.Item
+                      label={<TranslatableText>Features</TranslatableText>}
+                      value={`/features${useFeaturesBeta ? '-beta' : ''}`}
+                    />
+                    <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
+                    <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
+                    <Tabs.Item label={<TranslatableText>Documentation</TranslatableText>} value="/docs" />
+                    <Tabs.Item label={<TranslatableText>Demo</TranslatableText>} value="/demo" />
                   </Tabs>
                 </div>
               )}
