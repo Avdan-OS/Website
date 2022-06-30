@@ -22,7 +22,7 @@ const TranslationList = () => {
     },
     {
       lang: 'es-ES',
-      available: false,
+      available: true,
       icon: '🇪🇸'
     },
     {
