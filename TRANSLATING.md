@@ -4,7 +4,7 @@ Hello fellow translators. This file contains information for how to translate th
 
 ## Finding Locale Folder
 
-Navigate to the locale folder (src/components/locale). In in that folder, you should see `TranslatableText.tsx`, `TranslationList.tsx`, and some files that ends in .ts extension. `TranslatableText.tsx` is responsible for injecting translation to the whole website, so there's no need to change that file unless you're a developer. `TranslationList.tsx` contains a list of locales available and library needed to render the options on the website. This file is also for developer, so please don't touch it. `locale-TEMPLATE.ts` is a template for creating new translation file, so please also not touch it unless you absolutely know what you're doing.
+Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src/components/locale) (src/components/locale). In in that folder, you should see `TranslatableText.tsx`, `TranslationList.tsx`, and some files that ends in .ts extension. `TranslatableText.tsx` is responsible for injecting translation to the whole website, so there's no need to change that file unless you're a developer. `TranslationList.tsx` contains a list of locales available and library needed to render the options on the website. This file is also for developer, so please don't touch it. `locale-TEMPLATE.ts` is a template for creating new translation file, so please also not touch it unless you absolutely know what you're doing.
 
 ## Opening Locale File
 
