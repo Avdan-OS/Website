@@ -63,7 +63,6 @@ const Features = () => {
         </div>
         <div id="loadAnim">.</div>
       </div>
-      <Divider />
       <div>
         <div className="slide-background text-white">
           <video
