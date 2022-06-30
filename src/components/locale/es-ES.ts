@@ -1,4 +1,5 @@
 let translation = new Map();
+import TranslationRebuilder from "./TranslationRebuilder";
 
 // Global
 // footer.tsx
@@ -90,6 +91,8 @@ translation.set("below is the shasum of the download. you can use it to check do
 translation.set("yes, i understand","")
 translation.set("use torrent download","")
 translation.set("continue","")
+// in testing 
+translation.set("Having trouble? Click [%s] here [%/s] to get help!", "Having trouble? Click [%s] here [%/s] to get help!")
 
 // support.tsx
 translation.set("avdanos support","")
@@ -131,5 +134,8 @@ translation.set("your screen is too small to display this page. please rotate to
 translation.set("this page is incompatible","")
 translation.set("Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page.","")
 translation.set("Your screen width is too small to display the content of this page. Please increase your system's resolution.","")
+
+// This below is for developers, please don't touch
+translation.set("download.tsx/having-trouble", TranslationRebuilder("download.tsx/having-trouble", translation.get("Having trouble? Click [%s] here [%/s] to get help!")))
 
 export default translation;

@@ -45,11 +45,8 @@ const TranslatableText = ({ children }) => {
   };
 
   // Simple return logic
-  if (currentLocale === 'en-GB') return children;
-  else {
-    getTranslation(children.toLowerCase(), setTranslatedText);
-    return translatedText;
-  }
+  getTranslation(children.toLowerCase(), setTranslatedText);
+  return translatedText;
 };
 
 /**
