@@ -46,7 +46,6 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#ffffff" />
       </Head>
       <GeistProvider themeType={themeType}>
         <CssBaseline />
