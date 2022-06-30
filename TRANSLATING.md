@@ -4,7 +4,7 @@ Hello fellow translators. This file contains information for how to translate th
 
 ## Finding Locale Folder
 
-Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src/components/translation/locale) (src/components/locale). In in that folder, you should see some files that ends in .ts extension.
+Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src/components/translation/locale) (src/components/translation/locale). In in that folder, you should see some files that ends in .ts extension.
 
 ## Opening Locale File
 
