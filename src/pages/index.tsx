@@ -10,9 +10,14 @@ const index = () => {
   const [useMobileBar, setMobileBar] = useState(false);
   dynamicWidth((width) => (width < 1200 ? setMobileBar(true) : setMobileBar(false)));
 
+  const themeDark = () => {
+    if (theme.type === 'dark') return true;
+    else return false;
+  };
+
   return (
     <>
-      <div className="video-player" style={{ position: 'absolute', top: '90px', zIndex: 0 }}>
+      <div className="video-player" style={{ position: 'absolute', zIndex: 0 }}>
         <video autoPlay={true} muted loop style={{ height: '100%', width: '100%' }}>
           <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
         </video>
@@ -65,6 +70,7 @@ const index = () => {
           width: 100vw;
           position: relative;
           margin-bottom: ${useMobileBar ? '-20vh' : '-60vh'};
+          top: ${themeDark() ? '0' : '90px'};
         }
         .video-player:before {
           content: ' ';
