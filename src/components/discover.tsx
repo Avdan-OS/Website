@@ -40,7 +40,7 @@ export default function Discover() {
               >
                 <Grid.Container gap={1.5}>
                   <Grid xs={24} justify="center" padding="25px">
-                    <Text h2>
+                    <Text h2 style={{ fontSize: '30px' }}>
                       <TranslatableText>Open source on GitHub</TranslatableText>
                     </Text>
                   </Grid>
