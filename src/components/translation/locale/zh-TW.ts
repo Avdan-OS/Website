@@ -47,51 +47,51 @@ translation.set("assets are loading, please wait","資源載入中，請稍候")
 translation.set("scroll down to see what we've got here","向下滑動，看看我們在這裡有什麼好玩的");
 translation.set("this concept video is made by avdan","這個概念影片由 Avdan 製作");
 translation.set("watch on youtube","在YouTube上觀看");
-translation.set("familiar dock, ultimate form","熟悉的 Dock，終極形態");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","每個人都知道Dock/任務欄。我們有了一個全新的 Dock，比以往任何時候都擁有更多的功能。");
-translation.set("brand new launch menu","全新的啟動菜單");
-translation.set("with everything in one place, do anything anywhere at anytime.","一切皆在一處，隨時隨地做任何事");
-translation.set("easily apply layout.","輕鬆選擇排佈");
+translation.set("familiar dock, ultimate form","");
+translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","");
+translation.set("brand new launch menu","");
+translation.set("with everything in one place, do anything anywhere at anytime.","");
+translation.set("easily apply layout.","");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
-  "直接從預設裡選擇，輕鬆使用完美的窗口排佈。不夠？在設定裡更改它。"
+  ""
 );
 translation.set("overpowered dock","");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","您的 Dock 可以做的事比以往更多。您的終極管理者讓您井井有序。");
-translation.set("new way to manage files","管理文件的新方法");
-translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","此檔案管理可讓您保持井井有條並富有成效。隨時立即找到您需要的文件");
-translation.set("drag & drop made easy","拖放變得容易");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","");
+translation.set("new way to manage files","");
+translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","");
+translation.set("drag & drop made easy","");
 translation.set(
   "drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.",
-  "拖放是在電腦上傳輸任何內容的最簡單方法。 我們把它變得更易於使用。"
+  ""
 );
-translation.set("more than multitask","不僅僅是做很多事");
+translation.set("more than multitask","");
 translation.set(
   "want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.",
-  "想一次做很多事？我們懂您。現在您不僅可以做很多事，而且是有組織的。"
+  ""
 );
-translation.set("tabos!","標籤作業");
+translation.set("tabos!","");
 translation.set(
   "browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?",
-  "瀏覽器已經證明了標籤頁的強大功能，那麼為什麼不使用它們來使您的作業系統更加強大呢？"
+  ""
 );
-translation.set("new context menu","新的上下文菜單");
+translation.set("new context menu","");
 translation.set(
   "context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!",
-  "上下文菜單幾十年來都沒有改變，我們厭倦了長長的清單。嘿，為什麼不把它做成一個圓圈呢？不喜歡？你還是可以在設置裡切換回來！"
+  ""
 );
-translation.set("your os, your preference","你的電腦，你的偏好");
+translation.set("your os, your preference","");
 translation.set(
   "we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.",
-  "我們讓您完全控制您的系統，主題只是其中重要的一個。如果您不喜歡我們的主題，您可以在網路上找到得到更多。"
+  ""
 );
-translation.set("day & night","早＆晚");
+translation.set("day & night","");
 translation.set(
   "let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?",
-  "讓不同的主題告訴你現在幾點。嘿，你甚至可以讓它反過來。你能在 Windows 或 MacOS 上這樣做嗎？"
+  ""
 );
 translation.set("under development","正在開發中");
-translation.set("this project wouldn't be possible without the community's contributions. join us and help!","如果沒有大家的貢獻，這個計畫是不可能實現的。加入我們！");
+translation.set("this project wouldn't be possible without the community's contributions. join us and help!","");
 translation.set("open demo","打開演示");
 
 // download.tsx
@@ -101,6 +101,7 @@ translation.set("give your pc an upgrade.","升級您的電腦");
 translation.set("for most people","給大部分的人");
 translation.set("for pi, pine, and mac","給 Pi, Pine, 及蘋果電腦");
 translation.set("download","下載");
+translation.set("having trouble? click here to get help!",""); // don't translate this yet (technical issue)
 translation.set("web preview","網頁預覽");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
@@ -130,9 +131,9 @@ translation.set("contact us on social media","在社交媒體上聯繫我們");
 translation.set("visit","前往");
 
 // support-beta.tsx
-translation.set("avdanos support articles","AvdanOS 支援文章");
-translation.set("search support articles","尋找支援文章");
-translation.set("ask our community","問我們的好伙伴們");
+translation.set("avdanos support articles","");
+translation.set("search support articles","");
+translation.set("ask our community","");
 
 // betapopup.tsx
 translation.set("hey look! a new testing version of this page is available!","此頁面有新的測試版本可用！");
