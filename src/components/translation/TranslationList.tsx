@@ -74,8 +74,13 @@ const TranslationList = () => {
       if (window.localStorage.getItem('locale')) {
         setDfltLang(window.localStorage.getItem('locale'));
       } else {
-        window.localStorage.setItem('locale', 'en-GB');
-        setDfltLang('en-GB');
+        if (data.filter((locale) => locale.lang === navigator.language).length != 0) {
+          setLocale(navigator.language);
+          setDfltLang(navigator.language);
+        } else {
+          setLocale('en-GB');
+          setDfltLang('en-GB');
+        }
       }
     }
   }, []);
