@@ -63,7 +63,7 @@ const TranslationList = () => {
   ];
   const listItems = data.map((element) => {
     return (
-      <Select.Option font="1.5" value={element.lang} disabled={!element.available}>
+      <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
         {element.icon}
       </Select.Option>
     );
