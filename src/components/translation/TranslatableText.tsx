@@ -19,7 +19,6 @@ const TranslatableText = ({ children }) => {
       if (window.localStorage.getItem('locale')) {
         setLocale(window.localStorage.getItem('locale'));
       } else {
-        window.localStorage.setItem('locale', 'en-GB');
         setLocale('en-GB');
       }
     }
