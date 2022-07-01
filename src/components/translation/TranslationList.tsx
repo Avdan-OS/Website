@@ -42,7 +42,7 @@ const TranslationList = () => {
     },
     {
       lang: 'id-ID',
-      available: false,
+      available: true,
       icon: '🇮🇩'
     },
     {
