@@ -107,3 +107,9 @@ Meh: It's acceptable
 Since commits to the dev branch will automatically get deployed, please make sure all pull requests are complete. Run `npm run build` in the src directory to double check there is no error. You can create draft pull requests, which will allow other people to see changes, give feedbacks, and request changes.
 
 Even if you're in the organisation, pull requests should be reviewed and approved by another member before merging, with exceptions of fixing a build fail or security breach. Complete redesign of an existing webpage will need approval from a team lead.
+
+PLEASE SUBMIT A PR, NO DIRECT COMMITS!!!
+
+> # _PLEASE SUBMIT A PR, NO DIRECT COMMITS_
+
+![image](https://user-images.githubusercontent.com/51555391/176925763-cdfd57ba-ae1e-4bf3-85e9-b3ebd30b1d59.png)
