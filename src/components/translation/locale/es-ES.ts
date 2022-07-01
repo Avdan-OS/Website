@@ -116,7 +116,7 @@ translation.set("use torrent download","Usar descarga por torrent");
 translation.set("continue","Continuar");
 // in testing
 translation.set(
-  "Having trouble? Click [%s] here [%/s] to get help!",
+  "having trouble? click [%s] here [%/s] to get help!",
   "¿Tienes problemas? ¡Haz click [%s] aquí [%/s] para obtener ayuda!"
 );
 
@@ -162,11 +162,11 @@ translation.set("rotate your device","Rota tu dispositivo");
 translation.set("your screen is too small to display this page. please rotate to landscape view or use desktop.","La pantalla es muy pequeña para mostrar esta página. Por favor, inclina el dispositivo o usa una computadora.");
 translation.set("this page is incompatible","Esta página es incompatible");
 translation.set(
-  "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page.",
+  "your screen width is too small to display the content of this page. you might need to increase your system's resolution use desktop to view this page.",
   "El ancho de pantalla es muy pequeño para mostrar esta página. Tal vez debas aumentar la resolución del sistema o usar otra computadora."
 );
 translation.set(
-  "Your screen width is too small to display the content of this page. Please increase your system's resolution.",
+  "your screen width is too small to display the content of this page. please increase your system's resolution.",
   "El ancho de pantalla es muy pequeño para mostrar esta página. Por favor, aumenta la resolución del sistema."
 );
 
@@ -175,7 +175,7 @@ translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(
     "download.tsx/having-trouble",
-    translation.get("Having trouble? Click [%s] here [%/s] to get help!")
+    translation.get("having trouble? click [%s] here [%/s] to get help!")
   )
 );
 

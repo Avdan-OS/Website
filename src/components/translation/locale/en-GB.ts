@@ -116,8 +116,8 @@ translation.set("use torrent download","");
 translation.set("continue","");
 // in testing
 translation.set(
-  "Having trouble? Click [%s] here [%/s] to get help!",
-  "Having trouble? Click [%s] here [%/s] to get help!"
+  "having trouble? click [%s] here [%/s] to get help!",
+  ""
 );
 
 // support.tsx
@@ -175,7 +175,7 @@ translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(
     "download.tsx/having-trouble",
-    translation.get("Having trouble? Click [%s] here [%/s] to get help!")
+    translation.get("having trouble? click [%s] here [%/s] to get help!")
   )
 );
 

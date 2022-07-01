@@ -122,7 +122,7 @@ translation.set("yes, i understand","是的，我同意");
 translation.set("use torrent download","使用激流下載");
 translation.set("continue","繼續");
 // in testing
-translation.set("Having trouble? Click [%s] here [%/s] to get help!","遇到麻煩？按[%s]這裡[%/s]獲取幫助！");
+translation.set("having trouble? click [%s] here [%/s] to get help!","遇到麻煩？按[%s]這裡[%/s]獲取幫助！");
 
 // support.tsx
 translation.set("avdanos support","AvdanOS 支援");
@@ -169,11 +169,11 @@ translation.set(
 );
 translation.set("this page is incompatible","此頁面不兼容");
 translation.set(
-  "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page.",
+  "your screen width is too small to display the content of this page. you might need to increase your system's resolution use desktop to view this page.",
   "您的屏幕寬度太小，無法正常顯示此頁面的內容。您可能需要提高系統的解析度，或著使用桌面查看此頁面。"
 );
 translation.set(
-  "Your screen width is too small to display the content of this page. Please increase your system's resolution.",
+  "your screen width is too small to display the content of this page. please increase your system's resolution.",
   "您的屏幕寬度太小，無法正常顯示此頁面的內容。您可能需要提高系統的解析度。"
 );
 
@@ -182,7 +182,7 @@ translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(
     "download.tsx/having-trouble",
-    translation.get("Having trouble? Click [%s] here [%/s] to get help!")
+    translation.get("having trouble? click [%s] here [%/s] to get help!")
   )
 );
 
