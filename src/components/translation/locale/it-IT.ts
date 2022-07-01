@@ -106,8 +106,7 @@ translation.set("yes, i understand","si, capisco");
 translation.set("use torrent download","scarica tramite torrent");
 translation.set("continue","continua");
 // in testing
-translation.set("Having trouble? Click [%s] here [%/s] to get help!","Hai qualche problema? Clicca [%s] qua [%/s] per chiedere aiuto!");
-
+translation.set("having trouble? click [%s] here [%/s] to get help!","Hai qualche problema? Clicca [%s] qua [%/s] per chiedere aiuto!");
 
 // support.tsx
 translation.set("avdanos support","support AvdanOS");
