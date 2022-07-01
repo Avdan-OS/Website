@@ -22,6 +22,12 @@ Find the right section, and add a line of `translation.set("original text","tran
 
 Now all you need to do is create a pull request, name it `Updated [your locale] translation`, add optional comment, and tag it with translation. We will review your changes and most likely merge it.
 
+PLEASE SUBMIT A PR, NO DIRECT COMMITS!!!
+
+> # _PLEASE SUBMIT A PR, NO DIRECT COMMITS_
+
+![image](https://user-images.githubusercontent.com/51555391/176925763-cdfd57ba-ae1e-4bf3-85e9-b3ebd30b1d59.png)
+
 ## FAQ
 
 **Can I submit incomplete translation?**
