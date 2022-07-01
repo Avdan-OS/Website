@@ -162,12 +162,12 @@ translation.set("rotate your device","окрените ваш уређај");
 translation.set("your screen is too small to display this page. please rotate to landscape view or use desktop.","ваш екран је превише мали да се прикаже страница. молимо вас окрените на водоравно или користите десктоп.");
 translation.set("this page is incompatible","ова страница није компатибилна");
 translation.set(
-  "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page.",
-  "Ваша ширина екрана је премала да би се садржај странице приказао. Можда ћете морати да повећате системску резолуцију десктоп рачунара да бисте видели страницу."
+  "your screen width is too small to display the content of this page. you might need to increase your system's resolution use desktop to view this page.",
+  "ваша ширина екрана је премала да би се садржај странице приказао. можда ћете морати да повећате системску резолуцију десктоп рачунара да бисте видели страницу."
 );
 translation.set(
-  "Your screen width is too small to display the content of this page. Please increase your system's resolution.",
-  "Ваша ширина екрана је премала да би се садржај странице приказао. Молимо вас повећајте резолуцију вашег система."
+  "your screen width is too small to display the content of this page. please increase your system's resolution.",
+  "ваша ширина екрана је премала да би се садржај странице приказао. молимо вас повећајте резолуцију вашег система."
 );
 
 // This below is for identifier (for developers), please don't touch
