@@ -117,7 +117,7 @@ translation.set("continue","");
 // in testing
 translation.set(
   "having trouble? click [%s] here [%/s] to get help!",
-  ""
+  "Having trouble? Click [%s] here [%/s] to get help!"
 );
 
 // support.tsx
