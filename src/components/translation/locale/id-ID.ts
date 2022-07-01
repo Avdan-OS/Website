@@ -29,7 +29,7 @@ translation.set("join our discord","bergabunglah dengan discord kami");
 // "downloads" is in footer.tsx
 translation.set("support","dukungan");
 translation.set("documentation","dokumentasi");
-translation.set("docs","dok");
+translation.set("docs","dokumen");
 translation.set("demo","demo");
 
 // index.tsx
