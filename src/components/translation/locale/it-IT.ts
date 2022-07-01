@@ -108,6 +108,7 @@ translation.set("continue","continua");
 // in testing
 translation.set("Having trouble? Click [%s] here [%/s] to get help!","Hai qualche problema? Clicca [%s] qua [%/s] per chiedere aiuto!");
 
+
 // support.tsx
 translation.set("avdanos support","support AvdanOS");
 translation.set("contact us on social media","contattaci sui social media");
@@ -150,12 +151,13 @@ translation.set("rotate your device","ruota il tuo dispositivo");
 translation.set("your screen is too small to display this page. please rotate to landscape view or use desktop.","il tuo schermo è troppo piccolo per mostrare questa pagina. per favore ruota ad una vista da paesaggio, o visualizzalo su desktop");
 translation.set("this page is incompatible","questa pagina è incompatibile");
 translation.set(
-  "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page.",
+  "your screen width is too small to display the content of this page. you might need to increase your system's resolution use desktop to view this page.",
   "La larghezza dello schermo è troppo piccola per visualizzare il contenuto di questa pagina. Potrebbe essere necessario aumentare la risoluzione del tuo sistema usa desktop per visualizzare questa pagina."
 );
 translation.set(
-  "Your screen width is too small to display the content of this page. Please increase your system's resolution.",
+  "your screen width is too small to display the content of this page. please increase your system's resolution.",
   "La larghezza dello schermo è troppo piccola per visualizzare il contenuto di questa pagina. Aumenta la risoluzione del tuo sistema."
+
 );
 
 // This below is for identifier (for developers), please don't touch
@@ -163,7 +165,7 @@ translation.set(
   "download.tsx/having-trouble",
   TranslationRebuilder(
     "download.tsx/having-trouble",
-    translation.get("Having trouble? Click [%s] here [%/s] to get help!")
+    translation.get("having trouble? click [%s] here [%/s] to get help!")
   )
 );
 
