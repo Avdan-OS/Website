@@ -8,7 +8,7 @@ Navigate to the [locale folder](https://github.com/Avdan-OS/Website/tree/dev/src
 
 ## Opening Locale File
 
-Find and open the locale file that you want to contribute to. You might want to refer to [this page](https://www.science.co.il/language/Locale-codes.php) to find your locale. You should see a lot of `translation.set(...)`, and this is how translation is stored. If you cannot fine your locale, please go to [this issue](https://github.com/Avdan-OS/Website/issues/91) and request a new locale.
+Find and open the locale file that you want to contribute to. You might want to refer to [this page](https://docs.oracle.com/cd/E23824_01/html/E26033/glset.html) to find your locale. You should see a lot of `translation.set(...)`, and this is how translation is stored. If you cannot fine your locale, please go to [this issue](https://github.com/Avdan-OS/Website/issues/91) and request a new locale.
 
 ## Editing Translation
 
@@ -26,4 +26,8 @@ Now all you need to do is create a pull request, name it `Updated [your locale] 
 
 **Can I submit incomplete translation?**
 
-Yes, just leave the translated string empty, and do NOT delete the quotation mark or change the original string.
+Yes, just leave the translated string empty, and do NOT delete the quotation mark or change the original string. You can also leave a string empty if no translation is available.
+
+**Can I use third party translation tool?**
+
+Yes, use whatever tool you want. You just need to review the translations carefully.
