@@ -168,6 +168,7 @@ translation.set(
 translation.set(
   "Your screen width is too small to display the content of this page. Please increase your system's resolution.",
   "Votre largeur d'écran est trop petite pour pouvoir afficher le contenu de cette page. Veuillez augmenter votre résolution système."
+
 );
 
 // This below is for identifier (for developers), please don't touch

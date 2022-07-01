@@ -11,6 +11,11 @@ const TranslationList = () => {
       icon: '🇩🇪'
     },
     {
+      lang: 'el-GR',
+      available: false,
+      icon: '🇬🇷'
+    },
+    {
       lang: 'en-GB',
       available: true,
       icon: '🇬🇧'
@@ -27,7 +32,7 @@ const TranslationList = () => {
     },
     {
       lang: 'fr-FR',
-      available: true,
+      available: false,
       icon: '🇫🇷'
     },
     {
@@ -36,9 +41,19 @@ const TranslationList = () => {
       icon: '🇮🇳'
     },
     {
+      lang: 'id-ID',
+      available: false,
+      icon: '🇮🇩'
+    },
+    {
       lang: 'it-IT',
       available: false,
       icon: '🇮🇹'
+    },
+    {
+      lang: 'nl-NL',
+      available: false,
+      icon: '🇳🇱'
     },
     {
       lang: 'pl',
