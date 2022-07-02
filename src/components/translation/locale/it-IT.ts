@@ -50,7 +50,7 @@ translation.set("familiar dock, ultimate form","Dock familiare, forma definitiva
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Tutti conoscono la dock/task bar. noi abbiamo una nuova dock, con più funzionalità di prima.");
 translation.set("brand new launch menu","Nuovo menù di lancio");
 translation.set("with everything in one place, do anything anywhere at anytime.","Con tutto nello stesso posto, fai di tutto ogni momento.");
-translation.set("easily apply layout.","Applica facilmente il layout");
+translation.set("easily apply layout","Applica facilmente il layout");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "Con un elenco di preset determinati dalle tue app, puoi facilmente lavorare con il layout perfetto della finestra. non abbastanza? cambialo nelle impostazioni."
