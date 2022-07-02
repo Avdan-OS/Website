@@ -7,7 +7,7 @@ const TranslationList = () => {
   const data = [
     {
       lang: 'de-DE',
-      available: false,
+      available: true,
       icon: '🇩🇪'
     },
     {
