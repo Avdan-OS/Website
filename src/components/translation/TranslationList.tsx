@@ -12,7 +12,7 @@ const TranslationList = () => {
     },
     {
       lang: 'el-GR',
-      available: false,
+      available: true,
       icon: '🇬🇷'
     },
     {
