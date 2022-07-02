@@ -50,7 +50,7 @@ translation.set("familiar dock, ultimate form","");
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","");
 translation.set("brand new launch menu","");
 translation.set("with everything in one place, do anything anywhere at anytime.","");
-translation.set("easily apply layout.","");
+translation.set("easily apply layout","");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   ""

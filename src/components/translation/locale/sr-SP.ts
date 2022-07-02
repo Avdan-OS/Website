@@ -50,7 +50,7 @@ translation.set("familiar dock, ultimate form","препознатљив док,
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","свако зна за док/радне траке. ми добијамо потпуно нов док, са више могућности него икад пре.");
 translation.set("brand new launch menu","потпуно нов почетни мени");
 translation.set("with everything in one place, do anything anywhere at anytime.","са свиме на једним местом, радите било шта било кад.");
-translation.set("easily apply layout.","лако постављен изглед");
+translation.set("easily apply layout","лако постављен изглед");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "са листом шаблона одрећених из ваших апликација, лако пређите на посао у савршеном окружењу. није довољно? промените то у подешавањима."

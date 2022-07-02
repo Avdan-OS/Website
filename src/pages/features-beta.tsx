@@ -95,7 +95,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="Familiar dock, ultimate form"
-            description="Everyone know dock/task bar. We got a brand new dock, with more features than ever before. "
+            description="Everyone know dock/task bar. We got a brand new dock, with more features than ever before."
           />
           <Spacer h="1000px" />
           <FeaturesBetaCard
@@ -131,7 +131,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="More than multitask"
-            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
+            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard
