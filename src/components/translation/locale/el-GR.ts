@@ -139,8 +139,10 @@ translation.set("check it out","δοκίμασέ το");
 translation.set("read the features in detail.","διάβασε τα χρακτηριστικά με λεπτομέριες");
 translation.set("i'm a user","είμαι ένας χρήστης");
 translation.set("open manual","άνοιξε το εγχειρίδιο");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","είμαι προγραμματιστής");
 translation.set("open documentation","άνοιξε την τεκμηρίωση");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "δοκίμασέ το στο browser σου." is in index.tsx

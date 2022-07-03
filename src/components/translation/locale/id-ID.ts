@@ -139,8 +139,10 @@ translation.set("check it out","lihat berikut ini");
 translation.set("read the features in detail.","membaca fitur secara rinci.");
 translation.set("i'm a user","saya adalah pengguna");
 translation.set("open manual","buka manual");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","saya adalah pengembang");
 translation.set("open documentation","buka dokumentasi");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

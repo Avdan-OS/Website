@@ -139,8 +139,10 @@ translation.set("check it out","Prøv den");
 translation.set("read the features in detail.","Læs om funktionerne i detailer");
 translation.set("i'm a user","Jeg er bruger");
 translation.set("open manual","Åben manual");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","Jeg er udvikler");
 translation.set("open documentation","Åben dokumentation");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
