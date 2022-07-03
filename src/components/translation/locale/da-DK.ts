@@ -110,7 +110,7 @@ translation.set("yes, take me there","Ja, tag mig der til");
 translation.set("cancel","Afbryd");
 translation.set("before you download","Før du henter");
 translation.set("please read this before you continue","Venligst læs dette inden du forsætter");
-translation.set("below is the shasum of the download. you can use it to check download's integrity:","Her under er shasum af nedhentningen. du kan bruge den til at tjekke nedhentningens integritet");
+translation.set("below is the shasum of the download. you can use it to check download's integrity:","Her under er shasum af nedhentningen. du kan bruge den til at tjekke nedhentningens integritet:");
 translation.set("yes, i understand","Ja, jeg forstår");
 translation.set("use torrent download","Brug torrent-hentning");
 translation.set("continue","Forsæt");
