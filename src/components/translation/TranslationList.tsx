@@ -6,13 +6,18 @@ const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
     {
+      lang: 'da-DK',
+      available: true,
+      icon: '🇩🇰'
+    },
+    {
       lang: 'de-DE',
-      available: false,
+      available: true,
       icon: '🇩🇪'
     },
     {
       lang: 'el-GR',
-      available: false,
+      available: true,
       icon: '🇬🇷'
     },
     {
@@ -94,7 +99,7 @@ const TranslationList = () => {
       if (window.localStorage.getItem('locale')) {
         setDfltLang(window.localStorage.getItem('locale'));
       } else {
-        if (data.filter((locale) => locale.lang === navigator.language).length != 0) {
+        if (data.filter((locale) => locale.lang === navigator.language && locale.available).length != 0) {
           setLocale(navigator.language);
           setDfltLang(navigator.language);
         } else {

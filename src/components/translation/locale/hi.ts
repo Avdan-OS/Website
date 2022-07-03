@@ -140,7 +140,8 @@ translation.set("read the features in detail.","सुविधाओं को 
 translation.set("i'm a user","मैं एक उपयोगकर्ता हूँ");
 translation.set("open manual","नियमावली खॊलियॆ");
 translation.set("i'm a developer","मैं एक विकासक हूँ");
-translation.set("open documentation","प्रलेखन प्रलेखन");
+translation.set("open documentation","प्रलेखन खॊलियॆ");
+translation.set("doc is not available yet","अभी प्रलेखन उपलब्ध नहीं है");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

@@ -51,7 +51,7 @@ translation.set("familiar dock, ultimate form","熟悉的 Dock，終極形態");
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","每個人都知道Dock/任務欄。我們有了一個全新的 Dock，比以往任何時候都擁有更多的功能。");
 translation.set("brand new launch menu","全新的啟動菜單");
 translation.set("with everything in one place, do anything anywhere at anytime.","一切皆在一處，隨時隨地做任何事");
-translation.set("easily apply layout.","輕鬆選擇排佈");
+translation.set("easily apply layout","輕鬆選擇排佈");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "直接從預設裡選擇，輕鬆使用完美的窗口排佈。不滿足？在設定裡更改它。"
@@ -143,8 +143,10 @@ translation.set("check it out","一探究竟");
 translation.set("read the features in detail.","詳細的閱讀所有功能");
 translation.set("i'm a user","我是使用者");
 translation.set("open manual","打開使用手冊");
+translation.set("manual is not available yet","使用手冊尚不可用");
 translation.set("i'm a developer","我是開發人員");
 translation.set("open documentation","打開開發人員指南");
+translation.set("doc is not available yet","开发人员指南尚不可用");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

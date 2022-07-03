@@ -50,7 +50,7 @@ translation.set("familiar dock, ultimate form","Dock familier, forme ultime");
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","tout le monde connais le dock/la barre des tâches. nous en avons un tout nouveau, avec encore plus de fonctionnalités que jamais auparavant");
 translation.set("brand new launch menu","Tout nouveau menu de démarrage");
 translation.set("with everything in one place, do anything anywhere at anytime.","Avec tout dans un seul endroit, faites ce que vous voulez, n'importe où à n'importe quel moment");
-translation.set("easily apply layout.","Appliquez facilement une disposition");
+translation.set("easily apply layout","Appliquez facilement une disposition");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "Avec une liste de prédispositions définies depuis vos applications, travaillez facilement avec l'organisation parfaite de vos fenêtres. pas assez de dispositions ? changez les dans les paramètres"
@@ -139,8 +139,10 @@ translation.set("check it out","aller voir");
 translation.set("read the features in detail.","lire les fonctionnalités en détail.");
 translation.set("i'm a user","je suis un utilisateur");
 translation.set("open manual","ouvrir le manuel");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","je suis un développeur");
 translation.set("open documentation","ouvrir la documentation");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

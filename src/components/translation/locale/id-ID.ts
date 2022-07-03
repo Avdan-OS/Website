@@ -50,7 +50,7 @@ translation.set("familiar dock, ultimate form","dermaga akrab, bentuk pamungkas"
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","semua orang tahu dok/bilah tugas. kami mendapatkan dok baru, dengan lebih banyak fitur daripada sebelumnya");
 translation.set("brand new launch menu","menu peluncuran baru");
 translation.set("with everything in one place, do anything anywhere at anytime.","dengan segala sesuatu di satu tempat, lakukan apa saja di mana saja kapan saja.");
-translation.set("easily apply layout.","dengan mudah menerapkan tata letak.");
+translation.set("easily apply layout","dengan mudah menerapkan tata letak");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "dengan daftar prasetel yang ditentukan dari aplikasi anda, mulai bekerja dengan mudah dengan tata letak jendela yang sempurna. tidak cukup? ubah di pengaturan."
@@ -139,8 +139,10 @@ translation.set("check it out","lihat berikut ini");
 translation.set("read the features in detail.","membaca fitur secara rinci.");
 translation.set("i'm a user","saya adalah pengguna");
 translation.set("open manual","buka manual");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","saya adalah pengembang");
 translation.set("open documentation","buka dokumentasi");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
