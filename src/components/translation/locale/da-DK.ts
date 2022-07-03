@@ -90,7 +90,7 @@ translation.set(
   "Lad forskellige temaer fortælle dig hvad tiden er. Hey, du kan enda gøre det omvendt. Kan du gøre det på windows eller macos?"
 );
 translation.set("under development","Under udvikling");
-translation.set("this project wouldn't be possible without the community's contributions. join us and help!","Dette prokjet ville ikke være muligt uden vores fællesskabets bidrag. Tilslut os og hjælp til!");
+translation.set("this project wouldn't be possible without the community's contributions. join us and help!","Dette prokjet ville ikke være muligt uden vores fællesskabs bidrag. Tilslut os og hjælp til!");
 translation.set("open demo","åben demo");
 
 // download.tsx
