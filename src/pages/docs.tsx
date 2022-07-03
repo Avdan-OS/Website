@@ -53,7 +53,7 @@ const Docs = () => {
                 shadow
                 margin="10px"
                 onClick={() => {
-                  window.location.replace('/manual');
+                  setToast({ text: 'Manual is not available yet.', delay: 5000, type: 'error' });
                 }}
               >
                 <TranslatableText>Open manual</TranslatableText>
