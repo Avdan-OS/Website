@@ -26,11 +26,6 @@ const TranslationList = () => {
       icon: '🇬🇧'
     },
     {
-      lang: 'en-US',
-      available: true,
-      icon: '🇺🇸'
-    },
-    {
       lang: 'es-ES',
       available: true,
       icon: '🇪🇸'
