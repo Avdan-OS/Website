@@ -46,8 +46,8 @@ translation.set("assets are loading, please wait","Aktiver bliver læst, vent ve
 translation.set("scroll down to see what we've got here","Scroll ned for at se hvad vi har her");
 translation.set("this concept video is made by avdan","Denne konceptvideo er lavet af Avdan");
 translation.set("watch on youtube","Se den på youtube");
-translation.set("familiar dock, ultimate form","Velkendt dock, ultimativ form");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dock-/taskbar. Vi har en helt ny dock, med flere funktioner end nogensinde før.");
+translation.set("familiar dock, ultimate form","Velkendt dok, ultimativ form");
+translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dok-/taskbar. Vi har en helt ny dok, med flere funktioner end nogensinde før.");
 translation.set("brand new launch menu","Helt ny startmenu");
 translation.set("with everything in one place, do anything anywhere at anytime.","Med alting på et sted, lav alting hvor som helst når som helst.");
 translation.set("easily apply layout","Nemt anvendeligt layout");
@@ -55,8 +55,8 @@ translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "Med en liste af forudindstillinger bestemt af dine apps, kom nemt igang med den perfekte vindueopsætning. Ikke nok? lav det om i indstillinger."
 );
-translation.set("overpowered dock","Kraftfuld Dock");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Din dock kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret");
+translation.set("overpowered dock","Kraftfuld Dok");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Din dok kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret");
 translation.set("new way to manage files","Ny måde at administrere filer");
 translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","Denne filmanager holder dig organiseret og produktiv");
 translation.set("drag & drop made easy","Træk & slip gjort nemt");
