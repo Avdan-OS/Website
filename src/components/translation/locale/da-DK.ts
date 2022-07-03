@@ -9,7 +9,7 @@ translation.set("features","Funktioner");
 translation.set("downloads","Downloads");
 translation.set("external links","Eksterne links");
 translation.set("twitter","");
-translation.set("github","]");
+translation.set("github","");
 translation.set("youtube","");
 translation.set("discord","");
 translation.set("reddit","");
@@ -97,16 +97,16 @@ translation.set("open demo","åben demo");
 translation.set("give your pc an upgrade.","Giv din PC en upgradering");
 // "try in your browser" is in index.tsx section
 // "open demo" is in features-beta.tsx section
-translation.set("for most people","For de fleste folk");
+translation.set("for most people","For de fleste");
 translation.set("for pi, pine, and mac","For Pi, Pine og Mac");
 translation.set("download","Download");
-translation.set("web preview","Eeb forhåndsvisning");
+translation.set("web preview","Web forhåndsvisning");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
   "Du er ved at besøge web demo versionen af avdanos, hvilket kun er bevis af koncept. Afprøv live system er på det kraftigste anbefalet for at få den fulde oplevelse af oprativ systemet."
 );
 translation.set("*live system is currently not available because the system is still under development","live systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling.");
-translation.set("yes, take me there","Ya, tag mig der til");
+translation.set("yes, take me there","Ja, tag mig der til");
 translation.set("cancel","Afbryd");
 translation.set("before you download","Før du henter");
 translation.set("please read this before you continue","Venligst læs dette inden du forsætter");
@@ -131,18 +131,18 @@ translation.set("search support articles","Søg support artikler");
 translation.set("ask our community","Spørg vores fællesskab");
 
 // betapopup.tsx
-translation.set("hey look! a new testing version of this page is available!","Hey see! en ny testing version af denne side er tilgængelig");
+translation.set("hey look! a new testing version of this page is available!","Hey se! en ny testing version af denne side er tilgængelig");
 translation.set("close","Luk");
 translation.set("check it out","Prøv den");
 
 // docs.tsx
-translation.set("read the features in detail.","Læs om funktionerne i detailer");
+translation.set("read the features in detail.","Læs mere om funktionerne");
 translation.set("i'm a user","Jeg er bruger");
 translation.set("open manual","Åben manual");
-translation.set("manual is not available yet","");
+translation.set("manual is not available yet","Denne manual er ikke tilgængelig endnu");
 translation.set("i'm a developer","Jeg er udvikler");
 translation.set("open documentation","Åben dokumentation");
-translation.set("doc is not available yet","");
+translation.set("doc is not available yet","Docs er ikke tilgængelig endnu");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
