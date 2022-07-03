@@ -10,11 +10,6 @@ const index = () => {
   const [useMobileBar, setMobileBar] = useState(false);
   dynamicWidth((width) => (width < 1200 ? setMobileBar(true) : setMobileBar(false)));
 
-  const themeDark = () => {
-    if (theme.type === 'dark') return true;
-    else return false;
-  };
-
   return (
     <>
       <div className="video-player" style={{ position: 'absolute', zIndex: 0 }}>
@@ -70,7 +65,7 @@ const index = () => {
           width: 100vw;
           position: relative;
           margin-bottom: ${useMobileBar ? '-20vh' : '-60vh'};
-          top: ${themeDark() ? '0' : '90px'};
+          top: ${theme.type === 'dark' ? '0' : '90px'};
         }
         .video-player:before {
           content: ' ';
@@ -84,7 +79,7 @@ const index = () => {
           background: linear-gradient(
             0deg,
             ${theme.palette.background} 0%,
-            ${theme.type == 'dark' ? 'rgba(0,0,0,0)' : 'rgba(255,255,255,0)'} 100%
+            ${theme.type === 'dark' ? 'rgba(0,0,0,0)' : 'rgba(255,255,255,0)'} 100%
           );
         }
       `}</style>
