@@ -127,8 +127,10 @@ translation.set("check it out","Dacci un'ochiata");
 translation.set("read the features in detail.","Lggi le funzionalita in dettaglio");
 translation.set("i'm a user","Sono un utente");
 translation.set("open manual","Apri il manuale");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","Sono un developer");
 translation.set("open documentation","Apri la documentazione");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

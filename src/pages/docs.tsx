@@ -53,7 +53,11 @@ const Docs = () => {
                 shadow
                 margin="10px"
                 onClick={() => {
-                  setToast({ text: 'Manual is not available yet.', delay: 5000, type: 'error' });
+                  setToast({
+                    text: <TranslatableText>Manual is not available yet</TranslatableText>,
+                    delay: 5000,
+                    type: 'error'
+                  });
                 }}
               >
                 <TranslatableText>Open manual</TranslatableText>
@@ -85,7 +89,11 @@ const Docs = () => {
                 shadow
                 margin="10px"
                 onClick={() => {
-                  setToast({ text: 'Doc is not available yet.', delay: 5000, type: 'error' });
+                  setToast({
+                    text: <TranslatableText>Doc is not available yet</TranslatableText>,
+                    delay: 5000,
+                    type: 'error'
+                  });
                 }}
               >
                 <TranslatableText>Open documentation</TranslatableText>

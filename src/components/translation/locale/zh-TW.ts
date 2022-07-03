@@ -143,8 +143,10 @@ translation.set("check it out","一探究竟");
 translation.set("read the features in detail.","詳細的閱讀所有功能");
 translation.set("i'm a user","我是使用者");
 translation.set("open manual","打開使用手冊");
+translation.set("manual is not available yet","使用手冊尚不可用");
 translation.set("i'm a developer","我是開發人員");
 translation.set("open documentation","打開開發人員指南");
+translation.set("doc is not available yet","开发人员指南尚不可用");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

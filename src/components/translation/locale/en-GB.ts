@@ -139,8 +139,10 @@ translation.set("check it out","");
 translation.set("read the features in detail.","");
 translation.set("i'm a user","");
 translation.set("open manual","");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","");
 translation.set("open documentation","");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

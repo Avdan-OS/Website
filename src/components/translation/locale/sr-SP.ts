@@ -139,8 +139,10 @@ translation.set("check it out","Испробајте");
 translation.set("read the features in detail.","Прочитајте карактеристике у детаљима.");
 translation.set("i'm a user","Ја сам корисник");
 translation.set("open manual","Отвори приручник");
+translation.set("manual is not available yet","");
 translation.set("i'm a developer","Ја сам програмер");
 translation.set("open documentation","Отвори документацију");
+translation.set("doc is not available yet","");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
