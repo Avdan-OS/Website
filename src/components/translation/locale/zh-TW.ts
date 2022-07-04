@@ -10,10 +10,10 @@ translation.set("features","特徵");
 translation.set("downloads","下載");
 translation.set("external links","外部連結");
 translation.set("twitter","推特");
-translation.set("github","GitHub");
-translation.set("youtube","YouTube");
-translation.set("discord","Discord");
-translation.set("reddit","Reddit");
+translation.set("github","");
+translation.set("youtube","");
+translation.set("discord","");
+translation.set("reddit","");
 translation.set("legal","法定");
 translation.set("license","版權許可");
 translation.set("eula","最終用戶許可協議");
@@ -40,6 +40,14 @@ translation.set("download now","立即下載");
 // discover.tsx
 translation.set("open source on github","在Github上開源");
 translation.set("browse all repos","瀏覽所有存儲庫");
+// discoverCard.tsx
+translation.set("avdanos","Avdan 作業系統");
+translation.set("meet avdanos, refining the way we think about operating systems.","AvdanOS，更進步的作業系統。");
+translation.set("official website","官方頁面");
+translation.set("all the new updates and information about avdanos and support.","有關 AvdanOS 和支援的所有新更新和消息");
+translation.set("desktop environment","桌面環境");
+translation.set("meet nadva, the official desktop environment for avdanos.","隆重介紹 Navda，AvdanOS 的桌面環境");
+translation.set("a discord bot made for the avdanos community discord server.","專門為開發 AvdanOS 的 Discord 伺服器機器人");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","Avdan 的概念，我們正在將它實現");
@@ -146,7 +154,7 @@ translation.set("open manual","打開使用手冊");
 translation.set("manual is not available yet","使用手冊尚不可用");
 translation.set("i'm a developer","我是開發人員");
 translation.set("open documentation","打開開發人員指南");
-translation.set("doc is not available yet","开发人员指南尚不可用");
+translation.set("doc is not available yet","開發人員指南尚不可用");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx

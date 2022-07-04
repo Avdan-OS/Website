@@ -40,6 +40,14 @@ translation.set("download now","立即下载");
 // discover.tsx
 translation.set("open source on github","在Github上开源");
 translation.set("browse all repos","浏览所有存储库");
+// discoverCard.tsx
+translation.set("avdanos","Avdan 作业系统");
+translation.set("meet avdanos, refining the way we think about operating systems.","AvdanOS，更进步的作业系统。");
+translation.set("official website","官方页面");
+translation.set("all the new updates and information about avdanos and support.","有关 AvdanOS 和支援的所有新更新和消息");
+translation.set("desktop environment","桌面环境");
+translation.set("meet nadva, the official desktop environment for avdanos.","隆重介绍 Navda，AvdanOS 的桌面环境");
+translation.set("a discord bot made for the avdanos community discord server.","专门为开发 AvdanOS 的 Discord 伺服器机器人");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","Avdan 的概念，我们正在将它实现");
@@ -146,7 +154,7 @@ translation.set("open manual","打开使用手册");
 translation.set("manual is not available yet","使用手册尚不可用");
 translation.set("i'm a developer","我是开发人员");
 translation.set("open documentation","打开开发人员指南");
-translation.set("doc is not available yet","");
+translation.set("doc is not available yet","开发人员指南尚不可用");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
