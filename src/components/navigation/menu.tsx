@@ -51,7 +51,7 @@ const Menu = () => {
               />
               <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
               <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
-              <Tabs.Item label={<TranslatableText>Documentation</TranslatableText>} value="/docs" />
+              <Tabs.Item label={<TranslatableText>Docs</TranslatableText>} value="/docs" />
             </Tabs>
           </ul>
         </div>
@@ -71,7 +71,7 @@ const Menu = () => {
               />
               <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
               <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
-              <Tabs.Item label={<TranslatableText>Documentation</TranslatableText>} value="/docs" />
+              <Tabs.Item label={<TranslatableText>Docs</TranslatableText>} value="/docs" />
               <Tabs.Item label={<TranslatableText>Demo</TranslatableText>} value="/demo" />
             </Tabs>
           </ul>
