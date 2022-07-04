@@ -19,7 +19,7 @@ translation.set("eula","EULA");
 translation.set("history of incidents","historia incydentów");
 translation.set("privacy and security","prywatność i ochrona");
 translation.set("inspired by","zainspirowany przez");
-translation.set("avdanos contributors","twórcy avdanOS");
+translation.set("avdanos contributors","twórcy AvdanOS");
 // alert.tsx
 translation.set("is still in development.","jest wciąż w fazie rozwoju");
 translation.set("join our discord","dołącz do naszego discorda");
@@ -40,7 +40,7 @@ translation.set("download now","pobierz teraz");
 translation.set("open source on github","open source na github");
 translation.set("browse all repos","przeglądaj wszystkie repozytoria");
 // discoverCard.tsx
-translation.set("avdanos","advanos");
+translation.set("avdanos","AvdanOS");
 translation.set("meet avdanos, refining the way we think about operating systems.","");
 translation.set("official website","oficjalna strona");
 translation.set("all the new updates and information about avdanos and support.","");
