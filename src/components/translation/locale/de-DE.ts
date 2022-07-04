@@ -40,16 +40,16 @@ translation.set("download now","Jetzt herunterladen");
 translation.set("open source on github","Open Source auf Github");
 translation.set("browse all repos","Alle Repos durchsuchen");
 // discoverCard.tsx
-translation.set("avdanos","");
-translation.set("meet avdanos, refining the way we think about operating systems.","");
-translation.set("official website","");
-translation.set("all the new updates and information about avdanos and support.","");
-translation.set("desktop environment","");
-translation.set("meet nadva, the official desktop environment for avdanos.","");
-translation.set("a discord bot made for the avdanos community discord server.","");
+translation.set("avdanos","AvdanOS");
+translation.set("meet avdanos, refining the way we think about operating systems.","Lernen Sie AvdanOS kennen, das unsere Vorstellungen von Betriebssystemen neu definiert.");
+translation.set("official website","Offizielle Webseite");
+translation.set("all the new updates and information about avdanos and support.","Alle neuen Updates und Informationen über AvdanOS und Support.");
+translation.set("desktop environment","Desktop-Umgebung");
+translation.set("meet nadva, the official desktop environment for avdanos.","Lernen Sie Nadva kennen, die offizielle Desktop-Umgebung für AvdanOS.");
+translation.set("a discord bot made for the avdanos community discord server.","Ein Discord-Bot für den AvdanOS Community-Discord-Server.");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","avdans Konzept, wir machen es wirklich");
+translation.set("avdan's concept, we're making it real","Avdans Konzept, wir machen es wirklich");
 translation.set("assets are loading, please wait","Assets werden geladen, bitte warten");
 translation.set("scroll down to see what we've got here","Scrolle nach unten, um zu sehen, was wir hier haben");
 translation.set("this concept video is made by avdan","Dieses Konzept Video wurde von AvdanOS gemacht");
@@ -147,10 +147,10 @@ translation.set("check it out","Ausprobieren");
 translation.set("read the features in detail.","Lesen Sie die Funktionen im Detail.");
 translation.set("i'm a user","Ich bin ein Nutzer");
 translation.set("open manual","Handbuch öffnen");
-translation.set("manual is not available yet","");
+translation.set("manual is not available yet","Das Handbuch ist aktuell noch nicht verfügbar.");
 translation.set("i'm a developer","Ich bin ein Entwickler");
 translation.set("open documentation","Dokumentation öffnen");
-translation.set("doc is not available yet","");
+translation.set("doc is not available yet","Die Dokumentation ist aktuell noch nicht verfügbar.");
 
 // demo.tsx
 // "Try in your browser." is in index.tsx
