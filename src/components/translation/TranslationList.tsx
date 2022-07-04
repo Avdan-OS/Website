@@ -62,7 +62,7 @@ const TranslationList = () => {
     },
     {
       lang: 'pl',
-      available: false,
+      available: true,
       icon: '🇵🇱'
     },
     {
