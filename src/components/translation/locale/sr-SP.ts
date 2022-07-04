@@ -39,6 +39,14 @@ translation.set("download now","Преузмите сада");
 // discover.tsx
 translation.set("open source on github","Отворите извор на github-у");
 translation.set("browse all repos","Претражите све репозиторијуме");
+// discoverCard.tsx
+translation.set("avdanos","");
+translation.set("meet avdanos, refining the way we think about operating systems.","");
+translation.set("official website","");
+translation.set("all the new updates and information about avdanos and support.","");
+translation.set("desktop environment","");
+translation.set("meet nadva, the official desktop environment for avdanos.","");
+translation.set("a discord bot made for the avdanos community discord server.","");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","Авданов концепт, ми га претварамо у стварност");

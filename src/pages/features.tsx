@@ -1,21 +1,15 @@
 import FeaturesCard from '@/components/FeaturesCard';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
-import dynamicWidth from '@/lib/dynamic-width';
 import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const features = () => {
-  dynamicWidth((width) => {
-    if (width > 575) {
-      location.replace('/features-beta');
-    }
-  });
   return (
     <>
       <FeaturesCard
         isInverted={false}
         cardTitle="Familiar dock, ultimate form"
-        cardDescription="Everyone know dock/task bar. We got a brand new dock, with more features than ever before. "
+        cardDescription="Everyone know dock/task bar. We got a brand new dock, with more features than ever before."
         cardVideo="/assets/clips/dock.mp4"
       />
       <FeaturesCard
@@ -33,13 +27,13 @@ const features = () => {
       <FeaturesCard
         isInverted={true}
         cardTitle="Overpowered Dock"
-        cardDescription="Your dock can do more than ever. It's your ultimate manager to get you organized."
+        cardDescription="Your dock can do more than ever. It's your ultimate manager to get you organised."
         cardVideo="/assets/clips/overpowered-dock.mp4"
       />
       <FeaturesCard
         isInverted={false}
         cardTitle="New way to manage files"
-        cardDescription="This file manager keeps you organized and productive. Find your files the instant you need it."
+        cardDescription="This file manager keeps you organised and productive. Find your files the instant you need it."
         cardVideo="/assets/clips/new-files.mp4"
       />
       <FeaturesCard
@@ -51,7 +45,7 @@ const features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="More than multitask"
-        cardDescription="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
+        cardDescription="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
         cardVideo="/assets/clips/multitask.mp4"
       />
       <FeaturesCard
@@ -86,7 +80,9 @@ const features = () => {
         </Text>
         <Spacer h="35px" />
         <Text>
-          <TranslatableText>We are working really hard to make it real. Join us and help!</TranslatableText>
+          <TranslatableText>
+            This project wouldn't be possible without the community's contributions. Join us and help!
+          </TranslatableText>
         </Text>
         <Spacer h="20px" />
         <Media />
