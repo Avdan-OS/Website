@@ -35,7 +35,7 @@ const Support = () => {
           <SupportCard
             icon="YouTube"
             title="YouTube"
-            link="https://www.youtube.com/c/AvdanOSDeveloper"
+            link="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA"
             mobileLayout={mobileLayout}
           />
           <SupportCard icon="Discord" title="Discord" link="https://discord.gg/avdanos" mobileLayout={mobileLayout} />
