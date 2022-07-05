@@ -102,7 +102,7 @@ translation.set("this project wouldn't be possible without the community's contr
 translation.set("open demo","otwórz demo");
 
 // download.tsx
-translation.set("this download is not available yet.", "ten plik do pobrania nie jest jeszcze dostępny.");
+translation.set("this download is not available yet.","ten plik do pobrania nie jest jeszcze dostępny.");
 translation.set("give your pc an upgrade.","daj swojemu PC uaktualnienie");
 // "try in your browser" is in index.tsx section
 // "open demo" is in features-beta.tsx section
