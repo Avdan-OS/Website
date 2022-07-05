@@ -49,10 +49,10 @@ translation.set("meet nadva, the official desktop environment for avdanos.","ت�
 translation.set("a discord bot made for the avdanos community discord server.","روبوت للخلاف تم إنشاؤه لخادم الفتنة في مجتمع avdanos");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","مفهوم Avdan ، نحن نجعله حقيقيًا");
+translation.set("avdan's concept, we're making it real","فكرة Avdan ، نحن نجعله حقيقة");
 translation.set("assets are loading, please wait","يتم تحميل الأصول ، يرجى الانتظار");
 translation.set("scroll down to see what we've got here","قم بالتمرير لأسفل لرؤية ما لدينا هنا");
-translation.set("this concept video is made by avdan","فيديو المفهوم هذا من صنع Avdan");
+translation.set("this concept video is made by avdan","فيديو الفكرة هذا من صنع Avdan");
 translation.set("watch on youtube","شاهد على يوتيوب");
 translation.set("familiar dock, ultimate form","رصيف مألوف ، شكل نهائي");
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","الجميع يعرف قفص الاتهام / شريط المهام. لقد حصلنا على رصيف جديد تمامًا به ميزات أكثر من أي وقت مضى");
@@ -107,11 +107,11 @@ translation.set("give your pc an upgrade.","إعطاء ترقية لجهاز ا�
 // "open demo" is in features-beta.tsx section
 translation.set("for most people","لأغلب الناس");
 translation.set("for pi, pine, and mac","لباي وباين وماك");
-translation.set("download","download");
+translation.set("download","تحميل");
 translation.set("web preview","معاينة الويب");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
-  "أنت على وشك زيارة نسخة الويب التجريبية من  ، والتي هي فقط دليل على المفهوم. يوصى بشدة بتجربة النظام المباشر للحصول على التجربة الكاملة من نظام التشغيل"
+  "أنت على وشك زيارة نسخة الويب التجريبية من  ، والتي هي فقط دليل على الفكرة. يوصى بشدة بتجربة النظام المباشر للحصول على التجربة الكاملة من نظام التشغيل"
 );
 translation.set("*live system is currently not available because the system is still under development","النظام المباشر غير متوفر حاليًا لأن النظام لا يزال قيد التطوير");
 translation.set("yes, take me there","نعم ، خذني هناك");
@@ -125,7 +125,7 @@ translation.set("continue","استمر");
 // in testing
 translation.set(
   "having trouble? click [%s] here [%/s] to get help!",
-  "تواجه مشاكل؟ اضغط [%s] هنا [%/s] للدعم!"
+  "تواجه مشاكل؟ اضغط [%s] هنا [%/s] للدعم" 
 );
 
 // support.tsx
