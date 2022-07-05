@@ -83,6 +83,11 @@ const Footer: React.FC = () => {
                     <TranslatableText>Reddit</TranslatableText>
                   </a>
                 </li>
+                <li>
+                  <a href="https://instagram.com/avdanos_" target="_blank" rel="noreferrer">
+                    <TranslatableText>Instagram</TranslatableText>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

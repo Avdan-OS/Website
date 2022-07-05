@@ -45,6 +45,12 @@ const Support = () => {
             link="https://www.reddit.com/r/AvdanOS/"
             mobileLayout={mobileLayout}
           />
+          <SupportCard
+            icon="Instagram"
+            title="Instagram"
+            link="https://instagram.com/avdanos_"
+            mobileLayout={mobileLayout}
+          />
         </Grid.Container>
         <Spacer h={5} />
         <BetaPopup Link="/support-beta" />
