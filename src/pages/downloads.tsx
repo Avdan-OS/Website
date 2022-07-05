@@ -50,7 +50,11 @@ const Download = () => {
 
   const downloadHandler = () => {
     downloadModal.setVisible(false);
-    setToast({ text: 'This download is not available yet.', delay: 5000, type: 'error' });
+    setToast({
+      text: <TranslatableText>This download is not available yet.</TranslatableText>,
+      delay: 5000,
+      type: 'error'
+    });
     // Uncomment the following when download becomes available
     /*if (arch === 'x64') {
       if (useTorrent) {
