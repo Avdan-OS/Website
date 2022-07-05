@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","Scroll ned for at se h
 translation.set("this concept video is made by avdan","Denne konceptvideo er lavet af Avdan");
 translation.set("watch on youtube","Se den på youtube");
 translation.set("familiar dock, ultimate form","Velkendt dok, ultimativ form");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dok-/taskbar. Vi har en helt ny dok, med flere funktioner end nogensinde før.");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dok-/taskbar. Vi har en helt ny dok, med flere funktioner end nogensinde før.");
 translation.set("brand new launch menu","Helt ny startmenu");
 translation.set("with everything in one place, do anything anywhere at anytime.","Med alting på et sted, lav alting hvor som helst når som helst.");
 translation.set("easily apply layout","Nemt anvendeligt layout");
