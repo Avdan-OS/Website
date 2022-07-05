@@ -56,7 +56,7 @@ translation.set("scroll down to see what we've got here","向下滑动，看看�
 translation.set("this concept video is made by avdan","这个概念视频由 Avdan 制作");
 translation.set("watch on youtube","在YouTube上观看");
 translation.set("familiar dock, ultimate form","熟悉的 Dock，终极形态");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","每个人都知道Dock/任务栏。我们有了一个全新的 Dock，比以往任何时候都拥有更多的功能。");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","每个人都知道Dock/任务栏。我们有了一个全新的 Dock，比以往任何时候都拥有更多的功能。");
 translation.set("brand new launch menu","全新的启动菜单");
 translation.set("with everything in one place, do anything anywhere at anytime.","一切皆在一处，随时随地做任何事");
 translation.set("easily apply layout","轻松选择排布");
