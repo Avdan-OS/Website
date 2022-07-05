@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","przewiń w dół, aby 
 translation.set("this concept video is made by avdan","ten koncept wideo jest nakręcony przez avdan");
 translation.set("watch on youtube","oglądaj na youtube");
 translation.set("familiar dock, ultimate form","znajomy dok, ostateczna forma");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","wszyscy znają pasek dokowania/zadań. dostaliśmy zupełnie nową stację dokującą z większą liczbą funkcji niż kiedykolwiek wcześniej.");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","wszyscy znają pasek dokowania/zadań. dostaliśmy zupełnie nową stację dokującą z większą liczbą funkcji niż kiedykolwiek wcześniej.");
 translation.set("brand new launch menu","zupełnie nowe menu uruchamiania");
 translation.set("with everything in one place, do anything anywhere at anytime.","mając wszystko w jednym miejscu, rób wszystko w dowolnym miejscu i czasie.");
 translation.set("easily apply layout","łatwo zastosować układ");

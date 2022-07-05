@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","gulir ke bawah untuk m
 translation.set("this concept video is made by avdan","video konsep ini dibuat oleh avdan");
 translation.set("watch on youtube","tonton di youtube");
 translation.set("familiar dock, ultimate form","dermaga akrab, bentuk pamungkas");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","semua orang tahu dok/bilah tugas. kami mendapatkan dok baru, dengan lebih banyak fitur daripada sebelumnya");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","semua orang tahu dok/bilah tugas. kami mendapatkan dok baru, dengan lebih banyak fitur daripada sebelumnya");
 translation.set("brand new launch menu","menu peluncuran baru");
 translation.set("with everything in one place, do anything anywhere at anytime.","dengan segala sesuatu di satu tempat, lakukan apa saja di mana saja kapan saja.");
 translation.set("easily apply layout","dengan mudah menerapkan tata letak");
