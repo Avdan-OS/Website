@@ -84,6 +84,21 @@ const TranslationList = () => {
       lang: 'zh-TW',
       available: true,
       icon: '🇹🇼'
+    },
+    {
+      lang: 'ja-JP',
+      available: true,
+      icon: '🇯🇵'
+    },
+    {
+      lang: 'ko-KR',
+      available: true,
+      icon: '🇰🇷'
+    },
+    {
+      lang: 'ar-SA',
+      available: true,
+      icon: '🇸🇦'
     }
   ];
   const listItems = data.map((element) => {
