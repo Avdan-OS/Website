@@ -102,6 +102,7 @@ translation.set("this project wouldn't be possible without the community's contr
 translation.set("open demo","άνοιξε το δοκιμαστικό");
 
 // κατέβασέ το.tsx
+translation.set("this download is not available yet.", "");
 translation.set("give your pc an upgrade.","δώσε στο pc ένα upgrade.");
 // "δοκίμασέ το στο browser σου" is in index.tsx section
 // "άνοιξε το δοκιμαστικό" is in features-beta.tsx section

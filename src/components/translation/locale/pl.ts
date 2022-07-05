@@ -13,13 +13,13 @@ translation.set("github","github");
 translation.set("youtube","youtube");
 translation.set("discord","discorda");
 translation.set("reddit","reddit");
-translation.set("legal","prawny");
+translation.set("legal","leaglność");
 translation.set("license","licencja");
 translation.set("eula","EULA");
 translation.set("history of incidents","historia incydentów");
 translation.set("privacy and security","prywatność i ochrona");
 translation.set("inspired by","zainspirowany przez");
-translation.set("avdanos contributors","autorzy avdanOS");
+translation.set("avdanos contributors","twórcy AvdanOS");
 // alert.tsx
 translation.set("is still in development.","jest wciąż w fazie rozwoju");
 translation.set("join our discord","dołącz do naszego discorda");
@@ -34,15 +34,15 @@ translation.set("demo","próbny");
 
 // index.tsx
 translation.set("your pc but even better.","twój komputer, ale jeszcze lepszy.");
-translation.set("try in your browser","spróbuj w swojej przeglądarce");
+translation.set("try in your browser","spróbuj w swojej przeglądarcę");
 translation.set("download now","pobierz teraz");
 // discover.tsx
 translation.set("open source on github","open source na github");
 translation.set("browse all repos","przeglądaj wszystkie repozytoria");
 // discoverCard.tsx
-translation.set("avdanos","");
+translation.set("avdanos","AvdanOS");
 translation.set("meet avdanos, refining the way we think about operating systems.","");
-translation.set("official website","");
+translation.set("official website","oficjalna strona");
 translation.set("all the new updates and information about avdanos and support.","");
 translation.set("desktop environment","");
 translation.set("meet nadva, the official desktop environment for avdanos.","");
@@ -54,18 +54,18 @@ translation.set("assets are loading, please wait","trwa ładowanie zasobów, pro
 translation.set("scroll down to see what we've got here","przewiń w dół, aby zobaczyć, co tu mamy");
 translation.set("this concept video is made by avdan","ten koncept wideo jest nakręcony przez avdan");
 translation.set("watch on youtube","oglądaj na youtube");
-translation.set("familiar dock, ultimate form","znajomy dok, ostateczna forma");
+translation.set("familiar dock, ultimate form","znajomy dock, ostateczna forma");
 translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","wszyscy znają pasek dokowania/zadań. dostaliśmy zupełnie nową stację dokującą z większą liczbą funkcji niż kiedykolwiek wcześniej.");
 translation.set("brand new launch menu","zupełnie nowe menu uruchamiania");
 translation.set("with everything in one place, do anything anywhere at anytime.","mając wszystko w jednym miejscu, rób wszystko w dowolnym miejscu i czasie.");
-translation.set("easily apply layout","łatwo zastosować układ");
+translation.set("easily apply layout","łatwy układ do zastosowania");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
   "z listą ustawień wstępnych określonych z Twoich aplikacji, łatwo przystąp do pracy z idealnym układem okien. niewystarczająco? zmień to w ustawieniach."
 );
-translation.set("overpowered dock","przeładowana stacja dokująca");
+translation.set("overpowered dock","silna stacja dokująca");
 translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","nasza stacja dokująca potrafi więcej niż kiedykolwiek. to Twój najlepszy menedżer, który pomoże Ci się zorganizować.");
-translation.set("new way to manage files","");
+translation.set("new way to manage files","nowy sposób zarządzania plikami");
 translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","ten menedżer plików zapewnia porządek i produktywność. znajdź swoje pliki natychmiast, gdy ich potrzebujesz.");
 translation.set("drag & drop made easy","łatwe przeciąganie i upuszczanie");
 translation.set(
@@ -92,22 +92,23 @@ translation.set(
   "we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.",
   "dajemy Ci kontrolę nad Twoim systemem. motyw jest tylko jednym z ważnych i możesz uzyskać więcej, jeśli nie lubisz naszego."
 );
-translation.set("day & night","dzień noc");
+translation.set("day & night","dzień i noc");
 translation.set(
   "let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?",
   "niech różne motywy powiedzą Ci, która jest godzina. hej, możesz nawet odwrócić to. czy możesz to zrobić na Windows lub MacOS?"
 );
-translation.set("under development","w budowie");
+translation.set("under development","w produkcji");
 translation.set("this project wouldn't be possible without the community's contributions. join us and help!","ten projekt nie byłby możliwy bez wkładu społeczności. dołącz do nas i pomóż!");
 translation.set("open demo","otwórz demo");
 
 // download.tsx
-translation.set("give your pc an upgrade.","daj swój komputer uaktualnienie.");
+translation.set("this download is not available yet.", "");
+translation.set("give your pc an upgrade.","daj swojemu PC uaktualnienie");
 // "try in your browser" is in index.tsx section
 // "open demo" is in features-beta.tsx section
 translation.set("for most people","dla większości ludzi");
-translation.set("for pi, pine, and mac","dla Pi Pine i Mac");
-translation.set("download","Ściągnij");
+translation.set("for pi, pine, and mac","dla Pi, Pine i Mac");
+translation.set("download","Pobierz");
 translation.set("web preview","podgląd internetowy");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
@@ -115,23 +116,23 @@ translation.set(
 );
 translation.set("*live system is currently not available because the system is still under development","*system live nie jest obecnie dostępny, ponieważ system jest nadal w fazie rozwoju");
 translation.set("yes, take me there","tak, zabierz mnie tam");
-translation.set("cancel","anulować");
+translation.set("cancel","anuluj");
 translation.set("before you download","przed pobraniem");
 translation.set("please read this before you continue","przeczytaj to, zanim przejdziesz dalej");
 translation.set("below is the shasum of the download. you can use it to check download's integrity:","poniżej znajduje się shasum pobierania. możesz go użyć do sprawdzenia integralności pobierania:");
 translation.set("yes, i understand","tak, rozumiem");
 translation.set("use torrent download","użyj pobierania torrentów");
-translation.set("continue","kontynuować");
+translation.set("continue","kontynuuj");
 // in testing
 translation.set(
   "having trouble? click [%s] here [%/s] to get help!",
-  "mieć problemy? Kliknij [%s] tutaj, [%/s] aby uzyskać pomoc!"
+  "masz problemy? Kliknij [%s] tutaj, [%/s] aby uzyskać pomoc!"
 );
 
 // support.tsx
 translation.set("avdanos support","wsparcie avdanOS");
 translation.set("contact us on social media","skontaktuj się z nami w mediach społecznościowych");
-translation.set("visit","wizyta");
+translation.set("visit","odwiedź");
 
 // support-beta.tsx
 translation.set("avdanos support articles","artykuły wsparcia avdanOS");
@@ -139,7 +140,7 @@ translation.set("search support articles","szukaj artykułów pomocy");
 translation.set("ask our community","zapytaj naszą społeczność");
 
 // betapopup.tsx
-translation.set("hey look! a new testing version of this page is available!","Hej, patrz! dostępna jest nowa wersja testowa tej strony!");
+translation.set("hey look! a new testing version of this page is available!","Hej, patrz! dostępna jest nowa wersja testowa dla tej strony!");
 translation.set("close","blisko");
 translation.set("check it out","Sprawdź to");
 
@@ -148,7 +149,7 @@ translation.set("read the features in detail.","przeczytaj szczegółowo funkcje
 translation.set("i'm a user","jestem użytkownikiem");
 translation.set("open manual","otwórz instrukcję");
 translation.set("manual is not available yet","instrukcja nie jest jeszcze dostępna");
-translation.set("i'm a developer","jestem programistą");
+translation.set("i'm a developer","jestem deweloperem");
 translation.set("open documentation","otwarta dokumentacja");
 translation.set("doc is not available yet","dokument nie jest jeszcze dostępny");
 
