@@ -44,7 +44,7 @@ translation.set("avdanos","AvdanOS");
 translation.set("meet avdanos, refining the way we think about operating systems.","poznaj avdanos, udoskonalając sposób, w jaki myślimy o systemach operacyjnych.");
 translation.set("official website","oficjalna strona");
 translation.set("all the new updates and information about avdanos and support.","wszystkie nowe aktualizacje i informacje o avdanos i wsparciu.");
-translation.set("desktop environment", "środowisko pulpitu");
+translation.set("desktop environment","środowisko pulpitu");
 translation.set("meet nadva, the official desktop environment for avdanos.","poznaj nadva, oficjalne środowisko graficzne dla avdanOS.");
 translation.set("a discord bot made for the avdanos community discord server.","bot discord stworzony dla serwera discord społeczności avdanOS.");
 
