@@ -1,7 +1,6 @@
 import { Select } from '@geist-ui/core';
-import React from 'react';
 import { setLocale } from './TranslatableText';
-
+import { useState, useEffect } from 'react';
 const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
@@ -98,8 +97,8 @@ const TranslationList = () => {
       </Select.Option>
     );
   });
-  const [defaultLang, setDfltLang] = React.useState('en-GB');
-  React.useEffect(() => {
+  const [defaultLang, setDfltLang] = useState('en-GB');
+  useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
       if (window.localStorage.getItem('locale')) {
         setDfltLang(window.localStorage.getItem('locale'));
