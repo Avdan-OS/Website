@@ -54,7 +54,7 @@ translation.set("assets are loading, please wait","يتم تحميل الأصو�
 translation.set("scroll down to see what we've got here","قم بالتمرير لأسفل لرؤية ما لدينا هنا");
 translation.set("this concept video is made by avdan","فيديو الفكرة هذا من صنع Avdan");
 translation.set("watch on youtube","شاهد على يوتيوب");
-translation.set("familiar dock, ultimate form","رصيف مألوف ، شكل نهائي");
+translation.set("familiar dock, ultimate form","شريط ماهام مألوف ، شكل نهائي");
 translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","الكل يعرف شريط المهام. لدينا شريط ماهام جديد مع ميزات أكثر من أي وقت مضى");
 translation.set("brand new launch menu","قائمة إطلاق جديدة تمامًا");
 translation.set("with everything in one place, do anything anywhere at anytime.","مع كل شيء في مكان واحد ، افعل أي شيء في أي مكان وفي أي وقت");
