@@ -40,13 +40,13 @@ translation.set("download now","Hent nu");
 translation.set("open source on github","Åben kildekode på GitHub");
 translation.set("browse all repos","Gennemse alle depoter");
 // discoverCard.tsx
-translation.set("avdanos","");
-translation.set("meet avdanos, refining the way we think about operating systems.","");
-translation.set("official website","");
-translation.set("all the new updates and information about avdanos and support.","");
-translation.set("desktop environment","");
-translation.set("meet nadva, the official desktop environment for avdanos.","");
-translation.set("a discord bot made for the avdanos community discord server.","");
+translation.set("avdanos","AvdanOS");
+translation.set("meet avdanos, refining the way we think about operating systems.","Mød avdanOS, raffinere måden vi tænker på operativ systemer");
+translation.set("official website","Officielle hjemmeside");
+translation.set("all the new updates and information about avdanos and support.","Alle nye opdateringer samt informationer om avdanOS og hjælp");
+translation.set("desktop environment","Skrivebords system");
+translation.set("meet nadva, the official desktop environment for avdanos.","Mød nadva, det officielle skrivebord til avdanOS");
+translation.set("a discord bot made for the avdanos community discord server.","en discord robot lavet til avdanOS fællesskabs discord server©");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","Avdan's koncept, vi gør det til virkelighed");
@@ -61,7 +61,7 @@ translation.set("with everything in one place, do anything anywhere at anytime."
 translation.set("easily apply layout","Nemt anvendeligt layout");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
-  "Med en liste af forudindstillinger bestemt af dine apps, kom nemt igang med den perfekte vindueopsætning. Ikke nok? lav det om i indstillinger."
+  "Kom nemt igang med den perfekte vindueopsætning, med en liste af forudindstillinger bestemt af dine apps. Er det ikke nok, kan du bare lave det om i indstillingerne."
 );
 translation.set("overpowered dock","Kraftfuld Dok");
 translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Din dok kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret");

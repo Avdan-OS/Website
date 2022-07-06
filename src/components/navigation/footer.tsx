@@ -69,12 +69,12 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
+                  <a href="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA" target="_blank" rel="noreferrer">
                     <TranslatableText>YouTube</TranslatableText>
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/gRCcCUZ5px" target="_blank" rel="noreferrer">
+                  <a href="https://discord.gg/avdanos" target="_blank" rel="noreferrer">
                     <TranslatableText>Discord</TranslatableText>
                   </a>
                 </li>
