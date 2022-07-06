@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","");
 translation.set("this concept video is made by avdan","");
 translation.set("watch on youtube","");
 translation.set("familiar dock, ultimate form","");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","");
 translation.set("brand new launch menu","");
 translation.set("with everything in one place, do anything anywhere at anytime.","");
 translation.set("easily apply layout","");

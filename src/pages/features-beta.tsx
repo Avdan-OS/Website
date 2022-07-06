@@ -95,7 +95,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="Familiar dock, ultimate form"
-            description="Everyone know dock/task bar. We got a brand new dock, with more features than ever before."
+            description="Everyone knows dock/task bar. We got a brand new dock, with more features than ever before."
           />
           <Spacer h="1000px" />
           <FeaturesBetaCard

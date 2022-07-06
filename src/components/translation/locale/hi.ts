@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","");
 translation.set("this concept video is made by avdan","हमनॆ आपकॆ लियॆ क्या बनाया है यह देखने के लिए नीचे स्क्रॉल करें");
 translation.set("watch on youtube","यूट्यूब पर देखें");
 translation.set("familiar dock, ultimate form","वाहि टास्क बार,पर आकर्षक रूप");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","टास्क बार तॊ सब जान तॆ है, लॆकिन हामनॆ लाया है ऐक नया टास्क बार जॊ पॆहॆलॆ सॆभि ओरभी सुविदाजनक");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","टास्क बार तॊ सब जान तॆ है, लॆकिन हामनॆ लाया है ऐक नया टास्क बार जॊ पॆहॆलॆ सॆभि ओरभी सुविदाजनक");
 translation.set("brand new launch menu","एकदम नया लॉन्च मेनू");
 translation.set("with everything in one place, do anything anywhere at anytime.","एक ही स्थान पर सब कुछ, कहीं भी ओर कभी भी कुछ भी करें।");
 translation.set("easily apply layout.","आसानी से लेआउट लागू करें।");
