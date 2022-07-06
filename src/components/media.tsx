@@ -1,7 +1,7 @@
 import { Grid, Card } from '@geist-ui/core';
-import { RiTwitterFill } from 'react-icons/ri';
+import { RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
-import { FaRedditAlien, FaDiscord } from 'react-icons/fa';
+import { FaRedditAlien, FaDiscord, FaInstagram } from 'react-icons/fa';
 
 const Media = () => {
   return (
@@ -14,6 +14,13 @@ const Media = () => {
         </a>
       </Grid>
       <Grid>
+        <a href="https://www.instagram.com/avdanos_/" target="_blank" rel="noreferrer">
+          <Card shadow>
+            <FaInstagram size={26} />
+          </Card>
+        </a>
+      </Grid>
+      <Grid>
         <a href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
           <Card shadow>
             <AiFillGithub size={26} />
@@ -21,7 +28,7 @@ const Media = () => {
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
+        <a href="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA" target="_blank" rel="noreferrer">
           <Card shadow>
             <AiFillYoutube size={26} />
           </Card>
@@ -38,6 +45,13 @@ const Media = () => {
         <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
           <Card shadow>
             <FaRedditAlien size={26} />
+          </Card>
+        </a>
+      </Grid>
+      <Grid>
+      <a href="https://www.instagram.com/avdanos_" target="_blank" rel="noreferrer">
+          <Card shadow>
+            <RiInstagramFill size={26} />
           </Card>
         </a>
       </Grid>

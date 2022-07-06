@@ -9,7 +9,7 @@ const features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="Familiar dock, ultimate form"
-        cardDescription="Everyone know dock/task bar. We got a brand new dock, with more features than ever before."
+        cardDescription="Everyone knows dock/task bar. We got a brand new dock, with more features than ever before."
         cardVideo="/assets/clips/dock.mp4"
       />
       <FeaturesCard

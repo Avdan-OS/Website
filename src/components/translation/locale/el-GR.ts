@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","μετακινηθεί
 translation.set("this concept video is made by avdan","αυτό το concept βίντεο είναι φτιαγμένο από τον avdan");
 translation.set("watch on youtube","δες το στο youtube");
 translation.set("familiar dock, ultimate form","γνώριμο dock, απόλυτη μορφή");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","όλοι γνωρίζουν το dock/task bar. αποκτήσαμε έναν ολοκαίνουργιο dock, με περισσότερες δυνατότητες από ποτέ.");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","όλοι γνωρίζουν το dock/task bar. αποκτήσαμε έναν ολοκαίνουργιο dock, με περισσότερες δυνατότητες από ποτέ.");
 translation.set("brand new launch menu","καινούριο launch menu");
 translation.set("with everything in one place, do anything anywhere at anytime.","με τα πάντα σε ένα μέρος, κάντε οτιδήποτε οπουδήποτε και ανά πάσα στιγμή");
 translation.set("easily apply layout","εφαρμόστε εύκολα τη διάταξη");

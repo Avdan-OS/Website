@@ -49,13 +49,13 @@ translation.set("meet nadva, the official desktop environment for avdanos.","ت�
 translation.set("a discord bot made for the avdanos community discord server.","روبوت للخلاف تم إنشاؤه لخادم الفتنة في مجتمع avdanos");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","فكرة Avdan ، نحن نجعله حقيقة");
+translation.set("avdan's concept, we're making it real","فكرة Avdan ، نحن نجعلها حقيقة");
 translation.set("assets are loading, please wait","يتم تحميل الأصول ، يرجى الانتظار");
 translation.set("scroll down to see what we've got here","قم بالتمرير لأسفل لرؤية ما لدينا هنا");
 translation.set("this concept video is made by avdan","فيديو الفكرة هذا من صنع Avdan");
 translation.set("watch on youtube","شاهد على يوتيوب");
-translation.set("familiar dock, ultimate form","رصيف مألوف ، شكل نهائي");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","الجميع يعرف قفص الاتهام / شريط المهام. لقد حصلنا على رصيف جديد تمامًا به ميزات أكثر من أي وقت مضى");
+translation.set("familiar dock, ultimate form","شريط ماهام مألوف ، شكل نهائي");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","الكل يعرف شريط المهام. لدينا شريط ماهام جديد مع ميزات أكثر من أي وقت مضى");
 translation.set("brand new launch menu","قائمة إطلاق جديدة تمامًا");
 translation.set("with everything in one place, do anything anywhere at anytime.","مع كل شيء في مكان واحد ، افعل أي شيء في أي مكان وفي أي وقت");
 translation.set("easily apply layout","تطبيق التخطيط بسهولة");
@@ -146,9 +146,9 @@ translation.set("check it out","تحقق من ذلك");
 // docs.tsx
 translation.set("read the features in detail.","اقرأ الميزات بالتفصيل");
 translation.set("i'm a user","أنا مستخدم");
-translation.set("open manual","دليل مفتوح");
+translation.set("open manual","افتح الدليل");
 translation.set("manual is not available yet","الدليل غير موجود بعد");
-translation.set("i'm a developer","أنا مطور");
+translation.set("i'm a developer","أنا عامل");
 translation.set("open documentation","افتح الوثائق");
 translation.set("manual is not available yet","الدليل غير موجود بعد");
 

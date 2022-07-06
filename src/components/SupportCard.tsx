@@ -1,5 +1,7 @@
-import { Button, Card, Image, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
+import { Button, Card, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
 import { TranslatableText } from './translation/TranslatableText';
+import { FaDiscord, FaInstagram, FaTwitter, FaReddit } from 'react-icons/fa';
+import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 
 interface SupportCardProps {
   icon: string;
@@ -9,6 +11,22 @@ interface SupportCardProps {
 }
 
 const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
+  const iconSelector = () => {
+    switch (icon) {
+      case 'Twitter':
+        return <FaTwitter display="block" size={150} style={{ margin: 'auto' }} />;
+      case 'GitHub':
+        return <AiFillGithub display="block" size={150} style={{ margin: 'auto' }} />;
+      case 'YouTube':
+        return <AiFillYoutube display="block" size={150} style={{ margin: 'auto' }} />;
+      case 'Discord':
+        return <FaDiscord display="block" size={150} style={{ margin: 'auto' }} />;
+      case 'Reddit':
+        return <FaReddit display="block" size={150} style={{ margin: 'auto' }} />;
+      case 'Instagram':
+        return <FaInstagram display="block" size={150} style={{ margin: 'auto' }} />;
+    }
+  };
   const theme = useTheme();
   return (
     <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
@@ -19,13 +37,8 @@ const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
         paddingBottom="9px"
         width="95%"
       >
-        <Image
-          alt={title}
-          draggable="false"
-          src={`/assets/icons/${icon}${theme.type === 'light' ? '_light' : ''}.png`}
-          height="90%"
-          width="150px"
-        />
+        {iconSelector()}
+        <Spacer />
         <Tag>
           <TranslatableText>{title}</TranslatableText>
         </Tag>

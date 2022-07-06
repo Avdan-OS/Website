@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import { TranslatableText } from '../translation/TranslatableText';
 interface SeoManagerProps {

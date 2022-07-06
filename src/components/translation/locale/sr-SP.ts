@@ -55,7 +55,7 @@ translation.set("scroll down to see what we've got here","Скролујте д�
 translation.set("this concept video is made by avdan","Овај видео концепт је креирао Авдан");
 translation.set("watch on youtube","Погледајте на Youtube-у");
 translation.set("familiar dock, ultimate form","Препознатљив док, ултимативна форма");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Свако зна за док/радне траке. Нудимо потпуно нов док, са више могућности него икад пре.");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","Свако зна за док/радне траке. Нудимо потпуно нов док, са више могућности него икад пре.");
 translation.set("brand new launch menu","Потпуно нов почетни мени");
 translation.set("with everything in one place, do anything anywhere at anytime.","Са свиме на једним местом, радите било шта у било које време.");
 translation.set("easily apply layout","Лако постављен изглед");
