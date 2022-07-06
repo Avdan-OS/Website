@@ -48,13 +48,6 @@ const Media = () => {
           </Card>
         </a>
       </Grid>
-      <Grid>
-      <a href="https://www.instagram.com/avdanos_" target="_blank" rel="noreferrer">
-          <Card shadow>
-            <RiInstagramFill size={26} />
-          </Card>
-        </a>
-      </Grid>
     </Grid.Container>
   );
 };
