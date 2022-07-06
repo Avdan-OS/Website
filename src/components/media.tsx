@@ -1,5 +1,5 @@
 import { Grid, Card } from '@geist-ui/core';
-import { RiTwitterFill } from 'react-icons/ri';
+import { RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 import { FaRedditAlien, FaDiscord } from 'react-icons/fa';
 
@@ -38,6 +38,13 @@ const Media = () => {
         <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
           <Card shadow>
             <FaRedditAlien size={26} />
+          </Card>
+        </a>
+      </Grid>
+      <Grid>
+      <a href="https://www.instagram.com/avdanos_" target="_blank" rel="noreferrer">
+          <Card shadow>
+            <RiInstagramFill size={26} />
           </Card>
         </a>
       </Grid>
