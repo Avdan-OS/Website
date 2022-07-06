@@ -41,12 +41,12 @@ translation.set("open source on github","open source na github");
 translation.set("browse all repos","przeglądaj wszystkie repozytoria");
 // discoverCard.tsx
 translation.set("avdanos","AvdanOS");
-translation.set("meet avdanos, refining the way we think about operating systems.","");
+translation.set("meet avdanos, refining the way we think about operating systems.","poznaj avdanos, udoskonalając sposób, w jaki myślimy o systemach operacyjnych.");
 translation.set("official website","oficjalna strona");
-translation.set("all the new updates and information about avdanos and support.","");
-translation.set("desktop environment","");
-translation.set("meet nadva, the official desktop environment for avdanos.","");
-translation.set("a discord bot made for the avdanos community discord server.","");
+translation.set("all the new updates and information about avdanos and support.","wszystkie nowe aktualizacje i informacje o avdanos i wsparciu.");
+translation.set("desktop environment","środowisko pulpitu");
+translation.set("meet nadva, the official desktop environment for avdanos.","poznaj nadva, oficjalne środowisko graficzne dla avdanOS.");
+translation.set("a discord bot made for the avdanos community discord server.","bot discord stworzony dla serwera discord społeczności avdanOS.");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","koncepcja avdana, urzeczywistniamy ją");
@@ -102,7 +102,7 @@ translation.set("this project wouldn't be possible without the community's contr
 translation.set("open demo","otwórz demo");
 
 // download.tsx
-translation.set("this download is not available yet.", "");
+translation.set("this download is not available yet.","ten plik do pobrania nie jest jeszcze dostępny.");
 translation.set("give your pc an upgrade.","daj swojemu PC uaktualnienie");
 // "try in your browser" is in index.tsx section
 // "open demo" is in features-beta.tsx section
