@@ -21,21 +21,21 @@ translation.set("privacy and security","Privatliv og Sikkerhed");
 translation.set("inspired by","Inspireret af");
 translation.set("avdanos contributors","AvdanOS bidragydere");
 // alert.tsx
-translation.set("is still in development.","er stadig under udvikling");
+translation.set("is still in development.","Stadig under udvikling");
 translation.set("join our discord","Tilslut vores discord");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx
 // "downloads" is in footer.tsx
-translation.set("support","Support");
+translation.set("support","Hjælp");
 translation.set("documentation","Dokumentation");
 translation.set("docs","Docs");
 translation.set("demo","Demo");
 
 // index.tsx
 translation.set("your pc but even better.","Din pc, men meget bedre");
-translation.set("try in your browser","Prøv det i din browser");
-translation.set("download now","Nedhent nu");
+translation.set("try in your browser","Prøv i din browser");
+translation.set("download now","Hent nu");
 // discover.tsx
 translation.set("open source on github","Åben kildekode på GitHub");
 translation.set("browse all repos","Gennemse alle depoter");
@@ -54,17 +54,17 @@ translation.set("assets are loading, please wait","Aktiver bliver læst, vent ve
 translation.set("scroll down to see what we've got here","Scroll ned for at se hvad vi har her");
 translation.set("this concept video is made by avdan","Denne konceptvideo er lavet af Avdan");
 translation.set("watch on youtube","Se den på youtube");
-translation.set("familiar dock, ultimate form","Velkendt dock, ultimativ form");
-translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dock-/taskbar. Vi har en helt ny dock, med flere funktioner end nogensinde før.");
+translation.set("familiar dock, ultimate form","Velkendt dok, ultimativ form");
+translation.set("everyone know dock/task bar. we got a brand new dock, with more features than ever before.","Enhver kender en dok-/taskbar. Vi har en helt ny dok, med flere funktioner end nogensinde før.");
 translation.set("brand new launch menu","Helt ny startmenu");
-translation.set("with everything in one place, do anything anywhere at anytime.","Med alting på et sted, lav alting hvor som helst når som helst ");
+translation.set("with everything in one place, do anything anywhere at anytime.","Med alting på et sted, lav alting hvor som helst når som helst.");
 translation.set("easily apply layout","Nemt anvendeligt layout");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
-  "Med en liste af forudindstillinger bestemt af dine apps, kom nemt igang med den perfekte vindueopsætning. Ikke nok? lav det om i indstillinger."
+  "Kom nemt igang med den perfekte vindueopsætning, med en liste af forudindstillinger bestemt af dine apps. Er det ikke nok, kan du bare lave det om i indstillingerne."
 );
-translation.set("overpowered dock","Kraftfuld Dock");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Din dock kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret");
+translation.set("overpowered dock","Kraftfuld Dok");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Din dok kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret");
 translation.set("new way to manage files","Ny måde at administrere filer");
 translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","Denne filmanager holder dig organiseret og produktiv");
 translation.set("drag & drop made easy","Træk & slip gjort nemt");
@@ -102,25 +102,26 @@ translation.set("this project wouldn't be possible without the community's contr
 translation.set("open demo","Åben demo");
 
 // download.tsx
+translation.set("this download is not available yet.", "");
 translation.set("give your pc an upgrade.","Giv din PC en opgradering");
 // "try in your browser" is in index.tsx section
 // "open demo" is in features-beta.tsx section
 translation.set("for most people","For de fleste");
 translation.set("for pi, pine, and mac","For Pi, Pine og Mac");
-translation.set("download","Nedhent");
+translation.set("download","Hent");
 translation.set("web preview","Web forhåndsvisning");
 translation.set(
   "you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.",
-  "Du er ved at besøge webdemo-versionen af AvdanOS, hvilket kun er bevis-af-koncept. Afprøvning af live-systemet er på det kraftigste anbefalet for at få den fulde oplevelse af operativsystemet."
+  "Du er ved at besøge webdemo-versionen af AvdanOS, hvilket kun er bevis-af-koncept. Afprøv live-systemet, er på det kraftigste anbefalet for den fulde oplevelse af operativsystemet."
 );
-translation.set("*live system is currently not available because the system is still under development","*live-systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling.");
+translation.set("*live system is currently not available because the system is still under development","*Live-systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling.");
 translation.set("yes, take me there","Ja, tag mig der til");
 translation.set("cancel","Afbryd");
 translation.set("before you download","Før du henter");
 translation.set("please read this before you continue","Venligst læs dette inden du forsætter");
-translation.set("below is the shasum of the download. you can use it to check download's integrity:","Her under er shasum af nedhentningen. du kan bruge den til at tjekke nedhentningens integritet");
+translation.set("below is the shasum of the download. you can use it to check download's integrity:","Her under er shasum af nedhentningen. du kan bruge den til at tjekke nedhentningens integritet:");
 translation.set("yes, i understand","Ja, jeg forstår");
-translation.set("use torrent download","Brug torrent-nedhentning");
+translation.set("use torrent download","Brug torrent-hentning");
 translation.set("continue","Forsæt");
 // in testing
 translation.set(
@@ -129,13 +130,13 @@ translation.set(
 );
 
 // support.tsx
-translation.set("avdanos support","AvdanOS support");
+translation.set("avdanos support","AvdanOS hjælp");
 translation.set("contact us on social media","Kontakt os på sociale medier");
 translation.set("visit","Besøg");
 
 // support-beta.tsx
-translation.set("avdanos support articles","AvdanOS support-artikler");
-translation.set("search support articles","Søg support-artikler");
+translation.set("avdanos support articles","AvdanOS hjælpe-artikler");
+translation.set("search support articles","Søg i hjælpe-artikler");
 translation.set("ask our community","Spørg vores fællesskab");
 
 // betapopup.tsx

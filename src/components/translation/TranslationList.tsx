@@ -62,7 +62,7 @@ const TranslationList = () => {
     },
     {
       lang: 'pl',
-      available: false,
+      available: true,
       icon: '🇵🇱'
     },
     {
@@ -84,6 +84,11 @@ const TranslationList = () => {
       lang: 'zh-TW',
       available: true,
       icon: '🇹🇼'
+    },
+    {
+      lang: 'ar-SA',
+      available: true,
+      icon: '🇸🇦'
     }
   ];
   const listItems = data.map((element) => {
