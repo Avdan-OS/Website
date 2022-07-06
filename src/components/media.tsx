@@ -21,7 +21,7 @@ const Media = () => {
         </a>
       </Grid>
       <Grid>
-        <a href="https://www.youtube.com/c/AvdanOSDeveloper" target="_blank" rel="noreferrer">
+        <a href="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA" target="_blank" rel="noreferrer">
           <Card shadow>
             <AiFillYoutube size={26} />
           </Card>
