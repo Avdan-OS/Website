@@ -146,7 +146,7 @@ translation.set("check it out","تحقق من ذلك");
 // docs.tsx
 translation.set("read the features in detail.","اقرأ الميزات بالتفصيل");
 translation.set("i'm a user","أنا مستخدم");
-translation.set("open manual","دليل مفتوح");
+translation.set("open manual","افتح الدليل");
 translation.set("manual is not available yet","الدليل غير موجود بعد");
 translation.set("i'm a developer","أنا مطور");
 translation.set("open documentation","افتح الوثائق");
