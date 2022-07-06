@@ -49,6 +49,20 @@ const Footer: React.FC = () => {
                     </a>
                   </NextLink>
                 </li>
+                <li>
+                  <NextLink href="/support">
+                    <a>
+                      <TranslatableText>Support</TranslatableText>
+                    </a>
+                  </NextLink>
+                </li>
+                <li>
+                  <NextLink href="/docs">
+                    <a>
+                      <TranslatableText>Documentation</TranslatableText>
+                    </a>
+                  </NextLink>
+                </li>
               </ul>
             </div>
           </div>
