@@ -51,4 +51,5 @@ const Media = () => {
     </Grid.Container>
   );
 };
+
 export default Media;
