@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               </h3>
               <ul>
                 <li>
-                  <NextLink href="#">
+                  <NextLink href="/">
                     <a>
                       <TranslatableText>Home</TranslatableText>
                     </a>
