@@ -1,4 +1,4 @@
-import { Button, useTheme, Tabs, Select } from '@geist-ui/core';
+import { Button, useTheme, Tabs } from '@geist-ui/core';
 import { Sun, Moon, Download } from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
