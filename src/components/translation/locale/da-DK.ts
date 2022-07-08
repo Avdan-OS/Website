@@ -160,7 +160,7 @@ translation.set("full screen","Fuld skærm");
 // 404.tsx
 translation.set("page not found","Side ikke fundet");
 translation.set("this page does not exist.","Denne side findes ikke");
-translation.set("join in and help us out developing an open-source operating system.",""); // don't translate this yet (technical issue)
+translation.set("join in and help us out developing an open-source operating system.","Tilslut og hjælp til med udvikling af det åben-kildekode operativ system"); // don't translate this yet (technical issue)
 
 // widthrequirement.tsx
 translation.set("width incompatibility","Bredde-inkompatibilitet");
