@@ -22,7 +22,7 @@ translation.set("inspired by","से प्रेरित");
 translation.set("avdanos contributors","योगदानकर्ता");
 // alert.tsx
 translation.set("is still in development.","अभी भी विकास में है।");
-translation.set("join our discord","हमारे discord में शामिल हों");
+translation.set("join our discord!","हमारे discord में शामिल हों");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx
