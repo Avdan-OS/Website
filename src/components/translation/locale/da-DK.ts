@@ -46,7 +46,7 @@ translation.set("official website","Officielle hjemmeside");
 translation.set("all the new updates and information about avdanos and support.","Alle nye opdateringer samt informationer om avdanOS og hjælp");
 translation.set("desktop environment","Skrivebords system");
 translation.set("meet nadva, the official desktop environment for avdanos.","Mød nadva, det officielle skrivebord til avdanOS");
-translation.set("a discord bot made for the avdanos community discord server.","en discord robot lavet til avdanOS fællesskabs discord server©");
+translation.set("a discord bot made for the avdanos community discord server.","en discord robot lavet til avdanOS fællesskabs discord server.");
 
 // features-beta.tsx / features.tsx
 translation.set("avdan's concept, we're making it real","Avdan's koncept, vi gør det til virkelighed");
