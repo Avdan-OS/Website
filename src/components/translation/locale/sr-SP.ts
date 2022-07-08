@@ -22,7 +22,7 @@ translation.set("inspired by","Инспирисано од:");
 translation.set("avdanos contributors","AvdanOS сарадници");
 // alert.tsx
 translation.set("is still in development.","је даље у развоју.");
-translation.set("join our discord","Придружите се нашем Discord-у");
+translation.set("join our discord!","Придружите се нашем Discord-у");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx

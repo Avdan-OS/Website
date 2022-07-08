@@ -22,7 +22,7 @@ translation.set("inspired by","Inspirado por");
 translation.set("avdanos contributors","Contribuidores de AvdanOS");
 // alert.tsx
 translation.set("is still in development.","aún está en desarrollo.");
-translation.set("join our discord","Únete a nuestro Discord");
+translation.set("join our discord!","Únete a nuestro Discord");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx

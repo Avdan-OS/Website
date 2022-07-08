@@ -22,7 +22,7 @@ translation.set("inspired by","εμπνευσμένο από");
 translation.set("avdanos contributors","τον avdan");
 // alert.tsx
 translation.set("is still in development.","υπό ανάπτυξη.");
-translation.set("join our discord","μπες στο discord μας");
+translation.set("join our discord!","μπες στο discord μας");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx

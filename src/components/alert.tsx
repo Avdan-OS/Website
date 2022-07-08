@@ -22,7 +22,7 @@ const Alert = () => {
                 <TranslatableText>is still in development.</TranslatableText>
               </strong>{' '}
               <Link style={{ pointerEvents: 'stroke' }} block underline href="https://discord.gg/avdanos">
-                <TranslatableText>Join our Discord</TranslatableText>
+                <TranslatableText>join our discord!</TranslatableText>
               </Link>
             </p>
           </Card>

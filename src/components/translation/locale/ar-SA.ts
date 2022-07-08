@@ -22,7 +22,7 @@ translation.set("inspired by","مستوحاة من");
 translation.set("avdanos contributors","المساهمين AvdanOS");
 // alert.tsx
 translation.set("is still in development.","لا يزال قيد التطوير");
-translation.set("join our discord","انضم الى الDiscord");
+translation.set("join our discord!","انضم الى الDiscord");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx

@@ -22,7 +22,7 @@ translation.set("inspired by","terinspirasi dari");
 translation.set("avdanos contributors","kontributor avdanos");
 // alert.tsx
 translation.set("is still in development.","masih dalam pengembangan");
-translation.set("join our discord","bergabunglah dengan discord kami");
+translation.set("join our discord!","bergabunglah dengan discord kami");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx
