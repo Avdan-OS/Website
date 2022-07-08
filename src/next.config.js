@@ -4,39 +4,39 @@ module.exports = {
   //
   // basePath: '/app',
   // distDir: 'build',
-  poweredByHeader: false,
-  async redirects() {
-    return [
-      {
-        source: '/discord',
-        destination: 'https://discord.gg/avdanos',
-        permanent: true
-      },
-      {
-        source: '/instagram',
-        destination: 'https://www.instagram.com/avdanos_',
-        permanent: true
-      },
-      {
-        source: '/reddit',
-        destination: 'https://www.reddit.com/r/AvdanOS/',
-        permanent: true
-      },
-      {
-        source: '/youtube',
-        destination: 'https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA',
-        permanent: true
-      },
-      {
-        source: '/github',
-        destination: 'https://github.com/Avdan-OS/',
-        permanent: true
-      },
-      {
-        source: '/twitter',
-        destination: 'https://twitter.com/avdan_os',
-        permanent: true
-      }
-    ];
-  }
+  poweredByHeader: false
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/discord',
+  //       destination: 'https://discord.gg/avdanos',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/instagram',
+  //       destination: 'https://www.instagram.com/avdanos_',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/reddit',
+  //       destination: 'https://www.reddit.com/r/AvdanOS/',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/youtube',
+  //       destination: 'https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/github',
+  //       destination: 'https://github.com/Avdan-OS/',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/twitter',
+  //       destination: 'https://twitter.com/avdan_os',
+  //       permanent: true
+  //     }
+  //   ];
+  // }
 };
