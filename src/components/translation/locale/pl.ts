@@ -161,7 +161,7 @@ translation.set("full screen","pełny ekran");
 // 404.tsx
 translation.set("page not found","Strona nie znaleziona");
 translation.set("this page does not exist.","Ta strona nie istnieje.");
-translation.set("join in and help us out developing an open-source operating system.",""); // don't translate this yet (technical issue)
+translation.set("join in and help us out developing an open-source operating system.","dołącz do nas i pomóż nam rozwijać system operacyjny typu open source."); // don't translate this yet (technical issue)
 
 // widthrequirement.tsx
 translation.set("width incompatibility","niekompatybilność szerokości");
