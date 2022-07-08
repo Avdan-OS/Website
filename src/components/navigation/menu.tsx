@@ -24,7 +24,7 @@ const Menu = () => {
     width < 750 ? setAltMenuPosition(true) : setAltMenuPosition(false);
     width < 575 ? setFeaturesBeta(false) : setFeaturesBeta(true);
   });
-  const fireClick = () => {
+  const changeTheme = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
   };
 
@@ -98,13 +98,13 @@ const Menu = () => {
             auto
             iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             type="abort"
-            onClick={() => fireClick()}
+            onClick={() => changeTheme()}
           ></Button>
           <TranslationList />
           <NextLink href="/downloads" passHref>
             <a>
               <Button
-                aria-label="Open docs"
+                aria-label="Open Download page"
                 className="theme-button theme-button-cyan"
                 auto
                 shadow
