@@ -81,7 +81,7 @@ const TranslationList = () => {
     },
     {
       lang: 'sv-SE',
-      available: false,
+      available: true,
       icon: '🇸🇪'
     },
     {
