@@ -3,68 +3,68 @@ import TranslationRebuilder from "../TranslationRebuilder";
 
 // Global
 // footer.tsx
-translation.set("overview","");
-translation.set("home","");
-translation.set("features","");
-translation.set("downloads","");
-translation.set("external links","");
+translation.set("overview","Översikt");
+translation.set("home","Hem");
+translation.set("features","Funktioner");
+translation.set("downloads","Nedladdningar");
+translation.set("external links","Externa länkar");
 translation.set("twitter","");
 translation.set("github","");
 translation.set("youtube","");
 translation.set("discord","");
 translation.set("reddit","");
-translation.set("legal","");
-translation.set("license","");
-translation.set("eula","");
+translation.set("legal","Juridiskt");
+translation.set("license","Licens");
+translation.set("eula","EULA");
 translation.set("history of incidents","");
-translation.set("privacy and security","");
-translation.set("inspired by","");
-translation.set("avdanos contributors","");
+translation.set("privacy and security","Integritet och säkerhet");
+translation.set("inspired by","Inspererat av");
+translation.set("avdanos contributors","AvdanOS Bidragare");
 // alert.tsx
-translation.set("is still in development.","");
-translation.set("join our discord!","");
+translation.set("is still in development.","är fortfarande i utveckling.");
+translation.set("join our discord!","Joina våran discord server!");
 // menu.tsx / submenu.tsx
 // "home" is in footer.tsx
 // "features" is in footer.tsx
 // "downloads" is in footer.tsx
-translation.set("support","");
-translation.set("documentation","");
-translation.set("docs","");
-translation.set("demo","");
+translation.set("support","Hjälp");
+translation.set("documentation","Dokumentation");
+translation.set("docs","Docs");
+translation.set("demo","Demo");
 
 // index.tsx
-translation.set("your pc but even better.","");
-translation.set("try in your browser","");
-translation.set("download now","");
+translation.set("your pc but even better.","Din dator, bara bättre.");
+translation.set("try in your browser","Prova i din webbläsare");
+translation.set("download now","Ladda ner nu");
 // discover.tsx
-translation.set("open source on github","");
-translation.set("browse all repos","");
+translation.set("open source on github","Öppen källkod på GitHub");
+translation.set("browse all repos","Bläddra bland alla kod arkiv");
 // discoverCard.tsx
-translation.set("avdanos","");
-translation.set("meet avdanos, refining the way we think about operating systems.","");
-translation.set("official website","");
-translation.set("all the new updates and information about avdanos and support.","");
-translation.set("desktop environment","");
-translation.set("meet nadva, the official desktop environment for avdanos.","");
-translation.set("a discord bot made for the avdanos community discord server.","");
+translation.set("avdanos","AvdanOS");
+translation.set("meet avdanos, refining the way we think about operating systems.","Möt AvdanOS, vi utvidgar gränserna om vad operativsystem kan göra.");
+translation.set("official website","Officiell Hemsida");
+translation.set("all the new updates and information about avdanos and support.","Alla nya uppdateringar & information om AvdanOS och hjälp.");
+translation.set("desktop environment","Skrivbordsmiljö");
+translation.set("meet nadva, the official desktop environment for avdanos.","Möt nadva, den officiella skrivbordsmiljön för AvdanOS.");
+translation.set("a discord bot made for the avdanos community discord server.","En discord bot gjord för AvdanOS discord servern.");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","");
-translation.set("assets are loading, please wait","");
-translation.set("scroll down to see what we've got here","");
-translation.set("this concept video is made by avdan","");
-translation.set("watch on youtube","");
-translation.set("familiar dock, ultimate form","");
-translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","");
-translation.set("brand new launch menu","");
-translation.set("with everything in one place, do anything anywhere at anytime.","");
-translation.set("easily apply layout","");
+translation.set("avdan's concept, we're making it real","Avdans koncept, vi gör det riktigt");
+translation.set("assets are loading, please wait","Tillbehör laddas, var vänlig vänta");
+translation.set("scroll down to see what we've got here","Skrolla ner för att se vad vi har här");
+translation.set("this concept video is made by avdan","Denna koncept video är gjord av Avdan");
+translation.set("watch on youtube","Kolla på Youtube");
+translation.set("familiar dock, ultimate form","Bekant aktivitetsfält, ultimat form");
+translation.set("everyone knows dock/task bar. we got a brand new dock, with more features than ever before.","Alla vet om aktivitetsfältet. Vi gör det bättre med fler funktioner än du någonsin kunnat drömma om.");
+translation.set("brand new launch menu","Ett helt nytt startfält");
+translation.set("with everything in one place, do anything anywhere at anytime.","Med allt på samma ställe kan du göra allt när du vill och vart du vill.");
+translation.set("easily apply layout","Tillämpa layouter enkelt");
 translation.set(
   "with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.",
-  ""
+  "Med en lista av förinställningar beroende på dina appar kan du snabbt gör vad du vill med den perfekta fönster layouten. Inte tillräckligt? Ändra dem i inställningarna."
 );
-translation.set("overpowered dock","");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","");
+translation.set("overpowered dock","Ett övervädigande aktivitetsfält");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","Ditt aktivitetsfält");
 translation.set("new way to manage files","");
 translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","");
 translation.set("drag & drop made easy","");
