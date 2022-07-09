@@ -21,15 +21,16 @@ const Features = () => {
     let count = 0;
 
     const waitingAnimation = setInterval(() => {
+      if (!loadAnimRef.current) return;
       switch (count % 3) {
         case 0:
-          loadAnimRef.current!.innerText = '.';
+          loadAnimRef.current.innerText = '.';
           break;
         case 1:
-          loadAnimRef.current!.innerText += '.';
+          loadAnimRef.current.innerText += '.';
           break;
         default:
-          loadAnimRef.current!.innerText += '.';
+          loadAnimRef.current.innerText += '.';
           break;
       }
       count++;

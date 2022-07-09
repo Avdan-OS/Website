@@ -1,8 +1,9 @@
-import { Dispatch, useState, useEffect } from 'react';
+import { Dispatch, useState, useEffect, ReactElement } from 'react';
 
 let storeLocale: (locale: string) => void;
 let globalCurrentLocale = 'en-GB';
-let dispatcherList: Array<Dispatch<string>> = [];
+let instanceList: Array<{ text: string; dispatcher: Dispatch<string> }> = [];
+let importedLocale: { default: Map<string, string> } = null;
 
 /**
  * Wrap text with this element to get automatic translation injection from locale.
@@ -13,56 +14,45 @@ let dispatcherList: Array<Dispatch<string>> = [];
  * </TranslatableText>
  */
 const TranslatableText = ({ children }) => {
-  // This is responsible for making locale selection persistant
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      if (window.localStorage.getItem('locale')) {
-        setLocale(window.localStorage.getItem('locale'));
-      } else {
-        setLocale('en-GB');
-      }
-    }
     storeLocale = (locale) => {
       window.localStorage.setItem('locale', locale);
     };
   }, []);
 
-  // This will register TranslatableText's dispatcher to a
-  // global sink, making global update possible
-  const [currentLocale, setCurrentLocale] = useState(globalCurrentLocale);
-  dispatcherList.push(setCurrentLocale);
-  const [translatedText, setTranslatedText] = useState(children);
+  let translationReady = false;
 
-  // This is responsible for grabbing translation from locale file mapping
-  const getTranslation = async (content, setTranslatedText: Dispatch<any>) => {
-    if (!currentLocale) return;
-    let importedTranslation = await import(`./locale/${currentLocale}`);
-    const translation: Map<string, string> = importedTranslation.default;
-    if (translation.has(content.toLowerCase())) {
-      if (translation.get(content.toLowerCase()) != '') {
-        setTranslatedText(translation.get(content.toLowerCase()));
-      } else {
-        setTranslatedText(content);
-      }
+  if (importedLocale) {
+    let fetchedText = importedLocale.default.get(children.toLowerCase());
+    if (fetchedText && fetchedText != '' && fetchedText != children) {
+      translationReady = true;
     }
-  };
+  }
 
-  // Simple return logic
-  getTranslation(children, setTranslatedText);
-  return translatedText;
+  const [translatedText, setTranslatedText] = useState<string>(
+    translationReady ? importedLocale.default.get(children.toLowerCase()) : children
+  );
+  instanceList.push({ text: children, dispatcher: setTranslatedText });
+
+  return translatedText as unknown as ReactElement;
 };
 
 /**
  * Updates all the translatable text to a set locale
  * @param locale A locale code for the website to update to (lowercase-UPPERCASE)
  */
-const setLocale: (locale: string) => void = (locale) => {
-  if (!locale) return;
+const setLocale: (locale: string) => void = async (locale) => {
+  if (!locale) return console.log('No locale supplied');
+  console.log('Updating translation to ' + locale);
   if (storeLocale) storeLocale(locale);
+  importedLocale = await import(`./locale/${locale}`);
+  if (!importedLocale) return console.log('Locale import error');
+
   globalCurrentLocale = locale;
-  // This will update every <TranslatableText> to the current locale
-  dispatcherList.forEach((setCurrentLocale) => {
-    setCurrentLocale(locale);
+  instanceList.forEach((instance) => {
+    let translatedText = importedLocale.default.get(instance.text.toLowerCase());
+    if (!translatedText || translatedText == '') return;
+    instance.dispatcher(translatedText);
   });
 };
 
