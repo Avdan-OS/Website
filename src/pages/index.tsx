@@ -21,7 +21,7 @@ const index = () => {
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
-            <TranslatableText>Your PC but even better.</TranslatableText>
+            <TranslatableText>Your PC But Even Better!</TranslatableText>
           </Text>
         </div>
         <Spacer h={2} />
@@ -36,7 +36,7 @@ const index = () => {
             )}
             <NextLink href="/downloads">
               <Button shadow type="success" margin="10px">
-                <TranslatableText>Download now</TranslatableText>
+                <TranslatableText>Download Now!</TranslatableText>
               </Button>
             </NextLink>
           </div>
