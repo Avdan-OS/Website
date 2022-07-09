@@ -34,9 +34,9 @@ translation.set("docs","指南");
 translation.set("demo","演示");
 
 // index.tsx
-translation.set("your pc but even better.","您的个人电脑，但是更好。");
+translation.set("your pc but even better!","您的个人电脑，但是更好。");
 translation.set("try in your browser","在浏览器内试试");
-translation.set("download now","立即下载");
+translation.set("download now!","立即下载");
 // discover.tsx
 translation.set("open source on github","在Github上开源");
 translation.set("browse all repos","浏览所有存储库");

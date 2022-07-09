@@ -33,9 +33,9 @@ translation.set("docs","Dokumentation");
 translation.set("demo","Demo");
 
 // index.tsx
-translation.set("your pc but even better.","Dein Computer, aber noch viel besser.");
+translation.set("your pc but even better!","Dein Computer, aber noch viel besser!");
 translation.set("try in your browser","Web-Demo Ausprobieren");
-translation.set("download now","Jetzt herunterladen");
+translation.set("download now!","Jetzt herunterladen!");
 // discover.tsx
 translation.set("open source on github","Open Source auf Github");
 translation.set("browse all repos","Alle Repos durchsuchen");

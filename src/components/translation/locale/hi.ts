@@ -33,9 +33,9 @@ translation.set("docs","प्रलेखन");
 translation.set("demo","प्रात्यक्षिक");
 
 // index.tsx
-translation.set("your pc but even better.","आपका पीसी लेकिन इससे भी बेहतर");
+translation.set("your pc but even better!","आपका पीसी लेकिन इससे भी बेहतर");
 translation.set("try in your browser","अपने ब्राउज़र में प्रयास करें");
-translation.set("download now","अभी डाउनलोड करें");
+translation.set("download now!","अभी डाउनलोड करें");
 // discover.tsx
 translation.set("open source on github","कॊड सब कॆ लिये github पर");
 translation.set("browse all repos","सभी रेपो दॆखियॆ");

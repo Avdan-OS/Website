@@ -33,9 +33,9 @@ translation.set("docs","");
 translation.set("demo","");
 
 // index.tsx
-translation.set("your pc but even better.","");
+translation.set("your pc but even better!","");
 translation.set("try in your browser","");
-translation.set("download now","");
+translation.set("download now!","");
 // discover.tsx
 translation.set("open source on github","");
 translation.set("browse all repos","");
