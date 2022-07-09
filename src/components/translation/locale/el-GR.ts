@@ -33,9 +33,9 @@ translation.set("docs","έγγραφα");
 translation.set("demo","δοκιμαστικό");
 
 // index.tsx
-translation.set("your pc but even better.","το pc σου, αλλά ακόμα καλύτερο.");
+translation.set("your pc but even better!","το pc σου, αλλά ακόμα καλύτερο!");
 translation.set("try in your browser","δοκίμασέ το στο browser σου");
-translation.set("download now","κατέβασέ το τώρα");
+translation.set("download now!","κατέβασέ το τώρα!");
 // discover.tsx
 translation.set("open source on github","");
 translation.set("browse all repos","");
