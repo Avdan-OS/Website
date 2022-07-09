@@ -7,6 +7,11 @@ const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
     {
+      lang: 'ar-SA',
+      available: true,
+      icon: '🇸🇦'
+    },
+    {
       lang: 'da-DK',
       available: true,
       icon: '/flags/dk.svg'
@@ -75,6 +80,11 @@ const TranslationList = () => {
       lang: 'sr-SP',
       available: true,
       icon: '/flags/sr.svg'
+    },
+    {
+      lang: 'sv-SE',
+      available: true,
+      icon: '🇸🇪'
     },
     {
       lang: 'zh-CN',
