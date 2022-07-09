@@ -26,6 +26,8 @@ const Menu = () => {
   });
   const changeTheme = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
+    document.documentElement.classList.toggle('scroll-dark', theme.type === 'light');
+    document.documentElement.classList.toggle('scroll-light', theme.type === 'dark');
   };
 
   const themeDark = () => {

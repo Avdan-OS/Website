@@ -1,5 +1,5 @@
-import { Spacer, Card, Button, Text, Divider, useTheme } from '@geist-ui/core';
-import { useEffect, useState } from 'react';
+import { Spacer, Card, Button, Text, useTheme } from '@geist-ui/core';
+import { useEffect, useState, useRef } from 'react';
 import NextLink from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
@@ -10,34 +10,41 @@ const Features = () => {
   const theme = useTheme();
   const [scrollPosition, setScrollPosition] = useState(0);
   const [loadingText, setLoadingText] = useState('Assets are loading, please wait');
+  const loadTextRef = useRef<HTMLDivElement>(null);
+  const loadAnimRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     window.scroll(0, 0);
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
-    const loadingAnim = document.getElementById('loadAnim');
+
     document.body.classList.add('stop-scrolling');
     let count = 0;
+
     const waitingAnimation = setInterval(() => {
       switch (count % 3) {
         case 0:
-          loadingAnim.innerText = '.';
+          loadAnimRef.current!.innerText = '.';
           break;
         case 1:
-          loadingAnim.innerText += '.';
+          loadAnimRef.current!.innerText += '.';
           break;
         default:
-          loadingAnim.innerText += '.';
+          loadAnimRef.current!.innerText += '.';
           break;
       }
       count++;
     }, 700);
+
     videoElement.addEventListener('canplay', () => {
-      if (!document.getElementById('loadText')) return;
-      loadingAnim.innerText = '';
+      if (!loadTextRef) return;
+      loadAnimRef.current!.innerText = '';
       setLoadingText("Scroll down to see what we've got here");
       console.log('video loaded');
       clearInterval(waitingAnimation);
-      document.getElementById('loadText').style.display = 'block';
-      document.getElementById('loadText').classList.add('breath');
+
+      loadTextRef.current!.style.display = 'block';
+      loadTextRef.current!.classList.add('breath');
+
       document.body.classList.remove('stop-scrolling');
     });
     window.addEventListener('scroll', (e) => {
@@ -59,10 +66,12 @@ const Features = () => {
           <TranslatableText>Avdan's concept, we're making it real</TranslatableText>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
-        <div id="loadText">
+        <div id="loadText" ref={loadTextRef}>
           <TranslatableText>{loadingText}</TranslatableText>
         </div>
-        <div id="loadAnim">.</div>
+        <div ref={loadAnimRef} id="loadAnim">
+          .
+        </div>
       </div>
       <div>
         <div className="slide-background text-white">
@@ -113,13 +122,13 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={true}
             title="Overpowered Dock"
-            description="Your dock can do more than ever. It's your ultimate manager to get you organised."
+            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
             isCardOnRight={false}
             title="New way to manage files"
-            description="This file manager keeps you organised and productive. Find your files the instant you need it."
+            description="This file manager keeps you organized and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
@@ -131,7 +140,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="More than multitask"
-            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
+            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard

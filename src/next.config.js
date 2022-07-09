@@ -7,24 +7,36 @@ module.exports = {
   poweredByHeader: false
   // async redirects() {
   //   return [
-  //     // // Path Matching - will match `/old-blog/a`, but not `/old-blog/a/b`
-  //     // {
-  //     //   source: '/ref/:slug',
-  //     //   destination: '/news/:slug',
-  //     //   permanent: false,
-  //     // },
-  //     // // Wildcard Path Matching - will match `/blog/a` and `/blog/a/b`
-  //     // {
-  //     //   source: '/blog/:slug*',
-  //     //   destination: '/news/:slug*',
-  //     //   permanent: false,
-  //     // },
-  //     // // Regex Path Matching - The regex below will match `/post/123` but not `/post/abc`
-  //     // {
-  //     //   source: '/post/:slug(\\d{1,})',
-  //     //   destination: '/news/:slug',
-  //     //   permanent: false,
-  //     // },
-  //   ]
-  // },
+  //     {
+  //       source: '/discord',
+  //       destination: 'https://discord.gg/avdanos',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/instagram',
+  //       destination: 'https://www.instagram.com/avdanos_',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/reddit',
+  //       destination: 'https://www.reddit.com/r/AvdanOS/',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/youtube',
+  //       destination: 'https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/github',
+  //       destination: 'https://github.com/Avdan-OS/',
+  //       permanent: true
+  //     },
+  //     {
+  //       source: '/twitter',
+  //       destination: 'https://twitter.com/avdan_os',
+  //       permanent: true
+  //     }
+  //   ];
+  // }
 };

@@ -16,9 +16,10 @@ const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     document.documentElement.removeAttribute('style');
     document.body.removeAttribute('style');
-
     const theme = window.localStorage.getItem('theme') as ThemeType;
     if (themes.includes(theme)) setThemeType(theme);
+    document.documentElement.classList.toggle('scroll-light', theme === 'light');
+    document.documentElement.classList.toggle('scroll-dark', theme === 'dark');
   }, []);
 
   const switchTheme = useCallback((theme: ThemeType) => {
