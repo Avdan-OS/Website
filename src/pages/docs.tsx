@@ -40,7 +40,7 @@ const Docs = () => {
               <Image
                 alt="User Documentation"
                 draggable="false"
-                src="/assets/icons/user.png"
+                src="/icons/user.png"
                 height="100%"
                 width="200px"
               />
@@ -75,7 +75,7 @@ const Docs = () => {
             >
               <Image
                 draggable="false"
-                src="/assets/icons/developer.png"
+                src="/icons/developer.png"
                 height="100%"
                 width="200px"
                 alt="Developer Documentation"

@@ -13,8 +13,8 @@ const Logo = () => {
 
 const renderElement = () => {
   const theme = useTheme();
-  if (theme.type == 'light') return '/assets/logo/render.svg';
-  else return '/assets/logo/render-dark.svg';
+  if (theme.type == 'light') return '/logo/render.svg';
+  else return '/logo/render-dark.svg';
 };
 
 export default Logo;

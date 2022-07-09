@@ -113,7 +113,7 @@ const Download = () => {
                 </Tag>
                 <Image
                   draggable="false"
-                  src="/assets/icons/WEB.png"
+                  src="/icons/WEB.png"
                   height="100%"
                   width="170px"
                   alt="Test The OS in Website"
@@ -145,7 +145,7 @@ const Download = () => {
                 <TranslatableText>For most people</TranslatableText>
               </Tag>
               <Spacer h={0.4} />
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
+              <Image draggable="false" src="/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
               <Button
                 type="success"
                 shadow
@@ -171,7 +171,7 @@ const Download = () => {
                 <TranslatableText>For Pi, Pine, and Mac</TranslatableText>
               </Tag>
               <Spacer h={0.4} />
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
+              <Image draggable="false" src="/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
               <Button
                 type="success"
                 shadow

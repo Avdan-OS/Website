@@ -14,7 +14,7 @@ const index = () => {
     <>
       <div className="video-player" style={{ position: 'absolute', zIndex: 0 }}>
         <video autoPlay={true} muted loop style={{ height: '100%', width: '100%' }}>
-          <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
+          <source type="video/webm" src="/marketing/header_animated.webm" height="100%" width="100%" />
         </video>
       </div>
       <Spacer h="30vh" />

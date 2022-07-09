@@ -1,99 +1,101 @@
 import { Select } from '@geist-ui/core';
 import { setLocale } from './TranslatableText';
 import { useState, useEffect } from 'react';
+import Image from 'next/image'
+
 const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
     {
       lang: 'da-DK',
       available: true,
-      icon: '🇩🇰'
+      icon: '/flags/dk.svg'
     },
     {
       lang: 'de-DE',
       available: true,
-      icon: '🇩🇪'
+      icon: '/flags/de.svg'
     },
     {
       lang: 'el-GR',
       available: true,
-      icon: '🇬🇷'
+      icon: '/flags/gr.svg'
     },
     {
       lang: 'en-GB',
       available: true,
-      icon: '🇬🇧'
+      icon: '/flags/gb.svg'
     },
     {
       lang: 'en-US',
       available: true,
-      icon: '🇺🇸'
+      icon: '/flags/us.svg'
     },
     {
       lang: 'es-ES',
       available: true,
-      icon: '🇪🇸'
+      icon: '/flags/es.svg'
     },
     {
       lang: 'fr-FR',
       available: true,
-      icon: '🇫🇷'
+      icon: '/flags/fr.svg'
     },
     {
-      lang: 'hi',
+      lang: 'hin-IND',
       available: true,
-      icon: '🇮🇳'
+      icon: '/flags/ind.svg'
     },
     {
       lang: 'id-ID',
       available: true,
-      icon: '🇮🇩'
+      icon: '/flags/id.svg'
     },
     {
       lang: 'it-IT',
       available: true,
-      icon: '🇮🇹'
+      icon: '/flags/it.svg'
     },
     {
       lang: 'nl-NL',
       available: false,
-      icon: '🇳🇱'
+      icon: '/flags/nl.svg'
     },
     {
       lang: 'pl',
       available: true,
-      icon: '🇵🇱'
+      icon: '/flags/pl.svg'
     },
     {
       lang: 'ru',
       available: false,
-      icon: '🇷🇺'
+      icon: '/flags/ru.svg'
     },
     {
       lang: 'sr-SP',
       available: true,
-      icon: '🇷🇸'
+      icon: '/flags/sr.svg'
     },
     {
       lang: 'zh-CN',
       available: true,
-      icon: '🇨🇳'
+      icon: '/flags/cn.svg'
     },
     {
       lang: 'zh-TW',
       available: true,
-      icon: '🇹🇼'
+      icon: '/flags/tw.svg'
     },
     {
       lang: 'ar-SA',
       available: true,
-      icon: '🇸🇦'
+      icon: '/flags/sa.svg'
     }
   ];
   const listItems = data.map((element) => {
     return (
       <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
-        {element.icon}
+        <Image src={element.icon} height="30" width="30" />
       </Select.Option>
     );
   });
@@ -118,7 +120,7 @@ const TranslationList = () => {
       type="default"
       value={defaultLang}
       width="24px"
-      style={{ minWidth: '0' }}
+      style={{ minWidth: '0', padding: '10' }}
       marginRight="20px"
       disableMatchWidth
       font={0}

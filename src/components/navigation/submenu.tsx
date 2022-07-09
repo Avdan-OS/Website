@@ -26,8 +26,8 @@ const Submenu = () => {
     return () => document.removeEventListener('scroll', scrollHandler);
   }, [setSticky]);
   const renderBannerImage = () => {
-    if (theme.type == 'light') return '/assets/logo/banner.svg';
-    else return '/assets/logo/banner-dark.svg';
+    if (theme.type == 'light') return '/logo/banner.svg';
+    else return '/logo/banner-dark.svg';
   };
   return (
     <>
