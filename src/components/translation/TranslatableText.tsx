@@ -1,4 +1,4 @@
-import { Dispatch, useState, ReactElement } from 'react';
+import { Dispatch, useState, ReactElement, useEffect } from 'react';
 import YAML from 'yaml';
 import TranslationInjection from './TranslationInjection';
 
@@ -18,10 +18,17 @@ let importedLocale: Map<string, string> = null;
  */
 const TranslatableText = ({ children, injKey }: { children: string; injKey?: string }) => {
   let fetchedTranslation = importedLocale?.get(children.toLowerCase());
-  const [translatedText, setTranslatedText] = useState<string | JSX.Element>(
-    fetchedTranslation ? fetchedTranslation : children
-  );
-  instanceList.push({ text: children, key: injKey, dispatch: setTranslatedText });
+  let initialState: string | JSX.Element = fetchedTranslation ? fetchedTranslation : children;
+  if (injKey) initialState = TranslationInjection(injKey, children);
+  const [translatedText, setTranslatedText] = useState<string | JSX.Element>(initialState);
+  useEffect(() => {
+    let item = { text: children, key: injKey, dispatch: setTranslatedText };
+    instanceList.push(item);
+    return () => {
+      let index = instanceList.indexOf(item);
+      if (index !== -1) instanceList.splice(index, 1);
+    };
+  }, []);
   return translatedText as unknown as ReactElement;
 };
 
@@ -41,7 +48,6 @@ const setLocale: (locale: string) => void = async (locale) => {
       return instance.dispatch(instance.text);
     }
     if (instance.key) {
-      console.log(instance.key);
       return instance.dispatch(TranslationInjection(instance.key, translatedText));
     }
     instance.dispatch(translatedText);
