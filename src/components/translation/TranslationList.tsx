@@ -107,6 +107,7 @@ const TranslationList = () => {
     if (typeof window !== 'undefined' && window.localStorage) {
       if (window.localStorage.getItem('locale')) {
         setDfltLang(window.localStorage.getItem('locale'));
+        setLocale(window.localStorage.getItem('locale'));
       } else {
         if (data.filter((locale) => locale.lang === navigator.language && locale.available).length != 0) {
           setLocale(navigator.language);

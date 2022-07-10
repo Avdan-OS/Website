@@ -9,9 +9,9 @@ import { TranslatableText } from '@/components/translation/TranslatableText';
 const Features = () => {
   const theme = useTheme();
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [loadingText, setLoadingText] = useState('Assets are loading, please wait');
   const loadTextRef = useRef<HTMLDivElement>(null);
   const loadAnimRef = useRef<HTMLDivElement>(null);
+  const scrolldownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -21,31 +21,27 @@ const Features = () => {
     let count = 0;
 
     const waitingAnimation = setInterval(() => {
+      if (!loadAnimRef.current) return;
       switch (count % 3) {
         case 0:
-          loadAnimRef.current!.innerText = '.';
+          loadAnimRef.current.innerText = '.';
           break;
         case 1:
-          loadAnimRef.current!.innerText += '.';
+          loadAnimRef.current.innerText += '.';
           break;
         default:
-          loadAnimRef.current!.innerText += '.';
+          loadAnimRef.current.innerText += '.';
           break;
       }
       count++;
     }, 700);
 
     videoElement.addEventListener('canplay', () => {
-      if (!loadTextRef) return;
-      loadAnimRef.current!.innerText = '';
-      setLoadingText("Scroll down to see what we've got here");
-      console.log('video loaded');
       clearInterval(waitingAnimation);
-
-      loadTextRef.current!.style.display = 'block';
-      loadTextRef.current!.classList.add('breath');
-
+      console.log('video loaded');
       document.body.classList.remove('stop-scrolling');
+      if (scrolldownRef.current) scrolldownRef.current.style.display = 'block';
+      if (loadTextRef.current) loadTextRef.current.style.display = 'none';
     });
     window.addEventListener('scroll', (e) => {
       setScrollPosition(window.scrollY);
@@ -67,10 +63,13 @@ const Features = () => {
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
         <div id="loadText" ref={loadTextRef}>
-          <TranslatableText>{loadingText}</TranslatableText>
+          <TranslatableText>Assets are loading, please wait</TranslatableText>
+          <div ref={loadAnimRef} id="loadAnim">
+            .
+          </div>
         </div>
-        <div ref={loadAnimRef} id="loadAnim">
-          .
+        <div className="breath" ref={scrolldownRef} style={{ display: 'none' }}>
+          <TranslatableText>Scroll down to see what we've got here</TranslatableText>
         </div>
       </div>
       <div>
