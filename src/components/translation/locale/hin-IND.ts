@@ -18,7 +18,7 @@ translation.set("license","परवाना");
 translation.set("eula","उत्पाद के मालिक और अंतिम उपयोगकर्ता के बीच कानूनी रूप से बाध्यकारी समझौता");
 translation.set("history of incidents","आभीतक कि घाटनायॆ");
 translation.set("privacy and security","गोपनीयता और सुरक्षा");
-translation.set("inspired by","से प्रेरित");
+translation.set("inspired by","प्रेरणा स्रोत");
 translation.set("avdanos contributors","योगदानकर्ता");
 // alert.tsx
 translation.set("is still in development.","अभी भी विकास में है।");
@@ -33,23 +33,23 @@ translation.set("docs","प्रलेखन");
 translation.set("demo","प्रात्यक्षिक");
 
 // index.tsx
-translation.set("your pc but even better!","आपका पीसी लेकिन इससे भी बेहतर");
+translation.set("your pc but even better.","आपका पीसी लेकिन इससे भी बेहतर");
 translation.set("try in your browser","अपने ब्राउज़र में प्रयास करें");
-translation.set("download now!","अभी डाउनलोड करें");
+translation.set("download now","अभी डाउनलोड करें");
 // discover.tsx
 translation.set("open source on github","कॊड सब कॆ लिये github पर");
 translation.set("browse all repos","सभी रेपो दॆखियॆ");
 // discoverCard.tsx
-translation.set("avdanos","");
-translation.set("meet avdanos, refining the way we think about operating systems.","");
-translation.set("official website","");
-translation.set("all the new updates and information about avdanos and support.","");
-translation.set("desktop environment","");
-translation.set("meet nadva, the official desktop environment for avdanos.","");
-translation.set("a discord bot made for the avdanos community discord server.","");
+translation.set("avdanos","AvdanOS");
+translation.set("meet avdanos, refining the way we think about operating systems.","avdanos से मिलें, ऑपरेटिंग सिस्टम के बारे में हमारे सोचने के तरीके को परिष्कृत करें।");
+translation.set("official website","आधिकारिक वेबसाइट");
+translation.set("all the new updates and information about avdanos and support.","avdanos के बारे में सभी नए अपडेट और जानकारी।");
+translation.set("desktop environment","डेस्कटॉप इनवायरमॆंट");
+translation.set("meet nadva, the official desktop environment for avdanos.","मिलिए nadva सॆ, avdanos के लिए आधिकारिक डेस्कटॉप इनवायरमॆंट।");
+translation.set("a discord bot made for the avdanos community discord server.","अवदानोस समुदाय के लिए बनाया गया एक discord बॉट");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","अवदान की अवधारणा, हम इसे वास्तविक बना रहे हैं");
+translation.set("avdan's concept, we're making it real","अवदान की अवधारणा, लॆकिन हम इसे वास्तविक बना रहे हैं");
 translation.set("assets are loading, please wait","कृपया प्रतीक्षा करें");
 translation.set("scroll down to see what we've got here","");
 translation.set("this concept video is made by avdan","हमनॆ आपकॆ लियॆ क्या बनाया है यह देखने के लिए नीचे स्क्रॉल करें");
@@ -64,20 +64,20 @@ translation.set(
   "आपके ऐप्स से निर्धारित प्रीसेट की सूची के साथ, आसानी से सही विंडो लेआउट के साथ काम करने के लिए मिलता है। पर्याप्त नहीं? इसे सेटिंग्स में बदलें।"
 );
 translation.set("overpowered dock","जबर्दस्त टास्क बार");
-translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","आपकी टास्क बार पहले से कहीं अधिक कर सकता है। आपको व्यवस्थित करने के लिए यह आपका अंतिम प्रबंधक।");
+translation.set("your dock can do more than ever. it's your ultimate manager to get you organised.","आपका टास्क बार पहले से कहीं अधिक। आपको आप का पिसी व्यवस्थित करने के लिए यह आपका प्रबंधक।");
 translation.set("new way to manage files","फ़ाइलों को प्रबंधित करने का नया तरीका");
 translation.set("this file manager keeps you organised and productive. find your files the instant you need it.","यह फ़ाइल प्रबंधक आपको व्यवस्थित और उत्पादक रखता है। अपनी फ़ाइलों को तुरंत ढूंढें जिनकी आपको आवश्यकता है।");
-translation.set("drag & drop made easy","चिचॊकॊ हिलाना बनाया आसान");
+translation.set("drag & drop made easy","चिचॊकॊ स्थानांतरित करना बनाया आसान");
 translation.set(
   "drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.",
   "चिचॊकॊ ड्रैग ओर ड्रॉप आपके कंप्यूटर पर कुछ भी स्थानांतरित करने का सबसे आसान तरीका है। हम इसे सहज और उपयोग में आसान बनाते हैं।"
 );
-translation.set("more than multitask","बहु-कार्य सॆ बहि जयदा");
+translation.set("more than multitask","बहु-कार्य सॆ कहि जयदा");
 translation.set(
   "want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.",
-  "एक साथ कई काम करना चाहते हैं? हम आपको जानते हैं और हम आपको मिल गए हैं। अब यह केवल बहु-कार्य नहीं है, यह संगठित बहु-कार्य है।"
+  "एक साथ कई काम करना चाहते हैं? अब यह केवल बहु-कार्य नहीं है, यह संगठित बहु-कार्य है।"
 );
-translation.set("tabos!","निषेध!");
+translation.set("tabos!","टैबओएस !!");
 translation.set(
   "browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?",
   "ब्राउज़रों ने साबित कर दिया है कि टैब कितने शक्तिशाली हैं, तो क्यों न उनका उपयोग अपने ओएस मॆ किया जायॆ और अधिक शक्तिशाली बनाने जाए?"
@@ -190,3 +190,4 @@ translation.set(
 );
 
 export default translation;
+
