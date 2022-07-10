@@ -49,7 +49,7 @@ translation.set("meet nadva, the official desktop environment for avdanos.","poz
 translation.set("a discord bot made for the avdanos community discord server.","bot discord stworzony dla serwera discord społeczności avdanOS.");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","koncepcja avdana, urzeczywistniamy ją");
+translation.set("avdan's concept, we're making it real!","koncepcja avdana, urzeczywistniamy ją");
 translation.set("assets are loading, please wait","trwa ładowanie zasobów, proszę czekać");
 translation.set("scroll down to see what we've got here","przewiń w dół, aby zobaczyć, co tu mamy");
 translation.set("this concept video is made by avdan","ten koncept wideo jest nakręcony przez avdan");

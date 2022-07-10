@@ -49,7 +49,7 @@ translation.set("meet nadva, the official desktop environment for avdanos.","Mö
 translation.set("a discord bot made for the avdanos community discord server.","En discord bot gjord för AvdanOS discord servern.");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","Avdans koncept, vi gör det riktigt");
+translation.set("avdan's concept, we're making it real!","Avdans koncept, vi gör det riktigt");
 translation.set("assets are loading, please wait","Tillbehör laddas, var vänlig vänta");
 translation.set("scroll down to see what we've got here","Skrolla ner för att se vad vi har här");
 translation.set("this concept video is made by avdan","Denna koncept video är gjord av Avdan");
