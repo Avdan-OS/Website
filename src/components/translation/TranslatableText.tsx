@@ -1,4 +1,4 @@
-import { Dispatch, useState, ReactElement, useEffect } from 'react';
+import { Dispatch, useState, ReactElement } from 'react';
 
 let storeLocale: (locale: string) => void = (locale) => {
   if (window && window.localStorage) window.localStorage.setItem('locale', locale);
