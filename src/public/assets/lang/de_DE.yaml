@@ -6,11 +6,11 @@ home: Home
 features: Funktionen
 downloads: Downloads
 external links: Externe Links
-twitter: Twitter
-github: Github
-youtube: YouTube
-discord: Discord
-reddit: Reddit
+twitter:
+github:
+youtube:
+discord:
+reddit:
 legal: Rechtliches
 license: Lizenz
 eula: EULA

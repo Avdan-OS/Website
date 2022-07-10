@@ -19,7 +19,7 @@ let importedLocale: Map<string, string> = null;
 const TranslatableText = ({ children, injKey }: { children: string; injKey?: string }) => {
   let fetchedTranslation = importedLocale?.get(children.toLowerCase());
   let initialState: string | JSX.Element = fetchedTranslation ? fetchedTranslation : children;
-  if (injKey) initialState = TranslationInjection(injKey, children);
+  if (injKey && fetchedTranslation) initialState = TranslationInjection(injKey, fetchedTranslation);
   const [translatedText, setTranslatedText] = useState<string | JSX.Element>(initialState);
   useEffect(() => {
     let item = { text: children, key: injKey, dispatch: setTranslatedText };

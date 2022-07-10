@@ -6,11 +6,11 @@ home: beranda
 features: fitur
 downloads: unduh
 external links: tautan eksternal
-twitter: twitter
-github: github
-youtube: youtube
-discord: discord
-reddit: reddit
+twitter:
+github:
+youtube:
+discord:
+reddit:
 legal: hukum
 license: lisensi
 eula: eula
