@@ -15,9 +15,6 @@ let importedLocale: { default: Map<string, string> } = null;
  * ```
  */
 const TranslatableText = ({ children }) => {
-  useEffect(() => {
-    console.log('Rendered text for ' + children + ' as ' + fetchedTranslation);
-  }, [this]);
   let fetchedTranslation = importedLocale?.default.get(children.toLowerCase());
   const [translatedText, setTranslatedText] = useState<string>(fetchedTranslation ? fetchedTranslation : children);
   instanceList.push({ text: children, dispatch: setTranslatedText });
@@ -29,7 +26,6 @@ const TranslatableText = ({ children }) => {
  * @param locale A locale code for the website to update to (lowercase-UPPERCASE)
  */
 const setLocale: (locale: string) => void = async (locale) => {
-  console.log('Setting locale to ' + locale);
   storeLocale(locale);
   importedLocale = await import(`./locale/${locale}`);
   if (!importedLocale) return console.warn('Importing localisation failed.');
