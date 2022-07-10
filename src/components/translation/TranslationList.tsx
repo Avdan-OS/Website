@@ -1,4 +1,4 @@
-import { Select } from '@geist-ui/core';
+import { Select, Text } from '@geist-ui/core';
 import { setLocale } from './TranslatableText';
 import { useState, useEffect } from 'react';
 const TranslationList = () => {
@@ -7,98 +7,117 @@ const TranslationList = () => {
     {
       lang: 'ar-SA',
       available: true,
-      icon: '🇸🇦'
+      icon: '🇸🇦',
+      langName: 'Arabic'
     },
     {
       lang: 'da-DK',
       available: true,
-      icon: '🇩🇰'
+      icon: '🇩🇰',
+      langName: 'Danish'
     },
     {
       lang: 'de-DE',
       available: true,
-      icon: '🇩🇪'
+      icon: '🇩🇪',
+      langName: 'German'
     },
     {
       lang: 'el-GR',
       available: true,
-      icon: '🇬🇷'
+      icon: '🇬🇷',
+      langName: 'Greek'
     },
     {
       lang: 'en-GB',
       available: true,
-      icon: '🇬🇧'
+      icon: '🇬🇧',
+      langName: 'English-UK'
     },
     {
       lang: 'en-US',
       available: true,
-      icon: '🇺🇸'
+      icon: '🇺🇸',
+      langName: 'English-US'
     },
     {
       lang: 'es-ES',
       available: true,
-      icon: '🇪🇸'
+      icon: '🇪🇸',
+      langName: 'Spanish'
     },
     {
       lang: 'fr-FR',
       available: true,
-      icon: '🇫🇷'
+      icon: '🇫🇷',
+      langName: 'French'
     },
     {
       lang: 'hi',
       available: true,
-      icon: '🇮🇳'
+      icon: '🇮🇳',
+      langName: 'Hindi'
     },
     {
       lang: 'id-ID',
       available: true,
-      icon: '🇮🇩'
+      icon: '🇮🇩',
+      langName: 'Indonesian'
     },
     {
       lang: 'it-IT',
       available: true,
-      icon: '🇮🇹'
+      icon: '🇮🇹',
+      langName: 'Italian'
     },
     {
       lang: 'nl-NL',
       available: false,
-      icon: '🇳🇱'
+      icon: '🇳🇱',
+      langName: 'Dutch'
     },
     {
       lang: 'pl',
       available: true,
-      icon: '🇵🇱'
+      icon: '🇵🇱',
+      langName: 'Polish'
     },
     {
       lang: 'ru',
       available: false,
-      icon: '🇷🇺'
+      icon: '🇷🇺',
+      langName: 'Russian'
     },
     {
       lang: 'sr-SP',
       available: true,
-      icon: '🇷🇸'
+      icon: '🇷🇸',
+      langName: 'Serbian'
     },
     {
       lang: 'sv-SE',
       available: true,
-      icon: '🇸🇪'
+      icon: '🇸🇪',
+      langName: 'Swedish'
     },
     {
       lang: 'zh-CN',
       available: true,
-      icon: '🇨🇳'
+      icon: '🇨🇳',
+      langName: 'Chinese-Simplified'
     },
     {
       lang: 'zh-TW',
       available: true,
-      icon: '🇹🇼'
+      icon: '🇹🇼',
+      langName: 'Chinese-Traditional'
     }
   ];
   const listItems = data.map((element) => {
     return (
       <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
-        {element.icon}
+        {element.icon}{' '}
+        <Text style={{ display: 'inline', font: 'caption', fontSize: '0.6rem' }}>{element.langName}</Text>
       </Select.Option>
     );
   });
@@ -122,9 +141,11 @@ const TranslationList = () => {
     <Select
       type="default"
       value={defaultLang}
-      width="24px"
-      style={{ minWidth: '0' }}
-      marginRight="20px"
+      width="19px"
+      marginRight=" 20px"
+      paddingLeft="8px"
+      paddingRight="8px"
+      style={{ minWidth: '0', minHeight: '0' }}
       disableMatchWidth
       font={0}
       onChange={setLocale}
