@@ -32,8 +32,7 @@ const setLocale: (locale: string) => void = async (locale) => {
   instanceList.forEach((instance) => {
     let translatedText = importedLocale.default.get(instance.text.toLowerCase());
     translatedText == '' && instance.dispatch(instance.text);
-    if (!translatedText) return;
-    instance.dispatch(translatedText);
+    if (translatedText) instance.dispatch(translatedText);
   });
 };
 
