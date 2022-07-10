@@ -16,7 +16,7 @@ translation.set("reddit","");
 translation.set("legal","Juridiskt");
 translation.set("license","Licens");
 translation.set("eula","EULA");
-translation.set("history of incidents","");
+translation.set("history of incidents","Incident historia");
 translation.set("privacy and security","Integritet och säkerhet");
 translation.set("inspired by","Inspererat av");
 translation.set("avdanos contributors","AvdanOS Bidragare");
