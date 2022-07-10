@@ -2,7 +2,6 @@
 import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
-import NextLink from 'next/link';
 import { TranslatableText } from '@/components/translation/TranslatableText';
 
 const Download = () => {
