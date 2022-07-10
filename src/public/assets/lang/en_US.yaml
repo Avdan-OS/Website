@@ -98,7 +98,7 @@ yes, i understand:
 use torrent download:
 continue:
 # in testing
-having trouble? click [%s] here [%/s] to get help!: Having trouble? Click [%s] here [%/s] to get help!
+having trouble? click [%s]here[%s] to get help!: Having trouble? Click [%s]here[%s] to get help!
 
 # support.tsx
 avdanos support:

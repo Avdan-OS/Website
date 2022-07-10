@@ -98,7 +98,7 @@ yes, i understand: Sì, capisco
 use torrent download: Scarica tramite torrent
 continue: Continua
 # in testing
-having trouble? click [%s] here [%/s] to get help!: Hai qualche problema? Clicca [%s] qua [%/s] per chiedere aiuto!
+having trouble? click [%s]here[%s] to get help!: Hai qualche problema? Clicca [%s] qua [%s] per chiedere aiuto!
 
 # support.tsx
 avdanos support: Supporto AvdanOS

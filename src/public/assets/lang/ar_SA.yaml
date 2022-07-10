@@ -97,7 +97,7 @@ yes, i understand: نعم أفهم
 use torrent download: استخدم تنزيل التورنت
 continue: استمر
 # in testing
-having trouble? click [%s] here [%/s] to get help!: تواجه مشاكل؟ اضغط [%s] هنا [%/s] للدعم
+having trouble? click [%s]here[%s] to get help!: تواجه مشاكل؟ اضغط [%s] هنا [%s] للدعم
 
 # support.tsx
 avdanos support: دعم AvdanOS

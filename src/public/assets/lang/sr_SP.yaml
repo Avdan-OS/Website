@@ -98,7 +98,7 @@ yes, i understand: Да, разумем
 use torrent download: Преузмите преко Torrent-а
 continue: Наставите
 # in testing
-Having trouble? Click [%s] here [%/s] to get help!: Имате проблема? Кликните [%s] овде [%/s] за помоћ!
+having trouble? click [%s]here[%s] to get help!: Имате проблема? Кликните [%s] овде [%s] за помоћ!
 
 # support.tsx
 avdanos support: AvdanOS подршка

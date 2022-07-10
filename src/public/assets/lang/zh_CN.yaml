@@ -98,7 +98,7 @@ yes, i understand: 是的，我同意
 use torrent download: 使用激流下载
 continue: 继续
 # in testing
-having trouble? click [%s] here [%/s] to get help!: 遇到麻烦？按[%s]这里[%/s]获取帮助！
+having trouble? click [%s]here[%s] to get help!: 遇到麻烦？按[%s]这里[%s]获取帮助！
 
 # support.tsx
 avdanos support: AvdanOS 支援

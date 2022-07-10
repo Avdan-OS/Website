@@ -4,10 +4,8 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
 import { TranslatableText } from '@/components/translation/TranslatableText';
-import { setLocale } from '@/components/translation/YMLTransMgr';
 
 const index = () => {
-  setLocale('zh_TW');
   const theme = useTheme();
   const [useMobileBar, setMobileBar] = useState(false);
   dynamicWidth((width) => (width < 1200 ? setMobileBar(true) : setMobileBar(false)));

@@ -98,7 +98,7 @@ yes, i understand: Ja, jag förstår
 use torrent download: Använd torrent nerladdning
 continue: Fortsätt
 # in testing
-having trouble? click [%s] here [%/s] to get help!: Några problem? Tryck [%s] här [%/s] för att få hjälp!
+having trouble? click [%s]here[%s] to get help!: Några problem? Tryck [%s] här [%s] för att få hjälp!
 
 # support.tsx
 avdanos support: AvdanOS Support

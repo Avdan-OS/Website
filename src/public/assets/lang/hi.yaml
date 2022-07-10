@@ -98,7 +98,7 @@ yes, i understand: हाँ मैं समझता हूँ
 use torrent download: टोरेंट का उपयोग करें
 continue: जारी रखॆ
 # in testing
-having trouble? click [%s] here [%/s] to get help!: परेशानी हो रही है? सहायता प्राप्त करने के लिए [%s] यहाँ [%/s] क्लिक करें!
+having trouble? click [%s]here[%s] to get help!: परेशानी हो रही है? सहायता प्राप्त करने के लिए [%s] यहाँ [%s] क्लिक करें!
 
 # support.tsx
 avdanos support: avdanos का सहायक गन

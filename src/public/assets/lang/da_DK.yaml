@@ -98,7 +98,7 @@ yes, i understand: Ja, jeg forstår
 use torrent download: Brug torrent-hentning
 continue: Forsæt
 # in testing
-having trouble? click [%s] here [%/s] to get help!: Har du problemer? Klik [%s] her [%/s] for hjælp!
+having trouble? click [%s]here[%s] to get help!: Har du problemer? Klik [%s] her [%s] for hjælp!
 
 # support.tsx
 avdanos support: AvdanOS hjælp

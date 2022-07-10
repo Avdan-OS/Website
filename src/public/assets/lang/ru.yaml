@@ -97,7 +97,7 @@ below is the shasum of the download. you can use it to check download's integrit
 use torrent download:
 continue:
 # in testing
-having trouble? click [%s] here [%/s] to get help!:
+having trouble? click [%s]here[%s] to get help!:
 
 # support.tsx
 avdanos support:

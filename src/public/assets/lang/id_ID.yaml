@@ -98,7 +98,7 @@ yes, i understand: ya, saya mengerti
 use torrent download: gunakan unduhan torrent
 continue: lanjutkan
 # in testing
-having trouble? click [%s] here [%/s] to get help!: mempunyai masalah? klik [%s] di sini [%/s] untuk mendapatkan bantuan!
+having trouble? click [%s]here[%s] to get help!: mempunyai masalah? klik [%s] di sini [%s] untuk mendapatkan bantuan!
 
 # support.tsx
 avdanos support: dukungan avdanos

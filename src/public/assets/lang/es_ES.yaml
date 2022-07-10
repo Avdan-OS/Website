@@ -98,7 +98,7 @@ yes, i understand: Sí, entiendo
 use torrent download: Usar descarga por torrent
 continue: Continuar
 # in testing
-having trouble? click [%s] here [%/s] to get help!: ¿Tienes problemas? ¡Haz click [%s] aquí [%/s] para obtener ayuda!
+having trouble? click [%s]here[%s] to get help!: ¿Tienes problemas? ¡Haz click [%s] aquí [%s] para obtener ayuda!
 
 # support.tsx
 avdanos support: Soporte de AvdanOS
