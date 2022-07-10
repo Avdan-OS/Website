@@ -50,7 +50,7 @@ translation.set("meet nadva, the official desktop environment for avdanos.","隆
 translation.set("a discord bot made for the avdanos community discord server.","专门为开发 AvdanOS 的 Discord 伺服器机器人");
 
 // features-beta.tsx / features.tsx
-translation.set("avdan's concept, we're making it real","Avdan 的概念，我们正在将它实现");
+translation.set("avdan's concept, we're making it real!","Avdan 的概念，我们正在将它实现");
 translation.set("assets are loading, please wait","资源载入中，请稍候");
 translation.set("scroll down to see what we've got here","向下滑动，看看我们在这里有什么好玩的");
 translation.set("this concept video is made by avdan","这个概念视频由 Avdan 制作");
