@@ -70,7 +70,7 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
     if (mobileAndTabletCheck()) {
       setSubtitle('This page is incompatible');
       setContent(
-        "Your screen width is too small to display the content of this page. You might need to increase your system's resolution use desktop to view this page."
+        "Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page."
       );
       return;
     }
