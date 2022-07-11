@@ -53,7 +53,7 @@ const TranslationList = () => {
       langName: 'French'
     },
     {
-      lang: 'hin-IND',
+      lang: 'hi-IN',
       available: true,
       icon: '🇮🇳',
       langName: 'Hindi'
