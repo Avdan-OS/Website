@@ -52,7 +52,7 @@ const Support = () => {
             mobileLayout={mobileLayout}
           />
         </Grid.Container>
-
+        
         <Spacer h={5} />
         <Text h4>
           <TranslatableText>
@@ -62,7 +62,6 @@ const Support = () => {
         <Text h4>
           <a href="https://github.com/Avdan-OS/suggestions">GitHub - AvdanOS/Suggestions</a>
         </Text>
-
         <Spacer h={5} />
         <BetaPopup Link="/support-beta" />
       </div>
