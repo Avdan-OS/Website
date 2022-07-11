@@ -56,9 +56,9 @@ const Support = () => {
         <Spacer h={5} />
         <Text h4>
           <TranslatableText>
-            Want to suggest anything to us? We always want to listen to the community. Present your ideas{' '}
-            <a href="https://github.com/Avdan-OS/suggestions">here.</a>
+            Want to suggest anything to us? We always want to listen to the community. Present your ideas
           </TranslatableText>
+          <a href="https://github.com/Avdan-OS/suggestions">{` `}here.</a>
         </Text>
 
         <Spacer h={5} />
