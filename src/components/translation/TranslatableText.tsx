@@ -38,7 +38,7 @@ const TranslatableText = ({ children, injKey }: { children: string; injKey?: str
  */
 const setLocale: (locale: string) => void = async (locale) => {
   storeLocale(locale);
-  importedLocale = await YAML.parse(await (await fetch(`http://avdanos.com/assets/lang/${locale}.yaml`)).text(), {
+  importedLocale = await YAML.parse(await (await fetch(`https://avdanos.com/assets/lang/${locale}.yaml`)).text(), {
     mapAsMap: true
   });
   if (!importedLocale) return console.warn('Importing localisation failed.');
