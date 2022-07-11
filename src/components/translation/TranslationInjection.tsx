@@ -19,6 +19,14 @@ const TranslationInjection = (key: string, translatedSource: string) => {
           </NextLink>
         </>
       );
+    case 'support.tsx/send-suggestions':
+      return (
+        <>
+          {splittedTranslation[0]}
+          <a href="https://github.com/Avdan-OS/suggestions">{splittedTranslation[1]}</a>
+          {splittedTranslation[2]}
+        </>
+      );
 
     default:
       return translatedSource;

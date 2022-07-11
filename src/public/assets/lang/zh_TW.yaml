@@ -94,7 +94,6 @@ cancel: 取消
 before you download: 在您下載之前
 please read this before you continue: 請在繼續之前閱讀此內容
 below is the shasum of the download. you can use it to check download's integrity: 下面是下載的shasum。您可以使用它來檢查下載的完整性：
-
 yes, i understand: 是的，我同意
 use torrent download: 使用激流下載
 continue: 繼續
@@ -105,6 +104,7 @@ having trouble? click [%s]here[%s] to get help!: 遇到麻煩？按[%s]這裡[%s
 avdanos support: AvdanOS 支援
 contact us on social media: 在社交媒體上聯繫我們
 visit: 前往
+want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: 想要給我們建議？我們一直希望能聽到社群。請在[%s]這裡[%s]發布您的想法。
 
 # support-beta.tsx
 avdanos support articles: AvdanOS 支援文章
