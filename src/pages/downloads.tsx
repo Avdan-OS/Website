@@ -189,7 +189,9 @@ const Download = () => {
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
             <TranslatableText injKey="download.tsx/having-trouble">
-              Having trouble? Click [%s]here[%s] to get help!
+              Having trouble? Click {' '}
+              <a href="support">here.</a>
+               to get help!
             </TranslatableText>
           </Card>
         </div>
