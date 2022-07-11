@@ -18,9 +18,9 @@ const Support = () => {
         <Spacer h={3} />
         <Text className="header" h1>
           <TranslatableText>AvdanOS Support</TranslatableText>
-          <h4>
-            <TranslatableText>Contact Us On Social Media</TranslatableText>
-          </h4>
+        </Text>
+        <Text h4>
+          <TranslatableText>Contact Us On Social Media</TranslatableText>
         </Text>
         <Spacer h={2} />
         <Grid.Container

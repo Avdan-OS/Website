@@ -4,16 +4,17 @@ import NextLink from 'next/link';
 // This file is responsible for converting a translation key and translated string (with identifier) back
 // into component. If you use a translation key, please implement your injection logic below.
 
-const TranslationRebuilder = (key: string, translatedSource: string) => {
+const TranslationInjection = (key: string, translatedSource: string) => {
+  let splittedTranslation = translatedSource.split('[%s]');
   switch (key) {
     case 'download.tsx/having-trouble':
       return (
         <>
-          {translatedSource.split('[%s]')[0].trim()}{' '}
+          {splittedTranslation[0]}
           <NextLink href="/support">
             <>
-              <Link block>{translatedSource.split('[%s]')[1].split('[%/s]')[0].trim()}</Link>{' '}
-              {translatedSource.split('[%/s]')[1].trim()}
+              <Link block>{splittedTranslation[1]}</Link>
+              {splittedTranslation[2]}
             </>
           </NextLink>
         </>
@@ -24,4 +25,4 @@ const TranslationRebuilder = (key: string, translatedSource: string) => {
   }
 };
 
-export default TranslationRebuilder;
+export default TranslationInjection;
