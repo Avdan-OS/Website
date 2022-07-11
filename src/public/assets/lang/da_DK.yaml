@@ -111,12 +111,12 @@ search support articles: Søg i hjælpe-artikler
 ask our community: Spørg vores fællesskab
 
 # betapopup.tsx
-hey look! a new testing version of this page is available!: Hey se! en ny test-version af denne side er tilgængelig
+hey look! a new testing version of this page is available!: Hey se! en ny test-version af denne side er tilgængelig!
 close: Luk
 check it out: Prøv den
 
 # docs.tsx
-read the features in detail.: Læs mere om funktionerne
+read the features in detail.: Læs mere om funktionerne.
 i'm a user: Jeg er bruger
 open manual: Åben manual
 manual is not available yet: Denne manual er ikke tilgængelig endnu
@@ -130,7 +130,7 @@ full screen: Fuld skærm
 
 # 404.tsx
 page not found: Side ikke fundet
-this page does not exist.: Denne side findes ikke
+this page does not exist.: Denne side findes ikke.
 join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
 
 # widthrequirement.tsx
