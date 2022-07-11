@@ -1,68 +1,56 @@
-import { Dispatch, useState, useEffect } from 'react';
+import { Dispatch, useState, ReactElement, useEffect } from 'react';
+import YAML from 'yaml';
+import TranslationInjection from './TranslationInjection';
 
-let storeLocale: (locale: string) => void;
-let globalCurrentLocale = 'en-GB';
-let dispatcherList: Array<Dispatch<string>> = [];
+let storeLocale: (locale: string) => void = (locale) => {
+  if (window && window.localStorage) window.localStorage.setItem('locale', locale);
+};
+let instanceList: Array<{ text: string; dispatch: Dispatch<string | JSX.Element>; key?: string }> = [];
+let importedLocale: Map<string, string> = null;
 
 /**
  * Wrap text with this element to get automatic translation injection from locale.
  * This is not case sensitive, but punctuation still matters.
- * When no translation is available, it will leave the originla text untouched.
- * @example <TranslatableText>
- * This text will be automatically translated when available
- * </TranslatableText>
+ * When no translation is available, it will leave the original text untouched.
+ * @example ```html
+ * <TranslatableText>This text can be automatically translated</TranslatableText>
+ * ```
  */
-const TranslatableText = ({ children }) => {
-  // This is responsible for making locale selection persistant
+const TranslatableText = ({ children, injKey }: { children: string; injKey?: string }) => {
+  let fetchedTranslation = importedLocale?.get(children.toLowerCase());
+  let initialState: string | JSX.Element = fetchedTranslation ? fetchedTranslation : children;
+  if (injKey && fetchedTranslation) initialState = TranslationInjection(injKey, fetchedTranslation);
+  const [translatedText, setTranslatedText] = useState<string | JSX.Element>(initialState);
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      if (window.localStorage.getItem('locale')) {
-        setLocale(window.localStorage.getItem('locale'));
-      } else {
-        setLocale('en-GB');
-      }
-    }
-    storeLocale = (locale) => {
-      window.localStorage.setItem('locale', locale);
+    let item = { text: children, key: injKey, dispatch: setTranslatedText };
+    instanceList.push(item);
+    return () => {
+      let index = instanceList.indexOf(item);
+      if (index !== -1) instanceList.splice(index, 1);
     };
   }, []);
-
-  // This will register TranslatableText's dispatcher to a
-  // global sink, making global update possible
-  const [currentLocale, setCurrentLocale] = useState(globalCurrentLocale);
-  dispatcherList.push(setCurrentLocale);
-  const [translatedText, setTranslatedText] = useState(children);
-
-  // This is responsible for grabbing translation from locale file mapping
-  const getTranslation = async (content, setTranslatedText: Dispatch<any>) => {
-    if (!currentLocale) return;
-    let importedTranslation = await import(`./locale/${currentLocale}`);
-    const translation: Map<string, string> = importedTranslation.default;
-    if (translation.has(content.toLowerCase())) {
-      if (translation.get(content.toLowerCase()) != '') {
-        setTranslatedText(translation.get(content.toLowerCase()));
-      } else {
-        setTranslatedText(content);
-      }
-    }
-  };
-
-  // Simple return logic
-  getTranslation(children, setTranslatedText);
-  return translatedText;
+  return translatedText as unknown as ReactElement;
 };
 
 /**
  * Updates all the translatable text to a set locale
  * @param locale A locale code for the website to update to (lowercase-UPPERCASE)
  */
-const setLocale: (locale: string) => void = (locale) => {
-  if (!locale) return;
-  if (storeLocale) storeLocale(locale);
-  globalCurrentLocale = locale;
-  // This will update every <TranslatableText> to the current locale
-  dispatcherList.forEach((setCurrentLocale) => {
-    setCurrentLocale(locale);
+const setLocale: (locale: string) => void = async (locale) => {
+  storeLocale(locale);
+  importedLocale = await YAML.parse(await (await fetch(`http://avdanos.com/assets/lang/${locale}.yaml`)).text(), {
+    mapAsMap: true
+  });
+  if (!importedLocale) return console.warn('Importing localisation failed.');
+  instanceList.forEach((instance) => {
+    let translatedText = importedLocale.get(instance.text.toLowerCase());
+    if (!translatedText) {
+      return instance.dispatch(instance.text);
+    }
+    if (instance.key) {
+      return instance.dispatch(TranslationInjection(instance.key, translatedText));
+    }
+    instance.dispatch(translatedText);
   });
 };
 
