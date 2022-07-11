@@ -79,7 +79,7 @@ this project wouldn't be possible without the community's contributions. join us
 open demo: Åben demo
 
 # download.tsx
-this download is not available yet.:
+this download is not available yet.: Denne nedhentning er ikke klar endnu.
 give your pc an upgrade.: Giv din PC en opgradering
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
@@ -88,7 +88,7 @@ for pi, pine, and mac: For Pi, Pine og Mac
 download: Hent
 web preview: Web forhåndsvisning
 you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Du er ved at besøge webdemo-versionen af AvdanOS, hvilket kun er bevis-af-koncept. Afprøv live-systemet, er på det kraftigste anbefalet for den fulde oplevelse af operativsystemet.
-live system is currently not available because the system is still under development: Live-systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling.
+live system is currently not available because the system is still under development: Live-systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling
 yes, take me there: Ja, tag mig der til
 cancel: Afbryd
 before you download: Før du henter
