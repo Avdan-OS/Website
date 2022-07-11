@@ -59,7 +59,7 @@ const Features = () => {
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
-          <TranslatableText>Avdan's concept, we're making it real</TranslatableText>
+          <TranslatableText>Avdan's concept, we're making it Real!</TranslatableText>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
         <div id="loadText" ref={loadTextRef}>

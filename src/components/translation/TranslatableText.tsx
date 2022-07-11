@@ -1,10 +1,12 @@
-import { Dispatch, useState, ReactElement } from 'react';
+import { Dispatch, useState, ReactElement, useEffect } from 'react';
+import YAML from 'yaml';
+import TranslationInjection from './TranslationInjection';
 
 let storeLocale: (locale: string) => void = (locale) => {
   if (window && window.localStorage) window.localStorage.setItem('locale', locale);
 };
-let instanceList: Array<{ text: string; dispatch: Dispatch<string> }> = [];
-let importedLocale: { default: Map<string, string> } = null;
+let instanceList: Array<{ text: string; dispatch: Dispatch<string | JSX.Element>; key?: string }> = [];
+let importedLocale: Map<string, string> = null;
 
 /**
  * Wrap text with this element to get automatic translation injection from locale.
@@ -14,10 +16,19 @@ let importedLocale: { default: Map<string, string> } = null;
  * <TranslatableText>This text can be automatically translated</TranslatableText>
  * ```
  */
-const TranslatableText = ({ children }) => {
-  let fetchedTranslation = importedLocale?.default.get(children.toLowerCase());
-  const [translatedText, setTranslatedText] = useState<string>(fetchedTranslation ? fetchedTranslation : children);
-  instanceList.push({ text: children, dispatch: setTranslatedText });
+const TranslatableText = ({ children, injKey }: { children: string; injKey?: string }) => {
+  let fetchedTranslation = importedLocale?.get(children.toLowerCase());
+  let initialState: string | JSX.Element = fetchedTranslation ? fetchedTranslation : children;
+  if (injKey && fetchedTranslation) initialState = TranslationInjection(injKey, fetchedTranslation);
+  const [translatedText, setTranslatedText] = useState<string | JSX.Element>(initialState);
+  useEffect(() => {
+    let item = { text: children, key: injKey, dispatch: setTranslatedText };
+    instanceList.push(item);
+    return () => {
+      let index = instanceList.indexOf(item);
+      if (index !== -1) instanceList.splice(index, 1);
+    };
+  }, []);
   return translatedText as unknown as ReactElement;
 };
 
@@ -27,12 +38,19 @@ const TranslatableText = ({ children }) => {
  */
 const setLocale: (locale: string) => void = async (locale) => {
   storeLocale(locale);
-  importedLocale = await import(`./locale/${locale}`);
+  importedLocale = await YAML.parse(await (await fetch(`http://localhost:3000/assets/lang/${locale}.yaml`)).text(), {
+    mapAsMap: true
+  });
   if (!importedLocale) return console.warn('Importing localisation failed.');
   instanceList.forEach((instance) => {
-    let translatedText = importedLocale.default.get(instance.text.toLowerCase());
-    translatedText == '' && instance.dispatch(instance.text);
-    if (translatedText) instance.dispatch(translatedText);
+    let translatedText = importedLocale.get(instance.text.toLowerCase());
+    if (!translatedText) {
+      return instance.dispatch(instance.text);
+    }
+    if (instance.key) {
+      return instance.dispatch(TranslationInjection(instance.key, translatedText));
+    }
+    instance.dispatch(translatedText);
   });
 };
 

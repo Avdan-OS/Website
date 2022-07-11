@@ -1,111 +1,139 @@
-import { Select } from '@geist-ui/core';
+import { Select, Text } from '@geist-ui/core';
 import { setLocale } from './TranslatableText';
 import { useState, useEffect } from 'react';
 const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
     {
-      lang: 'ar-SA',
+      lang: 'ar_SA',
       available: true,
-      icon: '🇸🇦'
+      icon: '🇸🇦',
+      langName: 'Arabic'
     },
     {
-      lang: 'da-DK',
+      lang: 'da_DK',
       available: true,
-      icon: '🇩🇰'
+      icon: '🇩🇰',
+      langName: 'Danish'
     },
     {
-      lang: 'de-DE',
+      lang: 'de_DE',
       available: true,
-      icon: '🇩🇪'
+      icon: '🇩🇪',
+      langName: 'German'
     },
     {
-      lang: 'el-GR',
+      lang: 'el_GR',
       available: true,
-      icon: '🇬🇷'
+      icon: '🇬🇷',
+      langName: 'Greek'
     },
     {
-      lang: 'en-GB',
+      lang: 'en_GB',
       available: true,
-      icon: '🇬🇧'
+      icon: '🇬🇧',
+      langName: 'English-UK'
     },
     {
-      lang: 'en-US',
+      lang: 'en_US',
       available: true,
-      icon: '🇺🇸'
+      icon: '🇺🇸',
+      langName: 'English-US'
     },
     {
-      lang: 'es-ES',
+      lang: 'es_ES',
       available: true,
-      icon: '🇪🇸'
+      icon: '🇪🇸',
+      langName: 'Spanish'
     },
     {
-      lang: 'fr-FR',
+      lang: 'fr_FR',
       available: true,
-      icon: '🇫🇷'
+      icon: '🇫🇷',
+      langName: 'French'
     },
     {
       lang: 'hin-IND',
       available: true,
-      icon: '🇮🇳'
+      icon: '🇮🇳',
+      langName: 'Hindi'
     },
     {
-      lang: 'id-ID',
+      lang: 'id_ID',
       available: true,
-      icon: '🇮🇩'
+      icon: '🇮🇩',
+      langName: 'Indonesian'
     },
     {
-      lang: 'it-IT',
+      lang: 'it_IT',
       available: true,
-      icon: '🇮🇹'
+      icon: '🇮🇹',
+      langName: 'Italian'
     },
     {
-      lang: 'nl-NL',
+      lang: 'nl_NL',
       available: false,
-      icon: '🇳🇱'
+      icon: '🇳🇱',
+      langName: 'Dutch'
     },
     {
       lang: 'pl',
       available: true,
-      icon: '🇵🇱'
+      icon: '🇵🇱',
+      langName: 'Polish'
     },
     {
       lang: 'ru',
       available: false,
-      icon: '🇷🇺'
+      icon: '🇷🇺',
+      langName: 'Russian'
     },
     {
-      lang: 'sr-SP',
+      lang: 'sr_SP',
       available: true,
-      icon: '🇷🇸'
+      icon: '🇷🇸',
+      langName: 'Serbian'
     },
     {
-      lang: 'sv-SE',
+      lang: 'sv_SE',
       available: true,
-      icon: '🇸🇪'
+      icon: '🇸🇪',
+      langName: 'Swedish'
     },
     {
-      lang: 'zh-CN',
+      lang: 'zh_CN',
       available: true,
-      icon: '🇨🇳'
+      icon: '🇨🇳',
+      langName: 'Chinese-Simplified'
     },
     {
-      lang: 'zh-TW',
+      lang: 'zh_TW',
       available: true,
-      icon: '🇹🇼'
+      icon: '🇹🇼',
+      langName: 'Chinese-Traditional'
     }
   ];
   const listItems = data.map((element) => {
     return (
       <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
-        {element.icon}
+        {element.icon}{' '}
+        <Text style={{ display: 'inline', font: 'caption', fontSize: '0.6rem' }}>{element.langName}</Text>
       </Select.Option>
     );
   });
-  const [defaultLang, setDfltLang] = useState('en-GB');
+  const [defaultLang, setDfltLang] = useState('en_GB');
   useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
       if (window.localStorage.getItem('locale')) {
+        if (
+          data.filter((locale) => locale.available && locale.lang === window.localStorage.getItem('locale')).length != 0
+        ) {
+          setLocale(window.localStorage.getItem('locale'));
+          setDfltLang(window.localStorage.getItem('locale'));
+        } else {
+          setLocale('en_GB');
+          setDfltLang('en_GB');
+        }
         setDfltLang(window.localStorage.getItem('locale'));
         setLocale(window.localStorage.getItem('locale'));
       } else {
@@ -113,8 +141,8 @@ const TranslationList = () => {
           setLocale(navigator.language);
           setDfltLang(navigator.language);
         } else {
-          setLocale('en-GB');
-          setDfltLang('en-GB');
+          setLocale('en_GB');
+          setDfltLang('en_GB');
         }
       }
     }
@@ -123,9 +151,11 @@ const TranslationList = () => {
     <Select
       type="default"
       value={defaultLang}
-      width="24px"
-      style={{ minWidth: '0' }}
-      marginRight="20px"
+      width="19px"
+      marginRight=" 20px"
+      paddingLeft="8px"
+      paddingRight="8px"
+      style={{ minWidth: '0', minHeight: '0' }}
       disableMatchWidth
       font={0}
       onChange={setLocale}

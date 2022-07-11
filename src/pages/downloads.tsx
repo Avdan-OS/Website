@@ -1,6 +1,7 @@
 // prettier-ignore
 import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
+import NextLink from 'next/link';
 import { useState } from 'react';
 import { TranslatableText } from '@/components/translation/TranslatableText';
 
@@ -187,7 +188,9 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            <TranslatableText>download.tsx/having-trouble</TranslatableText>
+            <TranslatableText injKey="download.tsx/having-trouble">
+              Having trouble? Click [%s]here[%s] to get help!
+            </TranslatableText>
           </Card>
         </div>
       </div>
@@ -201,8 +204,9 @@ const Download = () => {
         <Modal.Content>
           <p>
             <TranslatableText>
-              Below is the shasum of the download. You can use it to check download's integrity:
+              Below is the shasum of the download. You can use it to check download's integrity
             </TranslatableText>
+            :
           </p>
           <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
@@ -249,9 +253,9 @@ const Download = () => {
               You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
               system is strongly recommended to getting the full experience from the operating system.
             </TranslatableText>
-            <br />
+            <br />*
             <TranslatableText>
-              *Live system is currently not available because the system is still under development
+              Live system is currently not available because the system is still under development
             </TranslatableText>
           </p>
         </Modal.Content>
