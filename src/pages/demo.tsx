@@ -20,6 +20,9 @@ const preview = () => {
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
           <TranslatableText>Try in your browser</TranslatableText>
         </Text>
+        <Text className="text-center">
+          <TranslatableText injKey="support.tsx/send-suggestions">This Demo is open source on GitHub.</TranslatableText>
+        </Text>
         <Card shadow>
           <iframe
             ref={iframeRef}
