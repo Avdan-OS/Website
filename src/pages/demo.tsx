@@ -21,7 +21,7 @@ const preview = () => {
           <TranslatableText>Try in your browser</TranslatableText>
         </Text>
         <Text className="text-center">
-          <TranslatableText injKey="support.tsx/send-suggestions">This Demo is open source on GitHub.</TranslatableText>
+          <TranslatableText injKey="demo.tsx/github-link">This Demo is open source on [%s]GitHub[%s].</TranslatableText>
         </Text>
         <Card shadow>
           <iframe
