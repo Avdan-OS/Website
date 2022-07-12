@@ -1,0 +1,145 @@
+---
+# Global
+# footer.tsx
+overview: forbhreathnú
+home: baile
+features: gnéithe
+downloads: íoslódálacha
+external links: Naisc Sheachtracha
+twitter:
+github:
+youtube:
+discord:
+reddit:
+legal: dlíthiúil
+license: ceadúnas
+eula:
+history of incidents: stair na n-eachtraí
+privacy and security: príobháideacht agus slándáil
+inspired by: spreagtha ag
+avdanos contributors: avdanos rannpháirtithe
+# alert.tsx
+is still in development.: fós i bhforbairt.
+join our discord!: páirt a ghlacadh lenár discord
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+support: tacaíocht
+documentation: doiciméadú
+docs: doiciméadú
+demo: Taispeántas
+
+# index.tsx
+your pc but even better!: do ríomhaire ach níos fearr fós!
+try in your browser: bain triail as i do bhrabhsálaí
+download now!: íoslódáil anois!
+# discover.tsx
+open source on github: foinse oscailte ar github
+browse all repos: brabhsáil gach stór
+# discoverCard.tsx
+avdanos: avdanos
+meet avdanos, refining the way we think about operating systems.: freastal ar avdanos, ag scagadh an dóigh a smaoinímid ar chórais oibriúcháin.
+official website: láithreán gréasáin oifigiúil
+all the new updates and information about avdanos and support.: na nuashonruithe agus an fhaisnéis go léir faoi avdanos agus tacaíocht.
+desktop environment: timpeallacht deisce
+meet nadva, the official desktop environment for avdanos.: bualadh le nadva, an timpeallacht deisce oifigiúil le haghaidh avdanos.
+a discord bot made for the avdanos community discord server.: bot discord déanta don fhreastalaí easaontais pobail avdanos.
+
+# features-beta.tsx / features.tsx
+avdan's concept, we're making it real!: coincheap avdan, táimid ag déanamh fíor é!
+assets are loading, please wait: sócmhainní á luchtú, fan go fóill
+scroll down to see what we've got here: scrollaigh síos chun a fheiceáil cad atá againn anseo
+this concept video is made by avdan: Is é avdan a rinne an físeán coincheap seo
+watch on youtube: féachaint ar youtube
+familiar dock, ultimate form: duga eolach, foirm deiridh
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: tá a fhios ag gach duine duga/tascbharra. fuaireamar duga úrnua, le níos mó gnéithe ná riamh.
+brand new launch menu: roghchlár seoladh úrnua
+with everything in one place, do anything anywhere at anytime.: le gach rud in aon áit amháin, aon rud a dhéanamh áit ar bith ag am ar bith.
+easily apply layout: iarratas a dhéanamh go héasca leagan amach
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: le liosta de na réamhshocruithe a chinneadh ó tú apps, a fháil go héasca a bheith ag obair leis an leagan amach fuinneoige foirfe. nach leor? é a athrú sna socruithe.
+overpowered dock: duga ró-chumhachtach
+your dock can do more than ever. it's your ultimate manager to get you organised.: is féidir le do dhuga níos mó a dhéanamh ná riamh. is é do bhainisteoir deiridh é chun tú a chur in eagar.
+new way to manage files: bealach nua chun comhaid a bhainistiú
+this file manager keeps you organised and productive. find your files the instant you need it.: coinníonn an bainisteoir comhad seo eagraithe agus táirgiúil thú. teacht ar do chuid comhad an toirt is gá duit é.
+drag & drop made easy: tarraing & scaoil déanta éasca
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Is é tarraingt agus scaoil an bealach is éasca chun aon rud a aistriú ar do ríomhaire. déanaimid iomasach agus éasca é a úsáid.
+more than multitask: níos mó ná ilthasc
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: ag iarraidh go leor tascanna a dhéanamh ag an am? tá aithne againn ort agus fuaireamar thú. ní iltascáil amháin atá i gceist anois, ach iltascáil eagraithe é.
+tabos!: tabos!
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Tá sé cruthaithe ag brabhsálaithe cé chomh cumhachtach is atá cluaisíní, mar sin cén fáth nach n-úsáidfeá iad chun do chóras oibriúcháin a dhéanamh níos cumhachtaí fós?
+new context menu: roghchlár comhthéacs nua
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: níor athraigh an roghchlár comhthéacs le blianta fada anois. táimid tuirseach de liosta fada míreanna, agus hug cén fáth nach ndéanfaí ciorcal de? Ní maith liom é? is féidir leat é a athrú ar ais i socruithe!
+your os, your preference: do chóras oibriúcháin, do rogha
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: tugaimid smacht duit ar do chóras. Níl sa théama ach ceann tábhachtach acu, agus is féidir leat níos mó a fháil mura dtaitníonn ár gceann leat leat.
+day & night: lá agus oíche
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: inseoidh téamaí éagsúla duit cén t-am atá ann. hug, is féidir leat a dhéanamh fiú droim ar ais é. an féidir leat é a dhéanamh ar windows nó macaos
+under development: á fhorbairt
+this project wouldn't be possible without the community's contributions. join us and help!: ní bheadh ​​an tionscadal seo indéanta gan ranníocaíochtaí an phobail. bígí linn agus cuidigh linn!
+open demo: taispeána oscailte
+
+# download.tsx
+this download is not available yet.: níl an íoslódáil seo ar fáil fós.
+give your pc an upgrade.: Íosluchtaigh uasghrádú do ríomhaire.
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+for most people: don chuid is mó daoine
+for pi, pine, and mac: for pi, pine, agus mac
+download: íoslódáil
+web preview: réamhamharc gréasáin
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: tá tú ar tí cuairt a thabhairt ar an leagan taispeána gréasáin de avdanos, nach bhfuil ann ach cruthúnas ar choincheap. Moltar go láidir triail a bhaint as an gcóras beo chun an taithí iomlán a fháil ón gcóras oibriúcháin.
+live system is currently not available because the system is still under development: Das Live-System ist derzeit nicht verfügbar, da es sich noch in der Entwicklung befindet.
+yes, take me there: sea, tóg mé ann
+cancel: ceal
+before you download: sula tú a íoslódáil
+please read this before you continue: léigh é seo le do thoil sula leanann tú ar aghaidh
+below is the shasum of the download. you can use it to check download's integrity: Anseo thíos tá scáth an íoslódáil. is féidir leat é a úsáid chun sláine an íoslódála a sheiceáil
+yes, i understand: Sea, tuigim
+use torrent download: Bain úsáid as torrent íosluchtaigh
+continue: leanúint ar aghaidh
+# in testing
+having trouble? click [%s]here[%s] to get help!: ag trioblóid? cliceáil [%s]anseo[%s] chun cabhair a fháil!
+
+# support.tsx
+avdanos support: tacaíocht avdanos
+contact us on social media: déan teagmháil linn ar na meáin shóisialta
+visit: cuairt
+want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: Ag iarraidh rud ar bith a mholadh dúinn? ba mhaith linn i gcónaí éisteacht leis an bpobal. cuir do chuid smaointe i láthair [%s]anseo[%s].
+
+# support-beta.tsx
+avdanos support articles: earraí tacaíochta avdanos
+search support articles: cuardaigh ailt tacaíochta
+ask our community: fiafraigh dár bpobal
+
+# betapopup.tsx
+hey look! a new testing version of this page is available!: hey breathnú! tá leagan tástála nua den leathanach seo ar fáil!
+close: dhúnadh
+check it out: seiceáil amach é
+
+# docs.tsx
+read the features in detail.: léigh na gnéithe go mion.
+i'm a user: is úsáideoir mé
+open manual: lámhleabhar oscailte
+manual is not available yet: níl an lámhleabhar ar fáil fós
+i'm a developer: is forbróir mé
+open documentation: doiciméadú oscailte
+doc is not available yet: níl an doiciméadú ar fáil go fóill
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+full screen: scáileán iomlán
+
+# 404.tsx
+page not found: Ní bhfuarthas an leathanach
+this page does not exist.: níl an leathanach seo ann.
+join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+width incompatibility: neamh-chomhoiriúnacht leithead
+increase your window width: méadú do leithead fuinneoige
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: tá do fhuinneog róbheag chun ábhar an leathanaigh seo a thaispeáint, agus thugamar faoi deara go bhfuair tú níos mó eastát scáileáin. Méadaigh leithead do fhuinneog nó uasmhéadaigh do fhuinneog brabhsálaí.
+rotate your device: rothlú do gléas
+your screen is too small to display this page. please rotate to landscape view or use desktop.: tá do scáileán róbheag chun an leathanach seo a thaispeáint. le do thoil rothlaigh chuig radharc tírdhreacha nó úsáid deasc.
+this page is incompatible: tá an leathanach seo neamh-chomhoiriúnach
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: tá leithead do scáileáin róbheag chun ábhar an leathanaigh seo a thaispeáint. seans go mbeidh ort taifeach do chórais a mhéadú nó scáileán níos mó a úsáid chun an leathanach seo a fheiceáil.
+your screen width is too small to display the content of this page. please increase your system's resolution.: tá leithead do scáileáin róbheag chun ábhar an leathanaigh seo a thaispeáint. le do thoil a mhéadú rún do chórais.
