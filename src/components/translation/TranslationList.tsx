@@ -133,8 +133,8 @@ const TranslationList = () => {
           style={{
             display: 'inline',
             font: 'caption',
-            fontSize: '0.8rem',
-            top: '-2px',
+            fontSize: '0.6rem',
+            top: '-3px',
             position: 'relative'
           }}
         >
