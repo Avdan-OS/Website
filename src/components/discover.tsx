@@ -33,7 +33,12 @@ export default function Discover() {
                 />
               </Card>
             </Grid>
-            <Grid style={{ padding: '0' }} xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
+            <Grid
+              style={{ padding: 'var(--grid-gap-unit)' }}
+              xs={12}
+              sm={12}
+              id={isSmallScreen ? 'smallDeviceGrid' : ''}
+            >
               <Card
                 height={isSmallScreen ? 'auto' : '550px'}
                 className={style.card + ' ' + (theme.type == 'dark' ? style.card__dark : style.card__white)}
