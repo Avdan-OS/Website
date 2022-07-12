@@ -121,9 +121,25 @@ const TranslationList = () => {
   ];
   const listItems = data.map((element) => {
     return (
-      <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
+      <Select.Option
+        font="1.5"
+        key={element.lang}
+        value={element.lang}
+        disabled={!element.available}
+        style={{ opacity: element.available ? 1 : 0.5 }}
+      >
         {element.icon}{' '}
-        <Text style={{ display: 'inline', font: 'caption', fontSize: '0.6rem' }}>{element.langName}</Text>
+        <Text
+          style={{
+            display: 'inline',
+            font: 'caption',
+            fontSize: '0.8rem',
+            top: '-2px',
+            position: 'relative'
+          }}
+        >
+          {element.langName}
+        </Text>
       </Select.Option>
     );
   });
