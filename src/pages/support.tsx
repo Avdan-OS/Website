@@ -54,7 +54,7 @@ const Support = () => {
         </Grid.Container>
         <Spacer h={5} />
         <Text h4>
-          <TranslatableText injKey="support.tsx/send-suggestions">
+          <TranslatableText link="https://github.com/Avdan-OS/suggestions">
             Want to suggest anything to us? We always want to listen to the community. Present your ideas [%s]here[%s].
           </TranslatableText>
         </Text>
