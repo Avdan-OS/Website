@@ -102,7 +102,7 @@ const TranslationList = () => {
     },
     {
       lang: 'uz_UZ',
-      available: true,
+      available: false,
       icon: '🇺🇿',
       langName: 'Uzbek'
     },
