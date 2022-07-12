@@ -165,6 +165,7 @@ const TranslationList = () => {
       disableMatchWidth
       font={0}
       onChange={setLocale}
+      dropdownStyle={{ scrollbarWidth: 'none' }}
     >
       {listItems}
     </Select>
