@@ -27,6 +27,14 @@ const TranslationInjection = (key: string, translatedSource: string) => {
           {splittedTranslation[2]}
         </>
       );
+    case 'demo.tsx/github-link':
+      return (
+        <>
+          {splittedTranslation[0]}
+          <a href="https://github.com/FacuA0/AvdanOS-UI-Online">{splittedTranslation[1]}</a>
+          {splittedTranslation[2]}
+        </>
+      );
 
     default:
       return translatedSource;
