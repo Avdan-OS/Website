@@ -101,6 +101,12 @@ const TranslationList = () => {
       langName: 'Swedish'
     },
     {
+      lang: 'uz_UZ',
+      available: true,
+      icon: '🇺🇿',
+      langName: 'Uzbek'
+    },
+    {
       lang: 'zh_CN',
       available: true,
       icon: '🇨🇳',
