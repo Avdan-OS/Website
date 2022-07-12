@@ -84,7 +84,7 @@ const TranslationList = () => {
     },
     {
       lang: 'ru',
-      available: false,
+      available: true,
       icon: '🇷🇺',
       langName: 'Russian'
     },
