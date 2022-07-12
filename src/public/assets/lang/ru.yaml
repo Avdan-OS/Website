@@ -6,13 +6,11 @@ home: дом
 features: Особенности
 downloads: Загрузки
 external links: внешние ссылки
-twitter: Твиттер
-github: гитхаб
-# Add This
-youtube: youtube
-# Add This
-discord: discord
-reddit: реддит
+twitter:
+github:
+youtube:
+discord:
+reddit:
 legal: юридический
 license: лицензия
 eula: Эла
