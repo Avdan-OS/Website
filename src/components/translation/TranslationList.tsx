@@ -53,6 +53,12 @@ const TranslationList = () => {
       langName: 'French'
     },
     {
+      lang: 'ga_IE',
+      available: true,
+      icon: '🇮🇪',
+      langName: 'Irish'
+    },
+    {
       lang: 'hi_IN',
       available: true,
       icon: '🇮🇳',
@@ -133,8 +139,8 @@ const TranslationList = () => {
           style={{
             display: 'inline',
             font: 'caption',
-            fontSize: '0.8rem',
-            top: '-2px',
+            fontSize: '0.6rem',
+            top: '-3px',
             position: 'relative'
           }}
         >
