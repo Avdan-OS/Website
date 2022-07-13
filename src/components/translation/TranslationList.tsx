@@ -53,6 +53,12 @@ const TranslationList = () => {
       langName: 'French'
     },
     {
+      lang: 'ga_IE',
+      available: true,
+      icon: '🇮🇪',
+      langName: 'Irish'
+    },
+    {
       lang: 'hi_IN',
       available: true,
       icon: '🇮🇳',
@@ -121,9 +127,25 @@ const TranslationList = () => {
   ];
   const listItems = data.map((element) => {
     return (
-      <Select.Option font="1.5" key={element.lang} value={element.lang} disabled={!element.available}>
+      <Select.Option
+        font="1.5"
+        key={element.lang}
+        value={element.lang}
+        disabled={!element.available}
+        style={{ opacity: element.available ? 1 : 0.5 }}
+      >
         {element.icon}{' '}
-        <Text style={{ display: 'inline', font: 'caption', fontSize: '0.6rem' }}>{element.langName}</Text>
+        <Text
+          style={{
+            display: 'inline',
+            font: 'caption',
+            fontSize: '0.6rem',
+            top: '-3px',
+            position: 'relative'
+          }}
+        >
+          {element.langName}
+        </Text>
       </Select.Option>
     );
   });
@@ -165,6 +187,7 @@ const TranslationList = () => {
       disableMatchWidth
       font={0}
       onChange={setLocale}
+      dropdownStyle={{ scrollbarWidth: 'none' }}
     >
       {listItems}
     </Select>

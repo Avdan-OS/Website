@@ -188,9 +188,7 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            <TranslatableText injKey="download.tsx/having-trouble">
-              Having trouble? Click [%s]here[%s] to get help!
-            </TranslatableText>
+            <TranslatableText link="/support">Having trouble? Click [%s]here[%s] to get help!</TranslatableText>
           </Card>
         </div>
       </div>
