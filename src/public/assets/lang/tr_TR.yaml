@@ -5,7 +5,7 @@ overview:
 home: Ana Sayfa
 features: Özellikler
 downloads: İndirmeler
-external links:
+external links: Harici Bağlantılar
 twitter:
 github:
 youtube:
@@ -28,14 +28,14 @@ join our discord!: Discord'umuza katıl!
 support: Destek
 documentation:
 docs:
-demo:
+demo: Demo
 
 # index.tsx
 your pc but even better!:
 try in your browser: Tarayıcında Dene
 download now!: Şimdi İndir!
 # discover.tsx
-open source on github:
+open source on github: Github'da Açık Kaynak 
 browse all repos:
 # discoverCard.tsx
 avdanos:
@@ -48,34 +48,34 @@ a discord bot made for the avdanos community discord server.: AvdanOS Topluluğu
 
 # features-beta.tsx / features.tsx
 avdan's concept, we're making it real!: Avdan'ın konseptini gerçeğe dönüştürüyoruz!
-assets are loading, please wait:
-scroll down to see what we've got here:
+assets are loading, please wait: İçerikler yükleniyor, lütfen bekleyin
+scroll down to see what we've got here: Burada neler olduğunu görmek için aşağı kaydırın
 this concept video is made by avdan: Bu konsept videosu Avdan tarafından yapıldı
 watch on youtube: Youtube'da izle
 familiar dock, ultimate form: 
 everyone knows dock/task bar. we got a brand new dock, with more features than ever before.:
 brand new launch menu: Yepyeni başlatma menüsü
-with everything in one place, do anything anywhere at anytime.:
-easily apply layout:
-with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.:
+with everything in one place, do anything anywhere at anytime.: 
+easily apply layout: Kolaylıkla dizilimi uygula
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Uygulamalırından hareketle belirlenen profil seçenekleri ile kolaylıkla en iyi pencere dizilimini kullanmaya başla. Yeterli değil mi? Ayarlardan istediğin gibi değiştir.
 overpowered dock:
 your dock can do more than ever. it's your ultimate manager to get you organised.:
-new way to manage files:
-this file manager keeps you organised and productive. find your files the instant you need it.:
-drag & drop made easy:
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.:
-more than multitask:
+new way to manage files: Dosyaları düzenlemenin yeni yolu
+this file manager keeps you organised and productive. find your files the instant you need it.: Dosya yöneticisi sizi organize ve verimli kılar. Dosyalarınızı istediğiniz an elinizin altında.
+drag & drop made easy: Kolayca sürükle ve bırak
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Sürükle ve bırak, bilgisayarınızda transfer yapmanın en pratik yolu. Biz bunu kullanışlı ve kolay hale getirdik.  
+more than multitask: 
 want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
 tabos!:
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
-new context menu:
-context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!:
+new context menu: Yeni bağlam menüsü
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Bağlam menüleri yıllardır hiç değişmedi. Uzun listelerden hepimiz bıktık ve hey, neden yuvarlak yapmayalım ki? Senin tercihin farklı mı? Ayarlardan eski haline getirebilirsin!
 your os, your preference: Senin işletim sistemin, senin tercihlerin
-we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.:
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Sana sisteminin kontrolünü geri veriyoruz. Tema bunun önemli bir kısmı ve eğer bizimkileri beğenmezsen her zaman daha fazlasını edinebilirsin.
 day & night: Gündüz ve Gece
-let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?:
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Farklı temaların sana günün saatini söylemesine izin ver. Hey, eğer istersen tam tersi efekti de kullanabilirsin. Bunu Windows veya MacOS üzerinde yapabilir misin?
 under development: Geliştirme aşamasında
-this project wouldn't be possible without the community's contributions. join us and help!:
+this project wouldn't be possible without the community's contributions. join us and help!: Bu proje topluluğun katkıları olamadan mümkün olamazdı. Bize katıl ve yardım et! 
 open demo: Demo'yu aç
 
 # download.tsx
@@ -86,7 +86,7 @@ give your pc an upgrade.: Bilgisayarını bir üst seviyeye geçir.
 for most people: Çoğu kullanıcı için
 for pi, pine, and mac: Pi, Pine ve Mac için
 download: İndir
-web preview:
+web preview: Web Önizlemesi
 you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.:
 live system is currently not available because the system is still under development:
 yes, take me there: Evet, beni götür
