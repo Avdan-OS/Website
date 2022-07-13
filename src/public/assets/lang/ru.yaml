@@ -130,6 +130,7 @@ doc is not available yet: Док еще не доступен
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: полноэкранный
+this demo is open source on [%s]github[%s].:
 
 # 404.tsx
 page not found: Страница не найдена

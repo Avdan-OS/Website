@@ -20,6 +20,11 @@ const preview = () => {
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
           <TranslatableText>Try in your browser</TranslatableText>
         </Text>
+        <Text className="text-center">
+          <TranslatableText link="https://github.com/FacuA0/AvdanOS-UI-Online">
+            This demo is open source on [%s]GitHub[%s].
+          </TranslatableText>
+        </Text>
         <Card shadow>
           <iframe
             ref={iframeRef}
