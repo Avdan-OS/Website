@@ -1,101 +1,101 @@
 ---
 # Global
 # footer.tsx
-overview:
-home:
-features:
-downloads:
-external links:
-twitter:
+overview: Информация
+home: На главную
+features: Фичи
+downloads: Скачать
+external links: Внешние ссылки
+twitter: 
 github:
 youtube:
 discord:
 reddit:
-legal:
-license:
-eula:
-history of incidents:
-privacy and security:
-inspired by:
-avdanos contributors:
+legal: Прочее
+license: Лицении
+eula: Условия использования
+history of incidents: История инцидентов
+privacy and security: Приватность
+inspired by: Вдохновлено от
+avdanos contributors: Контрибутеры
 # alert.tsx
-is still in development.:
-join our discord!:
+is still in development.: Всё ещё в разработке
+join our discord!: Заходи к нам в дискорд
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
-support:
-documentation:
-docs:
-demo:
+support: Поддержка
+documentation: Документация
+docs: Доки
+demo: Демо
 
 # index.tsx
-your pc but even better!:
-try in your browser:
-download now!:
+your pc but even better!: Твой ПК, но ещё лучше
+try in your browser: Посмотри на это в браузере
+download now!: Скачать сейчас
 # discover.tsx
-open source on github:
-browse all repos:
+open source on github: Опенсурс в GitHub
+browse all repos: Смотреть все репозитории
 # discoverCard.tsx
-avdanos:
-meet avdanos, refining the way we think about operating systems.:
-official website:
-all the new updates and information about avdanos and support.:
-desktop environment:
-meet nadva, the official desktop environment for avdanos.:
-a discord bot made for the avdanos community discord server.:
+avdanos: Avdan OS
+meet avdanos, refining the way we think about operating systems.: Посмотрите на Avdan OS, который меняет представнение об операционках
+official website: Оффициальный сайт
+all the new updates and information about avdanos and support.: Все обновления и новости про Avdan OS и поддержку
+desktop environment: Среда десктопа
+meet nadva, the official desktop environment for avdanos.: nadva - это оффициальная среда десктопа для Avdan OS
+a discord bot made for the avdanos community discord server.: Дискорд бот, созданый для комьюнити сервера
 
 # features-beta.tsx / features.tsx
-avdan's concept, we're making it real!:
-assets are loading, please wait:
-scroll down to see what we've got here:
-this concept video is made by avdan:
-watch on youtube:
-familiar dock, ultimate form:
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.:
-brand new launch menu:
-with everything in one place, do anything anywhere at anytime.:
-easily apply layout:
-with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.:
-overpowered dock:
-your dock can do more than ever. it's your ultimate manager to get you organised.:
-new way to manage files:
-this file manager keeps you organised and productive. find your files the instant you need it.:
-drag & drop made easy:
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.:
-more than multitask:
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
-tabos!:
-browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
-new context menu:
-context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!:
-your os, your preference:
-we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.:
-day & night:
-let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?:
-under development:
-this project wouldn't be possible without the community's contributions. join us and help!:
-open demo:
+avdan's concept, we're making it real!: мы делаем концепт Avdan'a реальным
+assets are loading, please wait: Подожди пока всякие штуковины грузятся
+scroll down to see what we've got here: Скроль вниз и ты увидишь что мы приготовили
+this concept video is made by avdan: Этот видос-концепт сделан Avdan'ом
+watch on youtube: Смотреть на ютубе
+familiar dock, ultimate form: Знакомый таскбар теперь в другом виде
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Все знают о таскбаре, мы его переделали и теперь у него больше фичей чем когда либо
+brand new launch menu: Новое меню
+with everything in one place, do anything anywhere at anytime.: Всё в одном месте, делай всё что угодно в любое время
+easily apply layout: Простое изменение расположения кнопок
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: С предустановками от твоих программ можно легко работать с идеальным расположением кнопок. Этого мало? Изменяй всё что угодно в настройках
+overpowered dock: Имбовый таскбар
+your dock can do more than ever. it's your ultimate manager to get you organised.: Таскбар может иметь больше фичей чем когда либо, он поможет тебе быть более организованным 
+new way to manage files: Новый способ управления файлами
+this file manager keeps you organised and productive. find your files the instant you need it.: Этот проводник дайт тебе возможность оставаться продуктивным. Ты можешь достать любой файл как только он тебе понадобится
+drag & drop made easy: Таскать файлы стало проще
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Перетаскивание файлов - это самый простой способ перемещения, теперь он более интуитивный и лёгкий
+more than multitask: Больше, чем просто многозадачность
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Надо сделать кучу заданий одновременно? Мы сделали многозадачность более организованной
+tabos!: Вкладки!
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Браузеры показали насколько вкладки полезны, почему бы не использовать их чтобы сделать ОС лучше?
+new context menu: Новое контекстное меню
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Контекстное меню не менялось десятилетиями, мы устали от огромного столба из кнопок и теперь это круг. А если хочется привычную классику, то это можно поставить это на место в настройках
+your os, your preference: Твоя ОС - твои предпочтения
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Мы дайм тебе контроль над всей системой, в том числе и над темой, а если наши не нравятся, то можно найти больше
+day & night: День и ночь
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Разные темы могут показать какое сейчас время, а ты можешь поменять их местами, такое врятли будет на винде или маке
+under development: Всё ещё в разработке
+this project wouldn't be possible without the community's contributions. join us and help!: Будет сложно доделать это тебя, присоединяйся к нам!
+open demo: Открыть демо
 
 # download.tsx
-this download is not available yet.:
-give your pc an upgrade.:
+this download is not available yet.: Скачивание ещё не доступно
+give your pc an upgrade.: Улучши свой ПК
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
-for most people:
-for pi, pine, and mac:
-download:
-web preview:
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.:
-live system is currently not available because the system is still under development:
-yes, take me there:
-cancel:
-before you download:
-please read this before you continue:
-below is the shasum of the download. you can use it to check download's integrity:yes, i understand:
-yes, i understand:
-use torrent download:
+for most people: Для большинства
+for pi, pine, and mac:  для pi, pine, и mac
+download: Скачать
+web preview: Предпросмотр на сайте
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Ты идёшь смотретьна демо, но оно не может показать всю силу этой ОС, мы рекомендуем попробовать это на лайв системе иначе ты не сможешь полностью насладится этой ОС
+live system is currently not available because the system is still under development: Лайв система всё ещё не доступна ибо ОС всё ещё не доделана
+yes, take me there: Да, пусти меня туда
+cancel: Отмена
+before you download: Прежде чем скачать
+please read this before you continue: Пожалуйста, прочти это перед скачиванием
+below is the shasum of the download. you can use it to check download's integrity: Ниже shasum файла, используй это чтобы понять повредился ли файл во время скачивания 
+yes, i understand: Да, я понял
+use torrent download: Использовать торрент 
 continue:
 # in testing
 having trouble? click [%s]here[%s] to get help!:
