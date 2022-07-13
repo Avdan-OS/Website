@@ -21,7 +21,9 @@ const preview = () => {
           <TranslatableText>Try in your browser</TranslatableText>
         </Text>
         <Text className="text-center">
-          <TranslatableText injKey="demo.tsx/github-link">This Demo is open source on [%s]GitHub[%s].</TranslatableText>
+          <TranslatableText link="https://github.com/FacuA0/AvdanOS-UI-Online">
+            This demo is open source on [%s]GitHub[%s].
+          </TranslatableText>
         </Text>
         <Card shadow>
           <iframe
