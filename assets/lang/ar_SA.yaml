@@ -123,10 +123,12 @@ open manual: افتح الدليل
 manual is not available yet: الدليل غير موجود بعد
 i'm a developer: أنا عامل
 open documentation: افتح الوثائق
+doc is not available yet:
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: شاشة كاملة
+this demo is open source on [%s]github[%s].:
 
 # 404.tsx
 page not found: الصفحة غير موجودة
