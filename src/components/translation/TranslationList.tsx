@@ -90,7 +90,7 @@ const TranslationList = () => {
     },
     {
       lang: 'ru',
-      available: false,
+      available: true,
       icon: '🇷🇺',
       langName: 'Russian'
     },
@@ -105,6 +105,12 @@ const TranslationList = () => {
       available: true,
       icon: '🇸🇪',
       langName: 'Swedish'
+    },
+    {
+      lang: 'tr_TR',
+      available: false,
+      icon: '🇹🇷',
+      langName: 'Turkish'
     },
     {
       lang: 'uz_UZ',
