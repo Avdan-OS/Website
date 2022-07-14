@@ -122,13 +122,13 @@ const TranslationList = () => {
       lang: 'zh_CN',
       available: true,
       icon: '🇨🇳',
-      langName: '汉语'
+      langName: '简体中文'
     },
     {
       lang: 'zh_TW',
       available: true,
       icon: '🇹🇼',
-      langName: '漢語'
+      langName: '繁體中文'
     }
   ];
   const listItems = data.map((element) => {
