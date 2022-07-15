@@ -108,7 +108,7 @@ const TranslationList = () => {
     },
     {
       lang: 'tr_TR',
-      available: false,
+      available: true,
       icon: '🇹🇷',
       langName: 'Türkçe'
     },
