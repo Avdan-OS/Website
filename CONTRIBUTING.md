@@ -18,9 +18,9 @@ We use Prettier as formatter. All jsx naming should follow Airbnb style, and all
 
 To start your contribution, please follow the steps below
 
-1. Create a fork of this repo
+1. Fork this repo
 
-2. Git clone your fork to your machine
+2. Clone your fork
 
 ```sh
 git clone url://to.your/github/fork.git
@@ -57,7 +57,7 @@ git commit -m "concise commit message"
 git push
 ```
 
-`VSC Tip: you can do all of this work with GUI in the built in Source Control extension tab`
+> VSC Tip: you can do all of this work with GUI in the built in Source Control extension tab
 
 7. Create pull request on GitHub
 
