@@ -1,4 +1,9 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "code-runner.executorMapByGlob": {
+    "*": "sleep 1 && python3 -m webbrowser http://localhost:3000 & cd $workspaceRoot/src && npm run dev "
+  },
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.customCommand": "cd $workspaceRoot/src && npm install"
 }
