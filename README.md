@@ -1,8 +1,8 @@
 <div align="center">
 
-# Important: we are migrating to a new Discord server [.gg/avdanos](https://discord.gg/avdanos)
+# Important: we are migrating to a new [Discord server](https://discord.gg/avdanos)
 
-# **AvdanOS**.com Website
+# [AvdanOS.com](https://avdanos.com/) Website
 
 **The AvdanOS homepage is built using NextJS and GeistUI**, which support both **_Markdown_** and **_JavaScript_** to fit the needs of the contributors to the project.
 

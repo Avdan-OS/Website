@@ -8,25 +8,25 @@ const TranslationList = () => {
       lang: 'ar_SA',
       available: true,
       icon: '🇸🇦',
-      langName: 'Arabic'
+      langName: 'العربية'
     },
     {
       lang: 'da_DK',
       available: true,
       icon: '🇩🇰',
-      langName: 'Danish'
+      langName: 'Dansk'
     },
     {
       lang: 'de_DE',
       available: true,
       icon: '🇩🇪',
-      langName: 'German'
+      langName: 'Deutsch'
     },
     {
       lang: 'el_GR',
       available: true,
       icon: '🇬🇷',
-      langName: 'Greek'
+      langName: 'Ελληνικά'
     },
     {
       lang: 'en_GB',
@@ -44,91 +44,91 @@ const TranslationList = () => {
       lang: 'es_ES',
       available: true,
       icon: '🇪🇸',
-      langName: 'Spanish'
+      langName: 'Español'
     },
     {
       lang: 'fr_FR',
       available: true,
       icon: '🇫🇷',
-      langName: 'French'
+      langName: 'Français'
     },
     {
       lang: 'ga_IE',
       available: true,
       icon: '🇮🇪',
-      langName: 'Irish'
+      langName: 'Gaeilge'
     },
     {
       lang: 'hi_IN',
       available: true,
       icon: '🇮🇳',
-      langName: 'Hindi'
+      langName: 'हिन्दी'
     },
     {
       lang: 'id_ID',
       available: true,
       icon: '🇮🇩',
-      langName: 'Indonesian'
+      langName: 'Bahasa Indonesia'
     },
     {
       lang: 'it_IT',
       available: true,
       icon: '🇮🇹',
-      langName: 'Italian'
+      langName: 'Italiano'
     },
     {
       lang: 'nl_NL',
       available: false,
       icon: '🇳🇱',
-      langName: 'Dutch'
+      langName: 'Nederlands'
     },
     {
       lang: 'pl',
       available: true,
       icon: '🇵🇱',
-      langName: 'Polish'
+      langName: 'polski'
     },
     {
       lang: 'ru',
-      available: false,
+      available: true,
       icon: '🇷🇺',
-      langName: 'Russian'
+      langName: 'Русский'
     },
     {
       lang: 'sr_SP',
       available: true,
       icon: '🇷🇸',
-      langName: 'Serbian'
+      langName: 'Српски'
     },
     {
       lang: 'sv_SE',
       available: true,
       icon: '🇸🇪',
-      langName: 'Swedish'
+      langName: 'Svenska'
     },
     {
       lang: 'tr_TR',
       available: false,
       icon: '🇹🇷',
-      langName: 'Turkish'
+      langName: 'Türkçe'
     },
     {
       lang: 'uz_UZ',
       available: false,
       icon: '🇺🇿',
-      langName: 'Uzbek'
+      langName: 'اوزبیک'
     },
     {
       lang: 'zh_CN',
       available: true,
       icon: '🇨🇳',
-      langName: 'Chinese-Simplified'
+      langName: '简体中文'
     },
     {
       lang: 'zh_TW',
       available: true,
       icon: '🇹🇼',
-      langName: 'Chinese-Traditional'
+      langName: '繁體中文'
     }
   ];
   const listItems = data.map((element) => {
