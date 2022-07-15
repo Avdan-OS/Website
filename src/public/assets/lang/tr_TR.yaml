@@ -1,7 +1,7 @@
 ---
 # Global
 # footer.tsx
-overview:
+overview: Genel Bakış
 home: Ana Sayfa
 features: Özellikler
 downloads: İndirmeler
@@ -14,10 +14,10 @@ reddit:
 legal: Yasal
 license: Lisans
 eula:
-history of incidents:
+history of incidents: Sorunlar Geçmişi
 privacy and security: Gizlilik ve Güvenlik
-inspired by:
-avdanos contributors:
+inspired by: "'dan esinlenerek"
+avdanos contributors: AvdanOS'e Katkıda Bulunanlar
 # alert.tsx
 is still in development.: hala geliştirme aşamasında.
 join our discord!: Discord'umuza katıl!
@@ -26,20 +26,20 @@ join our discord!: Discord'umuza katıl!
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
 support: Destek
-documentation:
-docs:
+documentation: Dokümantasyon
+docs: Belgeler
 demo: Demo
 
 # index.tsx
-your pc but even better!:
+your pc but even better!: Bilgisayaraınızın daha da iyisi!
 try in your browser: Tarayıcında Dene
 download now!: Şimdi İndir!
 # discover.tsx
 open source on github: Github'da Açık Kaynak 
-browse all repos:
+browse all repos: Tüm kaynak depolarını inceleyin
 # discoverCard.tsx
 avdanos:
-meet avdanos, refining the way we think about operating systems.:
+meet avdanos, refining the way we think about operating systems.: İşletim sistemleri hakkındaki düşünce biçmimizi kökünden değiştiren AvdanOS ile tanışın.
 official website: Resmi Web Sitesi
 all the new updates and information about avdanos and support.: AvdanOS hakkındaki tüm yenilikler, bilgiler ve destek.
 desktop environment: Masa Üstü Ortamı
@@ -52,22 +52,22 @@ assets are loading, please wait: İçerikler yükleniyor, lütfen bekleyin
 scroll down to see what we've got here: Burada neler olduğunu görmek için aşağı kaydırın
 this concept video is made by avdan: Bu konsept videosu Avdan tarafından yapıldı
 watch on youtube: Youtube'da izle
-familiar dock, ultimate form: 
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.:
+familiar dock, ultimate form: Alışıldık görev çubuğu, alışımlmışın dışı form 
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Herkes görev çubuğuna zaten aşikar. Bizim daha önce eşi benzeri görülmedik sayıda özelliklerle donanmış yepyeni bir görev çubuğumuz var.
 brand new launch menu: Yepyeni başlatma menüsü
-with everything in one place, do anything anywhere at anytime.: 
+with everything in one place, do anything anywhere at anytime.: Her şeyin tek bir çatı altında toplanmasıyla istediğin şeyi, iştediğin yerde, istediğin zamanda yap.
 easily apply layout: Kolaylıkla dizilimi uygula
 with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Uygulamalırından hareketle belirlenen profil seçenekleri ile kolaylıkla en iyi pencere dizilimini kullanmaya başla. Yeterli değil mi? Ayarlardan istediğin gibi değiştir.
-overpowered dock:
-your dock can do more than ever. it's your ultimate manager to get you organised.:
+overpowered dock: Güçlü görev çubuğu
+your dock can do more than ever. it's your ultimate manager to get you organised.: Görev çubuğun alışılmışıntan çok daha fazlasını yapabilir. O senin verimli çalışmanda en önemli yardımcın.
 new way to manage files: Dosyaları düzenlemenin yeni yolu
 this file manager keeps you organised and productive. find your files the instant you need it.: Dosya yöneticisi sizi organize ve verimli kılar. Dosyalarınızı istediğiniz an elinizin altında.
 drag & drop made easy: Kolayca sürükle ve bırak
 drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Sürükle ve bırak, bilgisayarınızda transfer yapmanın en pratik yolu. Biz bunu kullanışlı ve kolay hale getirdik.  
-more than multitask: 
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
-tabos!:
-browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
+more than multitask: Dikkatini birden çok yere odaklamaktan daha fazlasını yap
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Aynı anda birden çok görevle mi uğraşmak istiyorsun? Senin isteklerini biliyoruz ve hayata geçiriyoruz. Artık sadece birden çok işe odaklanmayacak, aynı zamanda bunu maksimum verimle yapacaksın. 
+tabos!: SekmeOS!
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Tarayıcılar sekmelerin ne kadar güçlü olduğunu kanıtladı. Neden onları işletim sistemini daha da güçlü yapmak için kullanmayalım ki?
 new context menu: Yeni bağlam menüsü
 context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Bağlam menüleri yıllardır hiç değişmedi. Uzun listelerden hepimiz bıktık ve hey, neden yuvarlak yapmayalım ki? Senin tercihin farklı mı? Ayarlardan eski haline getirebilirsin!
 your os, your preference: Senin işletim sistemin, senin tercihlerin
@@ -87,23 +87,23 @@ for most people: Çoğu kullanıcı için
 for pi, pine, and mac: Pi, Pine ve Mac için
 download: İndir
 web preview: Web Önizlemesi
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.:
-live system is currently not available because the system is still under development:
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Birazdan sadece konseptimizin bir kanıtı olan AvdanOS web demosunu ziyaret edeceksin. İşletim sisteminin tüm deneyimini yaşayabilmen için canlı sistemi denemeni önemle tavsiye ediyoruz.
+live system is currently not available because the system is still under development: Sistem hala geliştirme altında olduğu için canlı sistem şu anda mevcut değil
 yes, take me there: Evet, beni götür
 cancel: İptal
 before you download: İndirmeden Önce
 please read this before you continue: LÜTFEN İNDİRMEDEN ÖNCE OKUYUN
-below is the shasum of the download. you can use it to check download's integrity:yes, i understand:
-yes, i understand:
+below is the shasum of the download. you can use it to check download's integrity:yes, i understand: Aşağıda indindirmenizin shasum'ı mevcut. İndirmenizin bütünlüğünü test etmek için bunu kullanabilirsiniz:Evet, anladım
+yes, i understand: Evet, anladım
 use torrent download: Torrent ile indir
 continue: Devam et
 # in testing
 having trouble? click [%s]here[%s] to get help!: Sıkıntı mı yaşıyorsunuz? Yardım almak için [%s]buraya[%s] tıklayın!
 
 # support.tsx
-avdanos support: 
+avdanos support: AvdanOS Destek Ekibi
 contact us on social media: Bizimle Sosyal Medya Üzerinden İletişime Geç
-visit: 
+visit: Ziyaret Et
 want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: Bize bir öneriniz mi var? Her zaman topluluğa kulak veririz. Fikirlerinizi [%s]buradan[%s] sunabilirsiniz.
 
 # support-beta.tsx
@@ -120,10 +120,10 @@ check it out: İncele
 read the features in detail.: Özellikleri detaylı olarak incele.
 i'm a user: Bir Kullanıcıyım
 open manual: Kılavuzu incele
-manual is not available yet: Kılavuz daha hazır değil
+manual is not available yet: Kılavuz henüz hazır değil
 i'm a developer: Bir Geliştiriciyim
-open documentation:
-doc is not available yet:
+open documentation: Dokümantasyonu aç
+doc is not available yet: Dokümantasyon henüz hazır değil
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
@@ -138,9 +138,9 @@ join in and help us out developing an open-source operating system.: # don't tra
 # widthrequirement.tsx
 width incompatibility: Genişlik Uyuşmazlığı
 increase your window width: PENCERE GENİŞLİĞİNİ ARTIR
-your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.:
-rotate your device: Penceren bu sayfanın içeriği için fazla küçük, ve daha fazla ekran alanın olduğunu tespit ettik. Lütfen pencere genişliğini artır veya tarayıcı pencereni tam ekran yap.
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Penceren bu sayfanın içeriği için fazla küçük, ve daha fazla ekran alanın olduğunu tespit ettik. Lütfen pencere genişliğini artır veya tarayıcı pencereni tam ekran yap.
+rotate your device: Cihazını yataya çevir
 your screen is too small to display this page. please rotate to landscape view or use desktop.: Ekranın bu sayfanın içeriği için fazla küçük. Lütfen ekranını yatay pozisyona getir veya masa üstü kullan.
-this page is incompatible: Bu sayfada uyumsuzluk var.
+this page is incompatible: Bu sayfada uyumsuzluk var
 your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Ekran genişliğin bu sayfanın içeriği için fazla küçük. Bu sayfayı görmek için sisteminin çözünürlüğünü artırman veya daha büyük bir ekran kullanman gerkebilir.
 your screen width is too small to display the content of this page. please increase your system's resolution.: Ekran genişliğin bu sayfanın içeriği için fazla küçük. Lütfen sisteminin çözünürlüğünü artır.
