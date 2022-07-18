@@ -63,3 +63,17 @@
   min-width: 100% !important;
   font-size: 0.9rem;
 }
+
+/* FAQ Page */
+#faq {
+  margin: 2rem;
+}
+.Questions {
+  display: block !important;
+}
+
+@media (max-width: 320) {
+  .Questions {
+    padding: 1em !important;
+  }
+}

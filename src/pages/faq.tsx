@@ -17,7 +17,7 @@ const FAQ = ({ YamlData }) => {
         <div id='faq'>
             <Collapse.Group>
                 {YamlData.Questions.map((Question: Question, index: any) => (
-                    <Collapse className='Questions' id={index} key={index} subtitle={Question.SubTitle} title={Question.Title} initialVisible={Path.endsWith(`#${index}`)}>
+                    <Collapse className='Questions' style={{ overflowWrap: "anywhere" }} id={index} key={index} subtitle={Question.SubTitle} title={Question.Title} initialVisible={Path.endsWith(`#${index}`)}>
                         <Text>
                             {Question.Answer}
                         </Text>
