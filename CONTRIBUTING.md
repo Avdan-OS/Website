@@ -18,27 +18,25 @@ We use Prettier as formatter. All jsx naming should follow Airbnb style, and all
 
 To start your contribution, please follow the steps below
 
-1. Create a fork of this repo
+1. Fork this repo
 
-2. Git clone your fork to your machine
+2. Clone your fork
 
 ```sh
 git clone url://to.your/github/fork.git
 ```
 
-3. Go into the src directory
+> VSC Tip: You can clone your fork in VSC by clicking on `clone git repository` in the start menu, clicking on clone from GitHub, and selecting your repository.
+
+3. Install dependencies
 
 ```sh
-cd src
+cd src && npm install
 ```
 
-4. Install dependencies
+> VSC Tip: If you have code-runner installed, you can click ctrl/cmd + shift + P, search for Run Custom Command, and hit enter. This will install all dependencies for you automatically.
 
-```shell
-npm install
-```
-
-5. Preview the webpage
+4. Run server
 
 ```sh
 npm run dev
@@ -46,29 +44,26 @@ npm run dev
 
 You can now go to https://localhost:3000 in your browser and it will update in real time.
 
-6. Make changes as you want
+> VSC Tip: If you have code-runner installed, you can click on run button anywhere in VSC and the server will just run (+ open the page in browser).
 
-`Tip: test pages on smaller width and both themes to make sure they have good compatibility. In the lib folder, there's dynamic-width.ts, which is an easy to use hook we made with full jsdoc documentation`
+5. Make changes as you want
 
-7. Commit your changes
+> Tip: To make the webpage compatible with mobile screen, try the `dynamic-width.ts` library in lib folder (JSDoc is available).
 
-```sh
-git commit -m "concise message of the change"
-```
-
-`Tip: you can set up code signing and add -S to the commit command above to get a verified check mark`
-
-8. Push your changes
+6. Commit & push your changes
 
 ```sh
+git commit -m "concise commit message"
 git push
 ```
 
-9. Create pull request on GitHub
+> VSC Tip: you can do all of this work with GUI in the built in Source Control extension tab
+
+7. Create pull request on GitHub
 
 ## Using translation
 
-You need to add this code to the beginning of your file
+You need to import the translation library by add this code to the beginning of your code
 
 ```js
 import { TranslatableText } from "../locale/TranslatableText";
@@ -80,9 +75,9 @@ Then wrap your text in TranslatableText tag, like this:
 <TranslatableText>I will be translated</TranslatableText>
 ```
 
-Then just wait for translators to add the translation
+Then just wait for translators to add the translation.
 
-If the text has complicated structure and not just a string, you can try to read how to use [translation key](https://github.com/Avdan-OS/Website/blob/dev/src/components/translation/translationKey.md) or leave it to ppl who know how to use it (yes, injection is quite advanced)
+Currently, TranslatableText only support text, hence why it is name TranslatableText and not Translate or TranslatableComponent. Link injection is possible by wrapping the hyperlinked text in [%s] and manipulating the link property in TranslatableText (can be both relative or absolute url).
 
 ## Pull Requests
 
