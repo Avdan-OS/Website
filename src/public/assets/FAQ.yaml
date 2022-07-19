@@ -1,8 +1,24 @@
-Questions:
-  - Title: 'example'
-    SubTitle: 'subtitle example'
-    Answer: 'answer example'
+FAQs:
+  - Name: 'Group1'
+    Questions:
+      - QuestionNumber: 1
+        Title: 'example'
+        SubTitle: 'subtitle example'
+        Answer: 'answer example'
 
-  - Title: 'example'
-    SubTitle: 'subtitle example'
-    Answer: 'answer example'
+      - QuestionNumber: 2
+        Title: 'example'
+        SubTitle: 'subtitle example'
+        Answer: 'answer example'
+
+  - Name: 'Group2'
+    Questions:
+      - QuestionNumber: 3
+        Title: 'example'
+        SubTitle: 'subtitle example'
+        Answer: 'answer example'
+
+      - QuestionNumber: 4
+        Title: 'example'
+        SubTitle: 'subtitle example'
+        Answer: 'answer example'

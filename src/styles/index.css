@@ -70,10 +70,71 @@
 }
 .Questions {
   display: block !important;
+  padding: 1em !important;
+}
+.CategoryName {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin: 1.5em;
+}
+.title {
+  font-size: 1em;
 }
 
-@media (max-width: 320) {
+@media (min-width: 720px) {
+  .CategoryName {
+    font-size: 4em;
+    margin: 2em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .CategoryName {
+    font-size: 6em;
+    margin: 2em;
+  }
   .Questions {
-    padding: 1em !important;
+    width: 80em !important;
+    padding: 2em !important;
+    margin-left: 6em !important;
+  }
+  .Category {
+    margin-bottom: 7em !important;
+  }
+  .title {
+    font-size: 2em;
+    padding: 0.5em 0 0.5em 0;
+  }
+  .subtitle {
+    font-size: 1.4em;
+  }
+  .container {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 2560px) {
+  .CategoryName {
+    font-size: 10em;
+    margin: 2em;
+  }
+  .Questions {
+    width: 160em !important;
+    padding: 2em !important;
+    margin-left: 6em !important;
+  }
+  .Category {
+    margin-bottom: 7em !important;
+  }
+  .title {
+    font-size: 2.8em;
+    padding: 0.5em 0 0.5em 0;
+  }
+  .subtitle {
+    font-size: 2.5em;
+  }
+  .container {
+    font-size: 2.5em;
   }
 }

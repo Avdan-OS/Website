@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Collapse, Text } from '@geist-ui/core';
 import YAML from 'yaml';
 import { useRouter } from 'next/router';
@@ -8,34 +7,50 @@ const FAQ = ({ YamlData }) => {
     const Path = useRouter().asPath
 
     type Question = {
-        Title: string,
-        SubTitle: string,
-        Answer: string,
-    }
+        Title: string;
+        SubTitle: string;
+        Answer: string;
+        QuestionNumber: any
+    };
+
+    type CategoryType = {
+        Name: String;
+        Questions: Array<Question>;
+    };
 
     return (
-        <div id='faq'>
+        <div id="faq">
             <Collapse.Group>
-                {YamlData.Questions.map((Question: Question, index: any) => (
-                    <Collapse className='Questions' style={{ overflowWrap: "anywhere" }} id={index} key={index} subtitle={Question.SubTitle} title={Question.Title} initialVisible={Path.endsWith(`#${index}`)}>
-                        <Text>
-                            {Question.Answer}
-                        </Text>
-                    </Collapse>
-                ))
-                }
+                {YamlData.FAQs.map((Category: CategoryType, index: any) => (
+                    <div className='Category' key={index}>
+                        <div className='CategoryName' >{Category.Name}</div>
+                        {Category.Questions.map((Question: Question) => (
+                            <Collapse
+                                className="Questions"
+                                style={{ overflowWrap: 'anywhere' }}
+                                id={Question.QuestionNumber}
+                                key={Question.QuestionNumber}
+                                subtitle={Question.SubTitle}
+                                title={Question.Title}
+                                initialVisible={Path.endsWith(`#${Question.QuestionNumber}`)}
+                            >
+                                <Text>{Question.Answer}</Text>
+                            </Collapse>
+                        ))}
+                    </div>
+                ))}
             </Collapse.Group>
         </div>
     );
 };
 
 export async function getStaticProps() {
-    const YamlData = await YAML.parse(await (await fetch('http://localhost:3000/assets/FAQ.yaml')).text())
+    const YamlData = await YAML.parse(await (await fetch('http://localhost:3000/assets/FAQ.yaml')).text());
     return {
         props: {
-            YamlData,
-        },
-    }
+            YamlData
+        }
+    };
 }
 
 export default FAQ;
