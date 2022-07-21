@@ -16,7 +16,7 @@ license: Licencja
 eula: EULA
 history of incidents: Historia incydentów
 privacy and security: Ochrona i prywatność
-inspired by: Zainspirowany przez
+inspired by [%a][%b]avdan[%b][%a]: Zainspirowany przez [%a][%b]Avdan[%b][%a]
 avdanos contributors: Twórcy AvdanOS
 # alert.tsx
 is still in development.: Jest wciąż w fazie rozwoju
@@ -98,13 +98,13 @@ yes, i understand: Tak, rozumiem
 use torrent download: Pobierz Torrent
 continue: Kontynuuj
 # in testing
-having trouble? click [%s]here[%s] to get help!: Masz jakiś problem? Kliknij [%s] tutaj, [%s] aby uzyskać pomoc!
+having trouble? click [%a]here[%a] to get help!: Masz jakiś problem? Kliknij [%a] tutaj, [%a] aby uzyskać pomoc!
 
 # support.tsx
 avdanos support: Wsparcie AvdanOS
 contact us on social media: Skontaktuj się z nami na mediach społecznościowych
 visit: Odwiedź
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: Chciałbyś nam coś zasugerować? Zawsze słuchamy społeczności. Zaprezentuj swój pomysł [%s]tutaj[%s].
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Chciałbyś nam coś zasugerować? Zawsze słuchamy społeczności. Zaprezentuj swój pomysł [%a]tutaj[%a].
 
 # support-beta.tsx
 avdanos support articles: Prtykuły wsparcia AvdanOS
@@ -127,7 +127,7 @@ open documentation: Otwórz dokumentacja
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Pełny ekran
-this demo is open source on [%s]github[%s].: To demo jest Open Source na [%s]Githubie[%s].
+this demo is open source on [%a]github[%a].: To demo jest Open Source na [%a]Githubie[%a].
 
 # 404.tsx
 page not found: Strona nie została znaleziona

@@ -16,7 +16,7 @@ license: 版權許可
 eula: 最終用戶許可協議
 history of incidents: 意外日誌
 privacy and security: 隱私和安全
-inspired by: 啟發來自
+inspired by [%a][%b]avdan[%b][%a]: 啟發來自[%a][%b]Avdan[%b][%a]
 avdanos contributors: AvdanOS 貢獻者
 # alert.tsx
 is still in development.: 仍在開發中。
@@ -98,13 +98,13 @@ yes, i understand: 是的，我同意
 use torrent download: 使用激流下載
 continue: 繼續
 # in testing
-having trouble? click [%s]here[%s] to get help!: 遇到麻煩？按[%s]這裡[%s]獲取幫助！
+having trouble? click [%a]here[%a] to get help!: 遇到麻煩？按[%a]這裡[%a]獲取幫助！
 
 # support.tsx
 avdanos support: AvdanOS 支援
 contact us on social media: 在社交媒體上聯繫我們
 visit: 前往
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: 想要給我們建議？我們一直希望能聽到社群。請在[%s]這裡[%s]發布您的想法。
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: 想要給我們建議？我們一直希望能聽到社群。請在[%a]這裡[%a]發布您的想法。
 
 # support-beta.tsx
 avdanos support articles: AvdanOS 支援文章
@@ -127,7 +127,7 @@ open documentation: 打開開發人員指南
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: 全螢幕
-this demo is open source on [%s]github[%s].: 此演示是開源的，您可以在[%s]GitHub[%s]上查看。
+this demo is open source on [%a]github[%a].: 此演示是開源的，您可以在[%a]GitHub[%a]上查看。
 
 # 404.tsx
 page not found: 找不到這個頁面
