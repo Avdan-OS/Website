@@ -16,7 +16,7 @@ license: άδεια
 eula:
 history of incidents: ιστορικό περιστατικών
 privacy and security: μυστικότητα και ασφάλεια
-inspired by: εμπνευσμένο από
+inspired by [%a][%b]avdan[%b][%a]: εμπνευσμένο από [%a][%b]Avdan[%b][%a]
 avdanos contributors: τον avdan
 # alert.tsx
 is still in development.: υπό ανάπτυξη.
@@ -98,13 +98,13 @@ yes, i understand: ναι, καταλαβαίνω
 use torrent download: χρησιμοποίησε torrent download
 continue: συνέχισε
 # in testing
-having trouble? click [%s]here[%s] to get help!: έχεις πρόβλημα; κάνε κλικ [%s] εδώ [%s] για βοήθεια!
+having trouble? click [%a]here[%a] to get help!: έχεις πρόβλημα; κάνε κλικ [%a] εδώ [%a] για βοήθεια!
 
 # support.tsx
 avdanos support: υποστήριξη του avdanos
 contact us on social media: ειδοποιήστε μας social media
 visit:
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: άρθρα υποστήριξης του avdanos
@@ -127,7 +127,7 @@ open documentation: άνοιξε την τεκμηρίωση
 # demo.tsx
 # "δοκίμασέ το στο browser σου." is in index.tsx
 full screen:
-this demo is open source on [%s]github[%s].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: η σελίδα δε βρέθηκε

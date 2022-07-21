@@ -16,7 +16,7 @@ license: رخصة
 eula: يولا
 history of incidents: تاريخ الحوادث
 privacy and security: الخصوصية والأمن
-inspired by: مستوحاة من
+inspired by [%a][%b]avdan[%b][%a]: مستوحاة من [%a][%b]Avdan[%b][%a]
 avdanos contributors: المساهمين AvdanOS
 # alert.tsx
 is still in development.: لا يزال قيد التطوير
@@ -35,7 +35,7 @@ your pc but even better!: جهاز الكمبيوتر الخاص بك ولكن �
 try in your browser: حاول في متصفحك
 download now!: التحميل الان
 # discover.tsx
-open source on github: المصدر المفتوح على github
+open source on github: المصدر المفتوح على GitHub
 browse all repos: تصفح جميع المستودعات
 # discoverCard.tsx
 avdanos: AvdanOS
@@ -43,7 +43,7 @@ meet avdanos, refining the way we think about operating systems.: تلبية Avd
 official website: الموقع الرسمي
 all the new updates and information about avdanos and support.: جميع التحديثات والمعلومات الجديدة حول AvdanOS والدعم
 desktop environment: بيئة desktop
-meet nadva, the official desktop environment for avdanos.: تلبية nadva ، بيئة desktop الرسمية لAvdanOS
+meet nadva, the official desktop environment for avdanos.: تلبية Nadva ، بيئة desktop الرسمية لAvdanOS
 a discord bot made for the avdanos community discord server.: روبوت للخلاف تم إنشاؤه لخادم الفتنة في مجتمع avdanos
 
 # features-beta.tsx / features.tsx
@@ -98,13 +98,13 @@ yes, i understand: نعم أفهم
 use torrent download: استخدم تنزيل التورنت
 continue: استمر
 # in testing
-having trouble? click [%s]here[%s] to get help!: تواجه مشاكل؟ اضغط [%s] هنا [%s] للدعم
+having trouble? click [%a]here[%a] to get help!: تواجه مشاكل؟ اضغط [%a] هنا [%a] للدعم
 
 # support.tsx
 avdanos support: دعم AvdanOS
 contact us on social media: اتصل معنا على وسائل التواصل الاجتماعي
 visit: زيارة
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: مقالات دعم AvdanOS
@@ -127,7 +127,7 @@ open documentation: افتح الوثائق
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: شاشة كاملة
-this demo is open source on [%s]github[%s].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: الصفحة غير موجودة
