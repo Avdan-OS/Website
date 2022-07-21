@@ -1,6 +1,6 @@
 import { Dispatch, useState, ReactElement, useEffect, CSSProperties } from 'react';
 import YAML from 'yaml';
-import styleInjector from './InjectionManager';
+import styleInjector from './StyleInjector';
 
 let storeLocale: (locale: string) => void = (locale) => {
   if (window && window.localStorage) window.localStorage.setItem('locale', locale);
