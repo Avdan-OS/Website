@@ -1,6 +1,7 @@
 import { Collapse, Text } from '@geist-ui/core';
 import YAML from 'yaml';
 import { useRouter } from 'next/router';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 const FAQ = ({ YamlData }) => {
 
@@ -34,7 +35,7 @@ const FAQ = ({ YamlData }) => {
                                 title={Question.Title}
                                 initialVisible={Path.endsWith(`#${Question.QuestionNumber}`)}
                             >
-                                <Text>{Question.Answer}</Text>
+                                <Text><ReactMarkdown>{Question.Answer}</ReactMarkdown></Text>
                             </Collapse>
                         ))}
                     </div>
