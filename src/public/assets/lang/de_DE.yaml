@@ -123,7 +123,6 @@ open manual: Handbuch öffnen
 manual is not available yet: Das Handbuch ist aktuell noch nicht verfügbar.
 i'm a developer: Ich bin ein Entwickler
 open documentation: Dokumentation öffnen
-doc is not available yet: Die Dokumentation ist aktuell noch nicht verfügbar.
 
 # demo.tsx
 # "Try in your browser." is in index.tsx

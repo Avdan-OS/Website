@@ -30,7 +30,7 @@ documentation: Dokumentacja
 docs: Dokumenty
 demo: Wersja próbna
 
-# index.tsx 
+# index.tsx
 your pc but even better!: Twój komputer, ale jeszcze lepszy!
 try in your browser: Wypróbuj w swojej przeglądarce
 download now!: Pobierz teraz!
@@ -123,7 +123,6 @@ open manual: Otwórz instrukcję
 manual is not available yet: Instrukcja nie jest jeszcze dostępna
 i'm a developer: Jestem deweloperem
 open documentation: Otwórz dokumentacja
-doc is not available yet: Dokument nie jest aktualnie dostępny
 
 # demo.tsx
 # "Try in your browser." is in index.tsx

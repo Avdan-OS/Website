@@ -35,7 +35,7 @@ your pc but even better!: Bilgisayaraınızın daha da iyisi!
 try in your browser: Tarayıcında Dene
 download now!: Şimdi İndir!
 # discover.tsx
-open source on github: Github'da Açık Kaynak 
+open source on github: Github'da Açık Kaynak
 browse all repos: Tüm kaynak depolarını inceleyin
 # discoverCard.tsx
 avdanos:
@@ -52,7 +52,7 @@ assets are loading, please wait: İçerikler yükleniyor, lütfen bekleyin
 scroll down to see what we've got here: Burada neler olduğunu görmek için aşağı kaydırın
 this concept video is made by avdan: Bu konsept videosu Avdan tarafından yapıldı
 watch on youtube: Youtube'da izle
-familiar dock, ultimate form: Alışıldık görev çubuğu, alışımlmışın dışı form 
+familiar dock, ultimate form: Alışıldık görev çubuğu, alışımlmışın dışı form
 everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Herkes görev çubuğuna zaten aşikar. Bizim daha önce eşi benzeri görülmedik sayıda özelliklerle donanmış yepyeni bir görev çubuğumuz var.
 brand new launch menu: Yepyeni başlatma menüsü
 with everything in one place, do anything anywhere at anytime.: Her şeyin tek bir çatı altında toplanmasıyla istediğin şeyi, iştediğin yerde, istediğin zamanda yap.
@@ -63,9 +63,9 @@ your dock can do more than ever. it's your ultimate manager to get you organised
 new way to manage files: Dosyaları düzenlemenin yeni yolu
 this file manager keeps you organised and productive. find your files the instant you need it.: Dosya yöneticisi sizi organize ve verimli kılar. Dosyalarınızı istediğiniz an elinizin altında.
 drag & drop made easy: Kolayca sürükle ve bırak
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Sürükle ve bırak, bilgisayarınızda transfer yapmanın en pratik yolu. Biz bunu kullanışlı ve kolay hale getirdik.  
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Sürükle ve bırak, bilgisayarınızda transfer yapmanın en pratik yolu. Biz bunu kullanışlı ve kolay hale getirdik.
 more than multitask: Dikkatini birden çok yere odaklamaktan daha fazlasını yap
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Aynı anda birden çok görevle mi uğraşmak istiyorsun? Senin isteklerini biliyoruz ve hayata geçiriyoruz. Artık sadece birden çok işe odaklanmayacak, aynı zamanda bunu maksimum verimle yapacaksın. 
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Aynı anda birden çok görevle mi uğraşmak istiyorsun? Senin isteklerini biliyoruz ve hayata geçiriyoruz. Artık sadece birden çok işe odaklanmayacak, aynı zamanda bunu maksimum verimle yapacaksın.
 tabos!: SekmeOS!
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Tarayıcılar sekmelerin ne kadar güçlü olduğunu kanıtladı. Neden onları işletim sistemini daha da güçlü yapmak için kullanmayalım ki?
 new context menu: Yeni bağlam menüsü
@@ -75,7 +75,7 @@ we give you control over your system. theme is just an important one of them, an
 day & night: Gündüz ve Gece
 let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Farklı temaların sana günün saatini söylemesine izin ver. Hey, eğer istersen tam tersi efekti de kullanabilirsin. Bunu Windows veya MacOS üzerinde yapabilir misin?
 under development: Geliştirme aşamasında
-this project wouldn't be possible without the community's contributions. join us and help!: Bu proje topluluğun katkıları olamadan mümkün olamazdı. Bize katıl ve yardım et! 
+this project wouldn't be possible without the community's contributions. join us and help!: Bu proje topluluğun katkıları olamadan mümkün olamazdı. Bize katıl ve yardım et!
 open demo: Demo'yu aç
 
 # download.tsx
@@ -123,7 +123,6 @@ open manual: Kılavuzu İncele
 manual is not available yet: Kılavuz henüz hazır değil
 i'm a developer: Bir Geliştiriciyim
 open documentation: Dokümantasyonu aç
-doc is not available yet: Dokümantasyon henüz hazır değil
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
