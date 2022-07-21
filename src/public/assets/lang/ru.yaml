@@ -6,7 +6,7 @@ home: На главную
 features: Фичи
 downloads: Скачать
 external links: Внешние ссылки
-twitter: 
+twitter:
 github:
 youtube:
 discord:
@@ -59,7 +59,7 @@ with everything in one place, do anything anywhere at anytime.: Всё в одн
 easily apply layout: Простое изменение расположения кнопок
 with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: С предустановками от твоих программ можно легко работать с идеальным расположением кнопок. Этого мало? Изменяй всё что угодно в настройках
 overpowered dock: Имбовый таскбар
-your dock can do more than ever. it's your ultimate manager to get you organised.: Таскбар может иметь больше фичей чем когда либо, он поможет тебе быть более организованным 
+your dock can do more than ever. it's your ultimate manager to get you organised.: Таскбар может иметь больше фичей чем когда либо, он поможет тебе быть более организованным
 new way to manage files: Новый способ управления файлами
 this file manager keeps you organised and productive. find your files the instant you need it.: Этот проводник дайт тебе возможность оставаться продуктивным. Ты можешь достать любой файл как только он тебе понадобится
 drag & drop made easy: Таскать файлы стало проще
@@ -84,7 +84,7 @@ give your pc an upgrade.: Улучши свой ПК
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
 for most people: Для большинства
-for pi, pine, and mac:  для pi, pine, и mac
+for pi, pine, and mac: для pi, pine, и mac
 download: Скачать
 web preview: Предпросмотр на сайте
 you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Ты идёшь смотретьна демо, но оно не может показать всю силу этой ОС, мы рекомендуем попробовать это на лайв системе иначе ты не сможешь полностью насладится этой ОС
@@ -93,9 +93,9 @@ yes, take me there: Да, пусти меня туда
 cancel: Отмена
 before you download: Прежде чем скачать
 please read this before you continue: Пожалуйста, прочти это перед скачиванием
-below is the shasum of the download. you can use it to check download's integrity: Ниже shasum файла, используй это чтобы понять повредился ли файл во время скачивания 
+below is the shasum of the download. you can use it to check download's integrity: Ниже shasum файла, используй это чтобы понять повредился ли файл во время скачивания
 yes, i understand: Да, я понял
-use torrent download: Использовать торрент 
+use torrent download: Использовать торрент
 continue: Продолжить
 # in testing
 having trouble? click [%s]here[%s] to get help!: Что-то пошло не так? Тыкай [%s]тут[%s] и ты получишь помощь
@@ -114,7 +114,7 @@ ask our community: Спросить у комьюнити
 # betapopup.tsx
 hey look! a new testing version of this page is available!: Эй, зацени! Тут появилась новая бета-версия этой страницы
 close: Закрыть
-check it out: Протестить  
+check it out: Протестить
 
 # docs.tsx
 read the features in detail.: Прочитать о фичах во всех подробностях
@@ -123,10 +123,9 @@ open manual: Открыть мануал
 manual is not available yet: Мануал ещё не доступен
 i'm a developer: Я разраб
 open documentation: Открыть документацию
-doc is not available yet: Доки ещё не доступны
 
 # demo.tsx
-# "Try in your browser." is in index.tsx 
+# "Try in your browser." is in index.tsx
 full screen: Во весь экран
 this demo is open source on [%s]github[%s].: Это демо опенсурсное, посмотри его исходники на [%s]GitHub[%s]
 
@@ -141,6 +140,6 @@ increase your window width: Сделай окно шире
 your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Окно слишком мелкое чтобы показать эту страницу. Увеличь окно браузера
 rotate your device: Поверни свой девайс
 your screen is too small to display this page. please rotate to landscape view or use desktop.: Твой экран слишком мелкий чтобы показать эту страницу, поверни его в ландшафт или юзай ПК
-this page is incompatible: Страница несовместима 
+this page is incompatible: Страница несовместима
 your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Твой экран слишком мелкий чтобы показать эту страницу. Возможно, ты можешь увеличить разрешение системы или взять монитор побольше
 your screen width is too small to display the content of this page. please increase your system's resolution.: Твой экран слишком мелкий чтобы показать эту страницу. Увеличь разрешение системы
