@@ -77,7 +77,7 @@ Then wrap your text in TranslatableText tag, like this:
 
 Then just wait for translators to add the translation.
 
-Currently, TranslatableText only support text, hence why it is name TranslatableText and not Translate or TranslatableComponent. Link injection is possible by wrapping the hyperlinked text in [%s] and manipulating the link property in TranslatableText (can be both relative or absolute url).
+Currently, TranslatableText only support text, hence why it is name TranslatableText and not Translate or TranslatableComponent. Link injection is possible by wrapping the hyperlinked text in [%a] and manipulating the link property in TranslatableText (can be both relative or absolute url), and the styling for hyperlinked text can be manipulated through linkStyle property. Wrapping text in [%b] will make it bold.
 
 ## Pull Requests
 

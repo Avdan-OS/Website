@@ -19,7 +19,7 @@ Navigate to the [lang folder](https://github.com/Avdan-OS/Website/tree/dev/src/p
 - You will see a lot of lines with `: `, a colon and a space
 - Left side of the colon is the original text in all lowercase (it's easier for devs to work with)
 - Right side of the colon (+space) is the translated text. You should edit/add things here.
-- [%s] is a flag for developers to add styling, so they should also be present in the translated string.
+- [%a] and [%b] is a flag for developers to add styling, so they should also be present in the translated string.
 - If your text editor shows an error with your translation, wrap your translation with `"` quotes. If you have further problem, ask for help on [our Discord server](https://discord.gg/avdanos).
 
 4. After you finish making changes, you need to submit your changes. At the left, click on the three dots connected by two lines (it's called Source Control). Click on the check mark, and follow the instructions to create fork if you haven't got one.
