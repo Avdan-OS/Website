@@ -167,12 +167,9 @@ const Footer: React.FC = () => {
             </Tag>
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
-              <TranslatableText>Inspired by</TranslatableText>{' '}
-              <strong>
-                <a target="_blank" style={{ color: colorSwitch() }} href="https://youtube.com/avdan" rel="noreferrer">
-                  Avdan
-                </a>
-              </strong>
+              <TranslatableText link="https://youtube.com/avdan" linkStyle={{ color: colorSwitch() }}>
+                Inspired by [%l][%b]Avdan[%b][%l]
+              </TranslatableText>
             </Tag>
           </div>
         </div>
