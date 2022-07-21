@@ -123,7 +123,6 @@ open manual: Öppna manual
 manual is not available yet: Manualen är inte tillgänglig just nu
 i'm a developer: Jag är en utvecklare
 open documentation: Öppna dokumenation
-doc is not available yet: Dokumentationen är inte tillgänglig just nu
 
 # demo.tsx
 # "Try in your browser." is in index.tsx

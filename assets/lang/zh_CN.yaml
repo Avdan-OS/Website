@@ -123,7 +123,6 @@ open manual: 打开使用手册
 manual is not available yet: 使用手册尚不可用
 i'm a developer: 我是开发人员
 open documentation: 打开开发人员指南
-doc is not available yet: 开发人员指南尚不可用
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
