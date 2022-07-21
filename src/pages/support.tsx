@@ -55,7 +55,7 @@ const Support = () => {
         <Spacer h={5} />
         <Text h4>
           <TranslatableText link="https://github.com/Avdan-OS/suggestions">
-            Want to suggest anything to us? We always want to listen to the community. Present your ideas [%l]here[%l].
+            Want to suggest anything to us? We always want to listen to the community. Present your ideas [%a]here[%a].
           </TranslatableText>
         </Text>
         <Spacer h={5} />

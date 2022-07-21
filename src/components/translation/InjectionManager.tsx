@@ -3,10 +3,9 @@ import { CSSProperties, ReactElement } from 'react';
 import NextLink from 'next/link';
 
 const injectStyle = (text: string, link?: string, linkStyle?: CSSProperties) => {
-  let splittedText = text.split('[%l]');
+  let splittedText = text.split('[%a]');
   if (!splittedText[1]) return injectBold(text);
   if (link.startsWith('/')) {
-    console.log('Next link');
     return (
       <>
         {injectBold(splittedText[0])}
@@ -17,7 +16,6 @@ const injectStyle = (text: string, link?: string, linkStyle?: CSSProperties) => 
       </>
     );
   } else {
-    console.log('Normal link');
     return (
       <>
         {injectBold(splittedText[0])}

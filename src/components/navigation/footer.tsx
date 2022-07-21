@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <TranslatableText link="https://youtube.com/avdan" linkStyle={{ color: colorSwitch() }}>
-                Inspired by [%l][%b]Avdan[%b][%l]
+                Inspired by [%a][%b]Avdan[%b][%a]
               </TranslatableText>
             </Tag>
           </div>

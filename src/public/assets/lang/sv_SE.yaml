@@ -16,7 +16,7 @@ license: Licens
 eula: EULA
 history of incidents: Incident historia
 privacy and security: Integritet och säkerhet
-inspired by [%l][%b]avdan[%b][%l]: Inspererat av [%l][%b]Avdan[%b][%l]
+inspired by [%a][%b]avdan[%b][%a]: Inspererat av [%a][%b]Avdan[%b][%a]
 avdanos contributors: AvdanOS Bidragare
 # alert.tsx
 is still in development.: är fortfarande i utveckling.
@@ -98,13 +98,13 @@ yes, i understand: Ja, jag förstår
 use torrent download: Använd torrent nerladdning
 continue: Fortsätt
 # in testing
-having trouble? click [%l]here[%l] to get help!: Några problem? Tryck [%l] här [%l] för att få hjälp!
+having trouble? click [%a]here[%a] to get help!: Några problem? Tryck [%a] här [%a] för att få hjälp!
 
 # support.tsx
 avdanos support: AvdanOS Support
 contact us on social media: Kontakta oss på sociala medier
 visit: Besök
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: AvdanOS Support Artiklar
@@ -128,7 +128,7 @@ doc is not available yet: Dokumentationen är inte tillgänglig just nu
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Helskärm
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: Sidan hittades inte

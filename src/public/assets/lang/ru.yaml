@@ -16,7 +16,7 @@ license: Лицении
 eula: Условия использования
 history of incidents: История инцидентов
 privacy and security: Приватность
-inspired by [%l][%b]avdan[%b][%l]: Вдохновлено от
+inspired by [%a][%b]avdan[%b][%a]: Вдохновлено от
 avdanos contributors: Контрибутеры
 # alert.tsx
 is still in development.: Всё ещё в разработке
@@ -98,13 +98,13 @@ yes, i understand: Да, я понял
 use torrent download: Использовать торрент
 continue: Продолжить
 # in testing
-having trouble? click [%l]here[%l] to get help!: Что-то пошло не так? Тыкай [%l]тут[%l] и ты получишь помощь
+having trouble? click [%a]here[%a] to get help!: Что-то пошло не так? Тыкай [%a]тут[%a] и ты получишь помощь
 
 # support.tsx
 avdanos support: Поддержка
 contact us on social media: Свяжитесь с нами в соц. сетях
 visit: Посети
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].: Хочешь предложить что-то? Мы всегда прислушиваемся к своему комьюнити. Покажите свои идеи [%l]тут[%l]
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Хочешь предложить что-то? Мы всегда прислушиваемся к своему комьюнити. Покажите свои идеи [%a]тут[%a]
 
 # support-beta.tsx
 avdanos support articles: Артикли с поддержкой
@@ -128,7 +128,7 @@ doc is not available yet: Доки ещё не доступны
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Во весь экран
-this demo is open source on [%l]github[%l].: Это демо опенсурсное, посмотри его исходники на [%l]GitHub[%l]
+this demo is open source on [%a]github[%a].: Это демо опенсурсное, посмотри его исходники на [%a]GitHub[%a]
 
 # 404.tsx
 page not found: Страница не найдена

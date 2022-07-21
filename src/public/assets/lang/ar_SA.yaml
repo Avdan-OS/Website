@@ -16,7 +16,7 @@ license: رخصة
 eula: يولا
 history of incidents: تاريخ الحوادث
 privacy and security: الخصوصية والأمن
-inspired by [%l][%b]avdan[%b][%l]: مستوحاة من [%l][%b]Avdan[%b][%l]
+inspired by [%a][%b]avdan[%b][%a]: مستوحاة من [%a][%b]Avdan[%b][%a]
 avdanos contributors: المساهمين AvdanOS
 # alert.tsx
 is still in development.: لا يزال قيد التطوير
@@ -98,13 +98,13 @@ yes, i understand: نعم أفهم
 use torrent download: استخدم تنزيل التورنت
 continue: استمر
 # in testing
-having trouble? click [%l]here[%l] to get help!: تواجه مشاكل؟ اضغط [%l] هنا [%l] للدعم
+having trouble? click [%a]here[%a] to get help!: تواجه مشاكل؟ اضغط [%a] هنا [%a] للدعم
 
 # support.tsx
 avdanos support: دعم AvdanOS
 contact us on social media: اتصل معنا على وسائل التواصل الاجتماعي
 visit: زيارة
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: مقالات دعم AvdanOS
@@ -128,7 +128,7 @@ doc is not available yet:
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: شاشة كاملة
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: الصفحة غير موجودة

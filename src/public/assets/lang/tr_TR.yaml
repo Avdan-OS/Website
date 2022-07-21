@@ -16,7 +16,7 @@ license: Lisans
 eula:
 history of incidents: Sorunlar Geçmişi
 privacy and security: Gizlilik ve Güvenlik
-inspired by [%l][%b]avdan[%b][%l]: "'dan esinlenerek [%l][%b]Avdan[%b][%l]:"
+inspired by [%a][%b]avdan[%b][%a]: "'dan esinlenerek [%a][%b]Avdan[%b][%a]:"
 avdanos contributors: AvdanOS'e Katkıda Bulunanlar
 # alert.tsx
 is still in development.: hala geliştirme aşamasında.
@@ -98,13 +98,13 @@ yes, i understand: Evet, anladım
 use torrent download: Torrent ile indir
 continue: Devam et
 # in testing
-having trouble? click [%l]here[%l] to get help!: Sıkıntı mı yaşıyorsunuz? Yardım almak için [%l]buraya[%l] tıklayın!
+having trouble? click [%a]here[%a] to get help!: Sıkıntı mı yaşıyorsunuz? Yardım almak için [%a]buraya[%a] tıklayın!
 
 # support.tsx
 avdanos support: AvdanOS Destek Ekibi
 contact us on social media: Bizimle Sosyal Medya Üzerinden İletişime Geç
 visit: Ziyaret Et
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].: Bize bir öneriniz mi var? Her zaman topluluğa kulak veririz. Fikirlerinizi [%l]buradan[%l] sunabilirsiniz.
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Bize bir öneriniz mi var? Her zaman topluluğa kulak veririz. Fikirlerinizi [%a]buradan[%a] sunabilirsiniz.
 
 # support-beta.tsx
 avdanos support articles: AvdanOS Destek Makaleleri
@@ -128,7 +128,7 @@ doc is not available yet: Dokümantasyon henüz hazır değil
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Tam Ekran
-this demo is open source on [%l]github[%l].: Bu demo açık kaynak olarak [%l]Github[%l] üzerinde mevcut.
+this demo is open source on [%a]github[%a].: Bu demo açık kaynak olarak [%a]Github[%a] üzerinde mevcut.
 
 # 404.tsx
 page not found: Sayfa bulunamadı

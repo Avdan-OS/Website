@@ -16,7 +16,7 @@ license: परवाना
 eula: उत्पाद के मालिक और अंतिम उपयोगकर्ता के बीच कानूनी रूप से बाध्यकारी समझौता
 history of incidents: आभीतक कि घाटनायॆ
 privacy and security: गोपनीयता और सुरक्षा
-inspired by [%l][%b]avdan[%b][%l]: प्रेरणा स्रोत [%l][%b]Avdan[%b][%l]
+inspired by [%a][%b]avdan[%b][%a]: प्रेरणा स्रोत [%a][%b]Avdan[%b][%a]
 avdanos contributors: योगदानकर्ता
 # alert.tsx
 is still in development.: अभी भी विकास में है।
@@ -98,13 +98,13 @@ yes, i understand: हाँ मैं समझता हूँ
 use torrent download: टोरेंट का उपयोग करें
 continue: जारी रखॆ
 # in testing
-having trouble? click [%l]here[%l] to get help!: परेशानी हो रही है? सहायता प्राप्त करने के लिए [%l] यहाँ [%l] क्लिक करें!
+having trouble? click [%a]here[%a] to get help!: परेशानी हो रही है? सहायता प्राप्त करने के लिए [%a] यहाँ [%a] क्लिक करें!
 
 # support.tsx
 avdanos support: avdanos का सहायक गन
 contact us on social media: सोशल मीडिया पर हमसे संपर्क करें
 visit: दॆखॆ
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: समर्थन लेख
@@ -128,7 +128,7 @@ doc is not available yet: अभी प्रलेखन उपलब्ध न
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: पूर्ण स्क्रीन
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: पृष्ठ नहीं मिला

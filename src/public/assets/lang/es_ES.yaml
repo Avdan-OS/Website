@@ -16,7 +16,7 @@ license: Licencia
 eula: EULA
 history of incidents: Historial de problemas
 privacy and security: Privacidad y seguridad
-inspired by [%l][%b]avdan[%b][%l]: Inspirado por [%l][%b]Avdan[%b][%l]
+inspired by [%a][%b]avdan[%b][%a]: Inspirado por [%a][%b]Avdan[%b][%a]
 avdanos contributors: Contribuidores de AvdanOS
 # alert.tsx
 is still in development.: aún está en desarrollo.
@@ -98,13 +98,13 @@ yes, i understand: Sí, entiendo
 use torrent download: Usar descarga por torrent
 continue: Continuar
 # in testing
-having trouble? click [%l]here[%l] to get help!: ¿Tienes problemas? ¡Haz click [%l] aquí [%l] para obtener ayuda!
+having trouble? click [%a]here[%a] to get help!: ¿Tienes problemas? ¡Haz click [%a] aquí [%a] para obtener ayuda!
 
 # support.tsx
 avdanos support: Soporte de AvdanOS
 contact us on social media: Contáctanos por nuestras redes sociales.
 visit: Visitar
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: Artículos de ayuda de AvdanOS
@@ -128,7 +128,7 @@ doc is not available yet:
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Pantalla completa
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: Página no encontrada

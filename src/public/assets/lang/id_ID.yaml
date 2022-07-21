@@ -16,7 +16,7 @@ license: lisensi
 eula: eula
 history of incidents: sejarah kejadian
 privacy and security: privasi dan keamanan
-inspired by [%l][%b]avdan[%b][%l]: terinspirasi dari [%l][%b]Avdan[%b][%l]
+inspired by [%a][%b]avdan[%b][%a]: terinspirasi dari [%a][%b]Avdan[%b][%a]
 avdanos contributors: kontributor avdanos
 # alert.tsx
 is still in development.: masih dalam pengembangan
@@ -98,13 +98,13 @@ yes, i understand: ya, saya mengerti
 use torrent download: gunakan unduhan torrent
 continue: lanjutkan
 # in testing
-having trouble? click [%l]here[%l] to get help!: mempunyai masalah? klik [%l] di sini [%l] untuk mendapatkan bantuan!
+having trouble? click [%a]here[%a] to get help!: mempunyai masalah? klik [%a] di sini [%a] untuk mendapatkan bantuan!
 
 # support.tsx
 avdanos support: dukungan avdanos
 contact us on social media: hubungi kami di sosial media
 visit: kunjungi
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: artikel pendukung avdanos
@@ -128,7 +128,7 @@ doc is not available yet:
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: layar penuh
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: halaman tidak ditemukan
