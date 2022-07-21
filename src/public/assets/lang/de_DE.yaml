@@ -47,25 +47,25 @@ meet nadva, the official desktop environment for avdanos.: Lernen Sie Nadva kenn
 a discord bot made for the avdanos community discord server.: Ein Discord-Bot für den AvdanOS Community-Discord-Server.
 
 # features-beta.tsx / features.tsx
-avdan's concept, we're making it real!: Avdans Konzept, wir machen es wirklich
+avdan's concept, we're making it real!: Avdans Konzept, wir setzen es in die Tat um!
 assets are loading, please wait: Assets werden geladen, bitte warten
 scroll down to see what we've got here: Scrolle nach unten, um zu sehen, was wir hier haben
-this concept video is made by avdan: Dieses Konzept Video wurde von AvdanOS gemacht
-watch on youtube: auf YouTube ansehen
-familiar dock, ultimate form: vertrauter Dock, ultimative Form
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Jeder kennt die Dock. Wir haben einen brandneuen Dock, mit mehr Funktionen als je zuvor.
+this concept video is made by avdan: Dieses Konzept Video wurde von Avdan gemacht
+watch on youtube: Auf YouTube ansehen
+familiar dock, ultimate form: Vertraute Dock, ultimative Form
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Jeder kennt die Dock. Wir haben eine brandneue Dock, mit mehr Funktionen als je zuvor.
 brand new launch menu: Brandneues Startmenü
-with everything in one place, do anything anywhere at anytime.: mit allem an einem Ort, an dem Sie alles tun können, jederzeit und überall.
-easily apply layout: Layout mühelos anwenden
-with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Mit einer Liste von Voreinstellungen, die von Ihren Programmen bestimmt werden, können Sie ganz einfach mit dem perfekten Fensterlayout arbeiten. Nicht genug? Ändern Sie es in den Einstellungen.
+with everything in one place, do anything anywhere at anytime.: Mit allem an einem Ort können Sie überall und jederzeit alles erledigen.
+easily apply layout: Mühelose Anwendung des Layouts
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Mit einer Liste von Voreinstellungen, die von Ihren Anwendungen bestimmt werden, können Sie ganz einfach mit dem perfekten Fensterlayout arbeiten. Nicht genug? Ändern Sie es in den Einstellungen.
 overpowered dock: Überwältigender Dock
-your dock can do more than ever. it's your ultimate manager to get you organised.: Ihr Dock kann mehr als je zuvor. Es ist Ihr ultimativer Manager, der Ihnen hilft, sich zu organisieren.
+your dock can do more than ever. it's your ultimate manager to get you organised.: Ihre Dock kann mehr als je zuvor. Es ist Ihr ultimativer Manager, um für Ordnung zu sorgen.
 new way to manage files: Neue Art, Dateien zu verwalten
 this file manager keeps you organised and productive. find your files the instant you need it.: Mit diesem Dateimanager bleiben Sie organisiert und produktiv. Sie finden Ihre Dateien sofort, wenn Sie sie brauchen.
 drag & drop made easy: Drag & Drop leicht gemacht
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Drag & Drop ist der einfachste Weg, alles auf Ihrem Computer zu übertragen. Wir machen es intuitiv und einfach zu bedienen.
-more than multitask: mehr als nur Multitasking
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: 'Sie wollen viele Aufgaben gleichzeitig erledigen? Wir wissen, dass Sie das wollen, und wir haben die Lösung: Multitasking ist jetzt nicht mehr nur Multitasking, sondern organisiertes Multitasking.'
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Drag & Drop ist der einfachste Weg, alles auf Ihren Computer zu verschieben. Wir machen es intuitiv und einfach zu bedienen.
+more than multitask: Mehr als nur Multitasking
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: 'Sie möchten viele Aufgaben gleichzeitig erledigen? Wir wissen, dass Sie das wollen, und wir haben die Lösung: Multitasking ist jetzt nicht mehr nur Multitasking, sondern organisiertes Multitasking.'
 tabos!: TabOS!
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Browser haben bewiesen, wie mächtig Tabs sind, warum sollten sie also nicht auch Ihr Betriebssystem noch mächtiger machen?
 new context menu: Neues Kontextmenü
@@ -75,7 +75,7 @@ we give you control over your system. theme is just an important one of them, an
 day & night: Tag & Nacht
 let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Lassen Sie sich von verschiedenen Designs anzeigen, wie spät es ist. Sie können es sogar umkehren - wenn Sie wollen. Können Sie das unter Windows oder MacOS machen?
 under development: In Entwicklung
-this project wouldn't be possible without the community's contributions. join us and help!: Dieses Projekt wäre ohne die Beiträge der Community nicht möglich. Machen Sie mit und helfen Sie!
+this project wouldn't be possible without the community's contributions. join us and help!: Dieses Projekt wäre ohne die Beiträge der Community nicht möglich. Werden Sie Teil von uns und helfen Sie mit!
 open demo: Demo öffnen
 
 # download.tsx
@@ -98,13 +98,13 @@ yes, i understand: Ja, ich verstehe.
 use torrent download: Torrent Download verwenden
 continue: Fortfahren
 # in testing
-having trouble? click [%l]here[%l] to get help!: Sie haben Probleme? Klicken Sie [%l] hier [%l], um Hilfe zu erhalten!
+having trouble? click [%l]here[%l] to get help!: Sie haben Probleme? Klicken Sie [%l]hier[%l], um Hilfe zu erhalten!
 
 # support.tsx
 avdanos support: AvdanOS Support
-contact us on social media: Kontakt zu uns in den sozialen Medien
+contact us on social media: Kontaktieren Sie uns in den sozialen Medien
 visit: Besuchen
-want to suggest anything to us? we always want to listen to the community. present your ideas [%l]here[%l].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: Möchten Sie uns etwas vorschlagen? Wir haben immer ein offenes Ohr für die Community. [%l]Hier[%l] können Sie uns Ihre Ideen mitteilen.
 
 # support-beta.tsx
 avdanos support articles: AvdanOS Support Artikel
@@ -128,7 +128,7 @@ doc is not available yet: Die Dokumentation ist aktuell noch nicht verfügbar.
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Vollbild
-this demo is open source on [%l]github[%l].:
+this demo is open source on [%l]github[%l].: Diese Demo ist Open Source auf [%l]GitHub[%l].
 
 # 404.tsx
 page not found: Seite nicht gefunden
@@ -142,5 +142,5 @@ your window is too small to display the content of this page, and we detected th
 rotate your device: Drehen Sie Ihr Gerät
 your screen is too small to display this page. please rotate to landscape view or use desktop.: Ihr Bildschirm ist zu klein, um diese Seite anzuzeigen. Bitte drehen Sie ihn ins Querformat oder verwenden Sie einen Desktop-Computer.
 this page is incompatible: Diese Seite ist nicht kompatibel
-your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: hr Bildschirm ist zu klein, um den Inhalt dieser Seite anzuzeigen. Möglicherweise müssen Sie die Auflösung Ihres Systems erhöhen, um diese Seite anzuzeigen.
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Ihr Bildschirm ist zu klein, um den Inhalt dieser Seite anzuzeigen. Möglicherweise müssen Sie die Auflösung Ihres Systems erhöhen, um diese Seite anzuzeigen.
 your screen width is too small to display the content of this page. please increase your system's resolution.: Ihr Bildschirm ist zu klein, um den Inhalt dieser Seite anzuzeigen. Bitte erhöhen Sie die Auflösung Ihres Systems.
