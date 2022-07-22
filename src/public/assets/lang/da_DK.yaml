@@ -13,10 +13,10 @@ discord:
 reddit:
 legal: Juridisk
 license: Licens
-eula: EULA
+eula:
 history of incidents: Hændelseshistorik
 privacy and security: Privatliv og Sikkerhed
-inspired by: Inspireret af
+inspired by [%a][%b]avdan[%b][%a]: Inspireret af [%a][%b]Avdan[%b][%a]
 avdanos contributors: AvdanOS bidragydere
 # alert.tsx
 is still in development.: Stadig under udvikling
@@ -98,13 +98,13 @@ yes, i understand: Ja, jeg forstår
 use torrent download: Brug torrent-hentning
 continue: Forsæt
 # in testing
-having trouble? click [%s]here[%s] to get help!: Har du problemer? Klik [%s] her [%s] for hjælp!
+having trouble? click [%a]here[%a] to get help!: Har du problemer? Klik [%a] her [%a] for hjælp!
 
 # support.tsx
 avdanos support: AvdanOS hjælp
 contact us on social media: Kontakt os på sociale medier
 visit: Besøg
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
 avdanos support articles: AvdanOS hjælpe-artikler
@@ -123,12 +123,11 @@ open manual: Åben manual
 manual is not available yet: Denne manual er ikke tilgængelig endnu
 i'm a developer: Jeg er udvikler
 open documentation: Åben dokumentation
-doc is not available yet: Docs er ikke tilgængelig endnu
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Fuld skærm
-this demo is open source on [%s]github[%s].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: Side ikke fundet
