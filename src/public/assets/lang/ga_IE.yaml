@@ -16,7 +16,7 @@ license: Ceadúnas
 eula:
 history of incidents: Stair na dTeagmhas
 privacy and security: Príobháideacht agus Slándáil
-inspired by: Spreagtha ag
+inspired by [%a][%b]avdan[%b][%a]: Spreagtha ag [%a][%b]Avdan[%b][%a]
 avdanos contributors: AvdanOS Rannpháirtithe
 # alert.tsx
 is still in development.: Fós i Bhforbairt.
@@ -98,13 +98,13 @@ yes, i understand: Sea, Tuigim
 use torrent download: Bain Úsáid as Torrent Íosluchtaigh
 continue: Leanúint ar Aghaidh
 # in testing
-having trouble? click [%s]here[%s] to get help!: Ag Trioblóid? Cliceáil [%s]Anseo[%s] Chun Cabhair a Fháil!
+having trouble? click [%a]here[%a] to get help!: Ag Trioblóid? Cliceáil [%a]Anseo[%a] Chun Cabhair a Fháil!
 
 # support.tsx
 avdanos support: Tacaíocht AvdanOS
 contact us on social media: Déan Teagmháil Linn ar na Meáin Shóisialta
 visit: Cuairt
-want to suggest anything to us? we always want to listen to the community. present your ideas [%s]here[%s].: Ag Iarraidh rud ar bith a Mholadh Dúinn? Ba Mhaith Linn i gCónaí Éisteacht Leis an bpobal. Cuir do Chuid Smaointe i Láthair [%s]Anseo[%s].
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Ag Iarraidh rud ar bith a Mholadh Dúinn? Ba Mhaith Linn i gCónaí Éisteacht Leis an bpobal. Cuir do Chuid Smaointe i Láthair [%a]Anseo[%a].
 
 # support-beta.tsx
 avdanos support articles: Earraí Tacaíochta AvdanOS
@@ -123,12 +123,11 @@ open manual: Lámhleabhar Oscailte
 manual is not available yet: Níl an Lámhleabhar ar Fáil fós
 i'm a developer: Is Forbróir Mé
 open documentation: Doiciméadú Oscailte
-doc is not available yet: Níl an Doiciméadú ar Fáil go Fóill
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Scáileán Iomlán
-this demo is open source on [%s]github[%s].:
+this demo is open source on [%a]github[%a].:
 
 # 404.tsx
 page not found: Ní bhFuarthas an Leathanach

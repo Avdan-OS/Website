@@ -1,4 +1,4 @@
-import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts, Link } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import { TranslatableText } from '@/components/translation/TranslatableText';
@@ -84,20 +84,11 @@ const Docs = () => {
                 <TranslatableText>I'm a Developer</TranslatableText>
               </Tag>
               <Spacer />
-              <Button
-                type="success"
-                shadow
-                margin="10px"
-                onClick={() => {
-                  setToast({
-                    text: <TranslatableText>Doc is not available yet</TranslatableText>,
-                    delay: 5000,
-                    type: 'error'
-                  });
-                }}
-              >
-                <TranslatableText>Open documentation</TranslatableText>
-              </Button>
+              <Link href="https://docs.avdanos.com/">
+                <Button type="success" shadow margin="10px">
+                  <TranslatableText>Open documentation</TranslatableText>
+                </Button>
+              </Link>
               <Spacer h={3} />
             </Card>
           </Grid>
