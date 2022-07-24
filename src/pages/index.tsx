@@ -34,9 +34,9 @@ const index = () => {
                 </Button>
               </NextLink>
             )}
-            <NextLink href="/downloads">
+            <NextLink href="/features-beta">
               <Button shadow type="success" margin="10px">
-                <TranslatableText>Download Now!</TranslatableText>
+                <TranslatableText>Check out AvdanOS!</TranslatableText>
               </Button>
             </NextLink>
           </div>
