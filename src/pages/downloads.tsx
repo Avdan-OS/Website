@@ -3,8 +3,8 @@ import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal,
 import dynamicWidth from '@/lib/dynamic-width';
 import NextLink from 'next/link';
 import { useState } from 'react';
-import { Note } from '@geist-ui/core';
 import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Note } from '@geist-ui/core';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -97,13 +97,14 @@ const Download = () => {
         <Spacer h={3} />
         <Text className="header" h1>
           <TranslatableText>Give your PC an Upgrade.</TranslatableText>
-        </Text>
+              </Text>
               <Spacer />
               <Note style={{ display: 'inline-block' }} type="warning" label="NOTE">
-                  <TranslatableText>Download is currently unavailable but you can</TranslatableText> <a href="https://github.com/avdan-os">check out</a> the{' '}
-                      <strong>demo</strong>.
+                  <TranslatableText>Download is currently unavailable but you can</TranslatableText> <a href="/demo">check out</a> the{' '}
+                  <strong>demo</strong>.
               </Note>
               <Spacer h={0.4} />
+        <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           {useMobileMode ? null : (
             <Grid xs={gridWidth}>
@@ -148,11 +149,11 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">
-                              <TranslatableText>For most people</TranslatableText>
+                <TranslatableText>For most people</TranslatableText>
               </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
-               <Button
+              <Button
                 type="success"
                 shadow
                 onClick={() => {
@@ -160,7 +161,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                <TranslatableText>Download </TranslatableText>
+                <TranslatableText>Download</TranslatableText>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -194,9 +195,7 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            <TranslatableText injKey="download.tsx/having-trouble">
-              Having trouble? Click [%s]here[%s] to get help!
-            </TranslatableText>
+            <TranslatableText link="/support">Having trouble? Click [%a]here[%a] to get help!</TranslatableText>
           </Card>
         </div>
       </div>
