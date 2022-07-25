@@ -1,12 +1,16 @@
-import { Dispatch, useState, ReactElement, useEffect } from 'react';
+import { Dispatch, useState, ReactElement, useEffect, CSSProperties } from 'react';
 import YAML from 'yaml';
-import NextLink from 'next/link';
-import { Link } from '@geist-ui/core';
+import styleInjector from './StyleInjector';
 
 let storeLocale: (locale: string) => void = (locale) => {
   if (window && window.localStorage) window.localStorage.setItem('locale', locale);
 };
-let instanceList: Array<{ text: string; dispatch: Dispatch<string | JSX.Element>; link?: string }> = [];
+let instanceList: Array<{
+  text: string;
+  dispatch: Dispatch<string | JSX.Element>;
+  link?: string;
+  linkStyle?: CSSProperties;
+}> = [];
 let importedLocale: Map<string, string> = null;
 
 /**
@@ -18,14 +22,20 @@ let importedLocale: Map<string, string> = null;
  * <TranslatableText>This text can be automatically translated</TranslatableText>
  * ```
  */
-const TranslatableText = ({ children, link }: { children: string; link?: string }) => {
+const TranslatableText = ({
+  children,
+  link,
+  linkStyle
+}: {
+  children: string;
+  link?: string;
+  linkStyle?: CSSProperties;
+}) => {
   let fetchedTranslation = importedLocale?.get(children.toLowerCase());
-  let initialState: string | JSX.Element = link
-    ? injectLink(fetchedTranslation || children, link)
-    : fetchedTranslation || children;
+  let initialState: string | JSX.Element = styleInjector(fetchedTranslation || children, link, linkStyle);
   const [translatedText, setTranslatedText] = useState<string | JSX.Element>(initialState);
   useEffect(() => {
-    let item = { text: children, link: link, dispatch: setTranslatedText };
+    let item = { text: children, link: link, linkStyle: linkStyle, dispatch: setTranslatedText };
     instanceList.push(item);
     return () => {
       let index = instanceList.indexOf(item);
@@ -33,29 +43,6 @@ const TranslatableText = ({ children, link }: { children: string; link?: string 
     };
   }, []);
   return translatedText as unknown as ReactElement;
-};
-
-const injectLink = (text: string, link: string) => {
-  let splittedText = text.split('[%s]');
-  if (link.startsWith('/')) {
-    return (
-      <>
-        {splittedText[0]}
-        <NextLink href={link}>
-          <Link block>{splittedText[1]}</Link>
-        </NextLink>
-        {splittedText[2]}
-      </>
-    );
-  } else {
-    return (
-      <>
-        {splittedText[0]}
-        <a href={link}>{splittedText[1]}</a>
-        {splittedText[2]}
-      </>
-    );
-  }
 };
 
 /**
@@ -70,9 +57,7 @@ const setLocale: (locale: string) => void = async (locale) => {
   if (!importedLocale) return console.warn('Importing localisation failed.');
   instanceList.forEach((instance) => {
     let translatedText = importedLocale.get(instance.text.toLowerCase());
-    instance.dispatch(
-      instance.link ? injectLink(translatedText || instance.text, instance.link) : translatedText || instance.text
-    );
+    instance.dispatch(styleInjector(translatedText || instance.text, instance.link, instance.linkStyle));
   });
 };
 
