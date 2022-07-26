@@ -100,7 +100,7 @@ const Download = () => {
               </Text>
               <Spacer />
               <Note style={{ display: 'inline-block' }} type="warning" label="NOTE">
-               <TranslatableText>The download is not available yet, but you can always</TranslatableText> <a href="/demo"><strong>check out</strong></a> the demo.
+                  <TranslatableText link="/demo">The download is not available yet, but you can always [%a]check out[%a] the demo.</TranslatableText>
               </Note>
               <Spacer h={0.4} />
         <Spacer />
