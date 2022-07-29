@@ -11,6 +11,10 @@ import '../styles/components/footer.css';
 import '../styles/features-beta.css';
 import '../styles/index.css';
 
+import '../styles/animations.css';
+import '../styles/slideshow_styles.css';
+// Sadly I couldn't find other solutions without importing component stylings here...
+
 const App = ({ Component, pageProps }: AppProps) => {
   const [themeType, setThemeType] = useState<ThemeType>('dark');
   useEffect(() => {
