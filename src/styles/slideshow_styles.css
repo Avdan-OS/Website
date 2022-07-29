@@ -1,60 +1,60 @@
 .slideshow_alt {
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 800px;
+margin: 0 auto;
+overflow: hidden;
+max-width: 800px;
 }
 
 .slideshow_slider_alt {
-    white-space: nowrap;
-    width: min(90vw, 600px);
-    transition: ease 1s;
-    -moz-transition: ease 1s;
-    -webkit-transition: ease 1s;
+  white-space: nowrap;
+  width: min(90vw, 600px);
+  transition: ease 1s;
+  -moz-transition: ease 1s;
+  -webkit-transition: ease 1s;
 }
 
 .slide_alt {
-    display: inline-block;
-    height: 350px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: inline-block;
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
 /* Dots */
 
 .slideshow_dots {
-    text-align: center;
+  text-align: center;
 }
 
 .slideshow_dot {
-    background-color: #ccc;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 0 15px;
-    border-radius: 50%;
-    transition: ease 1s;
-    -moz-transition: ease 1s;
-    -webkit-transition: ease 1s;
+  background-color: #ccc;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 15px;
+  border-radius: 50%;
+  transition: ease 1s;
+  -moz-transition: ease 1s;
+  -webkit-transition: ease 1s;
 }
 
 .slideshow_dot.active {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 
 /* Text explaining each slide animation */
 
 .breathe_5s {
-    animation: text-breathe 5s infinite;
+  animation: text-breathe 5s infinite;
 }
 
 @keyframes text-breathe {
-    0%, 100% {
-        opacity: 0;
-    }
-    10%, 90% {
-        opacity: 1;
-    }
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
 }
