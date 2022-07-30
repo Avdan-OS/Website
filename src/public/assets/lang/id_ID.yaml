@@ -127,10 +127,9 @@ open documentation: Buka dokumentasi
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Layar penuh
-this demo is open source on [%a]github[%a].: Demo ini adalah sumber terbuka dari  [%a]github[%a].
+this demo is open source on [%a]github[%a].: Demo ini adalah sumber terbuka dari  [%a]GitHub[%a].
 
 # 404.tsx
-
 page not found: Halaman tidak ditemukan
 this page does not exist.: Halaman ini tidak ada.
 join in and help us out developing an open-source operating system.: Bergabunglah dan bantu kami mengembangkan sistem operasi sumber terbuka. # don't translate this yet (technical issue)
