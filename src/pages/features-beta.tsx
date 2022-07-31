@@ -121,13 +121,13 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={true}
             title="Overpowered Dock"
-            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
+            description="Your dock can do more than ever. It's your ultimate manager to get you organised."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
             isCardOnRight={false}
             title="New way to manage files"
-            description="This file manager keeps you organized and productive. Find your files the instant you need it."
+            description="This file manager keeps you organised and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
@@ -139,7 +139,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="More than multitask"
-            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
+            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard
