@@ -86,11 +86,16 @@ const Features = () => {
               The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag.
               20fps 720p vp9 webm g=1 is recommended when serving the video over cdn.
             */}
-            <source type="video/webm" src="assets/clips/features.webm" height="100%" width="100%" />
+            <source
+              type="video/webm"
+              src={`assets/clips/features${theme.type === 'light' ? '_light' : ''}.webm`}
+              height="100%"
+              width="100%"
+            />
           </video>
         </div>
         <div className="slide">
-          <Card className="slide__card text-white slide__card-left">
+          <Card className="slide__card slide__card-left" color={theme.type === 'light' ? 'black' : 'white'}>
             <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">
