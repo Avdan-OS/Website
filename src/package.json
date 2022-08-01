@@ -19,7 +19,7 @@
   "dependencies": {
     "@geist-ui/core": "^2.3.4",
     "@geist-ui/icons": "^1.0.2",
-    "@mdx-js/loader": "^2.1.1",
+    "@mdx-js/loader": "^2.1.2",
     "@mdx-js/react": "^1.6.18",
     "@next/mdx": "^9.5.5",
     "bootstrap": "^5.1.3",
