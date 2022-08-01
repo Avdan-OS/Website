@@ -86,11 +86,16 @@ const Features = () => {
               The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag.
               20fps 720p vp9 webm g=1 is recommended when serving the video over cdn.
             */}
-            <source type="video/webm" src="assets/clips/features.webm" height="100%" width="100%" />
+            <source
+              type="video/webm"
+              src={`assets/clips/features${theme.type === 'light' ? '_light' : ''}.webm`}
+              height="100%"
+              width="100%"
+            />
           </video>
         </div>
         <div className="slide">
-          <Card className="slide__card text-white slide__card-left">
+          <Card className="slide__card slide__card-left" color={theme.type === 'light' ? 'black' : 'white'}>
             <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
             <NextLink href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">
@@ -121,13 +126,13 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={true}
             title="Overpowered Dock"
-            description="Your dock can do more than ever. It's your ultimate manager to get you organized."
+            description="Your dock can do more than ever. It's your ultimate manager to get you organised."
           />
           <Spacer h="800px" />
           <FeaturesBetaCard
             isCardOnRight={false}
             title="New way to manage files"
-            description="This file manager keeps you organized and productive. Find your files the instant you need it."
+            description="This file manager keeps you organised and productive. Find your files the instant you need it."
           />
           <Spacer h="1300px" />
           <FeaturesBetaCard
@@ -139,7 +144,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="More than multitask"
-            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organized multitasking."
+            description="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
           />
           <Spacer h="600px" />
           <FeaturesBetaCard

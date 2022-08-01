@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@geist-ui/core": "^2.3.4",
-    "@geist-ui/icons": "^1.0.1",
+    "@geist-ui/icons": "^1.0.2",
     "@mdx-js/loader": "^2.1.1",
     "@mdx-js/react": "^1.6.18",
     "@next/mdx": "^9.5.5",
@@ -30,13 +30,12 @@
     "react-feather": "^2.0.10",
     "react-icons": "^4.4.0",
     "react-markdown": "^8.0.3",
-    "styled-jsx": "^5.0.0",
+    "styled-jsx": "^5.0.2",
     "yaml": "^2.1.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
+    "@types/node": "^18.6.2",
     "@types/react": "^17.0.5",
-    "prettier": "2.7.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.7.4"
   }
 }
