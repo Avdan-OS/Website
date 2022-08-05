@@ -26,7 +26,7 @@
     "next": "^12.2.3",
     "prettier": "^2.0.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.1.2",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-icons": "^4.4.0",
