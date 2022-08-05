@@ -21,7 +21,7 @@
     "@geist-ui/icons": "^1.0.2",
     "@mdx-js/loader": "^2.1.1",
     "@mdx-js/react": "^2.1.2",
-    "@next/mdx": "^9.5.5",
+    "@next/mdx": "^12.2.4",
     "bootstrap": "^5.2.0",
     "next": "^12.2.3",
     "prettier": "^2.0.2",
