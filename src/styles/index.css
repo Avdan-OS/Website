@@ -68,11 +68,11 @@
 #faq {
   margin: 2rem;
 }
-.Questions {
+.questions {
   display: block !important;
   padding: 1em !important;
 }
-.CategoryName {
+.categoryName {
   display: flex;
   justify-content: center;
   font-size: 2em;
@@ -83,30 +83,30 @@
 }
 
 @media (min-width: 720px) {
-  .CategoryName {
+  .categoryName {
     font-size: 4em;
     margin: 2em;
   }
 }
 
 @media (min-width: 1440px) {
-  .CategoryName {
+  .categoryName {
     font-size: 6em;
     margin: 2em;
   }
-  .Questions {
+  .questions {
     width: 80em !important;
     padding: 2em !important;
     margin-left: 6em !important;
   }
-  .Category {
+  .category {
     margin-bottom: 7em !important;
   }
   .title {
     font-size: 2em;
     padding: 0.5em 0 0.5em 0;
   }
-  .subtitle {
+  .subTitle {
     font-size: 1.4em;
   }
   .container {
@@ -115,23 +115,23 @@
 }
 
 @media (min-width: 2560px) {
-  .CategoryName {
+  .categoryName {
     font-size: 10em;
     margin: 2em;
   }
-  .Questions {
+  .questions {
     width: 160em !important;
     padding: 2em !important;
     margin-left: 6em !important;
   }
-  .Category {
+  .category {
     margin-bottom: 7em !important;
   }
   .title {
     font-size: 2.8em;
     padding: 0.5em 0 0.5em 0;
   }
-  .subtitle {
+  .subTitle {
     font-size: 2.5em;
   }
   .container {
