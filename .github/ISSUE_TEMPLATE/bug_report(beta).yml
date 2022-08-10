@@ -1,6 +1,6 @@
-name: "Website Bug Report"
+name: "Bug Report (Beta)"
 title: "[Bug] - Title"
-description: Report software bugs on the website.
+description: Report bugs on the website (using the new form GitHub feature).
 labels: ["bug"]
 body:
   - type: markdown
