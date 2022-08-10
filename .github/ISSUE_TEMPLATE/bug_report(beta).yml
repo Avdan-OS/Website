@@ -58,10 +58,13 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: Explain what went wrong
+      label: Please explain what went wrong.
+      description: Please include as much information as possible.
+    validations:
+      required: true
   - type: textarea
     attributes:
-      label: What pages does this issue affect?
+      label: Please list pages that this issue is related to.
   - type: dropdown
     attributes:
       label: What do you think could be the potential cause of the issue?
@@ -88,3 +91,7 @@ body:
       options:
         - label: Yes, I have search for this issue on this repository and none were found
           required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for filling this bug report, and we will try to respond as soon as possible.
