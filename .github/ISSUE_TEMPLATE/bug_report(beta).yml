@@ -30,8 +30,7 @@ body:
   - type: checkboxes
     id: browser
     attributes:
-      label: Tested on
-      description: Please select the browsers that you have tested the issue on.
+      label: Please select the browsers that you have tested the issue on.
       options:
         - label: Safari, any iOS browser (Webkit)
         - label: Firefox, Tor (Gecko+Quantum)
@@ -46,11 +45,9 @@ body:
   - type: textarea
     attributes:
       label: What page(s) does this issue affect?
-    validations:
-      required: true
   - type: dropdown
     attributes:
-      label: What could be a potential cause of the issue?
+      label: What could be the potential cause of the issue?
       options:
         - Unknown
         - Front end (Browser compatibility)
