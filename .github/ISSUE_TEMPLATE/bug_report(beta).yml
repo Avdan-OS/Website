@@ -1,7 +1,8 @@
 name: "Bug Report (Beta)"
 title: "[Bug] - Title"
-description: Report bugs on the website (using the new form GitHub feature).
+description: Report bugs on the website (using the new GitHub form issue).
 labels: ["bug"]
+assignees: ["Froxcey", "AZProductions"]
 body:
   - type: markdown
     attributes:
@@ -12,7 +13,7 @@ body:
         ↩ We don't provide development help here. Please search for help on Google, Stack Overflow, or our [Discord server](https://discord.gg/avdanos).
 
         **Do you have a question?**
-        ↩ Use the _community_ tab to ask questions.
+        ↩ Please ask it on our [Discord server](https://discord.gg/avdanos)
 
         **Does your issue already exist?**
         ↩ Please search for existing issue before making a new one.
@@ -42,6 +43,18 @@ body:
       options:
         - label: Yes, my browser is maintained and up to date
           required: true
+  - type: checkboxes
+    id: os
+    attributes:
+      label: Please select the operating system that you have tested the issue on.
+      options:
+        - label: Linux based (Debian, Ubuntu, Arch, Fedora etc.)
+        - label: MacOS
+        - label: Windows
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Please put your hardware/model information here.
   - type: textarea
     attributes:
       label: What page(s) does this issue affect?
