@@ -31,7 +31,7 @@ body:
   - type: checkboxes
     id: browser
     attributes:
-      label: Please select the browsers that you have tested the issue on.
+      label: Please select the browsers that you have tested this issue on.
       options:
         - label: Safari, any iOS browser (Webkit)
         - label: Firefox, Tor (Gecko+Quantum)
@@ -39,14 +39,14 @@ body:
   - type: checkboxes
     id: latest
     attributes:
-      label: Please make sure your browser is maintained and up to date
+      label: Please make sure your browsers is maintained and up to date
       options:
         - label: Yes, my browser is maintained and up to date
           required: true
   - type: checkboxes
     id: os
     attributes:
-      label: Please select the operating system that you have tested the issue on.
+      label: Please select the operating system that you have tested this issue on.
       options:
         - label: Linux based (Debian, Ubuntu, Arch, Fedora etc.)
         - label: MacOS
@@ -56,11 +56,15 @@ body:
     attributes:
       label: Please put your hardware/model information here.
   - type: textarea
+    id: details
     attributes:
-      label: What page(s) does this issue affect?
+      label: Explain what went wrong
+  - type: textarea
+    attributes:
+      label: What pages does this issue affect?
   - type: dropdown
     attributes:
-      label: What could be the potential cause of the issue?
+      label: What do you think could be the potential cause of the issue?
       options:
         - Unknown
         - Front end (Browser compatibility)
@@ -68,18 +72,10 @@ body:
         - System error (VPS problem)
         - Other
   - type: textarea
-    id: details
-    attributes:
-      label: Explain what went wrong
-  - type: textarea
-    id: tested
-    attributes:
-      label: Did you test this? If so, how?
-  - type: textarea
     id: references
     attributes:
       label: Provide us links that can help us fix this issue, if you have any.
-      description: Ex. any release notes, caniuse, bugs, pull requests, or MDN pages
+      description: Ex. Any release notes, caniuse, bugs, pull requests, or MDN pages
   - type: textarea
     id: more-info
     attributes:
