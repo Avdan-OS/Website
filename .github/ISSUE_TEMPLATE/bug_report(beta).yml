@@ -9,22 +9,22 @@ body:
         ### Before you start
 
         **Are you looking for development help?**
-        ↩ Please note that we cannot provide assistance on web development. We recommend asking around on a dedicated help forum like StackOverflow.
+        ↩ We don't provide development help here. Please search for help on Google, Stack Overflow, or our [Discord server](https://discord.gg/avdanos).
 
-        **Is your issue about content on an MDN page besides the compatibility table?**
-        ↩ Use the _Report a problem with this content on GitHub_ link at the bottom of the page.
+        **Do you have a question?**
+        ↩ Use the _community_ tab to ask questions.
+
+        **Does your issue already exist?**
+        ↩ Please search for existing issue before making a new one.
+
+        **Is your issue about feature request or grammar/translation?**
+        ↩ Submit a different type of issue on the _issue_ tab.
+
+        **Is your issue about another repository?**
+        ↩ Please only submit issues related to the website here. Issues related to the documentation should be submitted on the [docsite repositoy](https://github.com/Avdan-OS/Docsite).
 
         **Need help with a browser?**
         🙋 To get help with [Firefox](https://support.mozilla.org/en-US/kb/file-bug-report-or-feature-request-mozilla), [Chrome](https://support.google.com/chrome/answer/95315?hl=en-GB&ref_topic=7439544), [Safari](https://www.apple.com/feedback/safari.html), or another browser, check the browser's support site.
-
-        ### Issue etiquette
-
-        When opening an issue, please:
-        - Follow the project's [Code of Conduct](https://github.com/mdn/browser-compat-data/blob/main/CODE_OF_CONDUCT.md) as well as the [GitHub Community Guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines). Failure to comply may result in exclusion from MDN Web Docs and/or GitHub.
-        - Check for an [existing issue](https://github.com/mdn/browser-compat-data/issues) first. If someone else has opened an issue describing the same problem, please upvote their issue rather than creating another one.
-        - Keep issues relevant to the project. Irrelevant issues will be automatically closed and marked as spam, and repeated offenses may result in exclusion from MDN Web Docs.
-        - Provide as much detail as possible. The more detail you are able to provide, the better!
-        - Write issues primarily in English. While translation tools are available, we will be able to provide better assistance with pre-translated content. You are more than welcome to include a version of the issue body in your preferred language alongside the English version.
 
         ---
   - type: checkboxes
@@ -33,14 +33,13 @@ body:
       label: Tested on
       description: Please select the browsers that you have tested the issue on.
       options:
-        - label: Safari / any iOS browser (Webkit)
-        - label: Firefox/Tor (Gecko+Quantum)
+        - label: Safari, any iOS browser (Webkit)
+        - label: Firefox, Tor (Gecko+Quantum)
         - label: Chrome, Brave, Edge, Opera (Chromium)
   - type: checkboxes
     id: latest
     attributes:
-      label: Latest Version
-      description: Please make sure your browser is maintained and up to date before submitting any issue.
+      label: Please make sure your browser is maintained and up to date
       options:
         - label: Yes, my browser is maintained and up to date
           required: true
@@ -69,8 +68,8 @@ body:
   - type: textarea
     id: references
     attributes:
-      label: Can you link to any release notes, caniuse, bugs, pull requests, or MDN pages related to this?
-      description: Link to information that helps us fix this issue.
+      label: Provide us links that can help us fix this issue, if you have any.
+      description: Ex. any release notes, caniuse, bugs, pull requests, or MDN pages
   - type: textarea
     id: more-info
     attributes:
@@ -79,8 +78,7 @@ body:
   - type: checkboxes
     id: duplicate
     attributes:
-      label: Not duplicated
-      description: Please make sure this issue is not a duplicate of an existing issue.
+      label: Please make sure this issue is not a duplicate of an existing issue.
       options:
         - label: Yes, I have search for this issue on this repository and none were found
           required: true
