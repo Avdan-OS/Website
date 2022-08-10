@@ -19,12 +19,12 @@
   "dependencies": {
     "@geist-ui/core": "^2.3.8",
     "@geist-ui/icons": "^1.0.2",
-    "@mdx-js/loader": "^2.1.1",
+    "@mdx-js/loader": "^2.1.2",
     "@mdx-js/react": "^2.1.2",
     "@next/mdx": "^12.2.4",
     "bootstrap": "^5.2.0",
-    "next": "^12.2.3",
-    "prettier": "^2.0.2",
+    "next": "^12.2.4",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
@@ -34,8 +34,8 @@
     "yaml": "^2.1.1"
   },
   "devDependencies": {
-    "@types/node": "^18.6.4",
-    "@types/react": "^18.0.15",
+    "@types/node": "^18.6.5",
+    "@types/react": "^18.0.17",
     "typescript": "^4.7.4"
   }
 }
