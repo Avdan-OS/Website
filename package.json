@@ -1,0 +1,41 @@
+{
+  "name": "avdanos",
+  "description": "The desktop you know and love.",
+  "version": "0.3.0",
+  "author": "AvdanOS",
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avdan-OS/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Avdan-OS/website/issues"
+  },
+  "dependencies": {
+    "@geist-ui/core": "^2.3.8",
+    "@geist-ui/icons": "^1.0.2",
+    "@mdx-js/loader": "^2.1.2",
+    "@mdx-js/react": "^2.1.2",
+    "@next/mdx": "^12.2.4",
+    "bootstrap": "^5.2.0",
+    "next": "^12.2.4",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-icons": "^4.4.0",
+    "styled-jsx": "^5.0.4",
+    "yaml": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.1",
+    "@types/react": "^18.0.17",
+    "typescript": "^4.7.4"
+  }
+}
