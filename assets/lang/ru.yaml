@@ -34,6 +34,13 @@ demo: Демо
 your pc but even better!: Ваш ПК, но ещё лучше!
 try in your browser: Попробовать в браузере
 download now!: Скачать сейчас
+# miniFeaures.tsx
+workflow redefined:
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
+check what avdanos offers to you.:
+see here:
+open projects with open community:
+interested? give it a try!:
 # discover.tsx
 open source on github: Опенсурс в GitHub
 browse all repos: Смотреть все репозитории
@@ -84,7 +91,7 @@ give your pc an upgrade.: Обнови свой ПК.
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
 for most people: Для большинства
-for pi, pine, and mac:  Для Raspberry Pi, Pine, и Mac
+for pi, pine, and mac: Для Raspberry Pi, Pine, и Mac
 download: Скачать
 web preview: Предпросмотр на сайте
 you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Ты идёшь смотреть демку, которая не может показать всю силу этой ОС. Мы рекомендуем попробовать LiveCD для полного наслаждения этой системой.
@@ -95,7 +102,7 @@ before you download: Прежде чем скачать
 please read this before you continue: Пожалуйста, прочти это перед скачиванием
 below is the shasum of the download. you can use it to check download's integrity: Ниже находится контрольная сумма файла. Её можно использовать, чтобы понять повредился ли файл во время скачивания.
 yes, i understand: Угу, я понял
-use torrent download: Скачать через торрент 
+use torrent download: Скачать через торрент
 continue: Продолжить
 # in testing
 having trouble? click [%a]here[%a] to get help!: Что-то пошло не так? Тыкай [%a]сюда[%a] чтобы получить помощь!
@@ -140,6 +147,6 @@ increase your window width: Сделай окно шире.
 your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Окно браузера слишком мелкое чтобы показать эту страницу. Увеличь её.
 rotate your device: Поверни своё устройство
 your screen is too small to display this page. please rotate to landscape view or use desktop.: Твой экран слишком мелкий чтобы показать эту страницу. поверни его на горизонтальную стороную или юзай ПК
-this page is incompatible: Страница несовместима 
+this page is incompatible: Страница несовместима
 your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Твой экран слишком мелкий чтобы показать эту страницу. Возможно, тебе потребуется увеличить разрешение экрана или взять монитор побольше.
 your screen width is too small to display the content of this page. please increase your system's resolution.: Твой экран слишком мелкий чтобы показать эту страницу. Пожалуйста, увеличь разрешение системы.
