@@ -16,11 +16,11 @@ license: Лицении
 eula: Условия использования
 history of incidents: История инцидентов
 privacy and security: Приватность
-inspired by [%a][%b]avdan[%b][%a]: Вдохновлено от
+inspired by [%a][%b]avdan[%b][%a]: Вдохновлено [%a][%b]Avdan[%b][%a]
 avdanos contributors: Контрибутеры
 # alert.tsx
 is still in development.: Всё ещё в разработке
-join our discord!: Заходи к нам в дискорд
+join our discord!: Заходи к нам в Discord!
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
@@ -31,88 +31,95 @@ docs: Доки
 demo: Демо
 
 # index.tsx
-your pc but even better!: Твой ПК, но ещё лучше
-try in your browser: Посмотри на это в браузере
+your pc but even better!: Ваш ПК, но ещё лучше!
+try in your browser: Попробовать в браузере
 download now!: Скачать сейчас
+# miniFeaures.tsx
+workflow redefined:
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
+check what avdanos offers to you.:
+see here:
+open projects with open community:
+interested? give it a try!:
 # discover.tsx
 open source on github: Опенсурс в GitHub
 browse all repos: Смотреть все репозитории
 # discoverCard.tsx
-avdanos: Avdan OS
-meet avdanos, refining the way we think about operating systems.: Посмотрите на Avdan OS, который меняет представнение об операционках
+avdanos: AvdanOS
+meet avdanos, refining the way we think about operating systems.: Встречайте AvdanOS - дистрибутив, который меняет представнение об операционках.
 official website: Оффициальный сайт
-all the new updates and information about avdanos and support.: Все обновления и новости про Avdan OS и поддержку
+all the new updates and information about avdanos and support.: Все обновления и новости про AvdanOS и поддержку
 desktop environment: Среда десктопа
-meet nadva, the official desktop environment for avdanos.: nadva - это оффициальная среда десктопа для Avdan OS
-a discord bot made for the avdanos community discord server.: Дискорд бот, созданый для комьюнити сервера
+meet nadva, the official desktop environment for avdanos.: Представляем nadva - оффициальная среда десктопа для AvdanOS.
+a discord bot made for the avdanos community discord server.: Дискорд бот, созданный для комьюнити сервера.
 
 # features-beta.tsx / features.tsx
-avdan's concept, we're making it real!: мы делаем концепт Avdan'a реальным
+avdan's concept, we're making it real!: Мы делаем концепт Avdan'a реальным.
 assets are loading, please wait: Подожди пока всякие штуковины грузятся
-scroll down to see what we've got here: Скроль вниз и ты увидишь что мы приготовили
-this concept video is made by avdan: Этот видос-концепт сделан Avdan'ом
+scroll down to see what we've got here: Листай вниз чтобы увидеть что мы приготовили
+this concept video is made by avdan: Этот концепт сделан Avdan'ом
 watch on youtube: Смотреть на ютубе
-familiar dock, ultimate form: Знакомый таскбар теперь в другом виде
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Все знают о таскбаре, мы его переделали и теперь у него больше фичей чем когда либо
+familiar dock, ultimate form: Знакомая панель задач, теперь в другом виде
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Все знают о панели задач. Мы её переделали и теперь у неё больше фич чем когда либо.
 brand new launch menu: Новое меню
 with everything in one place, do anything anywhere at anytime.: Всё в одном месте, делай всё что угодно в любое время
 easily apply layout: Простое изменение расположения кнопок
-with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: С предустановками от твоих программ можно легко работать с идеальным расположением кнопок. Этого мало? Изменяй всё что угодно в настройках
-overpowered dock: Имбовый таскбар
-your dock can do more than ever. it's your ultimate manager to get you organised.: Таскбар может иметь больше фичей чем когда либо, он поможет тебе быть более организованным
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: С предустановками от твоих программ можно легко работать с идеальным расположением кнопок. Этого мало? Изменяй всё что угодно в настройках.
+overpowered dock: Имбовая док-панель
+your dock can do more than ever. it's your ultimate manager to get you organised.: Док-панель может иметь больше фичей чем когда либо. Она поможет тебе быть более организованным.
 new way to manage files: Новый способ управления файлами
 this file manager keeps you organised and productive. find your files the instant you need it.: Этот проводник дайт тебе возможность оставаться продуктивным. Ты можешь достать любой файл как только он тебе понадобится
-drag & drop made easy: Таскать файлы стало проще
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Перетаскивание файлов - это самый простой способ перемещения, теперь он более интуитивный и лёгкий
+drag & drop made easy: Перетаскивать файлы стало проще
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Перетаскивание файлов - это самый простой способ перемещения. Мы его сделали более интуитивным и лёгким.
 more than multitask: Больше, чем просто многозадачность
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Надо сделать кучу заданий одновременно? Мы сделали многозадачность более организованной
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Надо сделать кучу заданий одновременно? Мы сделали многозадачность более организованной.
 tabos!: Вкладки!
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Браузеры показали насколько вкладки полезны, почему бы не использовать их чтобы сделать ОС лучше?
 new context menu: Новое контекстное меню
-context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Контекстное меню не менялось десятилетиями, мы устали от огромного столба из кнопок и теперь это круг. А если хочется привычную классику, то это можно поставить это на место в настройках
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Контекстное меню не менялось десятилетиями. Мы устали от огромного столба из кнопок и теперь это круг. А если хочется привычную классику, то это можно поставить это на место в настройках.
 your os, your preference: Твоя ОС - твои предпочтения
-we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Мы дайм тебе контроль над всей системой, в том числе и над темой, а если наши не нравятся, то можно найти больше
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Мы даем тебе контроль над всей системой, в том числе и над темой. И если наши не нравятся, то можно найти больше тем.
 day & night: День и ночь
-let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Разные темы могут показать какое сейчас время, а ты можешь поменять их местами, такое врятли будет на винде или маке
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Позволь разным темам показать какое сейчас время. Ты также можешь поменять их местами. Можно ли это провернуть на Windows или macOS?
 under development: Всё ещё в разработке
-this project wouldn't be possible without the community's contributions. join us and help!: Будет сложно доделать это тебя, присоединяйся к нам!
+this project wouldn't be possible without the community's contributions. join us and help!: Будет сложно доделать это без тебя, присоединяйся к нам!
 open demo: Открыть демо
 
 # download.tsx
-this download is not available yet.: Скачивание ещё не доступно
-give your pc an upgrade.: Улучши свой ПК
+this download is not available yet.: Этот файл пока что нельзя скачать.
+give your pc an upgrade.: Обнови свой ПК.
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
 for most people: Для большинства
-for pi, pine, and mac: для pi, pine, и mac
+for pi, pine, and mac: Для Raspberry Pi, Pine, и Mac
 download: Скачать
 web preview: Предпросмотр на сайте
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Ты идёшь смотретьна демо, но оно не может показать всю силу этой ОС, мы рекомендуем попробовать это на лайв системе иначе ты не сможешь полностью насладится этой ОС
-live system is currently not available because the system is still under development: Лайв система всё ещё не доступна ибо ОС всё ещё не доделана
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Ты идёшь смотреть демку, которая не может показать всю силу этой ОС. Мы рекомендуем попробовать LiveCD для полного наслаждения этой системой.
+live system is currently not available because the system is still under development: LiveCD всё ещё не доступна, ибо ОС всё ещё не доделана
 yes, take me there: Да, пусти меня туда
 cancel: Отмена
 before you download: Прежде чем скачать
 please read this before you continue: Пожалуйста, прочти это перед скачиванием
-below is the shasum of the download. you can use it to check download's integrity: Ниже shasum файла, используй это чтобы понять повредился ли файл во время скачивания
-yes, i understand: Да, я понял
-use torrent download: Использовать торрент
+below is the shasum of the download. you can use it to check download's integrity: Ниже находится контрольная сумма файла. Её можно использовать, чтобы понять повредился ли файл во время скачивания.
+yes, i understand: Угу, я понял
+use torrent download: Скачать через торрент
 continue: Продолжить
 # in testing
-having trouble? click [%a]here[%a] to get help!: Что-то пошло не так? Тыкай [%a]тут[%a] и ты получишь помощь
+having trouble? click [%a]here[%a] to get help!: Что-то пошло не так? Тыкай [%a]сюда[%a] чтобы получить помощь!
 
 # support.tsx
 avdanos support: Поддержка
 contact us on social media: Свяжитесь с нами в соц. сетях
 visit: Посети
-want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Хочешь предложить что-то? Мы всегда прислушиваемся к своему комьюнити. Покажите свои идеи [%a]тут[%a]
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Хочешь предложить что-то? Мы всегда прислушиваемся к своему комьюнити. Покажи свои идеи [%a]тут[%a]
 
 # support-beta.tsx
-avdanos support articles: Артикли с поддержкой
-search support articles: Искать артикли
+avdanos support articles: Статьи с поддержкой
+search support articles: Искать статью
 ask our community: Спросить у комьюнити
 
 # betapopup.tsx
-hey look! a new testing version of this page is available!: Эй, зацени! Тут появилась новая бета-версия этой страницы
+hey look! a new testing version of this page is available!: Эй, зацени! Тут появилась новая бета-версия этой страницы.
 close: Закрыть
 check it out: Протестить
 
@@ -135,11 +142,11 @@ this page does not exist.: Этой страницы нету
 join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
 
 # widthrequirement.tsx
-width incompatibility: Ширина не совместима
-increase your window width: Сделай окно шире
-your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Окно слишком мелкое чтобы показать эту страницу. Увеличь окно браузера
-rotate your device: Поверни свой девайс
-your screen is too small to display this page. please rotate to landscape view or use desktop.: Твой экран слишком мелкий чтобы показать эту страницу, поверни его в ландшафт или юзай ПК
+width incompatibility: Ширина не совместима.
+increase your window width: Сделай окно шире.
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Окно браузера слишком мелкое чтобы показать эту страницу. Увеличь её.
+rotate your device: Поверни своё устройство
+your screen is too small to display this page. please rotate to landscape view or use desktop.: Твой экран слишком мелкий чтобы показать эту страницу. поверни его на горизонтальную стороную или юзай ПК
 this page is incompatible: Страница несовместима
-your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Твой экран слишком мелкий чтобы показать эту страницу. Возможно, ты можешь увеличить разрешение системы или взять монитор побольше
-your screen width is too small to display the content of this page. please increase your system's resolution.: Твой экран слишком мелкий чтобы показать эту страницу. Увеличь разрешение системы
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Твой экран слишком мелкий чтобы показать эту страницу. Возможно, тебе потребуется увеличить разрешение экрана или взять монитор побольше.
+your screen width is too small to display the content of this page. please increase your system's resolution.: Твой экран слишком мелкий чтобы показать эту страницу. Пожалуйста, увеличь разрешение системы.

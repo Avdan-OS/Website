@@ -34,6 +34,13 @@ demo: تجريبي
 your pc but even better!: جهاز الكمبيوتر الخاص بك ولكن أفضل
 try in your browser: حاول في متصفحك
 download now!: التحميل الان
+# miniFeaures.tsx
+workflow redefined: إعادة تعريف سير العمل
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: الوقت لا يقدر بثمن ، وليس هناك سوى القليل من الوقت. باستخدام الأدوات المناسبة ومساحة العمل الاحترافية ، تكون كل مهمة بسيطة مثل الفطيرة لأقل قدر من الوقت!
+check what avdanos offers to you.: تحقق مما يقدم لك AvdanOS.
+see here: انظر هنا
+open projects with open community: مشاريع مفتوحة مع مجتمع مفتوح
+interested? give it a try!: معجوب؟ اعطيه تجربة
 # discover.tsx
 open source on github: المصدر المفتوح على GitHub
 browse all repos: تصفح جميع المستودعات
@@ -68,7 +75,7 @@ more than multitask: أكثر من تعدد المهام
 want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: تريد القيام بالعديد من المهام في وقت واحد؟ نحن نعرفك وحصلنا عليك. إنها الآن ليست فقط تعدد المهام ، إنها تعدد المهام المنظم
 tabos!:
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: أثبتت المتصفحات مدى قوة علامات التبويب ، فلماذا لا تستخدمها لجعل نظام التشغيل لديك أكثر قوة؟
-new context menu: new context menu
+new context menu: قائمة مهام جديدة
 context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: قائمة السياق لم تتغير لعدة عقود الآن. لقد سئمنا من قائمة طويلة من العناصر ، فلماذا لا نجعلها دائرة؟ لا تحبها؟ يمكنك التبديل مرة أخرى في الإعدادات!
 your os, your preference: نظام التشغيل الخاص بك ، ما تفضله
 we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: نمنحك التحكم في نظامك. الموضوع هو مجرد واحد منهم مهم ، ويمكنك الحصول على المزيد إذا لم يعجبك موضوعنا
@@ -104,7 +111,7 @@ having trouble? click [%a]here[%a] to get help!: تواجه مشاكل؟ اضغ�
 avdanos support: دعم AvdanOS
 contact us on social media: اتصل معنا على وسائل التواصل الاجتماعي
 visit: زيارة
-want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: .[a%]هنا[a%]تريد ان تقترح اي افكار لنا؟ نحن نريد ان نسمع دائماً إلى المجتمع. إعرض افكارك
 
 # support-beta.tsx
 avdanos support articles: مقالات دعم AvdanOS
@@ -127,7 +134,7 @@ open documentation: افتح الوثائق
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: شاشة كاملة
-this demo is open source on [%a]github[%a].:
+this demo is open source on [%a]github[%a].: .[%a]github[%a] هذه التجربة مفتوحة المصدر على
 
 # 404.tsx
 page not found: الصفحة غير موجودة

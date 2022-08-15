@@ -22,7 +22,7 @@ const preview = () => {
         </Text>
         <Text className="text-center">
           <TranslatableText link="https://github.com/FacuA0/AvdanOS-UI-Online">
-            This demo is open source on [%s]GitHub[%s].
+            This demo is open source on [%a]GitHub[%a].
           </TranslatableText>
         </Text>
         <Card shadow>
