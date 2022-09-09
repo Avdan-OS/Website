@@ -1,6 +1,6 @@
 <div align="center">
 
-# Important: we are migrating to a new [Discord server](https://discord.gg/avdanos)
+# Important: we are migrating to a new [Discord server](https://avdanos.org/discord)
 
 # [AvdanOS.com](https://avdanos.com/) Website
 
