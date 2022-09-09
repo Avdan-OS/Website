@@ -1,7 +1,5 @@
 <div align="center">
 
-# Important: we are migrating to a new [Discord server](https://avdanos.org/discord)
-
 # [AvdanOS.com](https://avdanos.com/) Website
 
 **The AvdanOS homepage is built using NextJS and GeistUI**, which support both **_Markdown_** and **_JavaScript_** to fit the needs of the contributors to the project.
@@ -27,9 +25,9 @@
 Make sure you have NodeJS 14 or later installed.
 
 ```sh
-$ cd src
-$ npm install
-$ npm run dev
+cd src
+npm install
+npm run dev
 ```
 
 Then head over to [localhost:3000](http://localhost:3000) to see the site live!
