@@ -9,7 +9,7 @@ module.exports = {
   //   return [
   //     {
   //       source: '/discord',
-  //       destination: 'https://discord.gg/avdanos',
+  //       destination: 'https://avdanos.org/discord',
   //       permanent: true
   //     },
   //     {
