@@ -25,7 +25,7 @@ jobs:
           cache-dependency-path: "**/package-lock.json" # THIS PATTERN did the trick for me.
       - run: npm install && npx next build && npx next export && touch out/.nojekyll
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           folder: src/out
           branch: main # The branch the action should deploy to.
