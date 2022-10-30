@@ -38,7 +38,7 @@ const Support = () => {
             link="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA"
             mobileLayout={mobileLayout}
           />
-          <SupportCard icon="Discord" title="Discord" link="https://discord.gg/avdanos" mobileLayout={mobileLayout} />
+          <SupportCard icon="Discord" title="Discord" link="https://avdanos.org/discord" mobileLayout={mobileLayout} />
           <SupportCard
             icon="Reddit"
             title="Reddit"

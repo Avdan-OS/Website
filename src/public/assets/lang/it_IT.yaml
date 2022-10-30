@@ -6,11 +6,11 @@ home: Home
 features: Funzionalità
 downloads: Download
 external links: Link esterni
-twitter:
-github:
-youtube:
-discord:
-reddit:
+twitter: Twitter
+github: GitHub
+youtube: YouTube
+discord: Discord
+reddit: Reddit
 legal: Legale
 license: Licenza
 eula: EULA
@@ -19,8 +19,8 @@ privacy and security: Privacy e sicurezza
 inspired by [%a][%b]avdan[%b][%a]: Ispirato da [%a][%b]Avdan[%b][%a]
 avdanos contributors: Contributori di AvdanOS
 # alert.tsx
-is still in development.: È ancora in via di sviluppo
-join our discord!: Entra nel nostro Discord!
+is still in development.: è ancora in via di sviluppo
+join our discord!: Entra nel nostro Discord! (In inglese)
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
@@ -33,19 +33,19 @@ demo: Demo
 # index.tsx
 your pc but even better!: Il tuo pc, ma ancora meglio!
 try in your browser: Provalo nel tuo browser
-download now!: Scarica adesso!
+download now!: Scaricalo ora!
 # miniFeaures.tsx
-workflow redefined:
-time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
-check what avdanos offers to you.:
-see here:
-open projects with open community:
-interested? give it a try!:
+workflow redefined: workflow ridefinito
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: Il tempo non costa, e c'è n'è così poco. Con gli strumenti esatti e una workspace professionale, ogni task è semplice come una torta con il minor tempo possibile!
+check what avdanos offers to you.: Scopri cosa AvdanOS offre a te.
+see here: Guarda qui
+open projects with open community: Progetti aperti con una community aperta
+interested? give it a try!: Sei interessato? Provalo!
 # discover.tsx
 open source on github: Open source su GitHub
 browse all repos: Sfoglia tutti i repository
 # discoverCard.tsx
-avdanos:
+avdanos: AvdanOS
 meet avdanos, refining the way we think about operating systems.: Scopri AvdanOS, riscopri il modo in cui si pensa ai sistemi operativi.
 official website: Sito ufficiale
 all the new updates and information about avdanos and support.: Tutti i nuovi aggiornamenti e informazioni riguardanti AvdanOS e supporto.
@@ -56,26 +56,26 @@ a discord bot made for the avdanos community discord server.: Un bot Discord fat
 # features-beta.tsx / features.tsx
 avdan's concept, we're making it real!: Concept di Avdan, noi lo stiamo realizzando!
 assets are loading, please wait: Le risorse si stanno caricando, perfavore attendi
-scroll down to see what we've got here: Scorri verso il basso per scoprire le funzionalità
+scroll down to see what we've got here: Scorri giù per scoprire cosa abbiamo qui
 this concept video is made by avdan: Questo video concept è stato fatto da Avdan
 watch on youtube: Guarda su YouTube
 familiar dock, ultimate form: Dock familiare, forma definitiva
 everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Tutti conoscono la dock/task bar. Noi abbiamo una nuova dock, con più funzionalità che mai.
-brand new launch menu: Nuovo launch menu
+brand new launch menu: Nuovo menu di avvio
 with everything in one place, do anything anywhere at anytime.: Con tutto nello stesso posto, fai di tutto ovunque e in ogni momento.
 easily apply layout: Applica facilmente il layout
 with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Con un elenco di preset determinati dalle tue app, lavora facilmente con il layout perfetto delle finestre. Non è abbastanza? Cambialo nelle impostazioni.
 overpowered dock: Dock potenziata
 your dock can do more than ever. it's your ultimate manager to get you organised.: La tua dock può fare più che mai. È il tuo miglior manager per organizzarti.
-new way to manage files: Nuovo modo per gestire i file
+new way to manage files: Un nuovo modo per gestire i file
 this file manager keeps you organised and productive. find your files the instant you need it.: Questo file manager ti mantiene organizzato e produttivo. Trova i tuoi file nell'istante in cui ne hai bisogno.
-drag & drop made easy: Drag & drop facile
+drag & drop made easy: Drag & drop fatto facile
 drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Il drag and drop è il modo più semplice per trasferire qualsiasi cosa sul tuo computer. Noi lo abbiamo reso intuitivo e facile da usare.
 more than multitask: Più che multitasking
 want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Vuoi fare più task alla volta? Lo sappiamo e ti capiamo. Ora non è solo multitasking, è multitasking organizzato.
 tabos!: TabOS!
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: I browser hanno dimostrato quanto siano potenti le schede, quindi perché non usarle per rendere il tuo sistema operativo ancora più potente?
-new context menu: Nuovo context menu
+new context menu: Nuovo menu di contesto
 context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Il context menu non è mai cambiato per diversi decenni ormai. Siamo stanchi di una lunga lista di elementi, e perché non renderla un cerchio? Non ti piace? Puoi tornare indietro dalle impostazioni!
 your os, your preference: Il tuo sistema operativo, le tue preferenze
 we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Ti diamo il controllo sul tuo sistema. Il tema è solo uno di quelli importanti, e puoi ottenerne di più se non ti piacciono i nostri.
@@ -87,7 +87,7 @@ open demo: Open demo
 
 # download.tsx
 this download is not available yet.: Questo download non è ancora disponibile.
-give your pc an upgrade.: Aggiorna il tuo pc.
+give your pc an upgrade.: Dai un'aggiornamento al tuo pc.
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
 for most people: Per gran parte delle persone
@@ -134,7 +134,7 @@ open documentation: Apri la documentazione
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: Schermo intero
-this demo is open source on [%a]github[%a].:
+this demo is open source on [%a]github[%a].: Questa demo è open source su [%a]GitHub[%a]
 
 # 404.tsx
 page not found: Pagina non trovata

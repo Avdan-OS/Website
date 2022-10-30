@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const discordRedirect = () => {
   useEffect(() => {
-    window.location.replace('https://discord.gg/avdanos');
+    window.location.replace('https://avdanos.org/discord');
   });
 
   return <></>;
