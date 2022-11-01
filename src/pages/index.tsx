@@ -48,25 +48,32 @@ const index = () => {
         <Text h1 className="text-center">
           <TranslatableText>Open projects with open community</TranslatableText>
         </Text>
-        <Discover />
+              <Discover />
         <Spacer h={5} />
-        <div className="text-center">
-          <Text h2>
-            <TranslatableText>Interested? Give it a try!</TranslatableText>
-          </Text>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            {useMobileBar ? null : (
-              <NextLink href="/demo">
-                <Button shadow type="secondary" margin="10px">
-                  <TranslatableText>Try in your browser</TranslatableText>
-                </Button>
-              </NextLink>
-            )}
-            <NextLink href="/downloads">
-              <Button shadow type="success" margin="10px">
-                <TranslatableText>Download Now!</TranslatableText>
-              </Button>
-            </NextLink>
+              <div className="text-center"> <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                  {useMobileBar ? null : (
+                      <Text h2>
+                          <TranslatableText>Interested? Give it a try!</TranslatableText>
+                      </Text>
+                  )}
+                  <div style={{ display: 'flex'}}>
+                      {useMobileBar ? null : (
+                          <NextLink href="/demo">
+                              <Button shadow type="secondary" margin="10px">
+                                  <TranslatableText>Try in your browser</TranslatableText>
+                              </Button>
+                          </NextLink>
+                      )}
+                      </div>
+                      {/*<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>*/}
+                      {/*    {useMobileBar ? null : (*/}
+                      {/*        <NextLink href="/downloads">*/}
+                      {/*            <Button shadow type="success" margin="10px">*/}
+                      {/*                <TranslatableText>Download Now!</TranslatableText>*/}
+                      {/*            </Button>*/}
+                      {/*        </NextLink>*/}
+                      {/*    )}*/}
+                      {/*    </div>*/}
           </div>
         </div>
         <Spacer h={2} />
