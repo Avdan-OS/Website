@@ -1,39 +1,39 @@
 ---
 # Global
 # footer.tsx
-overview:
-home:
-features:
-downloads:
-external links:
-twitter:
-github:
-youtube:
-discord:
-reddit:
-legal:
-license:
-eula:
-history of incidents:
-privacy and security:
-inspired by [%a][%b]avdan[%b][%a]:
-avdanos contributors:
+overview: Overzicht
+home: Home
+features: Functies
+downloads: Downloads
+external links: Externe links
+twitter: Twitter
+github: GitHub
+youtube: YouTube
+discord: Discord
+reddit: Reddit
+legal: Legaal
+license: Licentie
+eula: EULA
+history of incidents: Geschiedenis van incidenten
+privacy and security: Privacy en veiligheid
+inspired by [%a][%b]avdan[%b][%a]: Geïnspireerd door [%a][%b]Avdan[%b][%a]
+avdanos contributors: AvdanOS-bijdragers
 # alert.tsx
-is still in development.:
-join our discord!:
+is still in development.: is nog in ontwikkeling
+join our discord!: Word lid van onze discord!
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
-support:
-documentation:
-docs:
-demo:
+support: Support
+documentation: Documentatie
+docs: Docs
+demo: Demo
 
 # index.tsx
-your pc but even better!:
-try in your browser:
-download now!:
+your pc but even better!: Haal het beste uit jouw PC!
+try in your browser: Probeer het in je browser
+download now!: Download nu!
 # miniFeaures.tsx
 workflow redefined:
 time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
