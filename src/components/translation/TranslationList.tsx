@@ -78,7 +78,7 @@ const TranslationList = () => {
     },
     {
       lang: 'nl_NL',
-      available: false,
+      available: true,
       icon: '🇳🇱',
       langName: 'Nederlands'
     },
