@@ -34,7 +34,7 @@ git clone url://to.your/github/fork.git
 cd src && npm install
 ```
 
-> VSC Tip: If you have code-runner installed, you can click ctrl/cmd + shift + P, search for Run Custom Command, and hit enter. This will install all dependencies for you automatically.
+> VSC Tip: If you have code-runner installed, you can open src/package.json and hit the run button. This will install all dependencies for you automatically.
 
 4. Run server
 
@@ -44,7 +44,7 @@ npm run dev
 
 You can now go to https://localhost:3000 in your browser and it will update in real time.
 
-> VSC Tip: If you have code-runner installed, you can click on run button anywhere in VSC and the server will just run (+ open the page in browser).
+> VSC Tip: If you have code-runner installed, you can click on run button anywhere in VSC and the code will just run.
 
 5. Make changes as you want
 
