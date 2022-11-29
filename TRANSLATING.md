@@ -20,7 +20,7 @@ Navigate to the [lang folder](https://github.com/Avdan-OS/Website/tree/dev/src/p
 - Left side of the colon is the original text in all lowercase (it's easier for devs to work with)
 - Right side of the colon (+space) is the translated text. You should edit/add things here.
 - [%a] and [%b] is a flag for developers to add styling, so they should also be present in the translated string.
-- If your text editor shows an error with your translation, wrap your translation with `"` quotes. If you have further problem, ask for help on [our Discord server](https://discord.gg/avdanos).
+- If your text editor shows an error with your translation, wrap your translation with `"` quotes. If you have further problem, ask for help on [our Discord server](https://avdanos.org/discord).
 
 4. After you finish making changes, you need to submit your changes. At the left, click on the three dots connected by two lines (it's called Source Control). Click on the check mark, and follow the instructions to create fork if you haven't got one.
 
@@ -50,4 +50,4 @@ Yes, use whatever tool you want. You should be at least somewhat fluent at the l
 
 **Can I not use GitHub?**
 
-Create a document in your text editor of choice, copy and paste the current translation file there, and start editing. When you're done, send us the file through our [our Discord server](https://discord.gg/avdanos) server and ping @froxcey, and we will handle it for you.
+Create a document in your text editor of choice, copy and paste the current translation file there, and start editing. When you're done, send us the file through our [our Discord server](https://avdanos.org/discord) server and ping @froxcey, and we will handle it for you.
