@@ -24,7 +24,7 @@
     "@next/mdx": "^13.0.2",
     "bootstrap": "^5.2.2",
     "next": "^13.0.2",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
