@@ -13,11 +13,11 @@ discord: Discord
 reddit: Reddit
 legal: Termos legais
 license: Licença
-eula: Acordo de licença
-history of incidents: Histórico de incidentes
+eula: Acordo de Licença
+history of incidents: Histórico de Incidentes
 privacy and security: Privacidade e Segurança
-inspired by [%a][%b]avdan[%b][%a]: Inspirado por [%a][%b]avdan[%b][%a]
-avdanos contributors: Contribuidores Avdanos
+inspired by [%a][%b]avdan[%b][%a]: Inspirado por [%a][%b]Avdan[%b][%a]
+avdanos contributors: Contribuidores AvdanOS
 # alert.tsx
 is still in development.: Ainda em desenvolvimento
 join our discord!: Junte-se ao nosso discord!
@@ -37,7 +37,7 @@ download now!: Baixar agora!
 # miniFeaures.tsx
 workflow redefined: Workflow de trabalho redefinido
 time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: O tempo não tem preço, e há tão pouco tempo, usando as ferramentas certas e um espaço de trabalho profissional, toda tarefa se torna simples e finalizada pelo menor tempo possível!
-check what avdanos offers to you.: Confira o que a avdanos oferece para você.
+check what avdanos offers to you.: Confira o que o AvdanOS oferece para você.
 see here: Veja aqui
 open projects with open community: Projetos abertos com a comunidade
 interested? give it a try!: Interessado? faça um teste!
@@ -45,13 +45,13 @@ interested? give it a try!: Interessado? faça um teste!
 open source on github: Códigos abertos no Github
 browse all repos: Veja todos os repositórios
 # discoverCard.tsx
-avdanos: Avdanos
-meet avdanos, refining the way we think about operating systems.: Conheça a Avdanos, refinamos a maneira como pensamos sobre sistemas operacionais.
+avdanos: AvdanOS
+meet avdanos, refining the way we think about operating systems.: Conheça o AvdanOS, Refinamos a maneira como pensamos sobre Sistemas Operacionais.
 official website: Website oficial
-all the new updates and information about avdanos and support.: Todas as novas informações sobre atualizações e informações da avdanos
+all the new updates and information about avdanos and support.: Todas as novas informações sobre atualizações e informações do AvdanOS
 desktop environment: Ambiente de trabalho
-meet nadva, the official desktop environment for avdanos.: Conheça o nadva, o ambiente desktop oficial para avdanos
-a discord bot made for the avdanos community discord server.: Um bot do discord feito para a comunidade avdanos
+meet nadva, the official desktop environment for avdanos.: Conheça o Nadva, o Ambiente Desktop Oficial para AvdanOS
+a discord bot made for the avdanos community discord server.: Um bot do Discord Feito para o servidor da comunidade AvdanOS
 
 # features-beta.tsx / features.tsx
 avdan's concept, we're making it real!: Conceito Avdan's, estamos tornando isso real!
@@ -94,7 +94,7 @@ for most people: Para a maioria das pessoas
 for pi, pine, and mac: Para pi, pine, é mac
 download: Download
 web preview: Pré-visualização
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Você está prestes a visitar a versão de demonstração na web do avdanos, que é apenas uma prova de conceito, experimentar o sistema ao vivo é altamente recomendável para obter a experiência completa do sistema operacional.
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Você está prestes a visitar a versão de demonstração na web do AvdanOS, que é apenas uma prova de conceito, experimentar o sistema ao vivo é altamente recomendável para obter a experiência completa do sistema operacional.
 live system is currently not available because the system is still under development: O sistema ainda não está disponível no momento por que está em processo de desenvolvimento.
 yes, take me there: Sim, me leve até lá
 cancel: Cancelar
@@ -105,17 +105,17 @@ yes, i understand: Sim, eu entendo
 use torrent download: Download via Torrent
 continue: Continuar
 # in testing
-having trouble? click [%a]here[%a] to get help!: Com problemas? clique [%a]aqui[%a] para obter ajuda!
+having trouble? click [%a]here[%a] to get help!: Com problemas? Clique [%a]aqui[%a] para obter ajuda!
 
 # support.tsx
-avdanos support: Suporte Avdanos
+avdanos support: Suporte AvdanOS
 contact us on social media: Entre em contato conosco nas mídias sociais.
-visit: Visite
+visit: Acessar
 want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Quer sugerir algo para nós? queremos sempre ouvir a comunidade, apresente suas ideias [%a]aqui[%a].
 
 # support-beta.tsx
-avdanos support articles: Artigos de suporte avdanos
-search support articles: Pesquisar por Artigos de suporte avdanos
+avdanos support articles: Artigos de suporte do AvdanOS
+search support articles: Pesquisar por Artigos de suporte do AvdanOS
 ask our community: Pergunte para a nossa comunidade
 
 # betapopup.tsx
