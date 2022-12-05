@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+overview: Visão Geral
+home: Início
+features: Características
+downloads: Downloads
+external links: Links Externos
+twitter: Twitter
+github: Github
+youtube: Youtube
+discord: Discord
+reddit: Reddit
+legal: Termos legais
+license: Licença
+eula: Acordo de Licença
+history of incidents: Histórico de Incidentes
+privacy and security: Privacidade e Segurança
+inspired by [%a][%b]avdan[%b][%a]: Inspirado por [%a][%b]Avdan[%b][%a]
+avdanos contributors: Contribuidores AvdanOS
+# alert.tsx
+is still in development.: Ainda em desenvolvimento
+join our discord!: Junte-se ao nosso discord!
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+support: Suporte
+documentation: Documentação
+docs: Documentos
+demo: Demonstração
+
+# index.tsx
+your pc but even better!: Seu computador, mas ainda melhor!
+try in your browser: Teste no navegador
+download now!: Baixar agora!
+# miniFeaures.tsx
+workflow redefined: Workflow de trabalho redefinido
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: O tempo não tem preço, e há tão pouco tempo, usando as ferramentas certas e um espaço de trabalho profissional, toda tarefa se torna simples e finalizada pelo menor tempo possível!
+check what avdanos offers to you.: Confira o que o AvdanOS oferece para você.
+see here: Veja aqui
+open projects with open community: Projetos abertos com a comunidade
+interested? give it a try!: Interessado? faça um teste!
+# discover.tsx
+open source on github: Códigos abertos no Github
+browse all repos: Veja todos os repositórios
+# discoverCard.tsx
+avdanos: AvdanOS
+meet avdanos, refining the way we think about operating systems.: Conheça o AvdanOS, Refinamos a maneira como pensamos sobre Sistemas Operacionais.
+official website: Website oficial
+all the new updates and information about avdanos and support.: Todas as novas informações sobre atualizações e informações do AvdanOS
+desktop environment: Ambiente de trabalho
+meet nadva, the official desktop environment for avdanos.: Conheça o Nadva, o Ambiente Desktop Oficial para AvdanOS
+a discord bot made for the avdanos community discord server.: Um bot do Discord Feito para o servidor da comunidade AvdanOS
+
+# features-beta.tsx / features.tsx
+avdan's concept, we're making it real!: Conceito Avdan's, estamos tornando isso real!
+assets are loading, please wait: Carregando arquivos, porfavor aguarde
+scroll down to see what we've got here: Deslize para baixo para ver o que temos aqui.
+this concept video is made by avdan: Este vídeo conceitual foi feito por Avdan
+watch on youtube: Assista no youtube
+familiar dock, ultimate form: Uma barra de tarefas familiar, mas com forma definitiva
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Todo mundo conhece a dock/barra de tarefas. Nos temos uma barra de tarefas totalmente nova com mais recursos do que nunca.
+brand new launch menu: Conheça o novo menu
+with everything in one place, do anything anywhere at anytime.: Com tudo em apenas um lugar, faça qualquer coisa em qualquer lugar a qualquer hora.
+easily apply layout: Aplique o layout facilmente
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Com uma lista de predefinições determinadas a partir de seus aplicativos, comece a trabalhar facilmente com o layout de janela perfeito. Insuficiente? Altere-o nas configurações.
+overpowered dock: Dominando a barra
+your dock can do more than ever. it's your ultimate manager to get you organised.: Sua barra de tarefas pode fazer mais coisas do que nunca. o seu gerenciador definitivo para você se organizar.
+new way to manage files: Nova maneira de gerenciar arquivos
+this file manager keeps you organised and productive. find your files the instant you need it.: Este gerenciador de arquivos mantém você organizado e produtivo. Encontre seus arquivos no instante que precisar.
+drag & drop made easy: Arraste e solte de forma fácil.
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Arrastar e soltar é a maneira mais fácil de transferir qualquer coisa em seu computador, nós tornamos isso intuitivo e fácil de usar.
+more than multitask: Mais do que multitarefa
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Quer fazer muitas tarefas em simultâneo? Nós conhecemos você por isso que agora não e mais somente uma multitarefa, é uma multitarefa organizada.
+tabos!: Guias!
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Os navegadores provaram como as guias são poderosas, então porque não usa-las para tornar seu sistema operacional ainda mais poderoso?
+new context menu: Novo menu de opções
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: O menu de opções não mudou por várias décadas é agora, estamos cansados de uma longa lista de items, então porque não fazer virar um círculo? Não gostou? Você pode trocar de volta nas configurações caso queira!
+your os, your preference: Seu sistema operacional, sua preferência
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Damos a você o controle sobre seu sistema, o tema e apenas uma parte e você pode obter mais se não gostar do nosso.
+day & night: Dia & Noite
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Deixe que diferentes temas digam que horas são você pode, ate inverte-lo, você consegue fazer isso no windows ou macos?
+under development: Em Desenvolvimento
+this project wouldn't be possible without the community's contributions. join us and help!: Este projeto não seria possível sem as contribuições da comunidade, junte-se a nós e ajude!
+open demo: Abrir a demo
+
+# download.tsx
+this download is not available yet.: Este download ainda não está disponível.
+give your pc an upgrade.: Dê ao seu computador um upgrade
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+for most people: Para a maioria das pessoas
+for pi, pine, and mac: Para pi, pine, é mac
+download: Download
+web preview: Pré-visualização
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Você está prestes a visitar a versão de demonstração na web do AvdanOS, que é apenas uma prova de conceito, experimentar o sistema ao vivo é altamente recomendável para obter a experiência completa do sistema operacional.
+live system is currently not available because the system is still under development: O sistema ainda não está disponível no momento por que está em processo de desenvolvimento.
+yes, take me there: Sim, me leve até lá
+cancel: Cancelar
+before you download: Antes de você baixar
+please read this before you continue: Porfavor leia isto antes de continuar.
+below is the shasum of the download. you can use it to check download's integrity: Abaixo está o código SHASUM do download, você pode usá-lo para verificar a integridade do download caso queira.
+yes, i understand: Sim, eu entendo
+use torrent download: Download via Torrent
+continue: Continuar
+# in testing
+having trouble? click [%a]here[%a] to get help!: Com problemas? Clique [%a]aqui[%a] para obter ajuda!
+
+# support.tsx
+avdanos support: Suporte AvdanOS
+contact us on social media: Entre em contato conosco nas mídias sociais.
+visit: Acessar
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Quer sugerir algo para nós? queremos sempre ouvir a comunidade, apresente suas ideias [%a]aqui[%a].
+
+# support-beta.tsx
+avdanos support articles: Artigos de suporte do AvdanOS
+search support articles: Pesquisar por Artigos de suporte do AvdanOS
+ask our community: Pergunte para a nossa comunidade
+
+# betapopup.tsx
+hey look! a new testing version of this page is available!: Ei olha! Uma nova versão de teste desta página está disponível.
+close: Fechar
+check it out: Confirir agora
+
+# docs.tsx
+read the features in detail.: Leia sobre os recursos em detalhes.
+i'm a user: Eu sou um usuário(a)
+open manual: Abrir o manual
+manual is not available yet: O manual ainda não está disponível.
+i'm a developer: Eu sou um desenvolvedor(a)
+open documentation: Abrir a documentação
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+full screen: Tela cheia
+this demo is open source on [%a]github[%a].: Esta demonstração de código aberto esta disponível no [%a]Github[%a]
+
+# 404.tsx
+page not found: Página não encontrada!
+this page does not exist.: Esta página não existe.
+join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+width incompatibility: Incompatibilidade de largura
+increase your window width: Aumente a largura da sua janela do seu navegador.
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Sua janela é muito pequena para exibir o conteúdo desta página, e detectamos que você tem mais espaço na tela. Porfavor aumente a largura da janela ou maximize a janela atual do seu navegador.
+rotate your device: Gire seu dispositivo
+your screen is too small to display this page. please rotate to landscape view or use desktop.: Sua tela é muito pequena para exibir esta página. Gire para o modo paisagem ou use um computador.
+this page is incompatible: Esta página é incompatível
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: A largura da sua tela é muito pequena para exibir o conteúdo desta página, pode ser necessário aumentar a resolução do sistema, usar uma tela maior ou aumentar o tamanho do seu navegador para visualizar esta página.
+your screen width is too small to display the content of this page. please increase your system's resolution.: A largura da sua tela é muito pequena para exibir o conteúdo desta página, por favor, aumente a resolução do seu sistema ou o tamanho do seu navegador.
