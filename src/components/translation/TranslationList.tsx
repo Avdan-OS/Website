@@ -89,6 +89,12 @@ const TranslationList = () => {
       langName: 'polski'
     },
     {
+      lang: 'pt_BR',
+      available: true,
+      icon: '🇵🇹',
+      langName: 'Português'
+    },
+    {
       lang: 'ru',
       available: true,
       icon: '🇷🇺',
