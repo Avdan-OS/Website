@@ -17,6 +17,7 @@ eula:
 history of incidents:
 privacy and security:
 inspired by [%a][%b]avdan[%b][%a]:
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
 avdanos contributors:
 # alert.tsx
 is still in development.:
@@ -46,6 +47,7 @@ interested? give it a try!:
 open source on github:
 browse all repos:
 # discoverCard.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
 avdanos:
 meet avdanos, refining the way we think about operating systems.:
 official website:
@@ -74,6 +76,7 @@ drag & drop made easy:
 drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.:
 more than multitask:
 want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
+# TabOS: OS stands for Operating System so the acronym should be capitalised
 tabos!:
 browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
 new context menu:
@@ -109,12 +112,14 @@ continue:
 having trouble? click [%a]here[%a] to get help!: Having trouble? Click [%a]here[%a] to get help!
 
 # support.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
 avdanos support:
 contact us on social media:
 visit:
 want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
 
 # support-beta.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
 avdanos support articles:
 search support articles:
 ask our community:
@@ -135,6 +140,7 @@ open documentation:
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen:
+# GitHub: GitHub is a name and the capitalisation should be followed properly
 this demo is open source on [%a]github[%a].:
 
 # 404.tsx
