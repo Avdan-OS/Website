@@ -1,159 +1,159 @@
 ---
 # Global
 # footer.tsx
-overview:
-home:
-features:
-downloads:
-external links:
+overview: Přehled
+home: Domov
+features: Funkce
+downloads: Ke Stažení
+external links: Externí odkazy
 twitter:
 github:
 youtube:
 discord:
 reddit:
-legal:
-license:
-eula:
-history of incidents:
-privacy and security:
-inspired by [%a][%b]avdan[%b][%a]:
+legal: Právní
+license: Licence
+eula: EULA
+history of incidents: Historie událostí
+privacy and security: Soukromí a Bezpečnost
+inspired by [%a][%b]avdan[%b][%a]: Inspirováno [%a][%b]Avdan[%b][%a]em
 # AvdanOS: OS stands for Operating System so the acronym should be capitalised
-avdanos contributors:
+avdanos contributors: Přispěvatelé AvdanOS
 # alert.tsx
-is still in development.:
-join our discord!:
+is still in development.: je stále ve vývoji.
+join our discord!: Připojte se na náš Discord!
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
-support:
-documentation:
-docs:
-demo:
+support: Podpora
+documentation: Dokumentace
+docs: Dokumenty
+demo: Demo
 
 # index.tsx
-your pc but even better!:
-try in your browser:
-download now!:
+your pc but even better!: Váš počítač, ale ještě lepší!
+try in your browser: Vyzkoušejte ve vašem prohlížeči
+download now!: Stáhněte nyní
 # miniFeaures.tsx
-workflow redefined:
-time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
-this file manager keeps you organised and productive. find your files the instant you need it.:
-check what avdanos offers to you.:
-see here:
-open projects with open community:
-interested? give it a try!:
+workflow redefined: Pracovní postup, redefinován
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: Čas je cenný, a v životě je tak málo času. Se správnými nástroji a professionálním pracovištěm je každá úloha lehká jako facka za nejmenší množství času!
+this file manager keeps you organised and productive. find your files the instant you need it.: Tento správce souborů vás zanechá organizované a produktivní. Najděte svoje soubory ihned, jakmile je budete potřebovat.
+check what avdanos offers to you.: Ověřte si co pro vás AvdanOS nabízí.
+see here: Viz zde
+open projects with open community: Otevřený projekt s otevřenou komunitou.
+interested? give it a try!: Zaujat? Vyzkoušejte si to!
 # discover.tsx
-open source on github:
-browse all repos:
+open source on github: Open Source na GitHubu
+browse all repos: Prohlédněte si všechny GitHub schránky
 # discoverCard.tsx
 # AvdanOS: OS stands for Operating System so the acronym should be capitalised
-avdanos:
-meet avdanos, refining the way we think about operating systems.:
-official website:
-all the new updates and information about avdanos and support.:
-desktop environment:
-meet nadva, the official desktop environment for avdanos.:
-a discord bot made for the avdanos community discord server.:
+avdanos: AvdanOS
+meet avdanos, refining the way we think about operating systems.: Seznamte se s AvdanOS, refinuje jak myslíme na Operační Systémy.
+official website: Officiální Webová Stránka
+all the new updates and information about avdanos and support.: Všechny nové aktualizace a informace o AvdanOS a podpoře.
+desktop environment: Prostředí Plochy
+meet nadva, the official desktop environment for avdanos.: Seznamte se s Nadvou, officiálním prodtředím plochy pro AvdanOS.
+a discord bot made for the avdanos community discord server.: Discord BOT vytvořen pro AvdanOS Community Discord Server.
 
 # features-beta.tsx / features.tsx
-avdan's concept, we're making it real!:
-assets are loading, please wait:
-scroll down to see what we've got here:
-this concept video is made by avdan:
-watch on youtube:
-familiar dock, ultimate form:
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.:
-brand new launch menu:
-with everything in one place, do anything anywhere at anytime.:
-easily apply layout:
-with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.:
-overpowered dock:
-your dock can do more than ever. it's your ultimate manager to get you organised.:
-new way to manage files:
+avdan's concept, we're making it real!: Avdanův Koncept, děláme ho realitou!
+assets are loading, please wait: Načítají se assety, čekejte prosím
+scroll down to see what we've got here: Přejděte dolů, abyste viděli co pro vás máme připraveno
+this concept video is made by avdan: Toto Koncept video je vytvořeno Avdanem
+watch on youtube: Sledujte na YouTube
+familiar dock, ultimate form: Známý dock, ultimátní forma
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Každý zná dock/hlavní panel. My vám přinášíme zbrusu nový dock, s více funkcemi než kdy předtím.
+brand new launch menu: Zbrusu nové menu spouštění
+with everything in one place, do anything anywhere at anytime.: Se vším na jednom místě dělejte cokoliv, kdekoliv a kdykoliv.
+easily apply layout: Lehce aplikujte rotvržení
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Se seznamem předvoleb určených z vašich aplikací se snadno dostaňte k práci s perfektním rozvržením oken. Není to dost? Změnte to v nastavení.
+overpowered dock: Přemocný dock
+your dock can do more than ever. it's your ultimate manager to get you organised.: Váš dock dokáže dělat více, než kdy předtím. Je to váš ultimátní správce k organizaci.
+new way to manage files: Nová cesta, jak spravovat soubory
 
-drag & drop made easy:
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.:
-more than multitask:
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
+drag & drop made easy: Drag & Drop zjednodušeno
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Drag & Drop je ta nejjednodušší cesta, jako přenášet jakékoliv soubory na vašem počítači. Udělali jsme jej intuitivní a lehký na použití.
+more than multitask: Více než multi-tasking
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Chcete dělat více věcí ve stejný čas? Chápeme vás. Nyní to není jen multi-tasking, je to organizovaný multi-tasking.
 # TabOS: OS stands for Operating System so the acronym should be capitalised
-tabos!:
-browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
-new context menu:
-context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!:
-your os, your preference:
-we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.:
-day & night:
-let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?:
-under development:
-this project wouldn't be possible without the community's contributions. join us and help!:
-open demo:
+tabos!: TabOS!
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Prohlížeče nám ukázaly jak mocné jsou záložky, tak proč je nepoužít aby jsme udělali váš operační systém mocnější?
+new context menu: Nové Kontext Menu
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Kontext menu nebylo změněno po několik desetiletí. Jsme unaveni dlouhým seznamem položek, a proč ho neudělat jako kruh? Nelíbí se vám? Můžete to změnit zpět v nastavení!
+your os, your preference: Váš operační systém, vaše preference.
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Dáváme vám moc nad vaším systémem. Motiv je jen jedna důležitá věc, a můžete si stáhnout jiné pokud se vám naše nelíbí.
+day & night: Den & Noc
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Nechte vaše motivy aby vám řekli kolik je hodin. Dokonce to můžete i převrátit. Dokážete to udělat i na Windows nebo macOS?
+under development: ve vývoji
+this project wouldn't be possible without the community's contributions. join us and help!: Tento projekt by byl nemožný bez pomoci naší komunity. Připojte se a pomozte nám!
+open demo: Otevřit Demo
 
 # download.tsx
-this download is not available yet.:
-give your pc an upgrade.:
+this download is not available yet.: Toto stahování není k dispozici.
+give your pc an upgrade.: Vylepšete svůj počítač.
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
-for most people:
-for pi, pine, and mac:
-download:
-web preview:
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.:
-live system is currently not available because the system is still under development:
-yes, take me there:
-cancel:
-before you download:
-please read this before you continue:
-below is the shasum of the download. you can use it to check download's integrity:yes, i understand:
-yes, i understand:
-use torrent download:
-continue:
+for most people: Pro většinu lidí
+for pi, pine, and mac: Pro pi, pine a mac
+download: Stáhnout
+web preview: Webový náhled
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Chystáte se navšívit webový náhled AvdanOS, který je pouze k testování. Je vysoce doporučeno vyzkoušet živý systém abyste dostali plnou zkušenost operačního systému.
+live system is currently not available because the system is still under development: Živý systém není nyní k dispozici, protože je ve vývoji.
+yes, take me there: Ano, vem mě tam
+cancel: Zrušit
+before you download: Před stažením
+please read this before you continue: Prosím přečtěte si to, než budete pokračovat
+below is the shasum of the download. you can use it to check download's integrity: Níže je uveden SHASUM tohoto souboru. Můžete ho použít k ověření integrity souboru.
+yes, i understand: Ano, rozumím
+use torrent download: Použít Torrent ke stažení
+continue: Pokračovat
 # in testing
-having trouble? click [%a]here[%a] to get help!: Having trouble? Click [%a]here[%a] to get help!
+having trouble? click [%a]here[%a] to get help!: Máte potíže? Klikněte [%a]zde[%a] pro pomoc!
 
 # support.tsx
 # AvdanOS: OS stands for Operating System so the acronym should be capitalised
-avdanos support:
-contact us on social media:
-visit:
-want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
+avdanos support: Podpora AvdanOS
+contact us on social media: Kontaktujte nás na sociálních médiích
+visit: Navštivte
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Chcete nám něco navrhnout? Naši komunitu vyslécháme neustále. Předveďte vaše návrhy [%a]zde[%a].
 
 # support-beta.tsx
 # AvdanOS: OS stands for Operating System so the acronym should be capitalised
-avdanos support articles:
-search support articles:
-ask our community:
+avdanos support articles: Články podpory AvdanOS
+search support articles: Vyhledejte články podpory
+ask our community: Zeptejte se komunity
 
 # betapopup.tsx
-hey look! a new testing version of this page is available!:
-close:
-check it out:
+hey look! a new testing version of this page is available!: Podívej! Nová testovací verze stránky je dostupná!
+close: Zavřít
+check it out: Koukni na to
 
 # docs.tsx
-read the features in detail.:
-i'm a user:
-open manual:
-manual is not available yet:
-i'm a developer:
-open documentation:
+read the features in detail.: Přečtěte si detailně funkce.
+i'm a user: Jsem uživatel
+open manual: Otevřít manuál
+manual is not available yet: Manuál není k dispozici
+i'm a developer: Jsem vývojář
+open documentation: Otevřít dokumentaci
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
-full screen:
+full screen: Celá obrazovka
 # GitHub: GitHub is a name and the capitalisation should be followed properly
-this demo is open source on [%a]github[%a].:
+this demo is open source on [%a]github[%a].: Toto demo je Open Source na [%a]GitHub[%a]u.
 
 # 404.tsx
-page not found:
-this page does not exist.:
-join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+page not found: Stránka nenalezena
+this page does not exist.: Tato stránka neexistuje.
+join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)           OK, I guess?
 
 # widthrequirement.tsx
-width incompatibility:
-increase your window width:
-your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.:
-rotate your device:
-your screen is too small to display this page. please rotate to landscape view or use desktop.:
-this page is incompatible:
-your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.:
-your screen width is too small to display the content of this page. please increase your system's resolution.:
+width incompatibility: Nekompatibilita šířky
+increase your window width: Zvyšte šířku vašeho okna
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Šířka vašeho okna je moc malá pro zobrazení obsahu této stránky a detekovali jsme, že máte více míste na ploše. Prosím zvyšte šířku vašeho okna, nebo jej maximalizujte.
+rotate your device: Otočte vaše zařízení
+your screen is too small to display this page. please rotate to landscape view or use desktop.: Vaše obrazovka je moc malá pro zobrazení stránky. Prosím otočte vaše zařízení horizontálně nebo použíjte počítač.
+this page is incompatible: Tato stránka není kompatibilní
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Šířka vaší obrazovky je moc malá pro zobrazení obsahu stránky. Prosím zvyšte rozlišení vašeho systému, nebo použíjte větší obrazovku pro zobrazení.
+your screen width is too small to display the content of this page. please increase your system's resolution.: Šířka vaší obrazovky je moc malá pro zobrazení obsahu stránky. Prosím zvyšte rozlišení vašeho systému.
