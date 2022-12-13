@@ -1,0 +1,159 @@
+---
+# Global
+# footer.tsx
+overview:
+home:
+features:
+downloads:
+external links:
+twitter:
+github:
+youtube:
+discord:
+reddit:
+legal:
+license:
+eula:
+history of incidents:
+privacy and security:
+inspired by [%a][%b]avdan[%b][%a]:
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
+avdanos contributors:
+# alert.tsx
+is still in development.:
+join our discord!:
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+support:
+documentation:
+docs:
+demo:
+
+# index.tsx
+your pc but even better!:
+try in your browser:
+download now!:
+# miniFeaures.tsx
+workflow redefined:
+time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
+this file manager keeps you organised and productive. find your files the instant you need it.:
+check what avdanos offers to you.:
+see here:
+open projects with open community:
+interested? give it a try!:
+# discover.tsx
+open source on github:
+browse all repos:
+# discoverCard.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
+avdanos:
+meet avdanos, refining the way we think about operating systems.:
+official website:
+all the new updates and information about avdanos and support.:
+desktop environment:
+meet nadva, the official desktop environment for avdanos.:
+a discord bot made for the avdanos community discord server.:
+
+# features-beta.tsx / features.tsx
+avdan's concept, we're making it real!:
+assets are loading, please wait:
+scroll down to see what we've got here:
+this concept video is made by avdan:
+watch on youtube:
+familiar dock, ultimate form:
+everyone knows dock/task bar. we got a brand new dock, with more features than ever before.:
+brand new launch menu:
+with everything in one place, do anything anywhere at anytime.:
+easily apply layout:
+with a list of presets determined from you apps, easily get to work with the perfect window layout. not enough? change it in the settings.:
+overpowered dock:
+your dock can do more than ever. it's your ultimate manager to get you organised.:
+new way to manage files:
+
+drag & drop made easy:
+drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.:
+more than multitask:
+want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.:
+# TabOS: OS stands for Operating System so the acronym should be capitalised
+tabos!:
+browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?:
+new context menu:
+context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!:
+your os, your preference:
+we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.:
+day & night:
+let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?:
+under development:
+this project wouldn't be possible without the community's contributions. join us and help!:
+open demo:
+
+# download.tsx
+this download is not available yet.:
+give your pc an upgrade.:
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+for most people:
+for pi, pine, and mac:
+download:
+web preview:
+you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.:
+live system is currently not available because the system is still under development:
+yes, take me there:
+cancel:
+before you download:
+please read this before you continue:
+below is the shasum of the download. you can use it to check download's integrity:yes, i understand:
+yes, i understand:
+use torrent download:
+continue:
+# in testing
+having trouble? click [%a]here[%a] to get help!: Having trouble? Click [%a]here[%a] to get help!
+
+# support.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
+avdanos support:
+contact us on social media:
+visit:
+want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].:
+
+# support-beta.tsx
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
+avdanos support articles:
+search support articles:
+ask our community:
+
+# betapopup.tsx
+hey look! a new testing version of this page is available!:
+close:
+check it out:
+
+# docs.tsx
+read the features in detail.:
+i'm a user:
+open manual:
+manual is not available yet:
+i'm a developer:
+open documentation:
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+full screen:
+# GitHub: GitHub is a name and the capitalisation should be followed properly
+this demo is open source on [%a]github[%a].:
+
+# 404.tsx
+page not found:
+this page does not exist.:
+join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+width incompatibility:
+increase your window width:
+your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.:
+rotate your device:
+your screen is too small to display this page. please rotate to landscape view or use desktop.:
+this page is incompatible:
+your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.:
+your screen width is too small to display the content of this page. please increase your system's resolution.:

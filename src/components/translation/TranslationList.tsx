@@ -11,6 +11,12 @@ const TranslationList = () => {
       langName: 'العربية'
     },
     {
+      lang: 'cs_CZ',
+      available: false,
+      icon: '🇨🇿',
+      langName: 'čeština'
+    },
+    {
       lang: 'da_DK',
       available: true,
       icon: '🇩🇰',
