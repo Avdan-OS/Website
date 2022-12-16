@@ -52,7 +52,7 @@ export default function Discover() {
                   <DiscoverCard
                     title="AvdanOS"
                     description="Meet AvdanOS, refining the way we think about operating systems."
-                    link="https://github.com/Avdan-OS/AvdanOS"
+                    link="https://github.com/Avdan-OS"
                   />
                   <DiscoverCard
                     title="Official Website"
