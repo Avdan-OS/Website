@@ -120,7 +120,7 @@ const Features = () => {
           <FeaturesBetaCard
             isCardOnRight={false}
             title="Easily apply layout"
-            description="With a list of presets determined from you apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
+            description="With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
           />
           <Spacer h="500px" />
           <FeaturesBetaCard

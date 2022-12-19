@@ -21,7 +21,7 @@ const features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="Easily apply layout"
-        cardDescription="With a list of presets determined from you apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
+        cardDescription="With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
         cardVideo="/assets/clips/layout.mp4"
       />
       <FeaturesCard
