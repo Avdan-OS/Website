@@ -3,7 +3,7 @@
 # footer.tsx
 overview: Aperçu rapide
 home: Accueil
-features: Fonctionnalités et Caractéristiques
+features: Fonctionnalités
 downloads: Téléchargements
 external links: Liens externes
 twitter:
@@ -61,7 +61,7 @@ this concept video is made by avdan: Cette vidéo illustre un concept réalisé 
 watch on youtube: regarder sur youtube
 familiar dock, ultimate form: Dock familier, forme ultime
 everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Tout le monde reconnais le dock/la barre des tâches. Nous l'avons repensé, avec encore plus de fonctionnalités que jamais auparavant.
-brand new launch menu: Toute nouvelle intérface de démarrage
+brand new launch menu: Toute nouvelle interface de démarrage
 with everything in one place, do anything anywhere at anytime.: Avec tout dans un seul endroit, faites ce que vous voulez, n'importe où à n'importe quel moment
 easily apply layout: Appliquez facilement une disposition
 with a list of presets determined from your apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Avec une liste de prédispositions définies depuis vos applications, travaillez facilement avec une organisation parfaite de vos fenêtres. Pas assez de dispositions ? À vous les paramètres.
@@ -96,7 +96,7 @@ download: Télécharger
 web preview: Prévisualisation web
 you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Vous êtes sur le point de visiter la démo web de AvdanOS, qui n'est qu'une preuve du concept. La version live du système est recommendée afin d'obtenir une expérience complète de l'OS.
 live system is currently not available because the system is still under development: la version live du système est actuellement indisponible, car le système est toujours en cours de développement
-yes, take me there: Oui, enmenez moi là-bas
+yes, take me there: Oui, emmenez-moi là-bas
 cancel: Annuler
 before you download: Avant de télécharger
 please read this before you continue: Veuillez lire avant de continuer
@@ -146,7 +146,7 @@ width incompatibility: largeur incompatible
 increase your window width: augmentez la largeur de votre fenêtre
 your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: votre fenêtre web est trop petite pour pouvoir afficher le contenu de cette page, et nous avons détecté que vous avez pourtant un espace d'affichage plus conséquent. Veuillez augmenter ou maximiser la taille de la fenêtre de votre navigateur.
 rotate your device: tournez votre appareil
-your screen is too small to display this page. please rotate to landscape view or use desktop.: la larrgeur de votre écran est trop petite pour pouvoir afficher le contenu de cette page. Veuillez tourner votre appareil en mode paysage ou utiliser un écran de plus grande taille.
+your screen is too small to display this page. please rotate to landscape view or use desktop.: la largeur de votre écran est trop petite pour pouvoir afficher le contenu de cette page. Veuillez tourner votre appareil en mode paysage ou utiliser un écran de plus grande taille.
 this page is incompatible: cette page est incompatible
 your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Votre largeur d'écran est trop petite pour pouvoir afficher le contenu de cette page. Veuillez augmenter votre résolution système.
 your screen width is too small to display the content of this page. please increase your system's resolution.: Votre largeur d'écran est trop petite pour pouvoir afficher le contenu de cette page. Veuillez augmenter votre résolution système.
