@@ -30,7 +30,7 @@ const SlideshowExplainer = () => {
 
   const [paragraphs, setParagraphs] = useState([
     'With everything in one place, do anything anywhere at anytime.',
-    'With a list of presets determined from you apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.',
+    'With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.',
     'this file manager keeps you organised and productive. Find your files the instant you need it.',
     'Browsers have proven how powerful tabs are, so why not use them to make your OS even more powerful?',
     "We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours."
