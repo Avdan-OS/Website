@@ -4,6 +4,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import NextLink from 'next/link';
 import { useState } from 'react';
 import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Note } from '@geist-ui/core';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -96,7 +97,12 @@ const Download = () => {
         <Spacer h={3} />
         <Text className="header" h1>
           <TranslatableText>Give your PC an Upgrade.</TranslatableText>
-        </Text>
+              </Text>
+              <Spacer />
+              <Note style={{ display: 'inline-block' }} type="warning" label="NOTE">
+                  <TranslatableText link="/demo">The download is not available yet, but you can always check out the [%a]demo[%a].</TranslatableText>
+              </Note>
+              <Spacer h={0.4} />
         <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
           {useMobileMode ? null : (
