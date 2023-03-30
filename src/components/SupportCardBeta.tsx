@@ -1,5 +1,5 @@
 import { Text, Card, Divider } from '@geist-ui/core';
-import NextLink from 'next/link';
+import Link from 'next/link';
 interface SupportCardProps {
   title: string;
   description: string;
@@ -18,7 +18,7 @@ const SupportCard = ({ title, description, urlToPost }: SupportCardProps) => {
       <Card.Content>
         <Text>
           {description.substring(0, 150)} {''}
-          {<NextLink href={urlToPost}>read more</NextLink>}
+          {<Link href={urlToPost}>read more</Link>}
         </Text>
       </Card.Content>
     </Card>

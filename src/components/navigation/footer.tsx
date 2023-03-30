@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
@@ -29,39 +29,29 @@ const Footer: React.FC = () => {
               </h3>
               <ul>
                 <li>
-                  <NextLink href="/">
-                    <a>
-                      <TranslatableText>Home</TranslatableText>
-                    </a>
-                  </NextLink>
+                  <Link href="/">
+                    <TranslatableText>Home</TranslatableText>
+                  </Link>
                 </li>
                 <li>
-                  <NextLink href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
-                    <a>
-                      <TranslatableText>Features</TranslatableText>
-                    </a>
-                  </NextLink>
+                  <Link href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
+                    <TranslatableText>Features</TranslatableText>
+                  </Link>
                 </li>
                 <li>
-                  <NextLink href="/downloads">
-                    <a>
-                      <TranslatableText>Downloads</TranslatableText>
-                    </a>
-                  </NextLink>
+                  <Link href="/downloads">
+                    <TranslatableText>Downloads</TranslatableText>
+                  </Link>
                 </li>
                 <li>
-                  <NextLink href="/support">
-                    <a>
-                      <TranslatableText>Support</TranslatableText>
-                    </a>
-                  </NextLink>
+                  <Link href="/support">
+                    <TranslatableText>Support</TranslatableText>
+                  </Link>
                 </li>
                 <li>
-                  <NextLink href="/docs">
-                    <a>
-                      <TranslatableText>Documentation</TranslatableText>
-                    </a>
-                  </NextLink>
+                  <Link href="/docs">
+                    <TranslatableText>Documentation</TranslatableText>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -73,34 +63,38 @@ const Footer: React.FC = () => {
               </h3>
               <ul>
                 <li>
-                  <a href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
+                  <Link href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
                     <TranslatableText>Twitter</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
+                  <Link href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
                     <TranslatableText>GitHub</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA" target="_blank" rel="noreferrer">
+                  <Link
+                    href="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <TranslatableText>YouTube</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://avdanos.org/discord" target="_blank" rel="noreferrer">
+                  <Link href="https://avdanos.org/discord" target="_blank" rel="noreferrer">
                     <TranslatableText>Discord</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
+                  <Link href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
                     <TranslatableText>Reddit</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://instagram.com/avdanos_" target="_blank" rel="noreferrer">
+                  <Link href="https://instagram.com/avdanos_" target="_blank" rel="noreferrer">
                     <TranslatableText>Instagram</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -130,14 +124,14 @@ const Footer: React.FC = () => {
               </h3>
               <ul>
                 <li>
-                  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+                  <Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">
                     <TranslatableText>License</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/eula">
+                  <Link href="/eula">
                     <TranslatableText>EULA</TranslatableText>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -152,17 +146,17 @@ const Footer: React.FC = () => {
           >
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
-                <a style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
+                <Link style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
                   <TranslatableText>History of Incidents</TranslatableText>
-                </a>
+                </Link>
               </strong>
             </Tag>
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
-                <a href="/privacy-security" style={{ color: colorSwitch() }}>
+                <Link href="/privacy-security" style={{ color: colorSwitch() }}>
                   <TranslatableText>Privacy and Security</TranslatableText>
-                </a>
+                </Link>
               </strong>
             </Tag>
             <Spacer h={0.5} />
@@ -176,15 +170,15 @@ const Footer: React.FC = () => {
         <p className="copyright" style={{ marginTop: '-10px', marginBottom: '0', fontSize: '13px', opacity: '0.7' }}>
           ©{' '}
           <strong>
-            <a style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">
+            <Link style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">
               <TranslatableText>AvdanOS Contributors</TranslatableText>
-            </a>
+            </Link>
           </strong>{' '}
           under{' '}
           <strong>
-            <a style={{ color: colorSwitch() }} href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+            <Link style={{ color: colorSwitch() }} href="https://www.gnu.org/licenses/gpl-3.0.en.html">
               GPL-3.0
-            </a>
+            </Link>
           </strong>
           , {new Date().getFullYear()}
         </p>

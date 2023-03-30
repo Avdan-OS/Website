@@ -2,6 +2,7 @@ import { Button, Card, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
 import { TranslatableText } from './translation/TranslatableText';
 import { FaDiscord, FaInstagram, FaTwitter, FaReddit } from 'react-icons/fa';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
+import Link from 'next/link';
 
 interface SupportCardProps {
   icon: string;
@@ -43,12 +44,12 @@ const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
           <TranslatableText>{title}</TranslatableText>
         </Tag>
         <Spacer />
-        <a href={link} target="_blank" rel="noreferrer">
+        <Link href={link} target="_blank" rel="noreferrer">
           <Button type="success" width={0.7} shadow margin="9px">
             <TranslatableText>Visit</TranslatableText>
             {mobileLayout}
           </Button>
-        </a>
+        </Link>
         <Spacer h={3} />
       </Card>
     </Grid>

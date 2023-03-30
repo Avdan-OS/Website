@@ -1,6 +1,6 @@
 import { Spacer, Card, Button, Text, useTheme } from '@geist-ui/core';
 import { useEffect, useState, useRef } from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
@@ -83,9 +83,9 @@ const Features = () => {
             style={{ width: '100%', height: '100%' }}
           >
             {/* 
-              The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag.
-              20fps 720p vp9 webm g=1 is recommended when serving the video over cdn.
-            */}
+            The video source should have 100% i-frame and no p/b-frame and consistent frame rate, or the video will lag.
+            20fps 720p vp9 webm g=1 is recommended when serving the video over cdn.
+          */}
             <source
               type="video/webm"
               src={`assets/clips/features${theme.type === 'light' ? '_light' : ''}.webm`}
@@ -97,11 +97,11 @@ const Features = () => {
         <div className="slide">
           <Card className="slide__card slide__card-left" color={theme.type === 'light' ? 'black' : 'white'}>
             <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
-            <NextLink href="https://youtu.be/tXFEiw1aJTw">
+            <Link href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">
                 <TranslatableText>Watch on YouTube</TranslatableText>
               </Button>
-            </NextLink>
+            </Link>
           </Card>
 
           <Spacer h="700px" />
@@ -187,11 +187,11 @@ const Features = () => {
         <Spacer h="50px" />
         <Media />
         <Spacer h="50px" />
-        <NextLink href="/demo">
+        <Link href="/demo">
           <Button shadow type="success" margin="10px">
             <TranslatableText>Open demo</TranslatableText>
           </Button>
-        </NextLink>
+        </Link>
         <style jsx global>
           {`
             #__next {
