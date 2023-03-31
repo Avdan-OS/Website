@@ -16,8 +16,8 @@ license: 版權許可
 eula: 最終用戶許可協議
 history of incidents: 意外日誌
 privacy and security: 隱私和安全
-inspired by [%a][%b]avdan[%b][%a]: 啟發來自[%a][%b]Avdan[%b][%a]
-avdanos contributors: AvdanOS 貢獻者
+inspired by <%0|avdan|%0>: 啟發自 <%0|Avdan|%0>
+AvdanOS contributors: AvdanOS 貢獻者
 # alert.tsx
 is still in development.: 仍在開發中。
 join our discord!: 加入我們的 Discord！
@@ -37,16 +37,16 @@ download now!: 立即下載
 # miniFeaures.tsx
 workflow redefined: 工作流程全新定義
 time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!: 時間是無價的，我們的時間真的太少了。使用正確的工具和專業的工具，每項任務都可以在最短的時間內輕鬆完成！
-check what avdanos offers to you.: 看看 AvdanOS 為您提供什麼
+check what AvdanOS offers to you.: 看看 AvdanOS 為您提供什麼
 see here: 看這裡
 open projects with open community: 在開放社群中的開放計劃
-interested? give it a try!: 感興趣嗎？試試看吧！
+Interested? Give it a try!: 感興趣嗎？試試看吧！
 # discover.tsx
 open source on github: 在Github上開源
 browse all repos: 瀏覽所有存儲庫
 # discoverCard.tsx
-avdanos: Avdan 作業系統
-meet avdanos, refining the way we think about operating systems.: AvdanOS，更進步的作業系統。
+AvdanOS: Avdan 作業系統
+meet AvdanOS, refining the way we think about operating systems.: AvdanOS，更進步的作業系統。
 official website: 官方頁面
 all the new updates and information about avdanos and support.: 有關 AvdanOS 和支援的所有新更新和消息
 desktop environment: 桌面環境
@@ -105,13 +105,13 @@ yes, i understand: 是的，我同意
 use torrent download: 使用激流下載
 continue: 繼續
 # in testing
-having trouble? click [%a]here[%a] to get help!: 遇到麻煩？按[%a]這裡[%a]獲取幫助！
+Having trouble? Click <%0|here|%0> to get help!: 遇到問題？按<%0|這裡|%0>獲取幫助！
 
 # support.tsx
 avdanos support: AvdanOS 支援
 contact us on social media: 在社交媒體上聯繫我們
 visit: 前往
-want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: 想要給我們建議？我們一直希望能聽到社群。請在[%a]這裡[%a]發布您的想法。
+want to suggest anything to us? we always want to listen to the community. present your ideas <%a|here|%a>.: 想要給我們建議？我們一直希望能聽到社群。請在<%a|這裡|%a>發布您的想法。
 
 # support-beta.tsx
 avdanos support articles: AvdanOS 支援文章
@@ -134,7 +134,7 @@ open documentation: 打開開發人員指南
 # demo.tsx
 # "Try in your browser." is in index.tsx
 full screen: 全螢幕
-this demo is open source on [%a]github[%a].: 此演示是開源的，您可以在[%a]GitHub[%a]上查看。
+this demo is open source on <%a|github|%a>.: 此演示是開源的，您可以在<%a|GitHub|%a>上查看。
 
 # 404.tsx
 page not found: 找不到這個頁面

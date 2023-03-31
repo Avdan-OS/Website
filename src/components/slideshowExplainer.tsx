@@ -1,7 +1,7 @@
 import { Text, Spacer } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, useEffect, useRef } from 'react';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Translatable } from '@/components/translation/Translatable';
 import preview1 from './slideshowAssets/preview1.jpg';
 import preview2 from './slideshowAssets/preview2.jpg';
 import preview3 from './slideshowAssets/preview3.jpg';
@@ -69,11 +69,11 @@ const SlideshowExplainer = () => {
           <Spacer h="15px" />
           <div className="breathe_5s">
             <Text h2 className="greenbg text-center" style={{ height: '87px' }}>
-              <TranslatableText key={index}>{titles[index]}</TranslatableText>
+              <Translatable key={index}>{titles[index]}</Translatable>
             </Text>
             {isScreenTooSmall ? '' : <Spacer h="15px" />}
             <Text p className="greenbg text-center" style={{ height: '104px' }}>
-              <TranslatableText key={index}>{paragraphs[index]}</TranslatableText>
+              <Translatable key={index}>{paragraphs[index]}</Translatable>
             </Text>
           </div>
         </div>

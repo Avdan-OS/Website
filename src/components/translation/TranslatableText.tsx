@@ -3,7 +3,7 @@ import YAML from 'yaml';
 import styleInjector from './StyleInjector';
 
 let storeLocale: (locale: string) => void = (locale) => {
-  if (window && window.localStorage) window.localStorage.setItem('locale', locale);
+  //if (window && window.localStorage) window.localStorage.setItem('locale', locale);
 };
 let instanceList: Array<{
   text: string;
@@ -19,10 +19,10 @@ let importedLocale: Map<string, string> = null;
  * When no translation is available, it will leave the original text untouched.
  * @argument link Optional. If supplied, [%s] will be injected with link. Can be absolute or relative url.
  * @example ```html
- * <TranslatableText>This text can be automatically translated</TranslatableText>
+ * <Translatable>This text can be automatically translated</Translatable>
  * ```
  */
-const TranslatableText = ({
+const Translatable = ({
   children,
   link,
   linkStyle
@@ -51,6 +51,7 @@ const TranslatableText = ({
  */
 const setLocale: (locale: string) => void = async (locale) => {
   storeLocale(locale);
+  if (locale.includes('_')) return;
   importedLocale = await YAML.parse(await (await fetch(`/assets/lang/${locale}.yaml`)).text(), {
     mapAsMap: true
   });
@@ -61,4 +62,4 @@ const setLocale: (locale: string) => void = async (locale) => {
   });
 };
 
-export { TranslatableText, setLocale };
+export { Translatable, setLocale };

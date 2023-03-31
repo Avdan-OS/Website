@@ -3,7 +3,8 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import SupportCard from '@/components/SupportCard';
 import BetaPopup from '@/components/BetaPopup';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import Link from 'next/link';
+import { Translatable } from '@/components/translation/Translatable';
 
 const Support = () => {
   const [mobileLayout, useMobileLayout] = useState(false);
@@ -17,10 +18,10 @@ const Support = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <TranslatableText>AvdanOS Support</TranslatableText>
+          <Translatable>AvdanOS Support</Translatable>
         </Text>
         <Text h4>
-          <TranslatableText>Contact Us On Social Media</TranslatableText>
+          <Translatable>Contact Us On Social Media</Translatable>
         </Text>
         <Spacer h={2} />
         <Grid.Container
@@ -54,9 +55,10 @@ const Support = () => {
         </Grid.Container>
         <Spacer h={5} />
         <Text h4>
-          <TranslatableText link="https://github.com/Avdan-OS/suggestions">
-            Want to suggest anything to us? We always want to listen to the community. Present your ideas [%a]here[%a].
-          </TranslatableText>
+          <Translatable>
+            Want to suggest anything to us? We always want to listen to the community. Present your ideas{' '}
+            <Link href="https://github.com/Avdan-OS/suggestions">here</Link>.
+          </Translatable>
         </Text>
         <Spacer h={5} />
         <BetaPopup href="/support-beta" />

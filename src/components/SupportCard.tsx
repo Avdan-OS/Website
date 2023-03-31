@@ -1,5 +1,5 @@
 import { Button, Card, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
-import { TranslatableText } from './translation/TranslatableText';
+import { Translatable } from './translation/Translatable';
 import { FaDiscord, FaInstagram, FaTwitter, FaReddit } from 'react-icons/fa';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 import Link from 'next/link';
@@ -41,12 +41,12 @@ const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
         {iconSelector()}
         <Spacer />
         <Tag>
-          <TranslatableText>{title}</TranslatableText>
+          <Translatable>{title}</Translatable>
         </Tag>
         <Spacer />
         <Link href={link} target="_blank" rel="noreferrer">
           <Button type="success" width={0.7} shadow margin="9px">
-            <TranslatableText>Visit</TranslatableText>
+            <Translatable>Visit</Translatable>
             {mobileLayout}
           </Button>
         </Link>

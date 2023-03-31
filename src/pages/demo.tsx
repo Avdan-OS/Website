@@ -1,7 +1,8 @@
 import { Button, Card, Text } from '@geist-ui/core';
-import { TranslatableText } from '@/components/translation/TranslatableText';
 import { useRef } from 'react';
 import WidthRequirement from '@/components/WidthRequirement';
+import Link from 'next/link';
+import { Translatable } from '@/components/translation/Translatable';
 const preview = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const minWidthNeeded = 1200;
@@ -18,12 +19,12 @@ const preview = () => {
       <WidthRequirement width={minWidthNeeded} />
       <div className="mx-auto" style={{ width: '100%', height: '100%' }}>
         <Text className="header text-center" h1 style={{ marginTop: '25px' }}>
-          <TranslatableText>Try in your browser</TranslatableText>
+          <Translatable>Try in your browser</Translatable>
         </Text>
         <Text className="text-center">
-          <TranslatableText link="https://github.com/FacuA0/AvdanOS-UI-Online">
-            This demo is open source on [%a]GitHub[%a].
-          </TranslatableText>
+          <Translatable>
+            This demo is open source on <Link href="https://github.com/FacuA0/AvdanOS-UI-Online">GitHub</Link>.
+          </Translatable>
         </Text>
         <Card shadow>
           <iframe
@@ -35,7 +36,7 @@ const preview = () => {
           />
           <div style={{ display: 'flex', margin: '15px' }}>
             <Button shadow type="success" margin="auto" onClick={fullScreen}>
-              <TranslatableText>Full Screen</TranslatableText>
+              <Translatable>Full Screen</Translatable>
             </Button>
           </div>
         </Card>

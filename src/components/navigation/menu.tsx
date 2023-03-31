@@ -8,7 +8,7 @@ import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
-import { TranslatableText } from '../translation/TranslatableText';
+import { Translatable } from '../translation/Translatable';
 
 const Menu = () => {
   const theme = useTheme();
@@ -46,14 +46,14 @@ const Menu = () => {
               hideDivider
               onChange={(route) => router.push(route)}
             >
-              <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+              <Tabs.Item label={<Translatable>Home</Translatable>} value="/" />
               <Tabs.Item
-                label={<TranslatableText>Features</TranslatableText>}
+                label={<Translatable>Features</Translatable>}
                 value={`/features${useFeaturesBeta ? '-beta' : ''}`}
               />
-              <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
-              <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
-              <Tabs.Item label={<TranslatableText>Docs</TranslatableText>} value="/docs" />
+              <Tabs.Item label={<Translatable>Downloads</Translatable>} value="/downloads" />
+              <Tabs.Item label={<Translatable>Support</Translatable>} value="/support" />
+              <Tabs.Item label={<Translatable>Docs</Translatable>} value="/docs" />
             </Tabs>
           </ul>
         </div>
@@ -66,15 +66,15 @@ const Menu = () => {
               hideDivider
               onChange={(route) => router.push(route)}
             >
-              <Tabs.Item label={<TranslatableText>Home</TranslatableText>} value="/" />
+              <Tabs.Item label={<Translatable>Home</Translatable>} value="/" />
               <Tabs.Item
-                label={<TranslatableText>Features</TranslatableText>}
+                label={<Translatable>Features</Translatable>}
                 value={`/features${useFeaturesBeta ? '-beta' : ''}`}
               />
-              <Tabs.Item label={<TranslatableText>Downloads</TranslatableText>} value="/downloads" />
-              <Tabs.Item label={<TranslatableText>Support</TranslatableText>} value="/support" />
-              <Tabs.Item label={<TranslatableText>Documentation</TranslatableText>} value="/docs" />
-              <Tabs.Item label={<TranslatableText>Demo</TranslatableText>} value="/demo" />
+              <Tabs.Item label={<Translatable>Downloads</Translatable>} value="/downloads" />
+              <Tabs.Item label={<Translatable>Support</Translatable>} value="/support" />
+              <Tabs.Item label={<Translatable>Documentation</Translatable>} value="/docs" />
+              <Tabs.Item label={<Translatable>Demo</Translatable>} value="/demo" />
             </Tabs>
           </ul>
         </div>

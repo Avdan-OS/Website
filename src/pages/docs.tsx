@@ -1,7 +1,7 @@
 import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts, Link } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Translatable } from '@/components/translation/Translatable';
 
 const Docs = () => {
   const theme = useTheme();
@@ -25,7 +25,7 @@ const Docs = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <TranslatableText>Read the features in detail.</TranslatableText>
+          <Translatable>Read the features in detail.</Translatable>
         </Text>
         <Spacer h={2} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -45,7 +45,7 @@ const Docs = () => {
                 width="200px"
               />
               <Tag>
-                <TranslatableText>I'm a User</TranslatableText>
+                <Translatable>I'm a User</Translatable>
               </Tag>
               <Spacer />
               <Button
@@ -54,13 +54,13 @@ const Docs = () => {
                 margin="10px"
                 onClick={() => {
                   setToast({
-                    text: <TranslatableText>Manual is not available yet</TranslatableText>,
+                    text: <Translatable>Manual is not available yet</Translatable>,
                     delay: 5000,
                     type: 'error'
                   });
                 }}
               >
-                <TranslatableText>Open manual</TranslatableText>
+                <Translatable>Open manual</Translatable>
               </Button>
               <Spacer h={3} />
             </Card>
@@ -81,12 +81,12 @@ const Docs = () => {
                 alt="Developer Documentation"
               />
               <Tag>
-                <TranslatableText>I'm a Developer</TranslatableText>
+                <Translatable>I'm a Developer</Translatable>
               </Tag>
               <Spacer />
               <Link href="https://docs.avdanos.com/">
                 <Button type="success" shadow margin="10px">
-                  <TranslatableText>Open documentation</TranslatableText>
+                  <Translatable>Open documentation</Translatable>
                 </Button>
               </Link>
               <Spacer h={3} />

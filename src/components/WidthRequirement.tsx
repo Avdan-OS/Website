@@ -7,7 +7,7 @@
 import { Modal, useModal, Button } from '@geist-ui/core';
 import { useState, useEffect } from 'react';
 import dynamicWidth from '@/lib/dynamic-width';
-import { TranslatableText } from './translation/TranslatableText';
+import { Translatable } from './translation/Translatable';
 
 declare global {
   interface Window {
@@ -89,18 +89,18 @@ const WidthRequirement = ({ width, redirect }: { width: number; redirect?: strin
       }}
     >
       <Modal.Title>
-        <TranslatableText>Width Incompatibility</TranslatableText>
+        <Translatable>Width Incompatibility</Translatable>
       </Modal.Title>
       <Modal.Subtitle>
-        <TranslatableText>{subtitle}</TranslatableText>
+        <Translatable>{subtitle}</Translatable>
       </Modal.Subtitle>
       <Modal.Content>
         <p>
-          <TranslatableText>{content}</TranslatableText>
+          <Translatable>{content}</Translatable>
         </p>
       </Modal.Content>
       <Modal.Action onClick={() => closeHandler()}>
-        <TranslatableText>Close</TranslatableText>
+        <Translatable>Close</Translatable>
       </Modal.Action>
     </Modal>
   );

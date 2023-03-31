@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Translatable } from '@/components/translation/Translatable';
 
 const Features = () => {
   const theme = useTheme();
@@ -59,17 +59,17 @@ const Features = () => {
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
-          <TranslatableText>Avdan's concept, we're making it Real!</TranslatableText>
+          <Translatable>Avdan's concept, we're making it Real!</Translatable>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
         <div id="loadText" ref={loadTextRef}>
-          <TranslatableText>Assets are loading, please wait</TranslatableText>
+          <Translatable>Assets are loading, please wait</Translatable>
           <div ref={loadAnimRef} id="loadAnim">
             .
           </div>
         </div>
         <div className="breath" ref={scrolldownRef} style={{ display: 'none' }}>
-          <TranslatableText>Scroll down to see what we've got here</TranslatableText>
+          <Translatable>Scroll down to see what we've got here</Translatable>
         </div>
       </div>
       <div>
@@ -96,10 +96,10 @@ const Features = () => {
         </div>
         <div className="slide">
           <Card className="slide__card slide__card-left" color={theme.type === 'light' ? 'black' : 'white'}>
-            <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
+            <Translatable>This concept video is made by Avdan</Translatable> <Spacer />
             <Link href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">
-                <TranslatableText>Watch on YouTube</TranslatableText>
+                <Translatable>Watch on YouTube</Translatable>
               </Button>
             </Link>
           </Card>
@@ -176,20 +176,20 @@ const Features = () => {
       <div className="text-center" style={{ height: '80vh' }}>
         <Spacer h="calc(40vh - 150px)" />
         <Text className="header" h1>
-          <TranslatableText>Under development</TranslatableText>
+          <Translatable>Under development</Translatable>
         </Text>
         <Spacer h="30px" />
         <Text>
-          <TranslatableText>
+          <Translatable>
             This project wouldn't be possible without the community's contributions. Join us and help!
-          </TranslatableText>
+          </Translatable>
         </Text>
         <Spacer h="50px" />
         <Media />
         <Spacer h="50px" />
         <Link href="/demo">
           <Button shadow type="success" margin="10px">
-            <TranslatableText>Open demo</TranslatableText>
+            <Translatable>Open demo</Translatable>
           </Button>
         </Link>
         <style jsx global>

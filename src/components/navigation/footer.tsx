@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
-import { TranslatableText } from '../translation/TranslatableText';
+import { Translatable } from '../translation/Translatable';
 
 const Footer: React.FC = () => {
   const theme = useTheme();
@@ -25,32 +25,32 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-1">
             <div>
               <h3>
-                <TranslatableText>Overview</TranslatableText>
+                <Translatable>Overview</Translatable>
               </h3>
               <ul>
                 <li>
                   <Link href="/">
-                    <TranslatableText>Home</TranslatableText>
+                    <Translatable>Home</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
-                    <TranslatableText>Features</TranslatableText>
+                    <Translatable>Features</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="/downloads">
-                    <TranslatableText>Downloads</TranslatableText>
+                    <Translatable>Downloads</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="/support">
-                    <TranslatableText>Support</TranslatableText>
+                    <Translatable>Support</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="/docs">
-                    <TranslatableText>Documentation</TranslatableText>
+                    <Translatable>Documentation</Translatable>
                   </Link>
                 </li>
               </ul>
@@ -59,17 +59,17 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-2">
             <div>
               <h3>
-                <TranslatableText>External Links</TranslatableText>
+                <Translatable>External Links</Translatable>
               </h3>
               <ul>
                 <li>
                   <Link href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
-                    <TranslatableText>Twitter</TranslatableText>
+                    <Translatable>Twitter</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
-                    <TranslatableText>GitHub</TranslatableText>
+                    <Translatable>GitHub</Translatable>
                   </Link>
                 </li>
                 <li>
@@ -78,22 +78,22 @@ const Footer: React.FC = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <TranslatableText>YouTube</TranslatableText>
+                    <Translatable>YouTube</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://avdanos.org/discord" target="_blank" rel="noreferrer">
-                    <TranslatableText>Discord</TranslatableText>
+                    <Translatable>Discord</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
-                    <TranslatableText>Reddit</TranslatableText>
+                    <Translatable>Reddit</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://instagram.com/avdanos_" target="_blank" rel="noreferrer">
-                    <TranslatableText>Instagram</TranslatableText>
+                    <Translatable>Instagram</Translatable>
                   </Link>
                 </li>
               </ul>
@@ -120,17 +120,17 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-3">
             <div>
               <h3>
-                <TranslatableText>Legal</TranslatableText>
+                <Translatable>Legal</Translatable>
               </h3>
               <ul>
                 <li>
                   <Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-                    <TranslatableText>License</TranslatableText>
+                    <Translatable>License</Translatable>
                   </Link>
                 </li>
                 <li>
                   <Link href="/eula">
-                    <TranslatableText>EULA</TranslatableText>
+                    <Translatable>EULA</Translatable>
                   </Link>
                 </li>
               </ul>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
-                  <TranslatableText>History of Incidents</TranslatableText>
+                  <Translatable>History of Incidents</Translatable>
                 </Link>
               </strong>
             </Tag>
@@ -155,15 +155,18 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link href="/privacy-security" style={{ color: colorSwitch() }}>
-                  <TranslatableText>Privacy and Security</TranslatableText>
+                  <Translatable>Privacy and Security</Translatable>
                 </Link>
               </strong>
             </Tag>
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
-              <TranslatableText link="https://youtube.com/avdan" linkStyle={{ color: colorSwitch() }}>
-                Inspired by [%a][%b]Avdan[%b][%a]
-              </TranslatableText>
+              <Translatable>
+                Inspired by{' '}
+                <strong>
+                  <Link href="https://youtube.com/avdan">Avdan</Link>
+                </strong>
+              </Translatable>
             </Tag>
           </div>
         </div>
@@ -171,7 +174,7 @@ const Footer: React.FC = () => {
           ©{' '}
           <strong>
             <Link style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">
-              <TranslatableText>AvdanOS Contributors</TranslatableText>
+              <Translatable>AvdanOS Contributors</Translatable>
             </Link>
           </strong>{' '}
           under{' '}

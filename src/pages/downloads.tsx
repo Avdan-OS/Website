@@ -1,9 +1,9 @@
 // prettier-ignore
-import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { useState } from 'react';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Translatable } from '@/components/translation/Translatable';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -51,7 +51,7 @@ const Download = () => {
   const downloadHandler = () => {
     downloadModal.setVisible(false);
     setToast({
-      text: <TranslatableText>This download is not available yet.</TranslatableText>,
+      text: <Translatable>This download is not available yet.</Translatable>,
       delay: 5000,
       type: 'error'
     });
@@ -95,7 +95,7 @@ const Download = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <TranslatableText>Give your PC an Upgrade.</TranslatableText>
+          <Translatable>Give your PC an Upgrade.</Translatable>
         </Text>
         <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -109,7 +109,7 @@ const Download = () => {
                 width="100%"
               >
                 <Tag type="success">
-                  <TranslatableText>Try in your Browser</TranslatableText>
+                  <Translatable>Try in your Browser</Translatable>
                 </Tag>
                 <Image
                   draggable="false"
@@ -127,7 +127,7 @@ const Download = () => {
                   }}
                   margin="10px"
                 >
-                  <TranslatableText>Open Demo</TranslatableText>
+                  <Translatable>Open Demo</Translatable>
                 </Button>
                 <Spacer h={0} />
               </Card>
@@ -142,7 +142,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">
-                <TranslatableText>For most people</TranslatableText>
+                <Translatable>For most people</Translatable>
               </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
@@ -154,7 +154,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                <TranslatableText>Download</TranslatableText>
+                <Translatable>Download</Translatable>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -168,7 +168,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">
-                <TranslatableText>For Pi, Pine, and Mac</TranslatableText>
+                <Translatable>For Pi, Pine, and Mac</Translatable>
               </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
@@ -180,7 +180,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                <TranslatableText>Download</TranslatableText>
+                <Translatable>Download</Translatable>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -188,37 +188,39 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            <TranslatableText link="/support">Having trouble? Click [%a]here[%a] to get help!</TranslatableText>
+            <Translatable>
+              Having trouble? Click <Link href="/support">here</Link> to get help!
+            </Translatable>
           </Card>
         </div>
       </div>
       <Modal {...downloadModal.bindings}>
         <Modal.Title>
-          <TranslatableText>Before you Download</TranslatableText>
+          <Translatable>Before you Download</Translatable>
         </Modal.Title>
         <Modal.Subtitle>
-          <TranslatableText>Please read this before you continue</TranslatableText>
+          <Translatable>Please read this before you continue</Translatable>
         </Modal.Subtitle>
         <Modal.Content>
           <p>
-            <TranslatableText>
+            <Translatable>
               Below is the shasum of the download. You can use it to check download's integrity
-            </TranslatableText>
+            </Translatable>
             :
           </p>
           <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
-          <TranslatableText>
+          <Translatable>
             Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
             ever, etc...
-          </TranslatableText>
+          </Translatable>
           <br />
           <Checkbox
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
           >
-            <TranslatableText>Yes, I understand</TranslatableText>
+            <Translatable>Yes, I understand</Translatable>
           </Checkbox>
           <br />
           <Checkbox
@@ -226,11 +228,11 @@ const Download = () => {
               setTorrent(e.target.checked);
             }}
           >
-            <TranslatableText>Use torrent download</TranslatableText>
+            <Translatable>Use torrent download</Translatable>
           </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
-          <TranslatableText>Cancel</TranslatableText>
+          <Translatable>Cancel</Translatable>
         </Modal.Action>
         <Modal.Action
           disabled={!canDownload}
@@ -238,30 +240,30 @@ const Download = () => {
             downloadHandler();
           }}
         >
-          <TranslatableText>Continue</TranslatableText>
+          <Translatable>Continue</Translatable>
         </Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>
-          <TranslatableText>Web preview</TranslatableText>
+          <Translatable>Web preview</Translatable>
         </Modal.Title>
         <Modal.Content>
           <p>
-            <TranslatableText>
+            <Translatable>
               You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
               system is strongly recommended to getting the full experience from the operating system.
-            </TranslatableText>
+            </Translatable>
             <br />*
-            <TranslatableText>
+            <Translatable>
               Live system is currently not available because the system is still under development
-            </TranslatableText>
+            </Translatable>
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          <TranslatableText>cancel</TranslatableText>
+          <Translatable>cancel</Translatable>
         </Modal.Action>
         <Modal.Action onClick={() => window.location.replace('/demo')}>
-          <TranslatableText>Yes, take me there</TranslatableText>
+          <Translatable>Yes, take me there</Translatable>
         </Modal.Action>
       </Modal>
       <style jsx>{`
