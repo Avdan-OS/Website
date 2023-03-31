@@ -1,5 +1,5 @@
 import { Button, Text, Spacer } from '@geist-ui/core';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { TranslatableText } from '@/components/translation/TranslatableText';
 import SlideshowExplainer from '@/components/slideshowExplainer';
 
@@ -28,11 +28,11 @@ const MiniFeatures = () => {
             <TranslatableText>Check what AvdanOS offers to you.</TranslatableText>
           </Text>
 
-          <NextLink href="/features-beta">
+          <Link href="/features-beta">
             <Button shadow type="success" color="primary">
               <TranslatableText>See here</TranslatableText>
             </Button>
-          </NextLink>
+          </Link>
         </div>
       </div>
     </>

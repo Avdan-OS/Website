@@ -1,5 +1,5 @@
 import { Button, Text, Spacer, useTheme } from '@geist-ui/core';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
@@ -29,17 +29,17 @@ const index = () => {
         <div className="center card-container">
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
-              <NextLink href="/demo">
+              <Link href="/demo">
                 <Button shadow type="secondary" margin="10px">
                   <TranslatableText>Try in your browser</TranslatableText>
                 </Button>
-              </NextLink>
+              </Link>
             )}
-            <NextLink href="/downloads">
+            <Link href="/downloads">
               <Button shadow type="success" margin="10px">
                 <TranslatableText>Download Now!</TranslatableText>
               </Button>
-            </NextLink>
+            </Link>
           </div>
         </div>
         <Spacer h="35vh" />
@@ -56,17 +56,17 @@ const index = () => {
           </Text>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
-              <NextLink href="/demo">
+              <Link href="/demo">
                 <Button shadow type="secondary" margin="10px">
                   <TranslatableText>Try in your browser</TranslatableText>
                 </Button>
-              </NextLink>
+              </Link>
             )}
-            <NextLink href="/downloads">
+            <Link href="/downloads">
               <Button shadow type="success" margin="10px">
                 <TranslatableText>Download Now!</TranslatableText>
               </Button>
-            </NextLink>
+            </Link>
           </div>
         </div>
         <Spacer h={2} />

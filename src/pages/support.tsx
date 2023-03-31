@@ -59,7 +59,7 @@ const Support = () => {
           </TranslatableText>
         </Text>
         <Spacer h={5} />
-        <BetaPopup Link="/support-beta" />
+        <BetaPopup href="/support-beta" />
       </div>
     </>
   );

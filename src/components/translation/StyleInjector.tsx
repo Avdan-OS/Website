@@ -19,9 +19,9 @@ const injectStyle = (text: string, link?: string, linkStyle?: CSSProperties) => 
     return (
       <>
         {injectBold(splittedText[0])}
-        <a href={link} style={linkStyle}>
+        <Link href={link} style={linkStyle}>
           {injectBold(splittedText[1])}
-        </a>
+        </Link>
         {injectBold(splittedText[2])}
       </>
     );

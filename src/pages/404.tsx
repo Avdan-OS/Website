@@ -1,6 +1,7 @@
 import { TranslatableText } from '@/components/translation/TranslatableText';
 import { Note } from '@geist-ui/core';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Page404 = () => {
   return (
@@ -17,7 +18,7 @@ const Page404 = () => {
           <TranslatableText>This page does not exist.</TranslatableText>
         </h4>
         <Note style={{ display: 'inline-block' }} type="warning" label="Tip">
-          Join in and <a href="https://github.com/avdan-os">help us</a> out developing an{' '}
+          Join in and <Link href="https://github.com/avdan-os">help us</Link> out developing an{' '}
           <strong>open-source operating system</strong>.
         </Note>
       </div>

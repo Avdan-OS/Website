@@ -3,7 +3,7 @@ import { Sun, Moon, Download } from 'react-feather';
 import { usePrefers } from '@/lib/use-prefers';
 import { useRouter } from 'next/router';
 import Logo from '../logo';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
@@ -103,40 +103,38 @@ const Menu = () => {
             onClick={() => changeTheme()}
           ></Button>
           <TranslationList />
-          <NextLink href="/downloads" passHref>
-            <a>
-              <Button
-                aria-label="Open Download page"
-                className="theme-button theme-button-cyan"
-                auto
-                shadow
-                type="success"
-                iconRight={<Download className="theme-buttonicon" size={16} />}
-              ></Button>
-            </a>
-          </NextLink>
+          <Link href="/downloads" passHref>
+            <Button
+              aria-label="Open Download page"
+              className="theme-button theme-button-cyan"
+              auto
+              shadow
+              type="success"
+              iconRight={<Download className="theme-buttonicon" size={16} />}
+            ></Button>
+          </Link>
           {!useAltMenuPosition ? null : <MenuBar />}
         </div>
       </nav>
       <Submenu />
       <style>{`
-        .theme-button {
-          margin: 0 ${theme.layout.gapHalf};
-          
-        }
-        .theme-button-cyan {
-          background-color: ${theme.palette.cyan} !important;
-        }
-    
-        .header-dark-tabs {
-          border-radius: 6px;
-          color: #fff;
-          border: 1px solid #333;
-          backdrop-filter: blur(2rem);
-          background: rgba(0, 0, 0, 0.2) !important;
-          -webkit-backdrop-filter: blur(2rem);
-          padding-right: 6px !important;
-      `}</style>
+      .theme-button {
+        margin: 0 ${theme.layout.gapHalf};
+        
+      }
+      .theme-button-cyan {
+        background-color: ${theme.palette.cyan} !important;
+      }
+  
+      .header-dark-tabs {
+        border-radius: 6px;
+        color: #fff;
+        border: 1px solid #333;
+        backdrop-filter: blur(2rem);
+        background: rgba(0, 0, 0, 0.2) !important;
+        -webkit-backdrop-filter: blur(2rem);
+        padding-right: 6px !important;
+    `}</style>
     </>
   );
 };
