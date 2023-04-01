@@ -12,7 +12,6 @@ let componentList: Array<{
 }> = [];
 let importedLocale;
 
-// This function takes translated string and inject it to the component
 let injectTranslation = (component: ReactNode, tString: string) => {
   try {
     let layer = -1;
@@ -28,7 +27,7 @@ let injectTranslation = (component: ReactNode, tString: string) => {
     let objRebuild = (component: any, tString: string): { component: any; tString: string } => {
       let element = component.props.children;
       if (typeof element == 'string') {
-        let splitString = tString.split('|%0>');
+        let splitString = tString.split(`|%${layer}>`);
         return { component: writeChildren(component, splitString[0]), tString: splitString[1] };
       } else if (Array.isArray(element)) {
         let nextLayer = arrRebuild(element, tString);
@@ -39,18 +38,17 @@ let injectTranslation = (component: ReactNode, tString: string) => {
       }
     };
     let arrRebuild = (component: any[], tString: string): { component: any[]; tString: string } => {
-      // make component writable
       component = [...component];
-
       for (let i = 0; i < component.length; i++) {
-        if (typeof component[i] == 'string' || typeof component[i] == 'number') {
+        if (typeof component[i] == 'string') {
           // Merge consecutive strings
           while (typeof component[i + 1] == 'string') {
             component.splice(i + 1, 1);
           }
           if (component[i + 1]) {
-            component[i] = tString.split('<%0|')[0];
-            tString = tString.split('<%0|')[1];
+            let splitString = tString.split(`<%${layer + 1}|`);
+            component[i] = splitString.shift();
+            tString = splitString.join(`<%${layer + 1}|`);
           } else {
             component[i] = tString;
           }
@@ -74,7 +72,7 @@ let injectTranslation = (component: ReactNode, tString: string) => {
       return objRebuild(component, tString).component;
     }
   } catch (err) {
-    console.group('Translation Mismatch Error');
+    console.groupCollapsed('Translation Mismatch Error');
     console.warn('Translation Mismatch, component will not get translated. Please update the following translation.');
     console.warn(`Was expecting translation of:
     ╔═══════════════════
@@ -99,10 +97,10 @@ let loadLocale = async (locale: string) => {
     });
     return;
   }
+
   let res = await fetch(`/assets/lang/${locale}.yaml`);
-  if (!res.ok) {
-    return console.warn('locale is not available');
-  }
+  if (!res.ok) return console.warn('locale is not available');
+
   importedLocale = Object.fromEntries(
     Object.entries(await YAML.parse(await res.text())).map(([key, val]) => [key.toLowerCase(), val])
   );
