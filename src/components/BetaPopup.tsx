@@ -43,7 +43,7 @@ const BetaCard = ({ href }: { href: string }) => {
             left: 20px;
             bottom: 10px;
             width: 270px;
-            z-index: 3;
+            z-index: 6;
           }
           .beta-popup {
             padding: 10px;

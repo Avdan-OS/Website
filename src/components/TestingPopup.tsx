@@ -6,18 +6,24 @@ const TestingPopup = () => {
   const betaContainerRef = useRef<HTMLDivElement>(null);
   const Theme = useTheme();
   return (
-    <div id="beta-container" ref={betaContainerRef}>
-      <Card className="beta-popup">
+    <div id="branch-container" ref={betaContainerRef}>
+      <Card
+        style={{
+          backgroundColor: '#00000069',
+          backdropFilter: 'blur(8px)'
+        }}
+      >
         <Text>
           You're viewing an unstable branch of this website where the "TranslatableText" library is getting replaced by
           a more flexible "Translatable" library. There are a LOT of known issues, and help will be greatly appreciated.
           Only zh-TW (🇹🇼) is updated for testing reasons and it's the only locale that currently works. I will fix all
           the other locale files with release of a stable version. Meanwhile you can noodle things around and see what
           is new.
-          <br />- Frox
+          <br />- Frox, Website contributor
           <img
             style={{
-              width: '30px'
+              width: '23px',
+              marginBottom: '7px'
             }}
             src="https://user-images.githubusercontent.com/51555391/176177206-ec3f9dce-8780-4fe8-b6ac-5eeeac2038d4.gif"
           ></img>
@@ -35,17 +41,13 @@ const TestingPopup = () => {
       </Card>
       <style jsx>
         {`
-          #beta-container {
+          #branch-container {
+            z-index: 6;
             position: fixed;
             right: 20px;
             bottom: 10px;
             width: 290px;
-            z-index: 3;
             font-size: 12px;
-          }
-          .beta-popup {
-            padding: 10px;
-            background: ${Theme.palette.accents_3};
           }
         `}
       </style>
