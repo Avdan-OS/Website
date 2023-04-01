@@ -1,5 +1,5 @@
 import { Select, Text } from '@geist-ui/core';
-import { setLocale } from './Translatable';
+import { setLocale } from './Chiislate';
 import { useState, useEffect } from 'react';
 const TranslationList = () => {
   // This array controls what languages shows up as available in the website.

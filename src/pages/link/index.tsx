@@ -1,6 +1,6 @@
 import Logo from '@/components/logo';
 import Media from '@/components/media';
-import { Translatable } from '@/components/translation/Translatable';
+import { Chiislate } from '@/components/translation/Chiislate';
 import { Spacer, Text } from '@geist-ui/core';
 
 const index = () => {
@@ -9,13 +9,13 @@ const index = () => {
       <Spacer h="calc(40vh - 150px)" />
       <Text className="header" h1>
         <Logo />
-        <Translatable>Under development</Translatable>
+        <Chiislate>Under development</Chiislate>
       </Text>
       <Spacer h="15px" />
       <Text>
-        <Translatable>
+        <Chiislate>
           This project wouldn't be possible without the community's contributions. Join us and help!
-        </Translatable>
+        </Chiislate>
       </Text>
       <Spacer h="20px" />
       <Media />

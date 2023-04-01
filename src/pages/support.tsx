@@ -4,7 +4,7 @@ import { useState } from 'react';
 import SupportCard from '@/components/SupportCard';
 import BetaPopup from '@/components/BetaPopup';
 import Link from 'next/link';
-import { Translatable } from '@/components/translation/Translatable';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const Support = () => {
   const [mobileLayout, useMobileLayout] = useState(false);
@@ -18,10 +18,10 @@ const Support = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <Translatable>AvdanOS Support</Translatable>
+          <Chiislate>AvdanOS Support</Chiislate>
         </Text>
         <Text h4>
-          <Translatable>Contact Us On Social Media</Translatable>
+          <Chiislate>Contact Us On Social Media</Chiislate>
         </Text>
         <Spacer h={2} />
         <Grid.Container
@@ -55,10 +55,10 @@ const Support = () => {
         </Grid.Container>
         <Spacer h={5} />
         <Text h4>
-          <Translatable>
+          <Chiislate>
             Want to suggest anything to us? We always want to listen to the community. Present your ideas{' '}
             <Link href="https://github.com/Avdan-OS/suggestions">here</Link>.
-          </Translatable>
+          </Chiislate>
         </Text>
         <Spacer h={5} />
         <BetaPopup href="/support-beta" />

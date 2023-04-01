@@ -8,7 +8,7 @@ import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState, Component } from 'react';
-import { Translatable } from '../translation/Translatable';
+import { Chiislate } from '../translation/Chiislate';
 
 const Menu = () => {
   const theme = useTheme();
@@ -46,14 +46,11 @@ const Menu = () => {
               hideDivider
               onChange={(route) => router.push(route)}
             >
-              <Tabs.Item label={<Translatable>Home</Translatable>} value="/" />
-              <Tabs.Item
-                label={<Translatable>Features</Translatable>}
-                value={`/features${useFeaturesBeta ? '-beta' : ''}`}
-              />
-              <Tabs.Item label={<Translatable>Downloads</Translatable>} value="/downloads" />
-              <Tabs.Item label={<Translatable>Support</Translatable>} value="/support" />
-              <Tabs.Item label={<Translatable>Docs</Translatable>} value="/docs" />
+              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
+              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
+              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
+              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
+              <Tabs.Item label={<Chiislate>Docs</Chiislate>} value="/docs" />
             </Tabs>
           </ul>
         </div>
@@ -66,15 +63,12 @@ const Menu = () => {
               hideDivider
               onChange={(route) => router.push(route)}
             >
-              <Tabs.Item label={<Translatable>Home</Translatable>} value="/" />
-              <Tabs.Item
-                label={<Translatable>Features</Translatable>}
-                value={`/features${useFeaturesBeta ? '-beta' : ''}`}
-              />
-              <Tabs.Item label={<Translatable>Downloads</Translatable>} value="/downloads" />
-              <Tabs.Item label={<Translatable>Support</Translatable>} value="/support" />
-              <Tabs.Item label={<Translatable>Documentation</Translatable>} value="/docs" />
-              <Tabs.Item label={<Translatable>Demo</Translatable>} value="/demo" />
+              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
+              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
+              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
+              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
+              <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
+              <Tabs.Item label={<Chiislate>Demo</Chiislate>} value="/demo" />
             </Tabs>
           </ul>
         </div>

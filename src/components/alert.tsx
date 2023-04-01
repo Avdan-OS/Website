@@ -1,6 +1,6 @@
 import { Link, Grid, Card, useTheme } from '@geist-ui/core';
 import style from '../styles/components/cards.module.css';
-import { Translatable } from './translation/Translatable';
+import { Chiislate } from './translation/Chiislate';
 
 const Alert = () => {
   const theme = useTheme();
@@ -18,11 +18,12 @@ const Alert = () => {
           <Card className={style.card + ' ' + (theme.type == 'dark' ? style.card__dark : style.card__white)}>
             <p style={{ fontSize: 14, margin: -10, marginLeft: 0 }}>
               <strong>
-                <strong style={{ fontWeight: 400 }}>AvdanOS</strong>{' '}
-                <Translatable>is still in development.</Translatable>
+                <Chiislate>
+                  <strong style={{ fontWeight: 400 }}>AvdanOS</strong> is still in development.
+                </Chiislate>
               </strong>{' '}
               <Link style={{ pointerEvents: 'stroke' }} block underline href="https://avdanos.org/discord">
-                <Translatable>Join our Discord!</Translatable>
+                <Chiislate>Join our Discord!</Chiislate>
               </Link>
             </p>
           </Card>

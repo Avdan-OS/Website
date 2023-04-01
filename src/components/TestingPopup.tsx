@@ -1,6 +1,6 @@
 import { Text, Button, Card, useTheme } from '@geist-ui/core';
 import { useRef } from 'react';
-import { Translatable } from './translation/Translatable';
+import { Chiislate } from './translation/Chiislate';
 
 const TestingPopup = () => {
   const betaContainerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +36,7 @@ const TestingPopup = () => {
             betaContainerRef.current.style.display = 'none';
           }}
         >
-          <Translatable>Close</Translatable>
+          <Chiislate>Close</Chiislate>
         </Button>
       </Card>
       <style jsx>

@@ -1,4 +1,4 @@
-import { Translatable } from '@/components/translation/Translatable';
+import { Chiislate } from '@/components/translation/Chiislate';
 import Media from '@/components/media';
 import SupportCardBeta from '@/components/SupportCardBeta';
 import { Text, Input, Divider, Spacer } from '@geist-ui/core';
@@ -8,7 +8,7 @@ const Support = () => {
   return (
     <div style={{ margin: '1.5rem' }}>
       <Text className="text-center" h1>
-        <Translatable>AvdanOS Support Articles</Translatable>
+        <Chiislate>AvdanOS Support Articles</Chiislate>
       </Text>
       <Input scale={4 / 3} className="text-center" icon={<Search />} placeholder="Search Support Articles" />
       <Divider h="1px" mb={5} />
@@ -56,7 +56,7 @@ const Support = () => {
       </div>
       <Spacer h={5} />
       <Text className="text-center" h4>
-        <Translatable>Ask Our Community</Translatable>
+        <Chiislate>Ask Our Community</Chiislate>
       </Text>
       <Spacer h={1} />
 

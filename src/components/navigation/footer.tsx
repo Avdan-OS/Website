@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTheme, Tag, Spacer } from '@geist-ui/core';
 import Logo from '../logo';
 import dynamicWidth from '@/lib/dynamic-width';
-import { Translatable } from '../translation/Translatable';
+import { Chiislate } from '../translation/Chiislate';
 
 const Footer: React.FC = () => {
   const theme = useTheme();
@@ -25,32 +25,32 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-1">
             <div>
               <h3>
-                <Translatable>Overview</Translatable>
+                <Chiislate>Overview</Chiislate>
               </h3>
               <ul>
                 <li>
                   <Link href="/">
-                    <Translatable>Home</Translatable>
+                    <Chiislate>Home</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href={`/features${useFeaturesBeta ? '-beta' : ''}`}>
-                    <Translatable>Features</Translatable>
+                    <Chiislate>Features</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="/downloads">
-                    <Translatable>Downloads</Translatable>
+                    <Chiislate>Downloads</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="/support">
-                    <Translatable>Support</Translatable>
+                    <Chiislate>Support</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="/docs">
-                    <Translatable>Documentation</Translatable>
+                    <Chiislate>Documentation</Chiislate>
                   </Link>
                 </li>
               </ul>
@@ -59,17 +59,17 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-2">
             <div>
               <h3>
-                <Translatable>External Links</Translatable>
+                <Chiislate>External Links</Chiislate>
               </h3>
               <ul>
                 <li>
                   <Link href="https://twitter.com/avdan_os" target="_blank" rel="noreferrer">
-                    <Translatable>Twitter</Translatable>
+                    <Chiislate>Twitter</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://github.com/Avdan-OS/" target="_blank" rel="noreferrer">
-                    <Translatable>GitHub</Translatable>
+                    <Chiislate>GitHub</Chiislate>
                   </Link>
                 </li>
                 <li>
@@ -78,22 +78,22 @@ const Footer: React.FC = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Translatable>YouTube</Translatable>
+                    <Chiislate>YouTube</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://avdanos.org/discord" target="_blank" rel="noreferrer">
-                    <Translatable>Discord</Translatable>
+                    <Chiislate>Discord</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://www.reddit.com/r/AvdanOS/" target="_blank" rel="noreferrer">
-                    <Translatable>Reddit</Translatable>
+                    <Chiislate>Reddit</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://instagram.com/avdanos_" target="_blank" rel="noreferrer">
-                    <Translatable>Instagram</Translatable>
+                    <Chiislate>Instagram</Chiislate>
                   </Link>
                 </li>
               </ul>
@@ -120,17 +120,17 @@ const Footer: React.FC = () => {
           <div className="footer-item footer-item-3">
             <div>
               <h3>
-                <Translatable>Legal</Translatable>
+                <Chiislate>Legal</Chiislate>
               </h3>
               <ul>
                 <li>
                   <Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-                    <Translatable>License</Translatable>
+                    <Chiislate>License</Chiislate>
                   </Link>
                 </li>
                 <li>
                   <Link href="/eula">
-                    <Translatable>EULA</Translatable>
+                    <Chiislate>EULA</Chiislate>
                   </Link>
                 </li>
               </ul>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
-                  <Translatable>History of Incidents</Translatable>
+                  <Chiislate>History of Incidents</Chiislate>
                 </Link>
               </strong>
             </Tag>
@@ -155,18 +155,18 @@ const Footer: React.FC = () => {
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link href="/privacy-security" style={{ color: colorSwitch() }}>
-                  <Translatable>Privacy and Security</Translatable>
+                  <Chiislate>Privacy and Security</Chiislate>
                 </Link>
               </strong>
             </Tag>
             <Spacer h={0.5} />
             <Tag type="secondary" style={{ color: colorSwitch() }}>
-              <Translatable>
+              <Chiislate>
                 Inspired by{' '}
                 <strong>
                   <Link href="https://youtube.com/avdan">Avdan</Link>
                 </strong>
-              </Translatable>
+              </Chiislate>
             </Tag>
           </div>
         </div>
@@ -174,7 +174,7 @@ const Footer: React.FC = () => {
           ©{' '}
           <strong>
             <Link style={{ color: colorSwitch() }} href="https://github.com/Avdan-OS">
-              <Translatable>AvdanOS Contributors</Translatable>
+              <Chiislate>AvdanOS Contributors</Chiislate>
             </Link>
           </strong>{' '}
           under{' '}

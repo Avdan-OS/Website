@@ -1,7 +1,7 @@
 import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts, Link } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
-import { Translatable } from '@/components/translation/Translatable';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const Docs = () => {
   const theme = useTheme();
@@ -25,7 +25,7 @@ const Docs = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <Translatable>Read the features in detail.</Translatable>
+          <Chiislate>Read the features in detail.</Chiislate>
         </Text>
         <Spacer h={2} />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -45,7 +45,7 @@ const Docs = () => {
                 width="200px"
               />
               <Tag>
-                <Translatable>I'm a User</Translatable>
+                <Chiislate>I'm a User</Chiislate>
               </Tag>
               <Spacer />
               <Button
@@ -54,13 +54,13 @@ const Docs = () => {
                 margin="10px"
                 onClick={() => {
                   setToast({
-                    text: <Translatable>Manual is not available yet</Translatable>,
+                    text: <Chiislate>Manual is not available yet</Chiislate>,
                     delay: 5000,
                     type: 'error'
                   });
                 }}
               >
-                <Translatable>Open manual</Translatable>
+                <Chiislate>Open manual</Chiislate>
               </Button>
               <Spacer h={3} />
             </Card>
@@ -81,12 +81,12 @@ const Docs = () => {
                 alt="Developer Documentation"
               />
               <Tag>
-                <Translatable>I'm a Developer</Translatable>
+                <Chiislate>I'm a Developer</Chiislate>
               </Tag>
               <Spacer />
               <Link href="https://docs.avdanos.com/">
                 <Button type="success" shadow margin="10px">
-                  <Translatable>Open documentation</Translatable>
+                  <Chiislate>Open documentation</Chiislate>
                 </Button>
               </Link>
               <Spacer h={3} />

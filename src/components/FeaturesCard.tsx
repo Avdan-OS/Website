@@ -1,7 +1,7 @@
 import dynamicWidth from '@/lib/dynamic-width';
 import { Text } from '@geist-ui/core';
 import { useState } from 'react';
-import { Translatable } from './translation/Translatable';
+import { Chiislate } from './translation/Chiislate';
 
 interface FeaturesCardProps {
   cardVideo: string;
@@ -26,10 +26,10 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
       </div>
       <div>
         <Text h3>
-          <Translatable>{cardTitle}</Translatable>
+          <Chiislate>{cardTitle}</Chiislate>
         </Text>
         <Text type="secondary">
-          <Translatable>{cardDescription}</Translatable>
+          <Chiislate>{cardDescription}</Chiislate>
         </Text>
       </div>
       <style jsx>

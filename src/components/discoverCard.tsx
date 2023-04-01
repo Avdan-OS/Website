@@ -1,6 +1,6 @@
 import { Card, Grid, Link, Text, useTheme } from '@geist-ui/core';
 import style from '../styles/components/cards.module.css';
-import { Translatable } from './translation/Translatable';
+import { Chiislate } from './translation/Chiislate';
 
 interface DiscoverCardProps {
   title: string;
@@ -20,10 +20,10 @@ const discoverCard = ({ title, description, link }: DiscoverCardProps) => {
           className={style.card + ' ' + (theme.type == 'dark' ? style.card__dark : style.card__white)}
         >
           <Text h4>
-            <Translatable>{title}</Translatable>
+            <Chiislate>{title}</Chiislate>
           </Text>
           <Text>
-            <Translatable>{description}</Translatable>
+            <Chiislate>{description}</Chiislate>
           </Text>
         </Card>
       </Link>

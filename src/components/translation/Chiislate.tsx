@@ -11,8 +11,10 @@ let componentList: Array<{
   dispatch: Dispatch<ReactNode>;
 }> = [];
 let importedLocale;
+let defaultLocale = 'en-GB';
 
 let injectTranslation = (component: ReactNode, tString: string) => {
+  if (tString.startsWith('<%0|')) tString = tString.replace('<%0|', '');
   try {
     let layer = -1;
     let writeChildren = (component: any, children: any) => {
@@ -88,7 +90,7 @@ let injectTranslation = (component: ReactNode, tString: string) => {
 };
 
 let loadLocale = async (locale: string) => {
-  if (locale == 'en-GB') {
+  if (locale == defaultLocale) {
     stringList.forEach((item) => {
       item.dispatch(item.text);
     });
@@ -139,56 +141,62 @@ let componentToString = (component: ReactElement, layer = 0) => {
   return text;
 };
 
-let locale = 'en-GB';
+let currentLocale = defaultLocale;
 // Determine the locale
 if (typeof window !== 'undefined') {
   window.onload = () => {
-    if (!(window && window.localStorage && (locale = window.localStorage.getItem('locale'))))
-      locale = Intl.NumberFormat().resolvedOptions().locale;
-    if (locale != 'en-GB') loadLocale(locale);
+    if (!(window && window.localStorage && (currentLocale = window.localStorage.getItem('locale'))))
+      currentLocale = Intl.NumberFormat().resolvedOptions().locale;
+    if (currentLocale != defaultLocale) loadLocale(currentLocale);
   };
 }
 
 /**
  * A magical component to translate anything.
+ * @argument logTString Spit the correspinding translation key in JavaScript console.
  * @returns Children element with all strings translated.
  */
-export function Translatable({ children }: { children: ReactNode }) {
+export function Chiislate({ children, logTString }: { children: ReactNode; logTString?: boolean }) {
   // Process string components differently
   if (typeof children == 'string') {
     const [translated, setTranslation] = useState<string>(
-      locale != 'en-GB' && importedLocale ? importedLocale[children.toLowerCase()] || children : children
+      currentLocale != defaultLocale && importedLocale ? importedLocale[children.toLowerCase()] || children : children
     );
     if (children == 'instagram') {
-      locale != 'en-GB' && importedLocale ? importedLocale[children.toLowerCase()] || children : children;
+      currentLocale != defaultLocale && importedLocale ? importedLocale[children.toLowerCase()] || children : children;
     }
     stringList.push({
       text: children,
       dispatch: setTranslation
     });
+    if (logTString) console.log(children);
     return translated as any as ReactElement;
   } else if (typeof children == 'boolean') {
     const [translated, setTranslation] = useState<string>(
-      locale != 'en-GB' && importedLocale
+      currentLocale != defaultLocale && importedLocale
         ? importedLocale[children.toString()] || children.toString()
         : children.toString()
     );
+    if (logTString) console.log(children.toString());
     stringList.push({
       text: children.toString(),
       dispatch: setTranslation
     });
     return translated as any as ReactElement;
   } else if (typeof children == 'number' || typeof children == 'undefined') {
+    if (logTString) console.log("You don't need to translate this element, do you?");
     return children as any as ReactElement;
   } else if (children) {
     const [translated, setTranslation] = useState<ReactNode>(
-      locale != 'en-GB' && importedLocale
+      currentLocale != defaultLocale && importedLocale
         ? injectTranslation(children, importedLocale[componentToString(children as ReactElement).toLowerCase()]) ||
             children
         : children
     );
+    let componentString = componentToString(children as ReactElement);
+    if (logTString) console.log(componentString);
     componentList.push({
-      text: componentToString(children as ReactElement).toLowerCase(),
+      text: componentString.toLowerCase(),
       component: children,
       dispatch: setTranslation
     });
@@ -204,4 +212,5 @@ export function Translatable({ children }: { children: ReactNode }) {
 export async function setLocale(locale: string) {
   window.localStorage.setItem('locale', locale);
   loadLocale(locale);
+  currentLocale = locale;
 }
