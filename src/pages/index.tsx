@@ -5,7 +5,6 @@ import { useState } from 'react';
 import Discover from '@/components/discover';
 import MiniFeatures from '@/components/miniFeatures';
 import { Chiislate } from '@/components/translation/Chiislate';
-import TestingPopup from '@/components/TestingPopup';
 
 const index = () => {
   const theme = useTheme();
@@ -14,7 +13,6 @@ const index = () => {
 
   return (
     <>
-      <TestingPopup />
       <div className="video-player" style={{ position: 'absolute', zIndex: 0 }}>
         <video autoPlay={true} muted loop style={{ height: '100%', width: '100%' }}>
           <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
