@@ -1,22 +1,23 @@
 ---
 # Global
 # footer.tsx
-Overview:
+Overview: 概要
 Home:
 Features:
-Downloads:
+Downloads: ダウンロード
 External links:
 Twitter:
 GitHub:
 YouTube:
 Discord:
 Reddit:
-Legal:
-License:
+Legal: 法定
+License: ライセンス
 EULA:
-History of Incidents:
+History of Incidents: インシデントの歴史
 Privacy and Security:
 Inspired by <%0|Avdan|%0>:
+# AvdanOS: OS stands for Operating System so the acronym should be capitalised
 AvdanOS contributors:
 # alert.tsx
 <%0|AvdanOS|%0> is still in development.:
@@ -25,10 +26,10 @@ Join our Discord!:
 # "home" is in footer.tsx
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
-Support:
+Support: サポート
 Documentation:
 Docs:
-Demo:
+Demo: デモ
 
 # index.tsx
 Your PC but Even Better!:
@@ -95,7 +96,7 @@ Give your PC an upgrade.:
 # "open demo" is in features-beta.tsx section
 For most people:
 For Pi, Pine, and Mac:
-Download:
+Download: ダウンロード
 Web preview:
 You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.:
 Live system is currently not available because the system is still under development:
@@ -104,9 +105,9 @@ Cancel:
 Before you download:
 Please read this before you continue:
 Below is the shasum of the download. You can use it to check download's integrity:Yes, I understand:
-Yes, I understand:
+Yes, I understand: わかりました
 Use Torrent download:
-Continue:
+Continue: 続く
 # in testing
 Having trouble? Click <%0|here|%0> to get help!:
 
@@ -125,15 +126,15 @@ Ask our community:
 
 # betapopup.tsx
 Hey look! A new testing version of this page is available!:
-Close:
+Close: 閉じる
 Check it out:
 
 # docs.tsx
 Read the features in detail.:
-I'm a user:
+I'm a user: 私はユーザーです
 Open manual:
 Manual is not available yet:
-I'm a developer:
+I'm a developer: 私は開発者です
 Open documentation:
 
 # demo.tsx

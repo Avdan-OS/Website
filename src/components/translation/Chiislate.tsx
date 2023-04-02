@@ -14,6 +14,7 @@ let importedLocale;
 let defaultLocale = 'en-GB';
 
 let injectTranslation = (component: ReactNode, tString: string) => {
+  if (!tString) return component;
   if (tString.startsWith('<%0|')) tString = tString.replace('<%0|', '');
   try {
     let layer = -1;

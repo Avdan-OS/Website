@@ -11,12 +11,6 @@ const TranslationList = () => {
       langName: 'العربية'
     },
     {
-      lang: 'cs-CZ',
-      available: false,
-      icon: '🇨🇿',
-      langName: 'čeština'
-    },
-    {
       lang: 'da-DK',
       available: true,
       icon: '🇩🇰',
@@ -83,6 +77,12 @@ const TranslationList = () => {
       langName: 'Italiano'
     },
     {
+      lang: 'ja-JP',
+      available: true,
+      icon: '🇯🇵',
+      langName: '日本語'
+    },
+    {
       lang: 'nl-NL',
       available: true,
       icon: '🇳🇱',
@@ -123,12 +123,6 @@ const TranslationList = () => {
       available: true,
       icon: '🇹🇷',
       langName: 'Türkçe'
-    },
-    {
-      lang: 'uz-UZ',
-      available: false,
-      icon: '🇺🇿',
-      langName: 'اوزبیک'
     },
     {
       lang: 'zh-CN',
