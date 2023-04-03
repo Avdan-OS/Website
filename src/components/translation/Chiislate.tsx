@@ -1,6 +1,12 @@
-import { Dispatch, ReactElement, ReactNode, useEffect, useState } from 'react';
+import { Dispatch, ReactElement, ReactNode, useState } from 'react';
 import YAML from 'yaml';
 
+// The default locale
+let defaultLocale = 'en-GB';
+
+let currentLocale = defaultLocale;
+
+// Below are storages of all the translatable components to make bulk injection possible at any time
 let stringList: Array<{
   text: string;
   dispatch: Dispatch<string>;
@@ -11,13 +17,14 @@ let componentList: Array<{
   dispatch: Dispatch<ReactNode>;
 }> = [];
 let importedLocale;
-let defaultLocale = 'en-GB';
 
+// Injects a translation string into a react child, or original component when injection fails
 let injectTranslation = (component: ReactNode, tString: string) => {
   if (!tString) return component;
   if (tString.startsWith('<%0|')) tString = tString.replace('<%0|', '');
   try {
     let layer = -1;
+    // Because React gives frozen object, this handles making shallow clone and writing
     let writeChildren = (component: any, children: any) => {
       return {
         ...component,
@@ -75,6 +82,7 @@ let injectTranslation = (component: ReactNode, tString: string) => {
       return objRebuild(component, tString).component;
     }
   } catch (err) {
+    // Awesome error messages
     console.groupCollapsed('Translation Mismatch Error');
     console.warn('Translation Mismatch, component will not get translated. Please update the following translation.');
     console.warn(`Was expecting translation of:
@@ -90,6 +98,7 @@ let injectTranslation = (component: ReactNode, tString: string) => {
   }
 };
 
+// Handles fetching a locale file and triggering injection
 let loadLocale = async (locale: string) => {
   if (locale == defaultLocale) {
     stringList.forEach((item) => {
@@ -115,6 +124,7 @@ let loadLocale = async (locale: string) => {
   });
 };
 
+// Convert a component to translation string
 let componentToString = (component: ReactElement, layer = 0) => {
   let text = '';
   let objToString = (object: any) => {
@@ -142,7 +152,6 @@ let componentToString = (component: ReactElement, layer = 0) => {
   return text;
 };
 
-let currentLocale = defaultLocale;
 // Determine the locale
 if (typeof window !== 'undefined') {
   window.onload = () => {
