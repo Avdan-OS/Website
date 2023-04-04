@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: σφαιρική εικόνα
+Home: αρχική
+Features: χαρακτηριστικά
+downloads:
+External links: links τρίτων
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: νόμιμη
+License: άδεια
+EULA:
+History of Incidents: ιστορικό περιστατικών
+Privacy and Security: μυστικότητα και ασφάλεια
+Inspired by <%0|Avdan|%0>: εμπνευσμένο από <%0|Avdan|%0>
+AvdanOS contributors: τον avdan
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.:
+Join our Discord!: μπες στο Discord μας
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: υποστήριξη
+Documentation: τεκμηρίωση
+Docs: έγγραφα
+Demo: δοκιμαστικό
+
+# index.tsx
+Your PC but Even Better!: το pc σου, αλλά ακόμα καλύτερο!
+Try in your browser: δοκίμασέ το στο browser σου
+Download Now!: κατέβασέ το τώρα!
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub:
+Browse all repos:
+# discoverCard.tsx
+AvdanOS:
+Meet AvdanOS, refining the way we think about operating systems.:
+Official website:
+All the new updates and information about AvdanOS and support.:
+Desktop environment:
+Meet Nadva, the official desktop environment for AvdanOS.:
+A Discord bot made for the AvdanOS community Discord server.:
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: τo concept του avdan, το κάνουμε αληθινό
+Assets are loading, please wait: Τα στοιχεία φορτώνονται, περιμένετε
+Scroll down to see what we've got here: μετακινηθείτε προς τα κάτω για να δείτε τι έχουμε εδώ
+This concept video is made by Avdan: αυτό το concept βίντεο είναι φτιαγμένο από τον avdan
+Watch on YouTube: δες το στο YouTube
+Familiar dock, ultimate form: γνώριμο dock, απόλυτη μορφή
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: όλοι γνωρίζουν το dock/task bar. αποκτήσαμε έναν ολοκαίνουργιο dock, με περισσότερες δυνατότητες από ποτέ.
+Brand new launch menu: καινούριο launch menu
+With everything in one place, do anything anywhere at anytime.: με τα πάντα σε ένα μέρος, κάντε οτιδήποτε οπουδήποτε και ανά πάσα στιγμή
+Easily apply layout: εφαρμόστε εύκολα τη διάταξη
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: με μια λίστα προεπιλογών που καθορίζονται από τις εφαρμογές σας, ξεκινήστε εύκολα τη δουλειά με την τέλεια διάταξη παραθύρου. όχι αρκετά? αλλάξτε το στις ρυθμίσεις.
+Overpowered dock: σουπερ dock
+Your dock can do more than ever. It's your ultimate manager to get you organised.: το dock σας μπορεί να κάνει περισσότερα από ποτέ. είναι ο απόλυτος διαχειριστής σας για να σας οργανώσει.
+New way to manage files: νέος τρόπος διαχείρισης αρχείων
+This file manager keeps you organised and productive. Find your files the instant you need it.: αυτός ο διαχειριστής αρχείων σας κρατά οργανωμένους και παραγωγικούς. βρείτε τα αρχεία σας τη στιγμή που τα χρειάζεστε.
+Drag & drop made easy: το drag & drop είναι εύκολο
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: drag and drop είναι το πιο εύκολο εργαλείο για μεταφορά αρχείων. το κάναμε εύκολο στη χρήση.
+more than multitask: περισσότερο από multitask
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: θες να κάνεις πολλές δουλειές την ίδια στιγμή? we know you and we got you. δεν είναι μόνο multitasking, είναι οργανομένο multitasking.
+TabOS!: ταμπού!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Τα προγράμματα περιήγησης έχουν αποδείξει πόσο ισχυρές είναι οι καρτέλες, οπότε γιατί να μην τις χρησιμοποιήσετε για να κάνετε το λειτουργικό σας σύστημα ακόμα πιο ισχυρό;
+New context menu: νέο context menu
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: το context menu δεν έχει αλλάξει εδώ και πολλές δεκαετίες. έχουμε βαρεθεί τις μεγάλες λίστες πραγμάτων, και ξέρεις κάτι, γιατί δεν το φτιάχνουμε σαν κύκλο; δε σ'αρέσει; μπορείς να το αλλάξεις στις ρυθμίσεις!
+Your OS, your preference: το δικό σου os, οι δικές σας προτιμήσεις
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: σου δίνουμε έλεγχο του συστήματός σας. Το θέμα είναι απλώς ένα σημαντικό από αυτά, και μπορείτε να αποκτήσετε περισσότερα αν δεν σας αρέσει το δικό μας.
+Day & Night: μέρα & νύχτα
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Αφήστε διαφορετικά θέματα να σας πουν τι ώρα είναι. μπορείς ακόμη και να το κάνεις ανάποδα. μπορείς να το κάνεις σε windows ή macos;
+Under development: υπό ανάπτυξη
+This project wouldn't be possible without the community's contributions. Join us and help!: Αυτό το έργο δεν θα ήταν δυνατό χωρίς τη συνεισφορά της κοινότητας. έλα μαζί μας και βοήθα.
+Open demo: άνοιξε το δοκιμαστικό
+
+# κατέβασέ το.tsx
+This download is not available yet.:
+Give your PC an upgrade.: δώσε στο pc ένα upgrade.
+# "δοκίμασέ το στο browser σου" is in index.tsx section
+# "άνοιξε το δοκιμαστικό" is in features-beta.tsx section
+For most people: για τους περισσότερους.
+For Pi, Pine, and Mac: για pi, pine, και mac
+Download: κατέβασέ το
+Web preview: προεπισκόπηση στο web
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: πρόκειται να επισκεφτείτε την web demo έκδοση του avdanos, η οποία είναι μόνο μια απόδειξη της ιδέας. Η δοκιμή του ζωντανού συστήματος συνιστάται ανεπιφύλακτα για να αποκτήσετε την πλήρη εμπειρία από το λειτουργικό σύστημα.
+Live system is currently not available because the system is still under development: Το ζωντανό σύστημα δεν είναι προς το παρόν διαθέσιμο γιατί το σύστημα είναι ακόμα υπό ανάπτυξη.
+yes, take me there: ναι, πήγαινέ με
+Cancel: ακύρωση
+Before you download: πριν κατεβάσεις
+Please read this before you continue: διάβασε αυτό πριν κατεβάσεις
+Below is the shasum of the download. You can use it to check download's integrity: παρακάτω είναι το shasum της λήψης. μπορείτε να το χρησιμοποιήσετε για να ελέγξετε την ακεραιότητα της λήψης
+Yes, I understand: ναι, καταλαβαίνω
+Use Torrent download: χρησιμοποίησε torrent download
+Continue: συνέχισε
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: έχεις πρόβλημα; κάνε κλικ <%0|εδώ|%0> για βοήθεια!
+
+# support.tsx
+AvdanOS support: υποστήριξη του avdanos
+Contact us on social media: ειδοποιήστε μας social media
+Visit:
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.:
+
+# support-beta.tsx
+AvdanOS support articles: άρθρα υποστήριξης του avdanos
+Search support articles: ψάξε άρθρα υποστήριξης
+Ask our community: ρώτα την κοινότητά μας
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: ε κοίτα! μια νέα δοκιμαστική έκδοση αυτής της σελίδας είναι διαθέσιμη!
+Close: κλείσε
+Check it out: δοκίμασέ το
+
+# docs.tsx
+Read the features in detail.: διάβασε τα χρακτηριστικά με λεπτομέριες
+I'm a user: είμαι ένας χρήστης
+Open manual: άνοιξε το εγχειρίδιο
+Manual is not available yet:
+I'm a developer: είμαι προγραμματιστής
+Open documentation: άνοιξε την τεκμηρίωση
+
+# demo.tsx
+# "δοκίμασέ το στο browser σου." is in index.tsx
+Full screen:
+This demo is open source on <%0|GitHub|%0>.:
+
+# 404.tsx
+Page not found: η σελίδα δε βρέθηκε
+This page does not exist.: αυτή η σελίδα δεν υπάρχει.
+Join in and help us out developing an open-source operating system.: μπείτε και βοηθήστε μας να αναπτύξουμε ένα λειτουργικό σύστημα ανοιχτού κώδικα. # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: ασυμβατότητα πλάτους
+Increase your window width: αύξησε το πλάτος του παραθύρου σας
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Το παράθυρό σου είναι πολύ μικρό για να εμφανιστεί το περιεχόμενο αυτής της σελίδας και εντοπίσαμε ότι έχεις μεγαλύτερη κατάσταση οθόνης. αύξησε το πλάτος του παραθύρου σας ή μεγιστοποιήστε το παράθυρο του προγράμματος περιήγησής σας.
+Rotate your device: γύρνα τη συσκευή σου.
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Η οθόνη σας είναι πολύ μικρή για να εμφανίζεται αυτή η σελίδα. περιστρέψτε σε οριζόντια προβολή ή χρησιμοποιήστε την επιφάνεια εργασίας.
+This page is incompatible: αυτή η σελίδα δεν είναι συμβατή
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Το πλάτος της οθόνης σας είναι πολύ μικρό για να εμφανιστεί το περιεχόμενο αυτής της σελίδας. ίσως χρειαστεί να αυξήσετε την ανάλυση του συστήματός σας, χρησιμοποιήστε την επιφάνεια εργασίας για να δείτε αυτήν τη σελίδα.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.:

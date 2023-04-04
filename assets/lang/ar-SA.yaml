@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: نظرة عامة
+Home: الصفحة الرئيسية
+Features: الميزات
+Downloads: التحميلات
+External Links: روابط خارجية
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: قانوني
+License: رخصة
+EULA: يولا
+History of Incidents: تاريخ الحوادث
+Privacy and Security: الخصوصية والأمن
+Inspired by <%0|Avdan|%0>: مستوحاة من <%0|Avdan|%0>
+AvdanOS contributors: المساهمين AvdanOS
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.:
+Join our Discord!: انضم الى الDiscord
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: الدعم
+Documentation: توثيق
+Docs: المستندات
+Demo: تجريبي
+
+# index.tsx
+Your PC but Even Better!: جهاز الكمبيوتر الخاص بك ولكن أفضل
+Try in your browser: حاول في متصفحك
+Download Now!: التحميل الان
+# miniFeaures.tsx
+Workflow redefined: إعادة تعريف سير العمل
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: الوقت لا يقدر بثمن ، وليس هناك سوى القليل من الوقت. باستخدام الأدوات المناسبة ومساحة العمل الاحترافية ، تكون كل مهمة بسيطة مثل الفطيرة لأقل قدر من الوقت!
+Check what AvdanOS offers to you.: تحقق مما يقدم لك AvdanOS.
+See here: انظر هنا
+Open projects with open community: مشاريع مفتوحة مع مجتمع مفتوح
+Interested? Give it a try!: معجوب؟ اعطيه تجربة
+# discover.tsx
+Open source on GitHub: المصدر المفتوح على GitHub
+Browse all repos: تصفح جميع المستودعات
+# discoverCard.tsx
+AvdanOS: AvdanOS
+Meet AvdanOS, refining the way we think about operating systems.: تلبية AvdanOS ، وتحسين طريقة تفكيرنا في أنظمة التشغيل
+Official website: الموقع الرسمي
+All the new updates and information about AvdanOS and support.: جميع التحديثات والمعلومات الجديدة حول AvdanOS والدعم
+Desktop environment: بيئة desktop
+Meet Nadva, the official desktop environment for AvdanOS.: تلبية Nadva ، بيئة desktop الرسمية لAvdanOS
+A Discord bot made for the AvdanOS community Discord server.: روبوت للخلاف تم إنشاؤه لخادم الفتنة في مجتمع avdanos
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: فكرة Avdan ، نحن نجعلها حقيقة
+Assets are loading, please wait: يتم تحميل الأصول ، يرجى الانتظار
+Scroll down to see what we've got here: قم بالتمرير لأسفل لرؤية ما لدينا هنا
+This concept video is made by Avdan: فيديو الفكرة هذا من صنع Avdan
+Watch on YouTube: شاهد على يوتيوب
+Familiar dock, ultimate form: شريط ماهام مألوف ، شكل نهائي
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: الكل يعرف شريط المهام. لدينا شريط ماهام جديد مع ميزات أكثر من أي وقت مضى
+Brand new launch menu: قائمة إطلاق جديدة تمامًا
+With everything in one place, do anything anywhere at anytime.: مع كل شيء في مكان واحد ، افعل أي شيء في أي مكان وفي أي وقت
+Easily apply layout: تطبيق التخطيط بسهولة
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: من خلال قائمة الإعدادات المسبقة التي تحددها تطبيقاتك ، يمكنك العمل بسهولة مع تخطيط النافذة المثالي. ليس كافي؟ قم بتغييره في الإعدادات
+Overpowered dock: قفص الاتهام تغلبت عليه
+Your dock can do more than ever. It's your ultimate manager to get you organised.: رصيفك يمكن أن يفعل أكثر من أي وقت مضى. إنه مديرك النهائي الذي يجعلك منظمًا
+New way to manage files: طريقة جديدة لإدارة الملفات
+This file manager keeps you organised and productive. Find your files the instant you need it.: مدير الملفات هذا يبقيك منظمًا ومنتجًا. ابحث عن ملفاتك في اللحظة التي تحتاجها فيها
+Drag & drop made easy: أصبح السحب والإفلات سهلاً
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: يعد السحب والإفلات أسهل طريقة لنقل أي شيء على جهاز الكمبيوتر الخاص بك. نجعله بديهيًا وسهل الاستخدام
+more than multitask: أكثر من تعدد المهام
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: تريد القيام بالعديد من المهام في وقت واحد؟ نحن نعرفك وحصلنا عليك. إنها الآن ليست فقط تعدد المهام ، إنها تعدد المهام المنظم
+TabOS!:
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: أثبتت المتصفحات مدى قوة علامات التبويب ، فلماذا لا تستخدمها لجعل نظام التشغيل لديك أكثر قوة؟
+New context menu: قائمة مهام جديدة
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: قائمة السياق لم تتغير لعدة عقود الآن. لقد سئمنا من قائمة طويلة من العناصر ، فلماذا لا نجعلها دائرة؟ لا تحبها؟ يمكنك التبديل مرة أخرى في الإعدادات!
+Your OS, your preference: نظام التشغيل الخاص بك ، ما تفضله
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: نمنحك التحكم في نظامك. الموضوع هو مجرد واحد منهم مهم ، ويمكنك الحصول على المزيد إذا لم يعجبك موضوعنا
+Day & Night: ليلا نهارا
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: دع مظاهر مختلفة تخبرك بالوقت. مهلا ، يمكنك حتى عكسها. هل يمكنك القيام بذلك على windows أو macos؟
+Under development: تحت التطوير
+This project wouldn't be possible without the community's contributions. Join us and help!: لن يكون هذا المشروع ممكنًا بدون مساهمات المجتمع. انضم إلينا وساعد!
+Open demo: فتح التجريبي
+
+# download.tsx
+This download is not available yet.:
+Give your PC an upgrade.: إعطاء ترقية لجهاز الكمبيوتر الخاص بك
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: لأغلب الناس
+For Pi, Pine, and Mac: لباي وباين وماك
+Download: تحميل
+Web preview: معاينة الويب
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: أنت على وشك زيارة نسخة الويب التجريبية من  ، والتي هي فقط دليل على الفكرة. يوصى بشدة بتجربة النظام المباشر للحصول على التجربة الكاملة من نظام التشغيل
+Live system is currently not available because the system is still under development: النظام المباشر غير متوفر حاليًا لأن النظام لا يزال قيد التطوير
+yes, take me there: نعم ، خذني هناك
+Cancel: إلغاء
+Before you download: قبل التنزيل
+Please read this before you continue: يرجى قراءة هذا قبل المتابعة
+Below is the shasum of the download. You can use it to check download's integrity: 'أدناه هو شكل التنزيل. يمكنك استخدامه للتحقق من سلامة التنزيل:'
+Yes, I understand: نعم أفهم
+Use Torrent download: استخدم تنزيل التورنت
+Continue: استمر
+# in testing
+Having trouble? Click <%0|here|%0> to get help!:
+
+# support.tsx
+AvdanOS support: دعم AvdanOS
+Contact us on social media: اتصل معنا على وسائل التواصل الاجتماعي
+Visit: زيارة
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: .[a%]هنا[a%]تريد ان تقترح اي افكار لنا؟ نحن نريد ان نسمع دائماً إلى المجتمع. إعرض افكارك
+
+# support-beta.tsx
+AvdanOS support articles: مقالات دعم AvdanOS
+Search support articles: البحث على مقالات دعم
+Ask our community: إسأل مجتمعنا
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: انظر! نسخة تجريبية جديدة من هذه الصفحة متاحة!
+Close: أغلق
+Check it out: تحقق من ذلك
+
+# docs.tsx
+Read the features in detail.: اقرأ الميزات بالتفصيل
+I'm a user: أنا مستخدم
+Open manual: افتح الدليل
+Manual is not available yet: الدليل غير موجود بعد
+I'm a developer: أنا عامل
+Open documentation: افتح الوثائق
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: شاشة كاملة
+This demo is open source on <%0|GitHub|%0>.: .<%0|GitHub|%0> هذه التجربة مفتوحة المصدر على
+
+# 404.tsx
+Page not found: الصفحة غير موجودة
+This page does not exist.: هذه الصفحة غير موجودة
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: عرض عدم توافق
+Increase your window width: زيادة عرض النافذة الخاصة بك
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: نافذتك صغيرة جدًا لعرض محتوى هذه الصفحة ، واكتشفنا أنك حصلت على المزيد من مساحة الشاشة. الرجاء زيادة عرض نافذتك أو تكبير نافذة المتصفح
+Rotate your device: قم بتدوير جهازك
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: شاشتك صغيرة جدًا لعرض هذه الصفحة. الرجاء تدوير إلى عرض أفقي أو استخدام سطح المكتب
+This page is incompatible: هذه الصفحة غير متوافقة
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: عرض شاشتك صغير جدًا لعرض محتوى هذه الصفحة. قد تحتاج إلى زيادة دقة نظامك باستخدام سطح المكتب لعرض هذه الصفحة
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: عرض شاشتك صغير جدًا لعرض محتوى هذه الصفحة. الرجاء زيادة دقة النظام الخاص بك
