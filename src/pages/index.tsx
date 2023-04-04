@@ -4,7 +4,7 @@ import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
 import Discover from '@/components/discover';
 import MiniFeatures from '@/components/miniFeatures';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const index = () => {
   const theme = useTheme();
@@ -22,7 +22,7 @@ const index = () => {
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
-            <TranslatableText>Your PC but Even Better!</TranslatableText>
+            <Chiislate>Your PC but Even Better!</Chiislate>
           </Text>
         </div>
         <Spacer h={2} />
@@ -31,13 +31,13 @@ const index = () => {
             {useMobileBar ? null : (
               <Link href="/demo">
                 <Button shadow type="secondary" margin="10px">
-                  <TranslatableText>Try in your browser</TranslatableText>
+                  <Chiislate>Try in your browser</Chiislate>
                 </Button>
               </Link>
             )}
             <Link href="/downloads">
               <Button shadow type="success" margin="10px">
-                <TranslatableText>Download Now!</TranslatableText>
+                <Chiislate>Download Now!</Chiislate>
               </Button>
             </Link>
           </div>
@@ -46,25 +46,25 @@ const index = () => {
         <MiniFeatures />
         <Spacer h="15vh" />
         <Text h1 className="text-center">
-          <TranslatableText>Open projects with open community</TranslatableText>
+          <Chiislate>Open projects with open community</Chiislate>
         </Text>
         <Discover />
         <Spacer h={5} />
         <div className="text-center">
           <Text h2>
-            <TranslatableText>Interested? Give it a try!</TranslatableText>
+            <Chiislate>Interested? Give it a try!</Chiislate>
           </Text>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
             {useMobileBar ? null : (
               <Link href="/demo">
                 <Button shadow type="secondary" margin="10px">
-                  <TranslatableText>Try in your browser</TranslatableText>
+                  <Chiislate>Try in your browser</Chiislate>
                 </Button>
               </Link>
             )}
             <Link href="/downloads">
               <Button shadow type="success" margin="10px">
-                <TranslatableText>Download Now!</TranslatableText>
+                <Chiislate>Download Now!</Chiislate>
               </Button>
             </Link>
           </div>

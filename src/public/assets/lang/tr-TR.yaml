@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: Genel Bakış
+Home: Ana Sayfa
+Features: Özellikler
+Downloads: İndirmeler
+External links: Harici Bağlantılar
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Yasal
+License: Lisans
+EULA:
+History of Incidents: Sorunlar Geçmişi
+Privacy and Security: Gizlilik ve Güvenlik
+Inspired by <%0|Avdan|%0>: "'dan esinlenerek <%0|Avdan|%0>:"
+AvdanOS contributors: AvdanOS'e Katkıda Bulunanlar
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> hala geliştirme aşamasında.
+Join our Discord!: Discord'umuza katıl!
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Destek
+Documentation: Dokümantasyon
+Docs: Belgeler
+Demo: Demo
+
+# index.tsx
+Your PC but Even Better!: Bilgisayaraınızın daha da iyisi!
+Try in your browser: Tarayıcında Dene
+Download Now!: Şimdi İndir!
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub: GitHub'da Açık Kaynak
+Browse all repos: Tüm kaynak depolarını inceleyin
+# discoverCard.tsx
+AvdanOS:
+Meet AvdanOS, refining the way we think about operating systems.: İşletim sistemleri hakkındaki düşünce biçmimizi kökünden değiştiren AvdanOS ile tanışın.
+Official website: Resmi Web Sitesi
+All the new updates and information about AvdanOS and support.: AvdanOS hakkındaki tüm yenilikler, bilgiler ve destek.
+Desktop environment: Masa Üstü Ortamı
+Meet Nadva, the official desktop environment for AvdanOS.: Nadva ile tanışın, AvdanOS'in resmi masa üstü ortamı.
+A Discord bot made for the AvdanOS community Discord server.: AvdanOS Topluluğu Discord Sunucusu için yapılmış bir Discord botu.
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Avdan'ın konseptini gerçeğe dönüştürüyoruz!
+Assets are loading, please wait: İçerikler yükleniyor, lütfen bekleyin
+Scroll down to see what we've got here: Burada neler olduğunu görmek için aşağı kaydırın
+This concept video is made by Avdan: Bu konsept videosu Avdan tarafından yapıldı
+Watch on YouTube: YouTube'da izle
+Familiar dock, ultimate form: Alışıldık görev çubuğu, alışımlmışın dışı form
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Herkes görev çubuğuna zaten aşikar. Bizim daha önce eşi benzeri görülmedik sayıda özelliklerle donanmış yepyeni bir görev çubuğumuz var.
+Brand new launch menu: Yepyeni başlatma menüsü
+With everything in one place, do anything anywhere at anytime.: Her şeyin tek bir çatı altında toplanmasıyla istediğin şeyi, iştediğin yerde, istediğin zamanda yap.
+Easily apply layout: Kolaylıkla dizilimi uygula
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Uygulamalırından hareketle belirlenen profil seçenekleri ile kolaylıkla en iyi pencere dizilimini kullanmaya başla. Yeterli değil mi? Ayarlardan istediğin gibi değiştir.
+Overpowered dock: Güçlü görev çubuğu
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Görev çubuğun alışılmışıntan çok daha fazlasını yapabilir. O senin verimli çalışmanda en önemli yardımcın.
+New way to manage files: Dosyaları düzenlemenin yeni yolu
+This file manager keeps you organised and productive. Find your files the instant you need it.: Dosya yöneticisi sizi organize ve verimli kılar. Dosyalarınızı istediğiniz an elinizin altında.
+Drag & drop made easy: Kolayca sürükle ve bırak
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Sürükle ve bırak, bilgisayarınızda transfer yapmanın en pratik yolu. Biz bunu kullanışlı ve kolay hale getirdik.
+more than multitask: Dikkatini birden çok yere odaklamaktan daha fazlasını yap
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Aynı anda birden çok görevle mi uğraşmak istiyorsun? Senin isteklerini biliyoruz ve hayata geçiriyoruz. Artık sadece birden çok işe odaklanmayacak, aynı zamanda bunu maksimum verimle yapacaksın.
+TabOS!: SekmeOS!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Tarayıcılar sekmelerin ne kadar güçlü olduğunu kanıtladı. Neden onları işletim sistemini daha da güçlü yapmak için kullanmayalım ki?
+New context menu: Yeni bağlam menüsü
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Bağlam menüleri yıllardır hiç değişmedi. Uzun listelerden hepimiz bıktık ve hey, neden yuvarlak yapmayalım ki? Senin tercihin farklı mı? Ayarlardan eski haline getirebilirsin!
+Your OS, your preference: Senin işletim sistemin, senin tercihlerin
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Sana sisteminin kontrolünü geri veriyoruz. Tema bunun önemli bir kısmı ve eğer bizimkileri beğenmezsen her zaman daha fazlasını edinebilirsin.
+Day & Night: Gündüz ve Gece
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Farklı temaların sana günün saatini söylemesine izin ver. Hey, eğer istersen tam tersi efekti de kullanabilirsin. Bunu Windows veya MacOS üzerinde yapabilir misin?
+Under development: Geliştirme aşamasında
+This project wouldn't be possible without the community's contributions. Join us and help!: Bu proje topluluğun katkıları olamadan mümkün olamazdı. Bize katıl ve yardım et!
+Open demo: Demo'yu aç
+
+# download.tsx
+This download is not available yet.: Bu indirme henüz mecvut değil.
+Give your PC an upgrade.: Bilgisayarını bir üst seviyeye geçir.
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: Çoğu kullanıcı için
+For Pi, Pine, and Mac: Pi, Pine ve Mac için
+Download: İndir
+Web preview: Web Önizlemesi
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Birazdan sadece konseptimizin bir kanıtı olan AvdanOS web demosunu ziyaret edeceksin. İşletim sisteminin tüm deneyimini yaşayabilmen için canlı sistemi denemeni önemle tavsiye ediyoruz.
+Live system is currently not available because the system is still under development: Sistem hala geliştirme altında olduğu için canlı sistem şu anda mevcut değil
+yes, take me there: Evet, beni götür
+Cancel: İptal
+Before you download: İndirmeden Önce
+Please read this before you continue: LÜTFEN İNDİRMEDEN ÖNCE OKUYUN
+Below is the shasum of the download. You can use it to check download's integrity:Yes, I understand: Aşağıda indindirmenizin shasum'ı mevcut. İndirmenizin bütünlüğünü test etmek için bunu kullanabilirsiniz:Evet, anladım
+Yes, I understand: Evet, anladım
+Use Torrent download: Torrent ile indir
+Continue: Devam et
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Sıkıntı mı yaşıyorsunuz? Yardım almak için <%0|buraya|%0>tıklayın!
+
+# support.tsx
+AvdanOS support: AvdanOS Destek Ekibi
+Contact us on social media: Bizimle Sosyal Medya Üzerinden İletişime Geç
+Visit: Ziyaret Et
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: Bize bir öneriniz mi var? Her zaman topluluğa kulak veririz. Fikirlerinizi <%0|buradan|%0>sunabilirsiniz.
+
+# support-beta.tsx
+AvdanOS support articles: AvdanOS Destek Makaleleri
+Search support articles: Destek Makaleleri'nde Ara
+Ask our community: Topluluğumuza Sor
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Hey bak! Bu sayfanın yeni bir deneme sürümü mevcut!
+Close: Kapat
+Check it out: İncele
+
+# docs.tsx
+Read the features in detail.: Özellikleri detaylı olarak incele.
+I'm a user: Bir Kullanıcıyım
+Open manual: Kılavuzu İncele
+Manual is not available yet: Kılavuz henüz hazır değil
+I'm a developer: Bir Geliştiriciyim
+Open documentation: Dokümantasyonu aç
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: Tam Ekran
+This demo is open source on <%0|GitHub|%0>.: Bu demo açık kaynak olarak <%0|GitHub|%0>üzerinde mevcut.
+
+# 404.tsx
+Page not found: Sayfa bulunamadı
+This page does not exist.: Böyle bir sayfa yok.
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: Genişlik Uyuşmazlığı
+Increase your window width: PENCERE GENİŞLİĞİNİ ARTIR
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Penceren bu sayfanın içeriği için fazla küçük, ve daha fazla ekran alanın olduğunu tespit ettik. Lütfen pencere genişliğini artır veya tarayıcı pencereni tam ekran yap.
+Rotate your device: Cihazını yataya çevir
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Ekranın bu sayfanın içeriği için fazla küçük. Lütfen ekranını yatay pozisyona getir veya masa üstü kullan.
+This page is incompatible: Bu sayfada uyumsuzluk var
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Ekran genişliğin bu sayfanın içeriği için fazla küçük. Bu sayfayı görmek için sisteminin çözünürlüğünü artırman veya daha büyük bir ekran kullanman gerkebilir.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Ekran genişliğin bu sayfanın içeriği için fazla küçük. Lütfen sisteminin çözünürlüğünü artır.

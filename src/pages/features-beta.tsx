@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Media from '@/components/media';
 import FeaturesBetaCard from '@/components/FeaturesBetaCard';
 import WidthRequirement from '@/components/WidthRequirement';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const Features = () => {
   const theme = useTheme();
@@ -59,17 +59,17 @@ const Features = () => {
       <div className="text-center" style={{ height: 'calc(100vh - 146px)' }}>
         <div style={{ height: `calc(40vh - ${100 - scrollPosition / 5}px)` }}></div>
         <Text className="header" h1>
-          <TranslatableText>Avdan's concept, we're making it Real!</TranslatableText>
+          <Chiislate>Avdan's concept, we're making it Real!</Chiislate>
         </Text>
         <div style={{ height: `${80 - scrollPosition / 25}px` }}></div>
         <div id="loadText" ref={loadTextRef}>
-          <TranslatableText>Assets are loading, please wait</TranslatableText>
+          <Chiislate>Assets are loading, please wait</Chiislate>
           <div ref={loadAnimRef} id="loadAnim">
             .
           </div>
         </div>
         <div className="breath" ref={scrolldownRef} style={{ display: 'none' }}>
-          <TranslatableText>Scroll down to see what we've got here</TranslatableText>
+          <Chiislate>Scroll down to see what we've got here</Chiislate>
         </div>
       </div>
       <div>
@@ -96,10 +96,10 @@ const Features = () => {
         </div>
         <div className="slide">
           <Card className="slide__card slide__card-left" color={theme.type === 'light' ? 'black' : 'white'}>
-            <TranslatableText>This concept video is made by Avdan</TranslatableText> <Spacer />
+            <Chiislate>This concept video is made by Avdan</Chiislate> <Spacer />
             <Link href="https://youtu.be/tXFEiw1aJTw">
               <Button type="error">
-                <TranslatableText>Watch on YouTube</TranslatableText>
+                <Chiislate>Watch on YouTube</Chiislate>
               </Button>
             </Link>
           </Card>
@@ -176,20 +176,20 @@ const Features = () => {
       <div className="text-center" style={{ height: '80vh' }}>
         <Spacer h="calc(40vh - 150px)" />
         <Text className="header" h1>
-          <TranslatableText>Under development</TranslatableText>
+          <Chiislate>Under development</Chiislate>
         </Text>
         <Spacer h="30px" />
         <Text>
-          <TranslatableText>
+          <Chiislate>
             This project wouldn't be possible without the community's contributions. Join us and help!
-          </TranslatableText>
+          </Chiislate>
         </Text>
         <Spacer h="50px" />
         <Media />
         <Spacer h="50px" />
         <Link href="/demo">
           <Button shadow type="success" margin="10px">
-            <TranslatableText>Open demo</TranslatableText>
+            <Chiislate>Open demo</Chiislate>
           </Button>
         </Link>
         <style jsx global>

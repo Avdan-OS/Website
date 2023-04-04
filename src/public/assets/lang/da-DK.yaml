@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: Oversigt
+Home: Hjem
+Features: Funktioner
+Downloads: Nedhentninger
+External links: Eksterne links
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Juridisk
+License: Licens
+EULA:
+History of Incidents: Hændelseshistorik
+Privacy and Security: Privatliv og Sikkerhed
+Inspired by <%0|Avdan|%0>: Inspireret af <%0|Avdan|%0>
+AvdanOS contributors: AvdanOS bidragydere
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> er stadig under udvikling.
+Join our Discord!: Tilslut vores Discord
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Hjælp
+Documentation: Dokumentation
+Docs: Docs
+Demo: Demo
+
+# index.tsx
+Your PC but Even Better!: Din pc, men meget bedre!
+Try in your browser: Prøv i din browser
+Download Now!: Hent nu!
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub: Åben kildekode på GitHub
+Browse all repos: Gennemse alle depoter
+# discoverCard.tsx
+AvdanOS: AvdanOS
+Meet AvdanOS, refining the way we think about operating systems.: Mød avdanOS, raffinere måden vi tænker på operativ systemer.
+Official website: Officielle hjemmeside
+All the new updates and information about AvdanOS and support.: Alle nye opdateringer samt informationer om avdanOS og hjælp.
+Desktop environment: Skrivebords system
+Meet Nadva, the official desktop environment for AvdanOS.: Mød nadva, det officielle skrivebord til avdanOS.
+A Discord bot made for the AvdanOS community Discord server.: en Discord robot lavet til avdanOS fællesskabs Discord server.
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Avdan's koncept, vi gør det til virkelighed!
+Assets are loading, please wait: Aktiver bliver læst, vent venligst
+Scroll down to see what we've got here: Scroll ned for at se hvad vi har her
+This concept video is made by Avdan: Denne konceptvideo er lavet af Avdan
+Watch on YouTube: Se den på YouTube
+Familiar dock, ultimate form: Velkendt dok, ultimativ form
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Enhver kender en dok-/taskbar. Vi har en helt ny dok, med flere funktioner end nogensinde før.
+Brand new launch menu: Helt ny startmenu
+With everything in one place, do anything anywhere at anytime.: Med alting på et sted, lav alting hvor som helst når som helst.
+Easily apply layout: Nemt anvendeligt layout
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Kom nemt igang med den perfekte vindueopsætning, med en liste af forudindstillinger bestemt af dine apps. Er det ikke nok, kan du bare lave det om i indstillingerne.
+Overpowered dock: Kraftfuld Dok
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Din dok kan gøre mere end nogensinde. Det er din ultimative manager til at blive organiseret.
+New way to manage files: Ny måde at administrere filer
+This file manager keeps you organised and productive. Find your files the instant you need it.: Denne filmanager holder dig organiseret og produktiv.
+Drag & drop made easy: Træk & slip gjort nemt
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Træk & slip er den nemmeste måde at flytte alting på din computer. Vi gør det intuitivt og nemt at bruge.
+more than multitask: mere end multitasking
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Vil du lave flere ting på én gang? vi ved du vil og vi har dig. Nu er det ikke kun multitasking, det er organiseret multitasking.
+TabOS!: TabOS!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Browsere har bevist hvor kraftfulde tabs er, så hvorfor ikke bruge dem til at gøre dit OS mere kraftfuldt?
+New context menu: Ny kontekstmenu
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Kontekstmenuen har ikke ændret sig i flere årtier nu. Vi er trætte af lange lister af ting, og hey hvorfor ikke lave en cirkel? Kan du ikke lide den? så skift tilbage i indstillingerne!
+Your OS, your preference: Dit OS, dine præferencer
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Vi giver dig kontrol over dit system. Temaer er bare en vigtig en af dem, og du kan få flere hvis du ikke kan lide vores.
+Day & Night: Dag & Nat
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Lad forskellige temaer fortælle dig hvad tiden er. Hey, du kan endda gøre det omvendt. Kan du gøre det på Windows eller MacOS?
+Under development: Under udvikling
+This project wouldn't be possible without the community's contributions. Join us and help!: Dette projekt ville ikke være muligt uden vores fællesskabsbidrag. Tilslut os og hjælp til!
+Open demo: Åben demo
+
+# download.tsx
+This download is not available yet.: Denne nedhentning er ikke klar endnu.
+Give your PC an upgrade.: Giv din PC en opgradering
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: For de fleste
+For Pi, Pine, and Mac: For Pi, Pine og Mac
+Download: Hent
+Web preview: Web forhåndsvisning
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Du er ved at besøge webdemo-versionen af AvdanOS, hvilket kun er bevis-af-koncept. Afprøv live-systemet, er på det kraftigste anbefalet for den fulde oplevelse af operativsystemet.
+Live system is currently not available because the system is still under development: Live-systemet er i øjeblikket ikke tilgængeligt grundet systemet stadig er under udvikling
+yes, take me there: Ja, tag mig der til
+Cancel: Afbryd
+Before you download: Før du henter
+Please read this before you continue: Venligst læs dette inden du forsætter
+Below is the shasum of the download. You can use it to check download's integrity: Her under er shasum af nedhentningen. du kan bruge den til at tjekke nedhentningens integritet
+Yes, I understand: Ja, jeg forstår
+Use Torrent download: Brug torrent-hentning
+Continue: Forsæt
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Har du problemer? Klik <%0|her|%0> for hjælp!
+
+# support.tsx
+AvdanOS support: AvdanOS hjælp
+Contact us on social media: Kontakt os på sociale medier
+Visit: Besøg
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.:
+
+# support-beta.tsx
+AvdanOS support articles: AvdanOS hjælpe-artikler
+Search support articles: Søg i hjælpe-artikler
+Ask our community: Spørg vores fællesskab
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Hey se! en ny test-version af denne side er tilgængelig!
+Close: Luk
+Check it out: Prøv den
+
+# docs.tsx
+Read the features in detail.: Læs mere om funktionerne.
+I'm a user: Jeg er bruger
+Open manual: Åben manual
+Manual is not available yet: Denne manual er ikke tilgængelig endnu
+I'm a developer: Jeg er udvikler
+Open documentation: Åben dokumentation
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: Fuld skærm
+This demo is open source on <%0|GitHub|%0>.:
+
+# 404.tsx
+Page not found: Side ikke fundet
+This page does not exist.: Denne side findes ikke.
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: Bredde-inkompatibilitet
+Increase your window width: Forøg din vinduesbredde
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Dit vindue er for lille til visning af indholdet på denne side, og vi har opdaget at du har mere skærmplads. Venligst øg din vinduesbredde eller udvid til fuld skærm.
+Rotate your device: Rotér din enhed
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Din skærm er for lille til at vise denne side. Venligst rotér til landskabs-visning eller brug en computer.
+This page is incompatible: denne side er inkompatibel
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Din skærmbredde er for lille til at vise indholdet på denne side. Du skal muligvis øge din systemopløsning. Brug en computer til at vise denne side.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Din skærmbredde er for lille til at vise indholdet på denne side. Venligst øg din skærmopløsning.

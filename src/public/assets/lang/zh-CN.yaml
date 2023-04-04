@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: 概述
+Home: 主页
+Features: 特征
+Downloads: 下载
+External links: 外部连结
+Twitter: 推特
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: 法定
+License: 版权许可
+EULA: 最终用户许可协议
+History of Incidents: 意外日志
+Privacy and Security: 隐私和安全
+Inspired by <%0|Avdan|%0>: 启发来自<%0|Avdan|%0>
+AvdanOS contributors: AvdanOS 贡献者
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> 仍在开发中。
+Join our Discord!: 加入我们的 Discord
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: 支援
+Documentation: 指南
+Docs: 指南
+Demo: 演示
+
+# index.tsx
+Your PC but Even Better!: 您的个人电脑，但是更好。
+Try in your browser: 在浏览器内试试
+Download Now!: 立即下载
+# miniFeaures.tsx
+Workflow redefined: 工作流程全新定义
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: 时间是无价的，我们的时间真的太少了。使用正确的工具和专业的工具，每项任务都可以在最短的时间内轻松完成！
+Check what AvdanOS offers to you.: 看看 AvdanOS 为您提供什么
+See here: 看这里
+Open projects with open community: 在开放社群中的开放计划
+Interested? Give it a try!: 感兴趣吗？试试看吧！
+# discover.tsx
+Open source on GitHub: 在GitHub上开源
+Browse all repos: 浏览所有存储库
+# discoverCard.tsx
+AvdanOS: Avdan 作业系统
+Meet AvdanOS, refining the way we think about operating systems.: AvdanOS，更进步的作业系统。
+Official website: 官方页面
+All the new updates and information about AvdanOS and support.: 有关 AvdanOS 和支援的所有新更新和消息
+Desktop environment: 桌面环境
+Meet Nadva, the official desktop environment for AvdanOS.: 隆重介绍 Navda，AvdanOS 的桌面环境
+A Discord bot made for the AvdanOS community Discord server.: 专门为开发 AvdanOS 的 Discord 伺服器机器人
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Avdan 的概念，我们正在将它实现
+Assets are loading, please wait: 资源载入中，请稍候
+Scroll down to see what we've got here: 向下滑动，看看我们在这里有什么好玩的
+This concept video is made by Avdan: 这个概念视频由 Avdan 制作
+Watch on YouTube: 在YouTube上观看
+Familiar dock, ultimate form: 熟悉的 Dock，终极形态
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: 每个人都知道Dock/任务栏。我们有了一个全新的 Dock，比以往任何时候都拥有更多的功能。
+Brand new launch menu: 全新的启动菜单
+With everything in one place, do anything anywhere at anytime.: 一切皆在一处，随时随地做任何事
+Easily apply layout: 轻松选择排布
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: 直接从预设里选择，轻松使用完美的窗口排布。不满足？在设定里更改它。
+Overpowered dock: 能力过大的 Dock
+Your dock can do more than ever. It's your ultimate manager to get you organised.: 您的 Dock 可以做的事比以往更多。您的终极管理者让您井井有序。
+New way to manage files: 管理文件的新方法
+This file manager keeps you organised and productive. Find your files the instant you need it.: 此档案管理可让您保持井井有条并富有成效。随时立即找到您需要的文件
+Drag & drop made easy: 拖放变得容易
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: 拖放是在电脑上传输任何内容的最简单方法。我们把它变得更易于使用。
+more than multitask: 不仅仅是做很多事
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: 想一次做很多事？我们懂您。现在您不仅可以做很多事，而且是有组织的。
+TabOS!: 标签作业系统
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: 浏览器已经证明了标签页的强大功能，那么为什么不使用它们来使您的作业系统更加强大呢？
+New context menu: 新的上下文菜单
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: 上下文菜单几十年来都没有改变，我们厌倦了长长的清单。嘿，为什么不把它做成一个圆圈呢？不喜欢？你还是可以在设置里切换回来！
+Your OS, your preference: 您的电脑,您的偏好
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: 我们让您完全控制您的系统，主题只是其中重要的一个。如果您不喜欢我们的主题，您可以在网路上找到得到更多。
+Day & Night: 早＆晚
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: 让不同的主题告诉你现在几点。嘿，你甚至可以让它反过来。你能在 Windows 或 MacOS 上这样做吗？
+Under development: 正在开发中
+This project wouldn't be possible without the community's contributions. Join us and help!: 如果没有大家的贡献，这个计画是不可能实现的。加入我们！
+Open demo: 打开演示
+
+# download.tsx
+This download is not available yet.:
+Give your PC an upgrade.: 升级您的电脑
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: 给大部分的人
+For Pi, Pine, and Mac: 给 Pi, Pine, 及苹果电脑
+Download: 下载
+Web preview: 网页预览
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: 您即将访问 AvdanOS 的网络演示版，这只是概念验证。我们强烈建议尝试实时系统以从操作系统中获得完整的体验。
+Live system is currently not available because the system is still under development: 因为系统仍在开发中，实时系统目前不可用。
+yes, take me there: 前往
+Cancel: 取消
+Before you download: 在您下载之前
+Please read this before you continue: 请在继续之前阅读此内容
+Below is the shasum of the download. You can use it to check download's integrity: 下面是下载的shasum。您可以使用它来检查下载的完整性：
+Yes, I understand: 是的，我同意
+Use Torrent download: 使用激流下载
+Continue: 继续
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: 遇到麻烦？按<%0|这里|%0>获取帮助！
+
+# support.tsx
+AvdanOS support: AvdanOS 支援
+Contact us on social media: 在社交媒体上联系我们
+Visit: 前往
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: 想要给我们建议？我们一直希望能听到社群。请在<%0|这里|%0>发布您的想法。
+
+# support-beta.tsx
+AvdanOS support articles: AvdanOS 支援文章
+Search support articles: 寻找支援文章
+Ask our community: 问我们的好伙伴们
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: 此页面有新的测试版本可用！
+Close: 关闭
+Check it out: 一探究竟
+
+# docs.tsx
+Read the features in detail.: 详细的阅读所有功能
+I'm a user: 我是使用者
+Open manual: 打开使用手册
+Manual is not available yet: 使用手册尚不可用
+I'm a developer: 我是开发人员
+Open documentation: 打开开发人员指南
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: 全萤幕
+This demo is open source on <%0|GitHub|%0>.: 这个演示是开源的，您可以在<%0|GitHub|%0>上查看。
+
+# 404.tsx
+Page not found: 找不到这个页面
+This page does not exist.: 本页面不存在
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: 宽度不兼容
+Increase your window width: 增加您的视窗宽度
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: 您的视窗太小，无法正常显示此页面的内容，我们检测到您有更多的屏幕空间。请增加视窗宽度或最大化您的浏览器视窗。
+Rotate your device: 旋轉屏幕
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: 您的屏幕太小，无法正常显示此页面。请旋转到横向视图或使用电脑。
+This page is incompatible: 此页面不兼容
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: 您的屏幕宽度太小，无法正常显示此页面的内容。您可能需要提高系统的解析度，或着使用更大的萤幕查看此页面。
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: 您的屏幕宽度太小，无法正常显示此页面的内容。您可能需要提高系统的解析度。

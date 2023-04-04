@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: Forbhreathnú
+Home: Baile
+Features: Gnéithe
+Downloads: Íoslódálacha
+External links: Naisc Sheachtracha
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Dlíthiúil
+License: Ceadúnas
+EULA:
+History of Incidents: Stair na dTeagmhas
+Privacy and Security: Príobháideacht agus Slándáil
+Inspired by <%0|Avdan|%0>: Spreagtha ag <%0|Avdan|%0>
+AvdanOS contributors: AvdanOS Rannpháirtithe
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.:
+Join our Discord!: Páirt a Ghlacadh Lenár Discord
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Tacaíocht
+Documentation: Doiciméadú
+Docs: Doiciméadú
+Demo: Taispeántas
+
+# index.tsx
+Your PC but Even Better!: Do Ríomhaire ach Níos Fearr Fós!
+Try in your browser: Bain Triail as i do Bhrabhsálaí
+Download Now!: Íoslódáil Anois!
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub: Foinse Oscailte ar GitHub
+Browse all repos: Brabhsáil Gach Stór
+# discoverCard.tsx
+AvdanOS: AvdanOS
+Meet AvdanOS, refining the way we think about operating systems.: Freastal ar AvdanOS, Ag Scagadh an Dóigh a Smaoinímid ar Chórais Oibriúcháin.
+Official website: Láithreán Gréasáin Oifigiúil
+All the new updates and information about AvdanOS and support.: Na Nuashonruithe Agus an Fhaisnéis go Léir Faoi AvdanOS agus Tacaíocht.
+Desktop environment: timpeallacht deisce
+Meet Nadva, the official desktop environment for AvdanOS.: Bualadh le Nadva, An Timpeallacht Deisce Oifigiúil le Haghaidh AvdanOS.
+A Discord bot made for the AvdanOS community Discord server.: Bot Discord Déanta don Fhreastalaí Easaontais Pobail AvdanOS.
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Coincheap Avdan, Táimid ag Déanamh Fíor é!
+Assets are loading, please wait: Sócmhainní á Luchtú, Fan go Fóill
+Scroll down to see what we've got here: Scrollaigh Síos Chun a Fheiceáil Cad Atá Againn Anseo
+This concept video is made by Avdan: Is é Avdan a Rinne an Físeán Coincheap Seo
+Watch on YouTube: Féachaint ar YouTube
+Familiar dock, ultimate form: Duga Eolach, Foirm Deiridh
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Tá a Fhios ag Gach Duine Duga/Tascbharra. Fuaireamar Duga Úrnua, Le Níos mó Gnéithe ná Riamh.
+Brand new launch menu: Roghchlár Seoladh Úrnua
+With everything in one place, do anything anywhere at anytime.: Le Gach Rud in aon áit Amháin, Aon rud a Dhéanamh áit ar Bith ag am ar Bith.
+Easily apply layout: Iarratas a Dhéanamh go Héasca Leagan Amach
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Le Liosta de na Réamhshocruithe a Chinneadh ó tú Apps, a Fháil go Héasca a Bheith ag Obair Leis an Leagan Amach Fuinneoige Foirfe. Nach Leor? É a Athrú sna Socruithe.
+Overpowered dock: Duga ró-Chumhachtach
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Is Féidir le do Dhuga Níos mó a Dhéanamh ná Riamh. Is é do Bhainisteoir Deiridh é Chun tú a Chur in Eagar.
+New way to manage files: Bealach Nua Chun Comhaid a Bhainistiú
+This file manager keeps you organised and productive. Find your files the instant you need it.: Coinníonn an Bainisteoir Comhad seo Eagraithe agus Táirgiúil Thú. Teacht ar do Chuid Comhad an Toirt is gá Duit é.
+Drag & drop made easy: Tarraing agus Scaoil Déanta Éasca
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Is é Tarraingt agus Scaoil an Bealach is Éasca Chun aon rud a Aistriú ar do Ríomhaire. Déanaimid Iomasach agus Éasca é a Úsáid.
+more than multitask: Níos mó ná Ilthasc
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: ag Iarraidh go Leor Tascanna a Dhéanamh ag an am? Tá Aithne Againn ort agus Fuaireamar thú. Ní Iltascáil Amháin atá i gCeist Anois, ach Iltascáil Eagraithe é.
+TabOS!: TabOS!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Tá sé cruthaithe ag brabhsálaithe cé chomh cumhachtach is atá cluaisíní, mar sin cén fáth nach n-úsáidfeá iad chun do chóras oibriúcháin a dhéanamh níos cumhachtaí fós?
+New context menu: Roghchlár Comhthéacs Nua
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Níor Ahraigh an Roghchlár Comhthéacs le Blianta Fada Anois. Táimid Tuirseach de Liosta Fada Míreanna, agus hug cén Fáth Nach nDéanfaí Ciorcal de? Ní Maith Liom é? Is Féidir Leat é a Athrú ar ais i Socruithe!
+Your OS, your preference: Do Chóras Oibriúcháin, Do Rogha
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Tugaimid Smacht Duit ar do Chóras. Níl sa Théama ach Ceann Tábhachtach acu, agus is Féidir Leat Níos mó a Fháil Mura dTaitníonn ár gCeann Leat Leat.
+Day & Night: Lá agus Oíche
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Inseoidh Téamaí Éagsúla Duit cén t-am atá ann. Hug, is Séidir Leat a Dhéanamh Fiú Droim ar ais é. An Féidir Leat é a Dhéanamh ar Windows nó MacOS
+Under development: Á Fhorbairt
+This project wouldn't be possible without the community's contributions. Join us and help!: Ní Bheadh ​​An Tionscadal seo Indéanta gan Ranníocaíochtaí an Phobail. Bígí Linn agus Cuidigh Linn!
+Open demo: Taispeána Oscailte
+
+# download.tsx
+This download is not available yet.: Níl an Íoslódáil seo ar Fáil fós.
+Give your PC an upgrade.: Íosluchtaigh Uasghrádú do Ríomhaire.
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: Don Chuid is mó Daoine
+For Pi, Pine, and Mac: Do Pi, Pine, agus Mac
+Download: Íoslódáil
+Web preview: Réamhamharc Gréasáin
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Tá tú ar tí Cuairt a Thabhairt ar an Leagan Taispeána Gréasáin de AvdanOS, Nach Bhfuil ann ach Cruthúnas ar Choincheap. Moltar go Láidir Triail a Bhaint as an gCóras beo Chun an Taithí Iomlán a Fháil ón gCóras Oibriúcháin.
+Live system is currently not available because the system is still under development: Níl Córas beo ar Fáil Faoi Láthair Toisc go Bhfuil an Córas fós á Fhorbairt
+yes, take me there: Sea, Tóg mé ann
+Cancel: Ceal
+Before you download: Sula tú a Íoslódáil
+Please read this before you continue: Léigh é seo le do Thoil Sula Leanann tú ar Aghaidh
+Below is the shasum of the download. You can use it to check download's integrity: Anseo Thíos tá Scáth an Íoslódáil. Is Féidir Leat é a Úsáid Chun Sláine an Íoslódála a Sheiceáil
+Yes, I understand: Sea, Tuigim
+Use Torrent download: Bain Úsáid as Torrent Íosluchtaigh
+Continue: Leanúint ar Aghaidh
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Ag Trioblóid? Cliceáil <%0|Anseo|%0> Chun Cabhair a Fháil!
+
+# support.tsx
+AvdanOS support: Tacaíocht AvdanOS
+Contact us on social media: Déan Teagmháil Linn ar na Meáin Shóisialta
+Visit: Cuairt
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: Ag Iarraidh rud ar bith a Mholadh Dúinn? Ba Mhaith Linn i gCónaí Éisteacht Leis an bpobal. Cuir do Chuid Smaointe i Láthair <%0|Anseo|%0>.
+
+# support-beta.tsx
+AvdanOS support articles: Earraí Tacaíochta AvdanOS
+Search support articles: Cuardaigh Ailt Tacaíochta
+Ask our community: Fiafraigh dár bPobal
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Hey Breathnú! Tá Leagan Tástála Nua den Leathanach seo ar Fáil!
+Close: Dhúnadh
+Check it out: Seiceáil Amach é
+
+# docs.tsx
+Read the features in detail.: Léigh na Gnéithe go Mionsonraithe.
+I'm a user: Is Úsáideoir Mé
+Open manual: Lámhleabhar Oscailte
+Manual is not available yet: Níl an Lámhleabhar ar Fáil fós
+I'm a developer: Is Forbróir Mé
+Open documentation: Doiciméadú Oscailte
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: Scáileán Iomlán
+This demo is open source on <%0|GitHub|%0>.:
+
+# 404.tsx
+Page not found: Ní bhFuarthas an Leathanach
+This page does not exist.: Níl an Leathanach seo ann.
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: Neamh-Chomhoiriúnacht Leithead
+Increase your window width: Méadú do Leithead Fuinneoige
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Tá do Fhuinneog Róbheag Chun Ábhar an Leathanaigh seo a Thaispeáint, agus Thugamar Faoi Deara go bhFuair tú Níos mó Eastát Scáileáin. Méadaigh Leithead do Fhuinneog nó Uasmhéadaigh do Fhuinneog Brabhsálaí.
+Rotate your device: Rothlú do Gléas
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Tá do Scáileán Róbheag Chun an Leathanach seo a Thaispeáint. Le do Thoil Rothlaigh Chuig Radharc Tírdhreacha nó Úsáid Deasc.
+This page is incompatible: Tá an Leathanach seo Neamh-Chomhoiriúnach
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Tá Leithead do Scáileáin Róbheag Chun Ábhar an Leathanaigh seo a Thaispeáint. Seans go mBeidh ort Taifeach do Chórais a Mhéadú nó Scáileán Níos mó a Úsáid Chun an Leathanach seo a Fheiceáil.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Tá Leithead do Scáileáin Róbheag Chun Ábhar an Leathanaigh seo a Thaispeáint. Le do Thoil a Mhéadú rún do Chórais.

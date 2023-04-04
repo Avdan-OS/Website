@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: Ikhtisar
+Home: Beranda
+Features: Fitur
+Downloads: Unduh
+External links: Tautan Eksternal
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Hukum
+License: Lisensi
+EULA: EULA
+History of Incidents: Riwayat Kejadian
+Privacy and Security: Privasi dan Keamanan
+Inspired by <%0|Avdan|%0>: Terinspirasi dari <%0|Avdan|%0>
+AvdanOS contributors: Kontributor AvdanOS
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> masih dalam pengembangan.
+Join our Discord!: Gabung dengan Discord kami!
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Dukungan
+Documentation: Dokumentasi
+Docs: Dokumen
+Demo: Demo
+
+# index.tsx
+Your PC but Even Better!: Komputer mu, tapi lebih baik!
+Try in your browser: Cobalah di Browser Anda
+Download Now!: Unduh sekarang!
+# miniFeaures.tsx
+Workflow redefined: Alur kerja didefinisikan ulang
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: Waktu sangatlah berharga, dan waktu hanya sedikit. Dengan alat yang tepat dan ruang kerja profesional, setiap tugas menjadi sangat mudah dengan waktu yang amat singkat!
+Check what AvdanOS offers to you.: Cek apa yang AvdanOS tawar buat kamu.
+See here: Lihat disini
+Open projects with open community: Proyek terbuka dengan komunitas yang terbuka
+Interested? Give it a try!: Tertarik? mari coba!
+# discover.tsx
+Open source on GitHub: Sumber terbuka di GitHub
+Browse all repos: Telusuri semua repo
+# discoverCard.tsx
+AvdanOS:
+Meet AvdanOS, refining the way we think about operating systems.: Kenalkan AvdanOS, menyempurnakan cara kita berpikir tentang sistem operasi.
+Official website: Situs resmi
+All the new updates and information about AvdanOS and support.: Segala pembaruan dan informasi terkait AvdanOS dan juga Dukungan.
+Desktop environment: Lingkungan Desktop
+Meet Nadva, the official desktop environment for AvdanOS.: Kenalkan Nadva, Lingkungan Desktop resmi untuk AvdanOS
+A Discord bot made for the AvdanOS community Discord server.: Sebuah Bot Discord yang dibuat untuk Komunitas AvdanOS
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Konsep dari Avdan, kami membuatnya nyata!
+Assets are loading, please wait: Aset sedang memuat, mohon menunggu
+Scroll down to see what we've got here: Gulir ke bawah untuk melihat apa yang kami punya di sini
+This concept video is made by Avdan: Video konsep ini dibuat oleh Avdan
+Watch on YouTube: Tonton di YouTube
+Familiar dock, ultimate form: Dok yang akrab, bentuknya pamungkas
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Semua orang tahu dok atau bilah tugas. Kami punya dok baru, dengan lebih banyak fitur dari sebelumnya.
+Brand new launch menu: Menu luncur yang baru
+With everything in one place, do anything anywhere at anytime.: Dengan segalanya di satu tempat, lakukan apa saja di mana saja dan kapan saja.
+Easily apply layout: Penerapan tata letak yang mudah
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Dengan daftar prasetel yang ditentukan aplikasi Anda, memudahkan pekerjaan dengan tata letak jendela yang sempurna. Tidak cukup? Ubahlah di pengaturan.
+Overpowered dock: Kuasai Dok
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Dok Anda bisa lakukan lebih dari sebelumnya. Karena itu adalah manajer utama Anda untuk untuk membuatnya mudah diatur.
+New way to manage files: Cara baru untuk mengelola file
+This file manager keeps you organised and productive. Find your files the instant you need it.: Pengelola file ini membuat Anda selalu teratur dan produktif. Temukan file Anda dengan instan saat anda membutuhkannya.
+Drag & drop made easy: Drag & drop dibuat mudah
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Drag dan drop adalah cara mudah untuk transfer apa pun di komputer anda. Kami membuatnya intuitif dan mudah digunakan.
+more than multitask: Lebih dari multitasking
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Ingin lakukan banyak tugas sekaligus? Kami tahu Anda dan kami paham Anda. Sekarang tidak hanya multitasking, tapi itu adalah multitasking terorganisir.
+TabOS!:
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Browser telah membuktikan betapa kuat dan bergunanya tab, jadi mengapa tidak menggunakannya untuk membuat sistemm operasi anda lebih bertenaga?
+New context menu: Menu konteks yang baru
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Menu konteks sudah tidak berubah selama beberapa dekade sekarang. Kami bosan dengan daftar item yang panjang, dan hei mengapa tidak membuatnya menjadi bundar? Tidak suka? Anda juga bisa mengubahnya kembali di pengaturan!
+Your OS, your preference: Sistem operasi Anda, pilihan Anda
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Kami memberi Anda kendali atas sistem Anda. Tema hanyalah salah satunya yang penting, dan Anda bisa mendapatkan lebih jika anda tidak menyukai tema kami.
+Day & Night: Pagi & Malam
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Biarkan tema yang berbeda memberi tahu Anda jam berapa sekarang. Hei, bahkan Anda bisa membuat sebaliknya. Bisa tidak kalau di Windows atau MacOS?
+Under development: Dalam pengembangan
+This project wouldn't be possible without the community's contributions. Join us and help!: Proyek ini mustahil terjadi tanpa kontribusi dari komunitas. Mari bergabung dan bantu kami!
+Open demo: Buka Demo
+
+# download.tsx
+This download is not available yet.: Unduhan masih belum tersedia untuk sekarang.
+Give your PC an upgrade.: Tingkatkan komputer Anda.
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: Untuk semua orang
+For Pi, Pine, and Mac: Untuk Pi, Pine, dan Mac
+Download: Unduh
+Web preview: Pratinjau Web
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Anda akan mengunjungi versi demo web AvdanOS, yang hanya merupakan bukti konsep. Mencoba sistem secara langsung sangat disarankan untuk mendapatkan pengalaman lebih dari sistem operasi.
+Live system is currently not available because the system is still under development: Sistem secara langsung saat ini tidak tersedia karena sistem masih dalam pengembangan
+yes, take me there: Ya, bawa aku ke sana
+Cancel: Batalkan
+Before you download: Sebelum Anda mengunduh
+Please read this before you continue: Tolong baca ini sebelum melanjutkan
+Below is the shasum of the download. You can use it to check download's integrity: Di bawah ini adalah shasum unduhan. Anda dapat menggunakannya untuk memeriksa integritas unduhan
+Yes, I understand: Ya, saya mengerti
+Use Torrent download: Gunakan unduhan torrent
+Continue: Lanjutkan
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Punya masalah? klik <%0|di sini|%0> untuk mendapatkan bantuan!
+
+# support.tsx
+AvdanOS support: Dukungan AvdanOS
+Contact us on social media: Hubungi kami di media sosial
+Visit: Kunjungi
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: Ingin menyarankan sesuatu kepada kami? Kami juga ingin mendengarkan dari komunitas, tunjukkan ide kamu  <%0|di sini|%0>
+
+# support-beta.tsx
+AvdanOS support articles: Artikel Dukungan avdanos
+Search support articles: Cari Dukungan
+Ask our community: Tanyai Komunitas Kami
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Hei lihat! Versi pengujian baru dari halaman ini tersedia!
+Close: Tutup
+Check it out: Cek sekarang
+
+# docs.tsx
+Read the features in detail.: Baca fitur-fitur secara rinci.
+I'm a user: Saya adalah Pengguna
+Open manual: Buka manual
+Manual is not available yet:
+I'm a developer: Saya adalah Pengembang
+Open documentation: Buka dokumentasi
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: Layar penuh
+This demo is open source on <%0|GitHub|%0>.: Demo ini adalah sumber terbuka dari <%0|GitHub|%0>.
+
+# 404.tsx
+Page not found: Halaman tidak ditemukan
+This page does not exist.: Halaman ini tidak ada.
+Join in and help us out developing an open-source operating system.: Bergabunglah dan bantu kami mengembangkan sistem operasi sumber terbuka. # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: Ketidakcocokan lebar
+Increase your window width: Tingkatkan lebar jendela anda
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Jendela Anda terlalu kecil untuk menampilkan konten halaman ini, dan kami mendeteksi bahwa Anda memiliki lebih banyak ruang layar. Silahkan tambah lebar jendela Anda atau maksimalkan jendela browser Anda.
+Rotate your device: Putar perangkat anda
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Layar anda terlalu kecil untuk menampilkan halaman ini. Silakan putar ke tampilan lanskap atau gunakan desktop.
+This page is incompatible: Halaman ini tidak kompatibel
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Lebar layar Anda terlalu kecil untuk menampilkan konten halaman ini. Anda mungkin perlu meningkatkan resolusi sistem Anda atau gunakan layar yang lebih besar untuk melihat halaman ini.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Lebar layar anda terlalu kecil untuk menampilkan konten halaman ini. Anda mungkin perlu meningkatkan resolusi sistem anda menggunakan desktop untuk melihat halaman ini.

@@ -1,5 +1,5 @@
 import { Card, Text, useTheme } from '@geist-ui/core';
-import { TranslatableText } from './translation/TranslatableText';
+import { Chiislate } from './translation/Chiislate';
 
 interface FeaturesBetaCardProps {
   title: string;
@@ -13,12 +13,12 @@ const FeaturesBetaCard = ({ isCardOnRight, title, description }: FeaturesBetaCar
     <Card className={`slide__card ${isCardOnRight ? 'slide__card--right' : 'slide__card--left'}`}>
       <div className="slide-topic">
         <h2 style={{ fontSize: '1.5rem', margin: '0', color: theme.type === 'light' ? 'black' : 'white' }}>
-          <TranslatableText>{title}</TranslatableText>
+          <Chiislate>{title}</Chiislate>
         </h2>
       </div>
       <div className="slide-info">
         <Text style={{ fontSize: '1rem', color: theme.type === 'light' ? 'black' : 'white' }}>
-          <TranslatableText>{description}</TranslatableText>
+          <Chiislate>{description}</Chiislate>
         </Text>
       </div>
     </Card>

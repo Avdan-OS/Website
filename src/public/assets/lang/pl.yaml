@@ -1,152 +1,152 @@
 ---
 # Global
 # footer.tsx
-overview: przegląd
-home: Strona Domowa
-features: Cechy
-downloads: Pobieranie
-external links: Linki zewnętrzne
-twitter: Twitter
-github: Github
-youtube: YouTube
-discord: Discord
-reddit: Reddit
-legal: Leaglność
-license: Licencja
-eula: EULA
-history of incidents: Historia incydentów
-privacy and security: Ochrona i prywatność
-inspired by [%a][%b]avdan[%b][%a]: Zainspirowany przez [%a][%b]Avdan[%b][%a]
-avdanos contributors: Twórcy AvdanOS
+Overview: przegląd
+Home: Strona Domowa
+Features: Cechy
+Downloads: Pobieranie
+External links: Linki zewnętrzne
+Twitter: Twitter
+GitHub: GitHub
+YouTube: YouTube
+Discord: Discord
+Reddit: Reddit
+Legal: Leaglność
+License: Licencja
+EULA: EULA
+History of Incidents: Historia incydentów
+Privacy and Security: Ochrona i prywatność
+Inspired by <%0|Avdan|%0>: Zainspirowany przez <%0|Avdan|%0>
+AvdanOS contributors: Twórcy AvdanOS
 # alert.tsx
-is still in development.: Jest wciąż w fazie rozwoju
-join our discord!: Dołącz do naszego discorda
+<%0|AvdanOS|%0> is still in development.:
+Join our Discord!: Dołącz do naszego Discorda
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
 # "features" is in footer.tsx
 # "downloads" is in footer.tsx
-support: Pomoc
-documentation: Dokumentacja
-docs: Dokumenty
-demo: Wersja próbna
+Support: Pomoc
+Documentation: Dokumentacja
+Docs: Dokumenty
+Demo: Wersja próbna
 
 # index.tsx
-your pc but even better!: Twój komputer, ale jeszcze lepszy!
-try in your browser: Wypróbuj w swojej przeglądarce
-download now!: Pobierz teraz!
+Your PC but Even Better!: Twój komputer, ale jeszcze lepszy!
+Try in your browser: Wypróbuj w swojej przeglądarce
+Download Now!: Pobierz teraz!
 # miniFeaures.tsx
-workflow redefined:
-time is priceless, and there is so little time. with right tools and professional workspace, every task is simple as pie for the least amount of time!:
-check what avdanos offers to you.:
-see here:
-open projects with open community:
-interested? give it a try!:
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
 # discover.tsx
-open source on github: Open source na Github
-browse all repos: Przeglądaj wszystkie repozytoria
+Open source on GitHub: Open source na GitHub
+Browse all repos: Przeglądaj wszystkie repozytoria
 # discoverCard.tsx
-avdanos: AvdanOS
-meet avdanos, refining the way we think about operating systems.: Poznaj avdanos, udoskonalony sposób, w jaki myślimy o systemach operacyjnych.
-official website: Oficjalna strona
-all the new updates and information about avdanos and support.: Wszystkie nowe aktualizacje i informacje o AvdanOS i jego wsparciu.
-desktop environment: Środowisko pulpitu
-meet nadva, the official desktop environment for avdanos.: Poznaj Nadvę, oficjalne środowisko graficzne AvdanOS.
-a discord bot made for the avdanos community discord server.: Bot discordowy stworzony dla serwera Discord społeczności AvdanOS.
+AvdanOS: AvdanOS
+Meet AvdanOS, refining the way we think about operating systems.: Poznaj avdanos, udoskonalony sposób, w jaki myślimy o systemach operacyjnych.
+Official website: Oficjalna strona
+All the new updates and information about AvdanOS and support.: Wszystkie nowe aktualizacje i informacje o AvdanOS i jego wsparciu.
+Desktop environment: Środowisko pulpitu
+Meet Nadva, the official desktop environment for AvdanOS.: Poznaj Nadvę, oficjalne środowisko graficzne AvdanOS.
+A Discord bot made for the AvdanOS community Discord server.: Bot Discordowy stworzony dla serwera Discord społeczności AvdanOS.
 
 # features-beta.tsx / features.tsx
-avdan's concept, we're making it real!: Koncept Avdana, urzeczywistniamy go!
-assets are loading, please wait: Trwa ładowanie zasobów, proszę czekać
-scroll down to see what we've got here: Przewiń w dół, aby zobaczyć, co tu mamy
-this concept video is made by avdan: Oto wideo koncepcyjne nakręcone przez Avdana
-watch on youtube: Oglądaj na Youtube
-familiar dock, ultimate form: Znajomy dock, potężma forma
-everyone knows dock/task bar. we got a brand new dock, with more features than ever before.: Każdy zna dock/pasek zadań. My mamy zupełnie nowy dock z jeszcze większą liczbą funkcji, niż kiedykolwiek wcześniej.
-brand new launch menu: Zupełnie nowe menu uruchamiania
-with everything in one place, do anything anywhere at anytime.: Mając wszystko w jednym miejscu, możesz robić cokolwiek, gdziekolwiek i kiedykolwiek.
-easily apply layout: Łatwy układ do zastosowania
-with a list of presets determined from your apps, easily get to work with the perfect window layout. not enough? change it in the settings.: Z listą ustawień wstępnych określonych z Twoich aplikacji, łatwo przystąp do pracy z idealnym układem okien. Niewystarczająco? Zmień to w ustawieniach.
-overpowered dock: Potężny dock
-your dock can do more than ever. it's your ultimate manager to get you organised.: Nasz dock potrafi więcej niż kiedykolwiek. To Twój potężny menedżer, który pomoże Ci się zorganizować.
-new way to manage files: Nowy sposób zarządzania plikami
-this file manager keeps you organised and productive. find your files the instant you need it.: Ten menedżer plików pomoże Ci pozostać zorganizowanym i produktywnym. Znajdź swoje pliki, kiedy tylko ich potrzebujesz.
-drag & drop made easy: Łatwe przeciąganie i upuszczanie
-drag and drop is the easiest way to transfer anything on your computer. we make it intuitive and easy to use.: Przeciąganie i upuszczanie to najprostszy sposób przenoszenia czegokolwiek na swoim komputerze. Sprawiliśmy, że jest intuicyjne i łatwe w użyciu.
+Avdan's concept, we're making it real!: Koncept Avdana, urzeczywistniamy go!
+Assets are loading, please wait: Trwa ładowanie zasobów, proszę czekać
+Scroll down to see what we've got here: Przewiń w dół, aby zobaczyć, co tu mamy
+This concept video is made by Avdan: Oto wideo koncepcyjne nakręcone przez Avdana
+Watch on YouTube: Oglądaj na YouTube
+Familiar dock, ultimate form: Znajomy dock, potężma forma
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Każdy zna dock/pasek zadań. My mamy zupełnie nowy dock z jeszcze większą liczbą funkcji, niż kiedykolwiek wcześniej.
+Brand new launch menu: Zupełnie nowe menu uruchamiania
+With everything in one place, do anything anywhere at anytime.: Mając wszystko w jednym miejscu, możesz robić cokolwiek, gdziekolwiek i kiedykolwiek.
+Easily apply layout: Łatwy układ do zastosowania
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Z listą ustawień wstępnych określonych z Twoich aplikacji, łatwo przystąp do pracy z idealnym układem okien. Niewystarczająco? Zmień to w ustawieniach.
+Overpowered dock: Potężny dock
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Nasz dock potrafi więcej niż kiedykolwiek. To Twój potężny menedżer, który pomoże Ci się zorganizować.
+New way to manage files: Nowy sposób zarządzania plikami
+This file manager keeps you organised and productive. Find your files the instant you need it.: Ten menedżer plików pomoże Ci pozostać zorganizowanym i produktywnym. Znajdź swoje pliki, kiedy tylko ich potrzebujesz.
+Drag & drop made easy: Łatwe przeciąganie i upuszczanie
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Przeciąganie i upuszczanie to najprostszy sposób przenoszenia czegokolwiek na swoim komputerze. Sprawiliśmy, że jest intuicyjne i łatwe w użyciu.
 more than multitask: Więcej, niż wielozadaniowość
-want to do many tasks at a time? we know you and we got you. it's now not only multitasking, it's organised multitasking.: Chciałbyś robić wiele rzeczy na raz? Znamy Cię i tu Cię mamy. OD teraz nie tylko wielozadaniowość, to zorganizowana wielozadaniowość.
-tabos!: Karty!
-browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Przeglądarki udowodniły, jak potężne są karty, więc dlaczego nie wykorzystać ich, aby uczynić swój system jeszcze bardziej wydajnym?
-new context menu: Nowe menu kontekstowe
-context menu didn't change for multiple decades now. we are tired of a long list of items, and hey why not make it a circle? don't like it? you can switch it back in settings!: Menu kontekstowe nie zmieniało się przez wiele dekad. Jesteśmy zmęczeni długą listą, więc hej, dlaczego nie zrobić z niego koła? Nie podoba się? Zawsze możesz to cofnąć w ustawieniach!
-your os, your preference: Twój system, twoje preferencje
-we give you control over your system. theme is just an important one of them, and you can get more if you don't like ours.: Dajemy Ci kontrolę nad systemem, motyw jest po prostu jednym z ważniejszych ustawień. Możesz zdobyć ich więcej, jeśli nasze Ci nie odpowiadają.
-day & night: Dzień & Noc
-let different themes tell you what time it is. hey, you can even make it reversed. can you do it on windows or macos?: Niech różne motywy mówią Ci, która jest godzina. Hej! Możesz to nawet odwrócić! Masz coś takiego na Windowsie, bądź MacOS'ie?
-under development: W fazie rozwoju
-this project wouldn't be possible without the community's contributions. join us and help!: Ten projekt nie byłby możliwy bez wkładu społeczności. Śmiało! Dołącz do nas i pomóż! #śmiało means "go ahead!"
-open demo: Otwórz wersję demonstracyjną
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Chciałbyś robić wiele rzeczy na raz? Znamy Cię i tu Cię mamy. OD teraz nie tylko wielozadaniowość, to zorganizowana wielozadaniowość.
+TabOS!: Karty!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Przeglądarki udowodniły, jak potężne są karty, więc dlaczego nie wykorzystać ich, aby uczynić swój system jeszcze bardziej wydajnym?
+New context menu: Nowe menu kontekstowe
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Menu kontekstowe nie zmieniało się przez wiele dekad. Jesteśmy zmęczeni długą listą, więc hej, dlaczego nie zrobić z niego koła? Nie podoba się? Zawsze możesz to cofnąć w ustawieniach!
+Your OS, your preference: Twój system, twoje preferencje
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Dajemy Ci kontrolę nad systemem, motyw jest po prostu jednym z ważniejszych ustawień. Możesz zdobyć ich więcej, jeśli nasze Ci nie odpowiadają.
+Day & Night: Dzień & Noc
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Niech różne motywy mówią Ci, która jest godzina. Hej! Możesz to nawet odwrócić! Masz coś takiego na Windowsie, bądź MacOS'ie?
+Under development: W fazie rozwoju
+This project wouldn't be possible without the community's contributions. Join us and help!: Ten projekt nie byłby możliwy bez wkładu społeczności. Śmiało! Dołącz do nas i pomóż! #śmiało means "go ahead!"
+Open demo: Otwórz wersję demonstracyjną
 
 # download.tsx
-this download is not available yet.: Ten plik nie jest jeszcze dostępny.
-give your pc an upgrade.: Daj swojemu komputerowi uaktualnienie!
+This download is not available yet.: Ten plik nie jest jeszcze dostępny.
+Give your PC an upgrade.: Daj swojemu komputerowi uaktualnienie!
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
-for most people: Dla większości ludzi
-for pi, pine, and mac: dla Pi, Pine i Mac
-download: Pobierz
-web preview: Demo przeglądarkowe
-you're about to visit the web demo version of avdanos, which is only a proof of concept. trying the live system is strongly recommended to getting the full experience from the operating system.: Za chwilę odwiedzisz wersję demo systemuy AvdanOS w swojej przeglądarce, która jest tylko udowodnieniem konceptu. Wypróbowanie systemu Live jest mocno zalecane, aby doznać najlepszego wrażenia systemu operacyjnego.
-live system is currently not available because the system is still under development: System Live nie jest aktualnie dostępny, ponieważ system jest nadal w fazie rozwoju
+For most people: Dla większości ludzi
+For Pi, Pine, and Mac: dla Pi, Pine i Mac
+Download: Pobierz
+Web preview: Demo przeglądarkowe
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Za chwilę odwiedzisz wersję demo systemuy AvdanOS w swojej przeglądarce, która jest tylko udowodnieniem konceptu. Wypróbowanie systemu Live jest mocno zalecane, aby doznać najlepszego wrażenia systemu operacyjnego.
+Live system is currently not available because the system is still under development: System Live nie jest aktualnie dostępny, ponieważ system jest nadal w fazie rozwoju
 yes, take me there: Tak, zabierz mnie tam
-cancel: Anuluj
-before you download: Zanim pobierzesz
-please read this before you continue: Prosimy, przeczytaj to, zanim przejdziesz dalej
-below is the shasum of the download. you can use it to check download's integrity: Poniżej znajduje się shasum pobierania. możesz go użyć do sprawdzenia jego integralności
-yes, i understand: Tak, rozumiem
-use torrent download: Pobierz Torrent
-continue: Kontynuuj
+Cancel: Anuluj
+Before you download: Zanim pobierzesz
+Please read this before you continue: Prosimy, przeczytaj to, zanim przejdziesz dalej
+Below is the shasum of the download. You can use it to check download's integrity: Poniżej znajduje się shasum pobierania. możesz go użyć do sprawdzenia jego integralności
+Yes, I understand: Tak, rozumiem
+Use Torrent download: Pobierz Torrent
+Continue: Kontynuuj
 # in testing
-having trouble? click [%a]here[%a] to get help!: Masz jakiś problem? Kliknij [%a] tutaj, [%a] aby uzyskać pomoc!
+Having trouble? Click <%0|here|%0> to get help!: Masz jakiś problem? Kliknij <%0|tutaj|%0>, aby uzyskać pomoc!
 
 # support.tsx
-avdanos support: Wsparcie AvdanOS
-contact us on social media: Skontaktuj się z nami na mediach społecznościowych
-visit: Odwiedź
-want to suggest anything to us? we always want to listen to the community. present your ideas [%a]here[%a].: Chciałbyś nam coś zasugerować? Zawsze słuchamy społeczności. Zaprezentuj swój pomysł [%a]tutaj[%a].
+AvdanOS support: Wsparcie AvdanOS
+Contact us on social media: Skontaktuj się z nami na mediach społecznościowych
+Visit: Odwiedź
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: Chciałbyś nam coś zasugerować? Zawsze słuchamy społeczności. Zaprezentuj swój pomysł <%0|tutaj|%0>.
 
 # support-beta.tsx
-avdanos support articles: Prtykuły wsparcia AvdanOS
-search support articles: Wyszukaj artykuły pomocy
-ask our community: Spytaj się naszej społeczności
+AvdanOS support articles: Prtykuły wsparcia AvdanOS
+Search support articles: Wyszukaj artykuły pomocy
+Ask our community: Spytaj się naszej społeczności
 
 # betapopup.tsx
-hey look! a new testing version of this page is available!: Hej, patrz! Dostępna jest nowa wersja testowa dla tej strony!
-close: Zamknij
-check it out: Sprawdź to
+Hey look! A new testing version of this page is available!: Hej, patrz! Dostępna jest nowa wersja testowa dla tej strony!
+Close: Zamknij
+Check it out: Sprawdź to
 
 # docs.tsx
-read the features in detail.: Przeczytaj szczegółowo opis funkcji.
-i'm a user: Jestem użytkownikiem
-open manual: Otwórz instrukcję
-manual is not available yet: Instrukcja nie jest jeszcze dostępna
-i'm a developer: Jestem deweloperem
-open documentation: Otwórz dokumentacja
+Read the features in detail.: Przeczytaj szczegółowo opis funkcji.
+I'm a user: Jestem użytkownikiem
+Open manual: Otwórz instrukcję
+Manual is not available yet: Instrukcja nie jest jeszcze dostępna
+I'm a developer: Jestem deweloperem
+Open documentation: Otwórz dokumentacja
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
-full screen: Pełny ekran
-this demo is open source on [%a]github[%a].: To demo jest Open Source na [%a]Githubie[%a].
+Full screen: Pełny ekran
+This demo is open source on <%0|GitHub|%0>.: To demo jest Open Source na <%0|GitHubie|%0>.
 
 # 404.tsx
-page not found: Strona nie została znaleziona
-this page does not exist.: Ta strona nie istnieje.
-join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue) #Dołącz do nas i pomóż nam w tworzeniu systemu operacyjnego Open Source.
+Page not found: Strona nie została znaleziona
+This page does not exist.: Ta strona nie istnieje.
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue) #Dołącz do nas i pomóż nam w tworzeniu systemu operacyjnego Open Source.
 
 # widthrequirement.tsx
-width incompatibility: Niekompatybilna szerokość ekrany
-increase your window width: Zwiększ szerokość okna
-your window is too small to display the content of this page, and we detected that you got more screen estate. please increase your window width or maximise your browser window.: Twoje okno jest za małe, aby wyświetlić zawartość tej strony. Wykryliśmy, że masz większą część ekranu. Zwiększ szerokość okna lub zmaksymalizuj okno przeglądarki.
-rotate your device: Obróć swoje urządzenie
-your screen is too small to display this page. please rotate to landscape view or use desktop.: Twój ekran jest za mały, aby wyświetlić tę stronę. Obróć do widoku poziomego lub użyj komputera.
-this page is incompatible: Ta strona jest niekompatybilna
-your screen width is too small to display the content of this page. you might need to increase your system's resolution or use a bigger screen to view this page.: Szerokość twojego ekranu jest zbyt mała, aby wyświetlić zawartość tej strony. Może być konieczne zwiększenie rozdzielczości systemu lub użycie większego ekrany, aby wyświetlić tę stronę.
-your screen width is too small to display the content of this page. please increase your system's resolution.: Szerokość twojego ekranu jest zbyt mała, aby wyświetlić zawartość tej strony. Prosimy zwiększyć rozdzielczość systemu.
+Width incompatibility: Niekompatybilna szerokość ekrany
+Increase your window width: Zwiększ szerokość okna
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Twoje okno jest za małe, aby wyświetlić zawartość tej strony. Wykryliśmy, że masz większą część ekranu. Zwiększ szerokość okna lub zmaksymalizuj okno przeglądarki.
+Rotate your device: Obróć swoje urządzenie
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Twój ekran jest za mały, aby wyświetlić tę stronę. Obróć do widoku poziomego lub użyj komputera.
+This page is incompatible: Ta strona jest niekompatybilna
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Szerokość twojego ekranu jest zbyt mała, aby wyświetlić zawartość tej strony. Może być konieczne zwiększenie rozdzielczości systemu lub użycie większego ekrany, aby wyświetlić tę stronę.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Szerokość twojego ekranu jest zbyt mała, aby wyświetlić zawartość tej strony. Prosimy zwiększyć rozdzielczość systemu.

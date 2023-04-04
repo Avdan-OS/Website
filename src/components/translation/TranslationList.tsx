@@ -1,89 +1,89 @@
 import { Select, Text } from '@geist-ui/core';
-import { setLocale } from './TranslatableText';
+import { setLocale } from './Chiislate';
 import { useState, useEffect } from 'react';
 const TranslationList = () => {
   // This array controls what languages shows up as available in the website.
   const data = [
     {
-      lang: 'ar_SA',
+      lang: 'ar-SA',
       available: true,
       icon: '🇸🇦',
       langName: 'العربية'
     },
     {
-      lang: 'cs_CZ',
-      available: false,
-      icon: '🇨🇿',
-      langName: 'čeština'
-    },
-    {
-      lang: 'da_DK',
+      lang: 'da-DK',
       available: true,
       icon: '🇩🇰',
       langName: 'Dansk'
     },
     {
-      lang: 'de_DE',
+      lang: 'de-DE',
       available: true,
       icon: '🇩🇪',
       langName: 'Deutsch'
     },
     {
-      lang: 'el_GR',
+      lang: 'el-GR',
       available: true,
       icon: '🇬🇷',
       langName: 'Ελληνικά'
     },
     {
-      lang: 'en_GB',
+      lang: 'en-GB',
       available: true,
       icon: '🇬🇧',
       langName: 'English-UK'
     },
     {
-      lang: 'en_US',
+      lang: 'en-US',
       available: true,
       icon: '🇺🇸',
       langName: 'English-US'
     },
     {
-      lang: 'es_ES',
+      lang: 'es-ES',
       available: true,
       icon: '🇪🇸',
       langName: 'Español'
     },
     {
-      lang: 'fr_FR',
+      lang: 'fr-FR',
       available: true,
       icon: '🇫🇷',
       langName: 'Français'
     },
     {
-      lang: 'ga_IE',
+      lang: 'ga-IE',
       available: true,
       icon: '🇮🇪',
       langName: 'Gaeilge'
     },
     {
-      lang: 'hi_IN',
+      lang: 'hi-IN',
       available: true,
       icon: '🇮🇳',
       langName: 'हिन्दी'
     },
     {
-      lang: 'id_ID',
+      lang: 'id-ID',
       available: true,
       icon: '🇮🇩',
       langName: 'Bahasa Indonesia'
     },
     {
-      lang: 'it_IT',
+      lang: 'it-IT',
       available: true,
       icon: '🇮🇹',
       langName: 'Italiano'
     },
     {
-      lang: 'nl_NL',
+      lang: 'ja-JP',
+      available: true,
+      icon: '🇯🇵',
+      langName: '日本語'
+    },
+    {
+      lang: 'nl-NL',
       available: true,
       icon: '🇳🇱',
       langName: 'Nederlands'
@@ -95,7 +95,7 @@ const TranslationList = () => {
       langName: 'polski'
     },
     {
-      lang: 'pt_BR',
+      lang: 'pt-BR',
       available: true,
       icon: '🇵🇹',
       langName: 'Português'
@@ -107,37 +107,31 @@ const TranslationList = () => {
       langName: 'Русский'
     },
     {
-      lang: 'sr_SP',
+      lang: 'sr-SP',
       available: true,
       icon: '🇷🇸',
       langName: 'Српски'
     },
     {
-      lang: 'sv_SE',
+      lang: 'sv-SE',
       available: true,
       icon: '🇸🇪',
       langName: 'Svenska'
     },
     {
-      lang: 'tr_TR',
+      lang: 'tr-TR',
       available: true,
       icon: '🇹🇷',
       langName: 'Türkçe'
     },
     {
-      lang: 'uz_UZ',
-      available: false,
-      icon: '🇺🇿',
-      langName: 'اوزبیک'
-    },
-    {
-      lang: 'zh_CN',
+      lang: 'zh-CN',
       available: true,
       icon: '🇨🇳',
       langName: '简体中文'
     },
     {
-      lang: 'zh_TW',
+      lang: 'zh-TW',
       available: true,
       icon: '🇹🇼',
       langName: '繁體中文'
@@ -167,32 +161,13 @@ const TranslationList = () => {
       </Select.Option>
     );
   });
-  const [defaultLang, setDfltLang] = useState('en_GB');
+  const [defaultLang, setDfltLang] = useState('en-GB');
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      if (window.localStorage.getItem('locale')) {
-        if (
-          data.filter((locale) => locale.available && locale.lang === window.localStorage.getItem('locale')).length != 0
-        ) {
-          setLocale(window.localStorage.getItem('locale'));
-          setDfltLang(window.localStorage.getItem('locale'));
-        } else {
-          setLocale('en_GB');
-          setDfltLang('en_GB');
-        }
-        setDfltLang(window.localStorage.getItem('locale'));
-        setLocale(window.localStorage.getItem('locale'));
-      } else {
-        if (data.filter((locale) => locale.lang === navigator.language && locale.available).length != 0) {
-          setLocale(navigator.language);
-          setDfltLang(navigator.language);
-        } else {
-          setLocale('en_GB');
-          setDfltLang('en_GB');
-        }
-      }
+    let locale = window.localStorage.getItem('locale');
+    if (locale) {
+      setDfltLang(locale);
     }
-  }, []);
+  });
   return (
     <Select
       type="default"

@@ -1,7 +1,7 @@
 import FeaturesCard from '@/components/FeaturesCard';
 import { Spacer, Text } from '@geist-ui/core';
 import Media from '@/components/media';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const features = () => {
   return (
@@ -76,13 +76,13 @@ const features = () => {
       <div className="text-center" style={{ height: '80vh' }}>
         <Spacer h="calc(40vh - 150px)" />
         <Text className="header" h1>
-          <TranslatableText>Under development</TranslatableText>
+          <Chiislate>Under development</Chiislate>
         </Text>
         <Spacer h="35px" />
         <Text>
-          <TranslatableText>
+          <Chiislate>
             This project wouldn't be possible without the community's contributions. Join us and help!
-          </TranslatableText>
+          </Chiislate>
         </Text>
         <Spacer h="20px" />
         <Media />

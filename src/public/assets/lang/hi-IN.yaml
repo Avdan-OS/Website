@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: अवलोकन
+Home: मुखय पान
+Features: विशेषताएँ
+Downloads: डाउनलोड
+External links: बाहरी संबंध
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: कानूनी
+License: परवाना
+EULA: उत्पाद के मालिक और अंतिम उपयोगकर्ता के बीच कानूनी रूप से बाध्यकारी समझौता
+History of Incidents: आभीतक कि घाटनायॆ
+Privacy and Security: गोपनीयता और सुरक्षा
+Inspired by <%0|Avdan|%0>: प्रेरणा स्रोत <%0|Avdan|%0>
+AvdanOS contributors: योगदानकर्ता
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> अभी भी विकास में है।
+Join our Discord!: हमारे Discord में शामिल हों
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: सहायॆता
+Documentation: प्रलेखन
+Docs: प्रलेखन
+Demo: प्रात्यक्षिक
+
+# index.tsx
+Your PC but Even Better!: आपका पीसी लेकिन इससे भी बेहतर
+Try in your browser: अपने ब्राउज़र में प्रयास करें
+Download Now!: अभी डाउनलोड करें
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub: कॊड सब कॆ लिये GitHub पर
+Browse all repos: सभी रेपो दॆखियॆ
+# discoverCard.tsx
+AvdanOS:
+Meet AvdanOS, refining the way we think about operating systems.: avdanos से मिलें, ऑपरेटिंग सिस्टम के बारे में हमारे सोचने के तरीके को परिष्कृत करें
+Official website: आधिकारिक वेबसाइट
+All the new updates and information about AvdanOS and support.: AvdanOS के बारे में सभी नए अपडेट और जानकारी
+Desktop environment: डेस्कटॉप इनवायरमॆंट
+Meet Nadva, the official desktop environment for AvdanOS.: मिलिए Navda सॆ, AvdanOS के लिए आधिकारिक डेस्कटॉप इनवायरमॆंट
+A Discord bot made for the AvdanOS community Discord server.: अवदानोस समुदाय के लिए बनाया गया एक Discord बॉट
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: अवदान की अवधारणा, लॆकिन हम इसे वास्तविक बना रहे हैं
+Assets are loading, please wait: कृपया प्रतीक्षा करें
+Scroll down to see what we've got here:
+This concept video is made by Avdan: हमनॆ आपकॆ लियॆ क्या बनाया है यह देखने के लिए नीचे स्क्रॉल करें
+Watch on YouTube: यूट्यूब पर देखें
+Familiar dock, ultimate form: वाहि टास्क बार,पर आकर्षक रूप
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: टास्क बार तॊ सब जान तॆ है, लॆकिन हामनॆ लाया है ऐक नया टास्क बार जॊ पॆहॆलॆ सॆभि ओरभी सुविदाजनक
+Brand new launch menu: एकदम नया लॉन्च मेनू
+With everything in one place, do anything anywhere at anytime.: एक ही स्थान पर सब कुछ, कहीं भी ओर कभी भी कुछ भी करें।
+easily apply layout.: आसानी से लेआउट लागू करें।
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: आपके ऐप्स से निर्धारित प्रीसेट की सूची के साथ, आसानी से सही विंडो लेआउट के साथ काम करने के लिए मिलता है। पर्याप्त नहीं? इसे सेटिंग्स में बदलें।
+Overpowered dock: जबर्दस्त टास्क बार
+Your dock can do more than ever. It's your ultimate manager to get you organised.: आपका टास्क बार पहले से कहीं अधिक। आपको आप का पिसी व्यवस्थित करने के लिए यह आपका प्रबंधक
+New way to manage files: फ़ाइलों को प्रबंधित करने का नया तरीका
+This file manager keeps you organised and productive. Find your files the instant you need it.: यह फ़ाइल प्रबंधक आपको व्यवस्थित और उत्पादक रखता है। अपनी फ़ाइलों को तुरंत ढूंढें जिनकी आपको आवश्यकता है।
+Drag & drop made easy: चिचॊकॊ स्थानांतरित करना बनाया आसान
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: चिचॊकॊ ड्रैग ओर ड्रॉप आपके कंप्यूटर पर कुछ भी स्थानांतरित करने का सबसे आसान तरीका है। हम इसे सहज और उपयोग में आसान बनाते हैं।
+more than multitask: बहु-कार्य सॆ कहि जयदा
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: एक साथ कई काम करना चाहते हैं? अब यह केवल बहु-कार्य नहीं है, यह संगठित बहु-कार्य है।
+TabOS!: टैबओएस!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: ब्राउज़रों ने साबित कर दिया है कि टैब कितने शक्तिशाली हैं, तो क्यों न उनका उपयोग अपने ओएस मॆ किया जायॆ और अधिक शक्तिशाली बनाने जाए?
+New context menu: नया संदर्भ मेनू
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: संदर्भ मेनू अब कई दशकों से नहीं बदला है। हम वस्तुओं की एक लंबी सूची से थक गए हैं, और क्यों न इसे एक चक्र बनाया जाए? यह पसंद नहीं है? आप इसे सेटिंग में वापस स्विच कर सकते हैं!
+Your OS, your preference: आपका ओएस, आपकी पसंद
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: हम आपको आपके सिस्टम पर नियंत्रण देते हैं। थीम उनमें से सिर्फ एक है, और यदि आप कॊ हमारी थीम पसंद नहीं करते हैं तो आप और अधिक थीमस प्राप्त कर सकते हैं।
+Day & Night: दिन और रात
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: विभिन्न थीम को बताएं कि यह क्या समय है। अरे, आप इसे उल्टा भी कर सकते हैं। क्या आप इसे विंडोज़ या मैकोज़ पर कर सकते हैं?
+Under development: यह आभि विकास मॆ है
+This project wouldn't be possible without the community's contributions. Join us and help!: यह परियोजना समुदाय के योगदान के बिना संभव नहीं होगा। हमसे जुड़ें और मदद करें!
+Open demo: प्रात्यक्षिक
+
+# download.tsx
+This download is not available yet.:
+Give your PC an upgrade.: अपने पीसी को भॆट दें।
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: ज्यादातर लोगों के लिए
+For Pi, Pine, and Mac: pi, pine, और mac कॆ लियॆ
+Download: डाउनलोड
+Web preview: पूर्व दर्शन
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: आप avdanos के पूर्व दर्शन कॆ लियॆ जाने वाले हैं, जो केवल अवधारणा का प्रमाण है। ऑपरेटिंग सिस्टम से पूरा अनुभव प्राप्त करने के लिए लाइव सिस्टम को आज़माने की अनुशंसा की जाती है।
+Live system is currently not available because the system is still under development: लाइव सिस्टम वर्तमान में उपलब्ध नहीं है क्योंकि सिस्टम अभी भी विकास के अधीन है
+yes, take me there: हाँ, मुझे वहाँ ले चलो
+Cancel: रद्द करॆ
+Before you download: डाउनलोड करने से पहले
+Please read this before you continue: जारी रखने से पहले कृपया इसे पढ़ें
+Below is the shasum of the download. You can use it to check download's integrity: नीचे डाउनलोड का \"shasum\" है। आप इसका उपयोग डाउनलोड की अखंडता की जांच के लिए कर सकते हैं
+Yes, I understand: हाँ मैं समझता हूँ
+Use Torrent download: टोरेंट का उपयोग करें
+Continue: जारी रखॆ
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: परेशानी हो रही है? सहायता प्राप्त करने के लिए <%0|यहाँ|%0> क्लिक करें!
+
+# support.tsx
+AvdanOS support: avdanos का सहायक गन
+Contact us on social media: सोशल मीडिया पर हमसे संपर्क करें
+Visit: दॆखॆ
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.:
+
+# support-beta.tsx
+AvdanOS support articles: समर्थन लेख
+Search support articles: समर्थन लेख खॊजॆ
+Ask our community: हमारे समुदाय से पूछें
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: अरे देखो! इस का एक नया परीक्षण संस्करण उपलब्ध है!
+Close: बंद करें
+Check it out: इसॆ दॆखॆ
+
+# docs.tsx
+Read the features in detail.: सुविधाओं को विस्तार से पढ़नॆ कॆलियॆ।
+I'm a user: मैं एक उपयोगकर्ता हूँ
+Open manual: नियमावली खॊलियॆ
+Manual is not available yet:
+I'm a developer: मैं एक विकासक हूँ
+Open documentation: प्रलेखन खॊलियॆ
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: पूर्ण स्क्रीन
+This demo is open source on <%0|GitHub|%0>.:
+
+# 404.tsx
+Page not found: पृष्ठ नहीं मिला
+This page does not exist.: यह पृष्ठ मौजूद नहीं है।
+Join in and help us out developing an open-source operating system.: इसमें शामिल हों और एक ऑपरेटिंग सिस्टम विकसित करने में हमारी मदद करें। # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: चौड़ाई असंगति
+Increase your window width: अपनी स्क्रीन की चौड़ाई बढ़ाएँ
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: इस पृष्ठ की सामग्री को प्रदर्शित करने के लिए आपकी स्क्रीन बहुत छोटी है, और हमने पाया है कि आपको अधिक स्क्रीन मिला है। कृपया अपनी विंडो की चौड़ाई बढ़ाएं या अपनी ब्राउज़र विंडो को अधिकतम करें।
+Rotate your device: अपने डिवाइस को घुमाएं
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: इस पृष्ठ को प्रदर्शित करने के लिए आपकी स्क्रीन बहुत छोटी है। कृपया लैंडस्केप व्यू में घुमाएं या डेस्कटॉप का उपयोग करें।
+This page is incompatible: यह पृष्ठ असंगत है
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: इस पृष्ठ की सामग्री को प्रदर्शित करने के लिए आपकी स्क्रीन की चौड़ाई बहुत छोटी है। इस पृष्ठ को देखने के लिए आपको अपने सिस्टम के रिज़ॉल्यूशन को डेस्कटॉप का उपयोग करने की आवश्यकता हो सकती है।
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: इस पृष्ठ की सामग्री को प्रदर्शित करने के लिए आपकी स्क्रीन की चौड़ाई बहुत छोटी है। कृपया अपने सिस्टम का रिज़ॉल्यूशन बढ़ाएँ।

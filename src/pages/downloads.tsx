@@ -1,9 +1,9 @@
 // prettier-ignore
-import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Link, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
+import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { useState } from 'react';
-import { TranslatableText } from '@/components/translation/TranslatableText';
+import { Chiislate } from '@/components/translation/Chiislate';
 
 const Download = () => {
   // Insert download link here (and read line 53)
@@ -51,7 +51,7 @@ const Download = () => {
   const downloadHandler = () => {
     downloadModal.setVisible(false);
     setToast({
-      text: <TranslatableText>This download is not available yet.</TranslatableText>,
+      text: <Chiislate>This download is not available yet.</Chiislate>,
       delay: 5000,
       type: 'error'
     });
@@ -95,7 +95,7 @@ const Download = () => {
       <div className="text-center" id="overview">
         <Spacer h={3} />
         <Text className="header" h1>
-          <TranslatableText>Give your PC an Upgrade.</TranslatableText>
+          <Chiislate>Give your PC an Upgrade.</Chiislate>
         </Text>
         <Spacer />
         <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
@@ -109,7 +109,7 @@ const Download = () => {
                 width="100%"
               >
                 <Tag type="success">
-                  <TranslatableText>Try in your Browser</TranslatableText>
+                  <Chiislate>Try in your Browser</Chiislate>
                 </Tag>
                 <Image
                   draggable="false"
@@ -127,7 +127,7 @@ const Download = () => {
                   }}
                   margin="10px"
                 >
-                  <TranslatableText>Open Demo</TranslatableText>
+                  <Chiislate>Open Demo</Chiislate>
                 </Button>
                 <Spacer h={0} />
               </Card>
@@ -142,7 +142,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">
-                <TranslatableText>For most people</TranslatableText>
+                <Chiislate>For most people</Chiislate>
               </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
@@ -154,7 +154,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                <TranslatableText>Download</TranslatableText>
+                <Chiislate>Download</Chiislate>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -168,7 +168,7 @@ const Download = () => {
               width="100%"
             >
               <Tag type="success">
-                <TranslatableText>For Pi, Pine, and Mac</TranslatableText>
+                <Chiislate>For Pi, Pine, and Mac</Chiislate>
               </Tag>
               <Spacer h={0.4} />
               <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
@@ -180,7 +180,7 @@ const Download = () => {
                 }}
                 margin="10px"
               >
-                <TranslatableText>Download</TranslatableText>
+                <Chiislate>Download</Chiislate>
               </Button>
               <Spacer h={0} />
             </Card>
@@ -188,37 +188,36 @@ const Download = () => {
         </Grid.Container>
         <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
           <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
-            <TranslatableText link="/support">Having trouble? Click [%a]here[%a] to get help!</TranslatableText>
+            <Chiislate>
+              Having trouble? Click <Link href="/support">here</Link> to get help!
+            </Chiislate>
           </Card>
         </div>
       </div>
       <Modal {...downloadModal.bindings}>
         <Modal.Title>
-          <TranslatableText>Before you Download</TranslatableText>
+          <Chiislate>Before you Download</Chiislate>
         </Modal.Title>
         <Modal.Subtitle>
-          <TranslatableText>Please read this before you continue</TranslatableText>
+          <Chiislate>Please read this before you continue</Chiislate>
         </Modal.Subtitle>
         <Modal.Content>
           <p>
-            <TranslatableText>
-              Below is the shasum of the download. You can use it to check download's integrity
-            </TranslatableText>
-            :
+            <Chiislate>Below is the shasum of the download. You can use it to check download's integrity</Chiislate>:
           </p>
           <Snippet symbol="" text={shasum}></Snippet>
           <Spacer />
-          <TranslatableText>
+          <Chiislate>
             Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
             ever, etc...
-          </TranslatableText>
+          </Chiislate>
           <br />
           <Checkbox
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
           >
-            <TranslatableText>Yes, I understand</TranslatableText>
+            <Chiislate>Yes, I understand</Chiislate>
           </Checkbox>
           <br />
           <Checkbox
@@ -226,11 +225,11 @@ const Download = () => {
               setTorrent(e.target.checked);
             }}
           >
-            <TranslatableText>Use torrent download</TranslatableText>
+            <Chiislate>Use torrent download</Chiislate>
           </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
-          <TranslatableText>Cancel</TranslatableText>
+          <Chiislate>Cancel</Chiislate>
         </Modal.Action>
         <Modal.Action
           disabled={!canDownload}
@@ -238,30 +237,28 @@ const Download = () => {
             downloadHandler();
           }}
         >
-          <TranslatableText>Continue</TranslatableText>
+          <Chiislate>Continue</Chiislate>
         </Modal.Action>
       </Modal>
       <Modal {...webviewModal.bindings}>
         <Modal.Title>
-          <TranslatableText>Web preview</TranslatableText>
+          <Chiislate>Web preview</Chiislate>
         </Modal.Title>
         <Modal.Content>
           <p>
-            <TranslatableText>
+            <Chiislate>
               You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
               system is strongly recommended to getting the full experience from the operating system.
-            </TranslatableText>
+            </Chiislate>
             <br />*
-            <TranslatableText>
-              Live system is currently not available because the system is still under development
-            </TranslatableText>
+            <Chiislate>Live system is currently not available because the system is still under development</Chiislate>
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          <TranslatableText>cancel</TranslatableText>
+          <Chiislate>cancel</Chiislate>
         </Modal.Action>
         <Modal.Action onClick={() => window.location.replace('/demo')}>
-          <TranslatableText>Yes, take me there</TranslatableText>
+          <Chiislate>Yes, take me there</Chiislate>
         </Modal.Action>
       </Modal>
       <style jsx>{`

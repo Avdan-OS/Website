@@ -1,0 +1,152 @@
+---
+# Global
+# footer.tsx
+Overview: Översikt
+Home: Hem
+Features: Funktioner
+Downloads: Nedladdningar
+External links: Externa länkar
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Juridiskt
+License: Licens
+EULA: EULA
+History of Incidents: Incident historia
+Privacy and Security: Integritet och säkerhet
+Inspired by <%0|Avdan|%0>: Inspererat av <%0|Avdan|%0>
+AvdanOS contributors: AvdanOS Bidragare
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> är fortfarande i utveckling.
+Join our Discord!: Joina våran Discord server!
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Hjälp
+Documentation: Dokumentation
+Docs: Docs
+Demo: Demo
+
+# index.tsx
+Your PC but Even Better!: Din dator, bara bättre!
+Try in your browser: Prova i din webbläsare
+Download Now!: Ladda ner nu!
+# miniFeaures.tsx
+Workflow redefined:
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
+Check what AvdanOS offers to you.:
+See here:
+Open projects with open community:
+Interested? Give it a try!:
+# discover.tsx
+Open source on GitHub: Öppen källkod på GitHub
+Browse all repos: Bläddra bland alla kod arkiv
+# discoverCard.tsx
+AvdanOS: AvdanOS
+Meet AvdanOS, refining the way we think about operating systems.: Möt AvdanOS, vi utvidgar gränserna om vad operativsystem kan göra.
+Official website: Officiell Hemsida
+All the new updates and information about AvdanOS and support.: Alla nya uppdateringar & information om AvdanOS och hjälp.
+Desktop environment: Skrivbordsmiljö
+Meet Nadva, the official desktop environment for AvdanOS.: Möt nadva, den officiella skrivbordsmiljön för AvdanOS.
+A Discord bot made for the AvdanOS community Discord server.: En Discord bot gjord för AvdanOS Discord servern.
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Avdans koncept, vi gör det riktigt
+Assets are loading, please wait: Tillbehör laddas, var vänlig vänta
+Scroll down to see what we've got here: Skrolla ner för att se vad vi har här
+This concept video is made by Avdan: Denna koncept video är gjord av Avdan
+Watch on YouTube: Kolla på YouTube
+Familiar dock, ultimate form: Bekant aktivitetsfält, ultimat form
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Alla vet om aktivitetsfältet. Vi gör det bättre med fler funktioner än du någonsin kunnat drömma om.
+Brand new launch menu: Ett helt nytt startfält
+With everything in one place, do anything anywhere at anytime.: Med allt på samma ställe kan du göra allt när du vill och vart du vill.
+Easily apply layout: Tillämpa layouter enkelt
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Med en lista av förinställningar beroende på dina appar kan du snabbt gör vad du vill med den perfekta fönster layouten. Inte tillräckligt? Ändra dem i inställningarna.
+Overpowered dock: Ett övervädigande aktivitetsfält
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Ditt aktivitetsfält kan göra mer än någonsin. Det är ditt ultimata verktyg för att hjälpa dig vara organiserad.
+New way to manage files: Ett nytt sätt att organisera dina filer
+This file manager keeps you organised and productive. Find your files the instant you need it.: Med en filehanterare som håller dig organiserad och produktiv. Hitta dina filer på direkten just när du behöver dem.
+Drag & drop made easy: Drag & Drop gör det enkelt
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Drag and Drop är det enklaste sättet att flytta vad du vill över hela din dator. Vi gör det lättare, helt enkelt.
+more than multitask: Mer än multitask
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Vill du göra fler saker samtidigt? Vi fattar. Nu är det inte bara multitasking, utan organiserad multitasking.
+TabOS!: TabOS!
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Webbläsare har visat oss hur mäktiga flikar är, så varför inte använda dem till att göra operativsystemet mer mäktigt?
+New context menu: Ny kontext meny
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Kontext meyn har inte ändrats på många årtionden nu. Vi är trötta på en lång lista av saker, och varför inte gjöra det till en cirkel? Gillar du inte det? Då kan du byta tillbaka i inställningar!
+Your OS, your preference: Din dator, dina perferenser
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Vi ger dig kontrollen över sitt system. Teman är bara en liten del av vad du kan använda och gillar du inte dem kan du alltid hitta nya.
+Day & Night: Dag & Natt
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Låt olika teman säga dig vad klockan är. Du kan till och med göra det tvärtom. Kan du göra det på Windows eller macOS?
+Under development: Under utveckling
+This project wouldn't be possible without the community's contributions. Join us and help!: Detta projekt hade inte vart möjligt utan hjälp från alla i denna grupp. Följ med oss på resan och hjälp till!
+Open demo:
+
+# download.tsx
+This download is not available yet.: Denna nerladdning är inte tillgänglig än.
+Give your PC an upgrade.: Ge din dator en upgradering.
+# "try in your browser" is in index.tsx section
+# "open demo" is in features-beta.tsx section
+For most people: För dem flesta
+For Pi, Pine, and Mac: För pi, pine och mac
+Download: Ladda ner
+Web preview: Web demo
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Du är påväg att pröva web demot av AvdanOS, vilket bara visar hur det kan se ut. Det är därför starkt rekommenderat att pröva AvdanOS på en riktig dator för att få en full upplevelse.
+Live system is currently not available because the system is still under development: AvdanOS är i nuvarandet inte tillgänglig eftersom att det forfarande görs
+yes, take me there: Ja, ta mig dit
+Cancel: Avbryt
+Before you download: Innan du fortsätter med nerladdningen
+Please read this before you continue: Läs följande innan du fortsätter
+Below is the shasum of the download. You can use it to check download's integrity: Nedanför är shasumman av nedladdningen. Du kan använda den för att kolla nerladdingens integritet
+Yes, I understand: Ja, jag förstår
+Use Torrent download: Använd torrent nerladdning
+Continue: Fortsätt
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Några problem? Tryck <%0|här|%0> för att få hjälp!
+
+# support.tsx
+AvdanOS support: AvdanOS Support
+Contact us on social media: Kontakta oss på sociala medier
+Visit: Besök
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.:
+
+# support-beta.tsx
+AvdanOS support articles: AvdanOS Support Artiklar
+Search support articles: Sök bland support artiklarna
+Ask our community: Fråga vårt team
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Hej kolla! Det finns en ny test version av denna sida!
+Close: Stäng
+Check it out: Kolla in den
+
+# docs.tsx
+Read the features in detail.: Läs om funktionerna i detalj.
+I'm a user: Jag är en användare
+Open manual: Öppna manual
+Manual is not available yet: Manualen är inte tillgänglig just nu
+I'm a developer: Jag är en utvecklare
+Open documentation: Öppna dokumenation
+
+# demo.tsx
+# "Try in your browser." is in index.tsx
+Full screen: Helskärm
+This demo is open source on <%0|GitHub|%0>.:
+
+# 404.tsx
+Page not found: Sidan hittades inte
+This page does not exist.: Denna sida finns inte
+Join in and help us out developing an open-source operating system.: # don't translate this yet (technical issue)
+
+# widthrequirement.tsx
+Width incompatibility: Inkompatibel skärm bred
+Increase your window width: Öka storleken på ditt fönster
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Ditt fönster är för litet för att visa innehållet på denna sida, men vi har hittat att du har mer skärm utrymme. Var snäll och öka bredden på ditt fönster eller maximera detta fönster.
+Rotate your device: Rotera din enhet
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Din skärm är för liten för att visa denna sida. Var snäll och rotera enheten till landskap eller använd en dator.
+This page is incompatible:
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: Bredden på din skärm är för liten för att visa innehållet på denna sida. Du kan behöva öka ditt systems resulution eller använda en dator för att visa denna sida.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: Bredden på din skärm är för liten för att visa innehållet på denna sida. Du behöver öka ditt systems resulution.
