@@ -31,50 +31,51 @@ Docs: Docs
 Demo: Demo
 
 # index.tsx
-Your PC but Even Better!: Tu PC, pero mejor!
+Your PC but Even Better!: ¡Tu PC, pero mejor!
 Try in your browser: Pruébalo en tu navegador
-Download Now!: Descarga ahora!
+Download Now!: ¡Descargalo ahora!
 # miniFeaures.tsx
-Workflow redefined:
-Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
-Check what AvdanOS offers to you.:
-See here:
-Open projects with open community:
-Interested? Give it a try!:
+Workflow redefined: Tu flujo de trabajo, redefinido.
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: El tiempo no tiene precio, y tenemos muy poco. Con las herramientas adecuadas y un espacio de trabajo profesional, ¡Cualquier tarea es pastel comido y se hace en el menor tiempo!
+Check what AvdanOS offers to you.: Échale un vistazo a lo que AvdanOS te ofrece.
+See here: Ver aquí
+Open projects with open community: Proyectos abiertos con una comunidad abierta
+Interested? Give it a try!: ¿Te interesa? ¡Pruébalo!
 # discover.tsx
-Open source on GitHub: De código abierto en GitHub
-Browse all repos: Ve nuestros repositorios
+Open source on GitHub: Código abierto en GitHub
+Browse all repos: Navegar por nuestros repositorios
 # discoverCard.tsx
 AvdanOS:
-Meet AvdanOS, refining the way we think about operating systems.:
-Official website:
-All the new updates and information about AvdanOS and support.:
-Desktop environment:
-Meet Nadva, the official desktop environment for AvdanOS.:
-A Discord bot made for the AvdanOS community Discord server.:
+Meet AvdanOS, refining the way we think about operating systems.: Conoce a AvdanOS, refinando la forma en la que pensamos sobre los sistemas operativos.
+Official website: Sitio web oficial
+All the new updates and information about AvdanOS and support.: Todas las actualizaciones e información sobre AvdanOS y su soporte.
+Desktop environment: Entorno de escritorio.
+Meet Nadva, the official desktop environment for AvdanOS.: Conoce a Nadva, el entorno de escritorio oficial de AvdanOS.
+A Discord bot made for the AvdanOS community Discord server.: Un bot de Discord hecho para la comunidad de AvdanOS (Descontinuado)
+#(Descontinuado) stands for discontinued
 
 # features-beta.tsx / features.tsx
-Avdan's concept, we're making it real!: Concepto de Avdan, lo estamos haciendo real
+Avdan's concept, we're making it real!: Este concepto de Avdan, ¡Lo estamos haciendo real!
 Assets are loading, please wait: Los recursos están cargando, por favor espera.
 Scroll down to see what we've got here: Desplaza para ver lo que tenemos
 This concept video is made by Avdan: Este concepto fue hecho por Avdan
 Watch on YouTube: Míralo en YouTube
-Familiar dock, ultimate form: Dock familiar, máxima forma
-Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Todos conocen el dock o la barra de tareas. Te traemos un nuevo dock, con más características que lo que hay actualmente.
-Brand new launch menu: Nuevo menú Inicio
-With everything in one place, do anything anywhere at anytime.: Con todo en un lugar, haz lo que quieras en todo lugar, en cualquier momento.
-Easily apply layout: Nuevo diseño aplicable
-With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Con una lista de opciones preestablecidas, comienza a trabajar con este diseño perfecto de ventanas. ¿No es suficiente? Cámbialo en Ajustes.
+Familiar dock, ultimate form: Dock familiar, en su máximo esplendor
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: Todos conocen el dock o la barra de tareas. Te traemos un dock renovado, con más funcionalidades que nunca antes.
+Brand new launch menu: Nuevo menú de Inicio
+With everything in one place, do anything anywhere at anytime.: Con todo en un sitio, haz lo que quieras en cualquier lugar, en cualquier momento.
+Easily apply layout: Disposición de interfaz fácil de aplicar.
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Con una lista de opciones preestablecidas, comienza a trabajar con este diseño de ventanas perfecto. ¿No es suficiente? Cámbialo en Ajustes.
 Overpowered dock: Dock superpoderoso
 Your dock can do more than ever. It's your ultimate manager to get you organised.: Tu dock puede hacer más que antes. Es tu gestor principal para mantenerte organizado.
 New way to manage files: Nueva forma de administrar archivos.
 This file manager keeps you organised and productive. Find your files the instant you need it.: Este administrador de archivos te mantiene organizado y productivo. Encuentra tus archivos en el momento en que los necesitas.
-Drag & drop made easy: Arrastrar y soltar facilitado.
-Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Arrastrar y soltar es la manera más fácil de transferir cualquier cosa en tu computadora. Lo estamos haciendo más intuiivo y fácil de usar.
+Drag & drop made easy: Arrastrar y soltar, facilitado.
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Arrastrar y soltar es la manera más fácil de transferir cualquier cosa en tu computadora. Lo hicimos más intuiivo y fácil de usar.
 more than multitask: Más que multitarea
-Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: ¿Quieres hacer muchas tareas a la vez? Te tenemos cubierto. Ahora no es solo multitarea, es multitarea organizada.
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: ¿Quieres tener varias tareas abiertas a la vez? Te tenemos cubierto. Ahora no es solo multitarea, es multitarea organizada.
 TabOS!: ¡PestañaOS!
-Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Los navegadores han probado lo poderosos que son las pestañas, ¿Así que por qué no usarlos para hacer el sistema más poderoso?
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Los navegadores han probado lo poderosas que son las pestañas, ¿Así que por qué no usarlas para hacer de tu sistema algo más poderoso?
 New context menu: Nuevo menú contextual
 Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Los menús contextuales no cambiaron por décadas. Ya estamos cansados de listas largas. Entonces, ¿Por qué no hacerlo un círculo? ¿No te gusta? Puedes revertirlo en Ajustes.
 Your OS, your preference: Tu sistema, tu preferencia.
@@ -86,7 +87,7 @@ This project wouldn't be possible without the community's contributions. Join us
 Open demo: Abrir demo
 
 # download.tsx
-This download is not available yet.:
+This download is not available yet.: Esta descarga no está disponible todavía.
 Give your PC an upgrade.: Dale a tu PC una mejora
 # "try in your browser" is in index.tsx section
 # "open demo" is in features-beta.tsx section
@@ -100,7 +101,7 @@ yes, take me there: Sí, llévame ahí
 Cancel: Cancelar
 Before you download: Antes de descargar
 Please read this before you continue: por favor lee esto antes de continuar
-Below is the shasum of the download. You can use it to check download's integrity: Abajo estáel hash de la descarga. Puedes usarlo para comprobar su integridad
+Below is the shasum of the download. You can use it to check download's integrity: Abajo está el hash de la descarga. Puedes usarlo para comprobar su integridad
 Yes, I understand: Sí, entiendo
 Use Torrent download: Usar descarga por torrent
 Continue: Continuar
@@ -111,7 +112,7 @@ Having trouble? Click <%0|here|%0> to get help!: ¿Tienes problemas? ¡Haz click
 AvdanOS support: Soporte de AvdanOS
 Contact us on social media: Contáctanos por nuestras redes sociales.
 Visit: Visitar
-Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.:
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: ¿Quieres sugerirnos algo? Siempre queremos escuchar a la comunidad. Presenta tus ideas <%0|aquí|0%>
 
 # support-beta.tsx
 AvdanOS support articles: Artículos de ayuda de AvdanOS
@@ -121,20 +122,20 @@ Ask our community: Pregunta a nuestra comunidad
 # betapopup.tsx
 Hey look! A new testing version of this page is available!: ¡Oye, mira! ¡Hay una nueva versión beta de esta página disponible!
 Close: Cerrar
-Check it out: Ver
+Check it out: Échale un vistazo
 
 # docs.tsx
 Read the features in detail.: Lea las características en detalle.
 I'm a user: Soy un usuario
 Open manual: Abrir manual
-Manual is not available yet:
+Manual is not available yet: El manual no está disponible todavía
 I'm a developer: Soy un desarrollador
 Open documentation: Abrir documentación
 
 # demo.tsx
 # "Try in your browser." is in index.tsx
 Full screen: Pantalla completa
-This demo is open source on <%0|GitHub|%0>.:
+This demo is open source on <%0|GitHub|%0>.: Ésta Demo es de código abierto en <%|GitHub|%0>
 
 # 404.tsx
 Page not found: Página no encontrada
