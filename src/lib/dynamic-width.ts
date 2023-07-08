@@ -7,7 +7,7 @@
 import { useEffect } from 'react';
 
 /**
- * An easy hook for dynamically changing DOM based on window size, fires on page load and resize
+ * An easy to use hook for dynamically changing DOM based on window size, fires on page load and resize
  * @param {hookCallback} callback - Callback function for hook
  */
 const hook = (callback: (width: number) => void) => {

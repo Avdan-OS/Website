@@ -16,7 +16,9 @@ let componentList: Array<{
   component: ReactNode;
   dispatch: Dispatch<ReactNode>;
 }> = [];
-let importedLocale;
+let importedLocale: {
+  [k: string]: string;
+};
 
 // Injects a translation string into a react child, or original component when injection fails
 let injectTranslation = (component: ReactNode, tString: string) => {
@@ -101,12 +103,12 @@ let injectTranslation = (component: ReactNode, tString: string) => {
 // Handles fetching a locale file and triggering injection
 let loadLocale = async (locale: string) => {
   if (locale == defaultLocale) {
-    stringList.forEach((item) => {
+    for (const item of stringList) {
       item.dispatch(item.text);
-    });
-    componentList.forEach((item) => {
+    }
+    for (const item of componentList) {
       item.dispatch(item.component);
-    });
+    }
     return;
   }
 
@@ -114,14 +116,14 @@ let loadLocale = async (locale: string) => {
   if (!res.ok) return console.warn('locale is not available');
 
   importedLocale = Object.fromEntries(
-    Object.entries(await YAML.parse(await res.text())).map(([key, val]) => [key.toLowerCase(), val])
+    Object.entries((await YAML.parse(await res.text())) as string).map(([key, val]) => [key.toLowerCase(), val])
   );
-  stringList.forEach((item) => {
+  for (const item of stringList) {
     item.dispatch(importedLocale[item.text.toLowerCase()] || item.text);
-  });
-  componentList.forEach((item) => {
+  }
+  for (const item of componentList) {
     item.dispatch(injectTranslation(item.component, importedLocale[item.text]) || item.component);
-  });
+  }
 };
 
 // Convert a component to translation string
@@ -139,13 +141,9 @@ let componentToString = (component: ReactElement, layer = 0) => {
     }
   };
   if (Array.isArray(component)) {
-    component.forEach((item) => {
-      if (typeof item == 'string') {
-        text += item;
-      } else {
-        text += `<%${layer}|${objToString(item)}|%${layer}>`;
-      }
-    });
+    for (const item of component) {
+      text += typeof item == 'string' ? item : `<%${layer}|${objToString(item)}|%${layer}>`;
+    }
   } else if (typeof component == 'object') {
     text = objToString(component);
   }
@@ -163,7 +161,7 @@ if (typeof window !== 'undefined') {
 
 /**
  * A magical component to translate anything.
- * @argument logTString Spit the correspinding translation key in JavaScript console.
+ * @argument logTString Spit the correspinding translation key in JavaScript console. For debugging translations only.
  * @returns Children element with all strings translated.
  */
 export function Chiislate({ children, logTString }: { children: ReactNode; logTString?: boolean }) {
@@ -172,9 +170,6 @@ export function Chiislate({ children, logTString }: { children: ReactNode; logTS
     const [translated, setTranslation] = useState<string>(
       currentLocale != defaultLocale && importedLocale ? importedLocale[children.toLowerCase()] || children : children
     );
-    if (children == 'instagram') {
-      currentLocale != defaultLocale && importedLocale ? importedLocale[children.toLowerCase()] || children : children;
-    }
     stringList.push({
       text: children,
       dispatch: setTranslation
