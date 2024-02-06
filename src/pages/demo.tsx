@@ -23,7 +23,7 @@ const preview = () => {
         </Text>
         <Text className="text-center">
           <Chiislate>
-            This demo is open source on <Link href="https://github.com/FacuA0/AvdanOS-UI-Online">GitHub</Link>.
+            This demo is open source on <Link href="https://github.com/Avdan-OS/Demo">GitHub</Link>.
           </Chiislate>
         </Text>
         <Card shadow>
@@ -32,7 +32,7 @@ const preview = () => {
             style={{ padding: '0', width: '100%', height: '45rem ' }}
             height="100%"
             width="100%"
-            src="https://demo.avdanos.com"
+            src="https://avdan-os.github.io/Demo/"
           />
           <div style={{ display: 'flex', margin: '15px' }}>
             <Button shadow type="success" margin="auto" onClick={fullScreen}>
