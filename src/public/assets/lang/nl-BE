@@ -1,0 +1,148 @@
+---
+# Global
+
+# footer.tsx
+Overview: Overzicht
+Home: Huis
+Features: Kenmerken
+downloads: downloads
+External links: Externe links
+Twitter:
+GitHub:
+YouTube:
+Discord:
+Reddit:
+Legal: Juridisch
+License: Licentie
+EULA:
+History of Incidents: Geschiedenis van incidenten
+Privacy and Security: Privacy en veiligheid
+Inspired by <%0|Avdan|%0>: Geïnspireerd doo <%0|Avdan|%0>
+AvdanOS contributors: AvdanOS medewerkers
+
+# alert.tsx
+<%0|AvdanOS|%0> is still in development.: <%0|AvdanOS|%0> is nog steeds in ontwikkeling
+Join our Discord!: Doe mee op onze Discord!
+# menu.tsx / submenu.tsx
+# "home" is in footer.tsx
+# "features" is in footer.tsx
+# "downloads" is in footer.tsx
+Support: Ondersteuning
+Documentation: Documentatie
+Docs: 
+Demo: 
+
+# index.tsx
+Your PC but Even Better!: Jouw PC maar nog beter!
+Try in your browser: Probeer het in je browser
+Download Now!: Download nu!
+# miniFeaures.tsx
+Workflow redefined: Werkstroom herschreven
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: Tijd is kostbaar, en er is zo weinig tijd. Met de juiste tools en professionele werkomgeving is elke taak zo simpel als een appeltaartje in de minste tijd!
+Check what AvdanOS offers to you.: Bekijk wat AvdanOS voor jou te bieden heeft.
+See here: Bekijk hier
+Open projects with open community: Open projecten met een open gemeenschap
+Interested? Give it a try!: Geïnteresseerd? Probeer het eens!
+# discover.tsx
+Open source on GitHub: Open source op GitHub
+Browse all repos:  Blader door alle repositories
+# discoverCard.tsx
+AvdanOS:
+Meet AvdanOS, refining the way we think about operating systems.: Leer AvdanOS kennen, dat de manier waarop we denken over besturingssystemen verfijnt.
+Official website: Officiële website
+All the new updates and information about AvdanOS and support.: Alle nieuwe updates en informatie over AvdanOS en ondersteuning.
+Desktop environment: Desktopomgeving
+Meet Nadva, the official desktop environment for AvdanOS.: Leer Nadva kennen, de officiële desktopomgeving voor AvdanOS.
+A Discord bot made for the AvdanOS community Discord server.: Een Discord-bot gemaakt voor de AvdanOS-community Discord-server.
+
+# features-beta.tsx / features.tsx
+Avdan's concept, we're making it real!: Avdans concept maken we werkelijkheid!
+Assets are loading, please wait: De assets worden geladen, wacht even
+Scroll down to see what we've got here: Scroll omlaag om te zien wat we hier hebben
+This concept video is made by Avdan: Deze conceptvideo is gemaakt door Avdan
+Watch on YouTube: Bekijk op YouTube
+Familiar dock, ultimate form: Vertrouwde dock, ultieme vorm
+Everyone knows dock/task bar. We got a brand new dock, with more features than ever before.: 
+With everything in one place, do anything anywhere at anytime.: Iedereen kent de dock/taakbalk. Wij hebben een hele nieuwe dock met meer functies dan ooit tevoren.
+Easily apply layout: Makkelijk een lay-out toepassen  
+With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings.: Met een lijst van vooraf ingestelde lay-outs gebaseerd op je apps, kom je snel aan het werk met de perfecte vensterlay-out. Niet genoeg? Wijzig het in de instellingen.
+Your dock can do more than ever. It's your ultimate manager to get you organised.: Jouw dock kan meer dan ooit. Het is je ultieme manager om je georganiseerd te houden.
+New way to manage files: Een nieuwe manier om bestanden te beheren
+This file manager keeps you organised and productive. Find your files the instant you need it.: Deze bestandsbeheerder houdt je georganiseerd en productief. Vind je bestanden meteen als je ze nodig hebt.
+Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use.: Slepen en neerzetten is de eenvoudigste manier om alles op je computer over te dragen. Wij maken het intuïtief en gemakkelijk in gebruik.
+more than multitask: meer dan multitasken
+Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking.: Wil je meerdere taken tegelijk doen? Wij snappen je en wij helpen je. Het is nu niet alleen multitasken, het is georganiseerd multitasken.
+TabOS!: 
+Browsers have proven how powerful tabs are, so why not use them to make your os even more powerful?: Browsers hebben bewezen hoe krachtig tabs zijn, dus waarom gebruiken we ze niet om je besturingssysteem nog krachtiger te maken?
+Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!: Het contextmenu is al meerdere decennia niet veranderd. We zijn het zat om een lange lijst met items te zien, en waarom zouden we het geen cirkel kunnen maken? Vind je het niks? Je kunt het in de instellingen terugzetten!
+Your OS, your preference: Jouw besturingssysteem, jouw voorkeur
+We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours.: Wij geven jou controle over jouw systeem. Het thema is daar slechts één belangrijk onderdeel van, en je kunt meer kiezen als je de onze niet leuk vindt.
+Day & Night: Dag & Nacht
+Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?: Laat verschillende thema's zien welke tijd het is. Hey, je kunt het zelfs omgekeerd doen. Kun je dat op Windows of MacOS?
+Under development: In ontwikkeling
+This project wouldn't be possible without the community's contributions. Join us and help!: Dit project zou niet mogelijk zijn geweest zonder de bijdragen van de gemeenschap. Sluit je bij ons aan en help mee!
+Open demo:
+
+# download-it.tsx
+This download is not available yet.: Deze download is nog niet beschikbaar.
+Give your PC an upgrade.: Geef je PC een upgrade.
+# "" is in index.tsx section
+# "" is in features-beta.tsx section
+For most people: Voor de meeste mensen
+For Pi, Pine, and Mac: Voor Pi, Pine en Mac
+Download: 
+Web preview: Webvoorbeeld
+You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live system is strongly recommended to getting the full experience from the operating system.: Je staat op het punt de webdemoversie van AvdanOS te bezoeken, wat slechts een proof-of-concept is. Het aanraden is om het live systeem uit te proberen om de volledige ervaring van het besturingssysteem te krijgen.
+Live system is currently not available because the system is still under development: Het livesysteem is momenteel nog niet beschikbaar omdat het besturingssysteem nog in ontwikkeling is.
+Cancel: Annuleren
+Before you download: Voordat je downloadt
+Please read this before you continue: Lees dit alstublieft voordat je verdergaat
+Below is the shasum of the download. You can use it to check download's integrity: Hieronder staat de shasum van de download. Je kunt deze gebruiken om de integriteit van de download te controleren:
+Yes, I understand: Ja, ik begrijp het
+Use Torrent download: Gebruik Torrent download
+Continue: Doorgaan
+# in testing
+Having trouble? Click <%0|here|%0> to get help!: Heb je problemen? Klik <%0|here|%0> voor hulp!
+
+# support.tsx
+AvdanOS support: AvdanOS ondersteuning
+Contact us on social media: Neem contact met ons op via social media
+Visit: Bezoek
+Want to suggest anything to us? We always want to listen to the community. Present your ideas <%0|here|%0>.: Wil je iets aan ons suggereren? Wij willen altijd naar de gemeenschap luisteren. Presenteer je ideeën <%0|hier|%0>.
+
+# support-beta.tsx
+AvdanOS support articles: AvdanOS ondersteuningsartikelen
+Search support articles: Zoek ondersteuningsartikelen
+Ask our community: Vraag het aan onze gemeenschap
+
+# betapopup.tsx
+Hey look! A new testing version of this page is available!: Kijk eens! Er is een nieuwe testversie van deze pagina beschikbaar!
+Close: Sluiten
+Check it out: Probeer het uit
+
+# docs.tsx
+Read the features in detail.: Lees de kenmerken gedetailleerd.
+I'm a user: Ik ben een gebruiker 
+Open manual: Open handleiding
+Manual is not available yet: De handleiding is nog niet beschikbaar
+I'm a developer: Ik ben een ontwikkelaar
+Open documentation: Open documentatie
+
+# demo.tsx
+# "" is in index.tsx
+Full screen: Volledig scherm
+This demo is open source on <%0|GitHub|%0>.: Deze demo is open source op <%0|GitHub|%0
+
+# 404.tsx
+Page not found: Pagina niet gevonden
+This page does not exist.: Deze pagina bestaat niet.
+Join in and help us out developing an open-source operating system.: Doe mee en help ons met het ontwikkelen van een opensource besturingssysteem.
+
+# widthrequirement.tsx
+Width incompatibility: Breedte niet compatibel
+Increase your window width: Vergroot de breedte van je venster
+Your window is too small to display the content of this page, and we detected that you got more screen estate. Please increase your window width or maximise your browser window.: Je venster is te klein om de inhoud van deze pagina weer te geven, en we hebben gedetecteerd dat je meer schermruimte hebt. Vergroot alsjeblieft de breedte van je venster of maximaliseer je browservenster.
+Your screen is too small to display this page. Please rotate to landscape view or use desktop.: Je scherm is te klein om deze pagina weer te geven. Draai alsjeblieft naar landschapsweergave of gebruik een desktop.
+This page is incompatible: Deze pagina is niet compatibel
+Your screen width is too small to display the content of this page. You might need to increase your system's resolution or use a bigger screen to view this page.: De breedte van je scherm is te klein om de inhoud van deze pagina weer te geven. Misschien moet je de resolutie van je systeem vergroten of een groter scherm gebruiken om deze pagina te bekijken.
+Your screen width is too small to display the content of this page. Please increase your system's resolution.: De breedte van je scherm is te klein om de inhoud van deze pagina weer te geven. Vergroot alsjeblieft de resolutie van je systeem.
