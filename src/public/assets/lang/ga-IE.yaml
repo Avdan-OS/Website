@@ -20,7 +20,7 @@ Privacy and Security: Príobháideacht agus Slándáil
 Inspired by <%0|Avdan|%0>: Spreagtha ag <%0|Avdan|%0>
 AvdanOS contributors: AvdanOS Rannpháirtithe
 # alert.tsx
-<%0|AvdanOS|%0> is still in development.:
+<%0|AvdanOS|%0> is still in development.: Tá <%0|AvdanOS|%0> fós i bhforbairt.
 Join our Discord!: Páirt a Ghlacadh Lenár Discord
 # menu.tsx / submenu.tsx
 # "home" is in footer.tsx
@@ -36,12 +36,12 @@ Your PC but Even Better!: Do Ríomhaire ach Níos Fearr Fós!
 Try in your browser: Bain Triail as i do Bhrabhsálaí
 Download Now!: Íoslódáil Anois!
 # miniFeaures.tsx
-Workflow redefined:
-Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!:
-Check what AvdanOS offers to you.:
-See here:
-Open projects with open community:
-Interested? Give it a try!:
+Workflow redefined: Sreabhadh oibre athshainithe
+Time is priceless, and there is so little time. With right tools and professional workspace, every task is simple as pie for the least amount of time!: Tá am luachmhar, agus níl an oiread sin ama ann. Le huirlisí cearta agus spás oibre gairmiúla, tá gach tasc simplí le pie ar feadh a laghad ama!
+Check what AvdanOS offers to you.: Seiceáil cad a thairgeann AvdanOS duit.
+See here: Féach anseo
+Open projects with open community: Tionscadail oscailte le pobal oscailte
+Interested? Give it a try!: Spéis agat? Bain triail as!
 # discover.tsx
 Open source on GitHub: Foinse Oscailte ar GitHub
 Browse all repos: Brabhsáil Gach Stór
