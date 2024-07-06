@@ -96,6 +96,11 @@ const Footer: React.FC = () => {
                     <Chiislate>Instagram</Chiislate>
                   </Link>
                 </li>
+                <li>
+                  <Link href="https://mastodon.social/@avdan_os" target="_blank" rel="me">
+                    <Chiislate>Mastodon</Chiislate>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
