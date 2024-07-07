@@ -14,7 +14,7 @@ jobs:
         working-directory: "src" # Here the path to the folder where package-lock.json is located.
     strategy:
       matrix:
-        node-version: [16.x] # Are you are missing this specification?
+        node-version: [20.x] # Are you are missing this specification?
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
