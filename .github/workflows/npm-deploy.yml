@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: "**/package-lock.json" # THIS PATTERN did the trick for me.
-      - run: npm install && npx next build && npx next export && touch out/.nojekyll
+      - run: npm install && npx next build && touch out/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
