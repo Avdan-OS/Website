@@ -13,8 +13,8 @@ updates:
       interval: "daily"
     labels: 
       - "dependencies"
-    reviewers: 
-      - "AZProductions"
+    # reviewers: 
+      # - "AZProductions"
 
 # Maintain dependencies for npm
   - package-ecosystem: "npm" 
