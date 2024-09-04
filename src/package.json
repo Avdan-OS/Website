@@ -31,7 +31,7 @@
     "react-feather": "^2.0.10",
     "react-icons": "^4.6.0",
     "styled-jsx": "^5.1.0",
-    "yaml": "^2.2.2"
+    "yaml": "^2.5.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.15",
