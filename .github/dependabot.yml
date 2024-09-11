@@ -23,6 +23,6 @@ updates:
       interval: "daily"
     labels: 
       - "dependencies"
-    reviewers: 
+#    reviewers: 
 #      - "AZProductions"
 #       - "Froxcey"
