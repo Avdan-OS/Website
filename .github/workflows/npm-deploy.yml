@@ -14,7 +14,7 @@ jobs:
         working-directory: "src" # Here the path to the folder where package-lock.json is located.
     strategy:
       matrix:
-        node-version: [16.x] # Are you are missing this specification?
+        node-version: [22.x] # Are you are missing this specification?
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: "**/package-lock.json" # THIS PATTERN did the trick for me.
-      - run: npm install && npx next build && npx next export && touch out/.nojekyll
+      - run: npm install && npx next build && touch out/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
