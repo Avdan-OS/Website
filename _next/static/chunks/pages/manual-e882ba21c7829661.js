@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[290],{1359:(a,e,n)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/manual",function(){return n(9129)}])},9129:(a,e,n)=>{"use strict";n.r(e),n.d(e,{default:()=>u});var _=n(4848);let u=()=>(0,_.jsx)(_.Fragment,{children:"Manual is not available yet"})}},a=>{var e=e=>a(a.s=e);a.O(0,[636,593,792],()=>e(1359)),_N_E=a.O()}]);
