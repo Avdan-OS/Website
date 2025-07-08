@@ -84,7 +84,7 @@ const Docs = () => {
                 <Chiislate>I'm a Developer</Chiislate>
               </Tag>
               <Spacer />
-              <Link href="https://docs.avdanos.com/">
+              <Link href="https://docs.avdanos.org/">
                 <Button type="success" shadow margin="10px">
                   <Chiislate>Open documentation</Chiislate>
                 </Button>
