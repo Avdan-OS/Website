@@ -1,6 +1,6 @@
 <div align="center">
 
-# [AvdanOS.com](https://avdanos.com/) Website
+# [AvdanOS.org](https://avdanos.org/) Website
 
 **The AvdanOS homepage is built using NextJS and GeistUI**, which support both **_Markdown_** and **_JavaScript_** to fit the needs of the contributors to the project.
 
@@ -18,7 +18,7 @@
 ## Project Structure
 
 - `./src` contains the nextjs source code for the website.
-- `./cdn` contains the raw cdn files that auto deploy to **cdn.avdanos.com**
+- ~~`./cdn` contains the raw cdn files that auto deploy to **cdn.avdanos.com**~~
 
 ## Getting Started
 

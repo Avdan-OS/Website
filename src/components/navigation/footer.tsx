@@ -149,14 +149,14 @@ const Footer: React.FC = () => {
               paddingLeft: useMobileFooter ? 'calc(35% - 50px)' : 0
             }}
           >
-            <Tag type="secondary" style={{ color: colorSwitch() }}>
+            {/* <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link style={{ color: colorSwitch() }} href="https://dns.avdanos.com">
                   <Chiislate>History of Incidents</Chiislate>
                 </Link>
               </strong>
             </Tag>
-            <Spacer h={0.5} />
+            <Spacer h={0.5} /> */}
             <Tag type="secondary" style={{ color: colorSwitch() }}>
               <strong>
                 <Link href="/privacy-security" style={{ color: colorSwitch() }}>
