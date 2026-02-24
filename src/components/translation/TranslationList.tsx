@@ -164,10 +164,19 @@ const TranslationList = () => {
   const [defaultLang, setDfltLang] = useState('en-GB');
   useEffect(() => {
     let locale = window.localStorage.getItem('locale');
+    if (!locale) locale = Intl.NumberFormat().resolvedOptions().locale;
+
     if (locale) {
-      setDfltLang(locale);
+      const isExactMatch = data.some((e) => e.lang === locale);
+      if (isExactMatch) {
+        setDfltLang(locale);
+      } else {
+        const languageOnly = locale.split('-')[0];
+        const partialMatch = data.find((e) => e.lang.startsWith(languageOnly));
+        if (partialMatch) setDfltLang(partialMatch.lang);
+      }
     }
-  });
+  }, []);
   return (
     <Select
       type="default"
