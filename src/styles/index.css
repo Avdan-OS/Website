@@ -32,14 +32,7 @@
   color: white !important;
 }
 
-.breath {
-  animation: breath 4s ease-out infinite normal;
-}
 
-@keyframes breath {
-  0% {
-    transform: translateY(0) size(1);
-  }
 
   25% {
     transform: translateY(-4px) size(1);
