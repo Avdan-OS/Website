@@ -1,5 +1,5 @@
 /**
- * @file An easy to use react library for dynamically updating web view
+ * @file Dynamic window dimension subscriber hook
  * @author AvdanOS
  * @license GPL-3.0
  */
@@ -7,21 +7,20 @@
 import { useEffect } from 'react';
 
 /**
- * An easy to use hook for dynamically changing DOM based on window size, fires on page load and resize
- * @param {hookCallback} callback - Callback function for hook
+ * Hook for subscribing to window resize events with safe teardown
+ * @param callback Callback invoked with current innerWidth
  */
 const hook = (callback: (width: number) => void) => {
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    const handleResize = () => {
       callback(window.innerWidth);
-    });
-    callback(window.innerWidth);
-  }, []);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize, { passive: true });
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [callback]);
 };
-
-/**
- * @callback hookCallback
- * @param {number} width - Width of the current screen, in pixels
- */
 
 export default hook;
