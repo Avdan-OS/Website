@@ -60,13 +60,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           <Footer />
         </PrefersContext.Provider>
       </GeistProvider>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
-        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
-        crossOrigin="anonymous"
-        referrerPolicy="no-referrer"
-      ></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
     </>
   );
 };
