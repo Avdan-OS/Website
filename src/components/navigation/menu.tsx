@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
-import { useState, Component } from 'react';
+import { useState } from 'react';
 import { Chiislate } from '../translation/Chiislate';
 
 const Menu = () => {
@@ -24,111 +24,88 @@ const Menu = () => {
     width < 750 ? setAltMenuPosition(true) : setAltMenuPosition(false);
     width < 575 ? setFeaturesBeta(false) : setFeaturesBeta(true);
   });
+
   const changeTheme = () => {
     prefers.switchTheme(theme.type === 'dark' ? 'light' : 'dark');
     document.documentElement.classList.toggle('scroll-dark', theme.type === 'light');
     document.documentElement.classList.toggle('scroll-light', theme.type === 'dark');
   };
 
-  const themeDark = () => {
-    if (theme.type === 'dark' && router.pathname == '/') return true;
-    else return false;
-  };
+  const isDark = theme.type === 'dark' && router.pathname === '/';
 
-  class MenuBar extends Component {
-    render() {
-      return useMobileBar ? (
-        <div id="navcol-1" className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <Tabs
-              className={`${themeDark() ? 'header-dark-tabs' : null}`}
-              value={router.asPath}
-              hideDivider
-              onChange={(route) => router.push(route)}
-            >
-              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
-              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
-              <Tabs.Item label={<Chiislate>Docs</Chiislate>} value="/docs" />
-            </Tabs>
-          </ul>
-        </div>
-      ) : (
-        <div id="navcol-1" className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <Tabs
-              className={`${themeDark() ? 'header-dark-tabs' : null}`}
-              value={router.asPath}
-              hideDivider
-              onChange={(route) => router.push(route)}
-            >
-              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
-              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
-              <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
-              <Tabs.Item label={<Chiislate>Demo</Chiislate>} value="/demo" />
-            </Tabs>
-          </ul>
-        </div>
-      );
-    }
-  }
+  const renderNavTabs = () => (
+    <div id="navcol-1" className="collapse navbar-collapse">
+      <ul className="navbar-nav ms-auto" style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+        <Tabs
+          className={isDark ? 'header-dark-tabs' : ''}
+          value={router.asPath}
+          hideDivider
+          onChange={(route) => router.push(route)}
+        >
+          <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
+          <Tabs.Item label={<Chiislate>Features</Chiislate>} value={/features\} />
+          <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
+          <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
+          <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
+          {!useMobileBar && <Tabs.Item label={<Chiislate>Demo</Chiislate>} value="/demo" />}
+        </Tabs>
+      </ul>
+    </div>
+  );
+
   return (
     <>
       <nav
-        className={`navbar ${theme.type === 'dark' ? 'navbar-dark' : 'navbar-light'} navbar-expand-md navigation-clean`}
-        style={{ fontFamily: 'Roboto, sans-serif', background: 'rgba(255,255,255,0)' }}
+        className={
+avbar \ navbar-expand-md navigation-clean}
+        style={{ background: 'transparent' }}
       >
-        <div className="container">
-          <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
-            <span className="visually-hidden">Toggle navigation</span>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <Logo />
-          {useAltMenuPosition ? null : <MenuBar />}
-          <Button
-            aria-label="Toggle dark mode"
-            className="theme-button"
-            auto
-            iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-            type="abort"
-            onClick={() => changeTheme()}
-          ></Button>
-          <TranslationList />
-          <Link href="/downloads" passHref>
+          {!useAltMenuPosition && renderNavTabs()}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Button
-              aria-label="Open Download page"
-              className="theme-button theme-button-cyan"
+              aria-label="Toggle dark mode"
+              className="theme-button"
               auto
-              shadow
-              type="success"
-              iconRight={<Download className="theme-buttonicon" size={16} />}
-            ></Button>
-          </Link>
-          {!useAltMenuPosition ? null : <MenuBar />}
+              scale={0.85}
+              iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+              type="abort"
+              onClick={changeTheme}
+            />
+            <TranslationList />
+            <Link href="/downloads" passHref legacyBehavior>
+              <Button
+                aria-label="Open Download page"
+                className="theme-button"
+                auto
+                scale={0.85}
+                type="secondary"
+                iconRight={<Download className="theme-buttonicon" size={16} />}
+              />
+            </Link>
+          </div>
+          {useAltMenuPosition && renderNavTabs()}
         </div>
       </nav>
       <Submenu />
-      <style>{`
-      .theme-button {
-        margin: 0 ${theme.layout.gapHalf};
-        
-      }
-      .theme-button-cyan {
-        background-color: ${theme.palette.cyan} !important;
-      }
-  
-      .header-dark-tabs {
-        border-radius: 6px;
-        color: #fff;
-        border: 1px solid #333;
-        backdrop-filter: blur(2rem);
-        background: rgba(0, 0, 0, 0.2) !important;
-        -webkit-backdrop-filter: blur(2rem);
-        padding-right: 6px !important;
-    `}</style>
+      <style jsx global>{
+        .theme-button {
+          margin: 0 4px;
+        }
+        .header-dark-tabs {
+          border-radius: 8px;
+          color: #ededed;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(18, 18, 20, 0.75);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          padding-right: 6px;
+        }
+      }</style>
     </>
   );
 };
