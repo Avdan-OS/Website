@@ -71,7 +71,7 @@ avbar \ navbar-expand-md navigation-clean}
               aria-label="Toggle dark mode"
               className="theme-button"
               auto
-              scale={0.85}
+              scale={0.88}
               iconRight={theme.type === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
               type="abort"
               onClick={changeTheme}
@@ -82,7 +82,7 @@ avbar \ navbar-expand-md navigation-clean}
                 aria-label="Open Download page"
                 className="theme-button"
                 auto
-                scale={0.85}
+                scale={0.88}
                 type="secondary"
                 iconRight={<Download className="theme-buttonicon" size={16} />}
               />
