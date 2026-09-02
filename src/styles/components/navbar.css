@@ -48,7 +48,7 @@
   top: 0;
   right: 0;
   left: 0;
-  -webkit-backdrop-filter: blur(2em);
-  backdrop-filter: blur(2em);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   transition: box-shadow 0s ease;
 }
