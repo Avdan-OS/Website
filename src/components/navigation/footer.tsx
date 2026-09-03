@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
         }
         .footer-column ul a {
           color: inherit;
-          opacity: 0.7;
+          opacity: 0.75;
           text-decoration: none;
           transition: opacity 0.15s ease;
         }
