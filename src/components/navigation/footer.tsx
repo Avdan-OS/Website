@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
           <ul>
             <li><Link href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noreferrer"><Chiislate>License (GPL-3.0)</Chiislate></Link></li>
             <li><Link href="/privacy-security"><Chiislate>Privacy & Security</Chiislate></Link></li>
-            <li><Link href="https://youtube.com/avdan" target="_blank" rel="noreferrer"><Chiislate>Inspired by Avdan</Chiislate></Link></li>
+            <li><Link href="https://youtube.com/avdan" target="_blank" rel="noreferrer"><Chiislate>Concept inspired by Avdan</Chiislate></Link></li>
           </ul>
         </div>
       </div>
