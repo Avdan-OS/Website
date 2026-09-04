@@ -22,7 +22,7 @@ const index = () => {
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
-            <Chiislate>Your PC but Even Better!</Chiislate>
+            <Chiislate>A modern desktop operating system</Chiislate>
           </Text>
         </div>
         <Spacer h={2} />
