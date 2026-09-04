@@ -18,7 +18,7 @@ const index = () => {
           <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
         </video>
       </div>
-      <Spacer h="30vh" />
+      
       <div style={{ position: 'relative', zIndex: '1' }}>
         <div className="text-center">
           <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
@@ -42,9 +42,9 @@ const index = () => {
             </Link>
           </div>
         </div>
-        <Spacer h="35vh" />
+        
         <MiniFeatures />
-        <Spacer h="15vh" />
+        
         <Text h1 className="text-center">
           <Chiislate>Open projects with open community</Chiislate>
         </Text>
