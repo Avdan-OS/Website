@@ -83,7 +83,7 @@ const index = () => {
           border-top: none !important;
         }
         .header {
-          background: -webkit-linear-gradient(#eee, ${theme.palette.accents_2});
+          background: 
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
