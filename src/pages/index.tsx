@@ -1,4 +1,4 @@
-import { Button, Text, Spacer, useTheme } from '@geist-ui/core';
+import { Button, Text, useTheme } from '@geist-ui/core';
 import Link from 'next/link';
 import dynamicWidth from '@/lib/dynamic-width';
 import { useState } from 'react';
@@ -6,110 +6,167 @@ import Discover from '@/components/discover';
 import MiniFeatures from '@/components/miniFeatures';
 import { Chiislate } from '@/components/translation/Chiislate';
 
-const index = () => {
+const Index = () => {
   const theme = useTheme();
   const [useMobileBar, setMobileBar] = useState(false);
-  dynamicWidth((width) => (width < 1200 ? setMobileBar(true) : setMobileBar(false)));
+  dynamicWidth((width) => (width < 768 ? setMobileBar(true) : setMobileBar(false)));
 
   return (
     <>
-      <div className="video-player" style={{ position: 'absolute', zIndex: 0 }}>
-        <video autoPlay={true} muted loop style={{ height: '100%', width: '100%' }}>
-          <source type="video/webm" src="/assets/marketing/header_animated.webm" height="100%" width="100%" />
-        </video>
-      </div>
-      
-      <div style={{ position: 'relative', zIndex: '1' }}>
-        <div className="text-center">
-          <Text h1 className="header" style={{ fontSize: 'calc(2rem + 2vw)' }}>
-            <Chiislate>A modern desktop operating system</Chiislate>
-          </Text>
+      <section className="hero-section">
+        <div className="video-player">
+          <video autoPlay muted loop playsInline>
+            <source type="video/webm" src="/assets/marketing/header_animated.webm" />
+          </video>
+          <div className="video-overlay" />
         </div>
-        <Spacer h={2} />
-        <div className="center card-container">
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            {useMobileBar ? null : (
-              <Link href="/demo">
-                <Button shadow type="secondary" margin="10px">
-                  <Chiislate>Try in your browser</Chiislate>
+
+        <div className="hero-content">
+          <div className="text-center">
+            <Text h1 className="hero-headline">
+              <Chiislate>A modern desktop operating system</Chiislate>
+            </Text>
+            <Text p type="secondary" className="hero-subhead">
+              <Chiislate>
+                Fluid window grouping, intuitive gestures, and a unified dock built for focused computing.
+              </Chiislate>
+            </Text>
+          </div>
+
+          <div className="hero-actions">
+            {!useMobileBar && (
+              <Link href="/demo" passHref legacyBehavior>
+                <Button auto scale={1.1} type="secondary">
+                  <Chiislate>Try in browser</Chiislate>
                 </Button>
               </Link>
             )}
-            <Link href="/downloads">
-              <Button shadow type="success" margin="10px">
-                <Chiislate>Download Now!</Chiislate>
+            <Link href="/downloads" passHref legacyBehavior>
+              <Button auto scale={1.1} type="default">
+                <Chiislate>Download concept</Chiislate>
               </Button>
             </Link>
           </div>
         </div>
-        
+      </section>
+
+      <section className="section-container">
         <MiniFeatures />
-        
-        <Text h1 className="text-center">
-          <Chiislate>Open projects with open community</Chiislate>
-        </Text>
-        <Discover />
-        <Spacer h={5} />
+      </section>
+
+      <section className="section-container">
         <div className="text-center">
-          <Text h2>
-            <Chiislate>Interested? Give it a try!</Chiislate>
+          <Text h2 style={{ letterSpacing: '-0.02em', marginBottom: '8px' }}>
+            <Chiislate>Open projects, open community</Chiislate>
           </Text>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-            {useMobileBar ? null : (
-              <Link href="/demo">
-                <Button shadow type="secondary" margin="10px">
-                  <Chiislate>Try in your browser</Chiislate>
+          <Text p type="secondary" style={{ maxWidth: '580px', margin: '0 auto 32px auto' }}>
+            <Chiislate>
+              Developed transparently on GitHub by contributors around the world under GPL-3.0.
+            </Chiislate>
+          </Text>
+        </div>
+        <Discover />
+      </section>
+
+      <section className="cta-section">
+        <div className="text-center">
+          <Text h3 style={{ letterSpacing: '-0.02em', marginBottom: '12px' }}>
+            <Chiislate>Experience the interface concept</Chiislate>
+          </Text>
+          <Text p type="secondary" style={{ maxWidth: '480px', margin: '0 auto 24px auto' }}>
+            <Chiislate>
+              Interact with the desktop environment prototype directly in your browser or explore the codebase.
+            </Chiislate>
+          </Text>
+          <div className="hero-actions">
+            {!useMobileBar && (
+              <Link href="/demo" passHref legacyBehavior>
+                <Button auto scale={1.05} type="secondary">
+                  <Chiislate>Launch web demo</Chiislate>
                 </Button>
               </Link>
             )}
-            <Link href="/downloads">
-              <Button shadow type="success" margin="10px">
-                <Chiislate>Download Now!</Chiislate>
+            <Link href="/downloads" passHref legacyBehavior>
+              <Button auto scale={1.05} type="default">
+                <Chiislate>Get concept builds</Chiislate>
               </Button>
             </Link>
           </div>
         </div>
-        <Spacer h={2} />
-      </div>
-      <style jsx>{`
-        .card-container {
+      </section>
+
+      <style jsx>{
+        .hero-section {
+          position: relative;
+          min-height: 80vh;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
           align-items: center;
-          margin: 0 auto;
-          max-width: 100%;
-          padding: 0;
-          border-top: none !important;
-        }
-        .header {
-          background: 
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          justify-content: center;
+          overflow: hidden;
+          padding: 80px 24px;
         }
         .video-player {
-          width: 100vw;
-          position: relative;
-          margin-bottom: ${useMobileBar ? '-20vh' : '-60vh'};
-          top: ${theme.type === 'dark' ? '0' : '90px'};
-        }
-        .video-player:before {
-          content: ' ';
           position: absolute;
+          inset: 0;
           width: 100%;
           height: 100%;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          background: rgba(0, 0, 0, 0.8);
-          background: linear-gradient(
-            0deg,
-            ${theme.palette.background} 0%,
-            ${theme.type === 'dark' ? 'rgba(0,0,0,0)' : 'rgba(255,255,255,0)'} 100%
-          );
+          z-index: 0;
+          overflow: hidden;
         }
-      `}</style>
+        .video-player video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: \;
+        }
+        .video-overlay {
+          position: absolute;
+          inset: 0;
+          background: \;
+        }
+        .hero-content {
+          position: relative;
+          z-index: 1;
+          max-width: 820px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        :global(.hero-headline) {
+          font-size: clamp(2.5rem, 5vw, 4rem) !important;
+          font-weight: 500 !important;
+          line-height: 1.05 !important;
+          letter-spacing: -0.03em !important;
+          color: \ !important;
+          margin-bottom: 16px !important;
+        }
+        :global(.hero-subhead) {
+          font-size: clamp(1.1rem, 2vw, 1.25rem) !important;
+          max-width: 600px;
+          margin: 0 auto 32px auto !important;
+          line-height: 1.5 !important;
+        }
+        .hero-actions {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+        .section-container {
+          position: relative;
+          padding: 64px 24px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .cta-section {
+          padding: 80px 24px 100px 24px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      }</style>
     </>
   );
 };
-export default index;
+
+export default Index;
