@@ -78,7 +78,7 @@ const index = () => {
           justify-content: center;
           align-items: center;
           margin: 0 auto;
-          max-width: 500%;
+          max-width: 100%;
           padding: 0;
           border-top: none !important;
         }
