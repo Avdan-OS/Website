@@ -7,9 +7,9 @@ max-width: 800px;
 .slideshow_slider_alt {
   white-space: nowrap;
   width: min(90vw, 600px);
-  transition: ease 1s;
-  -moz-transition: ease 1s;
-  -webkit-transition: ease 1s;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  -moz-transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  -webkit-transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .slide_alt {
@@ -34,9 +34,9 @@ max-width: 800px;
   width: 8px;
   margin: 0 6px;
   border-radius: 50%;
-  transition: ease 1s;
-  -moz-transition: ease 1s;
-  -webkit-transition: ease 1s;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  -moz-transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  -webkit-transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .slideshow_dot.active {
