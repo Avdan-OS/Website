@@ -30,9 +30,9 @@ max-width: 800px;
 .slideshow_dot {
   background-color: #ccc;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 15px;
+  height: 8px;
+  width: 8px;
+  margin: 0 6px;
   border-radius: 50%;
   transition: ease 1s;
   -moz-transition: ease 1s;
