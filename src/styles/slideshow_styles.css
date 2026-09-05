@@ -46,14 +46,7 @@ max-width: 800px;
 
 /* Text explaining each slide animation */
 
-.breathe_5s {
-  animation: text-breathe 5s infinite;
-}
 
-@keyframes text-breathe {
-  0%, 100% {
-    opacity: 0;
-  }
   10%, 90% {
     opacity: 1;
   }
