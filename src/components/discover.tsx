@@ -57,7 +57,7 @@ export default function Discover() {
                   />
                   <DiscoverCard
                     title="Official Website"
-                    description="Official documentation, download portals, and community hub."
+                    description="Documentation, download portals, and community hub."
                     link="https://github.com/Avdan-OS/Website"
                   />
                   <DiscoverCard
