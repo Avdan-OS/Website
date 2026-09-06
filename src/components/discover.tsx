@@ -18,25 +18,26 @@ export default function Discover() {
       <div className="center text-center">
         <div className="page__content">
           <Grid.Container gap={2} justify="center" id={isSmallScreen ? 'stacked' : ''}>
-            <Grid xs={12} sm={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
+            <Grid xs={24} md={12} id={isSmallScreen ? 'smallDeviceGrid' : ''}>
               <Card
                 height={isSmallScreen ? 'auto' : '550px'}
                 width="100%"
                 className={style.card + ' ' + (theme.type == 'dark' ? style.card__dark : style.card__white)}
               >
                 <iframe
-                  src={`https://discord.com/widget?id=993464434855002163&theme=${theme.type}`}
+                  src={https://discord.com/widget?id=993464434855002163&theme=\}
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                  width={'100%'}
+                  width="100%"
                   height="500px"
                   frameBorder={0}
+                  title="Discord community widget"
                 />
               </Card>
             </Grid>
             <Grid
               style={{ padding: 'var(--grid-gap-unit)' }}
-              xs={12}
-              sm={12}
+              xs={24}
+              md={12}
               id={isSmallScreen ? 'smallDeviceGrid' : ''}
             >
               <Card
@@ -45,37 +46,36 @@ export default function Discover() {
               >
                 <Grid.Container gap={1}>
                   <Grid xs={24} justify="center">
-                    <Text h2 style={{ fontSize: '30px' }}>
-                      <Chiislate>Open source on GitHub</Chiislate>
+                    <Text h3 style={{ fontSize: '24px', letterSpacing: '-0.02em', marginBottom: '8px' }}>
+                      <Chiislate>Open source repositories</Chiislate>
                     </Text>
                   </Grid>
                   <DiscoverCard
                     title="AvdanOS"
-                    description="Meet AvdanOS, refining the way we think about operating systems."
+                    description="The core operating system concept and architecture specifications."
                     link="https://github.com/Avdan-OS"
                   />
                   <DiscoverCard
                     title="Official Website"
-                    description="All the new Updates and Information about AvdanOS and Support."
+                    description="Official documentation, download portals, and community hub."
                     link="https://github.com/Avdan-OS/Website"
                   />
                   <DiscoverCard
                     title="Desktop Environment"
-                    description="Meet Nadva, the official Desktop Environment for AvdanOS."
+                    description="Nadva, the official modular desktop environment concept."
                     link="https://github.com/Avdan-OS/Desktop-Environment"
                   />
                   <DiscoverCard
                     title="Tinan"
-                    description="A Discord Bot Made for the AvdanOS Community Discord server."
+                    description="Discord community management bot for real-time updates."
                     link="https://github.com/Avdan-OS/Tinan"
                   />
                 </Grid.Container>
                 <Spacer h={0.5} />
                 <Divider />
-                <div>
-                  <Link href="https://github.com/orgs/Avdan-OS/repositories" underline>
-                    <Spacer h={1} />
-                    <Chiislate>Browse all repos</Chiislate>-&gt;
+                <div style={{ paddingTop: '8px' }}>
+                  <Link href="https://github.com/orgs/Avdan-OS/repositories" target="_blank" rel="noreferrer" underline>
+                    <Chiislate>Browse all repositories</Chiislate> →
                   </Link>
                 </div>
               </Card>
@@ -83,18 +83,18 @@ export default function Discover() {
           </Grid.Container>
         </div>
       </div>
-      <style jsx>{`
+      <style jsx>{
         .page__content {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          width: ${theme.layout.pageWidthWithMargin};
+          width: \;
           max-width: 100%;
           margin: 0 auto;
-          padding: calc(${theme.layout.unit} * 2) ${theme.layout.pageMargin};
+          padding: calc(\ * 2) \;
           box-sizing: border-box;
         }
-      `}</style>
+      }</style>
     </>
   );
 }
