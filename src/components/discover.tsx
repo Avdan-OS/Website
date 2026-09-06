@@ -28,7 +28,7 @@ export default function Discover() {
                   src={`https://discord.com/widget?id=993464434855002163&theme=${theme.type}`}
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                   width={'100%'}
-                  height={'520px%'}
+                  height="500px"
                   frameBorder={0}
                 />
               </Card>
