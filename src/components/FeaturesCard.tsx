@@ -14,7 +14,7 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
   return (
     <article className="features-group" id={cardTitle.toLowerCase().replace(/\s+/g, '-')}>
       <div className={ideo-container \}>
-        <video autoPlay loop muted playsInline preload="metadata" className="feature-video">
+        <video autoPlay loop muted playsInline preload="metadata" playsInline className="feature-video">
           <source type="video/mp4" src={cardVideo} />
         </video>
       </div>
