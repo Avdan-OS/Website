@@ -1,95 +1,115 @@
 import FeaturesCard from '@/components/FeaturesCard';
-import { Spacer, Text } from '@geist-ui/core';
+import { Text } from '@geist-ui/core';
 import Media from '@/components/media';
 import { Chiislate } from '@/components/translation/Chiislate';
 
-const features = () => {
+const Features = () => {
   return (
     <>
+      <div className="features-header text-center">
+        <Text h1 style={{ letterSpacing: '-0.03em', fontWeight: 500, marginBottom: '12px' }}>
+          <Chiislate>Designed around how you think</Chiislate>
+        </Text>
+        <Text p type="secondary" style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem' }}>
+          <Chiislate>
+            Explore the core interactions, windowing models, and desktop concepts that define AvdanOS.
+          </Chiislate>
+        </Text>
+      </div>
+
       <FeaturesCard
         isInverted={false}
         cardTitle="Unified ribbon dock"
-        cardDescription="Everyone knows dock/task bar. We got a brand new dock, with more features than ever before."
+        cardDescription="Dock and task manager combined into a single contextual strip that prioritizes your active tools without clutter."
         cardVideo="/assets/clips/dock.mp4"
       />
       <FeaturesCard
         isInverted={true}
         cardTitle="Centralized launcher"
-        cardDescription="With everything in one place, do anything anywhere at anytime."
+        cardDescription="Access applications, recent documents, and global system search from one responsive quick surface."
         cardVideo="/assets/clips/launch-menu.mp4"
       />
       <FeaturesCard
         isInverted={false}
-        cardTitle="Easily apply layout"
-        cardDescription="With a list of presets determined from your apps, easily get to work with the perfect window layout. Not enough? Change it in the settings."
+        cardTitle="Preset window layouts"
+        cardDescription="Snap and arrange application windows with layout presets customized to your display dimensions."
         cardVideo="/assets/clips/layout.mp4"
       />
       <FeaturesCard
         isInverted={true}
-        cardTitle="Overpowered Dock"
-        cardDescription="Your dock can do more than ever. It's your ultimate manager to get you organised."
+        cardTitle="Contextual status dock"
+        cardDescription="Monitor running background tasks, media controls, and priority notifications right from the edge of your screen."
         cardVideo="/assets/clips/overpowered-dock.mp4"
       />
       <FeaturesCard
         isInverted={false}
-        cardTitle="New way to manage files"
-        cardDescription="This file manager keeps you organised and productive. Find your files the instant you need it."
+        cardTitle="Streamlined file browser"
+        cardDescription="A clean file navigation experience featuring spatial breadcrumbs, instant indexing, and quick previews."
         cardVideo="/assets/clips/new-files.mp4"
       />
       <FeaturesCard
         isInverted={true}
-        cardTitle="Drag & drop made easy"
-        cardDescription="Drag and drop is the easiest way to transfer anything on your computer. We make it intuitive and easy to use."
+        cardTitle="Fluid drag and drop"
+        cardDescription="Move assets, content, and files across split workspaces and background windows in a single gesture."
         cardVideo="/assets/clips/drag-and-drop.mp4"
       />
       <FeaturesCard
         isInverted={false}
-        cardTitle="More than multitask"
-        cardDescription="Want to do many tasks at a time? We know you and we got you. It's now not only multitasking, it's organised multitasking."
+        cardTitle="Workspace multitasking"
+        cardDescription="Organize distinct projects into isolated virtual workspaces without sacrificing immediate window accessibility."
         cardVideo="/assets/clips/multitask.mp4"
       />
       <FeaturesCard
         isInverted={true}
-        cardTitle="TabOS!"
-        cardDescription="Browsers have proven how powerful tabs are, so why not use them to make your OS even more powerful?"
+        cardTitle="Tabbed application windows"
+        cardDescription="Group multiple instances or related application views together into tabs, mirroring modern browser ergonomics."
         cardVideo="/assets/clips/tab-os.mp4"
       />
       <FeaturesCard
         isInverted={false}
-        cardTitle="New context menu"
-        cardDescription="Context menu didn't change for multiple decades now. We are tired of a long list of items, and hey why not make it a circle? Don't like it? You can switch it back in settings!"
+        cardTitle="Radial context menus"
+        cardDescription="Quick contextual action rings designed for fast pointer and touch interaction, with fallback to standard lists."
         cardVideo="/assets/clips/context-menu.mp4"
       />
       <FeaturesCard
         isInverted={true}
-        cardTitle="Your OS, your preference"
-        cardDescription="We give you control over your system. Theme is just an important one of them, and you can get more if you don't like ours."
+        cardTitle="System personalization"
+        cardDescription="Tailor interface accents, typography sizing, contrast themes, and behavior to fit your workstation setup."
         cardVideo="/assets/clips/personalize.mp4"
       />
       <FeaturesCard
         isInverted={false}
-        cardTitle="Day & Night"
-        cardDescription="Let different themes tell you what time it is. Hey, you can even make it reversed. Can you do it on Windows or MacOS?"
+        cardTitle="Dynamic day and night cycles"
+        cardDescription="Interface luminance and color balance synchronize automatically with your ambient environment throughout the day."
         cardVideo="/assets/clips/day-and-night.mp4"
       />
 
-      <div className="text-center" style={{ height: '80vh' }}>
-        <Spacer h="calc(40vh - 150px)" />
-        <Text className="header" h1>
-          <Chiislate>Under development</Chiislate>
+      <section className="community-cta text-center">
+        <Text h2 style={{ letterSpacing: '-0.02em', fontWeight: 500, marginBottom: '12px' }}>
+          <Chiislate>Open development</Chiislate>
         </Text>
-        <Spacer h="35px" />
-        <Text>
+        <Text p type="secondary" style={{ maxWidth: '520px', margin: '0 auto 32px auto' }}>
           <Chiislate>
-            This project wouldn't be possible without the community's contributions. Join us and help!
+            AvdanOS is community driven and open source. Contribute code, design concepts, or join the discussion.
           </Chiislate>
         </Text>
-        <Spacer h="20px" />
         <Media />
-      </div>
-      <Spacer h={3} />
+      </section>
+
+      <style jsx>{
+        .features-header {
+          padding: 80px 24px 32px 24px;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        .community-cta {
+          padding: 80px 24px 100px 24px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      }</style>
     </>
   );
 };
 
-export default features;
+export default Features;
