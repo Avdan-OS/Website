@@ -8,13 +8,13 @@ const features = () => {
     <>
       <FeaturesCard
         isInverted={false}
-        cardTitle="Familiar dock, ultimate form"
+        cardTitle="Unified ribbon dock"
         cardDescription="Everyone knows dock/task bar. We got a brand new dock, with more features than ever before."
         cardVideo="/assets/clips/dock.mp4"
       />
       <FeaturesCard
         isInverted={true}
-        cardTitle="Brand new launch menu"
+        cardTitle="Centralized launcher"
         cardDescription="With everything in one place, do anything anywhere at anytime."
         cardVideo="/assets/clips/launch-menu.mp4"
       />
