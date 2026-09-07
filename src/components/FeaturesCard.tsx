@@ -1,6 +1,4 @@
-import dynamicWidth from '@/lib/dynamic-width';
-import { Text } from '@geist-ui/core';
-import { useState } from 'react';
+import { Text, useTheme } from '@geist-ui/core';
 import { Chiislate } from './translation/Chiislate';
 
 interface FeaturesCardProps {
@@ -11,48 +9,61 @@ interface FeaturesCardProps {
 }
 
 const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: FeaturesCardProps) => {
-  const [isSmallDevice, setIsSmallDevice] = useState(false);
-  dynamicWidth((width) => {
-    if (width < 768) {
-      setIsSmallDevice(true);
-    }
-  });
+  const theme = useTheme();
+
   return (
-    <article className={isSmallDevice ? 'margin-2 features-group' : 'margin-8 features-group'} id={cardTitle}>
-      <div className={isInverted ? 'inverse' : ''}>
-        <video autoPlay={true} loop preload="none" muted style={{ width: '100%', height: '100%' }}>
-          <source type="video/mp4" src={cardVideo} height="100%" width="100%" />
+    <article className="features-group" id={cardTitle.toLowerCase().replace(/\s+/g, '-')}>
+      <div className={ideo-container \}>
+        <video autoPlay loop muted playsInline preload="metadata" className="feature-video">
+          <source type="video/mp4" src={cardVideo} />
         </video>
       </div>
-      <div>
-        <Text h3>
+      <div className="content-container">
+        <Text h3 style={{ letterSpacing: '-0.02em', marginBottom: '8px', fontSize: '1.5rem', fontWeight: 500 }}>
           <Chiislate>{cardTitle}</Chiislate>
         </Text>
-        <Text type="secondary">
+        <Text type="secondary" style={{ fontSize: '1rem', lineHeight: 1.6, margin: 0 }}>
           <Chiislate>{cardDescription}</Chiislate>
         </Text>
       </div>
-      <style jsx>
-        {`
-          .margin-8 {
-            margin: 2.5rem 1rem 8rem 1rem;
+      <style jsx>{
+        .features-group {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 24px;
+          align-items: center;
+          max-width: 1040px;
+          margin: 64px auto;
+          padding: 0 24px;
+        }
+        .video-container {
+          width: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+          background: \;
+          border: 1px solid \;
+          line-height: 0;
+        }
+        .feature-video {
+          width: 100%;
+          height: auto;
+          display: block;
+          object-fit: cover;
+        }
+        .content-container {
+          padding: 8px 0;
+        }
+        @media (min-width: 768px) {
+          .features-group {
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin: 96px auto;
           }
-          .margin-2 {
-            margin: 2.5rem 1rem 2rem 1rem;
+          .inverse {
+            order: 2;
           }
-          @media (min-width: 650px) {
-            .features-group {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              gap: 2rem;
-              align-items: center;
-            }
-            .inverse {
-              order: 2;
-            }
-          }
-        `}
-      </style>
+        }
+      }</style>
     </article>
   );
 };
