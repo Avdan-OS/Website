@@ -80,7 +80,7 @@ const Features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="Dynamic day and night cycles"
-        cardDescription="Interface luminance and color balance synchronize automatically with your ambient environment throughout the day."
+        cardDescription="Interface luminance and color balance synchronize automatically with your ambient environment across sunrise, daytime, and night."
         cardVideo="/assets/clips/day-and-night.mp4"
       />
 
