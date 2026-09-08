@@ -103,7 +103,7 @@ const Features = () => {
           margin: 0 auto;
         }
         .community-cta {
-          padding: 80px 24px 100px 24px;
+          padding: 96px 24px 128px 24px;
           max-width: 800px;
           margin: 0 auto;
         }
