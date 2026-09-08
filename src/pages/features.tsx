@@ -62,7 +62,7 @@ const Features = () => {
       <FeaturesCard
         isInverted={true}
         cardTitle="Tabbed application windows"
-        cardDescription="Group multiple instances or related application views together into tabs, mirroring modern browser ergonomics."
+        cardDescription="Group multiple instances or related application views together into tabs, bringing browser ergonomics to native software."
         cardVideo="/assets/clips/tab-os.mp4"
       />
       <FeaturesCard
