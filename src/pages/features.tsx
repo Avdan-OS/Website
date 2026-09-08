@@ -32,7 +32,7 @@ const Features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="Preset window layouts"
-        cardDescription="Snap and arrange application windows with layout presets customized to your display dimensions."
+        cardDescription="Snap and arrange application windows with layout presets optimized for ultra-wide and laptop displays."
         cardVideo="/assets/clips/layout.mp4"
       />
       <FeaturesCard
