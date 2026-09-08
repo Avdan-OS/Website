@@ -68,7 +68,7 @@ const Features = () => {
       <FeaturesCard
         isInverted={false}
         cardTitle="Radial context menus"
-        cardDescription="Quick contextual action rings designed for fast pointer and touch interaction, with fallback to standard lists."
+        cardDescription="Quick contextual action rings designed for immediate mouse and pen input, with fallback to standard lists."
         cardVideo="/assets/clips/context-menu.mp4"
       />
       <FeaturesCard
