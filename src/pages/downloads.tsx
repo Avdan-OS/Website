@@ -1,21 +1,32 @@
-// prettier-ignore
-import { Button, Card, Text, Image, Grid, useToasts, Spacer, useTheme, useModal, Modal, Snippet, Tag, Checkbox } from '@geist-ui/core';
+import {
+  Button,
+  Card,
+  Text,
+  Image,
+  Grid,
+  useToasts,
+  useTheme,
+  useModal,
+  Modal,
+  Snippet,
+  Tag,
+  Checkbox
+} from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Chiislate } from '@/components/translation/Chiislate';
 
 const Download = () => {
-  // Insert download link here (and read line 53)
   const downloadInfo = {
     x64: {
       link: '',
-      shasum: 'testing-x64-shasum',
+      shasum: 'sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
       torrent: ''
     },
     arm: {
       link: '',
-      shasum: 'testing-arm-shasum',
+      shasum: 'sha256:ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb',
       torrent: ''
     }
   };
@@ -25,207 +36,182 @@ const Download = () => {
   const downloadModal = useModal();
   const webviewModal = useModal();
 
-  let [useTorrent, setTorrent] = useState(false);
-  let [arch, setArch] = useState<'x64' | 'arm'>();
+  const [useTorrent, setTorrent] = useState(false);
+  const [arch, setArch] = useState<'x64' | 'arm' | 'web'>('x64');
+  const [canDownload, setCanDownload] = useState(false);
+  const [shasum, setShasum] = useState(downloadInfo.x64.shasum);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  dynamicWidth((width) => {
+    setIsSmallScreen(width < 768);
+  });
 
   const showDownload = (type: 'x64' | 'arm' | 'web') => {
-    switch (type) {
-      case 'x64':
-        setArch('x64');
-        console.log(arch);
-        setShasum(downloadInfo.x64.shasum);
-        downloadModal.setVisible(true);
-        break;
-      case 'arm':
-        setArch('arm');
-        console.log(arch);
-        setShasum(downloadInfo.arm.shasum);
-        downloadModal.setVisible(true);
-        break;
-      case 'web':
-        webviewModal.setVisible(true);
-        break;
+    setArch(type);
+    if (type === 'web') {
+      webviewModal.setVisible(true);
+    } else {
+      setShasum(downloadInfo[type].shasum);
+      downloadModal.setVisible(true);
     }
   };
 
   const downloadHandler = () => {
     downloadModal.setVisible(false);
     setToast({
-      text: <Chiislate>This download is not available yet.</Chiislate>,
+      text: <Chiislate>Installable ISO images are under active development. Try the Web Demo in the meantime.</Chiislate>,
       delay: 5000,
-      type: 'error'
+      type: 'warning'
     });
-    // Uncomment the following when download becomes available
-    /*if (arch === 'x64') {
-      if (useTorrent) {
-        window.open(downloadInfo.x64.torrent);
-      } else {
-        window.open(downloadInfo.x64.link);
-      }
-    } else if (arch === 'arm') {
-      if (useTorrent) {
-        window.open(downloadInfo.arm.torrent);
-      } else {
-        window.open(downloadInfo.arm.link);
-      }
-    } else {
-      console.log(arch);
-    }*/
   };
-
-  const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
-  const [gridWidth, setGridWidth] = useState(6);
-  const [useMobileMode, setMobileMode] = useState(false);
-  const [canDownload, setCanDownload] = useState(false);
-  const [shasum, setShasum] = useState(downloadInfo.x64.shasum);
-
-  dynamicWidth((width) => {
-    width < 1200 ? setMobileMode(true) : setMobileMode(false);
-    if (width < 950) {
-      setGridDirection('column');
-      setGridWidth(14);
-    } else {
-      setGridDirection('row');
-      setGridWidth(6);
-    }
-  });
 
   return (
     <>
-      <div className="text-center" id="overview">
-        <Spacer h={3} />
-        <Text className="header" h1>
-          <Chiislate>Give your PC an Upgrade.</Chiislate>
-        </Text>
-        <Spacer />
-        <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
-          {useMobileMode ? null : (
-            <Grid xs={gridWidth}>
-              <Card
-                style={{ background: theme.palette.background }}
-                hoverable
-                paddingTop="40px"
-                paddingBottom="10px"
-                width="100%"
-              >
-                <Tag type="success">
-                  <Chiislate>Try in your Browser</Chiislate>
+      <div className="downloads-page" id="overview">
+        <div className="text-center" style={{ maxWidth: '800px', margin: '0 auto 48px auto' }}>
+          <Text h1 style={{ letterSpacing: '-0.03em', fontWeight: 500, marginBottom: '12px' }}>
+            <Chiislate>Concept downloads and demo</Chiislate>
+          </Text>
+          <Text p type="secondary" style={{ fontSize: '1.1rem', margin: 0 }}>
+            <Chiislate>
+              Try the interactive web prototype or follow progress toward installable system images.
+            </Chiislate>
+          </Text>
+        </div>
+
+        <Grid.Container gap={2} justify="center" style={{ maxWidth: '1040px', margin: '0 auto' }}>
+          <Grid xs={24} sm={12} md={8}>
+            <Card className="download-card" width="100%">
+              <div className="card-badge">
+                <Tag type="default">
+                  <Chiislate>Interactive prototype</Chiislate>
                 </Tag>
+              </div>
+              <div className="card-icon">
                 <Image
                   draggable="false"
                   src="/assets/icons/WEB.png"
-                  height="100%"
-                  width="170px"
-                  alt="Test The OS in Website"
+                  height="120px"
+                  width="120px"
+                  alt="Web preview"
                 />
-                <Spacer h={0.4} />
-                <Button
-                  type="success"
-                  shadow
-                  onClick={() => {
-                    showDownload('web');
-                  }}
-                  margin="10px"
-                >
-                  <Chiislate>Open Demo</Chiislate>
-                </Button>
-                <Spacer h={0} />
-              </Card>
-            </Grid>
-          )}
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
-            >
-              <Tag type="success">
-                <Chiislate>For most people</Chiislate>
-              </Tag>
-              <Spacer h={0.4} />
-              <Image draggable="false" src="/assets/icons/x64.png" height="100%" width="170px" alt="Download for x64" />
+              </div>
+              <Text h4 style={{ marginTop: '16px', marginBottom: '4px', fontWeight: 500 }}>
+                <Chiislate>Browser demo</Chiislate>
+              </Text>
+              <Text p type="secondary" style={{ fontSize: '0.9rem', marginBottom: '20px' }}>
+                <Chiislate>Run the interface prototype directly in any modern desktop browser.</Chiislate>
+              </Text>
               <Button
-                type="success"
-                shadow
-                onClick={() => {
-                  showDownload('x64');
-                }}
-                margin="10px"
+                type="secondary"
+                auto
+                width="100%"
+                onClick={() => showDownload('web')}
               >
-                <Chiislate>Download</Chiislate>
+                <Chiislate>Launch demo</Chiislate>
               </Button>
-              <Spacer h={0} />
             </Card>
           </Grid>
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
-            >
-              <Tag type="success">
-                <Chiislate>For Pi, Pine, and Mac</Chiislate>
-              </Tag>
-              <Spacer h={0.4} />
-              <Image draggable="false" src="/assets/icons/ARM.png" height="100%" width="170px" alt="Download for arm" />
+
+          <Grid xs={24} sm={12} md={8}>
+            <Card className="download-card" width="100%">
+              <div className="card-badge">
+                <Tag type="default">
+                  <Chiislate>x86_64 architecture</Chiislate>
+                </Tag>
+              </div>
+              <div className="card-icon">
+                <Image
+                  draggable="false"
+                  src="/assets/icons/x64.png"
+                  height="120px"
+                  width="120px"
+                  alt="x64 architecture"
+                />
+              </div>
+              <Text h4 style={{ marginTop: '16px', marginBottom: '4px', fontWeight: 500 }}>
+                <Chiislate>x64 build</Chiislate>
+              </Text>
+              <Text p type="secondary" style={{ fontSize: '0.9rem', marginBottom: '20px' }}>
+                <Chiislate>Targeted for Intel and AMD 64-bit hardware workstations.</Chiislate>
+              </Text>
               <Button
-                type="success"
-                shadow
-                onClick={() => {
-                  showDownload('arm');
-                }}
-                margin="10px"
+                type="default"
+                auto
+                width="100%"
+                onClick={() => showDownload('x64')}
               >
-                <Chiislate>Download</Chiislate>
+                <Chiislate>Download ISO</Chiislate>
               </Button>
-              <Spacer h={0} />
+            </Card>
+          </Grid>
+
+          <Grid xs={24} sm={12} md={8}>
+            <Card className="download-card" width="100%">
+              <div className="card-badge">
+                <Tag type="default">
+                  <Chiislate>AArch64 architecture</Chiislate>
+                </Tag>
+              </div>
+              <div className="card-icon">
+                <Image
+                  draggable="false"
+                  src="/assets/icons/ARM.png"
+                  height="120px"
+                  width="120px"
+                  alt="ARM architecture"
+                />
+              </div>
+              <Text h4 style={{ marginTop: '16px', marginBottom: '4px', fontWeight: 500 }}>
+                <Chiislate>ARM64 build</Chiislate>
+              </Text>
+              <Text p type="secondary" style={{ fontSize: '0.9rem', marginBottom: '20px' }}>
+                <Chiislate>Designed for Raspberry Pi, PineBook, and ARM-based platforms.</Chiislate>
+              </Text>
+              <Button
+                type="default"
+                auto
+                width="100%"
+                onClick={() => showDownload('arm')}
+              >
+                <Chiislate>Download ISO</Chiislate>
+              </Button>
             </Card>
           </Grid>
         </Grid.Container>
-        <div className="mx-auto" style={{ width: '40%', margin: '40px' }}>
-          <Card hoverable className="text-center trouble" style={{ background: theme.palette.accents_1 }}>
+
+        <div className="help-box text-center">
+          <Text p type="secondary" style={{ margin: 0, fontSize: '0.95rem' }}>
             <Chiislate>
-              Having trouble? Click <Link href="/support">here</Link> to get help!
+              Looking for documentation or need assistance? Visit the <Link href="/support">Support Hub</Link> or join our community.
             </Chiislate>
-          </Card>
+          </Text>
         </div>
       </div>
+
       <Modal {...downloadModal.bindings}>
         <Modal.Title>
-          <Chiislate>Before you Download</Chiislate>
+          <Chiislate>Verification and terms</Chiislate>
         </Modal.Title>
         <Modal.Subtitle>
-          <Chiislate>Please read this before you continue</Chiislate>
+          <Chiislate>Release checksum and software license</Chiislate>
         </Modal.Subtitle>
         <Modal.Content>
-          <p>
-            <Chiislate>Below is the shasum of the download. You can use it to check download's integrity</Chiislate>:
+          <p style={{ fontSize: '0.9rem', marginBottom: '8px' }}>
+            <Chiislate>Cryptographic hash for package integrity verification</Chiislate>:
           </p>
-          <Snippet symbol="" text={shasum}></Snippet>
-          <Spacer />
-          <Chiislate>
-            Warning: Software that we provided is licensed under GNU GPL 3.0. We provide absolutely no liability what so
-            ever, etc...
-          </Chiislate>
-          <br />
+          <Snippet symbol="" text={shasum} />
+          <p style={{ fontSize: '0.85rem', color: '#85858b', marginTop: '16px' }}>
+            <Chiislate>
+              AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is without warranty.
+            </Chiislate>
+          </p>
           <Checkbox
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
           >
-            <Chiislate>Yes, I understand</Chiislate>
-          </Checkbox>
-          <br />
-          <Checkbox
-            onChange={(e) => {
-              setTorrent(e.target.checked);
-            }}
-          >
-            <Chiislate>Use torrent download</Chiislate>
+            <Chiislate>I acknowledge and understand</Chiislate>
           </Checkbox>
         </Modal.Content>
         <Modal.Action passive onClick={() => downloadModal.setVisible(false)}>
@@ -240,36 +226,60 @@ const Download = () => {
           <Chiislate>Continue</Chiislate>
         </Modal.Action>
       </Modal>
+
       <Modal {...webviewModal.bindings}>
         <Modal.Title>
-          <Chiislate>Web preview</Chiislate>
+          <Chiislate>Interactive web prototype</Chiislate>
         </Modal.Title>
         <Modal.Content>
-          <p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>
             <Chiislate>
-              You're about to visit the web demo version of AvdanOS, which is only a proof of concept. Trying the live
-              system is strongly recommended to getting the full experience from the operating system.
+              You are launching the browser-based prototype of the AvdanOS desktop environment. This demonstration illustrates interactive concepts, menus, and window management directly in your web browser.
             </Chiislate>
-            <br />*
-            <Chiislate>Live system is currently not available because the system is still under development</Chiislate>
           </p>
         </Modal.Content>
         <Modal.Action passive onClick={() => webviewModal.setVisible(false)}>
-          <Chiislate>cancel</Chiislate>
+          <Chiislate>Cancel</Chiislate>
         </Modal.Action>
         <Modal.Action onClick={() => window.location.replace('/demo')}>
-          <Chiislate>Yes, take me there</Chiislate>
+          <Chiislate>Open prototype</Chiislate>
         </Modal.Action>
       </Modal>
-      <style jsx>{`
-        .trouble {
-          background: ${theme.palette.background} !important;
+
+      <style jsx>{
+        .downloads-page {
+          padding: 80px 24px 100px 24px;
         }
-        .trouble:hover {
-          background: ${theme.palette.accents_2} !important;
+        :global(.download-card) {
+          padding: 32px 24px !important;
+          border-radius: 12px !important;
+          border: 1px solid \ !important;
+          background: \ !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
-      `}</style>
+        .card-badge {
+          margin-bottom: 24px;
+        }
+        .card-icon {
+          height: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .help-box {
+          max-width: 600px;
+          margin: 48px auto 0 auto;
+          padding: 16px 24px;
+          border-radius: 8px;
+          background: \;
+          border: 1px solid \;
+        }
+      }</style>
     </>
   );
 };
+
 export default Download;
