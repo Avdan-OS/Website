@@ -203,7 +203,7 @@ const Download = () => {
           <Snippet symbol="" text={shasum} />
           <p style={{ fontSize: '0.85rem', color: '#85858b', marginTop: '16px' }}>
             <Chiislate>
-              AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is without warranty.
+              AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is under GNU General Public License v3.0 without warranties.
             </Chiislate>
           </p>
           <Checkbox
