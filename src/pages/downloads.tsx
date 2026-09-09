@@ -206,7 +206,7 @@ const Download = () => {
               AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is under GNU General Public License v3.0 without warranties.
             </Chiislate>
           </p>
-          <Checkbox
+          <Checkbox aria-label="Acknowledge GPL software terms"
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
