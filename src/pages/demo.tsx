@@ -69,7 +69,7 @@ const Demo = () => {
         .demo-frame {
           width: 100%;
           height: 65vh;
-          min-height: 500px;
+          min-height: 520px;
           border: none;
           display: block;
         }
