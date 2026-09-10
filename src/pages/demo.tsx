@@ -41,7 +41,7 @@ const Demo = () => {
               className="demo-frame"
               src="https://avdan-os.github.io/Demo/"
               title="AvdanOS Web Demo"
-              allow="fullscreen"
+              allow="fullscreen" aria-label="Interactive desktop operating system prototype"
             />
             <div className="demo-bar">
               <Button auto scale={0.9} type="default" onClick={toggleFullScreen}>
