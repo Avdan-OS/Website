@@ -29,7 +29,7 @@ const preview = () => {
         <Card shadow>
           <iframe
             ref={iframeRef}
-            style={{ padding: '0', width: '100%', height: '45rem ' }}
+            style={{ padding: '0', width: '100%', height: '45rem' }}
             height="100%"
             width="100%"
             src="https://avdan-os.github.io/Demo/"
