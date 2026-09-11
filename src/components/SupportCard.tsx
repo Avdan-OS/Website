@@ -1,4 +1,4 @@
-import { Button, Card, Spacer, useTheme, Tag, Grid } from '@geist-ui/core';
+import { Button, Card, useTheme, Text, Grid } from '@geist-ui/core';
 import { Chiislate } from './translation/Chiislate';
 import { FaDiscord, FaInstagram, FaTwitter, FaReddit } from 'react-icons/fa';
 import { AiFillYoutube, AiFillGithub } from 'react-icons/ai';
@@ -8,49 +8,56 @@ interface SupportCardProps {
   icon: string;
   title: string;
   link: string;
-  mobileLayout: boolean;
+  mobileLayout?: boolean;
 }
 
-const SupportCard = ({ icon, title, link, mobileLayout }: SupportCardProps) => {
+const SupportCard = ({ icon, title, link }: SupportCardProps) => {
+  const theme = useTheme();
+
   const iconSelector = () => {
+    const iconStyle = { margin: '0 auto', color: theme.palette.foreground };
     switch (icon) {
       case 'Twitter':
-        return <FaTwitter display="block" size={150} style={{ margin: 'auto' }} />;
+        return <FaTwitter size={36} style={iconStyle} />;
       case 'GitHub':
-        return <AiFillGithub display="block" size={150} style={{ margin: 'auto' }} />;
+        return <AiFillGithub size={36} style={iconStyle} />;
       case 'YouTube':
-        return <AiFillYoutube display="block" size={150} style={{ margin: 'auto' }} />;
+        return <AiFillYoutube size={36} style={iconStyle} />;
       case 'Discord':
-        return <FaDiscord display="block" size={150} style={{ margin: 'auto' }} />;
+        return <FaDiscord size={36} style={iconStyle} />;
       case 'Reddit':
-        return <FaReddit display="block" size={150} style={{ margin: 'auto' }} />;
+        return <FaReddit size={36} style={iconStyle} />;
       case 'Instagram':
-        return <FaInstagram display="block" size={150} style={{ margin: 'auto' }} />;
+        return <FaInstagram size={36} style={iconStyle} />;
+      default:
+        return null;
     }
   };
-  const theme = useTheme();
+
   return (
-    <Grid xs={mobileLayout ? 15 : 8} style={{ width: '60%' }}>
+    <Grid xs={24} sm={12} md={8}>
       <Card
-        style={{ background: theme.palette.background }}
-        hoverable
-        paddingTop="40px"
-        paddingBottom="9px"
-        width="95%"
+        className="support-card"
+        style={{
+          background: theme.type === 'dark' ? '#19191b' : '#ffffff',
+          border: 1px solid \,
+          borderRadius: '12px',
+          padding: '24px 16px',
+          textAlign: 'center',
+          width: '100%'
+        }}
       >
-        {iconSelector()}
-        <Spacer />
-        <Tag>
+        <div style={{ height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {iconSelector()}
+        </div>
+        <Text h4 style={{ margin: '12px 0 16px 0', fontWeight: 500 }}>
           <Chiislate>{title}</Chiislate>
-        </Tag>
-        <Spacer />
-        <Link href={link} target="_blank" rel="noreferrer">
-          <Button type="success" width={0.7} shadow margin="9px">
-            <Chiislate>Visit</Chiislate>
-            {mobileLayout}
+        </Text>
+        <Link href={link} target="_blank" rel="noreferrer" passHref legacyBehavior>
+          <Button type="default" scale={0.9} width="100%">
+            <Chiislate>Open</Chiislate>
           </Button>
         </Link>
-        <Spacer h={3} />
       </Card>
     </Grid>
   );
