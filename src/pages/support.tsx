@@ -1,69 +1,47 @@
-import { Text, Grid, Spacer } from '@geist-ui/core';
-import dynamicWidth from '@/lib/dynamic-width';
-import { useState } from 'react';
+import { Text, Grid } from '@geist-ui/core';
 import SupportCard from '@/components/SupportCard';
-import BetaPopup from '@/components/BetaPopup';
 import Link from 'next/link';
 import { Chiislate } from '@/components/translation/Chiislate';
 
 const Support = () => {
-  const [mobileLayout, useMobileLayout] = useState(false);
-
-  dynamicWidth((width) => {
-    width < 950 ? useMobileLayout(true) : useMobileLayout(false);
-  });
-
   return (
-    <>
-      <div className="text-center" id="overview">
-        <Spacer h={3} />
-        <Text className="header" h1>
-          <Chiislate>AvdanOS Support</Chiislate>
+    <div className="support-page" id="overview">
+      <div className="text-center" style={{ maxWidth: '720px', margin: '0 auto 48px auto' }}>
+        <Text h1 style={{ letterSpacing: '-0.03em', fontWeight: 500, marginBottom: '12px' }}>
+          <Chiislate>Community and support</Chiislate>
         </Text>
-        <Text h4>
-          <Chiislate>Contact Us On Social Media</Chiislate>
+        <Text p type="secondary" style={{ fontSize: '1.05rem', margin: 0 }}>
+          <Chiislate>Connect with the development team and community members across platforms.</Chiislate>
         </Text>
-        <Spacer h={2} />
-        <Grid.Container
-          gap={3}
-          marginLeft="calc(0.5% - 10px)"
-          direction={mobileLayout ? 'column' : 'row'}
-          alignItems="center"
-          justify="center"
-        >
-          <SupportCard icon="Twitter" title="Twitter" link="https://twitter.com/avdan_os" mobileLayout={mobileLayout} />
-          <SupportCard icon="GitHub" title="GitHub" link="https://github.com/Avdan-OS" mobileLayout={mobileLayout} />
-          <SupportCard
-            icon="YouTube"
-            title="YouTube"
-            link="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA"
-            mobileLayout={mobileLayout}
-          />
-          <SupportCard icon="Discord" title="Discord" link="https://avdanos.org/discord" mobileLayout={mobileLayout} />
-          <SupportCard
-            icon="Reddit"
-            title="Reddit"
-            link="https://www.reddit.com/r/AvdanOS/"
-            mobileLayout={mobileLayout}
-          />
-          <SupportCard
-            icon="Instagram"
-            title="Instagram"
-            link="https://instagram.com/avdanos_"
-            mobileLayout={mobileLayout}
-          />
-        </Grid.Container>
-        <Spacer h={5} />
-        <Text h4>
+      </div>
+
+      <Grid.Container gap={2} justify="center" style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <SupportCard icon="GitHub" title="GitHub" link="https://github.com/Avdan-OS" />
+        <SupportCard icon="Discord" title="Discord" link="https://avdanos.org/discord" />
+        <SupportCard icon="Twitter" title="Twitter" link="https://twitter.com/avdan_os" />
+        <SupportCard icon="Reddit" title="Reddit" link="https://www.reddit.com/r/AvdanOS/" />
+        <SupportCard icon="YouTube" title="YouTube" link="https://www.youtube.com/channel/UCHLCBj83J7bR82HwjhCJusA" />
+        <SupportCard icon="Instagram" title="Instagram" link="https://instagram.com/avdanos_" />
+      </Grid.Container>
+
+      <div className="text-center" style={{ marginTop: '64px' }}>
+        <Text p type="secondary">
           <Chiislate>
-            Want to suggest anything to us? We always want to listen to the community. Present your ideas{' '}
-            <Link href="https://github.com/Avdan-OS/suggestions">here</Link>.
+            Have ideas or suggestions for AvdanOS? Share feedback on our{' '}
+            <Link href="https://github.com/Avdan-OS/suggestions" target="_blank" rel="noreferrer" underline>
+              suggestions repository
+            </Link>.
           </Chiislate>
         </Text>
-        <Spacer h={5} />
-        <BetaPopup href="/support-beta" />
       </div>
-    </>
+
+      <style jsx>{
+        .support-page {
+          padding: 80px 24px 100px 24px;
+        }
+      }</style>
+    </div>
   );
 };
+
 export default Support;
