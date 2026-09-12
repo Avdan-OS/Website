@@ -1,101 +1,108 @@
-import { Button, Card, Text, Image, Grid, Spacer, useTheme, Tag, useToasts, Link } from '@geist-ui/core';
-import dynamicWidth from '@/lib/dynamic-width';
-import { useState } from 'react';
+import { Button, Card, Text, Image, Grid, useTheme, Tag } from '@geist-ui/core';
+import Link from 'next/link';
 import { Chiislate } from '@/components/translation/Chiislate';
 
 const Docs = () => {
   const theme = useTheme();
 
-  const [gridDirection, setGridDirection] = useState<'row' | 'column' | 'row-reverse' | 'column-reverse'>('row');
-  const [gridWidth, setGridWidth] = useState(6);
-  const { setToast } = useToasts();
-
-  dynamicWidth((width) => {
-    if (width < 950) {
-      setGridDirection('column');
-      setGridWidth(14);
-    } else {
-      setGridDirection('row');
-      setGridWidth(8);
-    }
-  });
-
   return (
-    <>
-      <div className="text-center" id="overview">
-        <Spacer h={3} />
-        <Text className="header" h1>
-          <Chiislate>Read the features in detail.</Chiislate>
+    <div className="docs-page text-center">
+      <div style={{ maxWidth: '800px', margin: '0 auto 48px auto' }}>
+        <Text h1 style={{ letterSpacing: '-0.03em', fontWeight: 500, marginBottom: '12px' }}>
+          <Chiislate>Documentation and guides</Chiislate>
         </Text>
-        <Spacer h={2} />
-        <Grid.Container gap={3} direction={gridDirection} alignItems="center" justify="center">
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
-            >
+        <Text p type="secondary" style={{ fontSize: '1.05rem', margin: 0 }}>
+          <Chiislate>
+            Learn about the AvdanOS desktop concept, interface ergonomics, and developer architecture.
+          </Chiislate>
+        </Text>
+      </div>
+
+      <Grid.Container gap={2} justify="center" style={{ maxWidth: '880px', margin: '0 auto' }}>
+        <Grid xs={24} md={12}>
+          <Card className="doc-card" width="100%">
+            <div className="doc-icon">
               <Image
                 alt="User Documentation"
                 draggable="false"
                 src="/assets/icons/user.png"
-                height="100%"
-                width="200px"
+                height="100px"
+                width="100px"
               />
-              <Tag>
-                <Chiislate>I'm a User</Chiislate>
-              </Tag>
-              <Spacer />
-              <Button
-                type="success"
-                shadow
-                margin="10px"
-                onClick={() => {
-                  setToast({
-                    text: <Chiislate>Manual is not available yet</Chiislate>,
-                    delay: 5000,
-                    type: 'error'
-                  });
-                }}
-              >
-                <Chiislate>Open manual</Chiislate>
+            </div>
+            <Tag type="default" style={{ marginBottom: '16px' }}>
+              <Chiislate>User Guide</Chiislate>
+            </Tag>
+            <Text h4 style={{ marginBottom: '8px', fontWeight: 500 }}>
+              <Chiislate>Concept manual</Chiislate>
+            </Text>
+            <Text p type="secondary" style={{ fontSize: '0.9rem', marginBottom: '24px' }}>
+              <Chiislate>
+                Understand desktop interactions, gesture navigation, window layouts, and daily usage.
+              </Chiislate>
+            </Text>
+            <Link href="/manual" passHref legacyBehavior>
+              <Button type="default" auto width="100%">
+                <Chiislate>Read manual</Chiislate>
               </Button>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-          <Grid xs={gridWidth}>
-            <Card
-              style={{ background: theme.palette.background }}
-              hoverable
-              paddingTop="40px"
-              paddingBottom="10px"
-              width="100%"
-            >
+            </Link>
+          </Card>
+        </Grid>
+
+        <Grid xs={24} md={12}>
+          <Card className="doc-card" width="100%">
+            <div className="doc-icon">
               <Image
+                alt="Developer Documentation"
                 draggable="false"
                 src="/assets/icons/developer.png"
-                height="100%"
-                width="200px"
-                alt="Developer Documentation"
+                height="100px"
+                width="100px"
               />
-              <Tag>
-                <Chiislate>I'm a Developer</Chiislate>
-              </Tag>
-              <Spacer />
-              <Link href="https://docs.avdanos.org/">
-                <Button type="success" shadow margin="10px">
-                  <Chiislate>Open documentation</Chiislate>
-                </Button>
-              </Link>
-              <Spacer h={3} />
-            </Card>
-          </Grid>
-        </Grid.Container>
-        <Spacer h={5} />
-      </div>
-    </>
+            </div>
+            <Tag type="default" style={{ marginBottom: '16px' }}>
+              <Chiislate>Developer Docs</Chiislate>
+            </Tag>
+            <Text h4 style={{ marginBottom: '8px', fontWeight: 500 }}>
+              <Chiislate>Architecture reference</Chiislate>
+            </Text>
+            <Text p type="secondary" style={{ fontSize: '0.9rem', marginBottom: '24px' }}>
+              <Chiislate>
+                Explore GitHub specifications, component standards, Nadva DE APIs, and contribute code.
+              </Chiislate>
+            </Text>
+            <Link href="https://github.com/Avdan-OS" target="_blank" rel="noreferrer" passHref legacyBehavior>
+              <Button type="secondary" auto width="100%">
+                <Chiislate>Browse repositories</Chiislate>
+              </Button>
+            </Link>
+          </Card>
+        </Grid>
+      </Grid.Container>
+
+      <style jsx>{
+        .docs-page {
+          padding: 80px 24px 100px 24px;
+        }
+        :global(.doc-card) {
+          padding: 32px 24px !important;
+          border-radius: 12px !important;
+          border: 1px solid \ !important;
+          background: \ !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .doc-icon {
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 16px;
+        }
+      }</style>
+    </div>
   );
 };
+
 export default Docs;
