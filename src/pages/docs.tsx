@@ -23,7 +23,7 @@ const Docs = () => {
           <Card className="doc-card" width="100%">
             <div className="doc-icon">
               <Image
-                alt="User Documentation"
+                alt="User guide documentation"
                 draggable="false"
                 src="/assets/icons/user.png"
                 height="100px"
