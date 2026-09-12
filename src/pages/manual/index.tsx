@@ -18,7 +18,7 @@ const Manual = () => {
           </Text>
           <Text p type="secondary" style={{ fontSize: '1.05rem', margin: 0 }}>
             <Chiislate>
-              Architecture documentation, window manager controls, gesture reference, and setup guides.
+              Architecture documentation, window management, gesture controls, gesture reference, and setup guides.
             </Chiislate>
           </Text>
         </div>
