@@ -82,7 +82,7 @@ const Docs = () => {
 
       <style jsx>{
         .docs-page {
-          padding: 80px 24px 100px 24px;
+          padding: 80px 24px 96px 24px;
         }
         :global(.doc-card) {
           padding: 32px 24px !important;
