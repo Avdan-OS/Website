@@ -30,7 +30,7 @@ const Page404 = () => {
           </Link>
           <Link href="/demo" passHref legacyBehavior>
             <Button auto type="secondary">
-              <Chiislate>Try Web Demo</Chiislate>
+              <Chiislate>Launch Demo</Chiislate>
             </Button>
           </Link>
         </div>
