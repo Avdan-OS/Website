@@ -1,67 +1,52 @@
 import { Chiislate } from '@/components/translation/Chiislate';
-import Media from '@/components/media';
 import SupportCardBeta from '@/components/SupportCardBeta';
-import { Text, Input, Divider, Spacer } from '@geist-ui/core';
+import { Text, Input, Divider } from '@geist-ui/core';
 import { Search } from 'react-feather';
 
 const Support = () => {
   return (
-    <div style={{ margin: '1.5rem' }}>
-      <Text className="text-center" h1>
-        <Chiislate>AvdanOS Support Articles</Chiislate>
+    <div style={{ maxWidth: '1040px', margin: '48px auto', padding: '0 24px' }}>
+      <Text className="text-center" h1 style={{ letterSpacing: '-0.03em', fontWeight: 500, marginBottom: '16px' }}>
+        <Chiislate>Knowledge base and frequently asked questions</Chiislate>
       </Text>
-      <Input scale={4 / 3} className="text-center" icon={<Search />} placeholder="Search Support Articles" />
-      <Divider h="1px" mb={5} />
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div style={{ maxWidth: '480px', margin: '0 auto 32px auto' }}>
+        <Input width="100%" scale={1.1} icon={<Search size={16} />} placeholder="Search articles..." />
+      </div>
+      <Divider mb={3} />
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
+          title="What is AvdanOS?"
           urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          description="AvdanOS is an open-source concept operating system designed around fluid windowing and a unified dock."
         />
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          title="When will an installable ISO be available?"
+          urlToPost="/downloads"
+          description="Architecture design and desktop environment builds are ongoing. Track progress in the official repo."
         />
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          title="How do I run the Web Demo?"
+          urlToPost="/demo"
+          description="Visit the /demo page directly in Chrome, Firefox, Safari, or Edge to experience the interactive prototype."
         />
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          title="Is AvdanOS open source under GPL?"
+          urlToPost="/docs"
+          description="All official repositories are licensed under the GNU General Public License v3.0."
         />
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          title="Can I contribute code or translations?"
+          urlToPost="https://github.com/Avdan-OS/Website"
+          description="We welcome community contributions for features, UI refinements, and localizations."
         />
         <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
-        />
-        <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
-        />
-        <SupportCardBeta
-          title="Lorem Ipsum dolor sit"
-          urlToPost="/"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laborum expedita ipsa alias enim possimus, iure magnam maiores, eveniet deleniti praesentium sapiente neque fuga? Adipisci modi debitis sapiente ipsum corrupti."
+          title="How does window grouping work?"
+          urlToPost="/features"
+          description="AvdanOS allows multiple application windows to snap and merge into tabbed workspaces."
         />
       </div>
-      <Spacer h={5} />
-      <Text className="text-center" h4>
-        <Chiislate>Ask Our Community</Chiislate>
-      </Text>
-      <Spacer h={1} />
-
-      <Media />
     </div>
   );
 };
+
 export default Support;
