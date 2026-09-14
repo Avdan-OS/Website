@@ -17,7 +17,7 @@ const Features = () => {
     window.scroll(0, 0);
     const videoElement: HTMLVideoElement = document.getElementById('video') as HTMLVideoElement;
 
-    document.body.classList.add('stop-scrolling');
+    // scroll lock removed
     let count = 0;
 
     const waitingAnimation = setInterval(() => {
@@ -39,7 +39,7 @@ const Features = () => {
     videoElement.addEventListener('canplay', () => {
       clearInterval(waitingAnimation);
       console.log('video loaded');
-      document.body.classList.remove('stop-scrolling');
+      
       if (scrolldownRef.current) scrolldownRef.current.style.display = 'block';
       if (loadTextRef.current) loadTextRef.current.style.display = 'none';
     });
