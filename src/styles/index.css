@@ -28,7 +28,7 @@
   border: 3px none #ffffff;
 }
 
-.text-white {
+/* text-white utility */`n.text-white {
   color: white !important;
 }
 
