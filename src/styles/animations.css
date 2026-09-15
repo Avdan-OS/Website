@@ -1,20 +1,14 @@
 .float-in-text {
-  animation: float-in-animation 1s ease-out;
-  -moz-animation: float-in-animation 1s ease-out;
-  -webkit-animation: float-in-animation 1s ease-out;
+  animation: float-in-animation 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @keyframes float-in-animation {
   0% {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(12px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/* Planned more things. 
-For now it will be there 
-(or will be migrated) */
