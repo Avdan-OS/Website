@@ -47,3 +47,7 @@ Yes, use whatever tool you want. You are still required to be fluent in the lang
 **Can I not use GitHub?**
 
 See above for ways to contact Froxcey, and he will help you.
+
+
+## Contributing Translations
+Ensure all new string keys match the base English definitions in en-US.yaml.
