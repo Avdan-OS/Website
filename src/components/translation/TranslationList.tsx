@@ -163,7 +163,7 @@ const TranslationList = () => {
   });
   const [defaultLang, setDfltLang] = useState('en-GB');
   useEffect(() => {
-    let locale = window.localStorage.getItem('locale');
+    let locale = window.window.localStorage?.getItem('locale');
     if (!locale) locale = Intl.NumberFormat().resolvedOptions().locale;
 
     if (locale) {
