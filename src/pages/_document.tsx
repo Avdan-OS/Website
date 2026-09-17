@@ -38,7 +38,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
           ></link>
-        </Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />`n      </Head>
         <body>
           <script
             dangerouslySetInnerHTML={{
