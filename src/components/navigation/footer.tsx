@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
         }
         .copyright {
           font-size: 0.8rem;
-          opacity: 0.6;
+          opacity: 0.7;
           margin: 0;
         }
       }</style>
