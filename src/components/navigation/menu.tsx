@@ -68,7 +68,7 @@ avbar \ navbar-expand-md navigation-clean}
           {!useAltMenuPosition && renderNavTabs()}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Button
-              aria-label="Toggle dark mode"
+              aria-label="Switch interface color theme"
               className="theme-button"
               auto
               scale={0.88}
