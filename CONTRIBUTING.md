@@ -108,3 +108,7 @@ PLEASE SUBMIT A PR, NO DIRECT COMMITS!!!
 > # _PLEASE SUBMIT A PR, NO DIRECT COMMITS_
 
 ![image](https://user-images.githubusercontent.com/51555391/176925763-cdfd57ba-ae1e-4bf3-85e9-b3ebd30b1d59.png)
+
+
+## Design Standards
+All user interface contributions must adhere to clean design standards: strict 4px rhythm, quiet chrome, and verified copy.
