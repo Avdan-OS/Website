@@ -25,7 +25,7 @@ export default function Discover() {
                 className={style.card + ' ' + (theme.type == 'dark' ? style.card__dark : style.card__white)}
               >
                 <iframe
-                  src={https://discord.com/widget?id=993464434855002163&theme=\}
+                  src={`https://discord.com/widget?id=993464434855002163&theme=${theme.type}`}
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                   width="100%"
                   height="500px"
@@ -57,7 +57,7 @@ export default function Discover() {
                   />
                   <DiscoverCard
                     title="Official Website"
-                    description="Documentation, download portals, and community hub."
+                    description="Official documentation, download portals, and community hub."
                     link="https://github.com/Avdan-OS/Website"
                   />
                   <DiscoverCard
@@ -83,18 +83,18 @@ export default function Discover() {
           </Grid.Container>
         </div>
       </div>
-      <style jsx>{
+      <style jsx>{`
         .page__content {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          width: \;
+          width: ${theme.layout.pageWidthWithMargin};
           max-width: 100%;
           margin: 0 auto;
-          padding: calc(\ * 2) \;
+          padding: calc(${theme.layout.unit} * 2) ${theme.layout.pageMargin};
           box-sizing: border-box;
         }
-      }</style>
+      `}</style>
     </>
   );
 }
