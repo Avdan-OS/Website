@@ -96,7 +96,7 @@ const Features = () => {
         <Media />
       </section>
 
-      <style jsx>{
+      <style jsx>{`
         .features-header {
           padding: 80px 24px 32px 24px;
           max-width: 900px;
@@ -107,7 +107,7 @@ const Features = () => {
           max-width: 800px;
           margin: 0 auto;
         }
-      }</style>
+      `}</style>
     </>
   );
 };
