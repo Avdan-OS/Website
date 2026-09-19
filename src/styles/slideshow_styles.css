@@ -1,7 +1,7 @@
 .slideshow_alt {
-margin: 0 auto;
-overflow: hidden;
-max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 800px;
 }
 
 .slideshow_slider_alt {
@@ -20,9 +20,7 @@ max-width: 800px;
   background-size: contain;
 }
 
-
 /* Dots */
-
 .slideshow_dots {
   text-align: center;
 }
@@ -41,13 +39,4 @@ max-width: 800px;
 
 .slideshow_dot.active {
   background-color: #fff;
-}
-
-
-/* Text explaining each slide animation */
-
-
-  10%, 90% {
-    opacity: 1;
-  }
 }
