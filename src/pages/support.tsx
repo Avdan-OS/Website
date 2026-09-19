@@ -28,18 +28,18 @@ const Support = () => {
         <Text p type="secondary">
           <Chiislate>
             Have ideas or suggestions for AvdanOS? Share feedback on our{' '}
-            <Link href="https://github.com/Avdan-OS/suggestions" target="_blank" rel="noreferrer" underline>
+            <Link href="https://github.com/Avdan-OS/suggestions" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
               suggestions repository
             </Link>.
           </Chiislate>
         </Text>
       </div>
 
-      <style jsx>{
+      <style jsx>{`
         .support-page {
           padding: 80px 24px 100px 24px;
         }
-      }</style>
+      `}</style>
     </div>
   );
 };

@@ -40,9 +40,9 @@ const SupportCard = ({ icon, title, link }: SupportCardProps) => {
         className="support-card"
         style={{
           background: theme.type === 'dark' ? '#19191b' : '#ffffff',
-          border: 1px solid \,
+          border: `1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
           borderRadius: '12px',
-          padding: '24px 16px',
+          padding: '24px',
           textAlign: 'center',
           width: '100%'
         }}
