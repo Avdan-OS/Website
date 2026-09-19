@@ -13,8 +13,8 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
 
   return (
     <article className="features-group" id={cardTitle.toLowerCase().replace(/\s+/g, '-')}>
-      <div className={ideo-container \}>
-        <video autoPlay loop muted playsInline preload="metadata" playsInline className="feature-video">
+      <div className={`video-container ${isInverted ? 'inverse' : ''}`}>
+        <video autoPlay loop muted playsInline preload="metadata" className="feature-video">
           <source type="video/mp4" src={cardVideo} />
         </video>
       </div>
@@ -26,7 +26,7 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
           <Chiislate>{cardDescription}</Chiislate>
         </Text>
       </div>
-      <style jsx>{
+      <style jsx>{`
         .features-group {
           display: grid;
           grid-template-columns: 1fr;
@@ -40,8 +40,8 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
           width: 100%;
           border-radius: 12px;
           overflow: hidden;
-          background: \;
-          border: 1px solid \;
+          background: ${theme.type === 'dark' ? '#19191b' : '#f4f4f5'};
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'};
           line-height: 0;
         }
         .feature-video {
@@ -63,7 +63,7 @@ const FeaturesCard = ({ cardVideo, cardTitle, cardDescription, isInverted }: Fea
             order: 2;
           }
         }
-      }</style>
+      `}</style>
     </article>
   );
 };
