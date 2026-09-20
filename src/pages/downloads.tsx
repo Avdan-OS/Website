@@ -36,15 +36,9 @@ const Download = () => {
   const downloadModal = useModal();
   const webviewModal = useModal();
 
-  const [useTorrent, setTorrent] = useState(false);
   const [arch, setArch] = useState<'x64' | 'arm' | 'web'>('x64');
   const [canDownload, setCanDownload] = useState(false);
   const [shasum, setShasum] = useState(downloadInfo.x64.shasum);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  dynamicWidth((width) => {
-    setIsSmallScreen(width < 768);
-  });
 
   const showDownload = (type: 'x64' | 'arm' | 'web') => {
     setArch(type);
@@ -203,10 +197,11 @@ const Download = () => {
           <Snippet symbol="" text={shasum} />
           <p style={{ fontSize: '0.85rem', color: '#85858b', marginTop: '16px' }}>
             <Chiislate>
-              AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is under GNU General Public License v3.0 without warranties.
+              AvdanOS is released under the GNU General Public License v3.0. Software is provided as-is without warranty.
             </Chiislate>
           </p>
-          <Checkbox aria-label="Acknowledge GPL software terms"
+          <Checkbox
+            aria-label="Acknowledge GPL software terms"
             onChange={(e) => {
               setCanDownload(e.target.checked);
             }}
@@ -246,15 +241,15 @@ const Download = () => {
         </Modal.Action>
       </Modal>
 
-      <style jsx>{
+      <style jsx>{`
         .downloads-page {
           padding: 80px 24px 100px 24px;
         }
         :global(.download-card) {
           padding: 32px 24px !important;
           border-radius: 12px !important;
-          border: 1px solid \ !important;
-          background: \ !important;
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'} !important;
+          background: ${theme.type === 'dark' ? '#19191b' : '#ffffff'} !important;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -274,10 +269,10 @@ const Download = () => {
           margin: 48px auto 0 auto;
           padding: 16px 24px;
           border-radius: 8px;
-          background: \;
-          border: 1px solid \;
+          background: ${theme.type === 'dark' ? '#141415' : '#f4f4f5'};
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)'};
         }
-      }</style>
+      `}</style>
     </>
   );
 };
