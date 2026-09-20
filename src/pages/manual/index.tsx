@@ -18,7 +18,7 @@ const Manual = () => {
           </Text>
           <Text p type="secondary" style={{ fontSize: '1.05rem', margin: 0 }}>
             <Chiislate>
-              Architecture documentation, window management, gesture controls, gesture reference, and setup guides.
+              Architecture documentation, window management, gesture controls, and setup guides.
             </Chiislate>
           </Text>
         </div>
@@ -89,17 +89,17 @@ const Manual = () => {
           </Grid>
         </Grid.Container>
       </div>
-      <style jsx>{
+      <style jsx>{`
         .manual-page {
           padding: 80px 24px 100px 24px;
         }
         :global(.manual-card) {
           padding: 24px !important;
           border-radius: 12px !important;
-          border: 1px solid \ !important;
-          background: \ !important;
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'} !important;
+          background: ${theme.type === 'dark' ? '#19191b' : '#ffffff'} !important;
         }
-      }</style>
+      `}</style>
     </>
   );
 };
