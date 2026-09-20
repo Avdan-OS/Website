@@ -53,7 +53,7 @@ const Docs = () => {
           <Card className="doc-card" width="100%">
             <div className="doc-icon">
               <Image
-                alt="Developer Documentation"
+                alt="Developer documentation"
                 draggable="false"
                 src="/assets/icons/developer.png"
                 height="100px"
@@ -80,15 +80,15 @@ const Docs = () => {
         </Grid>
       </Grid.Container>
 
-      <style jsx>{
+      <style jsx>{`
         .docs-page {
           padding: 80px 24px 96px 24px;
         }
         :global(.doc-card) {
           padding: 32px 24px !important;
           border-radius: 12px !important;
-          border: 1px solid \ !important;
-          background: \ !important;
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'} !important;
+          background: ${theme.type === 'dark' ? '#19191b' : '#ffffff'} !important;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -100,7 +100,7 @@ const Docs = () => {
           justify-content: center;
           margin-bottom: 16px;
         }
-      }</style>
+      `}</style>
     </div>
   );
 };
