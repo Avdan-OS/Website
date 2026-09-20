@@ -41,7 +41,8 @@ const Demo = () => {
               className="demo-frame"
               src="https://avdan-os.github.io/Demo/"
               title="AvdanOS Web Demo"
-              allow="fullscreen" aria-label="Interactive desktop operating system prototype"
+              allow="fullscreen"
+              aria-label="Interactive desktop operating system prototype"
             />
             <div className="demo-bar">
               <Button auto scale={0.9} type="default" onClick={toggleFullScreen}>
@@ -51,7 +52,7 @@ const Demo = () => {
           </Card>
         </div>
       </div>
-      <style jsx>{
+      <style jsx>{`
         .demo-page {
           padding: 64px 24px 80px 24px;
         }
@@ -61,8 +62,8 @@ const Demo = () => {
         }
         :global(.demo-card) {
           border-radius: 12px !important;
-          border: 1px solid \ !important;
-          background: \ !important;
+          border: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'} !important;
+          background: ${theme.type === 'dark' ? '#141415' : '#ffffff'} !important;
           overflow: hidden !important;
           padding: 0 !important;
         }
@@ -77,9 +78,9 @@ const Demo = () => {
           display: flex;
           justify-content: flex-end;
           padding: 12px 16px;
-          border-top: 1px solid \;
+          border-top: 1px solid ${theme.type === 'dark' ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)'};
         }
-      }</style>
+      `}</style>
     </>
   );
 };
