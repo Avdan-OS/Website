@@ -28,24 +28,10 @@
   border: 3px none #ffffff;
 }
 
-/* text-white utility */`n.text-white {
+.text-white {
   color: white !important;
 }
 
-
-
-  25% {
-    transform: translateY(-4px) size(1);
-  }
-
-  60% {
-    transform: translateY(-6px) scale(1.02);
-  }
-
-  100% {
-    transform: translateY(-10px) size(1);
-  }
-}
 #stacked {
   display: flex !important;
   flex-wrap: nowrap !important;
