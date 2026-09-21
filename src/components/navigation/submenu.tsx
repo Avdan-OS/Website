@@ -30,7 +30,7 @@ const Submenu = () => {
 
   return (
     <nav className="submenu__wrapper">
-      <div className={submenu \}>
+      <div className={`submenu ${sticky ? 'submenu--sticky' : ''}`}>
         <div className="submenu__inner">
           {useLogo && (
             <div className="submenu__highlight" style={{ display: 'flex', alignItems: 'center' }}>
@@ -39,7 +39,7 @@ const Submenu = () => {
           )}
           <Tabs hideDivider value={router.asPath} onChange={(route) => router.push(route)}>
             <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-            <Tabs.Item label={<Chiislate>Features</Chiislate>} value={/features\} />
+            <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
             <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
             <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
             <Tabs.Item label={<Chiislate>Docs</Chiislate>} value="/docs" />
