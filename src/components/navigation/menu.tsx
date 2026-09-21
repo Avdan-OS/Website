@@ -43,7 +43,7 @@ const Menu = () => {
           onChange={(route) => router.push(route)}
         >
           <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-          <Tabs.Item label={<Chiislate>Features</Chiislate>} value={/features\} />
+          <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
           <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
           <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
           <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
@@ -56,8 +56,7 @@ const Menu = () => {
   return (
     <>
       <nav
-        className={
-avbar \ navbar-expand-md navigation-clean}
+        className={`navbar ${theme.type === 'dark' ? 'navbar-dark' : 'navbar-light'} navbar-expand-md navigation-clean`}
         style={{ background: 'transparent' }}
       >
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -92,7 +91,7 @@ avbar \ navbar-expand-md navigation-clean}
         </div>
       </nav>
       <Submenu />
-      <style jsx global>{
+      <style jsx global>{`
         .theme-button {
           margin: 0 4px;
         }
@@ -105,7 +104,7 @@ avbar \ navbar-expand-md navigation-clean}
           -webkit-backdrop-filter: blur(12px);
           padding-right: 6px;
         }
-      }</style>
+      `}</style>
     </>
   );
 };
