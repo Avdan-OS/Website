@@ -95,7 +95,7 @@ const Index = () => {
         </div>
       </section>
 
-      <style jsx>{
+      <style jsx>{`
         .hero-section {
           position: relative;
           min-height: 80vh;
@@ -117,12 +117,14 @@ const Index = () => {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          opacity: \;
+          opacity: ${theme.type === 'dark' ? '0.45' : '0.2'};
         }
         .video-overlay {
           position: absolute;
           inset: 0;
-          background: \;
+          background: ${theme.type === 'dark'
+            ? 'radial-gradient(ellipse at center, rgba(20,20,21,0.65) 0%, rgba(20,20,21,0.95) 100%)'
+            : 'radial-gradient(ellipse at center, rgba(250,250,250,0.7) 0%, rgba(250,250,250,0.98) 100%)'};
         }
         .hero-content {
           position: relative;
@@ -136,7 +138,7 @@ const Index = () => {
           font-weight: 500 !important;
           line-height: 1.05 !important;
           letter-spacing: -0.03em !important;
-          color: \ !important;
+          color: ${theme.palette.foreground} !important;
           margin-bottom: 16px !important;
         }
         :global(.hero-subhead) {
@@ -164,7 +166,7 @@ const Index = () => {
           max-width: 800px;
           margin: 0 auto;
         }
-      }</style>
+      `}</style>
     </>
   );
 };

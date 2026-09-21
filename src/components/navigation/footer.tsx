@@ -1,17 +1,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { useTheme, Tag, Spacer } from '@geist-ui/core';
-import Logo from '../logo';
+import { useTheme } from '@geist-ui/core';
 import dynamicWidth from '@/lib/dynamic-width';
 import { Chiislate } from '../translation/Chiislate';
 
 const Footer: React.FC = () => {
   const theme = useTheme();
-  const [useMobileFooter, setMobileFooter] = useState(false);
   const [useFeaturesBeta, setFeaturesBeta] = useState(false);
 
   dynamicWidth((width) => {
-    setMobileFooter(width < 768);
     setFeaturesBeta(width >= 575);
   });
 
@@ -22,7 +19,7 @@ const Footer: React.FC = () => {
           <h4><Chiislate>Overview</Chiislate></h4>
           <ul>
             <li><Link href="/"><Chiislate>Home</Chiislate></Link></li>
-            <li><Link href={/features\}><Chiislate>Features</Chiislate></Link></li>
+            <li><Link href={`/features${useFeaturesBeta ? '-beta' : ''}`}><Chiislate>Features</Chiislate></Link></li>
             <li><Link href="/downloads"><Chiislate>Downloads</Chiislate></Link></li>
             <li><Link href="/support"><Chiislate>Support</Chiislate></Link></li>
             <li><Link href="/docs"><Chiislate>Documentation</Chiislate></Link></li>
@@ -57,11 +54,11 @@ const Footer: React.FC = () => {
         </p>
       </div>
 
-      <style jsx>{
+      <style jsx>{`
         #global-footer {
-          border-top: 1px solid \;
-          background-color: \;
-          color: \;
+          border-top: 1px solid ${theme.type === 'dark' ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)'};
+          background-color: ${theme.type === 'dark' ? '#141415' : '#f4f4f5'};
+          color: ${theme.palette.foreground};
           padding: 48px 24px 24px 24px;
         }
         .footer-container {
@@ -93,7 +90,7 @@ const Footer: React.FC = () => {
           opacity: 1;
         }
         .copyright-bar {
-          border-top: 1px solid \;
+          border-top: 1px solid ${theme.type === 'dark' ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)'};
           padding-top: 24px;
         }
         .copyright {
@@ -101,7 +98,7 @@ const Footer: React.FC = () => {
           opacity: 0.7;
           margin: 0;
         }
-      }</style>
+      `}</style>
     </footer>
   );
 };
