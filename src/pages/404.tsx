@@ -35,7 +35,7 @@ const Page404 = () => {
           </Link>
         </div>
       </div>
-      <style jsx>{
+      <style jsx>{`
         .not-found-container {
           min-height: 65vh;
           display: flex;
@@ -49,9 +49,9 @@ const Page404 = () => {
           font-weight: 500 !important;
           line-height: 1 !important;
           margin-bottom: 8px !important;
-          color: \ !important;
+          color: ${theme.type === 'dark' ? '#333336' : '#e0e0e3'} !important;
         }
-      }</style>
+      `}</style>
     </>
   );
 };
