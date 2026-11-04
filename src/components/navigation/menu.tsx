@@ -7,8 +7,61 @@ import Link from 'next/link';
 import Submenu from '@/components/navigation/submenu';
 import TranslationList from '../translation/TranslationList';
 import dynamicWidth from '@/lib/dynamic-width';
-import { useState, Component } from 'react';
+import React, { useState } from 'react';
 import { Chiislate } from '../translation/Chiislate';
+
+interface MenuBarProps {
+  useMobileBar: boolean;
+  useFeaturesBeta: boolean;
+  isDarkHeader: boolean;
+  currentPath: string;
+  onNavigate: (route: string) => void;
+}
+
+const MenuBar: React.FC<MenuBarProps> = ({
+  useMobileBar,
+  useFeaturesBeta,
+  isDarkHeader,
+  currentPath,
+  onNavigate
+}) => {
+  return useMobileBar ? (
+    <div id="navcol-1" className="collapse navbar-collapse">
+      <ul className="navbar-nav ms-auto">
+        <Tabs
+          className={isDarkHeader ? 'header-dark-tabs' : undefined}
+          value={currentPath}
+          hideDivider
+          onChange={onNavigate}
+        >
+          <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
+          <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
+          <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
+          <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
+          <Tabs.Item label={<Chiislate>Docs</Chiislate>} value="/docs" />
+        </Tabs>
+      </ul>
+    </div>
+  ) : (
+    <div id="navcol-1" className="collapse navbar-collapse">
+      <ul className="navbar-nav ms-auto">
+        <Tabs
+          className={isDarkHeader ? 'header-dark-tabs' : undefined}
+          value={currentPath}
+          hideDivider
+          onChange={onNavigate}
+        >
+          <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
+          <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
+          <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
+          <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
+          <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
+          <Tabs.Item label={<Chiislate>Demo</Chiislate>} value="/demo" />
+        </Tabs>
+      </ul>
+    </div>
+  );
+};
 
 const Menu = () => {
   const theme = useTheme();
@@ -30,51 +83,19 @@ const Menu = () => {
     document.documentElement.classList.toggle('scroll-light', theme.type === 'dark');
   };
 
-  const themeDark = () => {
-    if (theme.type === 'dark' && router.pathname == '/') return true;
-    else return false;
-  };
+  const isDarkHeader = theme.type === 'dark' && router.pathname === '/';
 
-  class MenuBar extends Component {
-    render() {
-      return useMobileBar ? (
-        <div id="navcol-1" className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <Tabs
-              className={`${themeDark() ? 'header-dark-tabs' : null}`}
-              value={router.asPath}
-              hideDivider
-              onChange={(route) => router.push(route)}
-            >
-              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
-              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
-              <Tabs.Item label={<Chiislate>Docs</Chiislate>} value="/docs" />
-            </Tabs>
-          </ul>
-        </div>
-      ) : (
-        <div id="navcol-1" className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <Tabs
-              className={`${themeDark() ? 'header-dark-tabs' : null}`}
-              value={router.asPath}
-              hideDivider
-              onChange={(route) => router.push(route)}
-            >
-              <Tabs.Item label={<Chiislate>Home</Chiislate>} value="/" />
-              <Tabs.Item label={<Chiislate>Features</Chiislate>} value={`/features${useFeaturesBeta ? '-beta' : ''}`} />
-              <Tabs.Item label={<Chiislate>Downloads</Chiislate>} value="/downloads" />
-              <Tabs.Item label={<Chiislate>Support</Chiislate>} value="/support" />
-              <Tabs.Item label={<Chiislate>Documentation</Chiislate>} value="/docs" />
-              <Tabs.Item label={<Chiislate>Demo</Chiislate>} value="/demo" />
-            </Tabs>
-          </ul>
-        </div>
-      );
-    }
-  }
+  const menuBarElement = (
+    <MenuBar
+      key={`${useMobileBar}-${useFeaturesBeta}`}
+      useMobileBar={useMobileBar}
+      useFeaturesBeta={useFeaturesBeta}
+      isDarkHeader={isDarkHeader}
+      currentPath={router.asPath}
+      onNavigate={(route) => router.push(route)}
+    />
+  );
+
   return (
     <>
       <nav
@@ -87,7 +108,7 @@ const Menu = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <Logo />
-          {useAltMenuPosition ? null : <MenuBar />}
+          {useAltMenuPosition ? null : menuBarElement}
           <Button
             aria-label="Toggle dark mode"
             className="theme-button"
@@ -107,7 +128,7 @@ const Menu = () => {
               iconRight={<Download className="theme-buttonicon" size={16} />}
             ></Button>
           </Link>
-          {!useAltMenuPosition ? null : <MenuBar />}
+          {!useAltMenuPosition ? null : menuBarElement}
         </div>
       </nav>
       <Submenu />
@@ -128,6 +149,7 @@ const Menu = () => {
         background: rgba(0, 0, 0, 0.2) !important;
         -webkit-backdrop-filter: blur(2rem);
         padding-right: 6px !important;
+      }
     `}</style>
     </>
   );
