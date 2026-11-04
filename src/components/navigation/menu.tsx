@@ -87,6 +87,7 @@ const Menu = () => {
 
   const menuBarElement = (
     <MenuBar
+      key={`${useMobileBar}-${useFeaturesBeta}`}
       useMobileBar={useMobileBar}
       useFeaturesBeta={useFeaturesBeta}
       isDarkHeader={isDarkHeader}
